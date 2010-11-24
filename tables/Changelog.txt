@@ -1,0 +1,8 @@
+For Snapshot 10.19.2010:
+-[Data Collection Tables] Modified event_incent_cash within Event table to have 10 precision and 2 scale (was previously 5000). -Jason 10/19/2010
+For Snapshot 10.20.2010:
+-[Person Level Tables] Added the rest of the person level tables to the to the person level linkage tables. -Betty 10/20/2010
+-[Person Level Tables] Moved combined person level tables into snapshot. -Jason 10/21/2010
+-[All Tables] Second Pass corrections by RC's(Changing comment areas to text areas; Standarize display labels; Ensure each module has a view). -Betty 11/8/2010
+-[All Tables] changed default to numeric value and corrected list names.  -Betty 11/10/2010
+-[All Tables] Added missing modules and changed default to numeric value and corrected list names.  -Betty 11/12/2010
