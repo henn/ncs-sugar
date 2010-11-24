@@ -6,3 +6,9 @@ For Snapshot 10.20.2010:
 -[All Tables] Second Pass corrections by RC's(Changing comment areas to text areas; Standarize display labels; Ensure each module has a view). -Betty 11/8/2010
 -[All Tables] changed default to numeric value and corrected list names.  -Betty 11/10/2010
 -[All Tables] Added missing modules and changed default to numeric value and corrected list names.  -Betty 11/12/2010
+
+-Updated with latest Person level tables from Betty. -Jason 11/24/2010
+
+
+
+
