@@ -34,8 +34,42 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$app_list_strings['moduleList']['GT_LISTING_UNIT'] = 'LISTING_UNIT';
+$app_list_strings['moduleList']['GT_LISTING_UNIT'] = 'Listing Unit';
+$app_list_strings['moduleList']['GT_Primary_Sampling_Unit'] = 'Primary Sampling Unit (PSU)';
 $app_list_strings['moduleList']['GT_Household'] = 'Household';
 $app_list_strings['moduleList']['GT_Dwelling_Unit'] = 'Dwelling Unit (DU)';
-$app_list_strings['moduleList']['GT_Dwelling_Unit_Household_Linkage'] = 'Dwelling_Unit_Household_Linkage';
-
+$app_list_strings['moduleList']['GT_Study_Center'] = 'Study Center (SC)';
+$app_list_strings['moduleList']['GT_Dwelling_Unit_Household_Linkage'] = 'Dwelling Unit Household Linkage';
+$app_list_strings['PSU_CL1']['20000014'] = 'Providence County, RI';
+$app_list_strings['PSU_CL1']['20000018'] = 'Schuylkill County, PA';
+$app_list_strings['PSU_CL1']['20000025'] = 'Wayne County, MI';
+$app_list_strings['PSU_CL1']['20000030'] = 'Cook County, IL';
+$app_list_strings['PSU_CL1']['20000035'] = '';
+$app_list_strings['PSU_CL1']['20000037'] = 'Sacramento County, CA';
+$app_list_strings['PSU_CL1']['20000040'] = 'San Diego County, CA';
+$app_list_strings['PSU_CL1']['20000042'] = 'Los Angeles County, CA';
+$app_list_strings['PSU_CL1']['20000044'] = 'Honolulu County, HI';
+$app_list_strings['PSU_CL1']['20000048'] = 'Ramsey County, MN';
+$app_list_strings['PSU_CL1']['20000050'] = 'Hinds County, MS';
+$app_list_strings['PSU_CL1']['20000052'] = 'Valencia County, NM';
+$app_list_strings['PSU_CL1']['20000058'] = 'Westmoreland County, PA';
+$app_list_strings['PSU_CL1']['20000060'] = 'Bexar County, TX';
+$app_list_strings['PSU_CL1']['20000062'] = 'Cache County, UT';
+$app_list_strings['PSU_CL1']['20000069'] = 'New Haven County, CT';
+$app_list_strings['PSU_CL1']['20000083'] = 'Benton County, AR';
+$app_list_strings['PSU_CL1']['20000086'] = 'Cuyahoga County, OH';
+$app_list_strings['PSU_CL1']['20000087'] = 'Cumberland County, ME';
+$app_list_strings['PSU_CL1']['20000088'] = 'New Orleans Parish, LA';
+$app_list_strings['PSU_CL1']['20000090'] = 'Pinal County, AZ';
+$app_list_strings['PSU_CL1']['20000091'] = 'Douglas County, CO';
+$app_list_strings['PSU_CL1']['20000092'] = 'Polk County, IA';
+$app_list_strings['PSU_CL1']['20000094'] = 'Baker County, FL';
+$app_list_strings['PSU_CL1']['20000097'] = 'Lamar County, TX';
+$app_list_strings['PSU_CL1']['20000098'] = 'Davidson County, TN';
+$app_list_strings['PSU_CL1']['20000102'] = 'Baldwin County, GA';
+$app_list_strings['PSU_CL1']['20000103'] = 'Montgomery County, MD';
+$app_list_strings['PSU_CL1']['20000113'] = 'Durham County, NC';
+$app_list_strings['PSU_CL1']['20000117'] = 'Grant County, WA';
+$app_list_strings['RECRUIT_TYPE_CL1']['1'] = 'Enhanced Household Enumeration';
+$app_list_strings['RECRUIT_TYPE_CL1']['2'] = 'Provider-Based';
+$app_list_strings['RECRUIT_TYPE_CL1']['3'] = 'Two-Tier';

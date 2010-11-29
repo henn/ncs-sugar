@@ -63,11 +63,11 @@ $mod_strings = array (
   'LBL_GT_DWELLING_UNIT_SUBPANEL_TITLE' => 'Dwelling Unit (DU)',
   'LBL_NEW_FORM_TITLE' => 'New Dwelling Unit (DU)',
   'LBL_DU_ID' => 'DU ID',
-  'LBL_DU_TYPE_OTH' => 'DU TYPE_OTHER',
-  'LBL_DUID_COMMENT' => 'DU ID COMMENT',
-  'LBL_DUPLICATE_DU' => 'DUPLICATE DU',
-  'LBL_MISSED_DU' => 'MISSED DU',
-  'LBL_DU_ACCESS' => 'DU ACCESS',
-  'LBL_DU_INELIGIBLE' => 'DU INELIGIBLE',
+  'LBL_DU_TYPE_OTH' => 'DU Type Other',
+  'LBL_DUID_COMMENT' => 'DU ID Comment',
+  'LBL_DUPLICATE_DU' => 'Duplicate DU',
+  'LBL_MISSED_DU' => 'Missed DU',
+  'LBL_DU_ACCESS' => 'DU Access',
+  'LBL_DU_INELIGIBLE' => 'DU Ineligible',
 );
 ?>

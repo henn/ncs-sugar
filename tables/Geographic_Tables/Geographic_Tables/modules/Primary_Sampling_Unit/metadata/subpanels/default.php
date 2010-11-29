@@ -1,4 +1,5 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
@@ -33,38 +34,37 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
-$mod_strings = array (
-  'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
-  'LBL_ASSIGNED_TO_NAME' => 'User',
-  'LBL_ID' => 'ID',
-  'LBL_DATE_ENTERED' => 'Date Created',
-  'LBL_DATE_MODIFIED' => 'Date Modified',
-  'LBL_MODIFIED' => 'Modified By',
-  'LBL_MODIFIED_ID' => 'Modified By Id',
-  'LBL_MODIFIED_NAME' => 'Modified By Name',
-  'LBL_CREATED' => 'Created By',
-  'LBL_CREATED_ID' => 'Created By Id',
-  'LBL_DESCRIPTION' => 'Description',
-  'LBL_DELETED' => 'Deleted',
-  'LBL_NAME' => 'Name',
-  'LBL_CREATED_USER' => 'Created by User',
-  'LBL_MODIFIED_USER' => 'Modified by User',
-  'LBL_LIST_NAME' => 'Name',
-  'LBL_LIST_FORM_TITLE' => 'Dwelling Unit Household Linkage List',
-  'LBL_MODULE_NAME' => 'Dwelling Unit Household Linkage',
-  'LBL_MODULE_TITLE' => 'Dwelling Unit Household Linkage',
-  'LBL_HOMEPAGE_TITLE' => 'My Dwelling Unit Household Linkage',
-  'LNK_NEW_RECORD' => 'Create Dwelling Unit Household Linkage',
-  'LNK_LIST' => 'View Dwelling Unit Household Linkage',
-  'LNK_IMPORT_GT_DWELLING_UNIT_HOUSEHOLD_LINKAGE' => 'Import Dwelling Unit Household Linkage',
-  'LBL_SEARCH_FORM_TITLE' => 'Search Dwelling Unit Household Linkage',
-  'LBL_HISTORY_SUBPANEL_TITLE' => 'View History',
-  'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
-  'LBL_GT_DWELLING_UNIT_HOUSEHOLD_LINKAGE_SUBPANEL_TITLE' => 'Dwelling Unit Household Linkage',
-  'LBL_NEW_FORM_TITLE' => 'New Dwelling Unit Household Linkage',
-  'LBL_HH_DU_ID' => 'Household DU ID',
-  'LBL_DU_RANK_OTH' => 'DU Rank Other',
-  'LBL_IS_ACTIVE' => 'Is Active',
-  'LBL_DU_RANK' => 'DU Rank',
+
+$module_name='GT_Primary_Sampling_Unit';
+$subpanel_layout = array(
+	'top_buttons' => array(
+		array('widget_class' => 'SubPanelTopCreateButton'),
+		array('widget_class' => 'SubPanelTopSelectButton', 'popup_module' => $module_name),
+	),
+
+	'where' => '',
+
+	'list_fields' => array(
+		'name'=>array(
+	 		'vname' => 'LBL_NAME',
+			'widget_class' => 'SubPanelDetailViewLink',
+	 		'width' => '45%',
+		),
+		'date_modified'=>array(
+	 		'vname' => 'LBL_DATE_MODIFIED',
+	 		'width' => '45%',
+		),
+		'edit_button'=>array(
+			'widget_class' => 'SubPanelEditButton',
+		 	'module' => $module_name,
+	 		'width' => '4%',
+		),
+		'remove_button'=>array(
+			'widget_class' => 'SubPanelRemoveButton',
+		 	'module' => $module_name,
+			'width' => '5%',
+		),
+	),
 );
+
 ?>

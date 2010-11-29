@@ -161,7 +161,6 @@ $vardefs = array (
       'vname' => 'LBL_DUID_COMMENT',
       'type' => 'text',
       'massupdate' => 0,
-      'default' => '8000',
       'comments' => '',
       'help' => 'Text field for qualitative information',
       'importable' => 'true',

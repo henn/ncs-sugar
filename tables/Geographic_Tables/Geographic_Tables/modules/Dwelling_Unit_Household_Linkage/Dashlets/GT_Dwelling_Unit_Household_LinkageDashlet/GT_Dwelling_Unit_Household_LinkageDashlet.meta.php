@@ -1,4 +1,5 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
@@ -33,38 +34,18 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
-$mod_strings = array (
-  'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
-  'LBL_ASSIGNED_TO_NAME' => 'User',
-  'LBL_ID' => 'ID',
-  'LBL_DATE_ENTERED' => 'Date Created',
-  'LBL_DATE_MODIFIED' => 'Date Modified',
-  'LBL_MODIFIED' => 'Modified By',
-  'LBL_MODIFIED_ID' => 'Modified By Id',
-  'LBL_MODIFIED_NAME' => 'Modified By Name',
-  'LBL_CREATED' => 'Created By',
-  'LBL_CREATED_ID' => 'Created By Id',
-  'LBL_DESCRIPTION' => 'Description',
-  'LBL_DELETED' => 'Deleted',
-  'LBL_NAME' => 'Name',
-  'LBL_CREATED_USER' => 'Created by User',
-  'LBL_MODIFIED_USER' => 'Modified by User',
-  'LBL_LIST_NAME' => 'Name',
-  'LBL_LIST_FORM_TITLE' => 'Dwelling Unit Household Linkage List',
-  'LBL_MODULE_NAME' => 'Dwelling Unit Household Linkage',
-  'LBL_MODULE_TITLE' => 'Dwelling Unit Household Linkage',
-  'LBL_HOMEPAGE_TITLE' => 'My Dwelling Unit Household Linkage',
-  'LNK_NEW_RECORD' => 'Create Dwelling Unit Household Linkage',
-  'LNK_LIST' => 'View Dwelling Unit Household Linkage',
-  'LNK_IMPORT_GT_DWELLING_UNIT_HOUSEHOLD_LINKAGE' => 'Import Dwelling Unit Household Linkage',
-  'LBL_SEARCH_FORM_TITLE' => 'Search Dwelling Unit Household Linkage',
-  'LBL_HISTORY_SUBPANEL_TITLE' => 'View History',
-  'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
-  'LBL_GT_DWELLING_UNIT_HOUSEHOLD_LINKAGE_SUBPANEL_TITLE' => 'Dwelling Unit Household Linkage',
-  'LBL_NEW_FORM_TITLE' => 'New Dwelling Unit Household Linkage',
-  'LBL_HH_DU_ID' => 'Household DU ID',
-  'LBL_DU_RANK_OTH' => 'DU Rank Other',
-  'LBL_IS_ACTIVE' => 'Is Active',
-  'LBL_DU_RANK' => 'DU Rank',
-);
-?>
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+ 
+global $app_strings;
+
+$dashletMeta['GT_Dwelling_Unit_Household_LinkageDashlet'] = array('module'		=> 'GT_Dwelling_Unit_Household_Linkage',
+										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'GT_Dwelling_Unit_Household_Linkage'), 
+                                          'description' => 'A customizable view into GT_Dwelling_Unit_Household_Linkage',
+                                          'icon'        => 'icon_GT_Dwelling_Unit_Household_Linkage_32.gif',
+                                          'category'    => 'Module Views');

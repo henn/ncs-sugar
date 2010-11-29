@@ -43,7 +43,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'Dwelling_Unit_Household_Linkage',
+  'label' => 'Dwelling Unit Household Linkage',
   'importable' => false,
 );
 ?>
