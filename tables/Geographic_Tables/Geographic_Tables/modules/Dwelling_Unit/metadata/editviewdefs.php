@@ -61,10 +61,15 @@ array (
         array (
           0 => 
           array (
+            'name' => 'du_type',
+            'studio' => 'visible',
+            'label' => 'LBL_DU_TYPE',
+          ),
+          1 => 
+          array (
             'name' => 'du_type_oth',
             'label' => 'LBL_DU_TYPE_OTH',
           ),
-          1 => '',
         ),
         4 => 
         array (

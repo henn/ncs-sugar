@@ -105,10 +105,15 @@ array (
         array (
           0 => 
           array (
+            'name' => 'hh_structure',
+            'studio' => 'visible',
+            'label' => 'LBL_HH_STRUCTURE',
+          ),
+          1 => 
+          array (
             'name' => 'hh_structure_oth',
             'label' => 'LBL_HH_STRUCTURE_OTH',
           ),
-          1 => '',
         ),
         7 => 
         array (

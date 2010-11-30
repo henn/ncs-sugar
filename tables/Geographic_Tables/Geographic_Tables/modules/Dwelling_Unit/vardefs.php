@@ -173,6 +173,27 @@ $vardefs = array (
       'rows' => '4',
       'cols' => '20',
     ),
+    'du_type' => 
+    array (
+      'required' => false,
+      'name' => 'du_type',
+      'vname' => 'LBL_DU_TYPE',
+      'type' => 'enum',
+      'massupdate' => 0,
+      'default' => '1',
+      'comments' => '',
+      'help' => 'Type of residence',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'reportable' => true,
+      'len' => 100,
+      'size' => '20',
+      'options' => 'RESIDENCE_TYPE_CL2',
+      'studio' => 'visible',
+      'dependency' => false,
+    ),
   ),
   'relationships' => 
   array (

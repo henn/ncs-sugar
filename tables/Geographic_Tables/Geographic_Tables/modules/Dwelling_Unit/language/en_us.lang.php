@@ -69,5 +69,6 @@ $mod_strings = array (
   'LBL_MISSED_DU' => 'Missed DU',
   'LBL_DU_ACCESS' => 'DU Access',
   'LBL_DU_INELIGIBLE' => 'DU Ineligible',
+  'LBL_DU_TYPE' => 'DU Type',
 );
 ?>

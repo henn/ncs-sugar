@@ -22,6 +22,15 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  'DU_TYPE' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_DU_TYPE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
   'DU_TYPE_OTH' => 
   array (
     'type' => 'varchar',
