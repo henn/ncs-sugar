@@ -317,6 +317,16 @@ array (
           ),
           1 => '',
         ),
+        23 => 
+        array (
+          0 => 
+          array (
+            'name' => 'state_death',
+            'studio' => 'visible',
+            'label' => 'LBL_STATE_DEATH',
+          ),
+          1 => '',
+        ),
       ),
     ),
   ),

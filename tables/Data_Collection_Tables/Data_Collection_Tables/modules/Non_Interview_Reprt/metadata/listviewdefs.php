@@ -275,5 +275,14 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  'STATE_DEATH' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_STATE_DEATH',
+    'sortable' => false,
+    'width' => '10%',
+  ),
 );
 ?>

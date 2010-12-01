@@ -308,7 +308,7 @@ $vardefs = array (
       'reportable' => true,
       'size' => '20',
       'studio' => 'visible',
-      'rows' => '400',
+      'rows' => '4',
       'cols' => '20',
     ),
     'instrument_type' => 

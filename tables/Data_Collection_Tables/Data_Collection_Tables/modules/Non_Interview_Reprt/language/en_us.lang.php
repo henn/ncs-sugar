@@ -95,5 +95,6 @@ $mod_strings = array (
   'LBL_MOVED_INFORM_RELATION' => 'Moved Inform Relation',
   'LBL_NIR_OTHER' => 'Non Interview Report Other',
   'LBL_NON_INTERVIEW_RPT' => 'Non Interview Report',
+  'LBL_STATE_DEATH' => 'State Death',
 );
 ?>

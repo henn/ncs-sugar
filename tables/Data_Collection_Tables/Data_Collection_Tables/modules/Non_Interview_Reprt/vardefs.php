@@ -665,6 +665,27 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
+    'state_death' => 
+    array (
+      'required' => false,
+      'name' => 'state_death',
+      'vname' => 'LBL_STATE_DEATH',
+      'type' => 'enum',
+      'massupdate' => 0,
+      'default' => '1',
+      'comments' => '',
+      'help' => 'State of Death',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'reportable' => true,
+      'len' => 100,
+      'size' => '20',
+      'options' => 'STATE_CL3',
+      'studio' => 'visible',
+      'dependency' => false,
+    ),
   ),
   'relationships' => 
   array (
