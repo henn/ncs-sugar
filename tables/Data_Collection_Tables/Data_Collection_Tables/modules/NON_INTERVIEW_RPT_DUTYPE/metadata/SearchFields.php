@@ -1,4 +1,5 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
@@ -33,31 +34,11 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
-$module_name = 'NCSDC_NON_INTERVIEW_RPT_REFUSAL';
-$viewdefs[$module_name]['EditView'] = array(
-    'templateMeta' => array('maxColumns' => '2', 
-                            'widths' => array(
-                                            array('label' => '10', 'field' => '30'), 
-                                            array('label' => '10', 'field' => '30')
-                                            ),                                                                                                                                    
-                                            ),
-                                            
-                                            
- 'panels' =>array (
-  'default' => 
-  array (
-    
-    array (
-      'name',
-      'assigned_user_name',
-    ),
-    
-    array (
-      'description',
-    ),
-  ),
-                                                    
-),
-                        
-);
+$module_name = 'NCSDC_NON_INTERVIEW_RPT_DUTYPE';
+$searchFields[$module_name] = 
+	array (
+		'name' => array( 'query_type'=>'default'),
+		'current_user_only'=> array('query_type'=>'default','db_field'=>array('assigned_user_id'),'my_items'=>true, 'vname' => 'LBL_CURRENT_USER_FILTER', 'type' => 'bool'),
+		'assigned_user_id'=> array('query_type'=>'default'),
+	);
 ?>

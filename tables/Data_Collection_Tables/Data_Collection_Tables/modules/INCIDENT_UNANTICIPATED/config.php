@@ -43,7 +43,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'INCIDENT_UNANTICIPATED',
+  'label' => 'Incident Unanticipated Multi-Select',
   'importable' => false,
 );
 ?>

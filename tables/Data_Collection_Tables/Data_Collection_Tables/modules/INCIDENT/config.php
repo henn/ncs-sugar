@@ -43,7 +43,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'INCIDENT',
+  'label' => 'Incident',
   'importable' => false,
 );
 ?>

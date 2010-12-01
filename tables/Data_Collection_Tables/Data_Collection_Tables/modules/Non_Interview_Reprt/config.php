@@ -43,7 +43,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'Non_Interview_Reprt',
+  'label' => 'Non Interview Report',
   'importable' => false,
 );
 ?>

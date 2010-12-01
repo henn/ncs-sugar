@@ -43,7 +43,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'INCIDENT_MEDIA',
+  'label' => 'Incident Media Multi-Select',
   'importable' => false,
 );
 ?>

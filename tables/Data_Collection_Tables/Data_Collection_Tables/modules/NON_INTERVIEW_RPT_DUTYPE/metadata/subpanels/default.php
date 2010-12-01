@@ -1,4 +1,5 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
@@ -33,31 +34,37 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
-$module_name = 'NCSDC_NON_INTERVIEW_RPT_REFUSAL';
-$viewdefs[$module_name]['EditView'] = array(
-    'templateMeta' => array('maxColumns' => '2', 
-                            'widths' => array(
-                                            array('label' => '10', 'field' => '30'), 
-                                            array('label' => '10', 'field' => '30')
-                                            ),                                                                                                                                    
-                                            ),
-                                            
-                                            
- 'panels' =>array (
-  'default' => 
-  array (
-    
-    array (
-      'name',
-      'assigned_user_name',
-    ),
-    
-    array (
-      'description',
-    ),
-  ),
-                                                    
-),
-                        
+
+$module_name='NCSDC_NON_INTERVIEW_RPT_DUTYPE';
+$subpanel_layout = array(
+	'top_buttons' => array(
+		array('widget_class' => 'SubPanelTopCreateButton'),
+		array('widget_class' => 'SubPanelTopSelectButton', 'popup_module' => $module_name),
+	),
+
+	'where' => '',
+
+	'list_fields' => array(
+		'name'=>array(
+	 		'vname' => 'LBL_NAME',
+			'widget_class' => 'SubPanelDetailViewLink',
+	 		'width' => '45%',
+		),
+		'date_modified'=>array(
+	 		'vname' => 'LBL_DATE_MODIFIED',
+	 		'width' => '45%',
+		),
+		'edit_button'=>array(
+			'widget_class' => 'SubPanelEditButton',
+		 	'module' => $module_name,
+	 		'width' => '4%',
+		),
+		'remove_button'=>array(
+			'widget_class' => 'SubPanelRemoveButton',
+		 	'module' => $module_name,
+			'width' => '5%',
+		),
+	),
 );
+
 ?>

@@ -33,31 +33,37 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
-$module_name = 'NCSDC_NON_INTERVIEW_RPT_REFUSAL';
-$viewdefs[$module_name]['EditView'] = array(
-    'templateMeta' => array('maxColumns' => '2', 
-                            'widths' => array(
-                                            array('label' => '10', 'field' => '30'), 
-                                            array('label' => '10', 'field' => '30')
-                                            ),                                                                                                                                    
-                                            ),
-                                            
-                                            
- 'panels' =>array (
-  'default' => 
-  array (
-    
-    array (
-      'name',
-      'assigned_user_name',
-    ),
-    
-    array (
-      'description',
-    ),
-  ),
-                                                    
-),
-                        
+$mod_strings = array (
+  'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
+  'LBL_ASSIGNED_TO_NAME' => 'User',
+  'LBL_ID' => 'ID',
+  'LBL_DATE_ENTERED' => 'Date Created',
+  'LBL_DATE_MODIFIED' => 'Date Modified',
+  'LBL_MODIFIED' => 'Modified By',
+  'LBL_MODIFIED_ID' => 'Modified By Id',
+  'LBL_MODIFIED_NAME' => 'Modified By Name',
+  'LBL_CREATED' => 'Created By',
+  'LBL_CREATED_ID' => 'Created By Id',
+  'LBL_DESCRIPTION' => 'Description',
+  'LBL_DELETED' => 'Deleted',
+  'LBL_NAME' => 'Name',
+  'LBL_CREATED_USER' => 'Created by User',
+  'LBL_MODIFIED_USER' => 'Modified by User',
+  'LBL_LIST_NAME' => 'Name',
+  'LBL_LIST_FORM_TITLE' => 'NIR DU Type Multi Select List',
+  'LBL_MODULE_NAME' => 'NIR DU Type Multi Select',
+  'LBL_MODULE_TITLE' => 'NIR DU Type Multi Select',
+  'LBL_HOMEPAGE_TITLE' => 'My NIR DU Type Multi Select',
+  'LNK_NEW_RECORD' => 'Create NIR DU Type Multi Select',
+  'LNK_LIST' => 'View NIR DU Type Multi Select',
+  'LNK_IMPORT_NCSDC_NON_INTERVIEW_RPT_DUTYPE' => 'Import NIR DU Type Multi Select',
+  'LBL_SEARCH_FORM_TITLE' => 'Search NIR DU Type Multi Select',
+  'LBL_HISTORY_SUBPANEL_TITLE' => 'View History',
+  'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
+  'LBL_NCSDC_NON_INTERVIEW_RPT_DUTYPE_SUBPANEL_TITLE' => 'NIR DU Type Multi Select',
+  'LBL_NEW_FORM_TITLE' => 'New NIR DU Type Multi Select',
+  'LBL_NIR_DUTYPE_ID' => 'NIR DU Type ID',
+  'LBL_NIR_TYPE_DU' => 'NIR Type DU',
+  'LBL_NIR_TYPE_DU_OTH' => 'NIR Type DU Other',
 );
 ?>

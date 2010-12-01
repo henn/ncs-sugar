@@ -43,7 +43,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'NON_INTERVIEW_RPT_DUTYPE',
+  'label' => 'NIR DU Type Multi Select',
   'importable' => false,
 );
 ?>

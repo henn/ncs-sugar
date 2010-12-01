@@ -1,4 +1,5 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
@@ -33,31 +34,18 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
-$module_name = 'NCSDC_NON_INTERVIEW_RPT_REFUSAL';
-$viewdefs[$module_name]['EditView'] = array(
-    'templateMeta' => array('maxColumns' => '2', 
-                            'widths' => array(
-                                            array('label' => '10', 'field' => '30'), 
-                                            array('label' => '10', 'field' => '30')
-                                            ),                                                                                                                                    
-                                            ),
-                                            
-                                            
- 'panels' =>array (
-  'default' => 
-  array (
-    
-    array (
-      'name',
-      'assigned_user_name',
-    ),
-    
-    array (
-      'description',
-    ),
-  ),
-                                                    
-),
-                        
-);
-?>
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+ 
+global $app_strings;
+
+$dashletMeta['NCSDC_NON_INTERVIEW_RPT_DUTYPEDashlet'] = array('module'		=> 'NCSDC_NON_INTERVIEW_RPT_DUTYPE',
+										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'NCSDC_NON_INTERVIEW_RPT_DUTYPE'), 
+                                          'description' => 'A customizable view into NCSDC_NON_INTERVIEW_RPT_DUTYPE',
+                                          'icon'        => 'icon_NCSDC_NON_INTERVIEW_RPT_DUTYPE_32.gif',
+                                          'category'    => 'Module Views');

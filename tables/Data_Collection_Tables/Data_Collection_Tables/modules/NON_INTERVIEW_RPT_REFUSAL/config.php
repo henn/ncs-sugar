@@ -43,7 +43,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'NON_INTERVIEW_RPT_REFUSAL',
+  'label' => 'NIR Refusal Multi-Select',
   'importable' => false,
 );
 ?>

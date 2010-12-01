@@ -33,31 +33,27 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
-$module_name = 'NCSDC_NON_INTERVIEW_RPT_REFUSAL';
-$viewdefs[$module_name]['EditView'] = array(
-    'templateMeta' => array('maxColumns' => '2', 
-                            'widths' => array(
-                                            array('label' => '10', 'field' => '30'), 
-                                            array('label' => '10', 'field' => '30')
-                                            ),                                                                                                                                    
-                                            ),
-                                            
-                                            
- 'panels' =>array (
-  'default' => 
-  array (
-    
-    array (
-      'name',
-      'assigned_user_name',
-    ),
-    
-    array (
-      'description',
-    ),
-  ),
-                                                    
-),
-                        
-);
+/*
+ * Created on May 29, 2007
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - PHPeclipse - PHP - Code Templates
+ */
+$module_name = 'NCSDC_NON_INTERVIEW_RPT_DUTYPE';
+  $searchdefs[$module_name] = array(
+					'templateMeta' => array(
+							'maxColumns' => '3', 
+                            'widths' => array('label' => '10', 'field' => '30'),                 
+                           ),
+                    'layout' => array(  					
+						'basic_search' => array(
+							'name', 
+							array('name'=>'current_user_only', 'label'=>'LBL_CURRENT_USER_FILTER', 'type'=>'bool'),
+							),
+						'advanced_search' => array(
+							'name', 
+							array('name' => 'assigned_user_id', 'label' => 'LBL_ASSIGNED_TO', 'type' => 'enum', 'function' => array('name' => 'get_user_array', 'params' => array(false))),
+						),
+					),
+ 			   );
 ?>

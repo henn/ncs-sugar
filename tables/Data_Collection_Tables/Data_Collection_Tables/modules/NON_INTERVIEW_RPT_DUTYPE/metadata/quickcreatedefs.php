@@ -33,8 +33,8 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
-$module_name = 'NCSDC_NON_INTERVIEW_RPT_REFUSAL';
-$viewdefs[$module_name]['EditView'] = array(
+$module_name = 'NCSDC_NON_INTERVIEW_RPT_DUTYPE';
+$viewdefs[$module_name]['QuickCreate'] = array(
     'templateMeta' => array('maxColumns' => '2', 
                             'widths' => array(
                                             array('label' => '10', 'field' => '30'), 
@@ -50,10 +50,6 @@ $viewdefs[$module_name]['EditView'] = array(
     array (
       'name',
       'assigned_user_name',
-    ),
-    
-    array (
-      'description',
     ),
   ),
                                                     

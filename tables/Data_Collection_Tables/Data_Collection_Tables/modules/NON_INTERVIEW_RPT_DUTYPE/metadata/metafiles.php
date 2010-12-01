@@ -33,31 +33,19 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
-$module_name = 'NCSDC_NON_INTERVIEW_RPT_REFUSAL';
-$viewdefs[$module_name]['EditView'] = array(
-    'templateMeta' => array('maxColumns' => '2', 
-                            'widths' => array(
-                                            array('label' => '10', 'field' => '30'), 
-                                            array('label' => '10', 'field' => '30')
-                                            ),                                                                                                                                    
-                                            ),
-                                            
-                                            
- 'panels' =>array (
-  'default' => 
-  array (
-    
-    array (
-      'name',
-      'assigned_user_name',
-    ),
-    
-    array (
-      'description',
-    ),
-  ),
-                                                    
-),
-                        
-);
+/*
+ * Created on August 2 2007
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - PHPeclipse - PHP - Code Templates
+ */
+$module_name = 'NCSDC_NON_INTERVIEW_RPT_DUTYPE';
+ $metafiles[$module_name] = array(
+	'detailviewdefs'  => 	'modules/' . $module_name . '/metadata/detailviewdefs.php', 	
+	'editviewdefs'    => 	'modules/' . $module_name . '/metadata/editviewdefs.php',
+ 	'listviewdefs'    => 	'modules/' . $module_name . '/metadata/listviewdefs.php',
+ 	'searchdefs'      =>    'modules/' . $module_name . '/metadata/searchdefs.php',
+ 	'popupdefs'	      =>    'modules/' . $module_name . '/metadata/popupdefs.php',
+ 	'searchfields'	  =>    'modules/' . $module_name . '/metadata/SearchFields.php',
+ );
 ?>

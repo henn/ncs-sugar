@@ -1,4 +1,5 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
@@ -33,31 +34,29 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
-$module_name = 'NCSDC_NON_INTERVIEW_RPT_REFUSAL';
-$viewdefs[$module_name]['EditView'] = array(
-    'templateMeta' => array('maxColumns' => '2', 
-                            'widths' => array(
-                                            array('label' => '10', 'field' => '30'), 
-                                            array('label' => '10', 'field' => '30')
-                                            ),                                                                                                                                    
-                                            ),
-                                            
-                                            
- 'panels' =>array (
-  'default' => 
-  array (
-    
-    array (
-      'name',
-      'assigned_user_name',
-    ),
-    
-    array (
-      'description',
-    ),
-  ),
-                                                    
-),
-                        
-);
-?>
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+
+require_once('include/Dashlets/DashletGeneric.php');
+require_once('modules/NCSDC_NON_INTERVIEW_RPT_NOACCESS/NCSDC_NON_INTERVIEW_RPT_NOACCESS.php');
+
+class NCSDC_NON_INTERVIEW_RPT_NOACCESSDashlet extends DashletGeneric { 
+    function NCSDC_NON_INTERVIEW_RPT_NOACCESSDashlet($id, $def = null) {
+		global $current_user, $app_strings;
+		require('modules/NCSDC_NON_INTERVIEW_RPT_NOACCESS/metadata/dashletviewdefs.php');
+
+        parent::DashletGeneric($id, $def);
+
+        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'NCSDC_NON_INTERVIEW_RPT_NOACCESS');
+
+        $this->searchFields = $dashletData['NCSDC_NON_INTERVIEW_RPT_NOACCESSDashlet']['searchFields'];
+        $this->columns = $dashletData['NCSDC_NON_INTERVIEW_RPT_NOACCESSDashlet']['columns'];
+
+        $this->seedBean = new NCSDC_NON_INTERVIEW_RPT_NOACCESS();        
+    }
+}
