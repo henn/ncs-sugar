@@ -70,7 +70,7 @@ $vardefs = array (
       'reportable' => true,
       'len' => 100,
       'size' => '20',
-      'options' => 'CONFIRM_TYPE_CL3',
+      'options' => 'NO_ACCESS_DESCR_CL1',
       'studio' => 'visible',
       'dependency' => false,
     ),
