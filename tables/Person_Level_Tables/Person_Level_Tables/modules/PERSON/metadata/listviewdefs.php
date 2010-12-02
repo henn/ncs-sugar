@@ -209,6 +209,22 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  'AGE' => 
+  array (
+    'type' => 'int',
+    'label' => 'LBL_AGE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'AGE_RANGE' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_AGE_RANGE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

@@ -97,6 +97,28 @@ array (
           ),
           1 => '',
         ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ppg_status_date',
+            'label' => 'LBL_PPG_STATUS_DATE',
+          ),
+          1 => '',
+        ),
+        8 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ppg_info_source_oth',
+            'label' => 'LBL_PPG_INFO_SOURCE_OTH',
+          ),
+          1 => 
+          array (
+            'name' => 'ppg_info_mode_oth',
+            'label' => 'LBL_PPG_INFO_MODE_OTH',
+          ),
+        ),
       ),
     ),
   ),

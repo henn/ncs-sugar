@@ -58,5 +58,26 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  'PPG_STATUS_DATE' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_PPG_STATUS_DATE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'PPG_INFO_SOURCE_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_PPG_INFO_SOURCE_OTH',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'PPG_INFO_MODE_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_PPG_INFO_MODE_OTH',
+    'width' => '10%',
+    'default' => true,
+  ),
 );
 ?>

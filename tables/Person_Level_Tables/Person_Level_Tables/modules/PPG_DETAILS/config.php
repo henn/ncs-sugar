@@ -43,7 +43,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'PPG_DETAILS',
+  'label' => 'PPG Details',
   'importable' => false,
 );
 ?>

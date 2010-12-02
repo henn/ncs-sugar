@@ -77,5 +77,6 @@ $mod_strings = array (
   'LBL_CONSENT_TRANSLATE' => 'Consent Translate',
   'LBL_CONSENT_COMMENTS' => 'Consent Comments',
   'LBL_EDITVIEW_PANEL1' => 'New Panel 1',
+  'LBL_CONSENT_WITHDRAW_TYPE' => 'Consent Withdraw Type',
 );
 ?>

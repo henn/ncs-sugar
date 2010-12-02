@@ -303,6 +303,27 @@ $vardefs = array (
       'rows' => '4',
       'cols' => '20',
     ),
+    'consent_withdraw_type' => 
+    array (
+      'required' => false,
+      'name' => 'consent_withdraw_type',
+      'vname' => 'LBL_CONSENT_WITHDRAW_TYPE',
+      'type' => 'enum',
+      'massupdate' => 0,
+      'default' => '1',
+      'comments' => '',
+      'help' => 'Type of consent withdrawal',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'reportable' => true,
+      'len' => 100,
+      'size' => '20',
+      'options' => 'NCS_CONSENT_WITHDRAW_TYPE',
+      'studio' => 'visible',
+      'dependency' => false,
+    ),
   ),
   'relationships' => 
   array (

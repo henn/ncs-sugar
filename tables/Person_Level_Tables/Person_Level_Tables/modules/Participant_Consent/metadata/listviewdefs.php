@@ -81,6 +81,15 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
+  'CONSENT_WITHDRAW_TYPE' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_CONSENT_WITHDRAW_TYPE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
   'CONSENT_WITHDRAW_DATE' => 
   array (
     'type' => 'varchar',
