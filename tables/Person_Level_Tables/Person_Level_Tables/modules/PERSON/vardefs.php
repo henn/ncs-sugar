@@ -453,7 +453,7 @@ $vardefs = array (
       'reportable' => true,
       'len' => 100,
       'size' => '20',
-      'options' => 'when_move_list',
+      'options' => 'CONFIRM_TYPE_CL4',
       'studio' => 'visible',
       'dependency' => false,
     ),
