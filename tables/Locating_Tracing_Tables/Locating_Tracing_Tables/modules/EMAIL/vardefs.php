@@ -216,7 +216,6 @@ $vardefs = array (
       'vname' => 'LBL_EMAIL_COMMENT',
       'type' => 'text',
       'massupdate' => 0,
-      'default' => '8000',
       'comments' => '',
       'help' => 'Text field for qualitative information',
       'importable' => 'true',
