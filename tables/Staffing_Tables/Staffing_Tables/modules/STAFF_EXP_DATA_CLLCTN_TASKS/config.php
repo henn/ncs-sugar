@@ -43,7 +43,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'Weekly Staff Exp Data Coll Tasks',
+  'label' => 'Weekly Staff Expense Data Collection Tasks',
   'importable' => false,
 );
 ?>

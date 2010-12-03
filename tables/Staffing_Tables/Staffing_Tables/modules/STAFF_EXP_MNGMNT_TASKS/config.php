@@ -43,7 +43,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'Weekly Staff Exp Mngmt Tasks',
+  'label' => 'Weekly Staff Expense Management Tasks',
   'importable' => false,
 );
 ?>
