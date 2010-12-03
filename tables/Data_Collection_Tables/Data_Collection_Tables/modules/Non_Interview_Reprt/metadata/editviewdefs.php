@@ -96,6 +96,11 @@ array (
         ),
         7 => 
         array (
+          0 => '',
+          1 => '',
+        ),
+        8 => 
+        array (
           0 => 
           array (
             'name' => 'nir_vac_info',
@@ -108,7 +113,7 @@ array (
             'label' => 'LBL_NIR_VAC_INFO_OTH',
           ),
         ),
-        8 => 
+        9 => 
         array (
           0 => 
           array (
@@ -122,7 +127,7 @@ array (
             'label' => 'LBL_NIR_NOACCESS_OTH',
           ),
         ),
-        9 => 
+        10 => 
         array (
           0 => 
           array (
@@ -136,7 +141,7 @@ array (
             'label' => 'LBL_NIR_ACCESS_ATTEMPT_OTH',
           ),
         ),
-        10 => 
+        11 => 
         array (
           0 => 
           array (
@@ -151,7 +156,7 @@ array (
             'label' => 'LBL_NIR_OTHER',
           ),
         ),
-        11 => 
+        12 => 
         array (
           0 => 
           array (
@@ -165,7 +170,7 @@ array (
             'label' => 'LBL_COG_INFORM_RELATION_OTH',
           ),
         ),
-        12 => 
+        13 => 
         array (
           0 => 
           array (
@@ -175,7 +180,7 @@ array (
           ),
           1 => '',
         ),
-        13 => 
+        14 => 
         array (
           0 => 
           array (
@@ -189,7 +194,7 @@ array (
             'label' => 'LBL_WHO_REFUSED_OTH',
           ),
         ),
-        14 => 
+        15 => 
         array (
           0 => 
           array (
@@ -204,7 +209,7 @@ array (
             'label' => 'LBL_REF_ACTION',
           ),
         ),
-        15 => 
+        16 => 
         array (
           0 => 
           array (
@@ -213,7 +218,7 @@ array (
             'label' => 'LBL_COG_DIS_DESC',
           ),
         ),
-        16 => 
+        17 => 
         array (
           0 => 
           array (
@@ -227,7 +232,7 @@ array (
             'label' => 'LBL_DECEASED_INFORM_OTH',
           ),
         ),
-        17 => 
+        18 => 
         array (
           0 => 
           array (
@@ -235,7 +240,7 @@ array (
             'label' => 'LBL_YOD',
           ),
         ),
-        18 => 
+        19 => 
         array (
           0 => 
           array (
@@ -249,7 +254,7 @@ array (
             'label' => 'LBL_REASON_UNAVAIL_OTH',
           ),
         ),
-        19 => 
+        20 => 
         array (
           0 => 
           array (
@@ -263,7 +268,7 @@ array (
             'label' => 'LBL_MOVED_UNIT',
           ),
         ),
-        20 => 
+        21 => 
         array (
           0 => 
           array (
@@ -277,7 +282,7 @@ array (
             'label' => 'LBL_MOVED_RELATION_OTH',
           ),
         ),
-        21 => 
+        22 => 
         array (
           0 => 
           array (
@@ -286,7 +291,7 @@ array (
           ),
           1 => '',
         ),
-        22 => 
+        23 => 
         array (
           0 => 
           array (
@@ -296,8 +301,15 @@ array (
           ),
           1 => '',
         ),
-        23 => 
+        24 => 
         array (
+          0 => 
+          array (
+            'name' => 'state_death',
+            'studio' => 'visible',
+            'label' => 'LBL_STATE_DEATH',
+          ),
+          1 => '',
         ),
       ),
     ),

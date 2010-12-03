@@ -43,7 +43,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'PARTICIPANT_VISIT_CONSENT',
+  'label' => 'Participant Visit Consent',
   'importable' => false,
 );
 ?>

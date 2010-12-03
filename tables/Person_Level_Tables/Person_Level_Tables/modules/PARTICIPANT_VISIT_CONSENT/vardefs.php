@@ -173,6 +173,27 @@ $vardefs = array (
       'rows' => '4',
       'cols' => '20',
     ),
+    'vis_language' => 
+    array (
+      'required' => false,
+      'name' => 'vis_language',
+      'vname' => 'LBL_VIS_LANGUAGE',
+      'type' => 'enum',
+      'massupdate' => 0,
+      'default' => '1',
+      'comments' => '',
+      'help' => 'Language in which consent was administered',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'reportable' => true,
+      'len' => 100,
+      'size' => '20',
+      'options' => 'LANGUAGE_CL2',
+      'studio' => 'visible',
+      'dependency' => false,
+    ),
   ),
   'relationships' => 
   array (

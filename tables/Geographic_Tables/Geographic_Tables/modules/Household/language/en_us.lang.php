@@ -71,5 +71,6 @@ $mod_strings = array (
   'LBL_HH_COMMENT' => 'Household Comment',
   'LBL_HH_STATUS' => 'Household Status',
   'LBL_HH_ELIG' => 'Household Eligibility',
+  'LBL_HH_STRUCTURE' => 'Household Structure',
 );
 ?>

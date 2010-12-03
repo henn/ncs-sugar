@@ -40,6 +40,15 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
+  'HH_STRUCTURE' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_HH_STRUCTURE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
   'HH_STRUCTURE_OTH' => 
   array (
     'type' => 'varchar',

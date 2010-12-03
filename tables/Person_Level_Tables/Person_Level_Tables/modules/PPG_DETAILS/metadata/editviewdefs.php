@@ -77,6 +77,28 @@ array (
           ),
           1 => '',
         ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'orig_due_date',
+            'label' => 'LBL_ORIG_DUE_DATE',
+          ),
+          1 => '',
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'due_date_2',
+            'label' => 'LBL_DUE_DATE_2',
+          ),
+          1 => 
+          array (
+            'name' => 'due_date_3',
+            'label' => 'LBL_DUE_DATE_3',
+          ),
+        ),
       ),
     ),
   ),

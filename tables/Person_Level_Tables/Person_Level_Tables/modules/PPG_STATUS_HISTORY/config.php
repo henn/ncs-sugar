@@ -43,7 +43,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'PPG_STATUS_HISTORY',
+  'label' => 'PPG Status History',
   'importable' => false,
 );
 ?>

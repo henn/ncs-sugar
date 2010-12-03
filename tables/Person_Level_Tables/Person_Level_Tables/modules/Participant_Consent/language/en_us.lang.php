@@ -72,10 +72,11 @@ $mod_strings = array (
   'LBL_CONSENT_LANGUAGE_OTH' => 'Consent Language Other',
   'LBL_PERSON_WHO_CONSENTED_ID' => 'Person Who Consented ID',
   'LBL_WHO_CONSENTED' => 'Who Consented',
-  'LBL_PERSON_WTHDRW_CONSENT_ID' => 'Person wthdrw Consent ID',
-  'LBL_WHO_WTHDRW_CONSENT' => 'Who wthdrw Consent ',
+  'LBL_PERSON_WTHDRW_CONSENT_ID' => 'Consent ID of Person Who Withdrew',
+  'LBL_WHO_WTHDRW_CONSENT' => 'Who Withdrew Consent ',
   'LBL_CONSENT_TRANSLATE' => 'Consent Translate',
   'LBL_CONSENT_COMMENTS' => 'Consent Comments',
   'LBL_EDITVIEW_PANEL1' => 'New Panel 1',
+  'LBL_CONSENT_WITHDRAW_TYPE' => 'Consent Withdraw Type',
 );
 ?>

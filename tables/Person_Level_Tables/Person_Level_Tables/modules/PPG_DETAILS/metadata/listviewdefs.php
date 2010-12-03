@@ -40,5 +40,26 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
+  'ORIG_DUE_DATE' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_ORIG_DUE_DATE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'DUE_DATE_2' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_DUE_DATE_2',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'DUE_DATE_3' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_DUE_DATE_3',
+    'width' => '10%',
+    'default' => true,
+  ),
 );
 ?>

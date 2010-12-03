@@ -157,11 +157,16 @@ array (
         array (
           0 => 
           array (
+            'name' => 'consent_withdraw_type',
+            'studio' => 'visible',
+            'label' => 'LBL_CONSENT_WITHDRAW_TYPE',
+          ),
+          1 => 
+          array (
             'name' => 'consent_comments',
             'studio' => 'visible',
             'label' => 'LBL_CONSENT_COMMENTS',
           ),
-          1 => '',
         ),
       ),
     ),

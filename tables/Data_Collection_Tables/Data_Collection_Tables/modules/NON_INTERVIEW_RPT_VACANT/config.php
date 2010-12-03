@@ -43,7 +43,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'NON_INTERVIEW_RPT_VACANT',
+  'label' => 'NIR Vacant Multi-Select',
   'importable' => false,
 );
 ?>

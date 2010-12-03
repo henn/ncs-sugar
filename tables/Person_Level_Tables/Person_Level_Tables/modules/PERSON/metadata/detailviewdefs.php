@@ -226,6 +226,20 @@ array (
             'label' => 'LBL_PERSON_COMMENT',
           ),
         ),
+        15 => 
+        array (
+          0 => 
+          array (
+            'name' => 'age',
+            'label' => 'LBL_AGE',
+          ),
+          1 => 
+          array (
+            'name' => 'age_range',
+            'studio' => 'visible',
+            'label' => 'LBL_AGE_RANGE',
+          ),
+        ),
       ),
     ),
   ),
