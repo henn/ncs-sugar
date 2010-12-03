@@ -63,9 +63,9 @@ $mod_strings = array (
   'LBL_ST_STAFF_LANGUAGE_SUBPANEL_TITLE' => 'Staff Language',
   'LBL_NEW_FORM_TITLE' => 'New Staff Language',
   'LBL_PSU_ID' => 'PSU ID',
-  'LBL_STAFF_LANGUAGE_ID' => 'STAFF LANGUAGE_ID',
-  'LBL_STAFF_ID' => 'STAFF ID',
-  'LBL_STAFF_LANG' => 'STAFF LANG',
-  'LBL_STAFF_LANG_OTH' => 'STAFF LANGUAGE_ID',
+  'LBL_STAFF_LANGUAGE_ID' => 'Staff Language ID',
+  'LBL_STAFF_ID' => 'Staff ID',
+  'LBL_STAFF_LANG' => 'Staff Language',
+  'LBL_STAFF_LANG_OTH' => 'Staff Language ID',
 );
 ?>

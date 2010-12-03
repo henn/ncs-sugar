@@ -63,11 +63,11 @@ $mod_strings = array (
   'LBL_ST_STAFF_EXP_MNGMNT_TASKS_SUBPANEL_TITLE' => 'Weekly Staff Expense Management Tasks',
   'LBL_NEW_FORM_TITLE' => 'New Weekly Staff Expense Management Tasks',
   'LBL_PSU_ID' => 'PSU ID',
-  'LBL_STAFF_EXP_MGMT_TASK_ID' => 'STAFF_EXP_MGMT_TASK_ID',
-  'LBL_STAFF_WEEKLY_EXPENSE_ID' => 'STAFF_WEEKLY_EXPENSE_ID',
-  'LBL_MGMT_TASK_TYPE' => 'MGMT_TASK_TYPE',
-  'LBL_MGMT_TASK_TYPE_OTH' => 'MGMT_TASK_TYPE_OTH ',
-  'LBL_MGMT_TASK_HRS' => 'MGMT_TASK_HRS',
-  'LBL_MGMT_TASK_COMMENT' => 'MGMT TASK_COMMENT',
+  'LBL_STAFF_EXP_MGMT_TASK_ID' => 'Staff Expense Management Task ID',
+  'LBL_STAFF_WEEKLY_EXPENSE_ID' => 'Staff Weekly Expense ID',
+  'LBL_MGMT_TASK_TYPE' => 'Management Task Type',
+  'LBL_MGMT_TASK_TYPE_OTH' => 'Management Task Type Other',
+  'LBL_MGMT_TASK_HRS' => 'Management Task Hours',
+  'LBL_MGMT_TASK_COMMENT' => 'Management Task Comment',
 );
 ?>

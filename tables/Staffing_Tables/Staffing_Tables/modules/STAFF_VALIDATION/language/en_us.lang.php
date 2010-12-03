@@ -63,11 +63,11 @@ $mod_strings = array (
   'LBL_ST_STAFF_VALIDATION_SUBPANEL_TITLE' => 'Staff Validation',
   'LBL_NEW_FORM_TITLE' => 'New Staff Validation',
   'LBL_PSU_ID' => 'PSU ID',
-  'LBL_STAFF_VAL_ID' => 'STAFF VAL_ID',
-  'LBL_STAFF_ID' => 'STAFF ID',
-  'LBL_EVENT_ID' => 'EVENT ID',
-  'LBL_STAFF_VALIDATE' => 'STAFF VALIDATE',
-  'LBL_STAFF_VAL_DATE' => 'STAFF VAL_DATE',
-  'LBL_STAFF_VAL_COMMENT' => 'STAFF VAL_COMMENT',
+  'LBL_STAFF_VAL_ID' => 'Staff Validation ID',
+  'LBL_STAFF_ID' => 'Staff ID',
+  'LBL_EVENT_ID' => 'Event ID',
+  'LBL_STAFF_VALIDATE' => 'Staff Validate',
+  'LBL_STAFF_VAL_DATE' => 'Staff Validate Date',
+  'LBL_STAFF_VAL_COMMENT' => 'Staff Validate Comment',
 );
 ?>

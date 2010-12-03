@@ -63,8 +63,8 @@ $mod_strings = array (
   'LBL_ST_OUTREACH_STAFF_SUBPANEL_TITLE' => 'Staff Participation Outreach Events',
   'LBL_NEW_FORM_TITLE' => 'New Staff Participation Outreach Events',
   'LBL_PSU_ID' => 'PSU ID',
-  'LBL_OUTREACH_EVENT_STAFF_ID' => 'OUTREACH_EVENT_STAFF_ID',
-  'LBL_OUTREACH_EVENT_ID' => 'OUTREACH_EVENT_ID',
-  'LBL_STAFF_ID' => 'STAFF_ID',
+  'LBL_OUTREACH_EVENT_STAFF_ID' => 'Outreach Event Staff ID',
+  'LBL_OUTREACH_EVENT_ID' => 'Outreach Event ID',
+  'LBL_STAFF_ID' => 'Staff ID',
 );
 ?>

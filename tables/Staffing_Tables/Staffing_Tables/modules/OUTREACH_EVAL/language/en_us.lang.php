@@ -63,9 +63,9 @@ $mod_strings = array (
   'LBL_ST_OUTREACH_EVAL_SUBPANEL_TITLE' => 'Evaluation of Weekly Outreach Activities',
   'LBL_NEW_FORM_TITLE' => 'New Evaluation of Weekly Outreach Activities',
   'LBL_PSU_ID' => 'PSU ID',
-  'LBL_OUTREACH_EVENT_EVAL_ID' => 'OUTREACH_EVENT_EVAL_ID',
-  'LBL_OUTREACH_EVENT_ID' => 'OUTREACH_EVENT_ID',
-  'LBL_OUTREACH_EVAL' => 'OUTREACH_EVAL',
-  'LBL_OUTREACH_EVAL_OTH' => 'OUTREACH_EVAL_OTH',
+  'LBL_OUTREACH_EVENT_EVAL_ID' => 'Outreach Event Eval ID',
+  'LBL_OUTREACH_EVENT_ID' => 'Outreach Event ID',
+  'LBL_OUTREACH_EVAL' => 'Outreach Eval',
+  'LBL_OUTREACH_EVAL_OTH' => 'Outreach Eval Other',
 );
 ?>
