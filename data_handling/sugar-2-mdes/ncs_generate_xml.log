@@ -1,0 +1,506 @@
+2010/11/08 11:15:38 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/08 11:15:39 DEBUG - Ncs::Soap::SoapNcs::init - SOAP session id is:grulfnjp1l9o2s7a88688a1bc4
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table STUDY_CENTER
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table LISTING_UNIT
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table SSU
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table TSU
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table PSU
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table DWELLING_UNIT
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table LING_HOUSEHOLD_DWELLING
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table HOUSEHOLD_UNIT
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_LANGUAGE
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_VALIDATION
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_WEEKLY_EXPENSE
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_EXP_MNGMNT_TASKS
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_EXP_DATA_COLLCTN_TASKS
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_CERT_TRAINING
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table PERSON
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table PERSON_RACE
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_HOUSEHOLD
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_PARTICIPANT
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT_CONSENT
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT_VIS_CONSENT
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table PPG_DETAILS
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table PPG_STATUS_HISTORY
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table PROVIDER
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_PROVIDER
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table INSTITUTION
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_INSTITUTE
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table ADDRESS
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table TELEPHONE
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table EMAIL
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table EVENT
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table INSTRUMENT
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table CONTACT
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_CONTACT
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_VACANT
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_NOACCESS
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_REFUSAL
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT_MEDIA
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT_UNANTICIPATED
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH_STAFF
+2010/11/08 11:15:39 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH_EVAL
+2010/11/08 11:15:39 INFO - main:: - Application completed in 1 seconds.
+2010/11/08 11:16:35 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/08 11:16:36 DEBUG - Ncs::Soap::SoapNcs::init - SOAP session id is:d0slvgfusom6q8cs90s3io98l3
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table STUDY_CENTER
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table LISTING_UNIT
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table SSU
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table TSU
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table PSU
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table DWELLING_UNIT
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table LING_HOUSEHOLD_DWELLING
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table HOUSEHOLD_UNIT
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_LANGUAGE
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_VALIDATION
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_WEEKLY_EXPENSE
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_EXP_MNGMNT_TASKS
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_EXP_DATA_COLLCTN_TASKS
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_CERT_TRAINING
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table PERSON
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table PERSON_RACE
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_HOUSEHOLD
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_PARTICIPANT
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT_CONSENT
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT_VIS_CONSENT
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table PPG_DETAILS
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table PPG_STATUS_HISTORY
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table PROVIDER
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_PROVIDER
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table INSTITUTION
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_INSTITUTE
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table ADDRESS
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table TELEPHONE
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table EMAIL
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table EVENT
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table INSTRUMENT
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table CONTACT
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_CONTACT
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_VACANT
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_NOACCESS
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_REFUSAL
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT_MEDIA
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT_UNANTICIPATED
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH_STAFF
+2010/11/08 11:16:36 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH_EVAL
+2010/11/08 11:16:36 INFO - main:: - Application completed in 1 seconds.
+2010/11/08 11:16:45 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/08 11:16:46 DEBUG - Ncs::Soap::SoapNcs::init - SOAP session id is:j1t4qf3pflo8fdc2b3bh74h6b5
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table STUDY_CENTER
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table LISTING_UNIT
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table SSU
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table TSU
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table PSU
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table DWELLING_UNIT
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table LING_HOUSEHOLD_DWELLING
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table HOUSEHOLD_UNIT
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_LANGUAGE
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_VALIDATION
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_WEEKLY_EXPENSE
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_EXP_MNGMNT_TASKS
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_EXP_DATA_COLLCTN_TASKS
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_CERT_TRAINING
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table PERSON
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table PERSON_RACE
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_HOUSEHOLD
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_PARTICIPANT
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT_CONSENT
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT_VIS_CONSENT
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table PPG_DETAILS
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table PPG_STATUS_HISTORY
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table PROVIDER
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_PROVIDER
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table INSTITUTION
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_INSTITUTE
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table ADDRESS
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table TELEPHONE
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table EMAIL
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table EVENT
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table INSTRUMENT
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table CONTACT
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_CONTACT
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_VACANT
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_NOACCESS
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_REFUSAL
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT_MEDIA
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT_UNANTICIPATED
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH_STAFF
+2010/11/08 11:16:46 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH_EVAL
+2010/11/08 11:16:46 INFO - main:: - Application completed in 1 seconds.
+2010/11/08 11:19:29 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/08 11:19:29 DEBUG - Ncs::Soap::SoapNcs::init - SOAP session id is:8fqvrkvd5t79gb29jq02u9o852
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table STUDY_CENTER
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table LISTING_UNIT
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table SSU
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table TSU
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table PSU
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table DWELLING_UNIT
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table LING_HOUSEHOLD_DWELLING
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table HOUSEHOLD_UNIT
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_LANGUAGE
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_VALIDATION
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_WEEKLY_EXPENSE
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_EXP_MNGMNT_TASKS
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_EXP_DATA_COLLCTN_TASKS
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_CERT_TRAINING
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table PERSON
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table PERSON_RACE
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_HOUSEHOLD
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_PARTICIPANT
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT_CONSENT
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT_VIS_CONSENT
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table PPG_DETAILS
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table PPG_STATUS_HISTORY
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table PROVIDER
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_PROVIDER
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table INSTITUTION
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_INSTITUTE
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table ADDRESS
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table TELEPHONE
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table EMAIL
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table EVENT
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table INSTRUMENT
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table CONTACT
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_CONTACT
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_VACANT
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_NOACCESS
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_REFUSAL
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT_MEDIA
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT_UNANTICIPATED
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH_STAFF
+2010/11/08 11:19:29 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH_EVAL
+2010/11/08 11:19:29 INFO - main:: - Application completed in 1 seconds.
+2010/11/09 10:34:05 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/09 10:34:07 DEBUG - Ncs::Soap::SoapNcs::init - SOAP session id is:hehc8itmq500k9m2roc7k1kgr1
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table STUDY_CENTER
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table LISTING_UNIT
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table SSU
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table TSU
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table PSU
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table DWELLING_UNIT
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table LING_HOUSEHOLD_DWELLING
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table HOUSEHOLD_UNIT
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_LANGUAGE
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_VALIDATION
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_WEEKLY_EXPENSE
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_EXP_MNGMNT_TASKS
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_EXP_DATA_COLLCTN_TASKS
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_CERT_TRAINING
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table PERSON
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table PERSON_RACE
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_HOUSEHOLD
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_PARTICIPANT
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT_CONSENT
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT_VIS_CONSENT
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table PPG_DETAILS
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table PPG_STATUS_HISTORY
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table PROVIDER
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_PROVIDER
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table INSTITUTION
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_INSTITUTE
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table ADDRESS
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table TELEPHONE
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table EMAIL
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table EVENT
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table INSTRUMENT
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table CONTACT
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_CONTACT
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_VACANT
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_NOACCESS
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_REFUSAL
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT_MEDIA
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT_UNANTICIPATED
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH_STAFF
+2010/11/09 10:34:07 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH_EVAL
+2010/11/09 10:34:07 INFO - main:: - Application completed in 3 seconds.
+2010/11/09 10:47:47 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/09 10:47:47 DEBUG - Ncs::Soap::SoapNcs::init - SOAP session id is:lfv7tp6u7rfgt22lqu6cfj6vh7
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table STUDY_CENTER
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table LISTING_UNIT
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table SSU
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table TSU
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table PSU
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table DWELLING_UNIT
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table LING_HOUSEHOLD_DWELLING
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table HOUSEHOLD_UNIT
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_LANGUAGE
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_VALIDATION
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_WEEKLY_EXPENSE
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_EXP_MNGMNT_TASKS
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_EXP_DATA_COLLCTN_TASKS
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_CERT_TRAINING
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table PERSON
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table PERSON_RACE
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_HOUSEHOLD
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_PARTICIPANT
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT_CONSENT
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT_VIS_CONSENT
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table PPG_DETAILS
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table PPG_STATUS_HISTORY
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table PROVIDER
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_PROVIDER
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table INSTITUTION
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_INSTITUTE
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table ADDRESS
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table TELEPHONE
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table EMAIL
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table EVENT
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table INSTRUMENT
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table CONTACT
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_CONTACT
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_VACANT
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_NOACCESS
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_REFUSAL
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT_MEDIA
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT_UNANTICIPATED
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH_STAFF
+2010/11/09 10:47:47 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH_EVAL
+2010/11/09 10:47:47 INFO - main:: - Application completed in 1 seconds.
+2010/11/09 10:50:43 DEBUG - Ncs::Soap::SoapNcs::init - SOAP session id is:n4d1o0i77p7ohasad7pguiou84
+2010/11/09 10:50:43 DEBUG - Ncs::Soap::SoapNcs::get_sugar_relationship_id - No relationship id exists for supplied id:
+2010/11/09 10:50:43 INFO - main:: - Relationship id is:
+2010/11/09 10:50:43 INFO - main:: - Field value is:
+2010/11/09 10:51:51 DEBUG - Ncs::Soap::SoapNcs::init - SOAP session id is:g233ralqhcbs1eg977qc53rul3
+2010/11/09 10:51:51 DEBUG - Ncs::Soap::SoapNcs::get_sugar_relationship_id - No relationship id exists for supplied id:
+2010/11/09 10:51:51 INFO - main:: - Relationship id is:
+2010/11/09 10:51:51 INFO - main:: - Field value is:
+2010/11/09 10:53:26 DEBUG - Ncs::Soap::SoapNcs::init - SOAP session id is:k2e2a3sin3kh414i79n3rbp166
+2010/11/09 10:53:26 DEBUG - Ncs::Soap::SoapNcs::get_sugar_relationship_id - No relationship id exists for supplied id:54c00f6b-e816-fb74-2fcb-4ccb094555d2
+2010/11/09 10:53:26 INFO - main:: - Relationship id is:
+2010/11/09 10:53:26 INFO - main:: - Field value is:
+2010/11/09 10:54:47 DEBUG - Ncs::Soap::SoapNcs::init - SOAP session id is:982vfsu3upkpm0vamvial22rj6
+2010/11/09 10:54:47 DEBUG - Ncs::Soap::SoapNcs::get_sugar_relationship_id - No relationship id exists for supplied id:54c00f6b-e816-fb74-2fcb-4ccb094555d2
+2010/11/09 11:16:41 DEBUG - Ncs::Soap::SoapNcs::init - SOAP session id is:i4bqjsrt634276d69l461rl2m4
+2010/11/09 11:16:41 DEBUG - Ncs::Soap::SoapNcs::get_sugar_relationship_id - Relationship id is:f40e5e27-f47d-761c-e890-4cd43aa289c0 for supplied id:54ba7581-0d94-3b2d-5262-4cd42966274d
+2010/11/09 11:16:41 INFO - main:: - Relationship id is:f40e5e27-f47d-761c-e890-4cd43aa289c0
+2010/11/09 11:16:42 DEBUG - Ncs::Soap::SoapNcs::get_field_value - Field 'person_id' value:
+2010/11/09 11:16:42 INFO - main:: - Field value is:
+2010/11/09 11:25:31 DEBUG - Ncs::Soap::SoapNcs::init - SOAP session id is:qs4acoesdg8153jtj6c20vcj03
+2010/11/09 11:25:31 DEBUG - Ncs::Soap::SoapNcs::get_sugar_relationship_id - Relationship id is:f40e5e27-f47d-761c-e890-4cd43aa289c0 for supplied id:54ba7581-0d94-3b2d-5262-4cd42966274d
+2010/11/09 11:25:31 INFO - main:: - Relationship id is:f40e5e27-f47d-761c-e890-4cd43aa289c0
+2010/11/09 11:25:31 DEBUG - Ncs::Soap::SoapNcs::get_field_value - Field 'name' value:John T Smith
+2010/11/09 11:25:31 INFO - main:: - Field value is:John T Smith
+2010/11/09 11:27:40 DEBUG - Ncs::Soap::SoapNcs::init - SOAP session id is:9451hp72jo3aj862c7edl1akh1
+2010/11/09 11:27:41 DEBUG - Ncs::Soap::SoapNcs::get_sugar_relationship_id - Relationship id is:f40e5e27-f47d-761c-e890-4cd43aa289c0 for supplied id:54ba7581-0d94-3b2d-5262-4cd42966274d
+2010/11/09 11:27:41 INFO - main:: - Relationship id is:f40e5e27-f47d-761c-e890-4cd43aa289c0
+2010/11/09 11:27:41 DEBUG - Ncs::Soap::SoapNcs::get_field_value - Field 'person_id' value:
+2010/11/09 11:27:41 INFO - main:: - Field value is:
+2010/11/09 11:32:04 DEBUG - Ncs::Soap::SoapNcs::init - SOAP session id is:dugr22gc06uo7kdpbnggar2ar3
+2010/11/09 11:32:04 DEBUG - Ncs::Soap::SoapNcs::get_sugar_relationship_id - Relationship id is:f40e5e27-f47d-761c-e890-4cd43aa289c0 for supplied id:54ba7581-0d94-3b2d-5262-4cd42966274d
+2010/11/09 11:32:04 INFO - main:: - Relationship id is:f40e5e27-f47d-761c-e890-4cd43aa289c0
+2010/11/09 11:32:04 DEBUG - Ncs::Soap::SoapNcs::get_field_value - Field 'person_id' value:''
+2010/11/09 11:32:04 INFO - main:: - Field value is:
+2010/11/09 11:32:40 DEBUG - Ncs::Soap::SoapNcs::init - SOAP session id is:eequhg4t960jpqa8q066enf352
+2010/11/09 11:32:41 DEBUG - Ncs::Soap::SoapNcs::get_sugar_relationship_id - Relationship id is:f40e5e27-f47d-761c-e890-4cd43aa289c0 for supplied id:54ba7581-0d94-3b2d-5262-4cd42966274d
+2010/11/09 11:32:41 INFO - main:: - Relationship id is:f40e5e27-f47d-761c-e890-4cd43aa289c0
+2010/11/09 11:32:41 DEBUG - Ncs::Soap::SoapNcs::get_field_value - Field 'name' value:'John T Smith'
+2010/11/09 11:32:41 INFO - main:: - Field value is:John T Smith
+2010/11/09 11:33:31 DEBUG - Ncs::Soap::SoapNcs::init - SOAP session id is:v1162c3u9u60skl4v3cbpfaia6
+2010/11/09 11:33:32 DEBUG - Ncs::Soap::SoapNcs::get_sugar_relationship_id - Relationship id is:3b409c2d-7645-bc44-af37-4cd2f038f281 for supplied id:54ba7581-0d94-3b2d-5262-4cd42966274d
+2010/11/09 11:33:32 INFO - main:: - Relationship id is:3b409c2d-7645-bc44-af37-4cd2f038f281
+2010/11/09 11:33:32 DEBUG - Ncs::Soap::SoapNcs::get_field_value - Field 'name' value:'Martha J Stewart'
+2010/11/09 11:33:32 INFO - main:: - Field value is:Martha J Stewart
+2010/11/09 12:39:12 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/09 12:39:12 DEBUG - Ncs::Soap::SoapNcs::init - SOAP session id is:p9j7rul2k9f3hgqgu07n302ae1
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table STUDY_CENTER
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table LISTING_UNIT
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table SSU
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table TSU
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table PSU
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table DWELLING_UNIT
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table LING_HOUSEHOLD_DWELLING
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table HOUSEHOLD_UNIT
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_LANGUAGE
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_VALIDATION
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_WEEKLY_EXPENSE
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_EXP_MNGMNT_TASKS
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_EXP_DATA_COLLCTN_TASKS
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_CERT_TRAINING
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table PERSON
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table PERSON_RACE
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_HOUSEHOLD
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_PARTICIPANT
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT_CONSENT
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT_VIS_CONSENT
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table PPG_DETAILS
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table PPG_STATUS_HISTORY
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table PROVIDER
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_PROVIDER
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table INSTITUTION
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_INSTITUTE
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table ADDRESS
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table TELEPHONE
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table EMAIL
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table EVENT
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table INSTRUMENT
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table CONTACT
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_CONTACT
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_VACANT
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_NOACCESS
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_REFUSAL
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT_MEDIA
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT_UNANTICIPATED
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH_STAFF
+2010/11/09 12:39:12 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH_EVAL
+2010/11/09 12:39:12 INFO - main:: - Application completed in 0 seconds.
+2010/11/09 12:54:04 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/09 12:54:05 DEBUG - Ncs::Soap::SoapNcs::init - SOAP session id is:m0mdjsb7qk68rivdiqtii05a85
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table STUDY_CENTER
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table LISTING_UNIT
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table SSU
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table TSU
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table PSU
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table DWELLING_UNIT
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table LING_HOUSEHOLD_DWELLING
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table HOUSEHOLD_UNIT
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_LANGUAGE
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_VALIDATION
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_WEEKLY_EXPENSE
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_EXP_MNGMNT_TASKS
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_EXP_DATA_COLLCTN_TASKS
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_CERT_TRAINING
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table PERSON
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table PERSON_RACE
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_HOUSEHOLD
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_PARTICIPANT
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT_CONSENT
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT_VIS_CONSENT
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table PPG_DETAILS
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table PPG_STATUS_HISTORY
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table PROVIDER
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_PROVIDER
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table INSTITUTION
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_INSTITUTE
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table ADDRESS
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table TELEPHONE
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table EMAIL
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table EVENT
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table INSTRUMENT
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table CONTACT
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_CONTACT
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_VACANT
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_NOACCESS
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_REFUSAL
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT_MEDIA
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT_UNANTICIPATED
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH_STAFF
+2010/11/09 12:54:05 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH_EVAL
+2010/11/09 12:54:05 INFO - main:: - Application completed in 1 seconds.
+2010/11/22 11:47:13 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/22 11:47:15 DEBUG - Ncs::Soap::SoapNcs::init - SOAP session id is:72s3j7jslm9dojf66amajatu80
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table STUDY_CENTER
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table LISTING_UNIT
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table SSU
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table TSU
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table PSU
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table DWELLING_UNIT
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table LING_HOUSEHOLD_DWELLING
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table HOUSEHOLD_UNIT
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_LANGUAGE
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_VALIDATION
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_WEEKLY_EXPENSE
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_EXP_MNGMNT_TASKS
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_EXP_DATA_COLLCTN_TASKS
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table STAFF_CERT_TRAINING
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table PERSON
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table PERSON_RACE
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_HOUSEHOLD
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_PARTICIPANT
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT_CONSENT
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table PARTICIPANT_VIS_CONSENT
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table PPG_DETAILS
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table PPG_STATUS_HISTORY
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table PROVIDER
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_PROVIDER
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table INSTITUTION
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_PERSON_INSTITUTE
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table ADDRESS
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table TELEPHONE
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table EMAIL
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table EVENT
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table INSTRUMENT
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table CONTACT
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table LINK_CONTACT
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_VACANT
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_NOACCESS
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table NON_INTERVIEW_RPT_REFUSAL
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT_MEDIA
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table INCIDENT_UNANTICIPATED
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH_STAFF
+2010/11/22 11:47:15 INFO - Ncs::Ncs::insert_tables - Generating xml for table OUTREACH_EVAL
+2010/11/22 11:47:15 INFO - main:: - Application completed in 3 seconds.
+2010/11/22 13:48:57 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/22 13:48:57 ERROR - Ncs::Db::TableParser::get_header - Unable to connect to database: Access denied for user 'ncsUser'@'localhost' (using password: YES)
+2010/11/22 13:48:57 ERROR - main:: - An error occurred while writing NCS data transmission file - There was an error retrieving xml header data from database
+2010/11/22 13:50:48 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/22 13:50:48 ERROR - Ncs::Db::TableParser::get_header - Unable to connect to database: Access denied for user 'formAdmin'@'localhost' (using password: YES)
+2010/11/22 13:50:48 ERROR - main:: - An error occurred while writing NCS data transmission file - There was an error retrieving xml header data from database
+2010/11/22 13:51:37 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/22 13:51:37 ERROR - main:: - An error occurred while writing NCS data transmission file - There was an error retrieving xml header data from database
+2010/11/22 14:06:45 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/22 14:06:46 ERROR - main:: - An error occurred while writing NCS data transmission file - There was an error retrieving xml header data from database
+2010/11/22 14:07:18 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/22 14:07:18 ERROR - main:: - An error occurred while writing NCS data transmission file - There was an error retrieving xml header data from database
+2010/11/22 14:09:03 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/22 14:09:03 ERROR - main:: - An error occurred while writing NCS data transmission file - There was an error retrieving xml header data from database
+2010/11/22 14:09:40 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/22 14:09:40 ERROR - main:: - An error occurred while writing NCS data transmission file - There was an error retrieving xml header data from database
+2010/11/22 14:13:40 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/22 14:13:40 ERROR - main:: - An error occurred while writing NCS data transmission file - There was an error retrieving xml header data from database
+2010/11/22 14:16:58 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/22 14:16:58 ERROR - main:: - An error occurred while writing NCS data transmission file - There was an error retrieving xml header data from database does the data exists?
+2010/11/22 14:17:53 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/22 14:17:53 ERROR - main:: - An error occurred while writing NCS data transmission file - There was an error retrieving the xml header information from database, does the data exists?
+2010/11/22 14:18:10 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/22 14:18:10 ERROR - main:: - An error occurred while writing NCS data transmission file - There was an error retrieving the xml header information from database, does the data exist?
+2010/11/22 14:41:07 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/22 14:41:07 ERROR - main:: - An error occurred while writing NCS data transmission file - There was an error retrieving the xml header information from database, does the data exist?
+2010/11/22 14:44:09 INFO - main:: - ** NCS Data Transmission File Generator **
+2010/11/22 14:44:09 ERROR - main:: - An error occurred while writing NCS data transmission file - There was an error retrieving the xml header information from database, does the data exist?
+2010/11/24 13:51:41 DEBUG - Ncs::Soap::SoapNcs::init - SOAP session id is:9beocmt20o9gctfotn4e98ea15
+2010/11/24 13:51:41 DEBUG - Ncs::Soap::SoapNcs::get_sugar_relationship_id - No relationship id exists for supplied id:54ba7581-0d94-3b2d-5262-4cd42966274d
