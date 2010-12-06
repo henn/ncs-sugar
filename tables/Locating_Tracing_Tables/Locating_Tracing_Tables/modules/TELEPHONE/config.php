@@ -43,7 +43,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'TELEPHONE',
+  'label' => 'Telephone',
   'importable' => false,
 );
 ?>

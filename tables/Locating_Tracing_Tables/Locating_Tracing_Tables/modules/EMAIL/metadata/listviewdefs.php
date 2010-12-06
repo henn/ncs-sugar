@@ -104,5 +104,19 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
+  'EMAIL_INFO_DATE' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_EMAIL_INFO_DATE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'EMAIL_INFO_UPDATE' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_EMAIL_INFO_UPDATE',
+    'width' => '10%',
+    'default' => true,
+  ),
 );
 ?>

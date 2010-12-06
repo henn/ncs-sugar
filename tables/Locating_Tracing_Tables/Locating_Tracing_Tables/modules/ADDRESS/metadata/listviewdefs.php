@@ -118,5 +118,77 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
+  'ADDRESS_ID' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_ADDRESS_ID',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ADDRESS_INFO_DATE' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_ADDRESS_INFO_DATE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ADDRESS_INFO_UPDATE' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_ADDRESS_INFO_UPDATE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ADDRESS_START_DATE' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_ADDRESS_START_DATE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ADDRESS_END_DATE' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_ADDRESS_END_DATE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ADDRESS_TYPE_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_ADDRESS_TYPE_OTH',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ADDRESS_1' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_ADDRESS_1',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ADDRESS_2' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_ADDRESS_2',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'UNIT' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_UNIT',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'STATE' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_STATE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
 );
 ?>

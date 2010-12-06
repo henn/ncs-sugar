@@ -34,6 +34,14 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$app_list_strings['moduleList']['LTT_ADDRESS'] = 'ADDRESS';
-$app_list_strings['moduleList']['LTT_EMAIL'] = 'EMAIL';
-$app_list_strings['moduleList']['LTT_TELEPHONE'] = 'TELEPHONE';
+$app_list_strings['moduleList']['LTT_ADDRESS'] = 'Address';
+$app_list_strings['moduleList']['LTT_EMAIL'] = 'Email';
+$app_list_strings['moduleList']['LTT_TELEPHONE'] = 'Telephone';
+$app_list_strings['INFORMATION_SOURCE_CL2']['1'] = 'Person Self';
+$app_list_strings['INFORMATION_SOURCE_CL2']['2'] = 'Provider';
+$app_list_strings['INFORMATION_SOURCE_CL2']['3'] = 'Household Member';
+$app_list_strings['INFORMATION_SOURCE_CL2']['4 '] = 'Other Person Associated ';
+$app_list_strings['INFORMATION_SOURCE_CL2']['5'] = 'Web';
+$app_list_strings['INFORMATION_SOURCE_CL2']['6'] = 'Returned Mail';
+$app_list_strings['INFORMATION_SOURCE_CL2']['7'] = 'Tracing vendor';
+$app_list_strings['INFORMATION_SOURCE_CL2']['_5'] = 'Other';

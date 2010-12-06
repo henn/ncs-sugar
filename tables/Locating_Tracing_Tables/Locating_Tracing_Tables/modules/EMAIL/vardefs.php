@@ -245,6 +245,38 @@ $vardefs = array (
       'len' => '36',
       'size' => '20',
     ),
+    'email_info_date' => 
+    array (
+      'required' => false,
+      'name' => 'email_info_date',
+      'vname' => 'LBL_EMAIL_INFO_DATE',
+      'type' => 'date',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => 'Date of initial email information',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'size' => '20',
+    ),
+    'email_info_update' => 
+    array (
+      'required' => false,
+      'name' => 'email_info_update',
+      'vname' => 'LBL_EMAIL_INFO_UPDATE',
+      'type' => 'date',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => 'Date of last update of email information',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'size' => '20',
+    ),
   ),
   'relationships' => 
   array (

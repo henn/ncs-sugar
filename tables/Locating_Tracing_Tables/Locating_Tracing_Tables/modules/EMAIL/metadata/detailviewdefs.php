@@ -156,6 +156,19 @@ array (
           ),
           1 => '',
         ),
+        10 => 
+        array (
+          0 => 
+          array (
+            'name' => 'email_info_date',
+            'label' => 'LBL_EMAIL_INFO_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'email_info_update',
+            'label' => 'LBL_EMAIL_INFO_UPDATE',
+          ),
+        ),
       ),
     ),
   ),

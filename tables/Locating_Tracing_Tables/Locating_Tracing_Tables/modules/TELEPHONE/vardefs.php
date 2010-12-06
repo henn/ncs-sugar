@@ -287,6 +287,23 @@ $vardefs = array (
       'rows' => '4',
       'cols' => '20',
     ),
+    'phone_nbr' => 
+    array (
+      'required' => false,
+      'name' => 'phone_nbr',
+      'vname' => 'LBL_PHONE_NBR',
+      'type' => 'varchar',
+      'massupdate' => 0,
+      'comments' => 'Best phone number to reach participant?',
+      'help' => '&quot;Any string of numbers and/or characters -8 Respondent has no phone -1 (Refused) -2 (Don&#039;t Know)&quot;',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'len' => '10',
+      'size' => '20',
+    ),
   ),
   'relationships' => 
   array (

@@ -122,5 +122,12 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
+  'PHONE_NBR' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_PHONE_NBR',
+    'width' => '10%',
+    'default' => true,
+  ),
 );
 ?>

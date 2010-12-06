@@ -146,7 +146,11 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PHONE_COMMENT',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'phone_nbr',
+            'label' => 'LBL_PHONE_NBR',
+          ),
         ),
       ),
     ),

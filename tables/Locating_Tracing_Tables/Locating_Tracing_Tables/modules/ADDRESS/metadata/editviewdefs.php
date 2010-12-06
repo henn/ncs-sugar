@@ -145,13 +145,74 @@ array (
         ),
         10 => 
         array (
-          0 => '',
+          0 => 
+          array (
+            'name' => 'address_id',
+            'label' => 'LBL_ADDRESS_ID',
+          ),
           1 => '',
         ),
         11 => 
         array (
-          0 => '',
+          0 => 
+          array (
+            'name' => 'address_info_date',
+            'label' => 'LBL_ADDRESS_INFO_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'address_info_update',
+            'label' => 'LBL_ADDRESS_INFO_UPDATE',
+          ),
+        ),
+        12 => 
+        array (
+          0 => 
+          array (
+            'name' => 'address_start_date',
+            'label' => 'LBL_ADDRESS_START_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'address_end_date',
+            'label' => 'LBL_ADDRESS_END_DATE',
+          ),
+        ),
+        13 => 
+        array (
+          0 => 
+          array (
+            'name' => 'address_type_oth',
+            'label' => 'LBL_ADDRESS_TYPE_OTH',
+          ),
           1 => '',
+        ),
+        14 => 
+        array (
+          0 => 
+          array (
+            'name' => 'address_1',
+            'label' => 'LBL_ADDRESS_1',
+          ),
+          1 => 
+          array (
+            'name' => 'address_2',
+            'label' => 'LBL_ADDRESS_2',
+          ),
+        ),
+        15 => 
+        array (
+          0 => 
+          array (
+            'name' => 'unit',
+            'label' => 'LBL_UNIT',
+          ),
+          1 => 
+          array (
+            'name' => 'state',
+            'studio' => 'visible',
+            'label' => 'LBL_STATE',
+          ),
         ),
       ),
     ),
