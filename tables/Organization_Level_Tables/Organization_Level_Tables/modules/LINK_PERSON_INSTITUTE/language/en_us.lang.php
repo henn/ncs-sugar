@@ -63,9 +63,9 @@ $mod_strings = array (
   'LBL_OLT_LINK_PERSON_INSTITUTE_SUBPANEL_TITLE' => 'Person-Institute Linkage',
   'LBL_NEW_FORM_TITLE' => 'New Person-Institute Linkage',
   'LBL_PSU_ID' => 'PSU ID',
-  'LBL_PERSON_INSTITUTE_ID' => 'PERSON INSTITUTE_ID',
-  'LBL_INSTITUTE_ID' => 'INSTITUTE ID',
-  'LBL_PERSON_ID' => 'PERSON ID',
-  'LBL_IS_ACTIVE' => 'IS ACTIVE',
+  'LBL_PERSON_INSTITUTE_ID' => 'Person Institute ID',
+  'LBL_INSTITUTE_ID' => 'Institute ID',
+  'LBL_PERSON_ID' => 'Person ID',
+  'LBL_IS_ACTIVE' => 'Is Active',
 );
 ?>
