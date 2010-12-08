@@ -141,11 +141,7 @@ array (
             'name' => 'provider_info_date',
             'label' => 'LBL_PROVIDER_INFO_DATE',
           ),
-          1 => 
-          array (
-            'name' => 'provider_info_update',
-            'label' => 'LBL_PROVIDER_INFO_UPDATE',
-          ),
+          1 => '',
         ),
         9 => 
         array (
@@ -154,6 +150,15 @@ array (
             'name' => 'provider_comment',
             'studio' => 'visible',
             'label' => 'LBL_PROVIDER_COMMENT',
+          ),
+          1 => '',
+        ),
+        10 => 
+        array (
+          0 => 
+          array (
+            'name' => 'provider_info_update',
+            'label' => 'LBL_PROVIDER_INFO_UPDATE',
           ),
           1 => '',
         ),

@@ -122,19 +122,19 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'PROVIDER_INFO_UPDATE' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_PROVIDER_INFO_UPDATE',
-    'width' => '10%',
-    'default' => true,
-  ),
   'PROVIDER_COMMENT' => 
   array (
     'type' => 'text',
     'studio' => 'visible',
     'label' => 'LBL_PROVIDER_COMMENT',
     'sortable' => false,
+    'width' => '10%',
+    'default' => true,
+  ),
+  'PROVIDER_INFO_UPDATE' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_PROVIDER_INFO_UPDATE',
     'width' => '10%',
     'default' => true,
   ),

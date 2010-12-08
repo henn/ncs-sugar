@@ -288,23 +288,6 @@ $vardefs = array (
       'reportable' => true,
       'size' => '20',
     ),
-    'provider_info_update' => 
-    array (
-      'required' => false,
-      'name' => 'provider_info_update',
-      'vname' => 'LBL_PROVIDER_INFO_UPDATE',
-      'type' => 'varchar',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => 'Date of last update of information',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => '10',
-      'size' => '20',
-    ),
     'provider_comment' => 
     array (
       'required' => false,
@@ -324,6 +307,22 @@ $vardefs = array (
       'studio' => 'visible',
       'rows' => '4',
       'cols' => '20',
+    ),
+    'provider_info_update' => 
+    array (
+      'required' => false,
+      'name' => 'provider_info_update',
+      'vname' => 'LBL_PROVIDER_INFO_UPDATE',
+      'type' => 'date',
+      'massupdate' => 0,
+      'comments' => 'YYYY-MM-DD 9777-97-97 (Not Applicable)',
+      'help' => 'Date of last update of information',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'size' => '20',
     ),
   ),
   'relationships' => 
