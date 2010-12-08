@@ -221,7 +221,7 @@ $vardefs = array (
       'len' => '255',
       'size' => '20',
       'studio' => 'visible',
-      'rows' => '400',
+      'rows' => '4',
       'cols' => '20',
     ),
   ),
