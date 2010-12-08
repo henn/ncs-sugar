@@ -111,48 +111,51 @@ array (
             'name' => 'institute_size',
             'label' => 'LBL_INSTITUTE_SIZE',
           ),
-          1 => 
-          array (
-            'name' => 'institute_unit',
-            'studio' => 'visible',
-            'label' => 'LBL_INSTITUTE_UNIT',
-          ),
         ),
         7 => 
         array (
           0 => 
           array (
-            'name' => 'institute_unit_oth',
-            'label' => 'LBL_INSTITUTE_UNIT_OTH',
+            'name' => 'institute_unit',
+            'studio' => 'visible',
+            'label' => 'LBL_INSTITUTE_UNIT',
           ),
           1 => 
           array (
-            'name' => 'institute_info_source',
-            'studio' => 'visible',
-            'label' => 'LBL_INSTITUTE_INFO_SOURCE',
+            'name' => 'institute_unit_oth',
+            'label' => 'LBL_INSTITUTE_UNIT_OTH',
           ),
         ),
         8 => 
         array (
           0 => 
           array (
-            'name' => 'institute_info_source_oth',
-            'label' => 'LBL_INSTITUTE_INFO_SOURCE_OTH',
+            'name' => 'institute_info_source',
+            'studio' => 'visible',
+            'label' => 'LBL_INSTITUTE_INFO_SOURCE',
           ),
           1 => 
           array (
-            'name' => 'institute_info_date',
-            'label' => 'LBL_INSTITUTE_INFO_DATE',
+            'name' => 'institute_info_source_oth',
+            'label' => 'LBL_INSTITUTE_INFO_SOURCE_OTH',
           ),
         ),
         9 => 
         array (
           0 => 
           array (
+            'name' => 'institute_info_date',
+            'label' => 'LBL_INSTITUTE_INFO_DATE',
+          ),
+          1 => 
+          array (
             'name' => 'institute_info_update',
             'label' => 'LBL_INSTITUTE_INFO_UPDATE',
           ),
-          1 => 
+        ),
+        10 => 
+        array (
+          0 => 
           array (
             'name' => 'institute_comment',
             'studio' => 'visible',
