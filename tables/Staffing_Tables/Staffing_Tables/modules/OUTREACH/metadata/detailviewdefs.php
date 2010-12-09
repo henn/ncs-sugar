@@ -1,72 +1,268 @@
 <?php
-/*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
- * 
- * This program is free software; you can redistribute it and/or modify it under
- * the terms of the GNU Affero General Public License version 3 as published by the
- * Free Software Foundation with the addition of the following permission added
- * to Section 15 as permitted in Section 7(a): FOR ANY PART OF THE COVERED WORK
- * IN WHICH THE COPYRIGHT IS OWNED BY SUGARCRM, SUGARCRM DISCLAIMS THE WARRANTY
- * OF NON INFRINGEMENT OF THIRD PARTY RIGHTS.
- * 
- * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
- * details.
- * 
- * You should have received a copy of the GNU Affero General Public License along with
- * this program; if not, see http://www.gnu.org/licenses or write to the Free
- * Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301 USA.
- * 
- * You can contact SugarCRM, Inc. headquarters at 10050 North Wolfe Road,
- * SW2-130, Cupertino, CA 95014, USA. or at email address contact@sugarcrm.com.
- * 
- * The interactive user interfaces in modified source and object code versions
- * of this program must display Appropriate Legal Notices, as required under
- * Section 5 of the GNU Affero General Public License version 3.
- * 
- * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
- * these Appropriate Legal Notices must retain the display of the "Powered by
- * SugarCRM" logo. If the display of the logo is not reasonably feasible for
- * technical reasons, the Appropriate Legal Notices must display the words
- * "Powered by SugarCRM".
- ********************************************************************************/
 $module_name = 'ST_OUTREACH';
-$viewdefs[$module_name]['DetailView'] = array(
-'templateMeta' => array('form' => array('buttons'=>array('EDIT', 'DUPLICATE', 'DELETE',
-                                                         )),
-                        'maxColumns' => '2',
-                        'widths' => array(
-                                        array('label' => '10', 'field' => '30'),
-                                        array('label' => '10', 'field' => '30')
-                                        ),
-                        ),
-
-'panels' =>array (
-
+$viewdefs [$module_name] = 
+array (
+  'DetailView' => 
   array (
-    'name',
-    'assigned_user_name',
-  ),
-
-  array (
-	array (
-      'name' => 'date_entered',
-      'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-      'label' => 'LBL_DATE_ENTERED',
-    ),
+    'templateMeta' => 
     array (
-      'name' => 'date_modified',
-      'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-      'label' => 'LBL_DATE_MODIFIED',
+      'form' => 
+      array (
+        'buttons' => 
+        array (
+          0 => 'EDIT',
+          1 => 'DUPLICATE',
+          2 => 'DELETE',
+        ),
+      ),
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'useTabs' => false,
+    ),
+    'panels' => 
+    array (
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 'name',
+          1 => 'assigned_user_name',
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'date_entered',
+            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
+            'label' => 'LBL_DATE_ENTERED',
+          ),
+          1 => 
+          array (
+            'name' => 'date_modified',
+            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
+            'label' => 'LBL_DATE_MODIFIED',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 'description',
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'psu_id',
+            'studio' => 'visible',
+            'label' => 'LBL_PSU_ID',
+          ),
+          1 => 
+          array (
+            'name' => 'tsu_id',
+            'label' => 'LBL_TSU_ID',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outreach_event_id',
+            'label' => 'LBL_OUTREACH_EVENT_ID',
+          ),
+          1 => '',
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outreach_event_date',
+            'label' => 'LBL_OUTREACH_EVENT_DATE',
+          ),
+          1 => '',
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outreach_target',
+            'studio' => 'visible',
+            'label' => 'LBL_OUTREACH_TARGET',
+          ),
+          1 => 
+          array (
+            'name' => 'outreach_target_oth',
+            'label' => 'LBL_OUTREACH_TARGET_OTH',
+          ),
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outreach_type',
+            'studio' => 'visible',
+            'label' => 'LBL_OUTREACH_TYPE',
+          ),
+          1 => 
+          array (
+            'name' => 'outreach_type_oth',
+            'label' => 'LBL_OUTREACH_TYPE_OTH',
+          ),
+        ),
+        8 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outreach_tailored',
+            'studio' => 'visible',
+            'label' => 'LBL_OUTREACH_TAILORED',
+          ),
+          1 => '',
+        ),
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outreach_mode',
+            'studio' => 'visible',
+            'label' => 'LBL_OUTREACH_MODE',
+          ),
+          1 => 
+          array (
+            'name' => 'outreach_mode_oth',
+            'label' => 'LBL_OUTREACH_MODE_OTH',
+          ),
+        ),
+        10 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outreach_lang1',
+            'studio' => 'visible',
+            'label' => 'LBL_OUTREACH_LANG1',
+          ),
+          1 => 
+          array (
+            'name' => 'outreach_lang2',
+            'studio' => 'visible',
+            'label' => 'LBL_OUTREACH_LANG2',
+          ),
+        ),
+        11 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outreach_lang_oth',
+            'label' => 'LBL_OUTREACH_LANG_OTH',
+          ),
+          1 => '',
+        ),
+        12 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outreach_race1',
+            'studio' => 'visible',
+            'label' => 'LBL_OUTREACH_RACE1',
+          ),
+          1 => 
+          array (
+            'name' => 'outreach_race2',
+            'studio' => 'visible',
+            'label' => 'LBL_OUTREACH_RACE2',
+          ),
+        ),
+        13 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outreach_race_oth',
+            'label' => 'LBL_OUTREACH_RACE_OTH',
+          ),
+          1 => '',
+        ),
+        14 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outreach_culture1',
+            'studio' => 'visible',
+            'label' => 'LBL_OUTREACH_CULTURE1',
+          ),
+          1 => 
+          array (
+            'name' => 'outreach_culture2',
+            'studio' => 'visible',
+            'label' => 'LBL_OUTREACH_CULTURE2',
+          ),
+        ),
+        15 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outreach_culture_oth',
+            'label' => 'LBL_OUTREACH_CULTURE_OTH',
+          ),
+          1 => '',
+        ),
+        16 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outreach_quantity',
+            'label' => 'LBL_OUTREACH_QUANTITY',
+          ),
+          1 => '',
+        ),
+        17 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outreach_cost',
+            'label' => 'LBL_OUTREACH_COST',
+          ),
+          1 => '',
+        ),
+        18 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outreach_staffing',
+            'label' => 'LBL_OUTREACH_STAFFING',
+          ),
+          1 => '',
+        ),
+        19 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outreach_incident',
+            'studio' => 'visible',
+            'label' => 'LBL_OUTREACH_INCIDENT',
+          ),
+          1 => '',
+        ),
+        20 => 
+        array (
+          0 => 
+          array (
+            'name' => 'incident_id',
+            'label' => 'LBL_INCIDENT_ID',
+          ),
+          1 => '',
+        ),
+      ),
     ),
   ),
-
-  array (
-    'description',
-  ),
-)
 );
 ?>
