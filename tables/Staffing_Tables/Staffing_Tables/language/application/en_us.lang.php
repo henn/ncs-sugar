@@ -44,4 +44,3 @@ $app_list_strings['moduleList']['ST_OUTREACH_STAFF'] = 'Staff Participation Outr
 $app_list_strings['moduleList']['ST_OUTREACH'] = 'Weekly Outreach & Engagement Activities';
 $app_list_strings['moduleList']['ST_STAFF_EXP_MNGMNT_TASKS'] = 'Weekly Staff Expense Management Tasks';
 $app_list_strings['moduleList']['ST_STAFF'] = 'Staff Roster';
-

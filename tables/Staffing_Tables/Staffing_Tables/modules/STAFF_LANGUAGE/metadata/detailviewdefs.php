@@ -37,8 +37,16 @@ array (
       array (
         0 => 
         array (
-          0 => 'name',
-          1 => 'assigned_user_name',
+          0 => 
+          array (
+            'name' => 'name',
+            'label' => 'LBL_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'assigned_user_name',
+            'label' => 'LBL_ASSIGNED_TO_NAME',
+          ),
         ),
         1 => 
         array (
@@ -57,7 +65,12 @@ array (
         ),
         2 => 
         array (
-          0 => 'description',
+          0 => 
+          array (
+            'name' => 'description',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_DESCRIPTION',
+          ),
         ),
         3 => 
         array (
@@ -94,7 +107,11 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_STAFF_LANG',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'staff_lang_oth',
+            'label' => 'LBL_STAFF_LANG_OTH',
+          ),
         ),
       ),
     ),

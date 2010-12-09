@@ -66,6 +66,6 @@ $mod_strings = array (
   'LBL_STAFF_LANGUAGE_ID' => 'Staff Language ID',
   'LBL_STAFF_ID' => 'Staff ID',
   'LBL_STAFF_LANG' => 'Staff Language',
-  'LBL_STAFF_LANG_OTH' => 'Staff Language ID',
+  'LBL_STAFF_LANG_OTH' => 'Staff Language Other',
 );
 ?>
