@@ -43,47 +43,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'city',
-            'label' => 'LBL_CITY',
+            'name' => 'address_id',
+            'label' => 'LBL_ADDRESS_ID',
           ),
+          1 => '',
         ),
         2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'zip',
-            'label' => 'LBL_ZIP',
-          ),
-          1 => 
-          array (
-            'name' => 'zip4',
-            'label' => 'LBL_ZIP4',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'address_description',
-            'studio' => 'visible',
-            'label' => 'LBL_ADDRESS_DESCRIPTION',
-          ),
-          1 => 
-          array (
-            'name' => 'address_description_oth',
-            'label' => 'LBL_ADDRESS_DESCRIPTION_OTH',
-          ),
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'address_type',
-            'studio' => 'visible',
-            'label' => 'LBL_ADDRESS_TYPE',
-          ),
-        ),
-        5 => 
         array (
           0 => 
           array (
@@ -97,30 +62,7 @@ array (
             'label' => 'LBL_ADDRESS_RANK_OTH',
           ),
         ),
-        6 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'address_info_mode',
-            'studio' => 'visible',
-            'label' => 'LBL_ADDRESS_INFO_MODE',
-          ),
-          1 => 
-          array (
-            'name' => 'address_info_mode_oth',
-            'label' => 'LBL_ADDRESS_INFO_MODE_OTH',
-          ),
-        ),
-        8 => 
+        3 => 
         array (
           0 => 
           array (
@@ -134,25 +76,21 @@ array (
             'label' => 'LBL_ADDRESS_INFO_SOURCE_OTH',
           ),
         ),
-        9 => 
+        4 => 
         array (
           0 => 
           array (
-            'name' => 'address_comment',
+            'name' => 'address_info_mode',
             'studio' => 'visible',
-            'label' => 'LBL_ADDRESS_COMMENT',
+            'label' => 'LBL_ADDRESS_INFO_MODE',
           ),
-        ),
-        10 => 
-        array (
-          0 => 
+          1 => 
           array (
-            'name' => 'address_id',
-            'label' => 'LBL_ADDRESS_ID',
+            'name' => 'address_info_mode_oth',
+            'label' => 'LBL_ADDRESS_INFO_MODE_OTH',
           ),
-          1 => '',
         ),
-        11 => 
+        5 => 
         array (
           0 => 
           array (
@@ -165,7 +103,7 @@ array (
             'label' => 'LBL_ADDRESS_INFO_UPDATE',
           ),
         ),
-        12 => 
+        6 => 
         array (
           0 => 
           array (
@@ -178,40 +116,101 @@ array (
             'label' => 'LBL_ADDRESS_END_DATE',
           ),
         ),
-        13 => 
+        7 => 
         array (
           0 => 
+          array (
+            'name' => 'address_type',
+            'studio' => 'visible',
+            'label' => 'LBL_ADDRESS_TYPE',
+          ),
+          1 => 
           array (
             'name' => 'address_type_oth',
             'label' => 'LBL_ADDRESS_TYPE_OTH',
           ),
-          1 => '',
         ),
-        14 => 
+        8 => 
+        array (
+          0 => 
+          array (
+            'name' => 'address_description',
+            'studio' => 'visible',
+            'label' => 'LBL_ADDRESS_DESCRIPTION',
+          ),
+          1 => 
+          array (
+            'name' => 'address_description_oth',
+            'label' => 'LBL_ADDRESS_DESCRIPTION_OTH',
+          ),
+        ),
+        9 => 
         array (
           0 => 
           array (
             'name' => 'address_1',
             'label' => 'LBL_ADDRESS_1',
           ),
-          1 => 
+        ),
+        10 => 
+        array (
+          0 => 
           array (
             'name' => 'address_2',
             'label' => 'LBL_ADDRESS_2',
           ),
         ),
-        15 => 
+        11 => 
         array (
           0 => 
           array (
             'name' => 'unit',
             'label' => 'LBL_UNIT',
           ),
+        ),
+        12 => 
+        array (
+          0 => 
+          array (
+            'name' => 'city',
+            'label' => 'LBL_CITY',
+          ),
           1 => 
           array (
             'name' => 'state',
             'studio' => 'visible',
             'label' => 'LBL_STATE',
+          ),
+        ),
+        13 => 
+        array (
+          0 => 
+          array (
+            'name' => 'zip',
+            'label' => 'LBL_ZIP',
+          ),
+          1 => 
+          array (
+            'name' => 'zip4',
+            'label' => 'LBL_ZIP4',
+          ),
+        ),
+        14 => 
+        array (
+          0 => 
+          array (
+            'name' => 'address_comment',
+            'studio' => 'visible',
+            'label' => 'LBL_ADDRESS_COMMENT',
+          ),
+        ),
+        15 => 
+        array (
+          0 => 
+          array (
+            'name' => 'description',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_DESCRIPTION',
           ),
         ),
       ),

@@ -2,25 +2,49 @@
 $module_name = 'LTT_ADDRESS';
 $listViewDefs [$module_name] = 
 array (
-  'NAME' => 
+  'ADDRESS_ID' => 
   array (
-    'width' => '32%',
-    'label' => 'LBL_NAME',
+    'type' => 'varchar',
+    'label' => 'LBL_ADDRESS_ID',
+    'width' => '10%',
     'default' => true,
-    'link' => true,
   ),
-  'ASSIGNED_USER_NAME' => 
+  'ADDRESS_1' => 
   array (
-    'width' => '9%',
-    'label' => 'LBL_ASSIGNED_TO_NAME',
+    'type' => 'varchar',
+    'label' => 'LBL_ADDRESS_1',
+    'width' => '25%',
+    'default' => true,
+  ),
+  'ADDRESS_2' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_ADDRESS_2',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'UNIT' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_UNIT',
+    'width' => '10%',
     'default' => true,
   ),
   'CITY' => 
   array (
     'type' => 'varchar',
     'label' => 'LBL_CITY',
-    'width' => '10%',
+    'width' => '20%',
     'default' => true,
+  ),
+  'STATE' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_STATE',
+    'sortable' => false,
+    'width' => '20%',
   ),
   'ZIP' => 
   array (
@@ -61,51 +85,10 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'ADDRESS_RANK' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_ADDRESS_RANK',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'ADDRESS_RANK_OTH' => 
+  'ADDRESS_TYPE_OTH' => 
   array (
     'type' => 'varchar',
-    'label' => 'LBL_ADDRESS_RANK_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'ADDRESS_INFO_MODE' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_ADDRESS_INFO_MODE',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'ADDRESS_INFO_MODE_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_ADDRESS_INFO_MODE_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'ADDRESS_INFO_SOURCE' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_ADDRESS_INFO_SOURCE',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'ADDRESS_INFO_SOURCE_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_ADDRESS_INFO_SOURCE_OTH',
+    'label' => 'LBL_ADDRESS_TYPE_OTH',
     'width' => '10%',
     'default' => true,
   ),
@@ -116,28 +99,7 @@ array (
     'studio' => 'visible',
     'label' => 'LBL_ADDRESS_COMMENT',
     'sortable' => false,
-    'width' => '10%',
-  ),
-  'ADDRESS_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_ADDRESS_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'ADDRESS_INFO_DATE' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_ADDRESS_INFO_DATE',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'ADDRESS_INFO_UPDATE' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_ADDRESS_INFO_UPDATE',
-    'width' => '10%',
-    'default' => true,
+    'width' => '25%',
   ),
   'ADDRESS_START_DATE' => 
   array (
@@ -152,43 +114,6 @@ array (
     'label' => 'LBL_ADDRESS_END_DATE',
     'width' => '10%',
     'default' => true,
-  ),
-  'ADDRESS_TYPE_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_ADDRESS_TYPE_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'ADDRESS_1' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_ADDRESS_1',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'ADDRESS_2' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_ADDRESS_2',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'UNIT' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_UNIT',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'STATE' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_STATE',
-    'sortable' => false,
-    'width' => '10%',
   ),
 );
 ?>
