@@ -52,7 +52,7 @@ array (
     'type' => 'varchar',
     'label' => 'LBL_OUTREACH_EVAL_OTH',
     'width' => '10%',
-    'default' => true,
+    'default' => false,
   ),
 );
 ?>

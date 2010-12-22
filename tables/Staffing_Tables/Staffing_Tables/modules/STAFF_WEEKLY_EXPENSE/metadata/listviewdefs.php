@@ -31,13 +31,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'STAFF_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_STAFF_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'WEEK_START_DATE' => 
   array (
     'type' => 'date',
@@ -45,17 +38,10 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'STAFF_PAY' => 
+  'STAFF_ID' => 
   array (
-    'type' => 'decimal',
-    'label' => 'LBL_STAFF_PAY',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'STAFF_HOURS' => 
-  array (
-    'type' => 'decimal',
-    'label' => 'LBL_STAFF_HOURS',
+    'type' => 'varchar',
+    'label' => 'LBL_STAFF_ID',
     'width' => '10%',
     'default' => true,
   ),
@@ -64,14 +50,28 @@ array (
     'type' => 'decimal',
     'label' => 'LBL_STAFF_EXPENSES',
     'width' => '10%',
-    'default' => true,
+    'default' => false,
   ),
   'STAFF_MILES' => 
   array (
     'type' => 'decimal',
     'label' => 'LBL_STAFF_MILES',
     'width' => '10%',
-    'default' => true,
+    'default' => false,
+  ),
+  'STAFF_HOURS' => 
+  array (
+    'type' => 'decimal',
+    'label' => 'LBL_STAFF_HOURS',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'STAFF_PAY' => 
+  array (
+    'type' => 'decimal',
+    'label' => 'LBL_STAFF_PAY',
+    'width' => '10%',
+    'default' => false,
   ),
   'WEEKLY_EXPENSES_COMMENT' => 
   array (
@@ -80,7 +80,7 @@ array (
     'label' => 'LBL_WEEKLY_EXPENSES_COMMENT',
     'sortable' => false,
     'width' => '10%',
-    'default' => true,
+    'default' => false,
   ),
 );
 ?>

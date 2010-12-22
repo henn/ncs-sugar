@@ -52,7 +52,7 @@ array (
     'type' => 'varchar',
     'label' => 'LBL_STAFF_LANG_OTH',
     'width' => '10%',
-    'default' => true,
+    'default' => false,
   ),
 );
 ?>

@@ -24,17 +24,17 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'STAFF_VAL_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_STAFF_VAL_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'STAFF_ID' => 
   array (
     'type' => 'varchar',
     'label' => 'LBL_STAFF_ID',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'STAFF_VAL_ID' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_STAFF_VAL_ID',
     'width' => '10%',
     'default' => true,
   ),
@@ -68,7 +68,7 @@ array (
     'label' => 'LBL_STAFF_VAL_COMMENT',
     'sortable' => false,
     'width' => '10%',
-    'default' => true,
+    'default' => false,
   ),
 );
 ?>

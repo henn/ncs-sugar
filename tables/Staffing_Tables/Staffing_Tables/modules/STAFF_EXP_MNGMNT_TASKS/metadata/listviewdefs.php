@@ -47,13 +47,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'MGMT_TASK_TYPE_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_MGMT_TASK_TYPE_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
   'MGMT_TASK_HRS' => 
   array (
     'type' => 'decimal',
@@ -68,7 +61,14 @@ array (
     'label' => 'LBL_MGMT_TASK_COMMENT',
     'sortable' => false,
     'width' => '10%',
-    'default' => true,
+    'default' => false,
+  ),
+  'MGMT_TASK_TYPE_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_MGMT_TASK_TYPE_OTH',
+    'width' => '10%',
+    'default' => false,
   ),
 );
 ?>
