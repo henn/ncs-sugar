@@ -40,13 +40,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'INSTITUTE_TYPE_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INSTITUTE_TYPE_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
   'INSTITUTE_RELATION' => 
   array (
     'type' => 'enum',
@@ -55,13 +48,6 @@ array (
     'label' => 'LBL_INSTITUTE_RELATION',
     'sortable' => false,
     'width' => '10%',
-  ),
-  'INSTITUTE_RELATION_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INSTITUTE_RELATION_OTH',
-    'width' => '10%',
-    'default' => true,
   ),
   'INSTITUTE_OWNER' => 
   array (
@@ -72,36 +58,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'INSTITUTE_OWNER_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INSTITUTE_OWNER_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'INSTITUTE_SIZE' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INSTITUTE_SIZE',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'INSTITUTE_UNIT' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_INSTITUTE_UNIT',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'INSTITUTE_UNIT_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INSTITUTE_UNIT_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
   'INSTITUTE_INFO_SOURCE' => 
   array (
     'type' => 'enum',
@@ -111,26 +67,35 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'INSTITUTE_INFO_SOURCE_OTH' => 
+  'INSTITUTE_INFO_UPDATE' => 
   array (
-    'type' => 'varchar',
-    'label' => 'LBL_INSTITUTE_INFO_SOURCE_OTH',
+    'type' => 'date',
+    'label' => 'LBL_INSTITUTE_INFO_UPDATE',
     'width' => '10%',
-    'default' => true,
+    'default' => false,
   ),
   'INSTITUTE_INFO_DATE' => 
   array (
     'type' => 'date',
     'label' => 'LBL_INSTITUTE_INFO_DATE',
     'width' => '10%',
-    'default' => true,
+    'default' => false,
   ),
-  'INSTITUTE_INFO_UPDATE' => 
+  'INSTITUTE_UNIT' => 
   array (
-    'type' => 'date',
-    'label' => 'LBL_INSTITUTE_INFO_UPDATE',
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_INSTITUTE_UNIT',
+    'sortable' => false,
     'width' => '10%',
-    'default' => true,
+  ),
+  'INSTITUTE_SIZE' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INSTITUTE_SIZE',
+    'width' => '10%',
+    'default' => false,
   ),
   'INSTITUTE_COMMENT' => 
   array (
@@ -139,7 +104,42 @@ array (
     'label' => 'LBL_INSTITUTE_COMMENT',
     'sortable' => false,
     'width' => '10%',
-    'default' => true,
+    'default' => false,
+  ),
+  'INSTITUTE_INFO_SOURCE_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INSTITUTE_INFO_SOURCE_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'INSTITUTE_UNIT_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INSTITUTE_UNIT_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'INSTITUTE_OWNER_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INSTITUTE_OWNER_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'INSTITUTE_RELATION_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INSTITUTE_RELATION_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'INSTITUTE_TYPE_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INSTITUTE_TYPE_OTH',
+    'width' => '10%',
+    'default' => false,
   ),
 );
 ?>
