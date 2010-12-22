@@ -33,22 +33,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'PHONE_TYPE' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_PHONE_TYPE',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'PHONE_TYPE_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_PHONE_TYPE_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
   'PHONE_ID' => 
   array (
     'type' => 'varchar',
@@ -81,28 +65,19 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'PHONE_RANK' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_PHONE_RANK',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'PHONE_RANK_OTH' => 
+  'PHONE_NBR' => 
   array (
     'type' => 'varchar',
-    'label' => 'LBL_PHONE_RANK_OTH',
+    'label' => 'LBL_PHONE_NBR',
     'width' => '10%',
     'default' => true,
   ),
-  'PHONE_INFO_SOURCE' => 
+  'PHONE_COMMENT' => 
   array (
-    'type' => 'enum',
-    'default' => true,
+    'type' => 'text',
+    'default' => false,
     'studio' => 'visible',
-    'label' => 'LBL_PHONE_INFO_SOURCE',
+    'label' => 'LBL_PHONE_COMMENT',
     'sortable' => false,
     'width' => '10%',
   ),
@@ -111,23 +86,48 @@ array (
     'type' => 'varchar',
     'label' => 'LBL_PHONE_INFO_SOURCE_OTH',
     'width' => '10%',
-    'default' => true,
+    'default' => false,
   ),
-  'PHONE_COMMENT' => 
+  'PHONE_INFO_SOURCE' => 
   array (
-    'type' => 'text',
-    'default' => true,
+    'type' => 'enum',
+    'default' => false,
     'studio' => 'visible',
-    'label' => 'LBL_PHONE_COMMENT',
+    'label' => 'LBL_PHONE_INFO_SOURCE',
     'sortable' => false,
     'width' => '10%',
   ),
-  'PHONE_NBR' => 
+  'PHONE_RANK_OTH' => 
   array (
     'type' => 'varchar',
-    'label' => 'LBL_PHONE_NBR',
+    'label' => 'LBL_PHONE_RANK_OTH',
     'width' => '10%',
-    'default' => true,
+    'default' => false,
+  ),
+  'PHONE_RANK' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_PHONE_RANK',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'PHONE_TYPE' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_PHONE_TYPE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'PHONE_TYPE_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_PHONE_TYPE_OTH',
+    'width' => '10%',
+    'default' => false,
   ),
 );
 ?>

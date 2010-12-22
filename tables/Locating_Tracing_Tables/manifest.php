@@ -50,9 +50,9 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'project_Locating_Tracing_Tables',
-          'published_date' => '2010-12-09 13:17:31',
+          'published_date' => '2010-12-22 20:26:37',
           'type' => 'module',
-          'version' => '1291900651',
+          'version' => '1293049597',
           'remove_tables' => 'prompt',
           );
 $installdefs = array (
