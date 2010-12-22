@@ -54,13 +54,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'RELATION_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_RELATION_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
   'IS_ACTIVE' => 
   array (
     'type' => 'enum',
@@ -69,6 +62,13 @@ array (
     'label' => 'LBL_IS_ACTIVE',
     'sortable' => false,
     'width' => '10%',
+  ),
+  'RELATION_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_RELATION_OTH',
+    'width' => '10%',
+    'default' => false,
   ),
 );
 ?>

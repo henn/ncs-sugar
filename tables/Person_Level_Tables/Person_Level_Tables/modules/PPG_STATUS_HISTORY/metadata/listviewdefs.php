@@ -49,15 +49,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'PPG_COMMENT' => 
-  array (
-    'type' => 'text',
-    'studio' => 'visible',
-    'label' => 'LBL_PPG_COMMENT',
-    'sortable' => false,
-    'width' => '10%',
-    'default' => true,
-  ),
   'PPG_STATUS_DATE' => 
   array (
     'type' => 'date',
@@ -65,19 +56,28 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  'PPG_COMMENT' => 
+  array (
+    'type' => 'text',
+    'studio' => 'visible',
+    'label' => 'LBL_PPG_COMMENT',
+    'sortable' => false,
+    'width' => '10%',
+    'default' => false,
+  ),
   'PPG_INFO_SOURCE_OTH' => 
   array (
     'type' => 'varchar',
     'label' => 'LBL_PPG_INFO_SOURCE_OTH',
     'width' => '10%',
-    'default' => true,
+    'default' => false,
   ),
   'PPG_INFO_MODE_OTH' => 
   array (
     'type' => 'varchar',
     'label' => 'LBL_PPG_INFO_MODE_OTH',
     'width' => '10%',
-    'default' => true,
+    'default' => false,
   ),
 );
 ?>

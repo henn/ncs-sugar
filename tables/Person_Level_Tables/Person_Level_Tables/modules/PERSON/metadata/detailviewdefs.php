@@ -79,6 +79,34 @@ array (
         array (
           0 => 
           array (
+            'name' => 'prefix',
+            'studio' => 'visible',
+            'label' => 'LBL_PREFIX',
+          ),
+          1 => 
+          array (
+            'name' => 'suffix',
+            'studio' => 'visible',
+            'label' => 'LBL_SUFFIX',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'maiden_name',
+            'label' => 'LBL_MAIDEN_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'title',
+            'label' => 'LBL_TITLE',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
             'name' => 'sex',
             'studio' => 'visible',
             'label' => 'LBL_SEX',
@@ -90,7 +118,7 @@ array (
             'label' => 'LBL_PERSON_DOB',
           ),
         ),
-        4 => 
+        6 => 
         array (
           0 => 
           array (
@@ -104,7 +132,7 @@ array (
             'label' => 'LBL_PREF_CONTACT_OTH',
           ),
         ),
-        5 => 
+        7 => 
         array (
           0 => 
           array (
@@ -118,7 +146,7 @@ array (
             'label' => 'LBL_PERSON_LANG_OTHER',
           ),
         ),
-        6 => 
+        8 => 
         array (
           0 => 
           array (
@@ -132,7 +160,7 @@ array (
             'label' => 'LBL_MARISTAT_OTH',
           ),
         ),
-        7 => 
+        9 => 
         array (
           0 => 
           array (
@@ -147,7 +175,7 @@ array (
             'label' => 'LBL_MOVE_INFO',
           ),
         ),
-        8 => 
+        10 => 
         array (
           0 => 
           array (
@@ -157,7 +185,7 @@ array (
           ),
           1 => '',
         ),
-        9 => 
+        11 => 
         array (
           0 => 
           array (
@@ -171,7 +199,7 @@ array (
             'label' => 'LBL_WHEN_MOVE',
           ),
         ),
-        10 => 
+        12 => 
         array (
           0 => 
           array (
@@ -180,7 +208,7 @@ array (
           ),
           1 => '',
         ),
-        11 => 
+        13 => 
         array (
           0 => 
           array (
@@ -190,7 +218,7 @@ array (
           ),
           1 => '',
         ),
-        12 => 
+        14 => 
         array (
           0 => 
           array (
@@ -204,7 +232,7 @@ array (
             'label' => 'LBL_P_INFO_SOURCE_OTH',
           ),
         ),
-        13 => 
+        15 => 
         array (
           0 => 
           array (
@@ -217,7 +245,7 @@ array (
             'label' => 'LBL_P_INFO_DATE',
           ),
         ),
-        14 => 
+        16 => 
         array (
           0 => 
           array (
@@ -226,7 +254,7 @@ array (
             'label' => 'LBL_PERSON_COMMENT',
           ),
         ),
-        15 => 
+        17 => 
         array (
           0 => 
           array (

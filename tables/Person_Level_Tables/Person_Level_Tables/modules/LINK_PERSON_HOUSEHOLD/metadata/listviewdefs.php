@@ -68,7 +68,7 @@ array (
     'type' => 'varchar',
     'label' => 'LBL_HH_RANK_OTH',
     'width' => '10%',
-    'default' => true,
+    'default' => false,
   ),
 );
 ?>

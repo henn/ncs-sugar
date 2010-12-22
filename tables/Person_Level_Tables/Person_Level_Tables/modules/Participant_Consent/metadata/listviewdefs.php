@@ -33,15 +33,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'CONSENT_TRANSLATE' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_CONSENT_TRANSLATE',
-    'sortable' => false,
-    'width' => '10%',
-  ),
   'PERSON_WTHDRW_CONSENT_ID' => 
   array (
     'type' => 'varchar',
@@ -65,31 +56,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'CONSENT_LANGUAGE_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_CONSENT_LANGUAGE_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'CONSENT_LANGUAGE' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_CONSENT_LANGUAGE',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'CONSENT_WITHDRAW_TYPE' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_CONSENT_WITHDRAW_TYPE',
-    'sortable' => false,
-    'width' => '10%',
-  ),
   'CONSENT_WITHDRAW_DATE' => 
   array (
     'type' => 'varchar',
@@ -105,13 +71,6 @@ array (
     'label' => 'LBL_CONSENT_WITHDRAW',
     'sortable' => false,
     'width' => '10%',
-  ),
-  'CONSENT_DATE' => 
-  array (
-    'type' => 'date',
-    'label' => 'LBL_CONSENT_DATE',
-    'width' => '10%',
-    'default' => true,
   ),
   'CONSENT_GIVEN' => 
   array (
@@ -138,15 +97,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'CONSENT_COMMENTS' => 
-  array (
-    'type' => 'text',
-    'studio' => 'visible',
-    'label' => 'LBL_CONSENT_COMMENTS',
-    'sortable' => false,
-    'width' => '10%',
-    'default' => true,
-  ),
   'NAME' => 
   array (
     'width' => '32%',
@@ -159,6 +109,56 @@ array (
     'width' => '9%',
     'label' => 'LBL_ASSIGNED_TO_NAME',
     'default' => true,
+  ),
+  'CONSENT_COMMENTS' => 
+  array (
+    'type' => 'text',
+    'studio' => 'visible',
+    'label' => 'LBL_CONSENT_COMMENTS',
+    'sortable' => false,
+    'width' => '10%',
+    'default' => false,
+  ),
+  'CONSENT_DATE' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_CONSENT_DATE',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'CONSENT_WITHDRAW_TYPE' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_CONSENT_WITHDRAW_TYPE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'CONSENT_LANGUAGE' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_CONSENT_LANGUAGE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'CONSENT_TRANSLATE' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_CONSENT_TRANSLATE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'CONSENT_LANGUAGE_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_CONSENT_LANGUAGE_OTH',
+    'width' => '10%',
+    'default' => false,
   ),
 );
 ?>

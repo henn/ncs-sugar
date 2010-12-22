@@ -53,13 +53,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'P_TYPE_OTH' => 
-  array (
-    'type' => 'varchar',
-    'default' => true,
-    'label' => 'LBL_P_TYPE_OTH',
-    'width' => '10%',
-  ),
   'STATUS_INFO_SOURCE' => 
   array (
     'type' => 'enum',
@@ -69,13 +62,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'STATUS_INFO_SOURCE_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_STATUS_INFO_SOURCE_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
   'STATUS_INFO_MODE' => 
   array (
     'type' => 'enum',
@@ -84,13 +70,6 @@ array (
     'label' => 'LBL_STATUS_INFO_MODE',
     'sortable' => false,
     'width' => '10%',
-  ),
-  'STATUS_INFO_MODE_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_STATUS_INFO_MODE_OTH',
-    'width' => '10%',
-    'default' => true,
   ),
   'STATUS_INFO_DATE' => 
   array (
@@ -124,13 +103,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'PID_ENTRY_OTHER' => 
-  array (
-    'type' => 'varchar',
-    'default' => true,
-    'label' => 'LBL_PID_ENTRY_OTHER',
-    'width' => '10%',
-  ),
   'PID_AGE_ELIG' => 
   array (
     'type' => 'enum',
@@ -147,7 +119,35 @@ array (
     'label' => 'LBL_PID_COMMENT',
     'sortable' => false,
     'width' => '10%',
-    'default' => true,
+    'default' => false,
+  ),
+  'PID_ENTRY_OTHER' => 
+  array (
+    'type' => 'varchar',
+    'default' => false,
+    'label' => 'LBL_PID_ENTRY_OTHER',
+    'width' => '10%',
+  ),
+  'STATUS_INFO_MODE_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_STATUS_INFO_MODE_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'STATUS_INFO_SOURCE_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_STATUS_INFO_SOURCE_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'P_TYPE_OTH' => 
+  array (
+    'type' => 'varchar',
+    'default' => false,
+    'label' => 'LBL_P_TYPE_OTH',
+    'width' => '10%',
   ),
 );
 ?>

@@ -50,9 +50,9 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'project_Person_Level_Tables',
-          'published_date' => '2010-12-09 17:15:57',
+          'published_date' => '2010-12-22 20:29:04',
           'type' => 'module',
-          'version' => '1291914957',
+          'version' => '1293049744',
           'remove_tables' => 'prompt',
           );
 $installdefs = array (

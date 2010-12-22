@@ -40,13 +40,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'VIS_LANGUAGE_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_VIS_LANGUAGE_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
   'VIS_WHO_CONSENTED' => 
   array (
     'type' => 'enum',
@@ -65,15 +58,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'VIS_COMMENTS' => 
-  array (
-    'type' => 'text',
-    'studio' => 'visible',
-    'label' => 'LBL_VIS_COMMENTS',
-    'sortable' => false,
-    'width' => '10%',
-    'default' => true,
-  ),
   'VIS_LANGUAGE' => 
   array (
     'type' => 'enum',
@@ -82,6 +66,22 @@ array (
     'label' => 'LBL_VIS_LANGUAGE',
     'sortable' => false,
     'width' => '10%',
+  ),
+  'VIS_COMMENTS' => 
+  array (
+    'type' => 'text',
+    'studio' => 'visible',
+    'label' => 'LBL_VIS_COMMENTS',
+    'sortable' => false,
+    'width' => '10%',
+    'default' => false,
+  ),
+  'VIS_LANGUAGE_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_VIS_LANGUAGE_OTH',
+    'width' => '10%',
+    'default' => false,
   ),
 );
 ?>
