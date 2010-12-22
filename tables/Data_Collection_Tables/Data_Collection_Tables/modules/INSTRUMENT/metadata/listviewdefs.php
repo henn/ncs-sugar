@@ -31,38 +31,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'INSTRUMENT_VERSION' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INSTRUMENT_VERSION',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'INS_METHOD' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_INS_METHOD',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'INS_MODE' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_INS_MODE',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'INS_MODE_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INS_MODE_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
   'INS_DATE_START' => 
   array (
     'type' => 'date',
@@ -91,22 +59,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'INS_BREAKOFF' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_INS_BREAKOFF',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'INSTRUMENT_TYPE_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INSTRUMENT_TYPE_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
   'SUP_REVIEW' => 
   array (
     'type' => 'enum',
@@ -119,7 +71,7 @@ array (
   'DATA_PROBLEM' => 
   array (
     'type' => 'enum',
-    'default' => true,
+    'default' => false,
     'studio' => 'visible',
     'label' => 'LBL_DATA_PROBLEM',
     'sortable' => false,
@@ -128,11 +80,59 @@ array (
   'INSTRU_COMMENT' => 
   array (
     'type' => 'text',
-    'default' => true,
+    'default' => false,
     'studio' => 'visible',
     'label' => 'LBL_INSTRU_COMMENT',
     'sortable' => false,
     'width' => '10%',
+  ),
+  'INSTRUMENT_TYPE_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INSTRUMENT_TYPE_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'INS_BREAKOFF' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_INS_BREAKOFF',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'INS_MODE_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INS_MODE_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'INS_MODE' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_INS_MODE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'INS_METHOD' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_INS_METHOD',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'INSTRUMENT_VERSION' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INSTRUMENT_VERSION',
+    'width' => '10%',
+    'default' => false,
   ),
 );
 ?>

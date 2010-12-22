@@ -31,28 +31,12 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'INCTYPE_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INCTYPE_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
   'INC_CONTACT_PERSON' => 
   array (
     'type' => 'varchar',
     'label' => 'LBL_INC_CONTACT_PERSON',
     'width' => '10%',
     'default' => true,
-  ),
-  'INC_DESCRIPTION' => 
-  array (
-    'type' => 'text',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_INC_DESCRIPTION',
-    'sortable' => false,
-    'width' => '10%',
   ),
   'INC_ACTION' => 
   array (
@@ -62,6 +46,13 @@ array (
     'label' => 'LBL_INC_ACTION',
     'sortable' => false,
     'width' => '10%',
+  ),
+  'INCIDENT_DATE' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_INCIDENT_DATE',
+    'width' => '10%',
+    'default' => true,
   ),
   'INCIDENT_TIME' => 
   array (
@@ -98,76 +89,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'INC_RECIP_IS_PARTICIPANT' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INC_RECIP_IS_PARTICIPANT',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'INC_RECIP_IS_DU' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INC_RECIP_IS_DU',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'INC_RECIP_IS_STAFF' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INC_RECIP_IS_STAFF',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'INC_RECIP_IS_FAMILY' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INC_RECIP_IS_FAMILY',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'INC_RECIP_IS_ACQUAINTANCE' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INC_RECIP_IS_ACQUAINTANCE',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'INCLOSS_CMPTR_MODEL' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INCLOSS_CMPTR_MODEL',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'INCLOSS_CMPTR_SN' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INCLOSS_CMPTR_SN',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'INCLOSS_CMPTR_DECAL' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INCLOSS_CMPTR_DECAL',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'INCLOSS_REM_MEDIA' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INCLOSS_REM_MEDIA',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'INCLOSS_PAPER' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INCLOSS_PAPER',
-    'width' => '10%',
-    'default' => true,
-  ),
   'INC_REPORTED' => 
   array (
     'type' => 'enum',
@@ -182,7 +103,102 @@ array (
     'type' => 'varchar',
     'label' => 'LBL_INCLOSS_OTH',
     'width' => '10%',
-    'default' => true,
+    'default' => false,
+  ),
+  'INCLOSS_PAPER' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INCLOSS_PAPER',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'INCLOSS_CMPTR_DECAL' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INCLOSS_CMPTR_DECAL',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'INCLOSS_REM_MEDIA' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INCLOSS_REM_MEDIA',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'INCLOSS_CMPTR_SN' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INCLOSS_CMPTR_SN',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'INC_RECIP_IS_STAFF' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INC_RECIP_IS_STAFF',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'INCLOSS_CMPTR_MODEL' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INCLOSS_CMPTR_MODEL',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'INC_RECIP_IS_ACQUAINTANCE' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INC_RECIP_IS_ACQUAINTANCE',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'INC_RECIP_IS_FAMILY' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INC_RECIP_IS_FAMILY',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'INC_RECIP_IS_DU' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INC_RECIP_IS_DU',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'INC_RECIP_IS_PARTICIPANT' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INC_RECIP_IS_PARTICIPANT',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'INC_RECIP_IS_OTHER' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_INC_RECIP_IS_OTHER',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'INCTYPE_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INCTYPE_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'INC_DESCRIPTION' => 
+  array (
+    'type' => 'text',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_INC_DESCRIPTION',
+    'sortable' => false,
+    'width' => '10%',
   ),
 );
 ?>

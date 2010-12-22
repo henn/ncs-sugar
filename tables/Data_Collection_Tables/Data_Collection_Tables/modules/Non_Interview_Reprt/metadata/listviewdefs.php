@@ -38,22 +38,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'NIR_TYPE_PERSON' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_NIR_TYPE_PERSON',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'NIR_TYPE_PERSON_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_NIR_TYPE_PERSON_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
   'NIR_VAC_INFO' => 
   array (
     'type' => 'enum',
@@ -62,13 +46,6 @@ array (
     'label' => 'LBL_NIR_VAC_INFO',
     'sortable' => false,
     'width' => '10%',
-  ),
-  'NIR_VAC_INFO_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_NIR_VAC_INFO_OTH',
-    'width' => '10%',
-    'default' => true,
   ),
   'NIR_NOACCESS' => 
   array (
@@ -79,44 +56,12 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'NIR_NOACCESS_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_NIR_NOACCESS_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
   'NIR_ACCESS_ATTEMPT' => 
   array (
     'type' => 'enum',
     'default' => true,
     'studio' => 'visible',
     'label' => 'LBL_NIR_ACCESS_ATTEMPT',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'NIR_ACCESS_ATTEMPT_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_NIR_ACCESS_ATTEMPT_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'NIR' => 
-  array (
-    'type' => 'text',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_NIR',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'NIR_OTHER' => 
-  array (
-    'type' => 'text',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_NIR_OTHER',
     'sortable' => false,
     'width' => '10%',
   ),
@@ -128,13 +73,6 @@ array (
     'label' => 'LBL_COG_INFORM_RELATION',
     'sortable' => false,
     'width' => '10%',
-  ),
-  'COG_INFORM_RELATION_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_COG_INFORM_RELATION_OTH',
-    'width' => '10%',
-    'default' => true,
   ),
   'COG_DIS_DESC' => 
   array (
@@ -172,13 +110,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'WHO_REFUSED_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_WHO_REFUSED_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
   'REFUSER_STRENGTH' => 
   array (
     'type' => 'enum',
@@ -188,38 +119,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'REF_ACTION' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_REF_ACTION',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'DECEASED_INFORM_RELATION' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_DECEASED_INFORM_RELATION',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'DECEASED_INFORM_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_DECEASED_INFORM_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'YOD' => 
-  array (
-    'type' => 'int',
-    'label' => 'LBL_YOD',
-    'width' => '10%',
-    'default' => true,
-  ),
   'REASON_UNAVAIL' => 
   array (
     'type' => 'enum',
@@ -228,13 +127,6 @@ array (
     'label' => 'LBL_REASON_UNAVAIL',
     'sortable' => false,
     'width' => '10%',
-  ),
-  'REASON_UNAVAIL_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_REASON_UNAVAIL_OTH',
-    'width' => '10%',
-    'default' => true,
   ),
   'DATE_MOVED' => 
   array (
@@ -252,35 +144,143 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'MOVED_INFORM_RELATION' => 
+  'STATE_DEATH' => 
   array (
     'type' => 'enum',
-    'default' => true,
+    'default' => false,
     'studio' => 'visible',
-    'label' => 'LBL_MOVED_INFORM_RELATION',
+    'label' => 'LBL_STATE_DEATH',
     'sortable' => false,
     'width' => '10%',
-  ),
-  'MOVED_RELATION_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_MOVED_RELATION_OTH',
-    'width' => '10%',
-    'default' => true,
   ),
   'MOVED_LENGTH_TIME' => 
   array (
     'type' => 'decimal',
     'label' => 'LBL_MOVED_LENGTH_TIME',
     'width' => '10%',
-    'default' => true,
+    'default' => false,
   ),
-  'STATE_DEATH' => 
+  'MOVED_RELATION_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_MOVED_RELATION_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'MOVED_INFORM_RELATION' => 
   array (
     'type' => 'enum',
-    'default' => true,
+    'default' => false,
     'studio' => 'visible',
-    'label' => 'LBL_STATE_DEATH',
+    'label' => 'LBL_MOVED_INFORM_RELATION',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'REASON_UNAVAIL_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_REASON_UNAVAIL_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'YOD' => 
+  array (
+    'type' => 'int',
+    'label' => 'LBL_YOD',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'DECEASED_INFORM_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_DECEASED_INFORM_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'DECEASED_INFORM_RELATION' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_DECEASED_INFORM_RELATION',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'REF_ACTION' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_REF_ACTION',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'WHO_REFUSED_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_WHO_REFUSED_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'NIR' => 
+  array (
+    'type' => 'text',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_NIR',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'COG_INFORM_RELATION_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_COG_INFORM_RELATION_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'NIR_OTHER' => 
+  array (
+    'type' => 'text',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_NIR_OTHER',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'NIR_ACCESS_ATTEMPT_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_NIR_ACCESS_ATTEMPT_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'NIR_NOACCESS_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_NIR_NOACCESS_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'NIR_VAC_INFO_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_NIR_VAC_INFO_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'NIR_TYPE_PERSON_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_NIR_TYPE_PERSON_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'NIR_TYPE_PERSON' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_NIR_TYPE_PERSON',
     'sortable' => false,
     'width' => '10%',
   ),

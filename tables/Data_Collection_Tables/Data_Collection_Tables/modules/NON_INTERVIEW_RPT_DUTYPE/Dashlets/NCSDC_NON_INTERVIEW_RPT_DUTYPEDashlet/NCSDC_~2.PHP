@@ -41,11 +41,22 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * All Rights Reserved.
  * Contributor(s): ______________________________________..
  ********************************************************************************/
- 
-global $app_strings;
 
-$dashletMeta['NCSDC_NON_INTERVIEW_RPT_DUTYPEDashlet'] = array('module'		=> 'NCSDC_NON_INTERVIEW_RPT_DUTYPE',
-										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'NCSDC_NON_INTERVIEW_RPT_DUTYPE'), 
-                                          'description' => 'A customizable view into NCSDC_NON_INTERVIEW_RPT_DUTYPE',
-                                          'icon'        => 'icon_NCSDC_NON_INTERVIEW_RPT_DUTYPE_32.gif',
-                                          'category'    => 'Module Views');
+require_once('include/Dashlets/DashletGeneric.php');
+require_once('modules/NCSDC_NON_INTERVIEW_RPT_DUTYPE/NCSDC_NON_INTERVIEW_RPT_DUTYPE.php');
+
+class NCSDC_NON_INTERVIEW_RPT_DUTYPEDashlet extends DashletGeneric { 
+    function NCSDC_NON_INTERVIEW_RPT_DUTYPEDashlet($id, $def = null) {
+		global $current_user, $app_strings;
+		require('modules/NCSDC_NON_INTERVIEW_RPT_DUTYPE/metadata/dashletviewdefs.php');
+
+        parent::DashletGeneric($id, $def);
+
+        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'NCSDC_NON_INTERVIEW_RPT_DUTYPE');
+
+        $this->searchFields = $dashletData['NCSDC_NON_INTERVIEW_RPT_DUTYPEDashlet']['searchFields'];
+        $this->columns = $dashletData['NCSDC_NON_INTERVIEW_RPT_DUTYPEDashlet']['columns'];
+
+        $this->seedBean = new NCSDC_NON_INTERVIEW_RPT_DUTYPE();        
+    }
+}

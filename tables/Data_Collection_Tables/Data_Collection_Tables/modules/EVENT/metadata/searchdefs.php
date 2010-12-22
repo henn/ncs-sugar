@@ -1,59 +1,183 @@
 <?php
-/*********************************************************************************
- * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
- * 
- * This program is free software; you can redistribute it and/or modify it under
- * the terms of the GNU Affero General Public License version 3 as published by the
- * Free Software Foundation with the addition of the following permission added
- * to Section 15 as permitted in Section 7(a): FOR ANY PART OF THE COVERED WORK
- * IN WHICH THE COPYRIGHT IS OWNED BY SUGARCRM, SUGARCRM DISCLAIMS THE WARRANTY
- * OF NON INFRINGEMENT OF THIRD PARTY RIGHTS.
- * 
- * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
- * details.
- * 
- * You should have received a copy of the GNU Affero General Public License along with
- * this program; if not, see http://www.gnu.org/licenses or write to the Free
- * Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301 USA.
- * 
- * You can contact SugarCRM, Inc. headquarters at 10050 North Wolfe Road,
- * SW2-130, Cupertino, CA 95014, USA. or at email address contact@sugarcrm.com.
- * 
- * The interactive user interfaces in modified source and object code versions
- * of this program must display Appropriate Legal Notices, as required under
- * Section 5 of the GNU Affero General Public License version 3.
- * 
- * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
- * these Appropriate Legal Notices must retain the display of the "Powered by
- * SugarCRM" logo. If the display of the logo is not reasonably feasible for
- * technical reasons, the Appropriate Legal Notices must display the words
- * "Powered by SugarCRM".
- ********************************************************************************/
-/*
- * Created on May 29, 2007
- *
- * To change the template for this generated file go to
- * Window - Preferences - PHPeclipse - PHP - Code Templates
- */
 $module_name = 'NCSDC_EVENT';
-  $searchdefs[$module_name] = array(
-					'templateMeta' => array(
-							'maxColumns' => '3', 
-                            'widths' => array('label' => '10', 'field' => '30'),                 
-                           ),
-                    'layout' => array(  					
-						'basic_search' => array(
-							'name', 
-							array('name'=>'current_user_only', 'label'=>'LBL_CURRENT_USER_FILTER', 'type'=>'bool'),
-							),
-						'advanced_search' => array(
-							'name', 
-							array('name' => 'assigned_user_id', 'label' => 'LBL_ASSIGNED_TO', 'type' => 'enum', 'function' => array('name' => 'get_user_array', 'params' => array(false))),
-						),
-					),
- 			   );
+$searchdefs [$module_name] = 
+array (
+  'layout' => 
+  array (
+    'basic_search' => 
+    array (
+      'name' => 
+      array (
+        'name' => 'name',
+        'default' => true,
+        'width' => '10%',
+      ),
+      'current_user_only' => 
+      array (
+        'name' => 'current_user_only',
+        'label' => 'LBL_CURRENT_USER_FILTER',
+        'type' => 'bool',
+        'default' => true,
+        'width' => '10%',
+      ),
+      'event_id' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_EVENT_ID',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_id',
+      ),
+      'event_type_oth' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_EVENT_TYPE_OTH',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_type_oth',
+      ),
+      'event_disp_cat' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_EVENT_DISP_CAT',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'event_disp_cat',
+      ),
+      'event_start_date' => 
+      array (
+        'type' => 'date',
+        'label' => 'LBL_EVENT_START_DATE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_start_date',
+      ),
+      'event_start_time' => 
+      array (
+        'type' => 'datetimecombo',
+        'label' => 'LBL_EVENT_START_TIME',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_start_time',
+      ),
+      'event_end_date' => 
+      array (
+        'type' => 'date',
+        'label' => 'LBL_EVENT_END_DATE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_end_date',
+      ),
+      'event_end_time' => 
+      array (
+        'type' => 'datetimecombo',
+        'label' => 'LBL_EVENT_END_TIME',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_end_time',
+      ),
+      'event_breakoff' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_EVENT_BREAKOFF',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'event_breakoff',
+      ),
+      'event_incentive_type' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_EVENT_INCENTIVE_TYPE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'event_incentive_type',
+      ),
+      'event_incent_cash' => 
+      array (
+        'type' => 'decimal',
+        'label' => 'LBL_EVENT_INCENT_CASH',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_incent_cash',
+      ),
+      'event_inc_nocash' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_EVENT_INC_NOCASH',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_inc_nocash',
+      ),
+      'event_comment' => 
+      array (
+        'type' => 'text',
+        'studio' => 'visible',
+        'label' => 'LBL_EVENT_COMMENT',
+        'sortable' => false,
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_comment',
+      ),
+      'event_type' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_EVENT_TYPE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'event_type',
+      ),
+      'event_repeat_key' => 
+      array (
+        'type' => 'int',
+        'label' => 'LBL_EVENT_REPEAT_KEY',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_repeat_key',
+      ),
+      'event_disp' => 
+      array (
+        'type' => 'int',
+        'label' => 'LBL_EVENT_DISP',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_disp',
+      ),
+    ),
+    'advanced_search' => 
+    array (
+      0 => 'name',
+      1 => 
+      array (
+        'name' => 'assigned_user_id',
+        'label' => 'LBL_ASSIGNED_TO',
+        'type' => 'enum',
+        'function' => 
+        array (
+          'name' => 'get_user_array',
+          'params' => 
+          array (
+            0 => false,
+          ),
+        ),
+      ),
+    ),
+  ),
+  'templateMeta' => 
+  array (
+    'maxColumns' => '3',
+    'widths' => 
+    array (
+      'label' => '10',
+      'field' => '30',
+    ),
+  ),
+);
 ?>

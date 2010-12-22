@@ -31,20 +31,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'EVENT_START_DATE' => 
-  array (
-    'type' => 'date',
-    'label' => 'LBL_EVENT_START_DATE',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'EVENT_END_DATE' => 
-  array (
-    'type' => 'date',
-    'label' => 'LBL_EVENT_END_DATE',
-    'width' => '10%',
-    'default' => true,
-  ),
   'EVENT_START_TIME' => 
   array (
     'type' => 'datetimecombo',
@@ -58,15 +44,6 @@ array (
     'label' => 'LBL_EVENT_END_TIME',
     'width' => '10%',
     'default' => true,
-  ),
-  'EVENT_BREAKOFF' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_EVENT_BREAKOFF',
-    'sortable' => false,
-    'width' => '10%',
   ),
   'EVENT_INCENTIVE_TYPE' => 
   array (
@@ -91,21 +68,44 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  'EVENT_COMMENT' => 
+  array (
+    'type' => 'text',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_EVENT_COMMENT',
+    'sortable' => false,
+    'width' => '10%',
+  ),
   'EVENT_TYPE_OTH' => 
   array (
     'type' => 'varchar',
     'label' => 'LBL_EVENT_TYPE_OTH',
     'width' => '10%',
-    'default' => true,
+    'default' => false,
   ),
-  'EVENT_COMMENT' => 
+  'EVENT_BREAKOFF' => 
   array (
-    'type' => 'text',
-    'default' => true,
+    'type' => 'enum',
+    'default' => false,
     'studio' => 'visible',
-    'label' => 'LBL_EVENT_COMMENT',
+    'label' => 'LBL_EVENT_BREAKOFF',
     'sortable' => false,
     'width' => '10%',
+  ),
+  'EVENT_END_DATE' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_EVENT_END_DATE',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'EVENT_START_DATE' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_EVENT_START_DATE',
+    'width' => '10%',
+    'default' => false,
   ),
 );
 ?>

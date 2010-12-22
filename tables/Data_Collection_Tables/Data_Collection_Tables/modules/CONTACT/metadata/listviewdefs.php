@@ -31,47 +31,10 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'CONTACT_DISP' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_CONTACT_DISP',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'CONTACT_TYPE' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_CONTACT_TYPE',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'CONTACT_TYPE_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_CONTACT_TYPE_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
   'CONTACT_DATE' => 
   array (
     'type' => 'varchar',
     'label' => 'LBL_CONTACT_DATE',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'CONTACT_START_TIME' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_CONTACT_START_TIME',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'CONTACT_END_TIME' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_CONTACT_END_TIME',
     'width' => '10%',
     'default' => true,
   ),
@@ -84,29 +47,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'CONTACT_LANG_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_CONTACT_LANG_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'CONTACT_INTERPRET_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_CONTACT_INTERPRET_OTH',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'CONTACT_INTERPRET' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_CONTACT_INTERPRET',
-    'sortable' => false,
-    'width' => '10%',
-  ),
   'CONTACT_LOCATION' => 
   array (
     'type' => 'enum',
@@ -115,13 +55,6 @@ array (
     'label' => 'LBL_CONTACT_LOCATION',
     'sortable' => false,
     'width' => '10%',
-  ),
-  'CONTACT_LOCATION_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_CONTACT_LOCATION_OTH',
-    'width' => '10%',
-    'default' => true,
   ),
   'CONTACT_PRIVATE' => 
   array (
@@ -132,24 +65,10 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'CONTACT_PRIVATE_DETAIL' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_CONTACT_PRIVATE_DETAIL',
-    'width' => '10%',
-    'default' => true,
-  ),
   'CONTACT_DISTANCE' => 
   array (
     'type' => 'varchar',
     'label' => 'LBL_CONTACT_DISTANCE',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'WHO_CONTACT_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_WHO_CONTACT_OTH',
     'width' => '10%',
     'default' => true,
   ),
@@ -165,11 +84,92 @@ array (
   'CONTACT_COMMENT' => 
   array (
     'type' => 'text',
-    'default' => true,
+    'default' => false,
     'studio' => 'visible',
     'label' => 'LBL_CONTACT_COMMENT',
     'sortable' => false,
     'width' => '10%',
+  ),
+  'WHO_CONTACT_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_WHO_CONTACT_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'CONTACT_PRIVATE_DETAIL' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_CONTACT_PRIVATE_DETAIL',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'CONTACT_LOCATION_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_CONTACT_LOCATION_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'CONTACT_INTERPRET' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_CONTACT_INTERPRET',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'CONTACT_INTERPRET_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_CONTACT_INTERPRET_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'CONTACT_LANG_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_CONTACT_LANG_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'CONTACT_END_TIME' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_CONTACT_END_TIME',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'CONTACT_START_TIME' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_CONTACT_START_TIME',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'CONTACT_TYPE_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_CONTACT_TYPE_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'CONTACT_TYPE' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_CONTACT_TYPE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'CONTACT_DISP' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_CONTACT_DISP',
+    'width' => '10%',
+    'default' => false,
   ),
 );
 ?>

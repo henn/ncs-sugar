@@ -64,5 +64,7 @@ $mod_strings = array (
   'LBL_NEW_FORM_TITLE' => 'New NIR Refusal Multi-Select',
   'LBL_REFUSAL_REASON' => 'Refusal Reason',
   'LBL_NIR_ID' => 'Non Interview Report ID',
+  'LBL_NIR_REFUSAL_ID' => 'Non Interview Report Refusal ID',
+  'LBL_REFUSAL_REASON_OTH' => 'Refusal Reason Other',
 );
 ?>
