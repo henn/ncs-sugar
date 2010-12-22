@@ -40,4 +40,3 @@ $app_list_strings['moduleList']['GT_Household'] = 'Household';
 $app_list_strings['moduleList']['GT_Dwelling_Unit'] = 'Dwelling Unit (DU)';
 $app_list_strings['moduleList']['GT_Study_Center'] = 'Study Center (SC)';
 $app_list_strings['moduleList']['GT_Dwelling_Unit_Household_Linkage'] = 'Dwelling Unit Household Linkage';
-
