@@ -34,5 +34,65 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 $relationships = array (
+  'plt_participant_plt_participant_consent' => 
+  array (
+    'rhs_label' => 'Participant Consent',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_PARTICIPANT',
+    'rhs_module' => 'PLT_Participant_Consent',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_participant_plt_participant_consent',
+  ),
+  'plt_participant_plt_participant_visit_consent' => 
+  array (
+    'rhs_label' => 'Participant Visit Consent',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_PARTICIPANT',
+    'rhs_module' => 'PLT_PARTICIPANT_VISIT_CONSENT',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_participant_plt_participant_visit_consent',
+  ),
+  'plt_participant_plt_ppg_status_history' => 
+  array (
+    'rhs_label' => 'PPG Status History',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_PARTICIPANT',
+    'rhs_module' => 'PLT_PPG_STATUS_HISTORY',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_participant_plt_ppg_status_history',
+  ),
+  'plt_participant_plt_ppg_details' => 
+  array (
+    'rhs_label' => 'PPG Details',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_PARTICIPANT',
+    'rhs_module' => 'PLT_PPG_DETAILS',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_participant_plt_ppg_details',
+  ),
 );
 ?>

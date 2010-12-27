@@ -50,8 +50,8 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'Person_Level_Tables',
-          'published_date' => '2010-12-22 20:29:04',
+          'published_date' => '2010-12-27 18:08:15',
           'type' => 'module',
-          'version' => '1293049744',
+          'version' => '1293473295',
           'remove_tables' => 'prompt',
           );

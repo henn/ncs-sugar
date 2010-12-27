@@ -99,6 +99,13 @@ array (
             'label' => 'LBL_DUE_DATE_3',
           ),
         ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'plt_participant_plt_ppg_details_name',
+          ),
+        ),
       ),
     ),
   ),

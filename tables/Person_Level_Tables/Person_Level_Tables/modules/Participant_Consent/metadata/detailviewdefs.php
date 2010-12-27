@@ -172,6 +172,13 @@ array (
             'label' => 'LBL_CONSENT_COMMENTS',
           ),
         ),
+        10 => 
+        array (
+          0 => 
+          array (
+            'name' => 'plt_participant_plt_participant_consent_name',
+          ),
+        ),
       ),
     ),
   ),

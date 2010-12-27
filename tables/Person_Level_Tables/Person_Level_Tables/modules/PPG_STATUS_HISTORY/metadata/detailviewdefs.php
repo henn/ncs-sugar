@@ -143,6 +143,13 @@ array (
             'label' => 'LBL_PPG_INFO_MODE_OTH',
           ),
         ),
+        10 => 
+        array (
+          0 => 
+          array (
+            'name' => 'plt_participant_plt_ppg_status_history_name',
+          ),
+        ),
       ),
     ),
   ),

@@ -54,6 +54,13 @@ array (
             'label' => 'LBL_DATE_MODIFIED',
           ),
         ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'plt_participant_plt_participant_consent_name',
+          ),
+        ),
       ),
       'lbl_editview_panel1' => 
       array (
