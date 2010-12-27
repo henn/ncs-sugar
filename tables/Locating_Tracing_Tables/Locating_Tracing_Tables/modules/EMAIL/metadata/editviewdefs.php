@@ -145,6 +145,13 @@ array (
             'label' => 'LBL_EMAIL_INFO_UPDATE',
           ),
         ),
+        10 => 
+        array (
+          0 => 
+          array (
+            'name' => 'gt_dwelling_unit_ltt_email_name',
+          ),
+        ),
       ),
     ),
   ),

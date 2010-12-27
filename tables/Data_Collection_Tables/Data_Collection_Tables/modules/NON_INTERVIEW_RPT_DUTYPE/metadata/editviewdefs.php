@@ -71,6 +71,20 @@ array (
           ),
           1 => '',
         ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_event_ncsdc_non_interview_rpt_dutype_name',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_event_ncsdc_non_interview_rpt_dutype_1_name',
+          ),
+        ),
       ),
     ),
   ),

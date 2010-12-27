@@ -34,5 +34,65 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 $relationships = array (
+  'gt_dwelling_unit_gt_household' => 
+  array (
+    'rhs_label' => 'Household',
+    'lhs_label' => 'Dwelling Unit (DU)',
+    'lhs_subpanel' => 'default',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'GT_Dwelling_Unit',
+    'rhs_module' => 'GT_Household',
+    'relationship_type' => 'many-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'gt_dwelling_unit_gt_household',
+  ),
+  'gt_dwelling_unit_ltt_address' => 
+  array (
+    'lhs_module' => 'GT_Dwelling_Unit',
+    'rhs_module' => 'LTT_ADDRESS',
+    'relationship_type' => 'one-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'gt_dwelling_unit_ltt_address',
+  ),
+  'gt_dwelling_unit_ltt_telephone' => 
+  array (
+    'rhs_label' => 'Telephone',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'GT_Dwelling_Unit',
+    'rhs_module' => 'LTT_TELEPHONE',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'gt_dwelling_unit_ltt_telephone',
+  ),
+  'gt_dwelling_unit_ltt_email' => 
+  array (
+    'rhs_label' => 'Email',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'GT_Dwelling_Unit',
+    'rhs_module' => 'LTT_EMAIL',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'gt_dwelling_unit_ltt_email',
+  ),
 );
 ?>

@@ -176,6 +176,13 @@ array (
             'label' => 'LBL_PHONE_NBR',
           ),
         ),
+        11 => 
+        array (
+          0 => 
+          array (
+            'name' => 'gt_dwelling_unit_ltt_telephone_name',
+          ),
+        ),
       ),
     ),
   ),

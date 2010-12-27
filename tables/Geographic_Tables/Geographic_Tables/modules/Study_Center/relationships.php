@@ -34,5 +34,35 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 $relationships = array (
+  'gt_study_center_gt_primary_sampling_unit' => 
+  array (
+    'rhs_label' => 'Primary Sampling Unit (PSU)',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'GT_Study_Center',
+    'rhs_module' => 'GT_Primary_Sampling_Unit',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'gt_study_center_gt_primary_sampling_unit',
+  ),
+  'gt_study_center_st_staff' => 
+  array (
+    'rhs_label' => 'Staff Roster',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'GT_Study_Center',
+    'rhs_module' => 'ST_STAFF',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'gt_study_center_st_staff',
+  ),
 );
 ?>

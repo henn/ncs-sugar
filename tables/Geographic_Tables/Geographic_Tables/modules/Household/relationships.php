@@ -34,5 +34,22 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 $relationships = array (
+  'gt_household_plt_person' => 
+  array (
+    'rhs_label' => 'Person',
+    'lhs_label' => 'Household',
+    'lhs_subpanel' => 'default',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'GT_Household',
+    'rhs_module' => 'PLT_PERSON',
+    'relationship_type' => 'many-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'gt_household_plt_person',
+  ),
 );
 ?>

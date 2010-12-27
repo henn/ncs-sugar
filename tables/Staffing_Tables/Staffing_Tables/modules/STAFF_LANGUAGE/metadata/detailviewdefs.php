@@ -113,6 +113,13 @@ array (
             'label' => 'LBL_STAFF_LANG_OTH',
           ),
         ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'st_staff_st_staff_language_name',
+          ),
+        ),
       ),
     ),
   ),

@@ -155,6 +155,13 @@ array (
           ),
           1 => '',
         ),
+        12 => 
+        array (
+          0 => 
+          array (
+            'name' => 'st_staff_st_staff_weekly_expense_name',
+          ),
+        ),
       ),
     ),
   ),

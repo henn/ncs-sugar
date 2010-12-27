@@ -34,5 +34,20 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 $relationships = array (
+  'ncsdc_contact_ncsdc_event' => 
+  array (
+    'rhs_label' => 'Event Information',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'NCSDC_CONTACT',
+    'rhs_module' => 'NCSDC_EVENT',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'ncsdc_contact_ncsdc_event',
+  ),
 );
 ?>

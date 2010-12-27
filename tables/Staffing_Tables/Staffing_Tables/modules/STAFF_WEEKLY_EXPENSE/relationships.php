@@ -34,5 +34,35 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 $relationships = array (
+  'st_staff_weekly_expense_st_staff_exp_mngmnt_tasks' => 
+  array (
+    'rhs_label' => 'Weekly Staff Expense Management Tasks',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'ST_STAFF_WEEKLY_EXPENSE',
+    'rhs_module' => 'ST_STAFF_EXP_MNGMNT_TASKS',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'st_staff_weekly_expense_st_staff_exp_mngmnt_tasks',
+  ),
+  'st_staff_weekly_expense_st_staff_exp_data_cllctn_tasks' => 
+  array (
+    'rhs_label' => 'Weekly Staff Expense Data Collection Tasks',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'ST_STAFF_WEEKLY_EXPENSE',
+    'rhs_module' => 'ST_STAFF_EXP_DATA_CLLCTN_TASKS',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'st_staff_weekly_expense_st_staff_exp_data_cllctn_tasks',
+  ),
 );
 ?>

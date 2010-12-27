@@ -34,5 +34,80 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 $relationships = array (
+  'st_staff_st_staff_language' => 
+  array (
+    'rhs_label' => 'Staff Language',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'ST_STAFF',
+    'rhs_module' => 'ST_STAFF_LANGUAGE',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'st_staff_st_staff_language',
+  ),
+  'st_staff_st_staff_validation' => 
+  array (
+    'rhs_label' => 'Staff Validation',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'ST_STAFF',
+    'rhs_module' => 'ST_STAFF_VALIDATION',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'st_staff_st_staff_validation',
+  ),
+  'st_staff_st_staff_weekly_expense' => 
+  array (
+    'rhs_label' => 'Weekly Staff Expenses',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'ST_STAFF',
+    'rhs_module' => 'ST_STAFF_WEEKLY_EXPENSE',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'st_staff_st_staff_weekly_expense',
+  ),
+  'st_staff_st_staff_cert_training' => 
+  array (
+    'rhs_label' => 'Staff Trainings and Certifications',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'ST_STAFF',
+    'rhs_module' => 'ST_STAFF_CERT_TRAINING',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'st_staff_st_staff_cert_training',
+  ),
+  'st_staff_st_outreach' => 
+  array (
+    'rhs_label' => 'Weekly Outreach & Engagement Activities',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'ST_STAFF',
+    'rhs_module' => 'ST_OUTREACH',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'st_staff_st_outreach',
+  ),
 );
 ?>

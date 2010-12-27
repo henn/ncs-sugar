@@ -86,6 +86,13 @@ array (
           ),
           1 => '',
         ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'gt_listing_unit_gt_dwelling_unit_name',
+          ),
+        ),
       ),
     ),
   ),

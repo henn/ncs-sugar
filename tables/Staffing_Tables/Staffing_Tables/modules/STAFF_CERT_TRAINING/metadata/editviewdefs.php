@@ -118,6 +118,13 @@ array (
             'label' => 'LBL_CERT_COMMENT',
           ),
         ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'st_staff_st_staff_cert_training_name',
+          ),
+        ),
       ),
     ),
   ),

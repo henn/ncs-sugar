@@ -34,5 +34,22 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 $relationships = array (
+  'ltt_telephone_ltt_email' => 
+  array (
+    'rhs_label' => 'Email',
+    'lhs_label' => 'Telephone',
+    'lhs_subpanel' => 'default',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'LTT_TELEPHONE',
+    'rhs_module' => 'LTT_EMAIL',
+    'relationship_type' => 'many-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'ltt_telephone_ltt_email',
+  ),
 );
 ?>

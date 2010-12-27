@@ -86,6 +86,13 @@ array (
           ),
           1 => '',
         ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'gt_study_center_gt_primary_sampling_unit_name',
+          ),
+        ),
       ),
     ),
   ),
