@@ -35,16 +35,17 @@ array (
           ),
           1 => 
           array (
-            'name' => 'first_name',
-            'label' => 'LBL_FIRST_NAME',
+            'name' => 'prefix',
+            'studio' => 'visible',
+            'label' => 'LBL_PREFIX',
           ),
         ),
         1 => 
         array (
           0 => 
           array (
-            'name' => 'middle_name',
-            'label' => 'LBL_MIDDLE_NAME',
+            'name' => 'first_name',
+            'label' => 'LBL_FIRST_NAME',
           ),
           1 => 
           array (
@@ -56,23 +57,8 @@ array (
         array (
           0 => 
           array (
-            'name' => 'person_id',
-            'label' => 'LBL_PERSON_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'deceased',
-            'studio' => 'visible',
-            'label' => 'LBL_DECEASED',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'prefix',
-            'studio' => 'visible',
-            'label' => 'LBL_PREFIX',
+            'name' => 'middle_name',
+            'label' => 'LBL_MIDDLE_NAME',
           ),
           1 => 
           array (
@@ -81,7 +67,7 @@ array (
             'label' => 'LBL_SUFFIX',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -92,6 +78,20 @@ array (
           array (
             'name' => 'title',
             'label' => 'LBL_TITLE',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'person_id',
+            'label' => 'LBL_PERSON_ID',
+          ),
+          1 => 
+          array (
+            'name' => 'deceased',
+            'studio' => 'visible',
+            'label' => 'LBL_DECEASED',
           ),
         ),
         5 => 
@@ -244,7 +244,6 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PERSON_COMMENT',
           ),
-          1 => '',
         ),
         17 => 
         array (

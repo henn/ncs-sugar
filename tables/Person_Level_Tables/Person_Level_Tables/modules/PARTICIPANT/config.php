@@ -44,6 +44,6 @@ $config = array (
     'basic' => 1,
   ),
   'label' => 'Participant',
-  'importable' => false,
+  'importable' => true,
 );
 ?>
