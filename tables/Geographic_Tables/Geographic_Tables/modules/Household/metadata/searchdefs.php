@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'current_user_only' => 
-      array (
-        'name' => 'current_user_only',
-        'label' => 'LBL_CURRENT_USER_FILTER',
-        'type' => 'bool',
-        'default' => true,
-        'width' => '10%',
-      ),
       'hh_id' => 
       array (
         'type' => 'varchar',
@@ -60,6 +52,16 @@ array (
         'default' => true,
         'name' => 'num_preg_adult',
       ),
+      'hh_structure' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_HH_STRUCTURE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'hh_structure',
+      ),
       'hh_structure_oth' => 
       array (
         'type' => 'varchar',
@@ -97,16 +99,6 @@ array (
         'width' => '10%',
         'default' => true,
         'name' => 'hh_comment',
-      ),
-      'hh_structure' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_HH_STRUCTURE',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'hh_structure',
       ),
     ),
     'advanced_search' => 

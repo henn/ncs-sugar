@@ -50,9 +50,9 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'project_Specific_Code_Tables',
-          'published_date' => '2010-10-14 20:18:12',
+          'published_date' => '2011-01-14 00:02:52',
           'type' => 'module',
-          'version' => '1287087492',
+          'version' => '1294963372',
           'remove_tables' => 'prompt',
           );
 $installdefs = array (

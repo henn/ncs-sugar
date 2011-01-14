@@ -22,15 +22,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'VIS_CONSENT_TYPE' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_VIS_CONSENT_TYPE',
-    'sortable' => false,
-    'width' => '10%',
-  ),
   'VIS_CONSENT_RESPONSE' => 
   array (
     'type' => 'enum',
@@ -80,6 +71,14 @@ array (
   array (
     'type' => 'varchar',
     'label' => 'LBL_VIS_LANGUAGE_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'VIS_CONSENT_TYPE' => 
+  array (
+    'type' => 'multienum',
+    'studio' => 'visible',
+    'label' => 'LBL_VIS_CONSENT_TYPE',
     'width' => '10%',
     'default' => false,
   ),

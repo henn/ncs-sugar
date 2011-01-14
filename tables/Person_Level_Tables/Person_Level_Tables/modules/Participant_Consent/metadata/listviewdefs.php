@@ -81,15 +81,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'CONSENT_TYPE' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_CONSENT_TYPE',
-    'sortable' => false,
-    'width' => '10%',
-  ),
   'PARTICIPANT_CONSENT_ID' => 
   array (
     'type' => 'varchar',

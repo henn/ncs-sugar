@@ -28,6 +28,16 @@ array (
         'default' => true,
         'name' => 'hh_du_id',
       ),
+      'du_rank' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_DU_RANK',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'du_rank',
+      ),
       'du_rank_oth' => 
       array (
         'type' => 'varchar',
@@ -45,16 +55,6 @@ array (
         'sortable' => false,
         'width' => '10%',
         'name' => 'is_active',
-      ),
-      'du_rank' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_DU_RANK',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'du_rank',
       ),
     ),
     'advanced_search' => 

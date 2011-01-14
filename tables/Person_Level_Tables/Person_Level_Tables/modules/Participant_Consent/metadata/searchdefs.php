@@ -20,16 +20,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'consent_type' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_CONSENT_TYPE',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'consent_type',
-      ),
       'participant_consent_id' => 
       array (
         'type' => 'varchar',
@@ -47,6 +37,15 @@ array (
         'sortable' => false,
         'width' => '10%',
         'name' => 'consent_given',
+      ),
+      'consent_type' => 
+      array (
+        'type' => 'multienum',
+        'studio' => 'visible',
+        'label' => 'LBL_CONSENT_TYPE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'consent_type',
       ),
       'consent_withdraw' => 
       array (

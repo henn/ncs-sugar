@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'current_user_only' => 
-      array (
-        'name' => 'current_user_only',
-        'label' => 'LBL_CURRENT_USER_FILTER',
-        'type' => 'bool',
-        'default' => true,
-        'width' => '10%',
-      ),
       'p_id' => 
       array (
         'type' => 'varchar',

@@ -36,27 +36,6 @@
 $vardefs = array (
   'fields' => 
   array (
-    'consent_type' => 
-    array (
-      'required' => false,
-      'name' => 'consent_type',
-      'vname' => 'LBL_CONSENT_TYPE',
-      'type' => 'enum',
-      'massupdate' => 0,
-      'default' => '1',
-      'comments' => '',
-      'help' => '',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => 100,
-      'size' => '20',
-      'options' => 'CONSENT_TYPE_CL1',
-      'studio' => 'visible',
-      'dependency' => false,
-    ),
     'participant_consent_id' => 
     array (
       'required' => false,
@@ -323,6 +302,25 @@ $vardefs = array (
       'options' => 'NCS_CONSENT_WITHDRAW_TYPE',
       'studio' => 'visible',
       'dependency' => false,
+    ),
+    'consent_type' => 
+    array (
+      'required' => false,
+      'name' => 'consent_type',
+      'vname' => 'LBL_CONSENT_TYPE',
+      'type' => 'multienum',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => 'Type of consent',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'size' => '20',
+      'options' => 'CONSENT_TYPE_CL1',
+      'studio' => 'visible',
+      'isMultiSelect' => true,
     ),
   ),
   'relationships' => 

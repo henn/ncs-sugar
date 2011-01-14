@@ -6,20 +6,6 @@ array (
   array (
     'basic_search' => 
     array (
-      'name' => 
-      array (
-        'name' => 'name',
-        'default' => true,
-        'width' => '10%',
-      ),
-      'current_user_only' => 
-      array (
-        'name' => 'current_user_only',
-        'label' => 'LBL_CURRENT_USER_FILTER',
-        'type' => 'bool',
-        'default' => true,
-        'width' => '10%',
-      ),
       'pid_visit_consent_id' => 
       array (
         'type' => 'varchar',
@@ -27,16 +13,6 @@ array (
         'width' => '10%',
         'default' => true,
         'name' => 'pid_visit_consent_id',
-      ),
-      'vis_consent_type' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_VIS_CONSENT_TYPE',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'vis_consent_type',
       ),
       'vis_consent_response' => 
       array (
@@ -48,13 +24,14 @@ array (
         'width' => '10%',
         'name' => 'vis_consent_response',
       ),
-      'vis_language_oth' => 
+      'vis_consent_type' => 
       array (
-        'type' => 'varchar',
-        'label' => 'LBL_VIS_LANGUAGE_OTH',
+        'type' => 'multienum',
+        'studio' => 'visible',
+        'label' => 'LBL_VIS_CONSENT_TYPE',
         'width' => '10%',
         'default' => true,
-        'name' => 'vis_language_oth',
+        'name' => 'vis_consent_type',
       ),
       'vis_who_consented' => 
       array (
@@ -95,6 +72,14 @@ array (
         'sortable' => false,
         'width' => '10%',
         'name' => 'vis_language',
+      ),
+      'vis_language_oth' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_VIS_LANGUAGE_OTH',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'vis_language_oth',
       ),
     ),
     'advanced_search' => 

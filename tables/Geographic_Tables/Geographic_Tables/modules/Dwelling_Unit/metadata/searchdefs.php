@@ -28,6 +28,16 @@ array (
         'default' => true,
         'name' => 'du_id',
       ),
+      'du_type' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_DU_TYPE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'du_type',
+      ),
       'du_type_oth' => 
       array (
         'type' => 'varchar',
@@ -85,16 +95,6 @@ array (
         'width' => '10%',
         'default' => true,
         'name' => 'duid_comment',
-      ),
-      'du_type' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_DU_TYPE',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'du_type',
       ),
     ),
     'advanced_search' => 

@@ -50,8 +50,8 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'Organization_Level_Tables',
-          'published_date' => '2010-12-27 19:04:34',
+          'published_date' => '2011-01-13 23:59:36',
           'type' => 'module',
-          'version' => '1293476674',
+          'version' => '1294963176',
           'remove_tables' => 'prompt',
           );
