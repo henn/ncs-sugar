@@ -146,7 +146,7 @@ $vardefs = array (
       'reportable' => true,
       'len' => 100,
       'size' => '20',
-      'options' => 'ACCESS_ATTEMPT_CL1',
+      'options' => 'COMMUNICATION_RANK_CL1',
       'studio' => 'visible',
       'dependency' => false,
     ),
