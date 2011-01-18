@@ -61,7 +61,12 @@ array (
             'name' => 'p_id',
             'label' => 'LBL_P_ID',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'description',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_DESCRIPTION',
+          ),
         ),
         3 => 
         array (

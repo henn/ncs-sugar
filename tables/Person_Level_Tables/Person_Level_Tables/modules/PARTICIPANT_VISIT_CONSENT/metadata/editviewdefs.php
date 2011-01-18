@@ -28,7 +28,11 @@ array (
       array (
         0 => 
         array (
-          0 => '',
+          0 => 
+          array (
+            'name' => 'name',
+            'label' => 'LBL_NAME',
+          ),
           1 => 
           array (
             'name' => 'assigned_user_name',
@@ -60,7 +64,12 @@ array (
         ),
         4 => 
         array (
-          0 => '',
+          0 => 
+          array (
+            'name' => 'vis_consent_type',
+            'studio' => 'visible',
+            'label' => 'LBL_VIS_CONSENT_TYPE',
+          ),
           1 => '',
         ),
         5 => 
@@ -95,12 +104,7 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_VIS_WHO_CONSENTED',
           ),
-          1 => 
-          array (
-            'name' => 'vis_consent_type',
-            'studio' => 'visible',
-            'label' => 'LBL_VIS_CONSENT_TYPE',
-          ),
+          1 => '',
         ),
         8 => 
         array (
