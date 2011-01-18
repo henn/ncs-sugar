@@ -44,17 +44,16 @@ array (
           ),
           1 => 
           array (
-            'name' => 'prefix',
-            'studio' => 'visible',
-            'label' => 'LBL_PREFIX',
+            'name' => 'first_name',
+            'label' => 'LBL_FIRST_NAME',
           ),
         ),
         1 => 
         array (
           0 => 
           array (
-            'name' => 'first_name',
-            'label' => 'LBL_FIRST_NAME',
+            'name' => 'middle_name',
+            'label' => 'LBL_MIDDLE_NAME',
           ),
           1 => 
           array (
@@ -66,8 +65,23 @@ array (
         array (
           0 => 
           array (
-            'name' => 'middle_name',
-            'label' => 'LBL_MIDDLE_NAME',
+            'name' => 'person_id',
+            'label' => 'LBL_PERSON_ID',
+          ),
+          1 => 
+          array (
+            'name' => 'deceased',
+            'studio' => 'visible',
+            'label' => 'LBL_DECEASED',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'prefix',
+            'studio' => 'visible',
+            'label' => 'LBL_PREFIX',
           ),
           1 => 
           array (
@@ -76,7 +90,7 @@ array (
             'label' => 'LBL_SUFFIX',
           ),
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
@@ -87,20 +101,6 @@ array (
           array (
             'name' => 'title',
             'label' => 'LBL_TITLE',
-          ),
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'person_id',
-            'label' => 'LBL_PERSON_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'deceased',
-            'studio' => 'visible',
-            'label' => 'LBL_DECEASED',
           ),
         ),
         5 => 
@@ -183,15 +183,16 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PLAN_MOVE',
           ),
-          1 => 
-          array (
-            'name' => 'date_move',
-            'label' => 'LBL_DATE_MOVE',
-          ),
+          1 => '',
         ),
         11 => 
         array (
           0 => 
+          array (
+            'name' => 'new_address_id',
+            'label' => 'LBL_NEW_ADDRESS_ID',
+          ),
+          1 => 
           array (
             'name' => 'when_move',
             'studio' => 'visible',
@@ -202,9 +203,10 @@ array (
         array (
           0 => 
           array (
-            'name' => 'new_address_id',
-            'label' => 'LBL_NEW_ADDRESS_ID',
+            'name' => 'date_move',
+            'label' => 'LBL_DATE_MOVE',
           ),
+          1 => '',
         ),
         13 => 
         array (
