@@ -67,9 +67,14 @@ array (
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
+            'name' => 'event_type',
+            'studio' => 'visible',
+            'label' => 'LBL_EVENT_TYPE',
+          ),
+          1 => 
+          array (
+            'name' => 'event_repeat_key',
+            'label' => 'LBL_EVENT_REPEAT_KEY',
           ),
         ),
         3 => 
@@ -79,7 +84,11 @@ array (
             'name' => 'event_id',
             'label' => 'LBL_EVENT_ID',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'event_disp',
+            'label' => 'LBL_EVENT_DISP',
+          ),
         ),
         4 => 
         array (
@@ -146,8 +155,8 @@ array (
           ),
           1 => 
           array (
-            'name' => 'event_inc_nocash',
-            'label' => 'LBL_EVENT_INC_NOCASH',
+            'name' => 'event_incent_noncash',
+            'label' => 'LBL_EVENT_INCENT_NONCASH',
           ),
         ),
         10 => 

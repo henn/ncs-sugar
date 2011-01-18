@@ -72,10 +72,11 @@ $mod_strings = array (
   'LBL_EVENT_BREAKOFF' => 'Event Breakoff',
   'LBL_EVENT_INCENTIVE_TYPE' => 'Event Incentive Type',
   'LBL_EVENT_INCENT_CASH' => 'Event Incentive Cash',
-  'LBL_EVENT_INC_NOCASH' => 'Event Incentive No Cash',
+  'LBL_EVENT_INC_NOCASH' => 'Event Incentive Non Cash',
   'LBL_EVENT_COMMENT' => 'Event Comment',
   'LBL_EVENT_TYPE' => 'Event Type',
   'LBL_EVENT_REPEAT_KEY' => 'Event Repeat Key',
   'LBL_EVENT_DISP' => 'Event Disposition',
+  'LBL_EVENT_INCENT_NONCASH' => 'Event Incentive Non Cash',
 );
 ?>

@@ -61,13 +61,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'EVENT_INC_NOCASH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_EVENT_INC_NOCASH',
-    'width' => '10%',
-    'default' => true,
-  ),
   'EVENT_COMMENT' => 
   array (
     'type' => 'text',
@@ -104,6 +97,36 @@ array (
   array (
     'type' => 'date',
     'label' => 'LBL_EVENT_START_DATE',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'EVENT_INCENT_NONCASH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_EVENT_INCENT_NONCASH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'EVENT_TYPE' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_EVENT_TYPE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'EVENT_DISP' => 
+  array (
+    'type' => 'int',
+    'label' => 'LBL_EVENT_DISP',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'EVENT_REPEAT_KEY' => 
+  array (
+    'type' => 'int',
+    'label' => 'LBL_EVENT_REPEAT_KEY',
     'width' => '10%',
     'default' => false,
   ),

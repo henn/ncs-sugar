@@ -15,6 +15,27 @@ array (
     'label' => 'LBL_ASSIGNED_TO_NAME',
     'default' => true,
   ),
+  'CONTACT_DATE' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_CONTACT_DATE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'CONTACT_START_TIME' => 
+  array (
+    'type' => 'datetimecombo',
+    'label' => 'LBL_CONTACT_START_TIME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'CONTACT_END_TIME' => 
+  array (
+    'type' => 'datetimecombo',
+    'label' => 'LBL_CONTACT_END_TIME',
+    'width' => '10%',
+    'default' => true,
+  ),
   'PSU_ID' => 
   array (
     'type' => 'enum',
@@ -28,13 +49,6 @@ array (
   array (
     'type' => 'varchar',
     'label' => 'LBL_CONTACT_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'CONTACT_DATE' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_CONTACT_DATE',
     'width' => '10%',
     'default' => true,
   ),
@@ -131,20 +145,6 @@ array (
   array (
     'type' => 'varchar',
     'label' => 'LBL_CONTACT_LANG_OTH',
-    'width' => '10%',
-    'default' => false,
-  ),
-  'CONTACT_END_TIME' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_CONTACT_END_TIME',
-    'width' => '10%',
-    'default' => false,
-  ),
-  'CONTACT_START_TIME' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_CONTACT_START_TIME',
     'width' => '10%',
     'default' => false,
   ),
