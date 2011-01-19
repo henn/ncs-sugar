@@ -106,14 +106,6 @@ array (
         'default' => true,
         'name' => 'event_incent_cash',
       ),
-      'event_inc_nocash' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_EVENT_INC_NOCASH',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'event_inc_nocash',
-      ),
       'event_comment' => 
       array (
         'type' => 'text',

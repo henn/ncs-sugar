@@ -64,30 +64,6 @@ array (
         'default' => true,
         'name' => 'contact_type_oth',
       ),
-      'contact_date' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_CONTACT_DATE',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'contact_date',
-      ),
-      'contact_start_time' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_CONTACT_START_TIME',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'contact_start_time',
-      ),
-      'contact_end_time' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_CONTACT_END_TIME',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'contact_end_time',
-      ),
       'contact_lang' => 
       array (
         'type' => 'enum',

@@ -94,5 +94,20 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'plt_participant_plt_ppg_details',
   ),
+  'plt_participant_activities' => 
+  array (
+    'rhs_label' => 'Activities',
+    'rhs_subpanel' => 'Default',
+    'lhs_module' => 'PLT_PARTICIPANT',
+    'rhs_module' => 'Activities',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_participant_activities',
+  ),
 );
 ?>
