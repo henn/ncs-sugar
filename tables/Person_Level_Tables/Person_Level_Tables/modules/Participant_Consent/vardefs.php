@@ -132,23 +132,6 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-    'consent_withdraw_date' => 
-    array (
-      'required' => false,
-      'name' => 'consent_withdraw_date',
-      'vname' => 'LBL_CONSENT_WITHDRAW_DATE',
-      'type' => 'varchar',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => 'YYYY-MM-DD For missing values use “9” prefix followed by:  6 (Unknown) 7 (Not Applicable), e.g. 2009-96-96 (Unknown Month and Day) 9777-97-97(Not Applicable) ',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => '10',
-      'size' => '20',
-    ),
     'consent_language' => 
     array (
       'required' => false,
@@ -323,6 +306,22 @@ $vardefs = array (
       'options' => 'NCS_CONSENT_WITHDRAW_TYPE',
       'studio' => 'visible',
       'dependency' => false,
+    ),
+    'consent_withdraw_date' => 
+    array (
+      'required' => false,
+      'name' => 'consent_withdraw_date',
+      'vname' => 'LBL_CONSENT_WITHDRAW_DATE',
+      'type' => 'date',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => 'Date consent was withdrawn for this consent type',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'size' => '20',
     ),
   ),
   'relationships' => 

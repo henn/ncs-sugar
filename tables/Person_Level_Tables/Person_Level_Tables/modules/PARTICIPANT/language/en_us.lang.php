@@ -74,7 +74,7 @@ $mod_strings = array (
   'LBL_ENROLL_DATE' => 'Enroll Date',
   'LBL_PID_ENTRY' => 'PID Entry',
   'LBL_PID_ENTRY_OTHER' => 'PID Entry Other',
-  'LBL_PID_AGE_ELIG' => 'PID Age Eligable',
+  'LBL_PID_AGE_ELIG' => 'PID Age Eligible',
   'LBL_PID_COMMENT' => 'PID Comment',
 );
 ?>

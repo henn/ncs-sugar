@@ -58,14 +58,6 @@ array (
         'width' => '10%',
         'name' => 'consent_withdraw',
       ),
-      'consent_withdraw_date' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_CONSENT_WITHDRAW_DATE',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'consent_withdraw_date',
-      ),
       'consent_language' => 
       array (
         'type' => 'enum',

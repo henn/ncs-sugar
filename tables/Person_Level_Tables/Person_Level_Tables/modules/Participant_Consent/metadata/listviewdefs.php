@@ -56,13 +56,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'CONSENT_WITHDRAW_DATE' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_CONSENT_WITHDRAW_DATE',
-    'width' => '10%',
-    'default' => true,
-  ),
   'CONSENT_WITHDRAW' => 
   array (
     'type' => 'enum',
@@ -134,6 +127,13 @@ array (
     'label' => 'LBL_CONSENT_WITHDRAW_TYPE',
     'sortable' => false,
     'width' => '10%',
+  ),
+  'CONSENT_WITHDRAW_DATE' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_CONSENT_WITHDRAW_DATE',
+    'width' => '10%',
+    'default' => false,
   ),
   'CONSENT_LANGUAGE' => 
   array (

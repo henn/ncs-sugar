@@ -41,22 +41,11 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * All Rights Reserved.
  * Contributor(s): ______________________________________..
  ********************************************************************************/
+ 
+global $app_strings;
 
-require_once('include/Dashlets/DashletGeneric.php');
-require_once('modules/GT_Dwelling_Unit_Household_Linkage/GT_Dwelling_Unit_Household_Linkage.php');
-
-class GT_Dwelling_Unit_Household_LinkageDashlet extends DashletGeneric { 
-    function GT_Dwelling_Unit_Household_LinkageDashlet($id, $def = null) {
-		global $current_user, $app_strings;
-		require('modules/GT_Dwelling_Unit_Household_Linkage/metadata/dashletviewdefs.php');
-
-        parent::DashletGeneric($id, $def);
-
-        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'GT_Dwelling_Unit_Household_Linkage');
-
-        $this->searchFields = $dashletData['GT_Dwelling_Unit_Household_LinkageDashlet']['searchFields'];
-        $this->columns = $dashletData['GT_Dwelling_Unit_Household_LinkageDashlet']['columns'];
-
-        $this->seedBean = new GT_Dwelling_Unit_Household_Linkage();        
-    }
-}
+$dashletMeta['GT_Dwelling_Unit_Household_LinkageDashlet'] = array('module'		=> 'GT_Dwelling_Unit_Household_Linkage',
+										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'GT_Dwelling_Unit_Household_Linkage'), 
+                                          'description' => 'A customizable view into GT_Dwelling_Unit_Household_Linkage',
+                                          'icon'        => 'icon_GT_Dwelling_Unit_Household_Linkage_32.gif',
+                                          'category'    => 'Module Views');
