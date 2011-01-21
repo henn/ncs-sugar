@@ -72,8 +72,8 @@ $vardefs = array (
       'validation' => 
       array (
         'type' => 'range',
-        'min' => '14',
-        'max' => '49',
+        'min' => '0',
+        'max' => '10',
       ),
       'len' => '255',
     ),
@@ -120,8 +120,8 @@ $vardefs = array (
       'validation' => 
       array (
         'type' => 'range',
-        'min' => '14',
-        'max' => '17',
+        'min' => '0	',
+        'max' => '10',
       ),
       'len' => '255',
     ),
