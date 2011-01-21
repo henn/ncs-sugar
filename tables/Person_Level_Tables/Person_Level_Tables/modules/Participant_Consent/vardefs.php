@@ -242,7 +242,7 @@ $vardefs = array (
       'reportable' => true,
       'len' => 100,
       'size' => '20',
-      'options' => 'AGE_STATUS_CL2',
+      'options' => 'AGE_STATUS_CL3',
       'studio' => 'visible',
       'dependency' => false,
     ),
