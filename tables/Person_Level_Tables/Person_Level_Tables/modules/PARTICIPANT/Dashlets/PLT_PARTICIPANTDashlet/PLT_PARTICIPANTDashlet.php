@@ -43,20 +43,20 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  ********************************************************************************/
 
 require_once('include/Dashlets/DashletGeneric.php');
-require_once('modules/PLT_PARTICIPANT/PLT_PARTICIPANT.php');
+require_once('modules/PLT_Participant/PLT_Participant.php');
 
-class PLT_PARTICIPANTDashlet extends DashletGeneric { 
-    function PLT_PARTICIPANTDashlet($id, $def = null) {
+class PLT_ParticipantDashlet extends DashletGeneric { 
+    function PLT_ParticipantDashlet($id, $def = null) {
 		global $current_user, $app_strings;
-		require('modules/PLT_PARTICIPANT/metadata/dashletviewdefs.php');
+		require('modules/PLT_Participant/metadata/dashletviewdefs.php');
 
         parent::DashletGeneric($id, $def);
 
-        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'PLT_PARTICIPANT');
+        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'PLT_Participant');
 
-        $this->searchFields = $dashletData['PLT_PARTICIPANTDashlet']['searchFields'];
-        $this->columns = $dashletData['PLT_PARTICIPANTDashlet']['columns'];
+        $this->searchFields = $dashletData['PLT_ParticipantDashlet']['searchFields'];
+        $this->columns = $dashletData['PLT_ParticipantDashlet']['columns'];
 
-        $this->seedBean = new PLT_PARTICIPANT();        
+        $this->seedBean = new PLT_Participant();        
     }
 }

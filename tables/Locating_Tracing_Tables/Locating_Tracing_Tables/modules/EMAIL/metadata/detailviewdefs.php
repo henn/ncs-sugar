@@ -1,5 +1,5 @@
 <?php
-$module_name = 'LTT_EMAIL';
+$module_name = 'LTT_Email';
 $viewdefs [$module_name] = 
 array (
   'DetailView' => 

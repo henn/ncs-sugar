@@ -34,9 +34,9 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$app_list_strings['moduleList']['GT_LISTING_UNIT'] = 'Listing Unit';
-$app_list_strings['moduleList']['GT_Primary_Sampling_Unit'] = 'Primary Sampling Unit (PSU)';
 $app_list_strings['moduleList']['GT_Household'] = 'Household';
-$app_list_strings['moduleList']['GT_Dwelling_Unit'] = 'Dwelling Unit (DU)';
-$app_list_strings['moduleList']['GT_Study_Center'] = 'Study Center (SC)';
-$app_list_strings['moduleList']['GT_Dwelling_Unit_Household_Linkage'] = 'Dwelling Unit Household Linkage';
+$app_list_strings['moduleList']['GT_DwellingUnt'] = 'Dwelling Unit (DU)';
+$app_list_strings['moduleList']['GT_ListingUnt'] = 'Listing Unit';
+$app_list_strings['moduleList']['GT_PrmSampUnt'] = 'Primary Sampling Unit (PSU)';
+$app_list_strings['moduleList']['GT_StudyCntr'] = 'Study Center (SC)';
+$app_list_strings['moduleList']['GT_DwlUntHsLnk'] = 'Dwelling Unit Household Linkage';

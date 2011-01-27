@@ -44,8 +44,8 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  
 global $app_strings;
 
-$dashletMeta['LTT_TELEPHONEDashlet'] = array('module'		=> 'LTT_TELEPHONE',
-										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'LTT_TELEPHONE'), 
-                                          'description' => 'A customizable view into LTT_TELEPHONE',
-                                          'icon'        => 'icon_LTT_TELEPHONE_32.gif',
+$dashletMeta['LTT_TelephoneDashlet'] = array('module'		=> 'LTT_Telephone',
+										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'LTT_Telephone'), 
+                                          'description' => 'A customizable view into LTT_Telephone',
+                                          'icon'        => 'icon_LTT_Telephone_32.gif',
                                           'category'    => 'Module Views');

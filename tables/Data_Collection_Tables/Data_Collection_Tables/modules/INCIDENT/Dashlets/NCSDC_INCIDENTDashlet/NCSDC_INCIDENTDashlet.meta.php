@@ -47,5 +47,5 @@ global $app_strings;
 $dashletMeta['NCSDC_INCIDENTDashlet'] = array('module'		=> 'NCSDC_INCIDENT',
 										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'NCSDC_INCIDENT'), 
                                           'description' => 'A customizable view into NCSDC_INCIDENT',
-                                          'icon'        => 'icon_NCSDC_INCIDENT_32.gif',
+                                          'icon'        => 'icon_NCSDC_Incident_32.gif',
                                           'category'    => 'Module Views');

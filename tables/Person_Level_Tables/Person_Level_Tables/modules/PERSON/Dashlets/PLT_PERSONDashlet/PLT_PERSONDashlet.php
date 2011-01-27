@@ -43,20 +43,20 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  ********************************************************************************/
 
 require_once('include/Dashlets/DashletGeneric.php');
-require_once('modules/PLT_PERSON/PLT_PERSON.php');
+require_once('modules/PLT_Person/PLT_Person.php');
 
-class PLT_PERSONDashlet extends DashletGeneric { 
-    function PLT_PERSONDashlet($id, $def = null) {
+class PLT_PersonDashlet extends DashletGeneric { 
+    function PLT_PersonDashlet($id, $def = null) {
 		global $current_user, $app_strings;
-		require('modules/PLT_PERSON/metadata/dashletviewdefs.php');
+		require('modules/PLT_Person/metadata/dashletviewdefs.php');
 
         parent::DashletGeneric($id, $def);
 
-        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'PLT_PERSON');
+        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'PLT_Person');
 
-        $this->searchFields = $dashletData['PLT_PERSONDashlet']['searchFields'];
-        $this->columns = $dashletData['PLT_PERSONDashlet']['columns'];
+        $this->searchFields = $dashletData['PLT_PersonDashlet']['searchFields'];
+        $this->columns = $dashletData['PLT_PersonDashlet']['columns'];
 
-        $this->seedBean = new PLT_PERSON();        
+        $this->seedBean = new PLT_Person();        
     }
 }

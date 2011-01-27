@@ -34,19 +34,7 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$app_list_strings['moduleList']['LTT_ADDRESS'] = 'Address';
-$app_list_strings['moduleList']['LTT_EMAIL'] = 'Email';
-$app_list_strings['moduleList']['LTT_TELEPHONE'] = 'Telephone';
-$app_list_strings['INFORMATION_SOURCE_CL2']['1'] = 'Person Self';
-$app_list_strings['INFORMATION_SOURCE_CL2']['2'] = 'Provider';
-$app_list_strings['INFORMATION_SOURCE_CL2']['3'] = 'Household Member';
-$app_list_strings['INFORMATION_SOURCE_CL2']['4 '] = 'Other Person Associated ';
-$app_list_strings['INFORMATION_SOURCE_CL2']['5'] = 'Web';
-$app_list_strings['INFORMATION_SOURCE_CL2']['6'] = 'Returned Mail';
-$app_list_strings['INFORMATION_SOURCE_CL2']['7'] = 'Tracing vendor';
-$app_list_strings['INFORMATION_SOURCE_CL2']['_5'] = 'Other';
-$app_list_strings['COMMUNICATION_RANK_CL1']['1'] = 'Primary';
-$app_list_strings['COMMUNICATION_RANK_CL1']['2'] = 'Secondary';
-$app_list_strings['COMMUNICATION_RANK_CL1']['3'] = 'Invalid';
-$app_list_strings['COMMUNICATION_RANK_CL1']['4'] = 'Duplicate';
-$app_list_strings['COMMUNICATION_RANK_CL1']['_5'] = 'Other';
+$app_list_strings['moduleList']['LTT_Email'] = 'Email';
+$app_list_strings['moduleList']['LTT_Address'] = 'Address';
+$app_list_strings['moduleList']['LTT_Telephone'] = 'Telephone';
+

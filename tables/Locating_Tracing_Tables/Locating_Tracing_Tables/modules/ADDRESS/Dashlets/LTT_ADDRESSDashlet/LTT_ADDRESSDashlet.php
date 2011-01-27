@@ -43,20 +43,20 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  ********************************************************************************/
 
 require_once('include/Dashlets/DashletGeneric.php');
-require_once('modules/LTT_ADDRESS/LTT_ADDRESS.php');
+require_once('modules/LTT_Address/LTT_Address.php');
 
-class LTT_ADDRESSDashlet extends DashletGeneric { 
-    function LTT_ADDRESSDashlet($id, $def = null) {
+class LTT_AddressDashlet extends DashletGeneric { 
+    function LTT_AddressDashlet($id, $def = null) {
 		global $current_user, $app_strings;
-		require('modules/LTT_ADDRESS/metadata/dashletviewdefs.php');
+		require('modules/LTT_Address/metadata/dashletviewdefs.php');
 
         parent::DashletGeneric($id, $def);
 
-        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'LTT_ADDRESS');
+        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'LTT_Address');
 
-        $this->searchFields = $dashletData['LTT_ADDRESSDashlet']['searchFields'];
-        $this->columns = $dashletData['LTT_ADDRESSDashlet']['columns'];
+        $this->searchFields = $dashletData['LTT_AddressDashlet']['searchFields'];
+        $this->columns = $dashletData['LTT_AddressDashlet']['columns'];
 
-        $this->seedBean = new LTT_ADDRESS();        
+        $this->seedBean = new LTT_Address();        
     }
 }

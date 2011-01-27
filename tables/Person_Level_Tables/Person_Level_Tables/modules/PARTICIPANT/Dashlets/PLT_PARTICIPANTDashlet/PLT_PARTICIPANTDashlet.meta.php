@@ -44,8 +44,8 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  
 global $app_strings;
 
-$dashletMeta['PLT_PARTICIPANTDashlet'] = array('module'		=> 'PLT_PARTICIPANT',
-										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'PLT_PARTICIPANT'), 
-                                          'description' => 'A customizable view into PLT_PARTICIPANT',
-                                          'icon'        => 'icon_PLT_PARTICIPANT_32.gif',
+$dashletMeta['PLT_ParticipantDashlet'] = array('module'		=> 'PLT_Participant',
+										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'PLT_Participant'), 
+                                          'description' => 'A customizable view into PLT_Participant',
+                                          'icon'        => 'icon_PLT_Participant_32.gif',
                                           'category'    => 'Module Views');

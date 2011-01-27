@@ -47,5 +47,5 @@ global $app_strings;
 $dashletMeta['OLT_PROVIDERDashlet'] = array('module'		=> 'OLT_PROVIDER',
 										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'OLT_PROVIDER'), 
                                           'description' => 'A customizable view into OLT_PROVIDER',
-                                          'icon'        => 'icon_OLT_PROVIDER_32.gif',
+                                          'icon'        => 'icon_OLT_Provider_32.gif',
                                           'category'    => 'Module Views');

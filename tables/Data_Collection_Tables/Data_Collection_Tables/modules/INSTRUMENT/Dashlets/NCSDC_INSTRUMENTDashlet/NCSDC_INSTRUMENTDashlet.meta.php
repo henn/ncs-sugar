@@ -44,8 +44,8 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  
 global $app_strings;
 
-$dashletMeta['NCSDC_INSTRUMENTDashlet'] = array('module'		=> 'NCSDC_INSTRUMENT',
-										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'NCSDC_INSTRUMENT'), 
-                                          'description' => 'A customizable view into NCSDC_INSTRUMENT',
-                                          'icon'        => 'icon_NCSDC_INSTRUMENT_32.gif',
+$dashletMeta['NCSDC_InstrumentDashlet'] = array('module'		=> 'NCSDC_Instrument',
+										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'NCSDC_Instrument'), 
+                                          'description' => 'A customizable view into NCSDC_Instrument',
+                                          'icon'        => 'icon_NCSDC_Instrument_32.gif',
                                           'category'    => 'Module Views');

@@ -43,20 +43,20 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  ********************************************************************************/
 
 require_once('include/Dashlets/DashletGeneric.php');
-require_once('modules/OLT_INSTITUTION/OLT_INSTITUTION.php');
+require_once('modules/OLT_Institution/OLT_Institution.php');
 
-class OLT_INSTITUTIONDashlet extends DashletGeneric { 
-    function OLT_INSTITUTIONDashlet($id, $def = null) {
+class OLT_InstitutionDashlet extends DashletGeneric { 
+    function OLT_InstitutionDashlet($id, $def = null) {
 		global $current_user, $app_strings;
-		require('modules/OLT_INSTITUTION/metadata/dashletviewdefs.php');
+		require('modules/OLT_Institution/metadata/dashletviewdefs.php');
 
         parent::DashletGeneric($id, $def);
 
-        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'OLT_INSTITUTION');
+        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'OLT_Institution');
 
-        $this->searchFields = $dashletData['OLT_INSTITUTIONDashlet']['searchFields'];
-        $this->columns = $dashletData['OLT_INSTITUTIONDashlet']['columns'];
+        $this->searchFields = $dashletData['OLT_InstitutionDashlet']['searchFields'];
+        $this->columns = $dashletData['OLT_InstitutionDashlet']['columns'];
 
-        $this->seedBean = new OLT_INSTITUTION();        
+        $this->seedBean = new OLT_Institution();        
     }
 }

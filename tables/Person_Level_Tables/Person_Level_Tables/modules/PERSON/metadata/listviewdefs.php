@@ -1,5 +1,5 @@
 <?php
-$module_name = 'PLT_PERSON';
+$module_name = 'PLT_Person';
 $listViewDefs [$module_name] = 
 array (
   'NAME' => 

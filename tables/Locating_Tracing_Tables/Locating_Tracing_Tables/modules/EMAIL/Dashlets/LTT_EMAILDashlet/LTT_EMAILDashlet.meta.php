@@ -47,5 +47,5 @@ global $app_strings;
 $dashletMeta['LTT_EMAILDashlet'] = array('module'		=> 'LTT_EMAIL',
 										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'LTT_EMAIL'), 
                                           'description' => 'A customizable view into LTT_EMAIL',
-                                          'icon'        => 'icon_LTT_EMAIL_32.gif',
+                                          'icon'        => 'icon_LTT_Email_32.gif',
                                           'category'    => 'Module Views');

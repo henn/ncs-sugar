@@ -43,20 +43,20 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  ********************************************************************************/
 
 require_once('include/Dashlets/DashletGeneric.php');
-require_once('modules/NCSDC_INSTRUMENT/NCSDC_INSTRUMENT.php');
+require_once('modules/NCSDC_Instrument/NCSDC_Instrument.php');
 
-class NCSDC_INSTRUMENTDashlet extends DashletGeneric { 
-    function NCSDC_INSTRUMENTDashlet($id, $def = null) {
+class NCSDC_InstrumentDashlet extends DashletGeneric { 
+    function NCSDC_InstrumentDashlet($id, $def = null) {
 		global $current_user, $app_strings;
-		require('modules/NCSDC_INSTRUMENT/metadata/dashletviewdefs.php');
+		require('modules/NCSDC_Instrument/metadata/dashletviewdefs.php');
 
         parent::DashletGeneric($id, $def);
 
-        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'NCSDC_INSTRUMENT');
+        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'NCSDC_Instrument');
 
-        $this->searchFields = $dashletData['NCSDC_INSTRUMENTDashlet']['searchFields'];
-        $this->columns = $dashletData['NCSDC_INSTRUMENTDashlet']['columns'];
+        $this->searchFields = $dashletData['NCSDC_InstrumentDashlet']['searchFields'];
+        $this->columns = $dashletData['NCSDC_InstrumentDashlet']['columns'];
 
-        $this->seedBean = new NCSDC_INSTRUMENT();        
+        $this->seedBean = new NCSDC_Instrument();        
     }
 }
