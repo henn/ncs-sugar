@@ -178,6 +178,10 @@ array (
           array (
             'name' => 'plt_participant_plt_participant_consent_name',
           ),
+          1 => 
+          array (
+            'name' => 'plt_participant_plt_prtcptcnsnt_name',
+          ),
         ),
       ),
     ),

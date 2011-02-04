@@ -145,6 +145,10 @@ array (
           array (
             'name' => 'plt_participant_plt_ppg_status_history_name',
           ),
+          1 => 
+          array (
+            'name' => 'plt_participant_plt_ppgstshstry_name',
+          ),
         ),
       ),
     ),

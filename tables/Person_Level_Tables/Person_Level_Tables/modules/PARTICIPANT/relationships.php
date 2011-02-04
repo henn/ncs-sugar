@@ -1,7 +1,7 @@
 <?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -33,67 +33,8 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
+
 $relationships = array (
-  'plt_participant_plt_participant_consent' => 
-  array (
-    'rhs_label' => 'Participant Consent',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'PLT_PARTICIPANT',
-    'rhs_module' => 'PLT_Participant_Consent',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'plt_participant_plt_participant_consent',
-  ),
-  'plt_participant_plt_participant_visit_consent' => 
-  array (
-    'rhs_label' => 'Participant Visit Consent',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'PLT_PARTICIPANT',
-    'rhs_module' => 'PLT_Participant_VISIT_CONSENT',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'plt_participant_plt_participant_visit_consent',
-  ),
-  'plt_participant_plt_ppg_status_history' => 
-  array (
-    'rhs_label' => 'PPG Status History',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'PLT_PARTICIPANT',
-    'rhs_module' => 'PLT_PPG_STATUS_HISTORY',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'plt_participant_plt_ppg_status_history',
-  ),
-  'plt_participant_plt_ppg_details' => 
-  array (
-    'rhs_label' => 'PPG Details',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'PLT_PARTICIPANT',
-    'rhs_module' => 'PLT_PPG_DETAILS',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'plt_participant_plt_ppg_details',
-  ),
   'plt_participant_activities' => 
   array (
     'rhs_label' => 'Activities',
@@ -108,6 +49,66 @@ $relationships = array (
     'is_custom' => false,
     'from_studio' => false,
     'relationship_name' => 'plt_participant_activities',
+  ),
+  'plt_participant_plt_prtcptcnsnt' => 
+  array (
+    'rhs_label' => 'Participant Consent',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_PARTICIPANT',
+    'rhs_module' => 'PLT_PrtcptCnsnt',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_participant_plt_prtcptcnsnt',
+  ),
+  'plt_participant_plt_prtcptvstc' => 
+  array (
+    'rhs_label' => 'Participant Visit Consent',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_PARTICIPANT',
+    'rhs_module' => 'PLT_PrtcptVstC',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_participant_plt_prtcptvstc',
+  ),
+  'plt_participant_plt_ppgstshstry' => 
+  array (
+    'rhs_label' => 'PPG Status History',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_PARTICIPANT',
+    'rhs_module' => 'PLT_PPGStsHstry',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_participant_plt_ppgstshstry',
+  ),
+  'plt_participant_plt_ppgdetails' => 
+  array (
+    'rhs_label' => 'PPG Details',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_PARTICIPANT',
+    'rhs_module' => 'PLT_PPGDetails',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_participant_plt_ppgdetails',
   ),
 );
 ?>

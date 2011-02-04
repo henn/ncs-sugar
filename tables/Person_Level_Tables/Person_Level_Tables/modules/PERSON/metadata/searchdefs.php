@@ -1,5 +1,5 @@
 <?php
-$module_name = 'PLT_Person';
+$module_name = 'PLT_PERSON';
 $searchdefs [$module_name] = 
 array (
   'layout' => 

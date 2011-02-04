@@ -129,6 +129,10 @@ array (
           array (
             'name' => 'plt_participant_plt_ppg_details_name',
           ),
+          1 => 
+          array (
+            'name' => 'plt_participant_plt_ppgdetails_name',
+          ),
         ),
       ),
     ),

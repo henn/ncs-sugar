@@ -1,5 +1,5 @@
 <?php
-$module_name = 'PLT_Participant';
+$module_name = 'PLT_PARTICIPANT';
 $viewdefs [$module_name] = 
 array (
   'DetailView' => 

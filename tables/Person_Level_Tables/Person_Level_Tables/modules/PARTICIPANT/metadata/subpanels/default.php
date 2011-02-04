@@ -1,5 +1,5 @@
 <?php
-$module_name='PLT_Participant';
+$module_name='PLT_PARTICIPANT';
 $subpanel_layout = array (
   'top_buttons' => 
   array (
