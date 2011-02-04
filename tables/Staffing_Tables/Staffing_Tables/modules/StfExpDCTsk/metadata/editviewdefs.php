@@ -123,6 +123,10 @@ array (
           array (
             'name' => 'st_staff_weekly_expense_st_staff_exp_data_cllctn_tasks_name',
           ),
+          1 => 
+          array (
+            'name' => 'st_stfwkexpns_st_stfexpdctsk_name',
+          ),
         ),
       ),
     ),

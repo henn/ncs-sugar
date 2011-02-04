@@ -139,6 +139,10 @@ array (
           array (
             'name' => 'st_staff_weekly_expense_st_staff_exp_mngmnt_tasks_name',
           ),
+          1 => 
+          array (
+            'name' => 'st_stfwkexpns_st_stfexpmgtsk_name',
+          ),
         ),
       ),
     ),

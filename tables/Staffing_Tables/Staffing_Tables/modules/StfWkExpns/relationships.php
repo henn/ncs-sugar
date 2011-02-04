@@ -1,7 +1,7 @@
 <?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -33,13 +33,14 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
+
 $relationships = array (
-  'st_staff_weekly_expense_st_staff_exp_mngmnt_tasks' => 
+  'st_stfwkexpns_st_stfexpmgtsk' => 
   array (
     'rhs_label' => 'Weekly Staff Expense Management Tasks',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'ST_STAFF_WEEKLY_EXPENSE',
-    'rhs_module' => 'ST_STAFF_EXP_MNGMNT_TASKS',
+    'lhs_module' => 'ST_StfWkExpns',
+    'rhs_module' => 'ST_StfExpMgTsk',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -47,14 +48,14 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'st_staff_weekly_expense_st_staff_exp_mngmnt_tasks',
+    'relationship_name' => 'st_stfwkexpns_st_stfexpmgtsk',
   ),
-  'st_staff_weekly_expense_st_staff_exp_data_cllctn_tasks' => 
+  'st_stfwkexpns_st_stfexpdctsk' => 
   array (
     'rhs_label' => 'Weekly Staff Expense Data Collection Tasks',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'ST_STAFF_WEEKLY_EXPENSE',
-    'rhs_module' => 'ST_STAFF_EXP_DATA_CLLCTN_TASKS',
+    'lhs_module' => 'ST_StfWkExpns',
+    'rhs_module' => 'ST_StfExpDCTsk',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -62,7 +63,7 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'st_staff_weekly_expense_st_staff_exp_data_cllctn_tasks',
+    'relationship_name' => 'st_stfwkexpns_st_stfexpdctsk',
   ),
 );
 ?>

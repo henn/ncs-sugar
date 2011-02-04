@@ -1,7 +1,7 @@
 <?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -33,13 +33,14 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
+
 $relationships = array (
-  'st_staff_st_staff_language' => 
+  'st_staffrstr_st_stflang' => 
   array (
     'rhs_label' => 'Staff Language',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'ST_STAFF',
-    'rhs_module' => 'ST_StaffRstr_LANGUAGE',
+    'lhs_module' => 'ST_StaffRstr',
+    'rhs_module' => 'ST_StfLang',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -47,14 +48,14 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'st_staff_st_staff_language',
+    'relationship_name' => 'st_staffrstr_st_stflang',
   ),
-  'st_staff_st_staff_validation' => 
+  'st_staffrstr_st_stfvldtn' => 
   array (
     'rhs_label' => 'Staff Validation',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'ST_STAFF',
-    'rhs_module' => 'ST_StaffRstr_VALIDATION',
+    'lhs_module' => 'ST_StaffRstr',
+    'rhs_module' => 'ST_StfVldtn',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -62,14 +63,14 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'st_staff_st_staff_validation',
+    'relationship_name' => 'st_staffrstr_st_stfvldtn',
   ),
-  'st_staff_st_staff_weekly_expense' => 
+  'st_staffrstr_st_stfwkexpns' => 
   array (
     'rhs_label' => 'Weekly Staff Expenses',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'ST_STAFF',
-    'rhs_module' => 'ST_StaffRstr_WEEKLY_EXPENSE',
+    'lhs_module' => 'ST_StaffRstr',
+    'rhs_module' => 'ST_StfWkExpns',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -77,14 +78,14 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'st_staff_st_staff_weekly_expense',
+    'relationship_name' => 'st_staffrstr_st_stfwkexpns',
   ),
-  'st_staff_st_staff_cert_training' => 
+  'st_staffrstr_st_stfcrttrn' => 
   array (
     'rhs_label' => 'Staff Trainings and Certifications',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'ST_STAFF',
-    'rhs_module' => 'ST_StaffRstr_CERT_TRAINING',
+    'lhs_module' => 'ST_StaffRstr',
+    'rhs_module' => 'ST_StfCrtTrn',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -92,14 +93,14 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'st_staff_st_staff_cert_training',
+    'relationship_name' => 'st_staffrstr_st_stfcrttrn',
   ),
-  'st_staff_st_outreach' => 
+  'st_staffrstr_st_wkoeact' => 
   array (
     'rhs_label' => 'Weekly Outreach & Engagement Activities',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'ST_STAFF',
-    'rhs_module' => 'ST_OUTREACH',
+    'lhs_module' => 'ST_StaffRstr',
+    'rhs_module' => 'ST_WkOEAct',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -107,7 +108,7 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'st_staff_st_outreach',
+    'relationship_name' => 'st_staffrstr_st_wkoeact',
   ),
 );
 ?>

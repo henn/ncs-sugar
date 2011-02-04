@@ -96,6 +96,10 @@ array (
           array (
             'name' => 'st_staff_st_staff_language_name',
           ),
+          1 => 
+          array (
+            'name' => 'st_staffrstr_st_stflang_name',
+          ),
         ),
       ),
     ),

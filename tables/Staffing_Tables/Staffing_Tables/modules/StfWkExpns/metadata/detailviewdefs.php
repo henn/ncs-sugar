@@ -161,6 +161,10 @@ array (
           array (
             'name' => 'st_staff_st_staff_weekly_expense_name',
           ),
+          1 => 
+          array (
+            'name' => 'st_staffrstr_st_stfwkexpns_name',
+          ),
         ),
       ),
     ),
