@@ -317,6 +317,10 @@ array (
           array (
             'name' => 'ncsdc_event_ncsdc_non_interview_reprt_name',
           ),
+          1 => 
+          array (
+            'name' => 'ncsdc_eventinfo_ncsdc_noninterrpt_name',
+          ),
         ),
       ),
     ),

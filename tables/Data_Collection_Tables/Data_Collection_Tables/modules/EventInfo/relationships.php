@@ -1,7 +1,7 @@
 <?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -33,12 +33,13 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
+
 $relationships = array (
-  'ncsdc_event_ncsdc_incident' => 
+  'ncsdc_eventinfo_ncsdc_incident' => 
   array (
     'rhs_label' => 'Incident',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'NCSDC_EVENT',
+    'lhs_module' => 'NCSDC_EventInfo',
     'rhs_module' => 'NCSDC_INCIDENT',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
@@ -49,41 +50,11 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'ncsdc_event_ncsdc_incident',
   ),
-  'ncsdc_event_ncsdc_incident_media' => 
-  array (
-    'rhs_label' => 'Incident Media Multi-Select',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'NCSDC_EVENT',
-    'rhs_module' => 'NCSDC_INCIDENT_MEDIA',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'ncsdc_event_ncsdc_incident_media',
-  ),
-  'ncsdc_event_ncsdc_incident_unanticipated' => 
-  array (
-    'rhs_label' => 'Incident Unanticipated Multi-Select',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'NCSDC_EVENT',
-    'rhs_module' => 'NCSDC_INCIDENT_UNANTICIPATED',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'ncsdc_event_ncsdc_incident_unanticipated',
-  ),
-  'ncsdc_event_ncsdc_instrument' => 
+  'ncsdc_eventinfo_ncsdc_instrument' => 
   array (
     'rhs_label' => 'Instrument Information',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'NCSDC_EVENT',
+    'lhs_module' => 'NCSDC_EventInfo',
     'rhs_module' => 'NCSDC_INSTRUMENT',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
@@ -94,12 +65,42 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'ncsdc_event_ncsdc_instrument',
   ),
-  'ncsdc_event_ncsdc_non_interview_reprt' => 
+  'ncsdc_eventinfo_ncsdc_incmedmults' => 
+  array (
+    'rhs_label' => 'Incident Media Multi-Select',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'NCSDC_EventInfo',
+    'rhs_module' => 'NCSDC_IncMedMultS',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'ncsdc_eventinfo_ncsdc_incmedmults',
+  ),
+  'ncsdc_eventinfo_ncsdc_incunatmlts' => 
+  array (
+    'rhs_label' => 'Incident Unanticipated Multi-Select',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'NCSDC_EventInfo',
+    'rhs_module' => 'NCSDC_IncUnatMltS',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'ncsdc_eventinfo_ncsdc_incunatmlts',
+  ),
+  'ncsdc_eventinfo_ncsdc_noninterrpt' => 
   array (
     'rhs_label' => 'Non Interview Report',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'NCSDC_EVENT',
-    'rhs_module' => 'NCSDC_Non_Interview_Reprt',
+    'lhs_module' => 'NCSDC_EventInfo',
+    'rhs_module' => 'NCSDC_NonInterRpt',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -107,14 +108,14 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'ncsdc_event_ncsdc_non_interview_reprt',
+    'relationship_name' => 'ncsdc_eventinfo_ncsdc_noninterrpt',
   ),
-  'ncsdc_event_ncsdc_non_interview_rpt_noaccess' => 
+  'ncsdc_eventinfo_ncsdc_nirnaccmlts' => 
   array (
     'rhs_label' => 'NIR No Access Multi-Select',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'NCSDC_EVENT',
-    'rhs_module' => 'NCSDC_NON_INTERVIEW_RPT_NOACCESS',
+    'lhs_module' => 'NCSDC_EventInfo',
+    'rhs_module' => 'NCSDC_NIRNAccMltS',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -122,14 +123,14 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'ncsdc_event_ncsdc_non_interview_rpt_noaccess',
+    'relationship_name' => 'ncsdc_eventinfo_ncsdc_nirnaccmlts',
   ),
-  'ncsdc_event_ncsdc_non_interview_rpt_dutype' => 
+  'ncsdc_eventinfo_ncsdc_nirdutpmlts' => 
   array (
     'rhs_label' => 'NIR DU Type Multi Select',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'NCSDC_EVENT',
-    'rhs_module' => 'NCSDC_NON_INTERVIEW_RPT_DUTYPE',
+    'lhs_module' => 'NCSDC_EventInfo',
+    'rhs_module' => 'NCSDC_NIRDUTpMltS',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -137,14 +138,14 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'ncsdc_event_ncsdc_non_interview_rpt_dutype',
+    'relationship_name' => 'ncsdc_eventinfo_ncsdc_nirdutpmlts',
   ),
-  'ncsdc_event_ncsdc_non_interview_rpt_vacant' => 
+  'ncsdc_eventinfo_ncsdc_nintrptvcnt' => 
   array (
     'rhs_label' => 'NIR Vacant Multi-Select',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'NCSDC_EVENT',
-    'rhs_module' => 'NCSDC_NON_INTERVIEW_RPT_VACANT',
+    'lhs_module' => 'NCSDC_EventInfo',
+    'rhs_module' => 'NCSDC_NIntRptVcnt',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -152,14 +153,14 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'ncsdc_event_ncsdc_non_interview_rpt_vacant',
+    'relationship_name' => 'ncsdc_eventinfo_ncsdc_nintrptvcnt',
   ),
-  'ncsdc_event_ncsdc_non_interview_rpt_refusal' => 
+  'ncsdc_eventinfo_ncsdc_nirrfsmlts' => 
   array (
     'rhs_label' => 'NIR Refusal Multi-Select',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'NCSDC_EVENT',
-    'rhs_module' => 'NCSDC_NON_INTERVIEW_RPT_REFUSAL',
+    'lhs_module' => 'NCSDC_EventInfo',
+    'rhs_module' => 'NCSDC_NIRRfsMltS',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -167,14 +168,14 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'ncsdc_event_ncsdc_non_interview_rpt_refusal',
+    'relationship_name' => 'ncsdc_eventinfo_ncsdc_nirrfsmlts',
   ),
-  'ncsdc_event_ncsdc_non_interview_rpt_dutype_1' => 
+  'ncsdc_eventinfo_ncsdc_nirdutpmlts_1' => 
   array (
     'rhs_label' => 'NIR DU Type Multi Select',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'NCSDC_EVENT',
-    'rhs_module' => 'NCSDC_NON_INTERVIEW_RPT_DUTYPE',
+    'lhs_module' => 'NCSDC_EventInfo',
+    'rhs_module' => 'NCSDC_NIRDUTpMltS',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -182,7 +183,7 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'ncsdc_event_ncsdc_non_interview_rpt_dutype_1',
+    'relationship_name' => 'ncsdc_eventinfo_ncsdc_nirdutpmlts_1',
   ),
 );
 ?>

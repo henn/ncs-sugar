@@ -1,5 +1,5 @@
 <?php
-$module_name = 'NCSDC_Incident';
+$module_name = 'NCSDC_INCIDENT';
 $searchdefs [$module_name] = 
 array (
   'layout' => 

@@ -1,5 +1,5 @@
 <?php
-$module_name = 'NCSDC_Instrument';
+$module_name = 'NCSDC_INSTRUMENT';
 $viewdefs [$module_name] = 
 array (
   'DetailView' => 

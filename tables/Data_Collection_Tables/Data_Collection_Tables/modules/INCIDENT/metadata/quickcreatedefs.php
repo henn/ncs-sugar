@@ -33,7 +33,7 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
-$module_name = 'NCSDC_Incident';
+$module_name = 'NCSDC_INCIDENT';
 $viewdefs[$module_name]['QuickCreate'] = array(
     'templateMeta' => array('maxColumns' => '2', 
                             'widths' => array(

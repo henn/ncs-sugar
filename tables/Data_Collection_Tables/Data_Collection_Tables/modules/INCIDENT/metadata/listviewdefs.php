@@ -1,5 +1,5 @@
 <?php
-$module_name = 'NCSDC_Incident';
+$module_name = 'NCSDC_INCIDENT';
 $listViewDefs [$module_name] = 
 array (
   'NAME' => 

@@ -82,6 +82,10 @@ array (
           array (
             'name' => 'ncsdc_event_ncsdc_non_interview_rpt_noaccess_name',
           ),
+          1 => 
+          array (
+            'name' => 'ncsdc_eventinfo_ncsdc_nirnaccmlts_name',
+          ),
         ),
       ),
     ),

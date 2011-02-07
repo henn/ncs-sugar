@@ -1,5 +1,5 @@
 <?php
-$module_name = 'NCSDC_Incident';
+$module_name = 'NCSDC_INCIDENT';
 $viewdefs [$module_name] = 
 array (
   'DetailView' => 

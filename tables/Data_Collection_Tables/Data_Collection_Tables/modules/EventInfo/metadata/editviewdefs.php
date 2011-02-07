@@ -160,6 +160,10 @@ array (
           array (
             'name' => 'ncsdc_contact_ncsdc_event_name',
           ),
+          1 => 
+          array (
+            'name' => 'ncsdc_cntctinfo_ncsdc_eventinfo_name',
+          ),
         ),
       ),
     ),

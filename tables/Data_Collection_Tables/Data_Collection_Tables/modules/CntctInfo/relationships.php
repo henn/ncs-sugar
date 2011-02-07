@@ -1,7 +1,7 @@
 <?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -33,13 +33,14 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
+
 $relationships = array (
-  'ncsdc_contact_ncsdc_event' => 
+  'ncsdc_cntctinfo_ncsdc_eventinfo' => 
   array (
     'rhs_label' => 'Event Information',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'NCSDC_CONTACT',
-    'rhs_module' => 'NCSDC_EVENT',
+    'lhs_module' => 'NCSDC_CntctInfo',
+    'rhs_module' => 'NCSDC_EventInfo',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -47,7 +48,7 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'ncsdc_contact_ncsdc_event',
+    'relationship_name' => 'ncsdc_cntctinfo_ncsdc_eventinfo',
   ),
 );
 ?>
