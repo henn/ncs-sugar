@@ -1,5 +1,5 @@
 <?php
-$module_name = 'LTT_Email';
+$module_name = 'LTT_EMAIL';
 $viewdefs [$module_name] = 
 array (
   'DetailView' => 
@@ -173,7 +173,7 @@ array (
         array (
           0 => 
           array (
-            'name' => 'gt_dwelling_unit_ltt_email_name',
+            'name' => 'gt_dwellingunt_ltt_email_name',
           ),
         ),
       ),

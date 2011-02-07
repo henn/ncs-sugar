@@ -34,12 +34,12 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 $relationships = array (
-  'gt_study_center_gt_primary_sampling_unit' => 
+  'gt_studycntr_gt_prmsampunt' => 
   array (
     'rhs_label' => 'Primary Sampling Unit (PSU)',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'GT_Study_Center',
-    'rhs_module' => 'GT_Primary_Sampling_Unit',
+    'lhs_module' => 'GT_StudyCntr',
+    'rhs_module' => 'GT_PrmSampUnt',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -47,14 +47,14 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'gt_study_center_gt_primary_sampling_unit',
+    'relationship_name' => 'gt_studycntr_gt_prmsampunt',
   ),
-  'gt_study_center_st_staff' => 
+  'gt_studycntr_st_staffrstr' => 
   array (
-    'rhs_label' => 'Staff Roster',
+    'rhs_label' => 'ST_StaffRstr',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'GT_Study_Center',
-    'rhs_module' => 'ST_STAFF',
+    'lhs_module' => 'GT_StudyCntr',
+    'rhs_module' => 'ST_StaffRstr',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -62,7 +62,7 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'gt_study_center_st_staff',
+    'relationship_name' => 'gt_studycntr_st_staffrstr',
   ),
 );
 ?>

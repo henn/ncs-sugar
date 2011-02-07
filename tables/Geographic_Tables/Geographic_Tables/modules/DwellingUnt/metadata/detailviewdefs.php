@@ -159,6 +159,20 @@ array (
             'name' => 'gt_listing_unit_gt_dwelling_unit_name',
           ),
         ),
+        12 => 
+        array (
+          0 => 
+          array (
+            'name' => 'gt_listingunt_gt_dwellingunt_name',
+          ),
+        ),
+        13 => 
+        array (
+          0 => 
+          array (
+            'name' => 'gt_dwellingunt_ltt_address_name',
+          ),
+        ),
       ),
     ),
   ),

@@ -36,7 +36,7 @@
 $relationships = array (
   'gt_household_plt_person' => 
   array (
-    'rhs_label' => 'Person',
+    'rhs_label' => 'PLT_PERSON',
     'lhs_label' => 'Household',
     'lhs_subpanel' => 'default',
     'rhs_subpanel' => 'default',

@@ -36,7 +36,7 @@
 $relationships = array (
   'ltt_address_ltt_telephone' => 
   array (
-    'rhs_label' => 'Telephone',
+    'rhs_label' => 'LTT_TELEPHONE',
     'lhs_label' => 'Address',
     'lhs_subpanel' => 'default',
     'rhs_subpanel' => 'default',

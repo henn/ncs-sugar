@@ -1,5 +1,5 @@
 <?php
-$module_name = 'LTT_Telephone';
+$module_name = 'LTT_TELEPHONE';
 $viewdefs [$module_name] = 
 array (
   'DetailView' => 
@@ -180,7 +180,7 @@ array (
         array (
           0 => 
           array (
-            'name' => 'gt_dwelling_unit_ltt_telephone_name',
+            'name' => 'gt_dwellingunt_ltt_telephone_name',
           ),
         ),
       ),

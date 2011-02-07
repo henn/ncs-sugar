@@ -37,4 +37,6 @@
 $app_list_strings['moduleList']['LTT_Email'] = 'Email';
 $app_list_strings['moduleList']['LTT_Address'] = 'Address';
 $app_list_strings['moduleList']['LTT_Telephone'] = 'Telephone';
-
+$app_list_strings['moduleList']['LTT_ADDRESS'] = 'Address';
+$app_list_strings['moduleList']['LTT_EMAIL'] = 'Email';
+$app_list_strings['moduleList']['LTT_TELEPHONE'] = 'Telephone';

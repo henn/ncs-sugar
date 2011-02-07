@@ -93,6 +93,13 @@ array (
             'name' => 'gt_study_center_gt_primary_sampling_unit_name',
           ),
         ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'gt_studycntr_gt_prmsampunt_name',
+          ),
+        ),
       ),
     ),
   ),

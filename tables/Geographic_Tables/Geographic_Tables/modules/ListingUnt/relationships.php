@@ -34,10 +34,10 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 $relationships = array (
-  'gt_listing_unit_gt_dwelling_unit' => 
+  'gt_listingunt_gt_dwellingunt' => 
   array (
-    'lhs_module' => 'GT_LISTING_UNIT',
-    'rhs_module' => 'GT_Dwelling_Unit',
+    'lhs_module' => 'GT_ListingUnt',
+    'rhs_module' => 'GT_DwellingUnt',
     'relationship_type' => 'one-to-one',
     'readonly' => false,
     'deleted' => false,
@@ -45,7 +45,7 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'gt_listing_unit_gt_dwelling_unit',
+    'relationship_name' => 'gt_listingunt_gt_dwellingunt',
   ),
 );
 ?>

@@ -34,13 +34,13 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 $relationships = array (
-  'gt_dwelling_unit_gt_household' => 
+  'gt_dwellingunt_gt_household' => 
   array (
     'rhs_label' => 'Household',
     'lhs_label' => 'Dwelling Unit (DU)',
     'lhs_subpanel' => 'default',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'GT_Dwelling_Unit',
+    'lhs_module' => 'GT_DwellingUnt',
     'rhs_module' => 'GT_Household',
     'relationship_type' => 'many-to-many',
     'readonly' => false,
@@ -49,11 +49,11 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'gt_dwelling_unit_gt_household',
+    'relationship_name' => 'gt_dwellingunt_gt_household',
   ),
-  'gt_dwelling_unit_ltt_address' => 
+  'gt_dwellingunt_ltt_address' => 
   array (
-    'lhs_module' => 'GT_Dwelling_Unit',
+    'lhs_module' => 'GT_DwellingUnt',
     'rhs_module' => 'LTT_ADDRESS',
     'relationship_type' => 'one-to-one',
     'readonly' => false,
@@ -62,13 +62,13 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'gt_dwelling_unit_ltt_address',
+    'relationship_name' => 'gt_dwellingunt_ltt_address',
   ),
-  'gt_dwelling_unit_ltt_telephone' => 
+  'gt_dwellingunt_ltt_telephone' => 
   array (
-    'rhs_label' => 'Telephone',
+    'rhs_label' => 'LTT_TELEPHONE',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'GT_Dwelling_Unit',
+    'lhs_module' => 'GT_DwellingUnt',
     'rhs_module' => 'LTT_TELEPHONE',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
@@ -77,13 +77,13 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'gt_dwelling_unit_ltt_telephone',
+    'relationship_name' => 'gt_dwellingunt_ltt_telephone',
   ),
-  'gt_dwelling_unit_ltt_email' => 
+  'gt_dwellingunt_ltt_email' => 
   array (
-    'rhs_label' => 'Email',
+    'rhs_label' => 'LTT_EMAIL',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'GT_Dwelling_Unit',
+    'lhs_module' => 'GT_DwellingUnt',
     'rhs_module' => 'LTT_EMAIL',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
@@ -92,7 +92,7 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'gt_dwelling_unit_ltt_email',
+    'relationship_name' => 'gt_dwellingunt_ltt_email',
   ),
 );
 ?>

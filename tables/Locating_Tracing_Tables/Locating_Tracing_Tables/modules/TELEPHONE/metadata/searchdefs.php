@@ -1,5 +1,5 @@
 <?php
-$module_name = 'LTT_Telephone';
+$module_name = 'LTT_TELEPHONE';
 $searchdefs [$module_name] = 
 array (
   'layout' => 

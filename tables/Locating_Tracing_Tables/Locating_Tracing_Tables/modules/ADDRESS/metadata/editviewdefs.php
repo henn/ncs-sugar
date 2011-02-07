@@ -1,5 +1,5 @@
 <?php
-$module_name = 'LTT_Address';
+$module_name = 'LTT_ADDRESS';
 $viewdefs [$module_name] = 
 array (
   'EditView' => 
@@ -218,7 +218,7 @@ array (
         array (
           0 => 
           array (
-            'name' => 'gt_dwelling_unit_ltt_address_name',
+            'name' => 'gt_dwellingunt_ltt_address_name',
           ),
         ),
       ),
