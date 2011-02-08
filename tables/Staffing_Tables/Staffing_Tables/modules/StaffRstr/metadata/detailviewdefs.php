@@ -52,41 +52,20 @@ array (
         array (
           0 => 
           array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
+            'name' => 'description',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_DESCRIPTION',
           ),
         ),
         2 => 
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
-          ),
-          1 => 
-          array (
             'name' => 'staff_id',
             'label' => 'LBL_STAFF_ID',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -100,17 +79,50 @@ array (
             'label' => 'LBL_STAFF_TYPE_OTH',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
+          array (
+            'name' => 'staff_exp',
+            'studio' => 'visible',
+            'label' => 'LBL_STAFF_EXP',
+          ),
+          1 => 
           array (
             'name' => 'subcontractor',
             'studio' => 'visible',
             'label' => 'LBL_SUBCONTRACTOR',
           ),
-          1 => '',
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'staff_comment',
+            'studio' => 'visible',
+            'label' => 'LBL_STAFF_COMMENT',
+          ),
         ),
         6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'gt_study_center_st_staff_name',
+          ),
+        ),
+      ),
+      'lbl_detailview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'staff_gender',
+            'studio' => 'visible',
+            'label' => 'LBL_STAFF_GENDER',
+          ),
+        ),
+        1 => 
         array (
           0 => 
           array (
@@ -124,17 +136,16 @@ array (
             'label' => 'LBL_STAFF_AGE_RANGE',
           ),
         ),
-        7 => 
+        2 => 
         array (
           0 => 
           array (
-            'name' => 'staff_gender',
+            'name' => 'staff_ethnicity',
             'studio' => 'visible',
-            'label' => 'LBL_STAFF_GENDER',
+            'label' => 'LBL_STAFF_ETHNICITY',
           ),
-          1 => '',
         ),
-        8 => 
+        3 => 
         array (
           0 => 
           array (
@@ -146,38 +157,6 @@ array (
           array (
             'name' => 'staff_race_oth',
             'label' => 'LBL_STAFF_RACE_OTH',
-          ),
-        ),
-        9 => 
-        array (
-          0 => 
-          array (
-            'name' => 'staff_ethnicity',
-            'studio' => 'visible',
-            'label' => 'LBL_STAFF_ETHNICITY',
-          ),
-          1 => 
-          array (
-            'name' => 'staff_exp',
-            'studio' => 'visible',
-            'label' => 'LBL_STAFF_EXP',
-          ),
-        ),
-        10 => 
-        array (
-          0 => 
-          array (
-            'name' => 'staff_comment',
-            'studio' => 'visible',
-            'label' => 'LBL_STAFF_COMMENT',
-          ),
-          1 => '',
-        ),
-        11 => 
-        array (
-          0 => 
-          array (
-            'name' => 'gt_study_center_st_staff_name',
           ),
         ),
       ),

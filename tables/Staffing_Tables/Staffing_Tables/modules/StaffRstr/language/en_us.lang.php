@@ -78,5 +78,7 @@ $mod_strings = array (
   'LBL_STAFF_COMMENT' => 'Staff Comment',
   'LNK_IMPORT_ST_STAFFRSTR' => 'Import Staff Roster',
   'LBL_ST_STAFFRSTR_SUBPANEL_TITLE' => 'Staff Roster',
+  'LBL_EDITVIEW_PANEL1' => 'Staff Details',
+  'LBL_DETAILVIEW_PANEL1' => 'Staff Details',
 );
 ?>

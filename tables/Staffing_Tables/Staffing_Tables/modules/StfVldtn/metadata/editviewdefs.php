@@ -52,12 +52,6 @@ array (
         array (
           0 => 
           array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
-          ),
-          1 => 
-          array (
             'name' => 'staff_val_id',
             'label' => 'LBL_STAFF_VAL_ID',
           ),

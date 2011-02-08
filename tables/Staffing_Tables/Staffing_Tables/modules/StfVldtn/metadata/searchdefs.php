@@ -12,23 +12,48 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'current_user_only' => 
+      'staff_val_id' => 
       array (
-        'name' => 'current_user_only',
-        'label' => 'LBL_CURRENT_USER_FILTER',
-        'type' => 'bool',
-        'default' => true,
+        'type' => 'varchar',
+        'label' => 'LBL_STAFF_VAL_ID',
         'width' => '10%',
+        'default' => true,
+        'name' => 'staff_val_id',
       ),
-      'psu_id' => 
+      'staff_id' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_STAFF_ID',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'staff_id',
+      ),
+      'event_id' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_EVENT_ID',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_id',
+      ),
+      'staff_validate' => 
       array (
         'type' => 'enum',
-        'default' => true,
         'studio' => 'visible',
-        'label' => 'LBL_PSU_ID',
+        'label' => 'LBL_STAFF_VALIDATE',
         'sortable' => false,
         'width' => '10%',
-        'name' => 'psu_id',
+        'default' => true,
+        'name' => 'staff_validate',
+      ),
+    ),
+    'advanced_search' => 
+    array (
+      'name' => 
+      array (
+        'name' => 'name',
+        'default' => true,
+        'width' => '10%',
       ),
       'staff_val_id' => 
       array (
@@ -82,23 +107,14 @@ array (
         'default' => true,
         'name' => 'staff_val_comment',
       ),
-    ),
-    'advanced_search' => 
-    array (
-      0 => 'name',
-      1 => 
+      'description' => 
       array (
-        'name' => 'assigned_user_id',
-        'label' => 'LBL_ASSIGNED_TO',
-        'type' => 'enum',
-        'function' => 
-        array (
-          'name' => 'get_user_array',
-          'params' => 
-          array (
-            0 => false,
-          ),
-        ),
+        'type' => 'text',
+        'label' => 'LBL_DESCRIPTION',
+        'sortable' => false,
+        'width' => '10%',
+        'default' => true,
+        'name' => 'description',
       ),
     ),
   ),

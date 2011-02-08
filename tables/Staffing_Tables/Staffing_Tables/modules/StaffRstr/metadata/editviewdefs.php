@@ -52,12 +52,6 @@ array (
         array (
           0 => 
           array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
-          ),
-          1 => 
-          array (
             'name' => 'staff_id',
             'label' => 'LBL_STAFF_ID',
           ),
@@ -80,32 +74,69 @@ array (
         array (
           0 => 
           array (
-            'name' => 'subcontractor',
+            'name' => 'staff_exp',
             'studio' => 'visible',
-            'label' => 'LBL_SUBCONTRACTOR',
+            'label' => 'LBL_STAFF_EXP',
           ),
           1 => 
           array (
-            'name' => 'staff_yob',
-            'label' => 'LBL_STAFF_YOB',
+            'name' => 'subcontractor',
+            'studio' => 'visible',
+            'label' => 'LBL_SUBCONTRACTOR',
           ),
         ),
         5 => 
         array (
           0 => 
           array (
-            'name' => 'staff_age_range',
+            'name' => 'staff_comment',
             'studio' => 'visible',
-            'label' => 'LBL_STAFF_AGE_RANGE',
+            'label' => 'LBL_STAFF_COMMENT',
           ),
-          1 => 
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'gt_study_center_st_staff_name',
+          ),
+        ),
+      ),
+      'lbl_editview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
           array (
             'name' => 'staff_gender',
             'studio' => 'visible',
             'label' => 'LBL_STAFF_GENDER',
           ),
         ),
-        6 => 
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'staff_yob',
+            'label' => 'LBL_STAFF_YOB',
+          ),
+          1 => 
+          array (
+            'name' => 'staff_age_range',
+            'studio' => 'visible',
+            'label' => 'LBL_STAFF_AGE_RANGE',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'staff_ethnicity',
+            'studio' => 'visible',
+            'label' => 'LBL_STAFF_ETHNICITY',
+          ),
+        ),
+        3 => 
         array (
           0 => 
           array (
@@ -117,38 +148,6 @@ array (
           array (
             'name' => 'staff_race_oth',
             'label' => 'LBL_STAFF_RACE_OTH',
-          ),
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'staff_ethnicity',
-            'studio' => 'visible',
-            'label' => 'LBL_STAFF_ETHNICITY',
-          ),
-          1 => 
-          array (
-            'name' => 'staff_exp',
-            'studio' => 'visible',
-            'label' => 'LBL_STAFF_EXP',
-          ),
-        ),
-        8 => 
-        array (
-          0 => 
-          array (
-            'name' => 'staff_comment',
-            'studio' => 'visible',
-            'label' => 'LBL_STAFF_COMMENT',
-          ),
-          1 => '',
-        ),
-        9 => 
-        array (
-          0 => 
-          array (
-            'name' => 'gt_study_center_st_staff_name',
           ),
         ),
       ),

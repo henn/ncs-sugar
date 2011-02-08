@@ -9,21 +9,6 @@ array (
     'default' => true,
     'link' => true,
   ),
-  'ASSIGNED_USER_NAME' => 
-  array (
-    'width' => '9%',
-    'label' => 'LBL_ASSIGNED_TO_NAME',
-    'default' => true,
-  ),
-  'PSU_ID' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_PSU_ID',
-    'sortable' => false,
-    'width' => '10%',
-  ),
   'STAFF_ID' => 
   array (
     'type' => 'varchar',
@@ -54,19 +39,19 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'STAFF_VAL_DATE' => 
-  array (
-    'type' => 'date',
-    'label' => 'LBL_STAFF_VAL_DATE',
-    'width' => '10%',
-    'default' => true,
-  ),
   'STAFF_VAL_COMMENT' => 
   array (
     'type' => 'text',
     'studio' => 'visible',
     'label' => 'LBL_STAFF_VAL_COMMENT',
     'sortable' => false,
+    'width' => '10%',
+    'default' => false,
+  ),
+  'STAFF_VAL_DATE' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_STAFF_VAL_DATE',
     'width' => '10%',
     'default' => false,
   ),
