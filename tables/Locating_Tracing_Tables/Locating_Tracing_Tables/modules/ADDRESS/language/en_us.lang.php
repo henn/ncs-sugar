@@ -86,5 +86,6 @@ $mod_strings = array (
   'LBL_ADDRESS_2' => 'Address 2',
   'LBL_UNIT' => 'Unit',
   'LBL_STATE' => 'State',
+  'LBL_DETAILVIEW_PANEL1' => 'New Panel 1',
 );
 ?>

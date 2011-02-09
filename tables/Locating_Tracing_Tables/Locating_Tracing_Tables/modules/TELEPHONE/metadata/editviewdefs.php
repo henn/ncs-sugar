@@ -33,34 +33,27 @@ array (
             'name' => 'name',
             'label' => 'LBL_NAME',
           ),
-          1 => 
-          array (
-            'name' => 'assigned_user_name',
-            'label' => 'LBL_ASSIGNED_TO_NAME',
-          ),
         ),
         1 => 
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
+            'name' => 'phone_id',
+            'label' => 'LBL_PHONE_ID',
           ),
+          1 => '',
         ),
         2 => 
         array (
           0 => 
           array (
-            'name' => 'phone_landline',
-            'studio' => 'visible',
-            'label' => 'LBL_PHONE_LANDLINE',
+            'name' => 'phone_nbr',
+            'label' => 'LBL_PHONE_NBR',
           ),
           1 => 
           array (
-            'name' => 'phone_share',
-            'studio' => 'visible',
-            'label' => 'LBL_PHONE_SHARE',
+            'name' => 'phone_ext',
+            'label' => 'LBL_PHONE_EXT',
           ),
         ),
         3 => 
@@ -81,10 +74,16 @@ array (
         array (
           0 => 
           array (
-            'name' => 'phone_id',
-            'label' => 'LBL_PHONE_ID',
+            'name' => 'phone_landline',
+            'studio' => 'visible',
+            'label' => 'LBL_PHONE_LANDLINE',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'phone_share',
+            'studio' => 'visible',
+            'label' => 'LBL_PHONE_SHARE',
+          ),
         ),
         5 => 
         array (
@@ -105,15 +104,6 @@ array (
         array (
           0 => 
           array (
-            'name' => 'phone_ext',
-            'label' => 'LBL_PHONE_EXT',
-          ),
-          1 => '',
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
             'name' => 'phone_rank',
             'studio' => 'visible',
             'label' => 'LBL_PHONE_RANK',
@@ -124,7 +114,7 @@ array (
             'label' => 'LBL_PHONE_RANK_OTH',
           ),
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (
@@ -138,7 +128,7 @@ array (
             'label' => 'LBL_PHONE_INFO_SOURCE_OTH',
           ),
         ),
-        9 => 
+        8 => 
         array (
           0 => 
           array (
@@ -146,13 +136,8 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PHONE_COMMENT',
           ),
-          1 => 
-          array (
-            'name' => 'phone_nbr',
-            'label' => 'LBL_PHONE_NBR',
-          ),
         ),
-        10 => 
+        9 => 
         array (
           0 => 
           array (

@@ -104,6 +104,7 @@ $dashletData['PLT_PERSONDashlet']['columns'] = array (
     'sortable' => false,
     'width' => '10%',
     'default' => false,
+    'name' => 'person_comment',
   ),
   'age' => 
   array (
@@ -111,6 +112,7 @@ $dashletData['PLT_PERSONDashlet']['columns'] = array (
     'label' => 'LBL_AGE',
     'width' => '10%',
     'default' => false,
+    'name' => 'age',
   ),
   'last_name' => 
   array (
@@ -118,6 +120,7 @@ $dashletData['PLT_PERSONDashlet']['columns'] = array (
     'label' => 'LBL_LAST_NAME',
     'width' => '10%',
     'default' => false,
+    'name' => 'last_name',
   ),
   'first_name' => 
   array (
@@ -125,5 +128,6 @@ $dashletData['PLT_PERSONDashlet']['columns'] = array (
     'label' => 'LBL_FIRST_NAME',
     'width' => '10%',
     'default' => false,
+    'name' => 'first_name',
   ),
 );

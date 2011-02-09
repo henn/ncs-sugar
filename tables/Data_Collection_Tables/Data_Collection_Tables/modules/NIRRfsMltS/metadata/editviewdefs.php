@@ -20,6 +20,7 @@ array (
           'field' => '30',
         ),
       ),
+      'useTabs' => false,
     ),
     'panels' => 
     array (
@@ -42,12 +43,30 @@ array (
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
+            'name' => 'nir_refusal_id',
+            'label' => 'LBL_NIR_REFUSAL_ID',
+          ),
+          1 => 
+          array (
+            'name' => 'nir_id',
+            'label' => 'LBL_NIR_ID',
           ),
         ),
         2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'refusal_reason',
+            'studio' => 'visible',
+            'label' => 'LBL_REFUSAL_REASON',
+          ),
+          1 => 
+          array (
+            'name' => 'refusal_reason_oth',
+            'label' => 'LBL_REFUSAL_REASON_OTH',
+          ),
+        ),
+        3 => 
         array (
           0 => 
           array (

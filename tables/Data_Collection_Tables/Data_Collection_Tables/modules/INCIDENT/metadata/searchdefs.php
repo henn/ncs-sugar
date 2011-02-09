@@ -12,11 +12,64 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'current_user_only' => 
+      'incident_id' => 
       array (
-        'name' => 'current_user_only',
-        'label' => 'LBL_CURRENT_USER_FILTER',
-        'type' => 'bool',
+        'type' => 'varchar',
+        'label' => 'LBL_INCIDENT_ID',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'incident_id',
+      ),
+      'inc_report_date' => 
+      array (
+        'type' => 'date',
+        'label' => 'LBL_INC_REPORT_DATE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'inc_report_date',
+      ),
+      'inc_staff_reporter_id' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_INC_STAFF_REPORTER_ID',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'inc_staff_reporter_id',
+      ),
+      'inctype' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_INCTYPE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'inctype',
+      ),
+      'incident_date' => 
+      array (
+        'type' => 'date',
+        'label' => 'LBL_INCIDENT_DATE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'incident_date',
+      ),
+      'inc_action' => 
+      array (
+        'type' => 'text',
+        'studio' => 'visible',
+        'label' => 'LBL_INC_ACTION',
+        'sortable' => false,
+        'width' => '10%',
+        'default' => true,
+        'name' => 'inc_action',
+      ),
+    ),
+    'advanced_search' => 
+    array (
+      'name' => 
+      array (
+        'name' => 'name',
         'default' => true,
         'width' => '10%',
       ),
@@ -27,30 +80,6 @@ array (
         'width' => '10%',
         'default' => true,
         'name' => 'incident_id',
-      ),
-      'incident_time' => 
-      array (
-        'type' => 'datetimecombo',
-        'label' => 'LBL_INCIDENT_TIME',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'incident_time',
-      ),
-      'inc_report_date' => 
-      array (
-        'type' => 'date',
-        'label' => 'LBL_INC_REPORT_DATE',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'inc_report_date',
-      ),
-      'inc_report_time' => 
-      array (
-        'type' => 'datetimecombo',
-        'label' => 'LBL_INC_REPORT_TIME',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'inc_report_time',
       ),
       'inc_staff_reporter_id' => 
       array (
@@ -68,53 +97,21 @@ array (
         'default' => true,
         'name' => 'inc_staff_supervisor_id',
       ),
-      'inc_recip_is_participant' => 
+      'incident_date' => 
       array (
-        'type' => 'varchar',
-        'label' => 'LBL_INC_RECIP_IS_PARTICIPANT',
+        'type' => 'date',
+        'label' => 'LBL_INCIDENT_DATE',
         'width' => '10%',
         'default' => true,
-        'name' => 'inc_recip_is_participant',
+        'name' => 'incident_date',
       ),
-      'inc_recip_is_du' => 
+      'inc_report_date' => 
       array (
-        'type' => 'varchar',
-        'label' => 'LBL_INC_RECIP_IS_DU',
+        'type' => 'date',
+        'label' => 'LBL_INC_REPORT_DATE',
         'width' => '10%',
         'default' => true,
-        'name' => 'inc_recip_is_du',
-      ),
-      'inc_recip_is_staff' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_INC_RECIP_IS_STAFF',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'inc_recip_is_staff',
-      ),
-      'inc_recip_is_acquaintance' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_INC_RECIP_IS_ACQUAINTANCE',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'inc_recip_is_acquaintance',
-      ),
-      'inc_recip_is_family' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_INC_RECIP_IS_FAMILY',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'inc_recip_is_family',
-      ),
-      'inc_contact_person' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_INC_CONTACT_PERSON',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'inc_contact_person',
+        'name' => 'inc_report_date',
       ),
       'inctype' => 
       array (
@@ -126,99 +123,45 @@ array (
         'width' => '10%',
         'name' => 'inctype',
       ),
-      'inctype_oth' => 
+      'inc_recip_is_staff' => 
       array (
         'type' => 'varchar',
-        'label' => 'LBL_INCTYPE_OTH',
+        'label' => 'LBL_INC_RECIP_IS_STAFF',
         'width' => '10%',
         'default' => true,
-        'name' => 'inctype_oth',
+        'name' => 'inc_recip_is_staff',
       ),
-      'incloss_cmptr_model' => 
+      'inc_recip_is_du' => 
       array (
         'type' => 'varchar',
-        'label' => 'LBL_INCLOSS_CMPTR_MODEL',
+        'label' => 'LBL_INC_RECIP_IS_DU',
         'width' => '10%',
         'default' => true,
-        'name' => 'incloss_cmptr_model',
+        'name' => 'inc_recip_is_du',
       ),
-      'incloss_cmptr_sn' => 
+      'inc_recip_is_participant' => 
       array (
         'type' => 'varchar',
-        'label' => 'LBL_INCLOSS_CMPTR_SN',
+        'label' => 'LBL_INC_RECIP_IS_PARTICIPANT',
         'width' => '10%',
         'default' => true,
-        'name' => 'incloss_cmptr_sn',
+        'name' => 'inc_recip_is_participant',
       ),
-      'incloss_cmptr_decal' => 
+      'inc_recip_is_family' => 
       array (
         'type' => 'varchar',
-        'label' => 'LBL_INCLOSS_CMPTR_DECAL',
+        'label' => 'LBL_INC_RECIP_IS_FAMILY',
         'width' => '10%',
         'default' => true,
-        'name' => 'incloss_cmptr_decal',
+        'name' => 'inc_recip_is_family',
       ),
-      'incloss_rem_media' => 
+      'inc_recip_is_acquaintance' => 
       array (
         'type' => 'varchar',
-        'label' => 'LBL_INCLOSS_REM_MEDIA',
+        'label' => 'LBL_INC_RECIP_IS_ACQUAINTANCE',
         'width' => '10%',
         'default' => true,
-        'name' => 'incloss_rem_media',
-      ),
-      'incloss_paper' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_INCLOSS_PAPER',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'incloss_paper',
-      ),
-      'incloss_oth' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_INCLOSS_OTH',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'incloss_oth',
-      ),
-      'inc_reported' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_INC_REPORTED',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'inc_reported',
-      ),
-      'inc_description' => 
-      array (
-        'type' => 'text',
-        'studio' => 'visible',
-        'label' => 'LBL_INC_DESCRIPTION',
-        'sortable' => false,
-        'width' => '10%',
-        'default' => true,
-        'name' => 'inc_description',
-      ),
-      'inc_action' => 
-      array (
-        'type' => 'text',
-        'studio' => 'visible',
-        'label' => 'LBL_INC_ACTION',
-        'sortable' => false,
-        'width' => '10%',
-        'default' => true,
-        'name' => 'inc_action',
-      ),
-      'incident_date' => 
-      array (
-        'type' => 'date',
-        'label' => 'LBL_INCIDENT_DATE',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'incident_date',
+        'name' => 'inc_recip_is_acquaintance',
       ),
       'inc_recip_is_other' => 
       array (
@@ -230,11 +173,27 @@ array (
         'width' => '10%',
         'name' => 'inc_recip_is_other',
       ),
-    ),
-    'advanced_search' => 
-    array (
-      0 => 'name',
-      1 => 
+      'inc_action' => 
+      array (
+        'type' => 'text',
+        'studio' => 'visible',
+        'label' => 'LBL_INC_ACTION',
+        'sortable' => false,
+        'width' => '10%',
+        'default' => true,
+        'name' => 'inc_action',
+      ),
+      'inc_reported' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_INC_REPORTED',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'inc_reported',
+      ),
+      'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',
         'label' => 'LBL_ASSIGNED_TO',
@@ -247,6 +206,8 @@ array (
             0 => false,
           ),
         ),
+        'default' => true,
+        'width' => '10%',
       ),
     ),
   ),

@@ -52,36 +52,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
             'name' => 'instrument_id',
             'label' => 'LBL_INSTRUMENT_ID',
           ),
           1 => '',
         ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (
@@ -91,7 +67,7 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
@@ -100,7 +76,7 @@ array (
           ),
           1 => '',
         ),
-        6 => 
+        4 => 
         array (
           0 => 
           array (
@@ -110,7 +86,7 @@ array (
           ),
           1 => '',
         ),
-        7 => 
+        5 => 
         array (
           0 => 
           array (
@@ -124,7 +100,7 @@ array (
             'label' => 'LBL_INS_MODE_OTH',
           ),
         ),
-        8 => 
+        6 => 
         array (
           0 => 
           array (
@@ -137,7 +113,7 @@ array (
             'label' => 'LBL_INS_DATE_END',
           ),
         ),
-        9 => 
+        7 => 
         array (
           0 => 
           array (
@@ -150,7 +126,7 @@ array (
             'label' => 'LBL_INS_END_TIME',
           ),
         ),
-        10 => 
+        8 => 
         array (
           0 => 
           array (
@@ -160,7 +136,7 @@ array (
           ),
           1 => '',
         ),
-        11 => 
+        9 => 
         array (
           0 => 
           array (
@@ -169,7 +145,7 @@ array (
           ),
           1 => '',
         ),
-        12 => 
+        10 => 
         array (
           0 => 
           array (
@@ -179,7 +155,7 @@ array (
           ),
           1 => '',
         ),
-        13 => 
+        11 => 
         array (
           0 => 
           array (
@@ -189,7 +165,7 @@ array (
           ),
           1 => '',
         ),
-        14 => 
+        12 => 
         array (
           0 => 
           array (
@@ -197,9 +173,8 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_INSTRU_COMMENT',
           ),
-          1 => '',
         ),
-        15 => 
+        13 => 
         array (
           0 => 
           array (

@@ -52,36 +52,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
             'name' => 'sc_id',
             'label' => 'LBL_SC_ID',
           ),
           1 => '',
         ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (
@@ -91,7 +67,7 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
@@ -100,7 +76,7 @@ array (
           ),
           1 => '',
         ),
-        6 => 
+        4 => 
         array (
           0 => 
           array (
@@ -110,14 +86,14 @@ array (
           ),
           1 => '',
         ),
-        7 => 
+        5 => 
         array (
           0 => 
           array (
             'name' => 'gt_study_center_gt_primary_sampling_unit_name',
           ),
         ),
-        8 => 
+        6 => 
         array (
           0 => 
           array (

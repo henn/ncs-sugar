@@ -43,10 +43,10 @@ array (
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
+            'name' => 'nir_id',
+            'label' => 'LBL_NIR_ID',
           ),
+          1 => '',
         ),
         2 => 
         array (
@@ -65,22 +65,9 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PERM_LTR',
           ),
+          1 => '',
         ),
         4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'nir_id',
-            'label' => 'LBL_NIR_ID',
-          ),
-          1 => '',
-        ),
-        5 => 
-        array (
-          0 => '',
-          1 => '',
-        ),
-        6 => 
         array (
           0 => 
           array (
@@ -94,12 +81,7 @@ array (
             'label' => 'LBL_NIR_TYPE_PERSON_OTH',
           ),
         ),
-        7 => 
-        array (
-          0 => '',
-          1 => '',
-        ),
-        8 => 
+        5 => 
         array (
           0 => 
           array (
@@ -113,7 +95,7 @@ array (
             'label' => 'LBL_NIR_VAC_INFO_OTH',
           ),
         ),
-        9 => 
+        6 => 
         array (
           0 => 
           array (
@@ -127,7 +109,7 @@ array (
             'label' => 'LBL_NIR_NOACCESS_OTH',
           ),
         ),
-        10 => 
+        7 => 
         array (
           0 => 
           array (
@@ -141,7 +123,7 @@ array (
             'label' => 'LBL_NIR_ACCESS_ATTEMPT_OTH',
           ),
         ),
-        11 => 
+        8 => 
         array (
           0 => 
           array (
@@ -156,7 +138,7 @@ array (
             'label' => 'LBL_NIR_OTHER',
           ),
         ),
-        12 => 
+        9 => 
         array (
           0 => 
           array (
@@ -170,7 +152,7 @@ array (
             'label' => 'LBL_COG_INFORM_RELATION_OTH',
           ),
         ),
-        13 => 
+        10 => 
         array (
           0 => 
           array (
@@ -180,7 +162,7 @@ array (
           ),
           1 => '',
         ),
-        14 => 
+        11 => 
         array (
           0 => 
           array (
@@ -194,7 +176,7 @@ array (
             'label' => 'LBL_WHO_REFUSED_OTH',
           ),
         ),
-        15 => 
+        12 => 
         array (
           0 => 
           array (
@@ -209,7 +191,7 @@ array (
             'label' => 'LBL_REF_ACTION',
           ),
         ),
-        16 => 
+        13 => 
         array (
           0 => 
           array (
@@ -218,7 +200,7 @@ array (
             'label' => 'LBL_COG_DIS_DESC',
           ),
         ),
-        17 => 
+        14 => 
         array (
           0 => 
           array (
@@ -232,15 +214,21 @@ array (
             'label' => 'LBL_DECEASED_INFORM_OTH',
           ),
         ),
-        18 => 
+        15 => 
         array (
           0 => 
           array (
             'name' => 'yod',
             'label' => 'LBL_YOD',
           ),
+          1 => 
+          array (
+            'name' => 'state_death',
+            'studio' => 'visible',
+            'label' => 'LBL_STATE_DEATH',
+          ),
         ),
-        19 => 
+        16 => 
         array (
           0 => 
           array (
@@ -254,7 +242,7 @@ array (
             'label' => 'LBL_REASON_UNAVAIL_OTH',
           ),
         ),
-        20 => 
+        17 => 
         array (
           0 => 
           array (
@@ -268,7 +256,7 @@ array (
             'label' => 'LBL_MOVED_UNIT',
           ),
         ),
-        21 => 
+        18 => 
         array (
           0 => 
           array (
@@ -282,7 +270,7 @@ array (
             'label' => 'LBL_MOVED_RELATION_OTH',
           ),
         ),
-        22 => 
+        19 => 
         array (
           0 => 
           array (
@@ -291,7 +279,7 @@ array (
           ),
           1 => '',
         ),
-        23 => 
+        20 => 
         array (
           0 => 
           array (
@@ -301,17 +289,7 @@ array (
           ),
           1 => '',
         ),
-        24 => 
-        array (
-          0 => 
-          array (
-            'name' => 'state_death',
-            'studio' => 'visible',
-            'label' => 'LBL_STATE_DEATH',
-          ),
-          1 => '',
-        ),
-        25 => 
+        21 => 
         array (
           0 => 
           array (

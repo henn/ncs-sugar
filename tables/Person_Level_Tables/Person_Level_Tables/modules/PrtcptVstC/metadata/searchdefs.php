@@ -12,22 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'current_user_only' => 
-      array (
-        'name' => 'current_user_only',
-        'label' => 'LBL_CURRENT_USER_FILTER',
-        'type' => 'bool',
-        'default' => true,
-        'width' => '10%',
-      ),
-      'pid_visit_consent_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_PID_VISIT_CONSENT_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'pid_visit_consent_id',
-      ),
       'vis_consent_type' => 
       array (
         'type' => 'enum',
@@ -38,24 +22,6 @@ array (
         'width' => '10%',
         'name' => 'vis_consent_type',
       ),
-      'vis_consent_response' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_VIS_CONSENT_RESPONSE',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'vis_consent_response',
-      ),
-      'vis_language_oth' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_VIS_LANGUAGE_OTH',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'vis_language_oth',
-      ),
       'vis_who_consented' => 
       array (
         'type' => 'enum',
@@ -65,26 +31,6 @@ array (
         'sortable' => false,
         'width' => '10%',
         'name' => 'vis_who_consented',
-      ),
-      'vis_translate' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_VIS_TRANSLATE',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'vis_translate',
-      ),
-      'vis_comments' => 
-      array (
-        'type' => 'text',
-        'studio' => 'visible',
-        'label' => 'LBL_VIS_COMMENTS',
-        'sortable' => false,
-        'width' => '10%',
-        'default' => true,
-        'name' => 'vis_comments',
       ),
       'vis_language' => 
       array (
@@ -99,8 +45,61 @@ array (
     ),
     'advanced_search' => 
     array (
-      0 => 'name',
-      1 => 
+      'name' => 
+      array (
+        'name' => 'name',
+        'default' => true,
+        'width' => '10%',
+      ),
+      'vis_consent_type' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_VIS_CONSENT_TYPE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'vis_consent_type',
+      ),
+      'vis_who_consented' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_VIS_WHO_CONSENTED',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'vis_who_consented',
+      ),
+      'vis_language' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_VIS_LANGUAGE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'vis_language',
+      ),
+      'vis_translate' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_VIS_TRANSLATE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'vis_translate',
+      ),
+      'pid_visit_consent_id' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_PID_VISIT_CONSENT_ID',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'pid_visit_consent_id',
+      ),
+      'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',
         'label' => 'LBL_ASSIGNED_TO',
@@ -113,6 +112,8 @@ array (
             0 => false,
           ),
         ),
+        'default' => true,
+        'width' => '10%',
       ),
     ),
   ),

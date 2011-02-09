@@ -43,31 +43,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
-          ),
-          1 => '',
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
             'name' => 'contact_id',
             'label' => 'LBL_CONTACT_ID',
           ),
           1 => '',
         ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (
@@ -76,7 +57,7 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
@@ -84,17 +65,13 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_CONTACT_TYPE',
           ),
-          1 => '',
-        ),
-        6 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'contact_type_oth',
             'label' => 'LBL_CONTACT_TYPE_OTH',
           ),
         ),
-        7 => 
+        4 => 
         array (
           0 => 
           array (
@@ -103,25 +80,20 @@ array (
           ),
           1 => '',
         ),
-        8 => 
+        5 => 
         array (
           0 => 
           array (
             'name' => 'contact_start_time',
             'label' => 'LBL_CONTACT_START_TIME',
           ),
-          1 => '',
-        ),
-        9 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'contact_end_time',
             'label' => 'LBL_CONTACT_END_TIME',
           ),
-          1 => '',
         ),
-        10 => 
+        6 => 
         array (
           0 => 
           array (
@@ -129,18 +101,13 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_CONTACT_LANG',
           ),
-          1 => '',
-        ),
-        11 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'contact_lang_oth',
             'label' => 'LBL_CONTACT_LANG_OTH',
           ),
-          1 => '',
         ),
-        12 => 
+        7 => 
         array (
           0 => 
           array (
@@ -148,18 +115,13 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_CONTACT_INTERPRET',
           ),
-          1 => '',
-        ),
-        13 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'contact_interpret_oth',
             'label' => 'LBL_CONTACT_INTERPRET_OTH',
           ),
-          1 => '',
         ),
-        14 => 
+        8 => 
         array (
           0 => 
           array (
@@ -167,18 +129,13 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_CONTACT_LOCATION',
           ),
-          1 => '',
-        ),
-        15 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'contact_location_oth',
             'label' => 'LBL_CONTACT_LOCATION_OTH',
           ),
-          1 => '',
         ),
-        16 => 
+        9 => 
         array (
           0 => 
           array (
@@ -188,7 +145,7 @@ array (
           ),
           1 => '',
         ),
-        17 => 
+        10 => 
         array (
           0 => 
           array (
@@ -197,7 +154,7 @@ array (
           ),
           1 => '',
         ),
-        18 => 
+        11 => 
         array (
           0 => 
           array (
@@ -206,7 +163,7 @@ array (
           ),
           1 => '',
         ),
-        19 => 
+        12 => 
         array (
           0 => 
           array (
@@ -214,18 +171,13 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_WHO_CONTACTED',
           ),
-          1 => '',
-        ),
-        20 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'who_contact_oth',
             'label' => 'LBL_WHO_CONTACT_OTH',
           ),
-          1 => '',
         ),
-        21 => 
+        13 => 
         array (
           0 => 
           array (
@@ -233,7 +185,6 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_CONTACT_COMMENT',
           ),
-          1 => '',
         ),
       ),
     ),

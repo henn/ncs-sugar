@@ -12,31 +12,40 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'current_user_only' => 
+      'person_id' => 
       array (
-        'name' => 'current_user_only',
-        'label' => 'LBL_CURRENT_USER_FILTER',
-        'type' => 'bool',
-        'default' => true,
+        'type' => 'varchar',
+        'label' => 'LBL_PERSON_ID',
         'width' => '10%',
+        'default' => true,
+        'name' => 'person_id',
       ),
-      'psu_id' => 
+      'hh_id' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_HH_ID',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'hh_id',
+      ),
+      'is_active' => 
       array (
         'type' => 'enum',
         'default' => true,
         'studio' => 'visible',
-        'label' => 'LBL_PSU_ID',
+        'label' => 'LBL_IS_ACTIVE',
         'sortable' => false,
         'width' => '10%',
-        'name' => 'psu_id',
+        'name' => 'is_active',
       ),
-      'person_hh_id' => 
+    ),
+    'advanced_search' => 
+    array (
+      'name' => 
       array (
-        'type' => 'varchar',
-        'label' => 'LBL_PERSON_HH_ID',
-        'width' => '10%',
+        'name' => 'name',
         'default' => true,
-        'name' => 'person_hh_id',
+        'width' => '10%',
       ),
       'person_id' => 
       array (
@@ -54,13 +63,15 @@ array (
         'default' => true,
         'name' => 'hh_id',
       ),
-      'hh_rank_oth' => 
+      'is_active' => 
       array (
-        'type' => 'varchar',
-        'label' => 'LBL_HH_RANK_OTH',
-        'width' => '10%',
+        'type' => 'enum',
         'default' => true,
-        'name' => 'hh_rank_oth',
+        'studio' => 'visible',
+        'label' => 'LBL_IS_ACTIVE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'is_active',
       ),
       'hh_rank' => 
       array (
@@ -72,21 +83,15 @@ array (
         'width' => '10%',
         'name' => 'hh_rank',
       ),
-      'is_active' => 
+      'person_hh_id' => 
       array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_IS_ACTIVE',
-        'sortable' => false,
+        'type' => 'varchar',
+        'label' => 'LBL_PERSON_HH_ID',
         'width' => '10%',
-        'name' => 'is_active',
+        'default' => true,
+        'name' => 'person_hh_id',
       ),
-    ),
-    'advanced_search' => 
-    array (
-      0 => 'name',
-      1 => 
+      'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',
         'label' => 'LBL_ASSIGNED_TO',
@@ -99,6 +104,8 @@ array (
             0 => false,
           ),
         ),
+        'default' => true,
+        'width' => '10%',
       ),
     ),
   ),

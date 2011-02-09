@@ -43,21 +43,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
             'name' => 'hh_id',
             'label' => 'LBL_HH_ID',
           ),
           1 => '',
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -65,17 +56,14 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_HH_STATUS',
           ),
-        ),
-        4 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'hh_elig',
             'studio' => 'visible',
             'label' => 'LBL_HH_ELIG',
           ),
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
@@ -89,43 +77,33 @@ array (
             'label' => 'LBL_HH_STRUCTURE_OTH',
           ),
         ),
-        6 => 
+        4 => 
         array (
           0 => 
           array (
             'name' => 'num_age_elig',
             'label' => 'LBL_NUM_AGE_ELIG',
           ),
-          1 => '',
-        ),
-        7 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'num_preg',
             'label' => 'LBL_NUM_PREG',
           ),
-          1 => '',
         ),
-        8 => 
+        5 => 
         array (
           0 => 
           array (
             'name' => 'num_preg_adult',
             'label' => 'LBL_NUM_PREG_ADULT',
           ),
-          1 => '',
-        ),
-        9 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'num_preg_minor',
             'label' => 'LBL_NUM_PREG_MINOR',
           ),
-          1 => '',
         ),
-        10 => 
+        6 => 
         array (
           0 => 
           array (
@@ -133,7 +111,6 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_HH_COMMENT',
           ),
-          1 => '',
         ),
       ),
     ),

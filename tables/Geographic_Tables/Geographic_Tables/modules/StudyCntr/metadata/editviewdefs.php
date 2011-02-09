@@ -41,20 +41,6 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
-        array (
           0 => 
           array (
             'name' => 'sc_id',
@@ -62,7 +48,7 @@ array (
           ),
           1 => '',
         ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (
@@ -71,7 +57,7 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
@@ -79,7 +65,6 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_COMMENTS',
           ),
-          1 => '',
         ),
       ),
     ),

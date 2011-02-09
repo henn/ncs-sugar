@@ -52,36 +52,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
             'name' => 'list_id',
             'label' => 'LBL_LIST_ID',
           ),
           1 => '',
         ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (
@@ -90,7 +66,7 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
@@ -100,7 +76,7 @@ array (
           ),
           1 => '',
         ),
-        6 => 
+        4 => 
         array (
           0 => 
           array (
@@ -108,20 +84,26 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_LIST_COMMENT',
           ),
-          1 => '',
         ),
-        7 => 
+        5 => 
         array (
           0 => 
           array (
             'name' => 'gt_listing_unit_gt_dwelling_unit_name',
           ),
         ),
-        8 => 
+        6 => 
         array (
           0 => 
           array (
             'name' => 'gt_listingunt_gt_dwellingunt_name',
+          ),
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'gt_sndsampunt_gt_listingunt_name',
           ),
         ),
       ),

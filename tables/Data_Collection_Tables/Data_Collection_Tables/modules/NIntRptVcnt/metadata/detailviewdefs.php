@@ -52,36 +52,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
             'name' => 'nir_vacant_id',
             'label' => 'LBL_NIR_VACANT_ID',
           ),
           1 => '',
         ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (
@@ -89,26 +65,24 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_NIR_VACANT',
           ),
-          1 => '',
-        ),
-        5 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'nir_vacant_oth',
             'label' => 'LBL_NIR_VACANT_OTH',
           ),
-          1 => '',
         ),
-        6 => 
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_eventinfo_ncsdc_nintrptvcnt_name',
+          ),
+        ),
+        4 => 
         array (
           0 => 
           array (
             'name' => 'ncsdc_event_ncsdc_non_interview_rpt_vacant_name',
-          ),
-          1 => 
-          array (
-            'name' => 'ncsdc_eventinfo_ncsdc_nintrptvcnt_name',
           ),
         ),
       ),

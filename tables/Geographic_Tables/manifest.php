@@ -50,9 +50,9 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'project_Geographic_Tables',
-          'published_date' => '2011-02-07 19:19:50',
+          'published_date' => '2011-02-09 18:17:49',
           'type' => 'module',
-          'version' => '1297106390',
+          'version' => '1297275469',
           'remove_tables' => 'prompt',
           );
 $installdefs = array (

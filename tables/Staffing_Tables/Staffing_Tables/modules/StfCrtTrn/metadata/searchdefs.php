@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'staff_cert_list_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_STAFF_CERT_LIST_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'staff_cert_list_id',
-      ),
       'staff_id' => 
       array (
         'type' => 'varchar',
@@ -75,14 +67,6 @@ array (
         'default' => true,
         'name' => 'staff_id',
       ),
-      'staff_cert_list_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_STAFF_CERT_LIST_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'staff_cert_list_id',
-      ),
       'cert_train_type' => 
       array (
         'type' => 'enum',
@@ -111,32 +95,6 @@ array (
         'default' => true,
         'name' => 'cert_date',
       ),
-      'cert_type_exp_date' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_CERT_TYPE_EXP_DATE',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'cert_type_exp_date',
-      ),
-      'cert_type_frequency' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_CERT_TYPE_FREQUENCY',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'cert_type_frequency',
-      ),
-      'cert_comment' => 
-      array (
-        'type' => 'text',
-        'studio' => 'visible',
-        'label' => 'LBL_CERT_COMMENT',
-        'sortable' => false,
-        'width' => '10%',
-        'default' => true,
-        'name' => 'cert_comment',
-      ),
       'staff_bgcheck_lvl' => 
       array (
         'type' => 'enum',
@@ -146,6 +104,23 @@ array (
         'sortable' => false,
         'width' => '10%',
         'name' => 'staff_bgcheck_lvl',
+      ),
+      'assigned_user_name' => 
+      array (
+        'link' => 'assigned_user_link',
+        'type' => 'relate',
+        'label' => 'LBL_ASSIGNED_TO_NAME',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'assigned_user_name',
+      ),
+      'staff_cert_list_id' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_STAFF_CERT_LIST_ID',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'staff_cert_list_id',
       ),
     ),
   ),

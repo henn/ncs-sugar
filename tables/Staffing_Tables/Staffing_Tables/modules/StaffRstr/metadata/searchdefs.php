@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'current_user_only' => 
-      array (
-        'name' => 'current_user_only',
-        'label' => 'LBL_CURRENT_USER_FILTER',
-        'type' => 'bool',
-        'default' => true,
-        'width' => '10%',
-      ),
       'staff_id' => 
       array (
         'type' => 'varchar',
@@ -38,6 +30,16 @@ array (
         'width' => '10%',
         'name' => 'staff_type',
       ),
+      'staff_age_range' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_STAFF_AGE_RANGE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'staff_age_range',
+      ),
       'staff_gender' => 
       array (
         'type' => 'enum',
@@ -47,6 +49,16 @@ array (
         'sortable' => false,
         'width' => '10%',
         'name' => 'staff_gender',
+      ),
+      'staff_race' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_STAFF_RACE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'staff_race',
       ),
       'staff_exp' => 
       array (
@@ -67,14 +79,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'current_user_only' => 
-      array (
-        'label' => 'LBL_CURRENT_USER_FILTER',
-        'type' => 'bool',
-        'default' => true,
-        'width' => '10%',
-        'name' => 'current_user_only',
-      ),
       'staff_id' => 
       array (
         'type' => 'varchar',
@@ -93,14 +97,6 @@ array (
         'width' => '10%',
         'name' => 'staff_type',
       ),
-      'staff_type_oth' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_STAFF_TYPE_OTH',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'staff_type_oth',
-      ),
       'staff_gender' => 
       array (
         'type' => 'enum',
@@ -110,6 +106,26 @@ array (
         'sortable' => false,
         'width' => '10%',
         'name' => 'staff_gender',
+      ),
+      'staff_age_range' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_STAFF_AGE_RANGE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'staff_age_range',
+      ),
+      'staff_race' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_STAFF_RACE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'staff_race',
       ),
       'staff_exp' => 
       array (
@@ -121,31 +137,23 @@ array (
         'width' => '10%',
         'name' => 'staff_exp',
       ),
-      'staff_comment' => 
+      'staff_ethnicity' => 
       array (
-        'type' => 'text',
+        'type' => 'enum',
+        'default' => true,
         'studio' => 'visible',
-        'label' => 'LBL_STAFF_COMMENT',
+        'label' => 'LBL_STAFF_ETHNICITY',
         'sortable' => false,
         'width' => '10%',
-        'default' => true,
-        'name' => 'staff_comment',
+        'name' => 'staff_ethnicity',
       ),
-      'date_entered' => 
+      'current_user_only' => 
       array (
-        'type' => 'datetime',
-        'label' => 'LBL_DATE_ENTERED',
-        'width' => '10%',
+        'label' => 'LBL_CURRENT_USER_FILTER',
+        'type' => 'bool',
         'default' => true,
-        'name' => 'date_entered',
-      ),
-      'date_modified' => 
-      array (
-        'type' => 'datetime',
-        'label' => 'LBL_DATE_MODIFIED',
         'width' => '10%',
-        'default' => true,
-        'name' => 'date_modified',
+        'name' => 'current_user_only',
       ),
     ),
   ),

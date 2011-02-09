@@ -50,8 +50,8 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'Specific_Code_Tables',
-          'published_date' => '2011-01-27 22:07:48',
+          'published_date' => '2011-02-09 18:18:21',
           'type' => 'module',
-          'version' => '1296166068',
+          'version' => '1297275501',
           'remove_tables' => 'prompt',
           );

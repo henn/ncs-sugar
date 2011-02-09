@@ -43,30 +43,35 @@ array (
         array (
           0 => 
           array (
+            'name' => 'event_id',
+            'label' => 'LBL_EVENT_ID',
+          ),
+          1 => '',
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
             'name' => 'event_type',
             'studio' => 'visible',
             'label' => 'LBL_EVENT_TYPE',
           ),
           1 => 
           array (
-            'name' => 'event_repeat_key',
-            'label' => 'LBL_EVENT_REPEAT_KEY',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'event_id',
-            'label' => 'LBL_EVENT_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'event_disp',
-            'label' => 'LBL_EVENT_DISP',
+            'name' => 'event_type_oth',
+            'label' => 'LBL_EVENT_TYPE_OTH',
           ),
         ),
         3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'event_repeat_key',
+            'label' => 'LBL_EVENT_REPEAT_KEY',
+          ),
+          1 => '',
+        ),
+        4 => 
         array (
           0 => 
           array (
@@ -74,9 +79,13 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_EVENT_DISP_CAT',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'event_disp',
+            'label' => 'LBL_EVENT_DISP',
+          ),
         ),
-        4 => 
+        5 => 
         array (
           0 => 
           array (
@@ -89,7 +98,7 @@ array (
             'label' => 'LBL_EVENT_END_DATE',
           ),
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
@@ -102,7 +111,7 @@ array (
             'label' => 'LBL_EVENT_END_TIME',
           ),
         ),
-        6 => 
+        7 => 
         array (
           0 => 
           array (
@@ -112,7 +121,7 @@ array (
           ),
           1 => '',
         ),
-        7 => 
+        8 => 
         array (
           0 => 
           array (
@@ -122,7 +131,7 @@ array (
           ),
           1 => '',
         ),
-        8 => 
+        9 => 
         array (
           0 => 
           array (
@@ -135,15 +144,6 @@ array (
             'label' => 'LBL_EVENT_INCENT_NONCASH',
           ),
         ),
-        9 => 
-        array (
-          0 => 
-          array (
-            'name' => 'event_type_oth',
-            'label' => 'LBL_EVENT_TYPE_OTH',
-          ),
-          1 => '',
-        ),
         10 => 
         array (
           0 => 
@@ -152,7 +152,6 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_EVENT_COMMENT',
           ),
-          1 => '',
         ),
         11 => 
         array (
@@ -160,7 +159,18 @@ array (
           array (
             'name' => 'ncsdc_contact_ncsdc_event_name',
           ),
-          1 => 
+          1 => '',
+        ),
+        12 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_eventinfo_plt_participant_name',
+          ),
+        ),
+        13 => 
+        array (
+          0 => 
           array (
             'name' => 'ncsdc_cntctinfo_ncsdc_eventinfo_name',
           ),

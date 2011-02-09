@@ -43,21 +43,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
             'name' => 'hh_du_id',
             'label' => 'LBL_HH_DU_ID',
           ),
           1 => '',
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -67,7 +58,7 @@ array (
           ),
           1 => '',
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -75,16 +66,11 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_DU_RANK',
           ),
-          1 => '',
-        ),
-        5 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'du_rank_oth',
             'label' => 'LBL_DU_RANK_OTH',
           ),
-          1 => '',
         ),
       ),
     ),

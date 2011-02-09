@@ -12,11 +12,30 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'current_user_only' => 
+      'race' => 
       array (
-        'name' => 'current_user_only',
-        'label' => 'LBL_CURRENT_USER_FILTER',
-        'type' => 'bool',
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_RACE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'race',
+      ),
+      'race_oth' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_RACE_OTH',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'race_oth',
+      ),
+    ),
+    'advanced_search' => 
+    array (
+      'name' => 
+      array (
+        'name' => 'name',
         'default' => true,
         'width' => '10%',
       ),
@@ -46,11 +65,7 @@ array (
         'default' => true,
         'name' => 'race_oth',
       ),
-    ),
-    'advanced_search' => 
-    array (
-      0 => 'name',
-      1 => 
+      'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',
         'label' => 'LBL_ASSIGNED_TO',
@@ -63,6 +78,8 @@ array (
             0 => false,
           ),
         ),
+        'default' => true,
+        'width' => '10%',
       ),
     ),
   ),

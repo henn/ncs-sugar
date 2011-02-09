@@ -43,21 +43,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
             'name' => 'nir_noaccess_id',
             'label' => 'LBL_NIR_NOACCESS_ID',
           ),
           1 => '',
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -65,26 +56,24 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_NIR_NOACCESS',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'nir_noaccess_oth',
+            'label' => 'LBL_NIR_NOACCESS_OTH',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_eventinfo_ncsdc_nirnaccmlts_name',
+          ),
         ),
         4 => 
         array (
           0 => 
           array (
-            'name' => 'nir_noaccess_oth',
-            'label' => 'LBL_NIR_NOACCESS_OTH',
-          ),
-          1 => '',
-        ),
-        5 => 
-        array (
-          0 => 
-          array (
             'name' => 'ncsdc_event_ncsdc_non_interview_rpt_noaccess_name',
-          ),
-          1 => 
-          array (
-            'name' => 'ncsdc_eventinfo_ncsdc_nirnaccmlts_name',
           ),
         ),
       ),

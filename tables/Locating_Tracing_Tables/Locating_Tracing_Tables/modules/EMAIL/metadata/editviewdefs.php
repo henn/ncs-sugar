@@ -33,20 +33,15 @@ array (
             'name' => 'name',
             'label' => 'LBL_NAME',
           ),
-          1 => 
-          array (
-            'name' => 'assigned_user_name',
-            'label' => 'LBL_ASSIGNED_TO_NAME',
-          ),
         ),
         1 => 
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
+            'name' => 'email_id',
+            'label' => 'LBL_EMAIL_ID',
           ),
+          1 => '',
         ),
         2 => 
         array (
@@ -117,10 +112,14 @@ array (
         array (
           0 => 
           array (
-            'name' => 'email_id',
-            'label' => 'LBL_EMAIL_ID',
+            'name' => 'email_info_date',
+            'label' => 'LBL_EMAIL_INFO_DATE',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'email_info_update',
+            'label' => 'LBL_EMAIL_INFO_UPDATE',
+          ),
         ),
         8 => 
         array (
@@ -133,19 +132,6 @@ array (
           1 => '',
         ),
         9 => 
-        array (
-          0 => 
-          array (
-            'name' => 'email_info_date',
-            'label' => 'LBL_EMAIL_INFO_DATE',
-          ),
-          1 => 
-          array (
-            'name' => 'email_info_update',
-            'label' => 'LBL_EMAIL_INFO_UPDATE',
-          ),
-        ),
-        10 => 
         array (
           0 => 
           array (

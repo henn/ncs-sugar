@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'staff_val_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_STAFF_VAL_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'staff_val_id',
-      ),
       'staff_id' => 
       array (
         'type' => 'varchar',
@@ -28,13 +20,13 @@ array (
         'default' => true,
         'name' => 'staff_id',
       ),
-      'event_id' => 
+      'staff_val_date' => 
       array (
-        'type' => 'varchar',
-        'label' => 'LBL_EVENT_ID',
+        'type' => 'date',
+        'label' => 'LBL_STAFF_VAL_DATE',
         'width' => '10%',
         'default' => true,
-        'name' => 'event_id',
+        'name' => 'staff_val_date',
       ),
       'staff_validate' => 
       array (
@@ -55,14 +47,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'staff_val_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_STAFF_VAL_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'staff_val_id',
-      ),
       'staff_id' => 
       array (
         'type' => 'varchar',
@@ -70,14 +54,6 @@ array (
         'width' => '10%',
         'default' => true,
         'name' => 'staff_id',
-      ),
-      'event_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_EVENT_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'event_id',
       ),
       'staff_validate' => 
       array (
@@ -97,24 +73,30 @@ array (
         'default' => true,
         'name' => 'staff_val_date',
       ),
-      'staff_val_comment' => 
+      'staff_val_id' => 
       array (
-        'type' => 'text',
-        'studio' => 'visible',
-        'label' => 'LBL_STAFF_VAL_COMMENT',
-        'sortable' => false,
+        'type' => 'varchar',
+        'label' => 'LBL_STAFF_VAL_ID',
         'width' => '10%',
         'default' => true,
-        'name' => 'staff_val_comment',
+        'name' => 'staff_val_id',
       ),
-      'description' => 
+      'event_id' => 
       array (
-        'type' => 'text',
-        'label' => 'LBL_DESCRIPTION',
-        'sortable' => false,
+        'type' => 'varchar',
+        'label' => 'LBL_EVENT_ID',
         'width' => '10%',
         'default' => true,
-        'name' => 'description',
+        'name' => 'event_id',
+      ),
+      'assigned_user_name' => 
+      array (
+        'link' => 'assigned_user_link',
+        'type' => 'relate',
+        'label' => 'LBL_ASSIGNED_TO_NAME',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'assigned_user_name',
       ),
     ),
   ),
