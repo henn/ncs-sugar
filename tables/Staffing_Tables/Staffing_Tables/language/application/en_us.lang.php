@@ -1,7 +1,7 @@
 <?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
+ * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -34,14 +34,13 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-
-$app_list_strings['moduleList']['ST_WkOEAct'] = 'Weekly Outreach & Engagement Activities';
-$app_list_strings['moduleList']['ST_StfExpMgTsk'] = 'Weekly Staff Expense Management Tasks';
-$app_list_strings['moduleList']['ST_StfWkExpns'] = 'Weekly Staff Expenses';
-$app_list_strings['moduleList']['ST_StaffRstr'] = 'Staff Roster';
-$app_list_strings['moduleList']['ST_StfVldtn'] = 'Staff Validation';
 $app_list_strings['moduleList']['ST_OtrchStaff'] = 'Staff Participation Outreach Events';
-$app_list_strings['moduleList']['ST_OtrchEval'] = 'Evaluation of Weekly Outreach Activities';
-$app_list_strings['moduleList']['ST_StfCrtTrn'] = 'Staff Trainings and Certifications';
 $app_list_strings['moduleList']['ST_StfExpDCTsk'] = 'Weekly Staff Expense Data Collection Tasks';
+$app_list_strings['moduleList']['ST_OtrchEval'] = 'Evaluation of Weekly Outreach Activities';
 $app_list_strings['moduleList']['ST_StfLang'] = 'Staff Language';
+$app_list_strings['moduleList']['ST_WkOEAct'] = 'Weekly Outreach & Engagement Activities';
+$app_list_strings['moduleList']['ST_StfVldtn'] = 'Staff Validation';
+$app_list_strings['moduleList']['ST_StfCrtTrn'] = 'Staff Trainings and Certifications';
+$app_list_strings['moduleList']['ST_StfExpMgTsk'] = 'Weekly Staff Expense Management Tasks';
+$app_list_strings['moduleList']['ST_StaffRstr'] = 'Staff Roster';
+$app_list_strings['moduleList']['ST_StfWkExpns'] = 'Weekly Staff Expenses';

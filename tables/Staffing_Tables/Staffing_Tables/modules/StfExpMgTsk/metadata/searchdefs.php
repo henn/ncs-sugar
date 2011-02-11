@@ -12,23 +12,50 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'current_user_only' => 
-      array (
-        'name' => 'current_user_only',
-        'label' => 'LBL_CURRENT_USER_FILTER',
-        'type' => 'bool',
-        'default' => true,
-        'width' => '10%',
-      ),
-      'psu_id' => 
+      'mgmt_task_type' => 
       array (
         'type' => 'enum',
         'default' => true,
         'studio' => 'visible',
-        'label' => 'LBL_PSU_ID',
+        'label' => 'LBL_MGMT_TASK_TYPE',
         'sortable' => false,
         'width' => '10%',
-        'name' => 'psu_id',
+        'name' => 'mgmt_task_type',
+      ),
+      'mgmt_task_type_oth' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_MGMT_TASK_TYPE_OTH',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'mgmt_task_type_oth',
+      ),
+      'mgmt_task_hrs' => 
+      array (
+        'type' => 'decimal',
+        'label' => 'LBL_MGMT_TASK_HRS',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'mgmt_task_hrs',
+      ),
+      'mgmt_task_comment' => 
+      array (
+        'type' => 'text',
+        'studio' => 'visible',
+        'label' => 'LBL_MGMT_TASK_COMMENT',
+        'sortable' => false,
+        'width' => '10%',
+        'default' => true,
+        'name' => 'mgmt_task_comment',
+      ),
+    ),
+    'advanced_search' => 
+    array (
+      'name' => 
+      array (
+        'name' => 'name',
+        'default' => true,
+        'width' => '10%',
       ),
       'staff_exp_mgmt_task_id' => 
       array (
@@ -82,11 +109,7 @@ array (
         'default' => true,
         'name' => 'mgmt_task_comment',
       ),
-    ),
-    'advanced_search' => 
-    array (
-      0 => 'name',
-      1 => 
+      'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',
         'label' => 'LBL_ASSIGNED_TO',
@@ -99,6 +122,8 @@ array (
             0 => false,
           ),
         ),
+        'default' => true,
+        'width' => '10%',
       ),
     ),
   ),

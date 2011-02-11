@@ -12,31 +12,50 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'current_user_only' => 
+      'provider_id' => 
       array (
-        'name' => 'current_user_only',
-        'label' => 'LBL_CURRENT_USER_FILTER',
-        'type' => 'bool',
-        'default' => true,
+        'type' => 'varchar',
+        'label' => 'LBL_PROVIDER_ID',
         'width' => '10%',
+        'default' => true,
+        'name' => 'provider_id',
       ),
-      'psu_id' => 
+      'person_id' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_PERSON_ID',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'person_id',
+      ),
+      'is_active' => 
       array (
         'type' => 'enum',
         'default' => true,
         'studio' => 'visible',
-        'label' => 'LBL_PSU_ID',
+        'label' => 'LBL_IS_ACTIVE',
         'sortable' => false,
         'width' => '10%',
-        'name' => 'psu_id',
+        'name' => 'is_active',
       ),
-      'person_provider_id' => 
+      'prov_intro_outcome' => 
       array (
-        'type' => 'varchar',
-        'label' => 'LBL_PERSON_PROVIDER_ID',
-        'width' => '10%',
+        'type' => 'enum',
         'default' => true,
-        'name' => 'person_provider_id',
+        'studio' => 'visible',
+        'label' => 'LBL_PROV_INTRO_OUTCOME',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'prov_intro_outcome',
+      ),
+    ),
+    'advanced_search' => 
+    array (
+      'name' => 
+      array (
+        'name' => 'name',
+        'default' => true,
+        'width' => '10%',
       ),
       'provider_id' => 
       array (
@@ -74,19 +93,15 @@ array (
         'width' => '10%',
         'name' => 'prov_intro_outcome',
       ),
-      'prov_intro_outcome_oth' => 
+      'person_provider_id' => 
       array (
         'type' => 'varchar',
-        'label' => 'LBL_PROV_INTRO_OUTCOME_OTH',
+        'label' => 'LBL_PERSON_PROVIDER_ID',
         'width' => '10%',
         'default' => true,
-        'name' => 'prov_intro_outcome_oth',
+        'name' => 'person_provider_id',
       ),
-    ),
-    'advanced_search' => 
-    array (
-      0 => 'name',
-      1 => 
+      'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',
         'label' => 'LBL_ASSIGNED_TO',
@@ -99,6 +114,8 @@ array (
             0 => false,
           ),
         ),
+        'default' => true,
+        'width' => '10%',
       ),
     ),
   ),

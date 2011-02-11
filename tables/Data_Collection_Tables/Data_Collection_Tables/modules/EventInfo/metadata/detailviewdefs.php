@@ -52,16 +52,10 @@ array (
         array (
           0 => 
           array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
+            'name' => 'event_id',
+            'label' => 'LBL_EVENT_ID',
           ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
+          1 => '',
         ),
         2 => 
         array (
@@ -73,22 +67,18 @@ array (
           ),
           1 => 
           array (
-            'name' => 'event_repeat_key',
-            'label' => 'LBL_EVENT_REPEAT_KEY',
+            'name' => 'event_type_oth',
+            'label' => 'LBL_EVENT_TYPE_OTH',
           ),
         ),
         3 => 
         array (
           0 => 
           array (
-            'name' => 'event_id',
-            'label' => 'LBL_EVENT_ID',
+            'name' => 'event_repeat_key',
+            'label' => 'LBL_EVENT_REPEAT_KEY',
           ),
-          1 => 
-          array (
-            'name' => 'event_disp',
-            'label' => 'LBL_EVENT_DISP',
-          ),
+          1 => '',
         ),
         4 => 
         array (
@@ -98,7 +88,11 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_EVENT_DISP_CAT',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'event_disp',
+            'label' => 'LBL_EVENT_DISP',
+          ),
         ),
         5 => 
         array (
@@ -163,18 +157,16 @@ array (
         array (
           0 => 
           array (
-            'name' => 'event_type_oth',
-            'label' => 'LBL_EVENT_TYPE_OTH',
+            'name' => 'event_comment',
+            'studio' => 'visible',
+            'label' => 'LBL_EVENT_COMMENT',
           ),
-          1 => '',
         ),
         11 => 
         array (
           0 => 
           array (
-            'name' => 'event_comment',
-            'studio' => 'visible',
-            'label' => 'LBL_EVENT_COMMENT',
+            'name' => 'ncsdc_contact_ncsdc_event_name',
           ),
           1 => '',
         ),
@@ -182,9 +174,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'ncsdc_contact_ncsdc_event_name',
+            'name' => 'ncsdc_eventinfo_plt_participant_name',
           ),
-          1 => 
+        ),
+        13 => 
+        array (
+          0 => 
           array (
             'name' => 'ncsdc_cntctinfo_ncsdc_eventinfo_name',
           ),

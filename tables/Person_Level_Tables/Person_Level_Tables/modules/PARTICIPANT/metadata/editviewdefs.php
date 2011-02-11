@@ -166,6 +166,13 @@ array (
           ),
           1 => '',
         ),
+        11 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_eventinfo_plt_participant_name',
+          ),
+        ),
       ),
     ),
   ),

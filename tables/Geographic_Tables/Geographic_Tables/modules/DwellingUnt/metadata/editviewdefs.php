@@ -43,21 +43,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
             'name' => 'du_id',
             'label' => 'LBL_DU_ID',
           ),
           1 => '',
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -71,7 +62,7 @@ array (
             'label' => 'LBL_DU_TYPE_OTH',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -79,19 +70,14 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_DUPLICATE_DU',
           ),
-          1 => '',
-        ),
-        5 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'missed_du',
             'studio' => 'visible',
             'label' => 'LBL_MISSED_DU',
           ),
-          1 => '',
         ),
-        6 => 
+        4 => 
         array (
           0 => 
           array (
@@ -99,19 +85,14 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_DU_ACCESS',
           ),
-          1 => '',
-        ),
-        7 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'du_ineligible',
             'studio' => 'visible',
             'label' => 'LBL_DU_INELIGIBLE',
           ),
-          1 => '',
         ),
-        8 => 
+        5 => 
         array (
           0 => 
           array (
@@ -119,30 +100,29 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_DUID_COMMENT',
           ),
-          1 => '',
         ),
-        9 => 
+        6 => 
         array (
           0 => 
           array (
             'name' => 'gt_dwelling_unit_ltt_address_name',
           ),
         ),
-        10 => 
+        7 => 
         array (
           0 => 
           array (
             'name' => 'gt_listing_unit_gt_dwelling_unit_name',
           ),
         ),
-        11 => 
+        8 => 
         array (
           0 => 
           array (
             'name' => 'gt_listingunt_gt_dwellingunt_name',
           ),
         ),
-        12 => 
+        9 => 
         array (
           0 => 
           array (

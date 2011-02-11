@@ -12,11 +12,39 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'current_user_only' => 
+      'nir_noaccess_id' => 
       array (
-        'name' => 'current_user_only',
-        'label' => 'LBL_CURRENT_USER_FILTER',
-        'type' => 'bool',
+        'type' => 'varchar',
+        'label' => 'LBL_NIR_NOACCESS_ID',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'nir_noaccess_id',
+      ),
+      'nir_noaccess' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_NIR_NOACCESS',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'nir_noaccess',
+      ),
+      'assigned_user_name' => 
+      array (
+        'link' => 'assigned_user_link',
+        'type' => 'relate',
+        'label' => 'LBL_ASSIGNED_TO_NAME',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'assigned_user_name',
+      ),
+    ),
+    'advanced_search' => 
+    array (
+      'name' => 
+      array (
+        'name' => 'name',
         'default' => true,
         'width' => '10%',
       ),
@@ -46,11 +74,7 @@ array (
         'default' => true,
         'name' => 'nir_noaccess_oth',
       ),
-    ),
-    'advanced_search' => 
-    array (
-      0 => 'name',
-      1 => 
+      'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',
         'label' => 'LBL_ASSIGNED_TO',
@@ -63,6 +87,8 @@ array (
             0 => false,
           ),
         ),
+        'default' => true,
+        'width' => '10%',
       ),
     ),
   ),

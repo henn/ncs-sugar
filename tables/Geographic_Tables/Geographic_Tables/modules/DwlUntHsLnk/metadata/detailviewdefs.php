@@ -37,29 +37,18 @@ array (
       array (
         0 => 
         array (
-          0 => 'name',
-          1 => 'assigned_user_name',
-        ),
-        1 => 
-        array (
           0 => 
           array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
+            'name' => 'name',
+            'label' => 'LBL_NAME',
           ),
           1 => 
           array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
+            'name' => 'assigned_user_name',
+            'label' => 'LBL_ASSIGNED_TO_NAME',
           ),
         ),
-        2 => 
-        array (
-          0 => 'description',
-        ),
-        3 => 
+        1 => 
         array (
           0 => 
           array (
@@ -68,7 +57,7 @@ array (
           ),
           1 => '',
         ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (
@@ -78,7 +67,7 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
@@ -86,16 +75,11 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_DU_RANK',
           ),
-          1 => '',
-        ),
-        6 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'du_rank_oth',
             'label' => 'LBL_DU_RANK_OTH',
           ),
-          1 => '',
         ),
       ),
     ),

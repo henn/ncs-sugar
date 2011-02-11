@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'current_user_only' => 
-      array (
-        'name' => 'current_user_only',
-        'label' => 'LBL_CURRENT_USER_FILTER',
-        'type' => 'bool',
-        'default' => true,
-        'width' => '10%',
-      ),
       'event_id' => 
       array (
         'type' => 'varchar',
@@ -28,13 +20,15 @@ array (
         'default' => true,
         'name' => 'event_id',
       ),
-      'event_type_oth' => 
+      'event_type' => 
       array (
-        'type' => 'varchar',
-        'label' => 'LBL_EVENT_TYPE_OTH',
-        'width' => '10%',
+        'type' => 'enum',
         'default' => true,
-        'name' => 'event_type_oth',
+        'studio' => 'visible',
+        'label' => 'LBL_EVENT_TYPE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'event_type',
       ),
       'event_disp_cat' => 
       array (
@@ -46,6 +40,14 @@ array (
         'width' => '10%',
         'name' => 'event_disp_cat',
       ),
+      'event_disp' => 
+      array (
+        'type' => 'int',
+        'label' => 'LBL_EVENT_DISP',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_disp',
+      ),
       'event_start_date' => 
       array (
         'type' => 'date',
@@ -54,13 +56,84 @@ array (
         'default' => true,
         'name' => 'event_start_date',
       ),
-      'event_start_time' => 
+      'event_incentive_type' => 
       array (
-        'type' => 'datetimecombo',
-        'label' => 'LBL_EVENT_START_TIME',
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_EVENT_INCENTIVE_TYPE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'event_incentive_type',
+      ),
+      'event_incent_cash' => 
+      array (
+        'type' => 'decimal',
+        'label' => 'LBL_EVENT_INCENT_CASH',
         'width' => '10%',
         'default' => true,
-        'name' => 'event_start_time',
+        'name' => 'event_incent_cash',
+      ),
+    ),
+    'advanced_search' => 
+    array (
+      'name' => 
+      array (
+        'name' => 'name',
+        'default' => true,
+        'width' => '10%',
+      ),
+      'event_id' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_EVENT_ID',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_id',
+      ),
+      'event_type' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_EVENT_TYPE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'event_type',
+      ),
+      'event_disp_cat' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_EVENT_DISP_CAT',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'event_disp_cat',
+      ),
+      'event_disp' => 
+      array (
+        'type' => 'int',
+        'label' => 'LBL_EVENT_DISP',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_disp',
+      ),
+      'event_repeat_key' => 
+      array (
+        'type' => 'int',
+        'label' => 'LBL_EVENT_REPEAT_KEY',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_repeat_key',
+      ),
+      'event_start_date' => 
+      array (
+        'type' => 'date',
+        'label' => 'LBL_EVENT_START_DATE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_start_date',
       ),
       'event_end_date' => 
       array (
@@ -69,14 +142,6 @@ array (
         'width' => '10%',
         'default' => true,
         'name' => 'event_end_date',
-      ),
-      'event_end_time' => 
-      array (
-        'type' => 'datetimecombo',
-        'label' => 'LBL_EVENT_END_TIME',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'event_end_time',
       ),
       'event_breakoff' => 
       array (
@@ -106,47 +171,15 @@ array (
         'default' => true,
         'name' => 'event_incent_cash',
       ),
-      'event_comment' => 
+      'event_incent_noncash' => 
       array (
-        'type' => 'text',
-        'studio' => 'visible',
-        'label' => 'LBL_EVENT_COMMENT',
-        'sortable' => false,
+        'type' => 'varchar',
+        'label' => 'LBL_EVENT_INCENT_NONCASH',
         'width' => '10%',
         'default' => true,
-        'name' => 'event_comment',
+        'name' => 'event_incent_noncash',
       ),
-      'event_type' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_EVENT_TYPE',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'event_type',
-      ),
-      'event_repeat_key' => 
-      array (
-        'type' => 'int',
-        'label' => 'LBL_EVENT_REPEAT_KEY',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'event_repeat_key',
-      ),
-      'event_disp' => 
-      array (
-        'type' => 'int',
-        'label' => 'LBL_EVENT_DISP',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'event_disp',
-      ),
-    ),
-    'advanced_search' => 
-    array (
-      0 => 'name',
-      1 => 
+      'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',
         'label' => 'LBL_ASSIGNED_TO',
@@ -159,6 +192,8 @@ array (
             0 => false,
           ),
         ),
+        'default' => true,
+        'width' => '10%',
       ),
     ),
   ),

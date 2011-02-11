@@ -12,23 +12,41 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'current_user_only' => 
-      array (
-        'name' => 'current_user_only',
-        'label' => 'LBL_CURRENT_USER_FILTER',
-        'type' => 'bool',
-        'default' => true,
-        'width' => '10%',
-      ),
-      'psu_id' => 
+      'outreach_eval' => 
       array (
         'type' => 'enum',
         'default' => true,
         'studio' => 'visible',
-        'label' => 'LBL_PSU_ID',
+        'label' => 'LBL_OUTREACH_EVAL',
         'sortable' => false,
         'width' => '10%',
-        'name' => 'psu_id',
+        'name' => 'outreach_eval',
+      ),
+      'outreach_eval_oth' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_OUTREACH_EVAL_OTH',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'outreach_eval_oth',
+      ),
+      'assigned_user_name' => 
+      array (
+        'link' => 'assigned_user_link',
+        'type' => 'relate',
+        'label' => 'LBL_ASSIGNED_TO_NAME',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'assigned_user_name',
+      ),
+    ),
+    'advanced_search' => 
+    array (
+      'name' => 
+      array (
+        'name' => 'name',
+        'default' => true,
+        'width' => '10%',
       ),
       'outreach_event_eval_id' => 
       array (
@@ -64,11 +82,7 @@ array (
         'default' => true,
         'name' => 'outreach_eval_oth',
       ),
-    ),
-    'advanced_search' => 
-    array (
-      0 => 'name',
-      1 => 
+      'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',
         'label' => 'LBL_ASSIGNED_TO',
@@ -81,6 +95,8 @@ array (
             0 => false,
           ),
         ),
+        'default' => true,
+        'width' => '10%',
       ),
     ),
   ),

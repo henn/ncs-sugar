@@ -1,7 +1,7 @@
 <?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
+ * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -33,9 +33,8 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
-
 $relationships = array (
-  'ncsdc_eventinfo_ncsdc_incident' => 
+  'ncsdc_event_ncsdc_incident' => 
   array (
     'rhs_label' => 'Incident',
     'rhs_subpanel' => 'default',
@@ -50,7 +49,7 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'ncsdc_event_ncsdc_incident',
   ),
-  'ncsdc_eventinfo_ncsdc_instrument' => 
+  'ncsdc_event_ncsdc_instrument' => 
   array (
     'rhs_label' => 'Instrument Information',
     'rhs_subpanel' => 'default',
@@ -184,6 +183,19 @@ $relationships = array (
     'is_custom' => false,
     'from_studio' => false,
     'relationship_name' => 'ncsdc_eventinfo_ncsdc_nirdutpmlts_1',
+  ),
+  'ncsdc_eventinfo_plt_participant' => 
+  array (
+    'lhs_module' => 'NCSDC_EventInfo',
+    'rhs_module' => 'PLT_PARTICIPANT',
+    'relationship_type' => 'one-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'ncsdc_eventinfo_plt_participant',
   ),
 );
 ?>

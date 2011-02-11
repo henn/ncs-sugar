@@ -43,21 +43,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
             'name' => 'instrument_id',
             'label' => 'LBL_INSTRUMENT_ID',
           ),
           1 => '',
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -67,7 +58,7 @@ array (
           ),
           1 => '',
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -76,7 +67,7 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -86,7 +77,7 @@ array (
           ),
           1 => '',
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -100,7 +91,7 @@ array (
             'label' => 'LBL_INS_MODE_OTH',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -113,7 +104,7 @@ array (
             'label' => 'LBL_INS_DATE_END',
           ),
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (
@@ -126,7 +117,7 @@ array (
             'label' => 'LBL_INS_END_TIME',
           ),
         ),
-        9 => 
+        8 => 
         array (
           0 => 
           array (
@@ -136,7 +127,7 @@ array (
           ),
           1 => '',
         ),
-        10 => 
+        9 => 
         array (
           0 => 
           array (
@@ -144,7 +135,7 @@ array (
             'label' => 'LBL_INSTRUMENT_TYPE_OTH',
           ),
         ),
-        11 => 
+        10 => 
         array (
           0 => 
           array (
@@ -154,7 +145,7 @@ array (
           ),
           1 => '',
         ),
-        12 => 
+        11 => 
         array (
           0 => 
           array (
@@ -164,7 +155,7 @@ array (
           ),
           1 => '',
         ),
-        13 => 
+        12 => 
         array (
           0 => 
           array (
@@ -174,7 +165,7 @@ array (
           ),
           1 => '',
         ),
-        14 => 
+        13 => 
         array (
           0 => 
           array (

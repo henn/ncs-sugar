@@ -1,7 +1,7 @@
 <?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
+ * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -34,18 +34,18 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-
 $app_list_strings['moduleList']['NCSDC_Instrument'] = 'Instrument Information';
 $app_list_strings['moduleList']['NCSDC_Incident'] = 'Incident';
-$app_list_strings['moduleList']['NCSDC_EventInfo'] = 'Event Information';
+$app_list_strings['moduleList']['NCSDC_CONTACT'] = NULL;
+$app_list_strings['moduleList']['NCSDC_INSTRUMENT'] = 'Instrument Information';
 $app_list_strings['moduleList']['NCSDC_IncMedMultS'] = 'Incident Media Multi-Select';
 $app_list_strings['moduleList']['NCSDC_NIRNAccMltS'] = 'NIR No Access Multi-Select';
-$app_list_strings['moduleList']['NCSDC_IncUnatMltS'] = 'Incident Unanticipated Multi-Select';
-$app_list_strings['moduleList']['NCSDC_NIRRfsMltS'] = 'NIR Refusal Multi-Select';
-$app_list_strings['moduleList']['NCSDC_CntctInfo'] = 'Contact Information';
-$app_list_strings['moduleList']['NCSDC_INCIDENT'] = 'Incident';
-$app_list_strings['moduleList']['NCSDC_NonInterRpt'] = 'Non Interview Report';
-$app_list_strings['moduleList']['NCSDC_INSTRUMENT'] = 'Instrument Information';
 $app_list_strings['moduleList']['NCSDC_NIntRptVcnt'] = 'NIR Vacant Multi-Select';
-$app_list_strings['moduleList']['NCSDC_NIRDUTpMltS'] = 'NIR DU Type Multi Select';
 $app_list_strings['moduleList']['NCSDC_CntctLnk'] = 'Contact Linking';
+$app_list_strings['moduleList']['NCSDC_IncUnatMltS'] = 'Incident Unanticipated Multi-Select';
+$app_list_strings['moduleList']['NCSDC_EventInfo'] = 'Event Information';
+$app_list_strings['moduleList']['NCSDC_CntctInfo'] = 'Contact Information';
+$app_list_strings['moduleList']['NCSDC_NIRRfsMltS'] = 'NIR Refusal Multi-Select';
+$app_list_strings['moduleList']['NCSDC_NonInterRpt'] = 'Non Interview Report';
+$app_list_strings['moduleList']['NCSDC_NIRDUTpMltS'] = 'NIR DU Type Multi Select';
+$app_list_strings['moduleList']['NCSDC_INCIDENT'] = 'Incident';

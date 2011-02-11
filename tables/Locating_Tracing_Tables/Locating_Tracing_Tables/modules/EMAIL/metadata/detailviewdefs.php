@@ -42,37 +42,17 @@ array (
             'name' => 'name',
             'label' => 'LBL_NAME',
           ),
-          1 => 
-          array (
-            'name' => 'assigned_user_name',
-            'label' => 'LBL_ASSIGNED_TO_NAME',
-          ),
         ),
         1 => 
         array (
           0 => 
           array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
+            'name' => 'email_id',
+            'label' => 'LBL_EMAIL_ID',
           ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
+          1 => '',
         ),
         2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
         array (
           0 => 
           array (
@@ -80,7 +60,7 @@ array (
             'label' => 'LBL_EMAIL',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -94,7 +74,7 @@ array (
             'label' => 'LBL_EMAIL_TYPE_OTH',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -109,7 +89,7 @@ array (
             'label' => 'LBL_EMAIL_ACTIVE',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -123,7 +103,7 @@ array (
             'label' => 'LBL_EMAIL_INFO_SOURCE_OTH',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -137,26 +117,7 @@ array (
             'label' => 'LBL_EMAIL_RANK_OTH',
           ),
         ),
-        8 => 
-        array (
-          0 => 
-          array (
-            'name' => 'email_id',
-            'label' => 'LBL_EMAIL_ID',
-          ),
-          1 => '',
-        ),
-        9 => 
-        array (
-          0 => 
-          array (
-            'name' => 'email_comment',
-            'studio' => 'visible',
-            'label' => 'LBL_EMAIL_COMMENT',
-          ),
-          1 => '',
-        ),
-        10 => 
+        7 => 
         array (
           0 => 
           array (
@@ -169,7 +130,17 @@ array (
             'label' => 'LBL_EMAIL_INFO_UPDATE',
           ),
         ),
-        11 => 
+        8 => 
+        array (
+          0 => 
+          array (
+            'name' => 'email_comment',
+            'studio' => 'visible',
+            'label' => 'LBL_EMAIL_COMMENT',
+          ),
+          1 => '',
+        ),
+        9 => 
         array (
           0 => 
           array (

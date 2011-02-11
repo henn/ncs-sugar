@@ -52,36 +52,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
             'name' => 'inc_unanticipated_id',
             'label' => 'LBL_INC_UNANTICIPATED_ID',
           ),
           1 => '',
         ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (
@@ -91,16 +67,21 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_eventinfo_ncsdc_incunatmlts_name',
+          ),
+          1 => '',
+        ),
+        4 => 
         array (
           0 => 
           array (
             'name' => 'ncsdc_event_ncsdc_incident_unanticipated_name',
           ),
-          1 => 
-          array (
-            'name' => 'ncsdc_eventinfo_ncsdc_incunatmlts_name',
-          ),
+          1 => '',
         ),
       ),
     ),

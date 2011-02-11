@@ -52,36 +52,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
             'name' => 'hh_id',
             'label' => 'LBL_HH_ID',
           ),
           1 => '',
         ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (
@@ -89,19 +65,14 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_HH_STATUS',
           ),
-          1 => '',
-        ),
-        5 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'hh_elig',
             'studio' => 'visible',
             'label' => 'LBL_HH_ELIG',
           ),
-          1 => '',
         ),
-        6 => 
+        3 => 
         array (
           0 => 
           array (
@@ -115,43 +86,33 @@ array (
             'label' => 'LBL_HH_STRUCTURE_OTH',
           ),
         ),
-        7 => 
+        4 => 
         array (
           0 => 
           array (
             'name' => 'num_age_elig',
             'label' => 'LBL_NUM_AGE_ELIG',
           ),
-          1 => '',
-        ),
-        8 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'num_preg',
             'label' => 'LBL_NUM_PREG',
           ),
-          1 => '',
         ),
-        9 => 
+        5 => 
         array (
           0 => 
           array (
             'name' => 'num_preg_adult',
             'label' => 'LBL_NUM_PREG_ADULT',
           ),
-          1 => '',
-        ),
-        10 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'num_preg_minor',
             'label' => 'LBL_NUM_PREG_MINOR',
           ),
-          1 => '',
         ),
-        11 => 
+        6 => 
         array (
           0 => 
           array (
@@ -159,7 +120,6 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_HH_COMMENT',
           ),
-          1 => '',
         ),
       ),
     ),

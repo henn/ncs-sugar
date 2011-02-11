@@ -63,22 +63,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'MOVE_INFO' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_MOVE_INFO',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'NEW_ADDRESS_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_NEW_ADDRESS_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'P_INFO_SOURCE' => 
   array (
     'type' => 'enum',
@@ -155,6 +139,22 @@ array (
   array (
     'type' => 'date',
     'label' => 'LBL_P_INFO_UPDATE',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'MOVE_INFO' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_MOVE_INFO',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'NEW_ADDRESS_ID' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_NEW_ADDRESS_ID',
     'width' => '10%',
     'default' => false,
   ),

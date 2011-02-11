@@ -1,5 +1,5 @@
 <?php
-$module_name = 'OLT_Institution';
+$module_name = 'OLT_INSTITUTION';
 $viewdefs [$module_name] = 
 array (
   'EditView' => 

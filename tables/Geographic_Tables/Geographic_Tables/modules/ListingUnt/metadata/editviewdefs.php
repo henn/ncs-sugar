@@ -43,21 +43,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
             'name' => 'list_id',
             'label' => 'LBL_LIST_ID',
           ),
           1 => '',
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -66,7 +57,7 @@ array (
           ),
           1 => '',
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -76,7 +67,7 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -84,20 +75,26 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_LIST_COMMENT',
           ),
-          1 => '',
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
             'name' => 'gt_listing_unit_gt_dwelling_unit_name',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
             'name' => 'gt_listingunt_gt_dwellingunt_name',
+          ),
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'gt_sndsampunt_gt_listingunt_name',
           ),
         ),
       ),

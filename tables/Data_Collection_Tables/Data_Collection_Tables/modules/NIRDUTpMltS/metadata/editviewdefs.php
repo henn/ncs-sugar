@@ -43,57 +43,44 @@ array (
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
+            'name' => 'nir_dutype_id',
+            'label' => 'LBL_NIR_DUTYPE_ID',
           ),
         ),
         2 => 
         array (
           0 => 
           array (
-            'name' => 'nir_dutype_id',
-            'label' => 'LBL_NIR_DUTYPE_ID',
-          ),
-          1 => 
-          array (
             'name' => 'nir_type_du',
             'studio' => 'visible',
             'label' => 'LBL_NIR_TYPE_DU',
+          ),
+          1 => 
+          array (
+            'name' => 'nir_type_du_oth',
+            'label' => 'LBL_NIR_TYPE_DU_OTH',
           ),
         ),
         3 => 
         array (
           0 => 
           array (
-            'name' => 'nir_type_du_oth',
-            'label' => 'LBL_NIR_TYPE_DU_OTH',
+            'name' => 'ncsdc_event_ncsdc_non_interview_rpt_dutype_name',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'ncsdc_event_ncsdc_non_interview_rpt_dutype_1_name',
+          ),
         ),
         4 => 
         array (
           0 => 
           array (
-            'name' => 'ncsdc_event_ncsdc_non_interview_rpt_dutype_name',
-          ),
-        ),
-        5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ncsdc_event_ncsdc_non_interview_rpt_dutype_1_name',
+            'name' => 'ncsdc_eventinfo_ncsdc_nirdutpmlts_1_name',
           ),
           1 => 
           array (
             'name' => 'ncsdc_eventinfo_ncsdc_nirdutpmlts_name',
-          ),
-        ),
-        6 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ncsdc_eventinfo_ncsdc_nirdutpmlts_1_name',
           ),
         ),
       ),

@@ -52,36 +52,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
             'name' => 'incident_id',
             'label' => 'LBL_INCIDENT_ID',
           ),
           1 => '',
         ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (
@@ -95,22 +71,7 @@ array (
             'label' => 'LBL_INCTYPE_OTH',
           ),
         ),
-        5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'inc_description',
-            'studio' => 'visible',
-            'label' => 'LBL_INC_DESCRIPTION',
-          ),
-          1 => 
-          array (
-            'name' => 'inc_action',
-            'studio' => 'visible',
-            'label' => 'LBL_INC_ACTION',
-          ),
-        ),
-        6 => 
+        3 => 
         array (
           0 => 
           array (
@@ -119,24 +80,42 @@ array (
           ),
           1 => '',
         ),
-        7 => 
+        4 => 
         array (
           0 => 
+          array (
+            'name' => 'inc_action',
+            'studio' => 'visible',
+            'label' => 'LBL_INC_ACTION',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'incident_date',
+            'label' => 'LBL_INCIDENT_DATE',
+          ),
+          1 => 
           array (
             'name' => 'incident_time',
             'label' => 'LBL_INCIDENT_TIME',
           ),
         ),
-        8 => 
+        6 => 
         array (
           0 => 
           array (
             'name' => 'inc_staff_reporter_id',
             'label' => 'LBL_INC_STAFF_REPORTER_ID',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'inc_staff_supervisor_id',
+            'label' => 'LBL_INC_STAFF_SUPERVISOR_ID',
+          ),
         ),
-        9 => 
+        7 => 
         array (
           0 => 
           array (
@@ -149,102 +128,73 @@ array (
             'label' => 'LBL_INC_REPORT_TIME',
           ),
         ),
-        10 => 
-        array (
-          0 => 
-          array (
-            'name' => 'inc_staff_supervisor_id',
-            'label' => 'LBL_INC_STAFF_SUPERVISOR_ID',
-          ),
-          1 => '',
-        ),
-        11 => 
-        array (
-          0 => '',
-          1 => '',
-        ),
-        12 => 
-        array (
-          0 => 
-          array (
-            'name' => 'inc_recip_is_participant',
-            'label' => 'LBL_INC_RECIP_IS_PARTICIPANT',
-          ),
-          1 => '',
-        ),
-        13 => 
-        array (
-          0 => 
-          array (
-            'name' => 'inc_recip_is_du',
-            'label' => 'LBL_INC_RECIP_IS_DU',
-          ),
-          1 => '',
-        ),
-        14 => 
+        8 => 
         array (
           0 => 
           array (
             'name' => 'inc_recip_is_staff',
             'label' => 'LBL_INC_RECIP_IS_STAFF',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'inc_recip_is_du',
+            'label' => 'LBL_INC_RECIP_IS_DU',
+          ),
         ),
-        15 => 
+        9 => 
         array (
           0 => 
+          array (
+            'name' => 'inc_recip_is_participant',
+            'label' => 'LBL_INC_RECIP_IS_PARTICIPANT',
+          ),
+          1 => 
           array (
             'name' => 'inc_recip_is_family',
             'label' => 'LBL_INC_RECIP_IS_FAMILY',
           ),
-          1 => '',
         ),
-        16 => 
+        10 => 
         array (
           0 => 
           array (
             'name' => 'inc_recip_is_acquaintance',
             'label' => 'LBL_INC_RECIP_IS_ACQUAINTANCE',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'inc_recip_is_other',
+            'studio' => 'visible',
+            'label' => 'LBL_INC_RECIP_IS_OTHER',
+          ),
         ),
-        17 => 
+        11 => 
         array (
           0 => 
           array (
             'name' => 'incloss_cmptr_model',
             'label' => 'LBL_INCLOSS_CMPTR_MODEL',
           ),
-          1 => '',
-        ),
-        18 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'incloss_cmptr_sn',
             'label' => 'LBL_INCLOSS_CMPTR_SN',
           ),
-          1 => '',
         ),
-        19 => 
+        12 => 
         array (
           0 => 
           array (
             'name' => 'incloss_cmptr_decal',
             'label' => 'LBL_INCLOSS_CMPTR_DECAL',
           ),
-          1 => '',
-        ),
-        20 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'incloss_rem_media',
             'label' => 'LBL_INCLOSS_REM_MEDIA',
           ),
-          1 => '',
         ),
-        21 => 
+        13 => 
         array (
           0 => 
           array (
@@ -257,7 +207,7 @@ array (
             'label' => 'LBL_INCLOSS_OTH',
           ),
         ),
-        22 => 
+        14 => 
         array (
           0 => 
           array (
@@ -267,7 +217,16 @@ array (
           ),
           1 => '',
         ),
-        23 => 
+        15 => 
+        array (
+          0 => 
+          array (
+            'name' => 'inc_description',
+            'studio' => 'visible',
+            'label' => 'LBL_INC_DESCRIPTION',
+          ),
+        ),
+        16 => 
         array (
           0 => 
           array (

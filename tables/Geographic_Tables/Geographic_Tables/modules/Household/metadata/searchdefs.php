@@ -20,37 +20,25 @@ array (
         'default' => true,
         'name' => 'hh_id',
       ),
-      'num_age_elig' => 
+      'hh_status' => 
       array (
-        'type' => 'int',
-        'label' => 'LBL_NUM_AGE_ELIG',
-        'width' => '10%',
+        'type' => 'enum',
         'default' => true,
-        'name' => 'num_age_elig',
+        'studio' => 'visible',
+        'label' => 'LBL_HH_STATUS',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'hh_status',
       ),
-      'num_preg' => 
+      'hh_elig' => 
       array (
-        'type' => 'int',
-        'label' => 'LBL_NUM_PREG',
-        'width' => '10%',
+        'type' => 'enum',
         'default' => true,
-        'name' => 'num_preg',
-      ),
-      'num_preg_minor' => 
-      array (
-        'type' => 'int',
-        'label' => 'LBL_NUM_PREG_MINOR',
+        'studio' => 'visible',
+        'label' => 'LBL_HH_ELIG',
+        'sortable' => false,
         'width' => '10%',
-        'default' => true,
-        'name' => 'num_preg_minor',
-      ),
-      'num_preg_adult' => 
-      array (
-        'type' => 'int',
-        'label' => 'LBL_NUM_PREG_ADULT',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'num_preg_adult',
+        'name' => 'hh_elig',
       ),
       'hh_structure' => 
       array (
@@ -62,13 +50,30 @@ array (
         'width' => '10%',
         'name' => 'hh_structure',
       ),
-      'hh_structure_oth' => 
+    ),
+    'advanced_search' => 
+    array (
+      'name' => 
+      array (
+        'name' => 'name',
+        'default' => true,
+        'width' => '10%',
+      ),
+      'hh_id' => 
       array (
         'type' => 'varchar',
-        'label' => 'LBL_HH_STRUCTURE_OTH',
+        'label' => 'LBL_HH_ID',
         'width' => '10%',
         'default' => true,
-        'name' => 'hh_structure_oth',
+        'name' => 'hh_id',
+      ),
+      'num_preg' => 
+      array (
+        'type' => 'int',
+        'label' => 'LBL_NUM_PREG',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'num_preg',
       ),
       'hh_status' => 
       array (
@@ -90,21 +95,17 @@ array (
         'width' => '10%',
         'name' => 'hh_elig',
       ),
-      'hh_comment' => 
+      'hh_structure' => 
       array (
-        'type' => 'text',
+        'type' => 'enum',
+        'default' => true,
         'studio' => 'visible',
-        'label' => 'LBL_HH_COMMENT',
+        'label' => 'LBL_HH_STRUCTURE',
         'sortable' => false,
         'width' => '10%',
-        'default' => true,
-        'name' => 'hh_comment',
+        'name' => 'hh_structure',
       ),
-    ),
-    'advanced_search' => 
-    array (
-      0 => 'name',
-      1 => 
+      'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',
         'label' => 'LBL_ASSIGNED_TO',
@@ -117,6 +118,8 @@ array (
             0 => false,
           ),
         ),
+        'default' => true,
+        'width' => '10%',
       ),
     ),
   ),

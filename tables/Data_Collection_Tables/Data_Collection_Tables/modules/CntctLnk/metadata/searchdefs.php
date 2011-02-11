@@ -20,15 +20,62 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'psu_id' => 
+      'contact_link_id' => 
       array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_PSU_ID',
-        'sortable' => false,
+        'type' => 'varchar',
+        'label' => 'LBL_CONTACT_LINK_ID',
         'width' => '10%',
-        'name' => 'psu_id',
+        'default' => true,
+        'name' => 'contact_link_id',
+      ),
+      'person_id' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_PERSON_ID',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'person_id',
+      ),
+      'staff_id' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_STAFF_ID',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'staff_id',
+      ),
+      'provider_id' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_PROVIDER_ID',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'provider_id',
+      ),
+      'contact_id' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_CONTACT_ID',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'contact_id',
+      ),
+      'event_id' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_EVENT_ID',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_id',
+      ),
+    ),
+    'advanced_search' => 
+    array (
+      'name' => 
+      array (
+        'name' => 'name',
+        'default' => true,
+        'width' => '10%',
       ),
       'contact_link_id' => 
       array (
@@ -37,6 +84,30 @@ array (
         'width' => '10%',
         'default' => true,
         'name' => 'contact_link_id',
+      ),
+      'person_id' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_PERSON_ID',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'person_id',
+      ),
+      'staff_id' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_STAFF_ID',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'staff_id',
+      ),
+      'provider_id' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_PROVIDER_ID',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'provider_id',
       ),
       'contact_id' => 
       array (
@@ -62,14 +133,6 @@ array (
         'default' => true,
         'name' => 'instrument_id',
       ),
-      'staff_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_STAFF_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'staff_id',
-      ),
       'specimen_id' => 
       array (
         'type' => 'varchar',
@@ -78,27 +141,7 @@ array (
         'default' => true,
         'name' => 'specimen_id',
       ),
-      'person_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_PERSON_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'person_id',
-      ),
-      'provider_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_PROVIDER_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'provider_id',
-      ),
-    ),
-    'advanced_search' => 
-    array (
-      0 => 'name',
-      1 => 
+      'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',
         'label' => 'LBL_ASSIGNED_TO',
@@ -111,6 +154,8 @@ array (
             0 => false,
           ),
         ),
+        'default' => true,
+        'width' => '10%',
       ),
     ),
   ),

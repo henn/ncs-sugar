@@ -52,36 +52,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
             'name' => 'du_id',
             'label' => 'LBL_DU_ID',
           ),
           1 => '',
         ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (
@@ -95,7 +71,7 @@ array (
             'label' => 'LBL_DU_TYPE_OTH',
           ),
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
@@ -103,19 +79,14 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_DUPLICATE_DU',
           ),
-          1 => '',
-        ),
-        6 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'missed_du',
             'studio' => 'visible',
             'label' => 'LBL_MISSED_DU',
           ),
-          1 => '',
         ),
-        7 => 
+        4 => 
         array (
           0 => 
           array (
@@ -123,19 +94,14 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_DU_ACCESS',
           ),
-          1 => '',
-        ),
-        8 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'du_ineligible',
             'studio' => 'visible',
             'label' => 'LBL_DU_INELIGIBLE',
           ),
-          1 => '',
         ),
-        9 => 
+        5 => 
         array (
           0 => 
           array (
@@ -145,28 +111,28 @@ array (
           ),
           1 => '',
         ),
-        10 => 
+        6 => 
         array (
           0 => 
           array (
             'name' => 'gt_dwelling_unit_ltt_address_name',
           ),
         ),
-        11 => 
+        7 => 
         array (
           0 => 
           array (
             'name' => 'gt_listing_unit_gt_dwelling_unit_name',
           ),
         ),
-        12 => 
+        8 => 
         array (
           0 => 
           array (
             'name' => 'gt_listingunt_gt_dwellingunt_name',
           ),
         ),
-        13 => 
+        9 => 
         array (
           0 => 
           array (

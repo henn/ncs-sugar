@@ -170,9 +170,9 @@ array (
           ),
           1 => 
           array (
-            'name' => 'move_info',
-            'studio' => 'visible',
-            'label' => 'LBL_MOVE_INFO',
+            'name' => 'description',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_DESCRIPTION',
           ),
         ),
         10 => 
@@ -183,14 +183,19 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PLAN_MOVE',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'move_info',
+            'studio' => 'visible',
+            'label' => 'LBL_MOVE_INFO',
+          ),
         ),
         11 => 
         array (
           0 => 
           array (
-            'name' => 'new_address_id',
-            'label' => 'LBL_NEW_ADDRESS_ID',
+            'name' => 'created_by_name',
+            'label' => 'LBL_CREATED',
           ),
           1 => 
           array (
@@ -206,7 +211,11 @@ array (
             'name' => 'date_move',
             'label' => 'LBL_DATE_MOVE',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'new_address_id',
+            'label' => 'LBL_NEW_ADDRESS_ID',
+          ),
         ),
         13 => 
         array (

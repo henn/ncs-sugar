@@ -34,6 +34,7 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
+$app_list_strings['moduleList']['GT_SndSampUnt'] = 'Secondary Sampling Unit (PSU)';
 $app_list_strings['moduleList']['GT_Household'] = 'Household';
 $app_list_strings['moduleList']['GT_DwellingUnt'] = 'Dwelling Unit (DU)';
 $app_list_strings['moduleList']['GT_ListingUnt'] = 'Listing Unit';

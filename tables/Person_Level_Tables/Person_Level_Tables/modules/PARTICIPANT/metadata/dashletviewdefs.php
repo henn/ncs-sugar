@@ -1,5 +1,21 @@
 <?php
 $dashletData['PLT_PARTICIPANTDashlet']['searchFields'] = array (
+  'name' => 
+  array (
+    'default' => '',
+  ),
+  'p_id' => 
+  array (
+    'default' => '',
+  ),
+  'p_type' => 
+  array (
+    'default' => '',
+  ),
+  'enroll_status' => 
+  array (
+    'default' => '',
+  ),
   'date_entered' => 
   array (
     'default' => '',
@@ -7,11 +23,6 @@ $dashletData['PLT_PARTICIPANTDashlet']['searchFields'] = array (
   'date_modified' => 
   array (
     'default' => '',
-  ),
-  'assigned_user_id' => 
-  array (
-    'type' => 'assigned_user_name',
-    'default' => 'Administrator',
   ),
 );
 $dashletData['PLT_PARTICIPANTDashlet']['columns'] = array (
@@ -29,6 +40,7 @@ $dashletData['PLT_PARTICIPANTDashlet']['columns'] = array (
     'label' => 'LBL_P_ID',
     'width' => '10%',
     'default' => true,
+    'name' => 'p_id',
   ),
   'enroll_status' => 
   array (
@@ -38,6 +50,7 @@ $dashletData['PLT_PARTICIPANTDashlet']['columns'] = array (
     'label' => 'LBL_ENROLL_STATUS',
     'sortable' => false,
     'width' => '10%',
+    'name' => 'enroll_status',
   ),
   'enroll_date' => 
   array (
@@ -45,6 +58,7 @@ $dashletData['PLT_PARTICIPANTDashlet']['columns'] = array (
     'label' => 'LBL_ENROLL_DATE',
     'width' => '10%',
     'default' => true,
+    'name' => 'enroll_date',
   ),
   'p_type' => 
   array (
@@ -54,6 +68,7 @@ $dashletData['PLT_PARTICIPANTDashlet']['columns'] = array (
     'label' => 'LBL_P_TYPE',
     'sortable' => false,
     'width' => '10%',
+    'name' => 'p_type',
   ),
   'description' => 
   array (
@@ -62,6 +77,7 @@ $dashletData['PLT_PARTICIPANTDashlet']['columns'] = array (
     'sortable' => false,
     'width' => '10%',
     'default' => true,
+    'name' => 'description',
   ),
   'date_modified' => 
   array (
@@ -99,6 +115,7 @@ $dashletData['PLT_PARTICIPANTDashlet']['columns'] = array (
     'sortable' => false,
     'width' => '10%',
     'default' => false,
+    'name' => 'pid_comment',
   ),
   'status_info_date' => 
   array (
@@ -106,5 +123,6 @@ $dashletData['PLT_PARTICIPANTDashlet']['columns'] = array (
     'label' => 'LBL_STATUS_INFO_DATE',
     'width' => '10%',
     'default' => false,
+    'name' => 'status_info_date',
   ),
 );

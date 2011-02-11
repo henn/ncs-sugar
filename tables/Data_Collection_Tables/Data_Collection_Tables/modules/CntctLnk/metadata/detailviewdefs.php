@@ -52,63 +52,21 @@ array (
         array (
           0 => 
           array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
+            'name' => 'contact_link_id',
+            'label' => 'LBL_CONTACT_LINK_ID',
           ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
+          1 => '',
         ),
         2 => 
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
+            'name' => 'person_id',
+            'label' => 'LBL_PERSON_ID',
           ),
           1 => '',
         ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'contact_link_id',
-            'label' => 'LBL_CONTACT_LINK_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'contact_id',
-            'label' => 'LBL_CONTACT_ID',
-          ),
-        ),
-        5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'event_id',
-            'label' => 'LBL_EVENT_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'instrument_id',
-            'label' => 'LBL_INSTRUMENT_ID',
-          ),
-        ),
-        6 => 
+        3 => 
         array (
           0 => 
           array (
@@ -117,21 +75,34 @@ array (
           ),
           1 => 
           array (
-            'name' => 'specimen_id',
-            'label' => 'LBL_SPECIMEN_ID',
+            'name' => 'provider_id',
+            'label' => 'LBL_PROVIDER_ID',
           ),
         ),
-        7 => 
+        4 => 
         array (
           0 => 
           array (
-            'name' => 'person_id',
-            'label' => 'LBL_PERSON_ID',
+            'name' => 'contact_id',
+            'label' => 'LBL_CONTACT_ID',
           ),
           1 => 
           array (
-            'name' => 'provider_id',
-            'label' => 'LBL_PROVIDER_ID',
+            'name' => 'event_id',
+            'label' => 'LBL_EVENT_ID',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'instrument_id',
+            'label' => 'LBL_INSTRUMENT_ID',
+          ),
+          1 => 
+          array (
+            'name' => 'specimen_id',
+            'label' => 'LBL_SPECIMEN_ID',
           ),
         ),
       ),
