@@ -77,14 +77,6 @@ array (
         'width' => '10%',
         'name' => 'ppg_info_source',
       ),
-      'ppg_history_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_PPG_HISTORY_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'ppg_history_id',
-      ),
       'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',

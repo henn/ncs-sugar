@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'inc_unanticipated_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_INC_UNANTICIPATED_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'inc_unanticipated_id',
-      ),
       'inc_unanticipated' => 
       array (
         'type' => 'enum',
@@ -47,14 +39,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'inc_unanticipated_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_INC_UNANTICIPATED_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'inc_unanticipated_id',
       ),
       'inc_unanticipated' => 
       array (

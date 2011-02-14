@@ -93,14 +93,6 @@ array (
         'width' => '10%',
         'name' => 'is_active',
       ),
-      'person_pid_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_PERSON_PID_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'person_pid_id',
-      ),
     ),
   ),
   'templateMeta' => 

@@ -37,11 +37,7 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'staff_cert_list_id',
-            'label' => 'LBL_STAFF_CERT_LIST_ID',
-          ),
+          0 => '',
         ),
         2 => 
         array (

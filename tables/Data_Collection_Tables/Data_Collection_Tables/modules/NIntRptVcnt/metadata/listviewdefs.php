@@ -15,13 +15,6 @@ array (
     'label' => 'LBL_ASSIGNED_TO_NAME',
     'default' => true,
   ),
-  'NIR_VACANT_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_NIR_VACANT_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'NIR_VACANT' => 
   array (
     'type' => 'enum',

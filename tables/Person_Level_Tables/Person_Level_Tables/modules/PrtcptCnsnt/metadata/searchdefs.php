@@ -161,14 +161,6 @@ array (
         'width' => '10%',
         'name' => 'who_consented',
       ),
-      'participant_consent_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_PARTICIPANT_CONSENT_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'participant_consent_id',
-      ),
       'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',

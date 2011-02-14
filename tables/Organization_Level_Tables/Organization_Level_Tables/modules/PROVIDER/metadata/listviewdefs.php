@@ -9,28 +9,6 @@ array (
     'default' => true,
     'link' => true,
   ),
-  'ASSIGNED_USER_NAME' => 
-  array (
-    'width' => '9%',
-    'label' => 'LBL_ASSIGNED_TO_NAME',
-    'default' => true,
-  ),
-  'PSU_ID' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_PSU_ID',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'PROVIDER_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_PROVIDER_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'PROVIDER_TYPE' => 
   array (
     'type' => 'enum',
@@ -64,6 +42,21 @@ array (
     'label' => 'LBL_PROVIDER_INFO_DATE',
     'width' => '10%',
     'default' => true,
+  ),
+  'PSU_ID' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_PSU_ID',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'width' => '9%',
+    'label' => 'LBL_ASSIGNED_TO_NAME',
+    'default' => false,
   ),
   'PROVIDER_INFO_UPDATE' => 
   array (

@@ -56,11 +56,7 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PSU_ID',
           ),
-          1 => 
-          array (
-            'name' => 'weekly_exp_id',
-            'label' => 'LBL_WEEKLY_EXP_ID',
-          ),
+          1 => '',
         ),
         3 => 
         array (

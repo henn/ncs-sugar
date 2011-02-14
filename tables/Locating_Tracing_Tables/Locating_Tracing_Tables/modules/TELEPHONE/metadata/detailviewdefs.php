@@ -45,11 +45,7 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'phone_id',
-            'label' => 'LBL_PHONE_ID',
-          ),
+          0 => '',
           1 => '',
         ),
         2 => 
@@ -145,10 +141,7 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PHONE_COMMENT',
           ),
-        ),
-        9 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'gt_dwellingunt_ltt_telephone_name',
           ),

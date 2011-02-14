@@ -50,38 +50,10 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'pid_visit_consent_id',
-            'label' => 'LBL_PID_VISIT_CONSENT_ID',
-          ),
+          0 => '',
           1 => '',
         ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (
@@ -91,7 +63,7 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
@@ -101,7 +73,7 @@ array (
           ),
           1 => '',
         ),
-        6 => 
+        4 => 
         array (
           0 => 
           array (
@@ -115,7 +87,7 @@ array (
             'label' => 'LBL_VIS_LANGUAGE_OTH',
           ),
         ),
-        7 => 
+        5 => 
         array (
           0 => 
           array (
@@ -125,7 +97,7 @@ array (
           ),
           1 => '',
         ),
-        8 => 
+        6 => 
         array (
           0 => 
           array (
@@ -135,7 +107,7 @@ array (
           ),
           1 => '',
         ),
-        9 => 
+        7 => 
         array (
           0 => 
           array (
@@ -143,9 +115,8 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_VIS_COMMENTS',
           ),
-          1 => '',
         ),
-        10 => 
+        8 => 
         array (
           0 => 
           array (

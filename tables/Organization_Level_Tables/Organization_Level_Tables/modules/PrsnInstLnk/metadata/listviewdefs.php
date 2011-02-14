@@ -24,13 +24,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'PERSON_INSTITUTE_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_PERSON_INSTITUTE_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'INSTITUTE_ID' => 
   array (
     'type' => 'varchar',

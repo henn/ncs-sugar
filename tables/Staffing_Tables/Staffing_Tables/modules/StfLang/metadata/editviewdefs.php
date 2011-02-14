@@ -56,11 +56,7 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PSU_ID',
           ),
-          1 => 
-          array (
-            'name' => 'staff_language_id',
-            'label' => 'LBL_STAFF_LANGUAGE_ID',
-          ),
+          1 => '',
         ),
         3 => 
         array (

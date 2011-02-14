@@ -15,13 +15,6 @@ array (
     'label' => 'LBL_ASSIGNED_TO_NAME',
     'default' => true,
   ),
-  'NIR_DUTYPE_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_NIR_DUTYPE_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'NIR_TYPE_DU' => 
   array (
     'type' => 'enum',

@@ -50,11 +50,7 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'event_id',
-            'label' => 'LBL_EVENT_ID',
-          ),
+          0 => '',
           1 => '',
         ),
         2 => 

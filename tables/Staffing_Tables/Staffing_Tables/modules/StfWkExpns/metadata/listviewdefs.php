@@ -24,13 +24,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'WEEKLY_EXP_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_WEEKLY_EXP_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'WEEK_START_DATE' => 
   array (
     'type' => 'date',

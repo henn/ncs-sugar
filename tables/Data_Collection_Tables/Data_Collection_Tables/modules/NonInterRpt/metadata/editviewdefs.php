@@ -41,11 +41,7 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'nir_id',
-            'label' => 'LBL_NIR_ID',
-          ),
+          0 => '',
           1 => '',
         ),
         2 => 

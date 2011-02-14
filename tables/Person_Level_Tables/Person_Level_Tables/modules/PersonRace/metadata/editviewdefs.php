@@ -50,11 +50,7 @@ array (
         ),
         2 => 
         array (
-          0 => 
-          array (
-            'name' => 'person_race_id',
-            'label' => 'LBL_PERSON_RACE_ID',
-          ),
+          0 => '',
           1 => '',
         ),
         3 => 

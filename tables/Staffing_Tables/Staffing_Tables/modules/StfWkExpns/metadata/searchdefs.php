@@ -61,14 +61,6 @@ array (
         'default' => true,
         'name' => 'staff_id',
       ),
-      'weekly_exp_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_WEEKLY_EXP_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'weekly_exp_id',
-      ),
       'staff_pay' => 
       array (
         'type' => 'decimal',

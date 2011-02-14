@@ -41,33 +41,10 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
+          0 => '',
+          1 => '',
         ),
         2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ppg_details_id',
-            'label' => 'LBL_PPG_DETAILS_ID',
-          ),
-          1 => '',
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ppg_first',
-            'studio' => 'visible',
-            'label' => 'LBL_PPG_FIRST',
-          ),
-          1 => '',
-        ),
-        4 => 
         array (
           0 => 
           array (
@@ -75,31 +52,36 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PPG_PID_STATUS',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'ppg_first',
+            'studio' => 'visible',
+            'label' => 'LBL_PPG_FIRST',
+          ),
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
             'name' => 'orig_due_date',
             'label' => 'LBL_ORIG_DUE_DATE',
           ),
-          1 => '',
-        ),
-        6 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'due_date_2',
             'label' => 'LBL_DUE_DATE_2',
           ),
-          1 => 
+        ),
+        4 => 
+        array (
+          0 => 
           array (
             'name' => 'due_date_3',
             'label' => 'LBL_DUE_DATE_3',
           ),
+          1 => '',
         ),
-        7 => 
+        5 => 
         array (
           0 => 
           array (

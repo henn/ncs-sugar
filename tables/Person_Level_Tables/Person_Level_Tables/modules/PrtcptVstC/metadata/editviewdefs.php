@@ -48,31 +48,13 @@ array (
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'pid_visit_consent_id',
-            'label' => 'LBL_PID_VISIT_CONSENT_ID',
-          ),
-          1 => '',
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
             'name' => 'vis_consent_type',
             'studio' => 'visible',
             'label' => 'LBL_VIS_CONSENT_TYPE',
           ),
           1 => '',
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
@@ -82,7 +64,7 @@ array (
           ),
           1 => '',
         ),
-        6 => 
+        4 => 
         array (
           0 => 
           array (
@@ -96,7 +78,7 @@ array (
             'label' => 'LBL_VIS_LANGUAGE_OTH',
           ),
         ),
-        7 => 
+        5 => 
         array (
           0 => 
           array (
@@ -106,7 +88,7 @@ array (
           ),
           1 => '',
         ),
-        8 => 
+        6 => 
         array (
           0 => 
           array (
@@ -116,7 +98,7 @@ array (
           ),
           1 => '',
         ),
-        9 => 
+        7 => 
         array (
           0 => 
           array (
@@ -124,9 +106,8 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_VIS_COMMENTS',
           ),
-          1 => '',
         ),
-        10 => 
+        8 => 
         array (
           0 => 
           array (

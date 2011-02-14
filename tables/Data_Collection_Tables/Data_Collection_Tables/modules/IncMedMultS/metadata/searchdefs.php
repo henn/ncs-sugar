@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'incident_media_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_INCIDENT_MEDIA_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'incident_media_id',
-      ),
       'incloss_media' => 
       array (
         'type' => 'enum',
@@ -57,14 +49,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'incident_media_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_INCIDENT_MEDIA_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'incident_media_id',
       ),
       'incloss_media' => 
       array (

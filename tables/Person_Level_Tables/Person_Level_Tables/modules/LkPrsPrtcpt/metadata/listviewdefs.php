@@ -24,13 +24,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'PERSON_PID_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_PERSON_PID_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'P_ID' => 
   array (
     'type' => 'varchar',

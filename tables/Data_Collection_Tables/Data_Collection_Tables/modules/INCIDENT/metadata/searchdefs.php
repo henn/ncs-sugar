@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'incident_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_INCIDENT_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'incident_id',
-      ),
       'inc_report_date' => 
       array (
         'type' => 'date',
@@ -72,14 +64,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'incident_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_INCIDENT_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'incident_id',
       ),
       'inc_staff_reporter_id' => 
       array (

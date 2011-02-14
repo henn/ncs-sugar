@@ -2,18 +2,18 @@
 $module_name = 'PLT_PPGStsHstry';
 $listViewDefs [$module_name] = 
 array (
-  'ASSIGNED_USER_NAME' => 
-  array (
-    'width' => '9%',
-    'label' => 'LBL_ASSIGNED_TO_NAME',
-    'default' => true,
-  ),
   'NAME' => 
   array (
     'width' => '32%',
     'label' => 'LBL_NAME',
     'default' => true,
     'link' => true,
+  ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'width' => '9%',
+    'label' => 'LBL_ASSIGNED_TO_NAME',
+    'default' => true,
   ),
   'PPG_STATUS' => 
   array (
@@ -23,13 +23,6 @@ array (
     'label' => 'LBL_PPG_STATUS',
     'sortable' => false,
     'width' => '10%',
-  ),
-  'PPG_HISTORY_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_PPG_HISTORY_ID',
-    'width' => '10%',
-    'default' => true,
   ),
   'PPG_INFO_MODE' => 
   array (

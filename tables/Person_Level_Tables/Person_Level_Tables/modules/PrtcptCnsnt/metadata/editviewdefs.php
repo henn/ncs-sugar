@@ -70,11 +70,7 @@ array (
       array (
         0 => 
         array (
-          0 => 
-          array (
-            'name' => 'participant_consent_id',
-            'label' => 'LBL_PARTICIPANT_CONSENT_ID',
-          ),
+          0 => '',
           1 => 
           array (
             'name' => 'consent_date',
@@ -85,35 +81,18 @@ array (
         array (
           0 => 
           array (
+            'name' => 'consent_type',
+            'studio' => 'visible',
+            'label' => 'LBL_CONSENT_TYPE',
+          ),
+          1 => 
+          array (
             'name' => 'consent_given',
             'studio' => 'visible',
             'label' => 'LBL_CONSENT_GIVEN',
           ),
         ),
         2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'consent_type',
-            'studio' => 'visible',
-            'label' => 'LBL_CONSENT_TYPE',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'consent_withdraw',
-            'studio' => 'visible',
-            'label' => 'LBL_CONSENT_WITHDRAW',
-          ),
-          1 => 
-          array (
-            'name' => 'consent_withdraw_date',
-            'label' => 'LBL_CONSENT_WITHDRAW_DATE',
-          ),
-        ),
-        4 => 
         array (
           0 => 
           array (
@@ -127,7 +106,17 @@ array (
             'label' => 'LBL_CONSENT_LANGUAGE_OTH',
           ),
         ),
-        5 => 
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'consent_translate',
+            'studio' => 'visible',
+            'label' => 'LBL_CONSENT_TRANSLATE',
+          ),
+          1 => '',
+        ),
+        4 => 
         array (
           0 => 
           array (
@@ -141,7 +130,31 @@ array (
             'label' => 'LBL_WHO_CONSENTED',
           ),
         ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'consent_withdraw',
+            'studio' => 'visible',
+            'label' => 'LBL_CONSENT_WITHDRAW',
+          ),
+          1 => 
+          array (
+            'name' => 'consent_withdraw_date',
+            'label' => 'LBL_CONSENT_WITHDRAW_DATE',
+          ),
+        ),
         6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'consent_withdraw_type',
+            'studio' => 'visible',
+            'label' => 'LBL_CONSENT_WITHDRAW_TYPE',
+          ),
+          1 => '',
+        ),
+        7 => 
         array (
           0 => 
           array (
@@ -155,29 +168,15 @@ array (
             'label' => 'LBL_WHO_WTHDRW_CONSENT',
           ),
         ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'consent_translate',
-            'studio' => 'visible',
-            'label' => 'LBL_CONSENT_TRANSLATE',
-          ),
-        ),
         8 => 
         array (
           0 => 
-          array (
-            'name' => 'consent_withdraw_type',
-            'studio' => 'visible',
-            'label' => 'LBL_CONSENT_WITHDRAW_TYPE',
-          ),
-          1 => 
           array (
             'name' => 'consent_comments',
             'studio' => 'visible',
             'label' => 'LBL_CONSENT_COMMENTS',
           ),
+          1 => '',
         ),
       ),
     ),

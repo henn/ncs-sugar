@@ -41,28 +41,10 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
+          0 => '',
+          1 => '',
         ),
         2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'institute_id',
-            'label' => 'LBL_INSTITUTE_ID',
-          ),
-        ),
-        3 => 
         array (
           0 => 
           array (
@@ -76,7 +58,7 @@ array (
             'label' => 'LBL_INSTITUTE_TYPE_OTH',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -90,7 +72,7 @@ array (
             'label' => 'LBL_INSTITUTE_RELATION_OTH',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -104,15 +86,16 @@ array (
             'label' => 'LBL_INSTITUTE_OWNER_OTH',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
             'name' => 'institute_size',
             'label' => 'LBL_INSTITUTE_SIZE',
           ),
+          1 => '',
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -126,7 +109,7 @@ array (
             'label' => 'LBL_INSTITUTE_UNIT_OTH',
           ),
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (
@@ -140,7 +123,7 @@ array (
             'label' => 'LBL_INSTITUTE_INFO_SOURCE_OTH',
           ),
         ),
-        9 => 
+        8 => 
         array (
           0 => 
           array (
@@ -153,7 +136,7 @@ array (
             'label' => 'LBL_INSTITUTE_INFO_UPDATE',
           ),
         ),
-        10 => 
+        9 => 
         array (
           0 => 
           array (

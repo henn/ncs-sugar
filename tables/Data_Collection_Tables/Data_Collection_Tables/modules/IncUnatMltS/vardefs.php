@@ -1,7 +1,7 @@
 <?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -33,26 +33,10 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
+
 $vardefs = array (
   'fields' => 
   array (
-    'inc_unanticipated_id' => 
-    array (
-      'required' => false,
-      'name' => 'inc_unanticipated_id',
-      'vname' => 'LBL_INC_UNANTICIPATED_ID',
-      'type' => 'varchar',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => 'Unique Identifier',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => '36',
-      'size' => '20',
-    ),
     'inc_unanticipated' => 
     array (
       'required' => false,
@@ -73,6 +57,25 @@ $vardefs = array (
       'options' => 'INC_UNANTICIPATED_CL1',
       'studio' => 'visible',
       'dependency' => false,
+    ),
+    'name' => 
+    array (
+      'name' => 'name',
+      'vname' => 'LBL_NAME',
+      'type' => 'name',
+      'dbType' => 'varchar',
+      'len' => '36',
+      'unified_search' => true,
+      'required' => true,
+      'importable' => 'required',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => '',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'size' => '20',
     ),
   ),
   'relationships' => 

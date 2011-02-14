@@ -55,14 +55,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'staff_exp_data_coll_task_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_STAFF_EXP_DATA_COLL_TASK_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'staff_exp_data_coll_task_id',
-      ),
       'staff_weekly_expense_id' => 
       array (
         'type' => 'varchar',

@@ -84,11 +84,7 @@ array (
         ),
         4 => 
         array (
-          0 => 
-          array (
-            'name' => 'staff_language_id',
-            'label' => 'LBL_STAFF_LANGUAGE_ID',
-          ),
+          0 => '',
         ),
         5 => 
         array (

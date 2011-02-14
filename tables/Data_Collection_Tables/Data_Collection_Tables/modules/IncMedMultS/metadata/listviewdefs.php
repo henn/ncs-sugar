@@ -15,13 +15,6 @@ array (
     'label' => 'LBL_ASSIGNED_TO_NAME',
     'default' => true,
   ),
-  'INCIDENT_MEDIA_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INCIDENT_MEDIA_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'INSSEV' => 
   array (
     'type' => 'enum',

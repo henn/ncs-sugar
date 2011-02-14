@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'person_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_PERSON_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'person_id',
-      ),
       'first_name' => 
       array (
         'type' => 'varchar',
@@ -91,14 +83,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'person_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_PERSON_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'person_id',
       ),
       'first_name' => 
       array (

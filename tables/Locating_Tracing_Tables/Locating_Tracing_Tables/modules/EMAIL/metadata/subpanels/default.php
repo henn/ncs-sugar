@@ -39,13 +39,6 @@ $subpanel_layout = array (
       'sortable' => false,
       'width' => '10%',
     ),
-    'email_id' => 
-    array (
-      'type' => 'varchar',
-      'vname' => 'LBL_EMAIL_ID',
-      'width' => '10%',
-      'default' => true,
-    ),
     'email_comment' => 
     array (
       'type' => 'text',

@@ -15,13 +15,6 @@ array (
     'label' => 'LBL_ASSIGNED_TO_NAME',
     'default' => true,
   ),
-  'HH_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_HH_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'HH_STATUS' => 
   array (
     'type' => 'enum',

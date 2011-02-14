@@ -59,11 +59,7 @@ array (
         ),
         2 => 
         array (
-          0 => 
-          array (
-            'name' => 'staff_id',
-            'label' => 'LBL_STAFF_ID',
-          ),
+          0 => '',
         ),
         3 => 
         array (

@@ -84,11 +84,7 @@ array (
         ),
         4 => 
         array (
-          0 => 
-          array (
-            'name' => 'staff_exp_data_coll_task_id',
-            'label' => 'LBL_STAFF_EXP_DATA_COLL_TASK_ID',
-          ),
+          0 => '',
           1 => '',
         ),
         5 => 

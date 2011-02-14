@@ -50,44 +50,15 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
+          0 => '',
+          1 => '',
         ),
         2 => 
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
-          ),
-          1 => '',
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'person_provider_id',
-            'label' => 'LBL_PERSON_PROVIDER_ID',
+            'name' => 'person_id',
+            'label' => 'LBL_PERSON_ID',
           ),
           1 => 
           array (
@@ -95,16 +66,7 @@ array (
             'label' => 'LBL_PROVIDER_ID',
           ),
         ),
-        5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'person_id',
-            'label' => 'LBL_PERSON_ID',
-          ),
-          1 => '',
-        ),
-        6 => 
+        3 => 
         array (
           0 => 
           array (
@@ -118,7 +80,7 @@ array (
             'label' => 'LBL_PROV_INTRO_OUTCOME_OTH',
           ),
         ),
-        7 => 
+        4 => 
         array (
           0 => 
           array (
@@ -127,6 +89,17 @@ array (
             'label' => 'LBL_IS_ACTIVE',
           ),
           1 => '',
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'olt_prsnprvdlnk_plt_person_name',
+          ),
+          1 => 
+          array (
+            'name' => 'olt_prsnprvdlnk_olt_provider_name',
+          ),
         ),
       ),
     ),

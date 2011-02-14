@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'nir_refusal_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_NIR_REFUSAL_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'nir_refusal_id',
-      ),
       'nir_id' => 
       array (
         'type' => 'varchar',
@@ -55,14 +47,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'nir_refusal_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_NIR_REFUSAL_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'nir_refusal_id',
       ),
       'nir_id' => 
       array (

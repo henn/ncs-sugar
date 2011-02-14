@@ -73,14 +73,6 @@ array (
         'default' => true,
         'name' => 'staff_val_date',
       ),
-      'staff_val_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_STAFF_VAL_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'staff_val_id',
-      ),
       'event_id' => 
       array (
         'type' => 'varchar',

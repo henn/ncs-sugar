@@ -67,14 +67,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'outreach_event_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_OUTREACH_EVENT_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'outreach_event_id',
-      ),
       'outreach_event_date' => 
       array (
         'type' => 'date',

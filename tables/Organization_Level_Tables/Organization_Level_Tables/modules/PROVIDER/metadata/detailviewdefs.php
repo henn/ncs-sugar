@@ -50,58 +50,24 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
-        ),
-        2 => 
-        array (
           0 => '',
           1 => '',
         ),
-        3 => 
+        2 => 
         array (
           0 => 
-          array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
-          ),
-          1 => '',
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'provider_id',
-            'label' => 'LBL_PROVIDER_ID',
-          ),
-          1 => 
           array (
             'name' => 'provider_type',
             'studio' => 'visible',
             'label' => 'LBL_PROVIDER_TYPE',
           ),
-        ),
-        5 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'provider_type_oth',
             'label' => 'LBL_PROVIDER_TYPE_OTH',
           ),
-          1 => '',
         ),
-        6 => 
+        3 => 
         array (
           0 => 
           array (
@@ -115,7 +81,7 @@ array (
             'label' => 'LBL_PROVIDER_NCS_ROLE_OTH',
           ),
         ),
-        7 => 
+        4 => 
         array (
           0 => 
           array (
@@ -123,9 +89,14 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PRACTICE_INFO',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'public_practice',
+            'studio' => 'visible',
+            'label' => 'LBL_PUBLIC_PRACTICE',
+          ),
         ),
-        8 => 
+        5 => 
         array (
           0 => 
           array (
@@ -140,17 +111,7 @@ array (
             'label' => 'LBL_PRACTICE_SIZE',
           ),
         ),
-        9 => 
-        array (
-          0 => 
-          array (
-            'name' => 'public_practice',
-            'studio' => 'visible',
-            'label' => 'LBL_PUBLIC_PRACTICE',
-          ),
-          1 => '',
-        ),
-        10 => 
+        6 => 
         array (
           0 => 
           array (
@@ -164,16 +125,20 @@ array (
             'label' => 'LBL_PROVIDER_INFO_SOURCE_OTH',
           ),
         ),
-        11 => 
+        7 => 
         array (
           0 => 
           array (
             'name' => 'provider_info_date',
             'label' => 'LBL_PROVIDER_INFO_DATE',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'provider_info_update',
+            'label' => 'LBL_PROVIDER_INFO_UPDATE',
+          ),
         ),
-        12 => 
+        8 => 
         array (
           0 => 
           array (
@@ -181,16 +146,6 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PROVIDER_COMMENT',
           ),
-          1 => '',
-        ),
-        13 => 
-        array (
-          0 => 
-          array (
-            'name' => 'provider_info_update',
-            'label' => 'LBL_PROVIDER_INFO_UPDATE',
-          ),
-          1 => '',
         ),
       ),
     ),

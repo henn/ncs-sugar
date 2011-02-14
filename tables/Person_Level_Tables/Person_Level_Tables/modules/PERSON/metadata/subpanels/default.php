@@ -37,13 +37,6 @@ $subpanel_layout = array (
       'width' => '10%',
       'default' => true,
     ),
-    'person_id' => 
-    array (
-      'type' => 'varchar',
-      'vname' => 'LBL_PERSON_ID',
-      'width' => '10%',
-      'default' => true,
-    ),
     'person_dob' => 
     array (
       'type' => 'date',

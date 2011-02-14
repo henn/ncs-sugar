@@ -83,13 +83,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'PARTICIPANT_CONSENT_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_PARTICIPANT_CONSENT_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'NAME' => 
   array (
     'width' => '32%',

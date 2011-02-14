@@ -73,14 +73,6 @@ array (
         'width' => '10%',
         'name' => 'is_active',
       ),
-      'person_institute_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_PERSON_INSTITUTE_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'person_institute_id',
-      ),
       'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',

@@ -48,20 +48,6 @@ array (
         array (
           0 => 
           array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'provider_id',
-            'label' => 'LBL_PROVIDER_ID',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
             'name' => 'provider_type',
             'studio' => 'visible',
             'label' => 'LBL_PROVIDER_TYPE',
@@ -72,7 +58,7 @@ array (
             'label' => 'LBL_PROVIDER_TYPE_OTH',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -86,7 +72,7 @@ array (
             'label' => 'LBL_PROVIDER_NCS_ROLE_OTH',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -101,7 +87,7 @@ array (
             'label' => 'LBL_PRACTICE_PATIENT_LOAD',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -116,7 +102,7 @@ array (
             'label' => 'LBL_PUBLIC_PRACTICE',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -130,16 +116,20 @@ array (
             'label' => 'LBL_PROVIDER_INFO_SOURCE_OTH',
           ),
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (
             'name' => 'provider_info_date',
             'label' => 'LBL_PROVIDER_INFO_DATE',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'provider_info_update',
+            'label' => 'LBL_PROVIDER_INFO_UPDATE',
+          ),
         ),
-        9 => 
+        8 => 
         array (
           0 => 
           array (
@@ -147,16 +137,6 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PROVIDER_COMMENT',
           ),
-          1 => '',
-        ),
-        10 => 
-        array (
-          0 => 
-          array (
-            'name' => 'provider_info_update',
-            'label' => 'LBL_PROVIDER_INFO_UPDATE',
-          ),
-          1 => '',
         ),
       ),
     ),

@@ -41,11 +41,7 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'nir_dutype_id',
-            'label' => 'LBL_NIR_DUTYPE_ID',
-          ),
+          0 => '',
         ),
         2 => 
         array (

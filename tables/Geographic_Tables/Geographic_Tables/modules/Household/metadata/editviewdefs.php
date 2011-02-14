@@ -41,11 +41,7 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'hh_id',
-            'label' => 'LBL_HH_ID',
-          ),
+          0 => '',
           1 => '',
         ),
         2 => 

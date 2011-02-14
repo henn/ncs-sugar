@@ -29,13 +29,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'PERSON_PROVIDER_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_PERSON_PROVIDER_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'IS_ACTIVE' => 
   array (
     'type' => 'enum',

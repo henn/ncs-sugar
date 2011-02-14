@@ -50,22 +50,22 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'instrument_id',
-            'label' => 'LBL_INSTRUMENT_ID',
-          ),
+          0 => '',
           1 => '',
         ),
         2 => 
         array (
           0 => 
           array (
-            'name' => 'ins_status',
+            'name' => 'instrument_type',
             'studio' => 'visible',
-            'label' => 'LBL_INS_STATUS',
+            'label' => 'LBL_INSTRUMENT_TYPE',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'instrument_type_oth',
+            'label' => 'LBL_INSTRUMENT_TYPE_OTH',
+          ),
         ),
         3 => 
         array (
@@ -80,13 +80,27 @@ array (
         array (
           0 => 
           array (
+            'name' => 'ins_status',
+            'studio' => 'visible',
+            'label' => 'LBL_INS_STATUS',
+          ),
+          1 => 
+          array (
+            'name' => 'instrument_repeat_key',
+            'label' => 'LBL_INSTRUMENT_REPEAT_KEY',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
             'name' => 'ins_method',
             'studio' => 'visible',
             'label' => 'LBL_INS_METHOD',
           ),
           1 => '',
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
@@ -100,7 +114,7 @@ array (
             'label' => 'LBL_INS_MODE_OTH',
           ),
         ),
-        6 => 
+        7 => 
         array (
           0 => 
           array (
@@ -113,7 +127,7 @@ array (
             'label' => 'LBL_INS_DATE_END',
           ),
         ),
-        7 => 
+        8 => 
         array (
           0 => 
           array (
@@ -126,22 +140,13 @@ array (
             'label' => 'LBL_INS_END_TIME',
           ),
         ),
-        8 => 
+        9 => 
         array (
           0 => 
           array (
             'name' => 'ins_breakoff',
             'studio' => 'visible',
             'label' => 'LBL_INS_BREAKOFF',
-          ),
-          1 => '',
-        ),
-        9 => 
-        array (
-          0 => 
-          array (
-            'name' => 'instrument_type_oth',
-            'label' => 'LBL_INSTRUMENT_TYPE_OTH',
           ),
           1 => '',
         ),
@@ -153,19 +158,14 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_SUP_REVIEW',
           ),
-          1 => '',
-        ),
-        11 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'data_problem',
             'studio' => 'visible',
             'label' => 'LBL_DATA_PROBLEM',
           ),
-          1 => '',
         ),
-        12 => 
+        11 => 
         array (
           0 => 
           array (
@@ -174,7 +174,7 @@ array (
             'label' => 'LBL_INSTRU_COMMENT',
           ),
         ),
-        13 => 
+        12 => 
         array (
           0 => 
           array (

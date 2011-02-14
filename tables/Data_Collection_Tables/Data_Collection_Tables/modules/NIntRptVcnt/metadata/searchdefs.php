@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'nir_vacant_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_NIR_VACANT_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'nir_vacant_id',
-      ),
       'nir_vacant' => 
       array (
         'type' => 'enum',
@@ -47,14 +39,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'nir_vacant_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_NIR_VACANT_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'nir_vacant_id',
       ),
       'nir_vacant' => 
       array (

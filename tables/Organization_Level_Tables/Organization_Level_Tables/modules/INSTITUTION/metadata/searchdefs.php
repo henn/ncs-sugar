@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'institute_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_INSTITUTE_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'institute_id',
-      ),
       'institute_type' => 
       array (
         'type' => 'enum',
@@ -68,14 +60,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'institute_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_INSTITUTE_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'institute_id',
       ),
       'institute_type' => 
       array (

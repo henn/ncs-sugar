@@ -23,13 +23,6 @@ $subpanel_layout = array (
       'width' => '45%',
       'default' => true,
     ),
-    'p_id' => 
-    array (
-      'type' => 'varchar',
-      'vname' => 'LBL_P_ID',
-      'width' => '10%',
-      'default' => true,
-    ),
     'enroll_status' => 
     array (
       'type' => 'enum',

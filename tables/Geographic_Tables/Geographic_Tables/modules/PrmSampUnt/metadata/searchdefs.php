@@ -20,16 +20,6 @@ array (
         'default' => true,
         'name' => 'sc_id',
       ),
-      'psu_id' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_PSU_ID',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'psu_id',
-      ),
       'psu_name' => 
       array (
         'type' => 'varchar',
@@ -64,16 +54,6 @@ array (
         'width' => '10%',
         'default' => true,
         'name' => 'sc_id',
-      ),
-      'psu_id' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_PSU_ID',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'psu_id',
       ),
       'psu_name' => 
       array (

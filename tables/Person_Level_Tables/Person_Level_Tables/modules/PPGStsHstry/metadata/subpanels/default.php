@@ -39,13 +39,6 @@ $subpanel_layout = array (
       'width' => '10%',
       'default' => true,
     ),
-    'ppg_history_id' => 
-    array (
-      'type' => 'varchar',
-      'vname' => 'LBL_PPG_HISTORY_ID',
-      'width' => '10%',
-      'default' => true,
-    ),
     'ppg_info_source' => 
     array (
       'type' => 'enum',

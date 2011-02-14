@@ -50,25 +50,10 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
-        ),
-        2 => 
-        array (
           0 => '',
           1 => '',
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -76,18 +61,13 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PPG_STATUS',
           ),
-          1 => '',
-        ),
-        4 => 
-        array (
-          0 => 
+          1 => 
           array (
-            'name' => 'ppg_history_id',
-            'label' => 'LBL_PPG_HISTORY_ID',
+            'name' => 'ppg_status_date',
+            'label' => 'LBL_PPG_STATUS_DATE',
           ),
-          1 => '',
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
@@ -95,38 +75,14 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PPG_INFO_MODE',
           ),
-          1 => '',
-        ),
-        6 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'ppg_info_source',
             'studio' => 'visible',
             'label' => 'LBL_PPG_INFO_SOURCE',
           ),
-          1 => '',
         ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ppg_comment',
-            'studio' => 'visible',
-            'label' => 'LBL_PPG_COMMENT',
-          ),
-          1 => '',
-        ),
-        8 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ppg_status_date',
-            'label' => 'LBL_PPG_STATUS_DATE',
-          ),
-          1 => '',
-        ),
-        9 => 
+        4 => 
         array (
           0 => 
           array (
@@ -139,7 +95,16 @@ array (
             'label' => 'LBL_PPG_INFO_MODE_OTH',
           ),
         ),
-        10 => 
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ppg_comment',
+            'studio' => 'visible',
+            'label' => 'LBL_PPG_COMMENT',
+          ),
+        ),
+        6 => 
         array (
           0 => 
           array (

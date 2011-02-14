@@ -34,14 +34,6 @@ $dashletData['PLT_PARTICIPANTDashlet']['columns'] = array (
     'default' => true,
     'name' => 'name',
   ),
-  'p_id' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_P_ID',
-    'width' => '10%',
-    'default' => true,
-    'name' => 'p_id',
-  ),
   'enroll_status' => 
   array (
     'type' => 'enum',

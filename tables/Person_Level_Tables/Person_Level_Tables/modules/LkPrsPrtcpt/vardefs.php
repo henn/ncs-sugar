@@ -1,7 +1,7 @@
 <?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -33,6 +33,7 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
+
 $vardefs = array (
   'fields' => 
   array (
@@ -56,23 +57,6 @@ $vardefs = array (
       'options' => 'PSU_CL1',
       'studio' => 'visible',
       'dependency' => false,
-    ),
-    'person_pid_id' => 
-    array (
-      'required' => false,
-      'name' => 'person_pid_id',
-      'vname' => 'LBL_PERSON_PID_ID',
-      'type' => 'varchar',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => 'Unique within table. Any string of numbers and/or characters',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => '36',
-      'size' => '20',
     ),
     'p_id' => 
     array (
@@ -166,6 +150,25 @@ $vardefs = array (
       'options' => 'CONFIRM_TYPE_CL2',
       'studio' => 'visible',
       'dependency' => false,
+    ),
+    'name' => 
+    array (
+      'name' => 'name',
+      'vname' => 'LBL_NAME',
+      'type' => 'name',
+      'dbType' => 'varchar',
+      'len' => '36',
+      'unified_search' => true,
+      'required' => true,
+      'importable' => 'required',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => '',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'reportable' => true,
+      'size' => '20',
     ),
   ),
   'relationships' => 

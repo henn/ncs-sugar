@@ -37,13 +37,6 @@ array (
     'label' => 'LBL_ASSIGNED_TO_NAME',
     'default' => true,
   ),
-  'P_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_P_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'P_TYPE' => 
   array (
     'type' => 'enum',

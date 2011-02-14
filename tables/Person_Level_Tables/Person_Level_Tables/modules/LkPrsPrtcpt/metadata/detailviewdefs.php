@@ -37,56 +37,36 @@ array (
       array (
         0 => 
         array (
-          0 => 'name',
-          1 => 'assigned_user_name',
+          0 => 
+          array (
+            'name' => 'name',
+            'label' => 'LBL_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'assigned_user_name',
+            'label' => 'LBL_ASSIGNED_TO_NAME',
+          ),
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
+          0 => '',
+          1 => '',
         ),
         2 => 
         array (
-          0 => 'description',
-        ),
-        3 => 
-        array (
           0 => 
-          array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'person_pid_id',
-            'label' => 'LBL_PERSON_PID_ID',
-          ),
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'p_id',
-            'label' => 'LBL_P_ID',
-          ),
-          1 => 
           array (
             'name' => 'person_id',
             'label' => 'LBL_PERSON_ID',
           ),
+          1 => 
+          array (
+            'name' => 'p_id',
+            'label' => 'LBL_P_ID',
+          ),
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
@@ -100,7 +80,7 @@ array (
             'label' => 'LBL_RELATION_OTH',
           ),
         ),
-        6 => 
+        4 => 
         array (
           0 => 
           array (
@@ -109,6 +89,17 @@ array (
             'label' => 'LBL_IS_ACTIVE',
           ),
           1 => '',
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'plt_lkprsprtcpt_plt_person_name',
+          ),
+          1 => 
+          array (
+            'name' => 'plt_lkprsprtcpt_plt_participant_name',
+          ),
         ),
       ),
     ),
