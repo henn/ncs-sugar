@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'nir_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_NIR_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'nir_id',
-      ),
       'who_refused' => 
       array (
         'type' => 'enum',
@@ -88,14 +80,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'nir_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_NIR_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'nir_id',
       ),
       'who_refused' => 
       array (

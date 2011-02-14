@@ -15,13 +15,6 @@ array (
     'label' => 'LBL_ASSIGNED_TO_NAME',
     'default' => true,
   ),
-  'EVENT_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_EVENT_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'EVENT_DISP_CAT' => 
   array (
     'type' => 'enum',

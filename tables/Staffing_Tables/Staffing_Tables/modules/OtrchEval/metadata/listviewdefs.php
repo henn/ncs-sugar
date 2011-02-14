@@ -24,13 +24,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'OUTREACH_EVENT_EVAL_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_OUTREACH_EVENT_EVAL_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'OUTREACH_EVENT_ID' => 
   array (
     'type' => 'varchar',

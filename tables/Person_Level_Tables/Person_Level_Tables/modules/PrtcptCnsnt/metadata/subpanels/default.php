@@ -23,13 +23,6 @@ $subpanel_layout = array (
       'width' => '45%',
       'default' => true,
     ),
-    'participant_consent_id' => 
-    array (
-      'type' => 'varchar',
-      'vname' => 'LBL_PARTICIPANT_CONSENT_ID',
-      'width' => '10%',
-      'default' => true,
-    ),
     'consent_type' => 
     array (
       'type' => 'enum',

@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'nir_dutype_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_NIR_DUTYPE_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'nir_dutype_id',
-      ),
       'nir_type_du' => 
       array (
         'type' => 'enum',
@@ -47,14 +39,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'nir_dutype_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_NIR_DUTYPE_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'nir_dutype_id',
       ),
       'nir_type_du' => 
       array (

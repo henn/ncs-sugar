@@ -83,14 +83,6 @@ array (
         'width' => '10%',
         'name' => 'hh_rank',
       ),
-      'person_hh_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_PERSON_HH_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'person_hh_id',
-      ),
       'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',

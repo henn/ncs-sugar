@@ -22,15 +22,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'PSU_ID' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_PSU_ID',
-    'sortable' => false,
-    'width' => '10%',
-  ),
   'PSU_NAME' => 
   array (
     'type' => 'varchar',

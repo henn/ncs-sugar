@@ -1,7 +1,7 @@
 <?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -33,6 +33,7 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
+
 $relationships = array (
   'gt_dwellingunt_gt_household' => 
   array (
@@ -66,7 +67,7 @@ $relationships = array (
   ),
   'gt_dwellingunt_ltt_telephone' => 
   array (
-    'rhs_label' => 'LTT_TELEPHONE',
+    'rhs_label' => 'Telephone',
     'rhs_subpanel' => 'default',
     'lhs_module' => 'GT_DwellingUnt',
     'rhs_module' => 'LTT_TELEPHONE',
@@ -81,7 +82,7 @@ $relationships = array (
   ),
   'gt_dwellingunt_ltt_email' => 
   array (
-    'rhs_label' => 'LTT_EMAIL',
+    'rhs_label' => 'Email',
     'rhs_subpanel' => 'default',
     'lhs_module' => 'GT_DwellingUnt',
     'rhs_module' => 'LTT_EMAIL',

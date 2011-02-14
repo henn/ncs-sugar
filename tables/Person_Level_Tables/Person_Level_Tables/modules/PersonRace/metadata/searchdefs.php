@@ -39,14 +39,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'person_race_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_PERSON_RACE_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'person_race_id',
-      ),
       'race' => 
       array (
         'type' => 'enum',

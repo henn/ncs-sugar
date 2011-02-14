@@ -109,14 +109,6 @@ array (
         'default' => true,
         'name' => 'due_date_3',
       ),
-      'ppg_details_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_PPG_DETAILS_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'ppg_details_id',
-      ),
       'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',

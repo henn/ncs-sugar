@@ -52,18 +52,13 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PPG_STATUS',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'ppg_status_date',
+            'label' => 'LBL_PPG_STATUS_DATE',
+          ),
         ),
         3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ppg_history_id',
-            'label' => 'LBL_PPG_HISTORY_ID',
-          ),
-          1 => '',
-        ),
-        4 => 
         array (
           0 => 
           array (
@@ -71,9 +66,13 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PPG_INFO_MODE',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'ppg_info_mode_oth',
+            'label' => 'LBL_PPG_INFO_MODE_OTH',
+          ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -81,9 +80,13 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PPG_INFO_SOURCE',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'ppg_info_source_oth',
+            'label' => 'LBL_PPG_INFO_SOURCE_OTH',
+          ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -91,31 +94,8 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PPG_COMMENT',
           ),
-          1 => '',
         ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ppg_status_date',
-            'label' => 'LBL_PPG_STATUS_DATE',
-          ),
-          1 => '',
-        ),
-        8 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ppg_info_source_oth',
-            'label' => 'LBL_PPG_INFO_SOURCE_OTH',
-          ),
-          1 => 
-          array (
-            'name' => 'ppg_info_mode_oth',
-            'label' => 'LBL_PPG_INFO_MODE_OTH',
-          ),
-        ),
-        9 => 
+        6 => 
         array (
           0 => 
           array (

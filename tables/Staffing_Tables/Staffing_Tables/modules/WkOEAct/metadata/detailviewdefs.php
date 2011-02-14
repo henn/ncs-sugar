@@ -88,11 +88,7 @@ array (
         ),
         4 => 
         array (
-          0 => 
-          array (
-            'name' => 'outreach_event_id',
-            'label' => 'LBL_OUTREACH_EVENT_ID',
-          ),
+          0 => '',
           1 => '',
         ),
         5 => 

@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'email_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_EMAIL_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'email_id',
-      ),
       'email' => 
       array (
         'type' => 'varchar',
@@ -74,14 +66,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'email_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_EMAIL_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'email_id',
       ),
       'email' => 
       array (

@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'du_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_DU_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'du_id',
-      ),
       'du_type' => 
       array (
         'type' => 'enum',
@@ -47,14 +39,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'du_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_DU_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'du_id',
       ),
       'du_type' => 
       array (

@@ -31,13 +31,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'OUTREACH_EVENT_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_OUTREACH_EVENT_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'OUTREACH_EVENT_DATE' => 
   array (
     'type' => 'date',

@@ -15,13 +15,6 @@ array (
     'label' => 'LBL_ASSIGNED_TO_NAME',
     'default' => true,
   ),
-  'PID_VISIT_CONSENT_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_PID_VISIT_CONSENT_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'VIS_CONSENT_TYPE' => 
   array (
     'type' => 'enum',

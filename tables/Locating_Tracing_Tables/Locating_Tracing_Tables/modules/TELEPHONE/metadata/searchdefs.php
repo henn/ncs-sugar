@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'phone_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_PHONE_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'phone_id',
-      ),
       'phone_nbr' => 
       array (
         'type' => 'varchar',
@@ -46,14 +38,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'phone_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_PHONE_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'phone_id',
       ),
       'phone_nbr' => 
       array (

@@ -93,14 +93,6 @@ array (
         'width' => '10%',
         'name' => 'prov_intro_outcome',
       ),
-      'person_provider_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_PERSON_PROVIDER_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'person_provider_id',
-      ),
       'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',

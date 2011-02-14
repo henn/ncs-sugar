@@ -114,14 +114,6 @@ array (
         'default' => true,
         'name' => 'assigned_user_name',
       ),
-      'staff_cert_list_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_STAFF_CERT_LIST_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'staff_cert_list_id',
-      ),
     ),
   ),
   'templateMeta' => 

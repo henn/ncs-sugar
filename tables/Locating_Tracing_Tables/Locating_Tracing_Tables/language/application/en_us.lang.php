@@ -1,7 +1,7 @@
 <?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -34,9 +34,13 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
+
 $app_list_strings['moduleList']['LTT_Email'] = 'Email';
 $app_list_strings['moduleList']['LTT_Address'] = 'Address';
 $app_list_strings['moduleList']['LTT_Telephone'] = 'Telephone';
 $app_list_strings['moduleList']['LTT_ADDRESS'] = 'Address';
-$app_list_strings['moduleList']['LTT_EMAIL'] = 'Email';
 $app_list_strings['moduleList']['LTT_TELEPHONE'] = 'Telephone';
+$app_list_strings['moduleList']['LTT_EMAIL'] = 'Email';
+$app_list_strings['CONFIRM_TYPE_CL2']['1'] = 'Yes';
+$app_list_strings['CONFIRM_TYPE_CL2']['2'] = 'No';
+$app_list_strings['CONFIRM_TYPE_CL2']['_4'] = 'Missing in Error';

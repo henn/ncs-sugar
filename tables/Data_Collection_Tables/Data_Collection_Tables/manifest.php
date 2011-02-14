@@ -1,7 +1,7 @@
     <?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -34,6 +34,7 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
+
     $manifest = array (
          'acceptable_sugar_versions' => 
           array (
@@ -51,8 +52,8 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'Data_Collection_Tables',
-          'published_date' => '2011-02-09 18:16:51',
+          'published_date' => '2011-02-14 22:45:15',
           'type' => 'module',
-          'version' => '1297275411',
+          'version' => '1297723515',
           'remove_tables' => 'prompt',
           );

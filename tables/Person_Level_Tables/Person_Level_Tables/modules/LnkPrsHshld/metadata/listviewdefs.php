@@ -47,13 +47,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'PERSON_HH_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_PERSON_HH_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'HH_RANK' => 
   array (
     'type' => 'enum',

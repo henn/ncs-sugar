@@ -33,42 +33,14 @@ array (
             'name' => 'name',
             'label' => 'LBL_NAME',
           ),
-          1 => 
-          array (
-            'name' => 'date_entered',
-            'comment' => 'Date record created',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
+          1 => '',
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'modified_by_name',
-            'label' => 'LBL_MODIFIED_NAME',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'comment' => 'Date record last modified',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
+          0 => '',
+          1 => '',
         ),
         2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'p_id',
-            'label' => 'LBL_P_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
         array (
           0 => 
           array (
@@ -82,7 +54,7 @@ array (
             'label' => 'LBL_P_TYPE_OTH',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -96,7 +68,7 @@ array (
             'label' => 'LBL_STATUS_INFO_SOURCE_OTH',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -110,15 +82,16 @@ array (
             'label' => 'LBL_STATUS_INFO_MODE_OTH',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
             'name' => 'status_info_date',
             'label' => 'LBL_STATUS_INFO_DATE',
           ),
+          1 => '',
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -132,7 +105,7 @@ array (
             'label' => 'LBL_ENROLL_DATE',
           ),
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (
@@ -146,7 +119,7 @@ array (
             'label' => 'LBL_PID_ENTRY_OTHER',
           ),
         ),
-        9 => 
+        8 => 
         array (
           0 => 
           array (
@@ -156,7 +129,7 @@ array (
           ),
           1 => '',
         ),
-        10 => 
+        9 => 
         array (
           0 => 
           array (
@@ -164,9 +137,8 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PID_COMMENT',
           ),
-          1 => '',
         ),
-        11 => 
+        10 => 
         array (
           0 => 
           array (

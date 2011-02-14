@@ -1,7 +1,7 @@
 <?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -34,9 +34,10 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
+
 $app_list_strings['moduleList']['OLT_Provider'] = 'Provider';
 $app_list_strings['moduleList']['OLT_Institution'] = 'Institution Information';
-$app_list_strings['moduleList']['OLT_PROVIDER'] = 'Provider';
-$app_list_strings['moduleList']['OLT_INSTITUTION'] = 'Institution Information';
-$app_list_strings['moduleList']['OLT_PrsnInstLnk'] = 'Person-Institute Linkage';
 $app_list_strings['moduleList']['OLT_PrsnPrvdLnk'] = 'Person-Provider Linkage';
+$app_list_strings['moduleList']['OLT_PROVIDER'] = 'Provider';
+$app_list_strings['moduleList']['OLT_PrsnInstLnk'] = 'Person-Institute Linkage';
+$app_list_strings['moduleList']['OLT_INSTITUTION'] = 'Institution Information';

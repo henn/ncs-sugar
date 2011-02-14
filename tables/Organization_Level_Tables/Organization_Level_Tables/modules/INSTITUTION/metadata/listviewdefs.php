@@ -9,28 +9,6 @@ array (
     'default' => true,
     'link' => true,
   ),
-  'ASSIGNED_USER_NAME' => 
-  array (
-    'width' => '9%',
-    'label' => 'LBL_ASSIGNED_TO_NAME',
-    'default' => true,
-  ),
-  'PSU_ID' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_PSU_ID',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'INSTITUTE_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INSTITUTE_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'INSTITUTE_TYPE' => 
   array (
     'type' => 'enum',
@@ -64,6 +42,21 @@ array (
     'default' => true,
     'studio' => 'visible',
     'label' => 'LBL_INSTITUTE_INFO_SOURCE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'width' => '9%',
+    'label' => 'LBL_ASSIGNED_TO_NAME',
+    'default' => false,
+  ),
+  'PSU_ID' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_PSU_ID',
     'sortable' => false,
     'width' => '10%',
   ),

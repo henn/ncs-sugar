@@ -15,13 +15,6 @@ array (
     'label' => 'LBL_ASSIGNED_TO_NAME',
     'default' => true,
   ),
-  'NIR_REFUSAL_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_NIR_REFUSAL_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'REFUSAL_REASON_OTH' => 
   array (
     'type' => 'varchar',

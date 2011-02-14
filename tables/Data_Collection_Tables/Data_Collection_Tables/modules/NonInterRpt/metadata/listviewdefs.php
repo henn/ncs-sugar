@@ -31,13 +31,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'NIR_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_NIR_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'NIR_VAC_INFO' => 
   array (
     'type' => 'enum',

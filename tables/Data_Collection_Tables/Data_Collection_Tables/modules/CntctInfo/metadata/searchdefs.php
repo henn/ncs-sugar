@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'contact_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_CONTACT_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'contact_id',
-      ),
       'contact_type' => 
       array (
         'type' => 'enum',
@@ -74,14 +66,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'contact_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_CONTACT_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'contact_id',
       ),
       'contact_type' => 
       array (

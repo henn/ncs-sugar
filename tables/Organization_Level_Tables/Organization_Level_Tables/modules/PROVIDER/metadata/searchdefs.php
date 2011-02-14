@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'provider_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_PROVIDER_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'provider_id',
-      ),
       'provider_type' => 
       array (
         'type' => 'enum',
@@ -58,14 +50,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'provider_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_PROVIDER_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'provider_id',
       ),
       'provider_type' => 
       array (

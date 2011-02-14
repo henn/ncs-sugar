@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'staff_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_STAFF_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'staff_id',
-      ),
       'staff_type' => 
       array (
         'type' => 'enum',
@@ -78,14 +70,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'staff_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_STAFF_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'staff_id',
       ),
       'staff_type' => 
       array (

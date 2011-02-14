@@ -71,14 +71,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'address_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_ADDRESS_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'address_id',
-      ),
       'address_1' => 
       array (
         'type' => 'varchar',

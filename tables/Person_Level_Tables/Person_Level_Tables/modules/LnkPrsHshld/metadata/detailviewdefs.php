@@ -37,27 +37,34 @@ array (
       array (
         0 => 
         array (
-          0 => 'name',
-          1 => 'assigned_user_name',
-        ),
-        1 => 
-        array (
           0 => 
           array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
+            'name' => 'name',
+            'label' => 'LBL_NAME',
           ),
           1 => 
           array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
+            'name' => 'assigned_user_name',
+            'label' => 'LBL_ASSIGNED_TO_NAME',
           ),
+        ),
+        1 => 
+        array (
+          0 => '',
+          1 => '',
         ),
         2 => 
         array (
-          0 => 'description',
+          0 => 
+          array (
+            'name' => 'person_id',
+            'label' => 'LBL_PERSON_ID',
+          ),
+          1 => 
+          array (
+            'name' => 'hh_id',
+            'label' => 'LBL_HH_ID',
+          ),
         ),
         3 => 
         array (
@@ -67,50 +74,31 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_IS_ACTIVE',
           ),
-          1 => 
-          array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
-          ),
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'person_id',
-            'label' => 'LBL_PERSON_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'person_hh_id',
-            'label' => 'LBL_PERSON_HH_ID',
-          ),
-        ),
-        5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'hh_id',
-            'label' => 'LBL_HH_ID',
-          ),
           1 => '',
         ),
-        6 => 
-        array (
-          0 => 
-          array (
-            'name' => 'hh_rank_oth',
-            'label' => 'LBL_HH_RANK_OTH',
-          ),
-        ),
-        7 => 
+        4 => 
         array (
           0 => 
           array (
             'name' => 'hh_rank',
             'studio' => 'visible',
             'label' => 'LBL_HH_RANK',
+          ),
+          1 => 
+          array (
+            'name' => 'hh_rank_oth',
+            'label' => 'LBL_HH_RANK_OTH',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'plt_lnkprshshld_plt_person_name',
+          ),
+          1 => 
+          array (
+            'name' => 'plt_lnkprshshld_gt_household_name',
           ),
         ),
       ),

@@ -41,37 +41,15 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
+          0 => '',
+          1 => '',
         ),
         2 => 
         array (
           0 => 
           array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
-          ),
-          1 => '',
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
             'name' => 'person_id',
             'label' => 'LBL_PERSON_ID',
-          ),
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'person_provider_id',
-            'label' => 'LBL_PERSON_PROVIDER_ID',
           ),
           1 => 
           array (
@@ -79,7 +57,7 @@ array (
             'label' => 'LBL_PROVIDER_ID',
           ),
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
@@ -93,7 +71,7 @@ array (
             'label' => 'LBL_PROV_INTRO_OUTCOME_OTH',
           ),
         ),
-        6 => 
+        4 => 
         array (
           0 => 
           array (
@@ -101,11 +79,17 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_IS_ACTIVE',
           ),
+          1 => 
+          array (
+            'name' => 'olt_prsnprvdlnk_plt_person_name',
+          ),
         ),
-        7 => 
+        5 => 
         array (
-          0 => '',
-          1 => '',
+          0 => 
+          array (
+            'name' => 'olt_prsnprvdlnk_olt_provider_name',
+          ),
         ),
       ),
     ),

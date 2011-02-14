@@ -43,37 +43,34 @@ array (
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
+            'name' => 'tsu_id',
+            'label' => 'LBL_TSU_ID',
+          ),
+          1 => 
+          array (
+            'name' => 'psu_id',
+            'studio' => 'visible',
+            'label' => 'LBL_PSU_ID',
           ),
         ),
         2 => 
         array (
           0 => 
           array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'tsu_id',
-            'label' => 'LBL_TSU_ID',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'outreach_event_id',
-            'label' => 'LBL_OUTREACH_EVENT_ID',
+            'name' => 'description',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_DESCRIPTION',
           ),
           1 => 
           array (
             'name' => 'outreach_event_date',
             'label' => 'LBL_OUTREACH_EVENT_DATE',
           ),
+        ),
+        3 => 
+        array (
+          0 => '',
+          1 => '',
         ),
         4 => 
         array (

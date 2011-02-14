@@ -16,13 +16,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'STAFF_VAL_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_STAFF_VAL_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'EVENT_ID' => 
   array (
     'type' => 'varchar',

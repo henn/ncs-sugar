@@ -23,13 +23,6 @@ $subpanel_layout = array (
       'width' => '45%',
       'default' => true,
     ),
-    'provider_id' => 
-    array (
-      'type' => 'varchar',
-      'vname' => 'LBL_PROVIDER_ID',
-      'width' => '10%',
-      'default' => true,
-    ),
     'provider_type' => 
     array (
       'type' => 'enum',

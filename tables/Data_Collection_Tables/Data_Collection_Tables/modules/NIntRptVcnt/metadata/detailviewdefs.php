@@ -50,11 +50,7 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'nir_vacant_id',
-            'label' => 'LBL_NIR_VACANT_ID',
-          ),
+          0 => '',
           1 => '',
         ),
         2 => 

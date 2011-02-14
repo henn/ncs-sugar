@@ -45,13 +45,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'CONTACT_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_CONTACT_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'CONTACT_LANG' => 
   array (
     'type' => 'enum',

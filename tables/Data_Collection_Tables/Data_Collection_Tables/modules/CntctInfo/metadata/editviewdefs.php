@@ -41,11 +41,7 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'contact_id',
-            'label' => 'LBL_CONTACT_ID',
-          ),
+          0 => '',
           1 => '',
         ),
         2 => 

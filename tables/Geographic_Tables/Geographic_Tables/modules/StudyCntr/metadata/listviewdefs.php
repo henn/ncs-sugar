@@ -9,13 +9,6 @@ array (
     'default' => true,
     'link' => true,
   ),
-  'SC_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_SC_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'SC_NAME' => 
   array (
     'type' => 'varchar',

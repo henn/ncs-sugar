@@ -56,11 +56,7 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PSU_ID',
           ),
-          1 => 
-          array (
-            'name' => 'outreach_event_staff_id',
-            'label' => 'LBL_OUTREACH_EVENT_STAFF_ID',
-          ),
+          1 => '',
         ),
         3 => 
         array (

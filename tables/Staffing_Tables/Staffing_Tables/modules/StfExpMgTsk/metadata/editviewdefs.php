@@ -56,11 +56,7 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PSU_ID',
           ),
-          1 => 
-          array (
-            'name' => 'staff_exp_mgmt_task_id',
-            'label' => 'LBL_STAFF_EXP_MGMT_TASK_ID',
-          ),
+          1 => '',
         ),
         3 => 
         array (

@@ -23,13 +23,6 @@ $subpanel_layout = array (
       'width' => '45%',
       'default' => true,
     ),
-    'ppg_details_id' => 
-    array (
-      'type' => 'varchar',
-      'vname' => 'LBL_PPG_DETAILS_ID',
-      'width' => '10%',
-      'default' => true,
-    ),
     'orig_due_date' => 
     array (
       'type' => 'date',

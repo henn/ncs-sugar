@@ -1,7 +1,7 @@
 <?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -33,26 +33,10 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
+
 $vardefs = array (
   'fields' => 
   array (
-    'nir_dutype_id' => 
-    array (
-      'required' => false,
-      'name' => 'nir_dutype_id',
-      'vname' => 'LBL_NIR_DUTYPE_ID',
-      'type' => 'varchar',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => 'Unique table identifier',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => '36',
-      'size' => '20',
-    ),
     'nir_type_du' => 
     array (
       'required' => false,
@@ -69,9 +53,10 @@ $vardefs = array (
       'reportable' => true,
       'len' => 100,
       'size' => '20',
-      'options' => 'account_type_dom',
+      'options' => 'DU_NIR_REASON_CL1',
       'studio' => 'visible',
       'dependency' => false,
+      'default' => '1',
     ),
     'nir_type_du_oth' => 
     array (
@@ -88,6 +73,25 @@ $vardefs = array (
       'audited' => true,
       'reportable' => true,
       'len' => '255',
+      'size' => '20',
+    ),
+    'name' => 
+    array (
+      'name' => 'name',
+      'vname' => 'LBL_NAME',
+      'type' => 'name',
+      'dbType' => 'varchar',
+      'len' => '36',
+      'unified_search' => true,
+      'required' => true,
+      'importable' => 'required',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => '',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
       'size' => '20',
     ),
   ),

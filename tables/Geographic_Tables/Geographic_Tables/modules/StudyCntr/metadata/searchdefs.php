@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'sc_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_SC_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'sc_id',
-      ),
       'sc_name' => 
       array (
         'type' => 'varchar',
@@ -45,14 +37,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'sc_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_SC_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'sc_id',
       ),
       'sc_name' => 
       array (

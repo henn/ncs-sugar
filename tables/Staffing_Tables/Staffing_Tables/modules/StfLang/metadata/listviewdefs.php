@@ -24,13 +24,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'STAFF_LANGUAGE_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_STAFF_LANGUAGE_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'STAFF_ID' => 
   array (
     'type' => 'varchar',

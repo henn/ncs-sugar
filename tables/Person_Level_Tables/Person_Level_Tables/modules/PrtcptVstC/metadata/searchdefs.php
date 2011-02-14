@@ -91,14 +91,6 @@ array (
         'width' => '10%',
         'name' => 'vis_translate',
       ),
-      'pid_visit_consent_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_PID_VISIT_CONSENT_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'pid_visit_consent_id',
-      ),
       'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',

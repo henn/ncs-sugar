@@ -41,14 +41,23 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
+          0 => '',
+          1 => '',
         ),
         2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'person_id',
+            'label' => 'LBL_PERSON_ID',
+          ),
+          1 => 
+          array (
+            'name' => 'hh_id',
+            'label' => 'LBL_HH_ID',
+          ),
+        ),
+        3 => 
         array (
           0 => 
           array (
@@ -56,35 +65,9 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_IS_ACTIVE',
           ),
-          1 => 
-          array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'person_id',
-            'label' => 'LBL_PERSON_ID',
-          ),
+          1 => '',
         ),
         4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'hh_id',
-            'label' => 'LBL_HH_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'person_hh_id',
-            'label' => 'LBL_PERSON_HH_ID',
-          ),
-        ),
-        5 => 
         array (
           0 => 
           array (
@@ -92,15 +75,22 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_HH_RANK',
           ),
-        ),
-        6 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'hh_rank_oth',
             'label' => 'LBL_HH_RANK_OTH',
           ),
-          1 => '',
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'plt_lnkprshshld_plt_person_name',
+          ),
+          1 => 
+          array (
+            'name' => 'plt_lnkprshshld_gt_household_name',
+          ),
         ),
       ),
     ),

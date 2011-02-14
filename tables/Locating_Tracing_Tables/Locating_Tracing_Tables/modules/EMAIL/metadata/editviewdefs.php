@@ -36,11 +36,7 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'email_id',
-            'label' => 'LBL_EMAIL_ID',
-          ),
+          0 => '',
           1 => '',
         ),
         2 => 

@@ -42,13 +42,37 @@ array (
             'name' => 'name',
             'label' => 'LBL_NAME',
           ),
-          1 => 
+          1 => '',
+        ),
+        1 => 
+        array (
+          0 => '',
+          1 => '',
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'prefix',
+            'studio' => 'visible',
+            'label' => 'LBL_PREFIX',
+          ),
+          1 => '',
+        ),
+        3 => 
+        array (
+          0 => 
           array (
             'name' => 'first_name',
             'label' => 'LBL_FIRST_NAME',
           ),
+          1 => 
+          array (
+            'name' => 'last_name',
+            'label' => 'LBL_LAST_NAME',
+          ),
         ),
-        1 => 
+        4 => 
         array (
           0 => 
           array (
@@ -57,45 +81,17 @@ array (
           ),
           1 => 
           array (
-            'name' => 'last_name',
-            'label' => 'LBL_LAST_NAME',
+            'name' => 'maiden_name',
+            'label' => 'LBL_MAIDEN_NAME',
           ),
         ),
-        2 => 
+        5 => 
         array (
           0 => 
-          array (
-            'name' => 'person_id',
-            'label' => 'LBL_PERSON_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'deceased',
-            'studio' => 'visible',
-            'label' => 'LBL_DECEASED',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'prefix',
-            'studio' => 'visible',
-            'label' => 'LBL_PREFIX',
-          ),
-          1 => 
           array (
             'name' => 'suffix',
             'studio' => 'visible',
             'label' => 'LBL_SUFFIX',
-          ),
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'maiden_name',
-            'label' => 'LBL_MAIDEN_NAME',
           ),
           1 => 
           array (
@@ -103,7 +99,7 @@ array (
             'label' => 'LBL_TITLE',
           ),
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
@@ -113,26 +109,46 @@ array (
           ),
           1 => 
           array (
+            'name' => 'age',
+            'label' => 'LBL_AGE',
+          ),
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'age_range',
+            'studio' => 'visible',
+            'label' => 'LBL_AGE_RANGE',
+          ),
+          1 => 
+          array (
             'name' => 'person_dob',
             'studio' => 'visible',
             'label' => 'LBL_PERSON_DOB',
           ),
         ),
-        6 => 
+        8 => 
         array (
           0 => 
           array (
-            'name' => 'pref_contact',
+            'name' => 'deceased',
             'studio' => 'visible',
-            'label' => 'LBL_PREF_CONTACT',
+            'label' => 'LBL_DECEASED',
           ),
-          1 => 
-          array (
-            'name' => 'pref_contact_oth',
-            'label' => 'LBL_PREF_CONTACT_OTH',
-          ),
+          1 => '',
         ),
-        7 => 
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ethnic_group',
+            'studio' => 'visible',
+            'label' => 'LBL_ETHNIC_GROUP',
+          ),
+          1 => '',
+        ),
+        10 => 
         array (
           0 => 
           array (
@@ -146,7 +162,7 @@ array (
             'label' => 'LBL_PERSON_LANG_OTHER',
           ),
         ),
-        8 => 
+        11 => 
         array (
           0 => 
           array (
@@ -160,22 +176,21 @@ array (
             'label' => 'LBL_MARISTAT_OTH',
           ),
         ),
-        9 => 
+        12 => 
         array (
           0 => 
           array (
-            'name' => 'ethnic_group',
+            'name' => 'pref_contact',
             'studio' => 'visible',
-            'label' => 'LBL_ETHNIC_GROUP',
+            'label' => 'LBL_PREF_CONTACT',
           ),
           1 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
+            'name' => 'pref_contact_oth',
+            'label' => 'LBL_PREF_CONTACT_OTH',
           ),
         ),
-        10 => 
+        13 => 
         array (
           0 => 
           array (
@@ -190,12 +205,12 @@ array (
             'label' => 'LBL_MOVE_INFO',
           ),
         ),
-        11 => 
+        14 => 
         array (
           0 => 
           array (
-            'name' => 'created_by_name',
-            'label' => 'LBL_CREATED',
+            'name' => 'new_address_id',
+            'label' => 'LBL_NEW_ADDRESS_ID',
           ),
           1 => 
           array (
@@ -204,7 +219,7 @@ array (
             'label' => 'LBL_WHEN_MOVE',
           ),
         ),
-        12 => 
+        15 => 
         array (
           0 => 
           array (
@@ -213,21 +228,12 @@ array (
           ),
           1 => 
           array (
-            'name' => 'new_address_id',
-            'label' => 'LBL_NEW_ADDRESS_ID',
-          ),
-        ),
-        13 => 
-        array (
-          0 => 
-          array (
             'name' => 'p_tracing',
             'studio' => 'visible',
             'label' => 'LBL_P_TRACING',
           ),
-          1 => '',
         ),
-        14 => 
+        16 => 
         array (
           0 => 
           array (
@@ -241,7 +247,7 @@ array (
             'label' => 'LBL_P_INFO_SOURCE_OTH',
           ),
         ),
-        15 => 
+        17 => 
         array (
           0 => 
           array (
@@ -254,27 +260,13 @@ array (
             'label' => 'LBL_P_INFO_DATE',
           ),
         ),
-        16 => 
+        18 => 
         array (
           0 => 
           array (
             'name' => 'person_comment',
             'studio' => 'visible',
             'label' => 'LBL_PERSON_COMMENT',
-          ),
-        ),
-        17 => 
-        array (
-          0 => 
-          array (
-            'name' => 'age',
-            'label' => 'LBL_AGE',
-          ),
-          1 => 
-          array (
-            'name' => 'age_range',
-            'studio' => 'visible',
-            'label' => 'LBL_AGE_RANGE',
           ),
         ),
       ),

@@ -24,13 +24,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'STAFF_EXP_DATA_COLL_TASK_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_STAFF_EXP_DATA_COLL_TASK_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'STAFF_WEEKLY_EXPENSE_ID' => 
   array (
     'type' => 'varchar',

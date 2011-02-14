@@ -1,7 +1,7 @@
 <?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -33,6 +33,37 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
+
 $relationships = array (
+  'olt_prsninstlnk_plt_person' => 
+  array (
+    'lhs_label' => 'Person-Institute Linkage',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'OLT_PrsnInstLnk',
+    'rhs_module' => 'PLT_PERSON',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'olt_prsninstlnk_plt_person',
+  ),
+  'olt_prsninstlnk_olt_institution' => 
+  array (
+    'lhs_label' => 'Person-Institute Linkage',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'OLT_PrsnInstLnk',
+    'rhs_module' => 'OLT_INSTITUTION',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'olt_prsninstlnk_olt_institution',
+  ),
 );
 ?>

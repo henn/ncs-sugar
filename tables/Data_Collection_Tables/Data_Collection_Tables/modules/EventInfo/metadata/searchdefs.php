@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'event_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_EVENT_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'event_id',
-      ),
       'event_type' => 
       array (
         'type' => 'enum',
@@ -82,14 +74,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'event_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_EVENT_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'event_id',
       ),
       'event_type' => 
       array (

@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'list_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_LIST_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'list_id',
-      ),
       'list_line' => 
       array (
         'type' => 'int',
@@ -45,14 +37,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'list_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_LIST_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'list_id',
       ),
       'list_line' => 
       array (

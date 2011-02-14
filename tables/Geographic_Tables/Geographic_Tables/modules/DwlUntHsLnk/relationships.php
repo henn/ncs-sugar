@@ -1,7 +1,7 @@
 <?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -33,6 +33,37 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
+
 $relationships = array (
+  'gt_dwlunthslnk_gt_dwellingunt' => 
+  array (
+    'lhs_label' => 'Dwelling Unit Household Linkage',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'GT_DwlUntHsLnk',
+    'rhs_module' => 'GT_DwellingUnt',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'gt_dwlunthslnk_gt_dwellingunt',
+  ),
+  'gt_dwlunthslnk_gt_household' => 
+  array (
+    'lhs_label' => 'Dwelling Unit Household Linkage',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'GT_DwlUntHsLnk',
+    'rhs_module' => 'GT_Household',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'gt_dwlunthslnk_gt_household',
+  ),
 );
 ?>

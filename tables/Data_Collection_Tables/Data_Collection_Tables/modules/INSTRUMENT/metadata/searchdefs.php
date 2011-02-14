@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'instrument_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_INSTRUMENT_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'instrument_id',
-      ),
       'instrument_type' => 
       array (
         'type' => 'enum',
@@ -84,14 +76,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'instrument_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_INSTRUMENT_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'instrument_id',
       ),
       'instrument_type' => 
       array (

@@ -9,74 +9,6 @@ array (
     'default' => true,
     'link' => true,
   ),
-  'ASSIGNED_USER_NAME' => 
-  array (
-    'width' => '9%',
-    'label' => 'LBL_ASSIGNED_TO_NAME',
-    'default' => true,
-  ),
-  'CITY' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_CITY',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'ZIP' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_ZIP',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'ZIP4' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_ZIP4',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'ADDRESS_DESCRIPTION' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_ADDRESS_DESCRIPTION',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'ADDRESS_TYPE' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_ADDRESS_TYPE',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'ADDRESS_INFO_SOURCE' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_ADDRESS_INFO_SOURCE',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'ADDRESS_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_ADDRESS_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'ADDRESS_INFO_UPDATE' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_ADDRESS_INFO_UPDATE',
-    'width' => '10%',
-    'default' => true,
-  ),
   'ADDRESS_1' => 
   array (
     'type' => 'varchar',
@@ -98,12 +30,35 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  'CITY' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_CITY',
+    'width' => '10%',
+    'default' => true,
+  ),
   'STATE' => 
   array (
     'type' => 'enum',
     'default' => true,
     'studio' => 'visible',
     'label' => 'LBL_STATE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'ZIP' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_ZIP',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ADDRESS_TYPE' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_ADDRESS_TYPE',
     'sortable' => false,
     'width' => '10%',
   ),
@@ -115,6 +70,44 @@ array (
     'label' => 'LBL_ADDRESS_INFO_MODE',
     'sortable' => false,
     'width' => '10%',
+  ),
+  'ADDRESS_DESCRIPTION' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_ADDRESS_DESCRIPTION',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'ADDRESS_INFO_UPDATE' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_ADDRESS_INFO_UPDATE',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'ADDRESS_INFO_SOURCE' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_ADDRESS_INFO_SOURCE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'ZIP4' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_ZIP4',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'width' => '9%',
+    'label' => 'LBL_ASSIGNED_TO_NAME',
+    'default' => false,
   ),
   'ADDRESS_DESCRIPTION_OTH' => 
   array (

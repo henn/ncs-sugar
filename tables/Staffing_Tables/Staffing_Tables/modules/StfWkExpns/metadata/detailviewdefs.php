@@ -84,11 +84,7 @@ array (
         ),
         4 => 
         array (
-          0 => 
-          array (
-            'name' => 'weekly_exp_id',
-            'label' => 'LBL_WEEKLY_EXP_ID',
-          ),
+          0 => '',
           1 => '',
         ),
         5 => 
