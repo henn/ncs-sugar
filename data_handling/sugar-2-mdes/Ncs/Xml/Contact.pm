@@ -52,8 +52,9 @@ sub new
 											'CONTACT_LANG, CONTACT_LANG_OTH, CONTACT_INTERPRET, CONTACT_INTERPRET_OTH, ' .
 											'CONTACT_LOCATION, CONTACT_LOCATION_OTH, CONTACT_PRIVATE, CONTACT_DISTANCE, ' .
 											'WHO_CONTACTED, WHO_CONTACT_OTH, CONTACT_COMMENT, ' .
-											'DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE from ' . 
-											Ncs::Db::DbDefs::CONTACT_TABLE
+											'DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE from ' . 
+											Ncs::Db::DbDefs::CONTACT_TABLE .
+											' where deleted = 0'
 	}, $class;
 
 	return $self;

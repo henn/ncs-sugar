@@ -27,8 +27,9 @@ sub new
 		_table							=> Ncs::Db::DbDefs::LINK_PERSON_PROVIDER_TABLE,
 		_sql							=> 'select ID, PERSON_PROVIDER_ID, ' .
 											'IS_ACTIVE, PROV_INTRO_OUTCOME, PROV_INTRO_OUTCOME_OTH, ' .
-											'DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE ' .
-											'from ' . Ncs::Db::DbDefs::LINK_PERSON_PROVIDER_TABLE
+											'DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE ' .
+											'from ' . Ncs::Db::DbDefs::LINK_PERSON_PROVIDER_TABLE . 
+											' where deleted = 0'
 	}, $class;
 
 	return $self;

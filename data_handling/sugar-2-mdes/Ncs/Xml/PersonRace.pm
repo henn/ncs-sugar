@@ -24,8 +24,9 @@ sub new
 		_sugar_soap					=> $soap,
 		_table						=> Ncs::Db::DbDefs::PERSON_RACE_TABLE,
 		_sql						=> 'select ID, PERSON_RACE_ID, RACE, RACE_OTH, ' .
-										'DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE from ' .
-										Ncs::Db::DbDefs::PERSON_RACE_TABLE
+										'DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE from ' .
+										Ncs::Db::DbDefs::PERSON_RACE_TABLE . 
+										' where deleted = 0'
 	}, $class;
 
 	return $self;

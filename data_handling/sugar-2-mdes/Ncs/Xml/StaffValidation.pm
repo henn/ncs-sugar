@@ -27,8 +27,9 @@ sub new
 		_table				=> Ncs::Db::DbDefs::STAFF_VALIDATION_TABLE,
 		_sql				=> 'select PSU_ID, STAFF_VAL_ID, STAFF_ID, EVENT_ID, STAFF_VALIDATE, ' .
 								'DATE_FORMAT(staff_val_date, \'%Y-%m-%d\') AS STAFF_VAL_DATE, ' .
-								'STAFF_VAL_COMMENT, DATE_FORMAT(create_date, \'%Y-%m-%d\') AS ' .
-								'CREATE_DATE from ' . Ncs::Db::DbDefs::STAFF_VALIDATION_TABLE
+								'STAFF_VAL_COMMENT, DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS ' .
+								'CREATE_DATE from ' . Ncs::Db::DbDefs::STAFF_VALIDATION_TABLE . 
+								' where deleted = 0'
 	}, $class;
 
 	return $self;

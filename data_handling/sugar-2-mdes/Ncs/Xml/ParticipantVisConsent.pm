@@ -39,9 +39,10 @@ sub new
 		_sql							=> 'select ID, PID_VIS_CONSENT_ID, VIS_CONSENT_TYPE, ' .
 											'VIS_CONSENT_RESPONSE, VIS_LANGUAGE, VIS_LANGUAGE_OTH, ' .
 											'VIS_WHO_CONSENTED, VIS_TRANSLATE, ' .
-											'VIS_COMMENTS, DATE_FORMAT(create_date, ' .
+											'VIS_COMMENTS, DATE_FORMAT(date_entered, ' .
 											'\'%Y-%m-%d\') AS CREATE_DATE from ' . 
-											Ncs::Db::DbDefs::PARTICIPANT_VIS_CONSENT_TABLE
+											Ncs::Db::DbDefs::PARTICIPANT_VIS_CONSENT_TABLE . 
+											' where deleted = 0'
 	}, $class;
 
 	return $self;

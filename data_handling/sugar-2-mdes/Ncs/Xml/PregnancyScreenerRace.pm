@@ -21,7 +21,8 @@ sub new
 		_table_spec_version			=> Ncs::Instr::PREGNANCY_SCREENER_RACE_VERSION,
 		_transaction_type			=> (($is_snapshot eq "true") ? 'NA' : 'UP'),
 		_table						=> 'PREGNANCY_SCREENER_RACE',
-		_sql						=> 'select PSU_ID, PS_RACE_ID, PS_ID, RACE from PREGNANCY_SCREENER_RACE'
+		_sql						=> 'select PSU_ID, PS_RACE_ID, PS_ID, RACE from ' .
+										Ncs::Instr::PREGNANCY_SCREENER_RACE_VERSION
 	}, $class;
 
 	return $self;

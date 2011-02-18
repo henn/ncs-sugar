@@ -50,9 +50,10 @@ sub new
 										'DATE_FORMAT(ins_date_start, \'%Y-%m-%d\') AS INS_DATE_START, ' .
 										'DATE_FORMAT(ins_date_end, \'%Y-%m-%d\') AS INS_DATE_END, ' .
 										'INS_BREAKOFF, INS_STATUS, INS_MODE, INS_MODE_OTH, INS_METHOD, ' .
-										'SUP_REVIEW, DATA_PROBLEM, INSTRU_COMMENT, DATE_FORMAT(create_date, ' .
+										'SUP_REVIEW, DATA_PROBLEM, INSTRU_COMMENT, DATE_FORMAT(date_entered, ' .
 										'\'%Y-%m-%d\') AS CREATE_DATE from ' . 
-										Ncs::Db::DbDefs::INSTRUMENT_TABLE
+										Ncs::Db::DbDefs::INSTRUMENT_TABLE . 
+										' where deleted = 0'
 	}, $class;
 
 	return $self;

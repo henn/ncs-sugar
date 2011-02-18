@@ -26,8 +26,9 @@ sub new
 		_sugar_soap					=> $soap,
 		_table						=> Ncs::Db::DbDefs::LINK_PERSON_PARTICIPANT_TABLE,
 		_sql						=> 'select ID, PERSON_PID_ID, RELATION, RELATION_OTH, ' .
-										'IS_ACTIVE, DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE from ' .
-										Ncs::Db::DbDefs::LINK_PERSON_PARTICIPANT_TABLE
+										'IS_ACTIVE, DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE from ' .
+										Ncs::Db::DbDefs::LINK_PERSON_PARTICIPANT_TABLE . 
+										' where deleted = 0'
 	}, $class;
 
 	return $self;

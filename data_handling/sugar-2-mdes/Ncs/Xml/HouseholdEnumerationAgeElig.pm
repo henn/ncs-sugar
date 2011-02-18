@@ -23,9 +23,10 @@ sub new
 		_age_elig_relate			=> undef,
 		_table_spec_version			=> Ncs::Instr::HOUSEHOLD_ENUMERATION_AGE_ELIG_VERSION,
 		_transaction_type			=> (($is_snapshot eq "true") ? 'NA' : 'UP'),
-		_table						=> 'HOUSEHOLD_ENUMERATION_AGE_ELIG',
+		_table						=> Ncs::Db::DbDefs::HOUSEHOLD_ENUMERATION_AGE_ELIG_TABLE,
 		_sql						=> 'select PSU_ID, AGE_ELIG_LOOP_ID, HHENUM_ID, P_ID, AGE_ELIG_AGE, ' .
-										'AGE_ELIG_FNAME, AGE_ELIG_RELATE from HOUSEHOLD_ENUMERATION_AGE_ELIG'
+										'AGE_ELIG_FNAME, AGE_ELIG_RELATE from ' . 
+										Ncs::Db::DbDefs::HOUSEHOLD_ENUMERATION_AGE_ELIG_TABLE
 	}, $class;
 
 	return $self;

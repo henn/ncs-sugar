@@ -112,6 +112,8 @@ sub get_sugar_relationship_id
 			SOAP::Data->value($args->{module1}),
 			SOAP::Data->value($args->{id}),
 			SOAP::Data->value($args->{module2})
+			SOAP::Data->value(''),
+			SOAP::Data->value(0),
 		);
 	}
 

@@ -60,8 +60,9 @@ sub new
 											'OUTREACH_LANG2, OUTREACH_LANG_OTH, OUTREACH_RACE1, OUTREACH_RACE2, ' .
 											'OUTREACH_RACE_OTH, OUTREACH_CULTURE1, OUTREACH_CULTURE2, ' .
 											'OUTREACH_CULTURE_OTH, OUTREACH_QUANTITY, OUTREACH_COST, OUTREACH_STAFFING, ' .
-											'OUTREACH_INCIDENT, DATE_FORMAT(CREATE_DATE, \'%Y-%m-%d\') AS ' .
-											'CREATE_DATE from ' . Ncs::Db::DbDefs::OUTREACH_TABLE
+											'OUTREACH_INCIDENT, DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS ' .
+											'CREATE_DATE from ' . Ncs::Db::DbDefs::OUTREACH_TABLE . 
+											' where deleted = 0'
 	}, $class;
 
 	return $self;

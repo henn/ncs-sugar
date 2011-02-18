@@ -24,8 +24,9 @@ sub new
 		_sugar_soap			=> $soap,
 		_table				=> Ncs::Db::DbDefs::STAFF_LANGUAGE_TABLE,
 		_sql				=> 'select ID, STAFF_LANGUAGE_ID, STAFF_LANG, STAFF_LANG_OTH, ' .
-								'DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE, TABLE_SPEC_VERSION ' .
-								'from ' . Ncs::Db::DbDefs::STAFF_LANGUAGE_TABLE
+								'DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE, TABLE_SPEC_VERSION ' .
+								'from ' . Ncs::Db::DbDefs::STAFF_LANGUAGE_TABLE . 
+								' where deleted = 0'
 	}, $class;
 
 	return $self;

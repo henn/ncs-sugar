@@ -27,8 +27,9 @@ sub new
 		_sql						=> 'select ID, WEEKLY_EXP_ID, DATE_FORMAT(week_start_date, ' .
 										'\'%Y-%m-%d\') AS WEEK_START_DATE, STAFF_PAY, STAFF_HOURS, ' .
 										'STAFF_EXPENSES, STAFF_MILES, WEEKLY_EXPENSES_COMMENT, ' .
-										'DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE ' .
-										'from ' . Ncs::Db::DbDefs::STAFF_WEEKLY_EXPENSE_TABLE
+										'DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE ' .
+										'from ' . Ncs::Db::DbDefs::STAFF_WEEKLY_EXPENSE_TABLE . 
+										' where deleted = 0'
 	}, $class;
 
 	return $self;

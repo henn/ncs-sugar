@@ -22,9 +22,10 @@ sub new
 		_transaction_type	=> (($is_snapshot eq "true") ? 'NA' : 'UP'),
 		_sugar_soap			=> $soap,
 		_table				=> Ncs::Db::DbDefs::TSU_TABLE,
-		_sql				=> 'select ID, TSU_ID, TSU_NAME, DATE_FORMAT(create_date, ' .
+		_sql				=> 'select ID, TSU_ID, TSU_NAME, DATE_FORMAT(date_entered, ' .
 								'\'%Y-%m-%d\') AS CREATE_DATE from ' .
-								Ncs::Db::DbDefs::TSU_TABLE
+								Ncs::Db::DbDefs::TSU_TABLE . 
+								' where deleted = 0'
 	}, $class;
 
 	return $self;

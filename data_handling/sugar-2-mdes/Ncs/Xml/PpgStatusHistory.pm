@@ -34,8 +34,9 @@ sub new
 		_table						=> Ncs::Db::DbDefs::PPG_STATUS_HISTORY_TABLE,
 		_sql						=> 'select ID, PPG_HISTORY_ID, PPG_STATUS, PPG_STATUS_DATE, ' .
 										'PPG_INFO_SOURCE, PPG_INFO_SOURCE_OTH, PPG_INFO_MODE, PPG_INFO_MODE_OTH, ' .
-										'PPG_COMMENT, DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE ' .
-										'from ' . Ncs::Db::DbDefs::PPG_STATUS_HISTORY_TABLE
+										'PPG_COMMENT, DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE ' .
+										'from ' . Ncs::Db::DbDefs::PPG_STATUS_HISTORY_TABLE . 
+										' where deleted = 0'
 	}, $class;
 
 	return $self;

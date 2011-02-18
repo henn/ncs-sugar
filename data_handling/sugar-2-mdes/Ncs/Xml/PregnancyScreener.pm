@@ -125,7 +125,7 @@ sub new
 		_time_stamp_11				=> undef,
 		_table_spec_version			=> Ncs::Instr::PREGNANCY_SCREENER_VERSION,
 		_transaction_type			=> (($is_snapshot eq "true") ? 'NA' : 'UP'),
-		_table						=> 'PREGNANCY_SCREENER',
+		_table						=> Ncs::Db::DbDefs::PREGNANCY_SCREENER_TABLE,
 		_sql						=> 'select PSU_ID, PS_ID, RECRUIT_TYPE, DU_ID, P_ID, EVENT_ID, EVENT_TYPE, ' .
 										'EVEMT_REPEAT_KEY, INSTRUMENT_ID, INSTRUMENT_TYPE, INSTRUMENT_VERSION, ' .
 										'INSTRUMENT_REPEAT_KEY, DATE_FORMAT(TIME_STAMP_1, \'%Y-%m-%dT%H-%i-%s\') AS ' .
@@ -151,7 +151,7 @@ sub new
 										'PPG_FIRST, DATE_FORMAT(TIME_STAMP_10, \'%Y-%m-%dT%H-%i-%s\') AS TIME_STAMP_10, ' .
 										'ENGLISH, CONTACT_LANG, CONTACT_LANG_OTH, INTERPRET, CONTACT_INTERPRET, ' .
 										'CONTACT_INTERPRET_OTH, DATE_FORMAT(TIME_STAMP_11, \'%Y-%m-%dT%H-%i-%s\') AS ' .
-										'TIME_STAMP_11, from PREGNANCY_SCREENER'
+										'TIME_STAMP_11, from ' . Ncs::Db::DbDefs::PREGNANCY_SCREENER_TABLE
 	}, $class;
 
 	return $self;

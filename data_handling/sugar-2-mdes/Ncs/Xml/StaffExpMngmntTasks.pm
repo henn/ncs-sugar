@@ -27,8 +27,9 @@ sub new
 		_table						=> Ncs::Db::DbDefs::STAFF_EXP_MNGMNT_TASKS_TABLE,
 		_sql						=> 'select ID, STAFF_EXP_MGMT_TASK_ID, MGMT_TASK_TYPE, ' .
 										'MGMT_TASK_TYPE_OTH, MGMT_TASK_HRS, MGMT_TASK_COMMENT, ' .
-										'DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE from ' .
-										Ncs::Db::DbDefs::STAFF_EXP_MNGMNT_TASKS_TABLE
+										'DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE from ' .
+										Ncs::Db::DbDefs::STAFF_EXP_MNGMNT_TASKS_TABLE . 
+										' where deleted = 0'
 	}, $class;
 
 	return $self;

@@ -29,10 +29,11 @@ sub new
 		_table						=> Ncs::Db::DbDefs::PPG_DETAILS_TABLE,
 		_sql						=> 'select ID, PPG_DETAILS_ID, PPG_PID_STATUS, PPG_FIRST, ' .
 										'DATE_FORMAT(orig_due_date, \'%Y-%m-%d\') AS ORIG_DUE_DATE, ' .
-										'DATE_FORMAT(due_date_2, \'%Y-%m-%d\') AS due_date_2, ' .
+										'DATE_FORMAT(due_date_2, \'%Y-%m-%d\') AS DUE_DATE_2, ' .
 										'DATE_FORMAT(due_date_3, \'%Y-%m-%d\') AS DUE_DATE_3, ' .
-										'DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE ' .
-										'from ' . Ncs::Db::DbDefs::PPG_DETAILS_TABLE
+										'DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE ' .
+										'from ' . Ncs::Db::DbDefs::PPG_DETAILS_TABLE . 
+										' where deleted = 0'
 	}, $class;
 
 	return $self;

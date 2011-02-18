@@ -77,8 +77,9 @@ sub new
 										'WHEN_MOVE, DATE_MOVE, P_TRACING, P_INFO_SOURCE, P_INFO_SOURCE_OTH, ' .
 										'DATE_FORMAT(p_info_date, \'%Y-%m-%d\') AS P_INFO_DATE, ' .
 										'DATE_FORMAT(p_info_update, \'%Y-%m-%d\') AS P_INFO_UPDATE, ' .
-										'PERSON_COMMENT, DATE_FORMAT(create_date, \'%Y-%m-%d\') AS ' .
-										'CREATE_DATE from ' . Ncs::Db::DbDefs::PERSON_TABLE
+										'PERSON_COMMENT, DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS ' .
+										'CREATE_DATE from ' . Ncs::Db::DbDefs::PERSON_TABLE . 
+										' where deleted = 0'
 	}, $class;
 
 	return $self;

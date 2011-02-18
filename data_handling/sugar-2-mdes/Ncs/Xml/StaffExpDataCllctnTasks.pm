@@ -30,8 +30,9 @@ sub new
 		_sql							=> 'select ID, STAFF_EXP_DATA_COLL_TASK_ID, DATA_COLL_TASK_TYPE, ' .
 											'DATA_COLL_TASK_TYPE_OTH, DATA_COLL_TASK_HRS, ' .
 											'DATA_COLL_TASK_CASES, DATA_COLL_TRANSMIT, DATA_COLL_TASK_COMMENT, ' .
-											'DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE from ' .
-											Ncs::Db::DbDefs::STAFF_EXP_DATA_CLLCTN_TASKS_TABLE
+											'DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE from ' .
+											Ncs::Db::DbDefs::STAFF_EXP_DATA_CLLCTN_TASKS_TABLE . 
+											' where deleted = 0'
 	}, $class;
 
 	return $self;

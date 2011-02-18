@@ -90,7 +90,7 @@ sub new
 		_time_stamp_12				=> undef,
 		_table_spec_version			=> Ncs::Instr::HOUSEHOLD_ENUMERATION_VERSION,
 		_transaction_type			=> (($is_snapshot eq "true") ? 'NA' : 'UP'),
-		_table						=> 'HOUSEHOLD_ENUMERATION',
+		_table						=> Ncs::Db::DbDefs::HOUSEHOLD_ENUMERATION_TABLE,
 		_sql						=> 'select psu_name, hhenum_id, recruit_type, du_id, hh_id, p_id, event_id, ' .
 										'event_type, event_repeat_key, instrument_id, instrument_type, ' .
 										'instrument_version, instrument_repeat_key, DATE_FORMAT(time_stamp_1, ' .
@@ -112,7 +112,7 @@ sub new
 										'timestamp_10, hh_elig, DATE_FORMAT(time_stamp_11, \'%Y-%m-%dT%H-%i-%s\') as ' .
 										'time_stamp_11, contact_type, english, contact_lang, contact_lang_oth, ' .
 										'interpret, contact_interpret, contact_interpret_oth, DATE_FORMAT(time_stamp_12, ' . 
-										'time_stamp_12 from HOUSEHOLD_ENUMERATION'
+										'time_stamp_12 from ' . Ncs::Db::DbDefs::HOUSEHOLD_ENUMERATION_TABLE
 	}, $class;
 
 	return $self;

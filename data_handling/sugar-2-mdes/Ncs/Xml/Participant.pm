@@ -46,8 +46,9 @@ sub new
 										'DATE_FORMAT(status_info_date, \'%Y-%m-%d\') AS STATUS_INFO_DATE, ' .
 										'ENROLL_STATUS, DATE_FORMAT(enroll_date, \'%Y-%m-%d\') AS ' .
 										'ENROLL_DATE, PID_ENTRY, PID_ENTRY_OTHER, PID_AGE_ELIG, ' .
-										'PID_COMMENT, DATE_FORMAT(create_date, \'%Y-%m-%d\') AS ' .
-										'CREATE_DATE from ' . Ncs::Db::DbDefs::PARTICIPANT_TABLE
+										'PID_COMMENT, DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS ' .
+										'CREATE_DATE from ' . Ncs::Db::DbDefs::PARTICIPANT_TABLE . 
+										' where deleted = 0'
 	}, $class;
 
 	return $self;
@@ -69,17 +70,8 @@ sub populate
 									id => $rel_id, 
 									field => 'psu_id'});
 
-	# retrieve p_id relationship id
-	$rel_id = $self->{_sugar_soap}->get_sugar_relationship_id({module1 => Ncs::Db::DbDefs::PARTICIPANT_SUGAR_MODULE, 
-									id => $participant_sugar_id, 
-									module2 => Ncs::Db::DbDefs::PERSON_SUGAR_MODULE});
-	# retrieve field (p_id) value
-	my $p_id_field_value = $self->{_sugar_soap}->get_field_value({module => Ncs::Db::DbDefs::PERSON_SUGAR_MODULE, 
-									id => $rel_id, 
-									field => 'person_id'});
-
 	$self->{_psu_id}					= $psu_id_field_value;
-	$self->{_p_id}						= $p_id_field_value;
+	$self->{_p_id}						= $values->{P_ID} || Ncs::Op::UNKNOWN;
 	$self->{_p_type}					= Ncs::Op::atoi($values->{P_TYPE}) || Ncs::Op::UNKNOWN;
 	$self->{_p_type_oth}				= $values->{P_TYPE_OTH} || Ncs::Op::UNKNOWN;
 	$self->{_status_info_source}		= Ncs::Op::atoi($values->{STATUS_INFO_SOURCE}) || Ncs::Op::UNKNOWN;

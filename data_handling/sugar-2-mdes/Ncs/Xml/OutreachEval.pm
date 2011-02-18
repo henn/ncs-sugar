@@ -25,8 +25,9 @@ sub new
 		_table							=> Ncs::Db::DbDefs::OUTREACH_EVAL_TABLE,
 		_sql							=> 'select ID, OUTREACH_EVENT_EVAL_ID, ' .
 											'OUTREACH_EVAL, OUTREACH_EVAL_OTH, ' . 
-											'DATE_FORMAT(CREATE_DATE, \'%Y-%m-%d\') AS CREATE_DATE ' .
-											'from ' . Ncs::Db::DbDefs::OUTREACH_EVAL_TABLE
+											'DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE ' .
+											'from ' . Ncs::Db::DbDefs::OUTREACH_EVAL_TABLE . 
+											' where deleted = 0'
 	}, $class;
 
 	return $self;

@@ -49,9 +49,10 @@ sub new
 										'\'%Y-%m-%d\') AS CONSENT_WITHDRAW_DATE, CONSENT_LANGUAGE, ' .
 										'CONSENT_LANGUAGE_OTH, WHO_CONSENTED, ' .
 										'WHO_WTHDRW_CONSENT, CONSENT_TRANSLATE, ' .
-										'CONSENT_COMMENTS, DATE_FORMAT(create_date, ' .
+										'CONSENT_COMMENTS, DATE_FORMAT(date_entered, ' .
 										'\'%Y-%m-%d\') AS CREATE_DATE from ' . 
-										Ncs::Db::DbDefs::PARTICIPANT_CONSENT_TABLE
+										Ncs::Db::DbDefs::PARTICIPANT_CONSENT_TABLE . 
+										' where deleted = 0'
 	}, $class;
 
 	return $self;

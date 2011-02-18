@@ -25,8 +25,9 @@ sub new
 		_sugar_soap			=> $soap,
 		_table				=> Ncs::Db::DbDefs::PSU_TABLE,
 		_sql				=> 'select ID, PSU_ID, PSU_NAME, RECRUIT_TYPE, ' .
-								'DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE from ' . 
-								Ncs::Db::DbDefs::PSU_TABLE
+								'DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE from ' . 
+								Ncs::Db::DbDefs::PSU_TABLE . 
+								' where deleted = 0'
 	}, $class;
 
 	return $self;

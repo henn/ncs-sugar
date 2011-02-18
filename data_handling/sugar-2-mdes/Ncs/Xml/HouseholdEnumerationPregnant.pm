@@ -23,9 +23,10 @@ sub new
 		_p_relate					=> undef,
 		_table_spec_version			=> Ncs::Instr::HOUSEHOLD_ENUMERATION_PREGNANT_VERSION,
 		_transaction_type			=> (($is_snapshot eq "true") ? 'NA' : 'UP'),
-		_table						=> 'HOUSEHOLD_ENUMERATION_PREGNANT',
+		_table						=> Ncs::Db::DbDefs::HOUSEHOLD_ENUMERATION_TABLE,
 		_sql						=> 'select PSU_ID, PREGNANT_LOOP_ID, HHENUM_ID, P_ID, P_AGE, ' .
-										'P_FNAME, P_RELATE from HOUSEHOLD_ENUMERATION_PREGNANT'
+										'P_FNAME, P_RELATE from ' . 
+										Ncs::Db::DbDefs::HOUSEHOLD_ENUMERATION_PREGNANT_TABLE
 	}, $class;
 
 	return $self;

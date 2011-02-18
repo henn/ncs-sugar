@@ -26,9 +26,10 @@ sub new
 		_sugar_soap					=> $soap,
 		_table						=> Ncs::Db::DbDefs::LINK_PERSON_HOUSEHOLD_TABLE,
 		_sql						=> 'select ID, PERSON_HH_ID, IS_ACTIVE, HH_RANK, ' .
-										'HH_RANK_OTH, DATE_FORMAT(create_date, \'%Y-%m-%d\') AS ' .
+										'HH_RANK_OTH, DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS ' .
 										'CREATE_DATE, TABLE_SPEC_VERSION from ' .
-										Ncs::Db::DbDefs::LINK_PERSON_HOUSEHOLD_TABLE
+										Ncs::Db::DbDefs::LINK_PERSON_HOUSEHOLD_TABLE . 
+										' where deleted = 0'
 	}, $class;
 
 	return $self;

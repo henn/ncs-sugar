@@ -35,8 +35,9 @@ sub new
 		_table				=> Ncs::Db::DbDefs::HOUSEHOLD_UNIT_TABLE,
 		_sql				=> 'select ID, HH_ID, HH_STATUS, HH_ELIG, NUM_AGE_ELIG, NUM_PREG, ' .
 								'NUM_PREG_MINOR, NUM_PREG_ADULT, HH_STRUCTURE, HH_STRUCTURE_OTH, ' .
-								'HH_COMMENT, DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE ' .
-								'from ' . Ncs::Db::DbDefs::HOUSEHOLD_UNIT_TABLE
+								'HH_COMMENT, DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE ' .
+								'from ' . Ncs::Db::DbDefs::HOUSEHOLD_UNIT_TABLE . 
+								' where deleted = 0'
 	}, $class;
 
 	return $self;

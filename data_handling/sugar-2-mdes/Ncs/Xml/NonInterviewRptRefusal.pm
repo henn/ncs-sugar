@@ -24,8 +24,9 @@ sub new
 		_sugar_soap					=> $soap,
 		_table						=> Ncs::Db::DbDefs::NON_INTERVIEW_RPT_REFUSAL_TABLE,
 		_sql						=> 'select ID, NIR_REFUSAL_ID, REFUSAL_REASON, REFUSAL_REASON_OTH, ' .
-										'DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE from ' .
-										Ncs::Db::DbDefs::NON_INTERVIEW_RPT_REFUSAL_TABLE
+										'DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE from ' .
+										Ncs::Db::DbDefs::NON_INTERVIEW_RPT_REFUSAL_TABLE . 
+										' where deleted = 0'
 	}, $class;
 
 	return $self;

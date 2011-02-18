@@ -43,8 +43,9 @@ sub new
 		_table				=> Ncs::Db::DbDefs::STAFF_TABLE,
 		_sql				=> 'select ID, STAFF_ID, STAFF_TYPE, STAFF_TYPE_OTH, SUBCONTRACTOR, ' .
 								'STAFF_YOB, STAFF_AGE_RANGE, STAFF_GENDER, STAFF_RACE, STAFF_RACE_OTH, ' .
-								'STAFF_ETHNICITY, STAFF_EXP, STAFF_COMMENT, DATE_FORMAT(create_date, ' .
-								'\'%Y-%m-%d\') AS CREATE_DATE from ' . Ncs::Db::DbDefs::STAFF_TABLE
+								'STAFF_ETHNICITY, STAFF_EXP, STAFF_COMMENT, DATE_FORMAT(date_entered, ' .
+								'\'%Y-%m-%d\') AS CREATE_DATE from ' . Ncs::Db::DbDefs::STAFF_TABLE . 
+								' where deleted = 0'
 	}, $class;
 
 	return $self;

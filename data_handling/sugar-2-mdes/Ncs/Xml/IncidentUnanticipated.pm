@@ -23,8 +23,9 @@ sub new
 		_sugar_soap					=> $soap,
 		_table						=> Ncs::Db::DbDefs::INCIDENT_UNANTICIPATED_TABLE,
 		_sql						=> 'select ID, INC_UNANTICIPATED_ID, INC_UNANTICIPATED, ' .
-										'DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE from ' . 
-										Ncs::Db::DbDefs::INCIDENT_UNANTICIPATED_TABLE
+										'DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE from ' . 
+										Ncs::Db::DbDefs::INCIDENT_UNANTICIPATED_TABLE . 
+										' where deleted = 0'
 	}, $class;
 
 	return $self;

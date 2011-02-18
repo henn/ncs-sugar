@@ -20,8 +20,9 @@ sub new
 		_sugar_soap						=> $soap,
 		_table							=> Ncs::Db::DbDefs::OUTREACH_STAFF_TABLE,
 		_sql							=> 'select ID, OUTREACH_EVENT_STAFF_ID, ' .
-											'DATE_FORMAT(CREATE_DATE, \'%Y-%m-%d\') AS ' .
-											'CREATE_DATE from ' . Ncs::Db::DbDefs::OUTREACH_STAFF_TABLE
+											'DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS ' .
+											'CREATE_DATE from ' . Ncs::Db::DbDefs::OUTREACH_STAFF_TABLE . 
+											' where deleted = 0'
 	}, $class;
 
 	return $self;

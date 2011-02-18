@@ -43,9 +43,10 @@ sub new
 											'PRACTICE_INFO, PRACTICE_PATIENT_LOAD, PRACTICE_SIZE, ' .
 											'PUBLIC_PRACTICE, PROVIDER_INFO_SOURCE, PROVIDER_INFO_SOURCE_OTH, ' .
 											'DATE_FORMAT(provider_info_date, \'%Y-%m-%d\') AS PROVIDER_INFO_DATE, ' .
-											'PROVIDER_INFO_UPDATE, PROVIDER_COMMENT, DATE_FORMAT(create_date, ' .
+											'PROVIDER_INFO_UPDATE, PROVIDER_COMMENT, DATE_FORMAT(date_entered, ' .
 											'\'%Y-%m-%d\') AS CREATE_DATE from ' . 
-											Ncs::Db::DbDefs::PROVIDER_TABLE
+											Ncs::Db::DbDefs::PROVIDER_TABLE . 
+											' where deleted = 0'
 	}, $class;
 
 	return $self;

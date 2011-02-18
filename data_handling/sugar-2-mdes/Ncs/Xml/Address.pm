@@ -60,12 +60,13 @@ sub new
 		_sql							=> 'select ID, ADDRESS_ID, ' .
 											'ADDRESS_RANK, ADDRESS_RANK_OTH, ADDRESS_INFO_SOURCE, ' .
 											'ADDRESS_INFO_SOURCE_OTH, ADDRESS_INFO_MODE, ADDRESS_INFO_MODE_OTH, ' .
-											'DATE_FORMAT(address_info_date, \'%Y-%m-%d\') AS ADDRESS_INFO_DATE, ' .
-											'DATE_FORMAT(address_info_update, \'%Y-%m-%d\') AS ADDRESS_INFO_UPDATE, ' .
+											'DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS ADDRESS_INFO_DATE, ' .
+											'DATE_FORMAT(date_modified, \'%Y-%m-%d\') AS ADDRESS_INFO_UPDATE, ' .
 											'ADDRESS_START_DATE, ADDRESS_END_DATE, ADDRESS_TYPE, ADDRESS_TYPE_OTH, ' .
 											'ADDRESS_DESCRIPTION, ADDRESS_DESCRIPTION_OTH, ADDRESS_1, ADDRESS_2, ' .
-											'UNIT, CITY, STATE, ZIP, ZIP4, ADDRESS_COMMENT, DATE_FORMAT(create_date, ' .
-											'\'%Y-%m-%d\') AS CREATE_DATE from ' . Ncs::Db::DbDefs::ADDRESS_TABLE
+											'UNIT, CITY, STATE, ZIP, ZIP4, ADDRESS_COMMENT, DATE_FORMAT(date_entered, ' .
+											'\'%Y-%m-%d\') AS CREATE_DATE from ' . Ncs::Db::DbDefs::ADDRESS_TABLE . 
+											' where deleted = 0'
 	}, $class;
 
 	return $self;

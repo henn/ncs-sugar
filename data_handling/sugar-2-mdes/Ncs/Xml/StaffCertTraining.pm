@@ -34,8 +34,9 @@ sub new
 											'CERT_COMPLETED, DATE_FORMAT(cert_date, \'%Y-%m-%d\') AS CERT_DATE, ' .
 											'STAFF_BGCHECK_LVL, CERT_TYPE_FREQUENCY, DATE_FORMAT(cert_type_exp_date, ' .
 											'\'%Y-%m-%d\') AS CERT_TYPE_EXP_DATE, CERT_COMMENT, ' .
-											'DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE from ' .
-											Ncs::Db::DbDefs::STAFF_CERT_TRAINING_TABLE
+											'DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE from ' .
+											Ncs::Db::DbDefs::STAFF_CERT_TRAINING_TABLE . 
+											' where deleted = 0'
 	}, $class;
 
 	return $self;

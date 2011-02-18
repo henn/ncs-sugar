@@ -22,7 +22,7 @@ sub new
 		_transaction_type			=> (($is_snapshot eq "true") ? 'NA' : 'UP'),
 		_table						=> 'PREGNANCY_SCREENER_HOW_KNOW_NCS',
 		_sql						=> 'select PSU_ID, PS_HOW_KNOW_NCS_ID, PS_ID, HOW_KNOW_NCS from ' .
-										'PREGNANCY_SCREENER_HOW_KNOW_NCS'
+										Ncs::Instr::PREGNANCY_SCREENER_HOW_KNOW_NCS_VERSION
 	}, $class;
 
 	return $self;

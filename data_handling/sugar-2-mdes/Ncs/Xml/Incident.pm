@@ -50,15 +50,16 @@ sub new
 		_sugar_soap						=> $soap,
 		_table							=> Ncs::Db::DbDefs::INCIDENT_TABLE,
 		_sql							=> 'select ID, INCIDENT_ID, DATE_FORMAT(incident_date, \'%Y-%m-%d\') AS ' .
-											'INCIDEN_DATE, DATE_FORMAT(incident_time, \'%H:%i\') AS INCIDENT_TIME, ' .
+											'INCIDENT_DATE, DATE_FORMAT(incident_time, \'%H:%i\') AS INCIDENT_TIME, ' .
 											'DATE_FORMAT(inc_report_date, \'%Y-%m-%d\') AS INC_REPORT_DATE, ' .
 											'DATE_FORMAT(inc_report_time, \'%H:%i\') AS INC_REPORT_TIME, ' .
 											'INC_RECIP_IS_OTHER, ' .
 											'INCTYPE, INCTYPE_OTH, INCLOSS_CMPTR_MODEL, INCLOSS_CMPTR_SN, ' .
 											'INCLOSS_CMPTR_DECAL, INCLOSS_REM_MEDIA, INCLOSS_PAPER, INCLOSS_OTH, ' .
 											'INC_DESCRIPTION, INC_ACTION, INC_REPORTED, ' .
-											'DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE from ' .
-											Ncs::Db::DbDefs::INCIDENT_TABLE
+											'DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE from ' .
+											Ncs::Db::DbDefs::INCIDENT_TABLE . 
+											' where deleted = 0'
 	}, $class;
 
 	return $self;

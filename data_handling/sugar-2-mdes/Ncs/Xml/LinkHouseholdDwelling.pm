@@ -28,10 +28,11 @@ sub new
 		_sugar_soap			=> $soap,
 		_table				=> Ncs::Db::DbDefs::LINK_HOUSEHOLD_DWELLING_TABLE,
 		_sql				=> 'select ID, HH_DU_ID, IS_ACTIVE, DU_RANK, ' .
-								'DU_RANK_OTH, DATE_FORMAT(create_date, \'%Y-%m-%d\') AS ' .
+								'DU_RANK_OTH, DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS ' .
 								'CREATE_DATE, DATE_FORMAT(update_date, \'%Y-%m-%d\') AS ' .
 								'UPDATE_DATE from ' . 
-								Ncs::Db::DbDefs::LINK_HOUSEHOLD_DWELLING_TABLE
+								Ncs::Db::DbDefs::LINK_HOUSEHOLD_DWELLING_TABLE . 
+								' where deleted = 0'
 	}, $class;
 
 	return $self;

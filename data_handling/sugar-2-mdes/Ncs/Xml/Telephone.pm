@@ -44,13 +44,14 @@ sub new
 		_sugar_soap						=> $soap,
 		_table							=> Ncs::Db::DbDefs::TELEPHONE_TABLE,
 		_sql							=> 'select ID, PHONE_ID, PHONE_INFO_SOURCE, ' .
-											'PHONE_INFO_SOURCE_OTH, DATE_FORMAT(phone_info_date, ' .
-											'\'%Y-%m-%d\') AS PHONE_INFO_DATE, DATE_FORMAT(phone_info_update, ' .
+											'PHONE_INFO_SOURCE_OTH, DATE_FORMAT(date_entered, ' .
+											'\'%Y-%m-%d\') AS PHONE_INFO_DATE, DATE_FORMAT(date_modified, ' .
 											'\'%Y-%m-%d\') AS PHONE_INFO_UPDATE, PHONE_NBR, PHONE_EXT, PHONE_TYPE, ' .
 											'PHONE_TYPE_OTH, PHONE_RANK, PHONE_RANK_OTH, PHONE_LANDLINE, ' .
 											'PHONE_SHARE, CELL_PERMISSION, TEXT_PERMISSION, PHONE_COMMENT, ' .
-											'DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE from ' . 
-											Ncs::Db::DbDefs::TELEPHONE_TABLE
+											'DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE from ' . 
+											Ncs::Db::DbDefs::TELEPHONE_TABLE . 
+											' where deleted = 0'
 	}, $class;
 
 	return $self;

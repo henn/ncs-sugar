@@ -24,9 +24,10 @@ sub new
 		_sugar_soap					=> $soap,
 		_table						=> Ncs::Db::DbDefs::LINK_CONTACT_TABLE,
 		_sql						=> 'select ID, CONTACT_LINK_ID, ' . 
-										'DATE_FORMAT(create_date, \'%Y-%m-%d\') ' .
+										'DATE_FORMAT(date_entered, \'%Y-%m-%d\') ' .
 										'AS CREATE_DATE from ' . 
-										Ncs::Db::DbDefs::LINK_CONTACT_TABLE
+										Ncs::Db::DbDefs::LINK_CONTACT_TABLE . 
+										' where deleted = 0'
 	}, $class;
 
 	return $self;

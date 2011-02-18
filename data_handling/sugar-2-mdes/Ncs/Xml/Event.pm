@@ -46,8 +46,9 @@ sub new
 										'EVENT_END_DATE, DATE_FORMAT(event_end_time, \'%H:%i\') AS ' .
 										'EVENT_END_TIME, EVENT_BREAKOFF, EVENT_INCENTIVE_TYPE, ' .
 										'EVENT_INCENT_NONCASH, EVENT_COMMENT, ' .
-										'DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE from ' .
-										Ncs::Db::DbDefs::EVENT_TABLE
+										'DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE from ' .
+										Ncs::Db::DbDefs::EVENT_TABLE . 
+										' where deleted = 0'
 	}, $class;
 
 	return $self;

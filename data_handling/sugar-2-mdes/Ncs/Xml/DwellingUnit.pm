@@ -32,8 +32,9 @@ sub new
 		_table				=> Ncs::Db::DbDefs::DWELLING_UNIT_TABLE,
 		_sql				=> 'select ID, DU_ID, DUPLICATE_DU, MISSED_DU, DU_TYPE, ' .
 								'DU_TYPE_OTH, DU_INELIGIBLE, DU_ACCESS, DUID_COMMENT, ' .
-								'DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE from ' .
-								Ncs::Db::DbDefs::DWELLING_UNIT_TABLE
+								'DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE from ' .
+								Ncs::Db::DbDefs::DWELLING_UNIT_TABLE .
+								' where deleted = 0'
 	}, $class;
 
 	return $self;

@@ -93,8 +93,9 @@ sub new
 											'REASON_UNAVAIL, REASON_UNAVAIL_OTH, DATE_FORMAT(date_available, \'%Y-%m-%d\') ' .
 											'AS DATE_AVAILABLE, DATE_FORMAT(date_moved, \'%Y-%m-%d\') AS DATE_MOVED, ' .
 											'MOVED_LENGTH_TIME, MOVED_UNIT, MOVED_INFORM_RELATION, MOVED_RELATION_OTH, ' .
-											'NIR_OTHER, DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE from ' .
-											Ncs::Db::DbDefs::NON_INTERVIEW_RPT_TABLE
+											'NIR_OTHER, DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE from ' .
+											Ncs::Db::DbDefs::NON_INTERVIEW_RPT_TABLE . 
+											' where deleted = 0'
 	}, $class;
 
 	return $self;

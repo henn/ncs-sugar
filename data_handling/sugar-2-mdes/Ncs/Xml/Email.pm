@@ -45,8 +45,9 @@ sub new
 											'DATE_FORMAT(email_info_date, \'%Y-%m-%d\') AS EMAIL_INFO_DATE, ' .
 											'DATE_FORMAT(email_info_update, \'%Y-%m-%d\') AS EMAIL_INFO_UPDATE, ' .
 											'EMAIL_TYPE, EMAIL_TYPE_OTH, EMAIL_SHARE, EMAIL_ACTIVE, EMAIL_COMMENT, ' .
-											'DATE_FORMAT(create_date, \'%Y-%m-%d\') AS CREATE_DATE from ' .
-											Ncs::Db::DbDefs::EMAIL_TABLE
+											'DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS CREATE_DATE from ' .
+											Ncs::Db::DbDefs::EMAIL_TABLE . 
+											' where deleted = 0'
 	}, $class;
 
 	return $self;

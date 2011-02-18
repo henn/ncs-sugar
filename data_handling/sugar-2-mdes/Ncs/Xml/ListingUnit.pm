@@ -28,8 +28,9 @@ sub new
 		_sugar_soap			=> $soap,
 		_table				=> Ncs::Db::DbDefs::LISTING_UNIT_TABLE,
 		_sql				=> 'select ID, LIST_ID, LIST_LINE, LIST_SOURCE, ' .
-								'LIST_COMMENT, DATE_FORMAT(create_date, \'%Y-%m-%d\') AS ' .
-								'CREATE_DATE from ' . Ncs::Db::DbDefs::LISTING_UNIT_TABLE
+								'LIST_COMMENT, DATE_FORMAT(date_entered, \'%Y-%m-%d\') AS ' .
+								'CREATE_DATE from ' . Ncs::Db::DbDefs::LISTING_UNIT_TABLE . 
+								' where deleted = 0'
 	}, $class;
 
 	return $self;

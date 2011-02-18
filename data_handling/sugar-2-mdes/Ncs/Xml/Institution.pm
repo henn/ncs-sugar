@@ -49,9 +49,10 @@ sub new
 											'INSTITUTE_INFO_SOURCE_OTH, DATE_FORMAT(institute_info_date, ' .
 											'\'%Y-%m-%d\') AS INSTITUTE_INFO_DATE, ' .
 											'DATE_FORMAT(institute_info_update, \'%Y-%m-%d\') AS ' .
-											'INSTITUTE_INFO_UPDATE, INSTITUTE_COMMENT, DATE_FORMAT(create_date, ' .
+											'INSTITUTE_INFO_UPDATE, INSTITUTE_COMMENT, DATE_FORMAT(date_entered, ' .
 											'\'%Y-%m-%d\') AS CREATE_DATE from ' . 
-											Ncs::Db::DbDefs::INSTITUTION_TABLE
+											Ncs::Db::DbDefs::INSTITUTION_TABLE . 
+											' where deleted = 0'
 	}, $class;
 
 	return $self;
