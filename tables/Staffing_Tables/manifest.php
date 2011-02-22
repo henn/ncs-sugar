@@ -51,9 +51,9 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'project_Staffing_Tables',
-          'published_date' => '2011-02-14 22:47:28',
+          'published_date' => '2011-02-22 02:20:32',
           'type' => 'module',
-          'version' => '1297723648',
+          'version' => '1298341232',
           'remove_tables' => 'prompt',
           );
 $installdefs = array (

@@ -69,5 +69,6 @@ $mod_strings = array (
   'LBL_RECRUIT_TYPE' => 'Recruit Type',
   'LNK_IMPORT_GT_PRMSAMPUNT' => 'Import Primary Sampling Unit (PSU)',
   'LBL_GT_PRMSAMPUNT_SUBPANEL_TITLE' => 'Primary Sampling Unit (PSU)',
+  'LBL_TRANSACTION_TYPE' => 'Transaction type',
 );
 ?>
