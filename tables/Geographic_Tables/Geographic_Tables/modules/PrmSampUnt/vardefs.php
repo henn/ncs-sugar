@@ -111,6 +111,23 @@ $vardefs = array (
       'reportable' => true,
       'size' => '20',
     ),
+    'transaction_type' => 
+    array (
+      'required' => false,
+      'name' => 'transaction_type',
+      'vname' => 'LBL_TRANSACTION_TYPE',
+      'type' => 'varchar',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'len' => '36',
+      'size' => '20',
+    ),
   ),
   'relationships' => 
   array (
