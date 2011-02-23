@@ -188,7 +188,7 @@ $relationships = array (
   'ncsdc_eventinfo_plt_participant' => 
   array (
     'lhs_module' => 'NCSDC_EventInfo',
-    'rhs_module' => 'PLT_PARTICIPANT',
+    'rhs_module' => 'PLT_Participant',
     'relationship_type' => 'one-to-one',
     'readonly' => false,
     'deleted' => false,

@@ -1,5 +1,5 @@
 <?php
-$dashletData['PLT_PERSONDashlet']['searchFields'] = array (
+$dashletData['PLT_PersonDashlet']['searchFields'] = array (
   'date_entered' => 
   array (
     'default' => '',
@@ -14,7 +14,7 @@ $dashletData['PLT_PERSONDashlet']['searchFields'] = array (
     'default' => 'Administrator',
   ),
 );
-$dashletData['PLT_PERSONDashlet']['columns'] = array (
+$dashletData['PLT_PersonDashlet']['columns'] = array (
   'name' => 
   array (
     'width' => '40%',

@@ -1,5 +1,5 @@
 <?php
-$dashletData['PLT_PARTICIPANTDashlet']['searchFields'] = array (
+$dashletData['PLT_ParticipantDashlet']['searchFields'] = array (
   'name' => 
   array (
     'default' => '',
@@ -25,7 +25,7 @@ $dashletData['PLT_PARTICIPANTDashlet']['searchFields'] = array (
     'default' => '',
   ),
 );
-$dashletData['PLT_PARTICIPANTDashlet']['columns'] = array (
+$dashletData['PLT_ParticipantDashlet']['columns'] = array (
   'name' => 
   array (
     'width' => '40%',
