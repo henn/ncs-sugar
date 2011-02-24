@@ -1,0 +1,13 @@
+<?php 
+ //WARNING: The contents of this file are auto-generated
+
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_GT_HOUSEHOLD_PLT_PERSON_FROM_PLT_PERSON_TITLE'] = 'Person';
+$mod_strings['LBL_GT_DWELLING_UNT_GT_HOUSEHOLD_FROM_GT_DWELLING_UNT_TITLE'] = 'Dwelling Unit (DU)';
+
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_PLT_PERSON_GT_HOUSEHOLD_FROM_PLT_PERSON_TITLE'] = 'Person';
+
+?>
