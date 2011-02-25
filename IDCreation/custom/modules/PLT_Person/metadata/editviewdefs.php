@@ -1,4 +1,4 @@
-ls<?php
+<?php
 $module_name = 'PLT_Person';
 $viewdefs [$module_name] = 
 array (
@@ -34,13 +34,37 @@ array (
             'label' => 'Name (Person ID):',
 'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
-          1 => 
+          1 => '',
+        ),
+        1 => 
+        array (
+          0 => '',
+          1 => '',
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'prefix',
+            'studio' => 'visible',
+            'label' => 'LBL_PREFIX',
+          ),
+          1 => '',
+        ),
+        3 => 
+        array (
+          0 => 
           array (
             'name' => 'first_name',
             'label' => 'LBL_FIRST_NAME',
           ),
+          1 => 
+          array (
+            'name' => 'last_name',
+            'label' => 'LBL_LAST_NAME',
+          ),
         ),
-        1 => 
+        4 => 
         array (
           0 => 
           array (
@@ -49,45 +73,17 @@ array (
           ),
           1 => 
           array (
-            'name' => 'last_name',
-            'label' => 'LBL_LAST_NAME',
+            'name' => 'maiden_name',
+            'label' => 'LBL_MAIDEN_NAME',
           ),
         ),
-        2 => 
+        5 => 
         array (
           0 => 
-          array (
-            'name' => 'person_id',
-            'label' => 'LBL_PERSON_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'deceased',
-            'studio' => 'visible',
-            'label' => 'LBL_DECEASED',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'prefix',
-            'studio' => 'visible',
-            'label' => 'LBL_PREFIX',
-          ),
-          1 => 
           array (
             'name' => 'suffix',
             'studio' => 'visible',
             'label' => 'LBL_SUFFIX',
-          ),
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'maiden_name',
-            'label' => 'LBL_MAIDEN_NAME',
           ),
           1 => 
           array (
@@ -95,7 +91,7 @@ array (
             'label' => 'LBL_TITLE',
           ),
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
@@ -105,52 +101,34 @@ array (
           ),
           1 => 
           array (
-            'name' => 'person_dob',
-            'studio' => 'visible',
-            'label' => 'LBL_PERSON_DOB',
-          ),
-        ),
-        6 => 
-        array (
-          0 => 
-          array (
-            'name' => 'pref_contact',
-            'studio' => 'visible',
-            'label' => 'LBL_PREF_CONTACT',
-          ),
-          1 => 
-          array (
-            'name' => 'pref_contact_oth',
-            'label' => 'LBL_PREF_CONTACT_OTH',
+            'name' => 'age',
+            'label' => 'LBL_AGE',
           ),
         ),
         7 => 
         array (
           0 => 
           array (
-            'name' => 'person_lang',
+            'name' => 'age_range',
             'studio' => 'visible',
-            'label' => 'LBL_PERSON_LANG',
+            'label' => 'LBL_AGE_RANGE',
           ),
           1 => 
           array (
-            'name' => 'person_lang_other',
-            'label' => 'LBL_PERSON_LANG_OTHER',
+            'name' => 'person_dob',
+            'studio' => 'visible',
+            'label' => 'LBL_PERSON_DOB',
           ),
         ),
         8 => 
         array (
           0 => 
           array (
-            'name' => 'maristat',
+            'name' => 'deceased',
             'studio' => 'visible',
-            'label' => 'LBL_MARISTAT',
+            'label' => 'LBL_DECEASED',
           ),
-          1 => 
-          array (
-            'name' => 'maristat_oth',
-            'label' => 'LBL_MARISTAT_OTH',
-          ),
+          1 => '',
         ),
         9 => 
         array (
@@ -166,6 +144,49 @@ array (
         array (
           0 => 
           array (
+            'name' => 'person_lang',
+            'studio' => 'visible',
+            'label' => 'LBL_PERSON_LANG',
+          ),
+          1 => 
+          array (
+            'name' => 'person_lang_other',
+            'label' => 'LBL_PERSON_LANG_OTHER',
+          ),
+        ),
+        11 => 
+        array (
+          0 => 
+          array (
+            'name' => 'maristat',
+            'studio' => 'visible',
+            'label' => 'LBL_MARISTAT',
+          ),
+          1 => 
+          array (
+            'name' => 'maristat_oth',
+            'label' => 'LBL_MARISTAT_OTH',
+          ),
+        ),
+        12 => 
+        array (
+          0 => 
+          array (
+            'name' => 'pref_contact',
+            'studio' => 'visible',
+
+            'label' => 'LBL_PREF_CONTACT',
+          ),
+          1 => 
+          array (
+            'name' => 'pref_contact_oth',
+            'label' => 'LBL_PREF_CONTACT_OTH',
+          ),
+        ),
+        13 => 
+        array (
+          0 => 
+          array (
             'name' => 'plan_move',
             'studio' => 'visible',
             'label' => 'LBL_PLAN_MOVE',
@@ -177,7 +198,7 @@ array (
             'label' => 'LBL_MOVE_INFO',
           ),
         ),
-        11 => 
+        14 => 
         array (
           0 => 
           array (
@@ -191,26 +212,21 @@ array (
             'label' => 'LBL_WHEN_MOVE',
           ),
         ),
-        12 => 
+        15 => 
         array (
           0 => 
           array (
             'name' => 'date_move',
             'label' => 'LBL_DATE_MOVE',
           ),
-          1 => '',
-        ),
-        13 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'p_tracing',
             'studio' => 'visible',
             'label' => 'LBL_P_TRACING',
           ),
-          1 => '',
         ),
-        14 => 
+        16 => 
         array (
           0 => 
           array (
@@ -224,7 +240,7 @@ array (
             'label' => 'LBL_P_INFO_SOURCE_OTH',
           ),
         ),
-        15 => 
+        17 => 
         array (
           0 => 
           array (
@@ -237,28 +253,13 @@ array (
             'label' => 'LBL_P_INFO_UPDATE',
           ),
         ),
-        16 => 
+        18 => 
         array (
           0 => 
           array (
             'name' => 'person_comment',
             'studio' => 'visible',
             'label' => 'LBL_PERSON_COMMENT',
-          ),
-          1 => '',
-        ),
-        17 => 
-        array (
-          0 => 
-          array (
-            'name' => 'age',
-            'label' => 'LBL_AGE',
-          ),
-          1 => 
-          array (
-            'name' => 'age_range',
-            'studio' => 'visible',
-            'label' => 'LBL_AGE_RANGE',
           ),
         ),
       ),
