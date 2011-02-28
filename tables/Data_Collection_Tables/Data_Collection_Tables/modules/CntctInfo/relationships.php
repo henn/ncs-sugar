@@ -1,4 +1,4 @@
-    <?php
+<?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -34,37 +34,21 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-
-    $manifest = array (
-         'acceptable_sugar_versions' => 
-          array (
-            '6.1.2'
-          ),
-          'acceptable_sugar_flavors' =>
-          array(
-            'CE', 'PRO','ENT'
-          ),
-          'readme'=>'',
-          'key'=>'NCSDC',
-          'author' => 'Bonnie',
-          'description' => 'An Event is a set of one or more scheduled or unscheduled, partially executed or completely executed data collection activities with a single subject. The subject may be a Household or a Participant. All activities in an Event have the same subject.
-',
-          'icon' => '',
-          'is_uninstallable' => true,
-          'name' => 'project_Data_Collection_Tables',
-          'published_date' => '2011-02-22 02:18:48',
-          'type' => 'module',
-          'version' => '1298341128',
-          'remove_tables' => 'prompt',
-          );
-$installdefs = array (
-  'id' => 'project_Data_Collection_Tables',
-  'copy' => 
+$relationships = array (
+  'ncsdc_cntctinfo_ncsdc_eventinfo' => 
   array (
-    0 => 
-    array (
-      'from' => '<basepath>/Data_Collection_Tables',
-      'to' => 'custom/modulebuilder/packages/Data_Collection_Tables',
-    ),
+    'rhs_label' => 'Event Information',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'NCSDC_CntctInfo',
+    'rhs_module' => 'NCSDC_EventInfo',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'ncsdc_cntctinfo_ncsdc_eventinfo',
   ),
 );
+?>

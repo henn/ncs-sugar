@@ -1,4 +1,4 @@
-    <?php
+<?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -34,37 +34,40 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-
-    $manifest = array (
-         'acceptable_sugar_versions' => 
-          array (
-            '6.1.2'
-          ),
-          'acceptable_sugar_flavors' =>
-          array(
-            'CE', 'PRO','ENT'
-          ),
-          'readme'=>'',
-          'key'=>'NCSDC',
-          'author' => 'Bonnie',
-          'description' => 'An Event is a set of one or more scheduled or unscheduled, partially executed or completely executed data collection activities with a single subject. The subject may be a Household or a Participant. All activities in an Event have the same subject.
-',
-          'icon' => '',
-          'is_uninstallable' => true,
-          'name' => 'project_Data_Collection_Tables',
-          'published_date' => '2011-02-22 02:18:48',
-          'type' => 'module',
-          'version' => '1298341128',
-          'remove_tables' => 'prompt',
-          );
-$installdefs = array (
-  'id' => 'project_Data_Collection_Tables',
-  'copy' => 
-  array (
-    0 => 
-    array (
-      'from' => '<basepath>/Data_Collection_Tables',
-      'to' => 'custom/modulebuilder/packages/Data_Collection_Tables',
-    ),
-  ),
+$mod_strings = array (
+  'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
+  'LBL_ASSIGNED_TO_NAME' => 'User',
+  'LBL_ID' => 'ID',
+  'LBL_DATE_ENTERED' => 'Date Created',
+  'LBL_DATE_MODIFIED' => 'Date Modified',
+  'LBL_MODIFIED' => 'Modified By',
+  'LBL_MODIFIED_ID' => 'Modified By Id',
+  'LBL_MODIFIED_NAME' => 'Modified By Name',
+  'LBL_CREATED' => 'Created By',
+  'LBL_CREATED_ID' => 'Created By Id',
+  'LBL_DESCRIPTION' => 'Description',
+  'LBL_DELETED' => 'Deleted',
+  'LBL_NAME' => 'Incident Unanticipated ID',
+  'LBL_CREATED_USER' => 'Created by User',
+  'LBL_MODIFIED_USER' => 'Modified by User',
+  'LBL_LIST_NAME' => 'Name',
+  'LBL_LIST_FORM_TITLE' => 'Incident Unanticipated Multi-Select List',
+  'LBL_MODULE_NAME' => 'Incident Unanticipated Multi-Select',
+  'LBL_MODULE_TITLE' => 'Incident Unanticipated Multi-Select',
+  'LBL_HOMEPAGE_TITLE' => 'My Incident Unanticipated Multi-Select',
+  'LNK_NEW_RECORD' => 'Create Incident Unanticipated Multi-Select',
+  'LNK_LIST' => 'View Incident Unanticipated Multi-Select',
+  'LNK_IMPORT_NCSDC_INCIDENT_UNANTICIPATED' => 'Import Incident Unanticipated Multi-Select',
+  'LBL_SEARCH_FORM_TITLE' => 'Search Incident Unanticipated Multi-Select',
+  'LBL_HISTORY_SUBPANEL_TITLE' => 'View History',
+  'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
+  'LBL_NCSDC_INCIDENT_UNANTICIPATED_SUBPANEL_TITLE' => 'Incident Unanticipated Multi-Select',
+  'LBL_NEW_FORM_TITLE' => 'New Incident Unanticipated Multi-Select',
+  'LBL_INC_UNANTICIPATED_ID' => 'Incident Unanticipated ID',
+  'LBL_INC_UNANTICIPATED' => 'Incident Unanticipated',
+  'LNK_IMPORT_NCSDC_INCUNATMSEL' => 'Import Incident Unanticipated Multi-Select',
+  'LBL_NCSDC_INCUNATMSEL_SUBPANEL_TITLE' => 'Incident Unanticipated Multi-Select',
+  'LNK_IMPORT_NCSDC_INCUNATMLTS' => 'Import Incident Unanticipated Multi-Select',
+  'LBL_NCSDC_INCUNATMLTS_SUBPANEL_TITLE' => 'Incident Unanticipated Multi-Select',
 );
+?>

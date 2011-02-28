@@ -1,4 +1,4 @@
-    <?php
+<?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -34,37 +34,69 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-
-    $manifest = array (
-         'acceptable_sugar_versions' => 
-          array (
-            '6.1.2'
-          ),
-          'acceptable_sugar_flavors' =>
-          array(
-            'CE', 'PRO','ENT'
-          ),
-          'readme'=>'',
-          'key'=>'NCSDC',
-          'author' => 'Bonnie',
-          'description' => 'An Event is a set of one or more scheduled or unscheduled, partially executed or completely executed data collection activities with a single subject. The subject may be a Household or a Participant. All activities in an Event have the same subject.
-',
-          'icon' => '',
-          'is_uninstallable' => true,
-          'name' => 'project_Data_Collection_Tables',
-          'published_date' => '2011-02-22 02:18:48',
-          'type' => 'module',
-          'version' => '1298341128',
-          'remove_tables' => 'prompt',
-          );
-$installdefs = array (
-  'id' => 'project_Data_Collection_Tables',
-  'copy' => 
+$vardefs = array (
+  'fields' => 
   array (
-    0 => 
+    'nir_vacant' => 
     array (
-      'from' => '<basepath>/Data_Collection_Tables',
-      'to' => 'custom/modulebuilder/packages/Data_Collection_Tables',
+      'required' => false,
+      'name' => 'nir_vacant',
+      'vname' => 'LBL_NIR_VACANT',
+      'type' => 'enum',
+      'massupdate' => 0,
+      'default' => 'Yes',
+      'comments' => '',
+      'help' => 'How is vacancy known &quot;The combination of NIR_ID and NIR_VACANT is unique (such that the same value of NIR_ID for the same NIR_VACANT is not repeated)',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'len' => 100,
+      'size' => '20',
+      'options' => 'CONFIRM_TYPE_CL3',
+      'studio' => 'visible',
+      'dependency' => false,
+    ),
+    'nir_vacant_oth' => 
+    array (
+      'required' => false,
+      'name' => 'nir_vacant_oth',
+      'vname' => 'LBL_NIR_VACANT_OTH',
+      'type' => 'varchar',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => 'Other Knowledge of Vacancy ',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'len' => '255',
+      'size' => '20',
+    ),
+    'name' => 
+    array (
+      'name' => 'name',
+      'vname' => 'LBL_NAME',
+      'type' => 'name',
+      'dbType' => 'varchar',
+      'len' => '36',
+      'unified_search' => true,
+      'required' => true,
+      'importable' => 'required',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => '',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'size' => '20',
     ),
   ),
+  'relationships' => 
+  array (
+  ),
 );
+?>

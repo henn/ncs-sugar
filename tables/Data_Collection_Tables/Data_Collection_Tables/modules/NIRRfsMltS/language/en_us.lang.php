@@ -1,4 +1,4 @@
-    <?php
+<?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -34,37 +34,40 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-
-    $manifest = array (
-         'acceptable_sugar_versions' => 
-          array (
-            '6.1.2'
-          ),
-          'acceptable_sugar_flavors' =>
-          array(
-            'CE', 'PRO','ENT'
-          ),
-          'readme'=>'',
-          'key'=>'NCSDC',
-          'author' => 'Bonnie',
-          'description' => 'An Event is a set of one or more scheduled or unscheduled, partially executed or completely executed data collection activities with a single subject. The subject may be a Household or a Participant. All activities in an Event have the same subject.
-',
-          'icon' => '',
-          'is_uninstallable' => true,
-          'name' => 'project_Data_Collection_Tables',
-          'published_date' => '2011-02-22 02:18:48',
-          'type' => 'module',
-          'version' => '1298341128',
-          'remove_tables' => 'prompt',
-          );
-$installdefs = array (
-  'id' => 'project_Data_Collection_Tables',
-  'copy' => 
-  array (
-    0 => 
-    array (
-      'from' => '<basepath>/Data_Collection_Tables',
-      'to' => 'custom/modulebuilder/packages/Data_Collection_Tables',
-    ),
-  ),
+$mod_strings = array (
+  'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
+  'LBL_ASSIGNED_TO_NAME' => 'User',
+  'LBL_ID' => 'ID',
+  'LBL_DATE_ENTERED' => 'Date Created',
+  'LBL_DATE_MODIFIED' => 'Date Modified',
+  'LBL_MODIFIED' => 'Modified By',
+  'LBL_MODIFIED_ID' => 'Modified By Id',
+  'LBL_MODIFIED_NAME' => 'Modified By Name',
+  'LBL_CREATED' => 'Created By',
+  'LBL_CREATED_ID' => 'Created By Id',
+  'LBL_DESCRIPTION' => 'Description',
+  'LBL_DELETED' => 'Deleted',
+  'LBL_NAME' => 'Non Interview Report Refusal ID',
+  'LBL_CREATED_USER' => 'Created by User',
+  'LBL_MODIFIED_USER' => 'Modified by User',
+  'LBL_LIST_NAME' => 'Name',
+  'LBL_LIST_FORM_TITLE' => 'NIR Refusal Multi-Select List',
+  'LBL_MODULE_NAME' => 'NIR Refusal Multi-Select',
+  'LBL_MODULE_TITLE' => 'NIR Refusal Multi-Select',
+  'LBL_HOMEPAGE_TITLE' => 'My NIR Refusal Multi-Select',
+  'LNK_NEW_RECORD' => 'Create NIR Refusal Multi-Select',
+  'LNK_LIST' => 'View NIR Refusal Multi-Select',
+  'LNK_IMPORT_NCSDC_NON_INTERVIEW_RPT_REFUSAL' => 'Import NIR Refusal Multi-Select',
+  'LBL_SEARCH_FORM_TITLE' => 'Search NIR Refusal Multi-Select',
+  'LBL_HISTORY_SUBPANEL_TITLE' => 'View History',
+  'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
+  'LBL_NCSDC_NON_INTERVIEW_RPT_REFUSAL_SUBPANEL_TITLE' => 'NIR Refusal Multi-Select',
+  'LBL_NEW_FORM_TITLE' => 'New NIR Refusal Multi-Select',
+  'LBL_REFUSAL_REASON' => 'Refusal Reason',
+  'LBL_NIR_ID' => 'Non Interview Report ID',
+  'LBL_NIR_REFUSAL_ID' => 'Non Interview Report Refusal ID',
+  'LBL_REFUSAL_REASON_OTH' => 'Refusal Reason Other',
+  'LNK_IMPORT_NCSDC_NIRRFSMLTS' => 'Import NIR Refusal Multi-Select',
+  'LBL_NCSDC_NIRRFSMLTS_SUBPANEL_TITLE' => 'NIR Refusal Multi-Select',
 );
+?>

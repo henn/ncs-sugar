@@ -1,4 +1,4 @@
-    <?php
+<?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -34,37 +34,52 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-
-    $manifest = array (
-         'acceptable_sugar_versions' => 
-          array (
-            '6.1.2'
-          ),
-          'acceptable_sugar_flavors' =>
-          array(
-            'CE', 'PRO','ENT'
-          ),
-          'readme'=>'',
-          'key'=>'NCSDC',
-          'author' => 'Bonnie',
-          'description' => 'An Event is a set of one or more scheduled or unscheduled, partially executed or completely executed data collection activities with a single subject. The subject may be a Household or a Participant. All activities in an Event have the same subject.
-',
-          'icon' => '',
-          'is_uninstallable' => true,
-          'name' => 'project_Data_Collection_Tables',
-          'published_date' => '2011-02-22 02:18:48',
-          'type' => 'module',
-          'version' => '1298341128',
-          'remove_tables' => 'prompt',
-          );
-$installdefs = array (
-  'id' => 'project_Data_Collection_Tables',
-  'copy' => 
+$vardefs = array (
+  'fields' => 
   array (
-    0 => 
+    'inc_unanticipated' => 
     array (
-      'from' => '<basepath>/Data_Collection_Tables',
-      'to' => 'custom/modulebuilder/packages/Data_Collection_Tables',
+      'required' => false,
+      'name' => 'inc_unanticipated',
+      'vname' => 'LBL_INC_UNANTICIPATED',
+      'type' => 'enum',
+      'massupdate' => 0,
+      'default' => '1',
+      'comments' => '',
+      'help' => 'If recipient was a participant, does the incident meet conditions for being an unanticipated problem',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'len' => 100,
+      'size' => '20',
+      'options' => 'INC_UNANTICIPATED_CL1',
+      'studio' => 'visible',
+      'dependency' => false,
+    ),
+    'name' => 
+    array (
+      'name' => 'name',
+      'vname' => 'LBL_NAME',
+      'type' => 'name',
+      'dbType' => 'varchar',
+      'len' => '36',
+      'unified_search' => true,
+      'required' => true,
+      'importable' => 'required',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => '',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'size' => '20',
     ),
   ),
+  'relationships' => 
+  array (
+  ),
 );
+?>

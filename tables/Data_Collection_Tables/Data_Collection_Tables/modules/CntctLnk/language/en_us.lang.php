@@ -1,4 +1,4 @@
-    <?php
+<?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -34,37 +34,47 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-
-    $manifest = array (
-         'acceptable_sugar_versions' => 
-          array (
-            '6.1.2'
-          ),
-          'acceptable_sugar_flavors' =>
-          array(
-            'CE', 'PRO','ENT'
-          ),
-          'readme'=>'',
-          'key'=>'NCSDC',
-          'author' => 'Bonnie',
-          'description' => 'An Event is a set of one or more scheduled or unscheduled, partially executed or completely executed data collection activities with a single subject. The subject may be a Household or a Participant. All activities in an Event have the same subject.
-',
-          'icon' => '',
-          'is_uninstallable' => true,
-          'name' => 'project_Data_Collection_Tables',
-          'published_date' => '2011-02-22 02:18:48',
-          'type' => 'module',
-          'version' => '1298341128',
-          'remove_tables' => 'prompt',
-          );
-$installdefs = array (
-  'id' => 'project_Data_Collection_Tables',
-  'copy' => 
-  array (
-    0 => 
-    array (
-      'from' => '<basepath>/Data_Collection_Tables',
-      'to' => 'custom/modulebuilder/packages/Data_Collection_Tables',
-    ),
-  ),
+$mod_strings = array (
+  'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
+  'LBL_ASSIGNED_TO_NAME' => 'User',
+  'LBL_ID' => 'ID',
+  'LBL_DATE_ENTERED' => 'Date Created',
+  'LBL_DATE_MODIFIED' => 'Date Modified',
+  'LBL_MODIFIED' => 'Modified By',
+  'LBL_MODIFIED_ID' => 'Modified By Id',
+  'LBL_MODIFIED_NAME' => 'Modified By Name',
+  'LBL_CREATED' => 'Created By',
+  'LBL_CREATED_ID' => 'Created By Id',
+  'LBL_DESCRIPTION' => 'Description',
+  'LBL_DELETED' => 'Deleted',
+  'LBL_NAME' => 'Name',
+  'LBL_CREATED_USER' => 'Created by User',
+  'LBL_MODIFIED_USER' => 'Modified by User',
+  'LBL_LIST_NAME' => 'Name',
+  'LBL_LIST_FORM_TITLE' => 'Contact Linking List',
+  'LBL_MODULE_NAME' => 'Contact Linking',
+  'LBL_MODULE_TITLE' => 'Contact Linking',
+  'LBL_HOMEPAGE_TITLE' => 'My Contact Linking',
+  'LNK_NEW_RECORD' => 'Create Contact Linking',
+  'LNK_LIST' => 'View Contact Linking',
+  'LNK_IMPORT_DCT_LINK_CONTACT' => 'Import Contact Linking',
+  'LBL_SEARCH_FORM_TITLE' => 'Search Contact Linking',
+  'LBL_HISTORY_SUBPANEL_TITLE' => 'View History',
+  'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
+  'LBL_DCT_LINK_CONTACT_SUBPANEL_TITLE' => 'Contact Linking',
+  'LBL_NEW_FORM_TITLE' => 'New Contact Linking',
+  'LBL_PSU_ID' => 'PSU ID',
+  'LBL_CONTACT_LINK_ID' => 'Contact Link ID',
+  'LBL_CONTACT_ID' => 'Contact ID',
+  'LBL_EVENT_ID' => 'Event ID',
+  'LBL_INSTRUMENT_ID' => 'Instrument ID',
+  'LBL_STAFF_ID' => 'Staff ID',
+  'LBL_SPECIMEN_ID' => 'Specimen ID',
+  'LBL_PERSON_ID' => 'Person ID',
+  'LBL_PROVIDER_ID' => 'Provider ID',
+  'LNK_IMPORT_NCSDC_LINK_CONTACT' => 'Import Contact Linking',
+  'LBL_NCSDC_LINK_CONTACT_SUBPANEL_TITLE' => 'Contact Linking',
+  'LNK_IMPORT_NCSDC_CNTCTLNK' => 'Import Contact Linking',
+  'LBL_NCSDC_CNTCTLNK_SUBPANEL_TITLE' => 'Contact Linking',
 );
+?>
