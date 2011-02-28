@@ -54,9 +54,9 @@ class OLT_LINK_PERSON_PROVIDERDashlet extends DashletGeneric {
 
         if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'OLT_LINK_PERSON_PROVIDER');
 
-        $this->searchFields = $dashletData['OLT_LINK_PERSON_PROVIDERDashlet']['searchFields'];
-        $this->columns = $dashletData['OLT_LINK_PERSON_PROVIDERDashlet']['columns'];
+        $this->searchFields = $dashletData['OLT_LINK_PERSON_ProviderDashlet']['searchFields'];
+        $this->columns = $dashletData['OLT_LINK_PERSON_ProviderDashlet']['columns'];
 
-        $this->seedBean = new OLT_LINK_PERSON_PROVIDER();        
+        $this->seedBean = new OLT_LINK_PERSON_Provider();        
     }
 }

@@ -38,6 +38,5 @@
 $app_list_strings['moduleList']['OLT_Provider'] = 'Provider';
 $app_list_strings['moduleList']['OLT_Institution'] = 'Institution Information';
 $app_list_strings['moduleList']['OLT_PrsnPrvdLnk'] = 'Person-Provider Linkage';
-$app_list_strings['moduleList']['OLT_PROVIDER'] = 'Provider';
 $app_list_strings['moduleList']['OLT_PrsnInstLnk'] = 'Person-Institute Linkage';
 $app_list_strings['moduleList']['OLT_INSTITUTION'] = 'Institution Information';

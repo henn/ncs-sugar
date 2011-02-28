@@ -1,5 +1,5 @@
 <?php
-$module_name = 'OLT_PROVIDER';
+$module_name = 'OLT_Provider';
 $viewdefs [$module_name] = 
 array (
   'DetailView' => 

@@ -1,5 +1,5 @@
 <?php
-$module_name = 'OLT_PROVIDER';
+$module_name = 'OLT_Provider';
 $listViewDefs [$module_name] = 
 array (
   'NAME' => 
