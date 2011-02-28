@@ -1,5 +1,5 @@
 <?php
-$module_name = 'ST_StaffRstr';
+$module_name = 'GT_DwellingUnt';
 $viewdefs [$module_name] = 
 array (
   'EditView' => 
@@ -30,8 +30,8 @@ array (
         array (
           0 => 
           array (
- 			'name' => 'name',
-            'label' => 'Name (Staff ID):',
+            'name' => 'name',
+            'label' => 'Name (DU ID):',
 'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
@@ -51,100 +51,80 @@ array (
         ),
         2 => 
         array (
-          0 => '',
+          0 => 
+          array (
+            'name' => 'du_type',
+            'studio' => 'visible',
+            'label' => 'LBL_DU_TYPE',
+          ),
+          1 => 
+          array (
+            'name' => 'du_type_oth',
+            'label' => 'LBL_DU_TYPE_OTH',
+          ),
         ),
         3 => 
         array (
           0 => 
           array (
-            'name' => 'staff_type',
+            'name' => 'duplicate_du',
             'studio' => 'visible',
-            'label' => 'LBL_STAFF_TYPE',
+            'label' => 'LBL_DUPLICATE_DU',
           ),
-          1 => 
-          array (
-            'name' => 'staff_type_oth',
-            'label' => 'LBL_STAFF_TYPE_OTH',
-          ),
+          1 => '',
         ),
         4 => 
         array (
           0 => 
           array (
-            'name' => 'staff_exp',
+            'name' => 'missed_du',
             'studio' => 'visible',
-            'label' => 'LBL_STAFF_EXP',
+            'label' => 'LBL_MISSED_DU',
           ),
-          1 => 
-          array (
-            'name' => 'subcontractor',
-            'studio' => 'visible',
-            'label' => 'LBL_SUBCONTRACTOR',
-          ),
+          1 => '',
         ),
         5 => 
         array (
           0 => 
           array (
-            'name' => 'staff_comment',
+            'name' => 'du_access',
             'studio' => 'visible',
-            'label' => 'LBL_STAFF_COMMENT',
+            'label' => 'LBL_DU_ACCESS',
           ),
+          1 => '',
         ),
         6 => 
         array (
           0 => 
           array (
-            'name' => 'gt_study_center_st_staff_name',
+            'name' => 'du_ineligible',
+            'studio' => 'visible',
+            'label' => 'LBL_DU_INELIGIBLE',
           ),
+          1 => '',
         ),
-      ),
-      'lbl_editview_panel1' => 
-      array (
-        0 => 
+        7 => 
         array (
           0 => 
           array (
-            'name' => 'staff_gender',
+            'name' => 'duid_comment',
             'studio' => 'visible',
-            'label' => 'LBL_STAFF_GENDER',
+            'label' => 'LBL_DUID_COMMENT',
           ),
+          1 => '',
         ),
-        1 => 
+        8 => 
         array (
           0 => 
           array (
-            'name' => 'staff_yob',
-            'label' => 'LBL_STAFF_YOB',
-          ),
-          1 => 
-          array (
-            'name' => 'staff_age_range',
-            'studio' => 'visible',
-            'label' => 'LBL_STAFF_AGE_RANGE',
+            'name' => 'gt_listingunt_ltt_address_name',
           ),
         ),
-        2 => 
+        9 => 
         array (
           0 => 
           array (
-            'name' => 'staff_ethnicity',
-            'studio' => 'visible',
-            'label' => 'LBL_STAFF_ETHNICITY',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'staff_race',
-            'studio' => 'visible',
-            'label' => 'LBL_STAFF_RACE',
-          ),
-          1 => 
-          array (
-            'name' => 'staff_race_oth',
-            'label' => 'LBL_STAFF_RACE_OTH',
+            'name' => 'gt_listingunt_gt_listingunt_name',
           ),
         ),
       ),

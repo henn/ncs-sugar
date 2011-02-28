@@ -1,5 +1,5 @@
 <?php
-$module_name = 'ST_StaffRstr';
+$module_name = 'GT_Household';
 $viewdefs [$module_name] = 
 array (
   'EditView' => 
@@ -30,8 +30,8 @@ array (
         array (
           0 => 
           array (
- 			'name' => 'name',
-            'label' => 'Name (Staff ID):',
+            'name' => 'name',
+            'label' => 'Name (Household Unit ID):',
 'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
@@ -51,101 +51,90 @@ array (
         ),
         2 => 
         array (
-          0 => '',
+          0 => 
+          array (
+            'name' => 'hh_id',
+            'label' => 'LBL_HH_ID',
+          ),
+          1 => '',
         ),
         3 => 
         array (
           0 => 
           array (
-            'name' => 'staff_type',
+            'name' => 'hh_status',
             'studio' => 'visible',
-            'label' => 'LBL_STAFF_TYPE',
-          ),
-          1 => 
-          array (
-            'name' => 'staff_type_oth',
-            'label' => 'LBL_STAFF_TYPE_OTH',
+            'label' => 'LBL_HH_STATUS',
           ),
         ),
         4 => 
         array (
           0 => 
           array (
-            'name' => 'staff_exp',
+            'name' => 'hh_elig',
             'studio' => 'visible',
-            'label' => 'LBL_STAFF_EXP',
-          ),
-          1 => 
-          array (
-            'name' => 'subcontractor',
-            'studio' => 'visible',
-            'label' => 'LBL_SUBCONTRACTOR',
+            'label' => 'LBL_HH_ELIG',
           ),
         ),
         5 => 
         array (
           0 => 
           array (
-            'name' => 'staff_comment',
+            'name' => 'hh_structure',
             'studio' => 'visible',
-            'label' => 'LBL_STAFF_COMMENT',
+            'label' => 'LBL_HH_STRUCTURE',
+          ),
+          1 => 
+          array (
+            'name' => 'hh_structure_oth',
+            'label' => 'LBL_HH_STRUCTURE_OTH',
           ),
         ),
         6 => 
         array (
           0 => 
           array (
-            'name' => 'gt_study_center_st_staff_name',
+            'name' => 'num_age_elig',
+            'label' => 'LBL_NUM_AGE_ELIG',
           ),
+          1 => '',
         ),
-      ),
-      'lbl_editview_panel1' => 
-      array (
-        0 => 
+        7 => 
         array (
           0 => 
           array (
-            'name' => 'staff_gender',
-            'studio' => 'visible',
-            'label' => 'LBL_STAFF_GENDER',
+            'name' => 'num_preg',
+            'label' => 'LBL_NUM_PREG',
           ),
+          1 => '',
         ),
-        1 => 
+        8 => 
         array (
           0 => 
           array (
-            'name' => 'staff_yob',
-            'label' => 'LBL_STAFF_YOB',
+            'name' => 'num_preg_adult',
+            'label' => 'LBL_NUM_PREG_ADULT',
           ),
-          1 => 
-          array (
-            'name' => 'staff_age_range',
-            'studio' => 'visible',
-            'label' => 'LBL_STAFF_AGE_RANGE',
-          ),
+          1 => '',
         ),
-        2 => 
+        9 => 
         array (
           0 => 
           array (
-            'name' => 'staff_ethnicity',
-            'studio' => 'visible',
-            'label' => 'LBL_STAFF_ETHNICITY',
+            'name' => 'num_preg_minor',
+            'label' => 'LBL_NUM_PREG_MINOR',
           ),
+          1 => '',
         ),
-        3 => 
+        10 => 
         array (
           0 => 
           array (
-            'name' => 'staff_race',
+            'name' => 'hh_comment',
             'studio' => 'visible',
-            'label' => 'LBL_STAFF_RACE',
+            'label' => 'LBL_HH_COMMENT',
           ),
-          1 => 
-          array (
-            'name' => 'staff_race_oth',
-            'label' => 'LBL_STAFF_RACE_OTH',
-          ),
+          1 => '',
         ),
       ),
     ),

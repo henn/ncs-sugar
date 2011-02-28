@@ -1,5 +1,5 @@
 <?php
-$module_name = 'ST_StfLang';
+$module_name = 'GT_ListingUnt';
 $viewdefs [$module_name] = 
 array (
   'EditView' => 
@@ -30,8 +30,8 @@ array (
         array (
           0 => 
           array (
- 			'name' => 'name',
-            'label' => 'Name (Staff Language ID):',
+            'name' => 'name',
+            'label' => 'Name (Listing Unit ID):',
 'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
@@ -53,9 +53,8 @@ array (
         array (
           0 => 
           array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
+            'name' => 'list_id',
+            'label' => 'LBL_LIST_ID',
           ),
           1 => '',
         ),
@@ -63,39 +62,36 @@ array (
         array (
           0 => 
           array (
-            'name' => 'staff_id',
-            'label' => 'LBL_STAFF_ID',
+            'name' => 'list_line',
+            'label' => 'LBL_LIST_LINE',
           ),
-          1 => 
-          array (
-            'name' => 'staff_lang',
-            'studio' => 'visible',
-            'label' => 'LBL_STAFF_LANG',
-          ),
+          1 => '',
         ),
         4 => 
         array (
           0 => 
           array (
-            'name' => 'staff_lang_oth',
-            'label' => 'LBL_STAFF_LANG_OTH',
+            'name' => 'list_source',
+            'studio' => 'visible',
+            'label' => 'LBL_LIST_SOURCE',
           ),
           1 => '',
         ),
         5 => 
         array (
-          0 => '',
+          0 => 
+          array (
+            'name' => 'list_comment',
+            'studio' => 'visible',
+            'label' => 'LBL_LIST_COMMENT',
+          ),
           1 => '',
         ),
         6 => 
         array (
           0 => 
           array (
-            'name' => 'st_staff_st_staff_language_name',
-          ),
-          1 => 
-          array (
-            'name' => 'st_staffrstr_st_stflang_name',
+            'name' => 'gt_listingunt_gt_listingunt_name',
           ),
         ),
       ),

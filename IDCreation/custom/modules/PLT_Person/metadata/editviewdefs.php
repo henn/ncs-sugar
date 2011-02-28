@@ -174,6 +174,7 @@ array (
           array (
             'name' => 'pref_contact',
             'studio' => 'visible',
+
             'label' => 'LBL_PREF_CONTACT',
           ),
           1 => 
