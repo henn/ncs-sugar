@@ -35,11 +35,8 @@
  ********************************************************************************/
 
 
-$app_list_strings['moduleList']['PLT_PERSON_PARTICIPANT_LINKAGE'] = 'Person-Participant Linkage';
 $app_list_strings['moduleList']['PLT_Participant'] = 'Participant';
 $app_list_strings['moduleList']['PLT_Person'] = 'Person';
-$app_list_strings['moduleList']['PLT_PERSON'] = 'Person';
-$app_list_strings['moduleList']['PLT_PARTICIPANT'] = 'Participant';
 $app_list_strings['moduleList']['PLT_PrtcptVstC'] = 'Participant Visit Consent';
 $app_list_strings['moduleList']['PLT_LnkPrsHshld'] = 'Household-Person Linkage';
 $app_list_strings['moduleList']['PLT_LkPrsPrtcpt'] = 'Person-Participant Linkage';
@@ -47,9 +44,9 @@ $app_list_strings['moduleList']['PLT_PersonRace'] = 'Person Race';
 $app_list_strings['moduleList']['PLT_PPGDetails'] = 'PPG Details';
 $app_list_strings['moduleList']['PLT_PPGStsHstry'] = 'PPG Status History';
 $app_list_strings['moduleList']['PLT_PrtcptCnsnt'] = 'Participant Consent';
-$app_list_strings['parent_type_display']['PLT_PARTICIPANT'] = 'Participant';
-$app_list_strings['record_type_display']['PLT_PARTICIPANT'] = 'Participant';
-$app_list_strings['record_type_display_notes']['PLT_PARTICIPANT'] = 'Participant';
+$app_list_strings['parent_type_display']['PLT_Participant'] = 'Participant';
+$app_list_strings['record_type_display']['PLT_Participant'] = 'Participant';
+$app_list_strings['record_type_display_notes']['PLT_Participant'] = 'Participant';
 $app_list_strings['CONSENT_WITHDRAW_REASON_CL1']['1'] = 'Voluntary withdrawal initiated by the Participant';
 $app_list_strings['CONSENT_WITHDRAW_REASON_CL1']['2'] = 'Involuntary withdrawal initiated by the Study';
 $app_list_strings['CONSENT_WITHDRAW_REASON_CL1']['_3'] = 'Legitimate Skip';

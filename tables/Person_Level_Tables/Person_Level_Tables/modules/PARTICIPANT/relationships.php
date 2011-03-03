@@ -39,7 +39,7 @@ $relationships = array (
   array (
     'rhs_label' => 'Activities',
     'rhs_subpanel' => 'Default',
-    'lhs_module' => 'PLT_PARTICIPANT',
+    'lhs_module' => 'PLT_Participant',
     'rhs_module' => 'Activities',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
@@ -54,7 +54,7 @@ $relationships = array (
   array (
     'rhs_label' => 'Participant Consent',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'PLT_PARTICIPANT',
+    'lhs_module' => 'PLT_Participant',
     'rhs_module' => 'PLT_PrtcptCnsnt',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
@@ -69,7 +69,7 @@ $relationships = array (
   array (
     'rhs_label' => 'Participant Visit Consent',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'PLT_PARTICIPANT',
+    'lhs_module' => 'PLT_Participant',
     'rhs_module' => 'PLT_PrtcptVstC',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
@@ -84,7 +84,7 @@ $relationships = array (
   array (
     'rhs_label' => 'PPG Status History',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'PLT_PARTICIPANT',
+    'lhs_module' => 'PLT_Participant',
     'rhs_module' => 'PLT_PPGStsHstry',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
@@ -99,7 +99,7 @@ $relationships = array (
   array (
     'rhs_label' => 'PPG Details',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'PLT_PARTICIPANT',
+    'lhs_module' => 'PLT_Participant',
     'rhs_module' => 'PLT_PPGDetails',
     'relationship_type' => 'one-to-many',
     'readonly' => false,

@@ -52,9 +52,9 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'project_Data_Collection_Tables',
-          'published_date' => '2011-02-22 02:18:48',
+          'published_date' => '2011-02-14 22:46:09',
           'type' => 'module',
-          'version' => '1298341128',
+          'version' => '1297723569',
           'remove_tables' => 'prompt',
           );
 $installdefs = array (

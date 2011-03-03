@@ -51,9 +51,9 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'project_Organization_Level_Tables',
-          'published_date' => '2011-02-22 02:19:31',
+          'published_date' => '2011-02-14 22:46:54',
           'type' => 'module',
-          'version' => '1298341171',
+          'version' => '1297723614',
           'remove_tables' => 'prompt',
           );
 $installdefs = array (

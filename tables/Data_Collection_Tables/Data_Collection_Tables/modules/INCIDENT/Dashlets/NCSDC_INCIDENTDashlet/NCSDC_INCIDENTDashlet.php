@@ -43,20 +43,20 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  ********************************************************************************/
 
 require_once('include/Dashlets/DashletGeneric.php');
-require_once('modules/NCSDC_INCIDENT/NCSDC_INCIDENT.php');
+require_once('modules/NCSDC_Incident/NCSDC_Incident.php');
 
-class NCSDC_INCIDENTDashlet extends DashletGeneric { 
-    function NCSDC_INCIDENTDashlet($id, $def = null) {
+class NCSDC_IncidentDashlet extends DashletGeneric { 
+    function NCSDC_IncidentDashlet($id, $def = null) {
 		global $current_user, $app_strings;
-		require('modules/NCSDC_INCIDENT/metadata/dashletviewdefs.php');
+		require('modules/NCSDC_Incident/metadata/dashletviewdefs.php');
 
         parent::DashletGeneric($id, $def);
 
-        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'NCSDC_INCIDENT');
+        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'NCSDC_Incident');
 
-        $this->searchFields = $dashletData['NCSDC_INCIDENTDashlet']['searchFields'];
-        $this->columns = $dashletData['NCSDC_INCIDENTDashlet']['columns'];
+        $this->searchFields = $dashletData['NCSDC_IncidentDashlet']['searchFields'];
+        $this->columns = $dashletData['NCSDC_IncidentDashlet']['columns'];
 
-        $this->seedBean = new NCSDC_INCIDENT();        
+        $this->seedBean = new NCSDC_Incident();        
     }
 }

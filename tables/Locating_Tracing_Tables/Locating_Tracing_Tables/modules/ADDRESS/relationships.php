@@ -37,12 +37,12 @@
 $relationships = array (
   'ltt_address_ltt_telephone' => 
   array (
-    'rhs_label' => 'LTT_TELEPHONE',
+    'rhs_label' => 'LTT_Telephone',
     'lhs_label' => 'Address',
     'lhs_subpanel' => 'default',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'LTT_ADDRESS',
-    'rhs_module' => 'LTT_TELEPHONE',
+    'lhs_module' => 'LTT_Address',
+    'rhs_module' => 'LTT_Telephone',
     'relationship_type' => 'many-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -58,8 +58,8 @@ $relationships = array (
     'lhs_label' => 'Address',
     'lhs_subpanel' => 'default',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'LTT_ADDRESS',
-    'rhs_module' => 'LTT_EMAIL',
+    'lhs_module' => 'LTT_Address',
+    'rhs_module' => 'LTT_Email',
     'relationship_type' => 'many-to-many',
     'readonly' => false,
     'deleted' => false,

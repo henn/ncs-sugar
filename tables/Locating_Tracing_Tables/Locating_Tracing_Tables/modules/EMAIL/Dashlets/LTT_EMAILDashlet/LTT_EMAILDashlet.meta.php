@@ -44,8 +44,8 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  
 global $app_strings;
 
-$dashletMeta['LTT_EMAILDashlet'] = array('module'		=> 'LTT_EMAIL',
-										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'LTT_EMAIL'), 
-                                          'description' => 'A customizable view into LTT_EMAIL',
+$dashletMeta['LTT_EmailDashlet'] = array('module'		=> 'LTT_Email',
+										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'LTT_Email'), 
+                                          'description' => 'A customizable view into LTT_Email',
                                           'icon'        => 'icon_LTT_Email_32.gif',
                                           'category'    => 'Module Views');

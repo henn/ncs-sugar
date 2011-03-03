@@ -10,7 +10,7 @@ $subpanel_layout = array (
     1 => 
     array (
       'widget_class' => 'SubPanelTopSelectButton',
-      'popup_module' => 'PLT_PERSON_RACE',
+      'popup_module' => '$module_name',
     ),
   ),
   'where' => '',
@@ -56,14 +56,14 @@ $subpanel_layout = array (
     'edit_button' => 
     array (
       'widget_class' => 'SubPanelEditButton',
-      'module' => 'PLT_PERSON_RACE',
+      'module' => '$module_name',
       'width' => '4%',
       'default' => true,
     ),
     'remove_button' => 
     array (
       'widget_class' => 'SubPanelRemoveButton',
-      'module' => 'PLT_PERSON_RACE',
+      'module' => '$module_name',
       'width' => '5%',
       'default' => true,
     ),

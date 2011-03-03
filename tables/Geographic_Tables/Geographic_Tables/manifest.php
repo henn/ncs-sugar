@@ -51,8 +51,8 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'Geographic_Tables',
-          'published_date' => '2011-02-22 02:19:08',
+          'published_date' => '2011-02-14 22:46:31',
           'type' => 'module',
-          'version' => '1298341148',
+          'version' => '1297723591',
           'remove_tables' => 'prompt',
           );

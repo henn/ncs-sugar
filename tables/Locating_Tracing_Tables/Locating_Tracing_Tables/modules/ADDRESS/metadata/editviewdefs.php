@@ -1,5 +1,5 @@
 <?php
-$module_name = 'LTT_ADDRESS';
+$module_name = 'LTT_Address';
 $viewdefs [$module_name] = 
 array (
   'EditView' => 

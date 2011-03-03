@@ -1,5 +1,5 @@
 <?php
-$module_name = 'LTT_EMAIL';
+$module_name = 'LTT_Email';
 $listViewDefs [$module_name] = 
 array (
   'NAME' => 

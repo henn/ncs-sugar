@@ -1,5 +1,5 @@
 <?php
-$module_name='LTT_TELEPHONE';
+$module_name='LTT_Telephone';
 $subpanel_layout = array (
   'top_buttons' => 
   array (
@@ -10,7 +10,7 @@ $subpanel_layout = array (
     1 => 
     array (
       'widget_class' => 'SubPanelTopSelectButton',
-      'popup_module' => 'LTT_TELEPHONE',
+      'popup_module' => 'LTT_Telephone',
     ),
   ),
   'where' => '',
@@ -91,14 +91,14 @@ $subpanel_layout = array (
     'edit_button' => 
     array (
       'widget_class' => 'SubPanelEditButton',
-      'module' => 'LTT_TELEPHONE',
+      'module' => 'LTT_Telephone',
       'width' => '4%',
       'default' => true,
     ),
     'remove_button' => 
     array (
       'widget_class' => 'SubPanelRemoveButton',
-      'module' => 'LTT_TELEPHONE',
+      'module' => 'LTT_Telephone',
       'width' => '5%',
       'default' => true,
     ),

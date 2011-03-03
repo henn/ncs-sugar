@@ -37,12 +37,12 @@
 $relationships = array (
   'gt_household_plt_person' => 
   array (
-    'rhs_label' => 'PLT_PERSON',
+    'rhs_label' => 'PLT_Person',
     'lhs_label' => 'Household',
     'lhs_subpanel' => 'default',
     'rhs_subpanel' => 'default',
     'lhs_module' => 'GT_Household',
-    'rhs_module' => 'PLT_PERSON',
+    'rhs_module' => 'PLT_Person',
     'relationship_type' => 'many-to-many',
     'readonly' => false,
     'deleted' => false,
