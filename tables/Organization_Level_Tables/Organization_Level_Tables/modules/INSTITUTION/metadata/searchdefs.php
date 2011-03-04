@@ -1,5 +1,5 @@
 <?php
-$module_name = 'OLT_INSTITUTION';
+$module_name = 'OLT_Institution';
 $searchdefs [$module_name] = 
 array (
   'layout' => 

@@ -1,5 +1,5 @@
 <?php
-$module_name='OLT_INSTITUTION';
+$module_name='OLT_Institution';
 $subpanel_layout = array (
   'top_buttons' => 
   array (
@@ -10,7 +10,7 @@ $subpanel_layout = array (
     1 => 
     array (
       'widget_class' => 'SubPanelTopSelectButton',
-      'popup_module' => 'OLT_INSTITUTION',
+      'popup_module' => 'OLT_Institution',
     ),
   ),
   'where' => '',
@@ -59,14 +59,14 @@ $subpanel_layout = array (
     'edit_button' => 
     array (
       'widget_class' => 'SubPanelEditButton',
-      'module' => 'OLT_INSTITUTION',
+      'module' => 'OLT_Institution',
       'width' => '4%',
       'default' => true,
     ),
     'remove_button' => 
     array (
       'widget_class' => 'SubPanelRemoveButton',
-      'module' => 'OLT_INSTITUTION',
+      'module' => 'OLT_Institution',
       'width' => '5%',
       'default' => true,
     ),

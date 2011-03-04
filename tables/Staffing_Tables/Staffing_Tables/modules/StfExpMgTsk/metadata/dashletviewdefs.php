@@ -39,11 +39,11 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 
 global $current_user;
 
-$dashletData['ST_STAFF_EXP_MNGMNT_TASKSDashlet']['searchFields'] = array('date_entered'     => array('default' => ''),
+$dashletData['ST_StfExpMgTskDashlet']['searchFields'] = array('date_entered'     => array('default' => ''),
                                                           'date_modified'    => array('default' => ''),
                                                           'assigned_user_id' => array('type'    => 'assigned_user_name', 
                                                                                       'default' => $current_user->name));
-$dashletData['ST_STAFF_EXP_MNGMNT_TASKSDashlet']['columns'] =  array(   'name' => array('width'   => '40', 
+$dashletData['ST_StfExpMgTskDashlet']['columns'] =  array(   'name' => array('width'   => '40', 
                                                                       'label'   => 'LBL_LIST_NAME',
                                                                       'link'    => true,
                                                                       'default' => true), 

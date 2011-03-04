@@ -56,6 +56,3 @@ $app_list_strings['DU_NIR_REASON_CL1']['3'] = 'Demolished/Condemned Dwelling Uni
 $app_list_strings['DU_NIR_REASON_CL1']['_5'] = 'Other';
 $app_list_strings['DU_NIR_REASON_CL1']['_7'] = 'Not Applicable';
 $app_list_strings['DU_NIR_REASON_CL1']['_4'] = 'Missing in Error';
-$app_list_strings['parent_type_display']['NCSDC_EventInfo'] = 'Event Information';
-$app_list_strings['record_type_display']['NCSDC_EventInfo'] = 'Event Information';
-$app_list_strings['record_type_display_notes']['NCSDC_EventInfo'] = 'Event Information';

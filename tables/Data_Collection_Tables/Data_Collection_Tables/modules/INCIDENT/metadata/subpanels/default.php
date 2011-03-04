@@ -35,7 +35,7 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$module_name='NCSDC_INCIDENT';
+$module_name='NCSDC_Incident';
 $subpanel_layout = array(
 	'top_buttons' => array(
 		array('widget_class' => 'SubPanelTopCreateButton'),
