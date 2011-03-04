@@ -1,3 +1,12 @@
+You don't need the below instructions anymore.  The installation has been scripted.  
+
+Follow the instructions found on the wiki 
+https://sourceforge.net/apps/mediawiki/ncs-sugar/index.php?title=Installing_IDCreation_into_SugarCRM
+
+
+
+
+########################################################################
 1. Copy the "ncs_framework" folder over to the root sugarcrm directory. 
 
 The reason behind the ncs_framework folder here is that this code needed 

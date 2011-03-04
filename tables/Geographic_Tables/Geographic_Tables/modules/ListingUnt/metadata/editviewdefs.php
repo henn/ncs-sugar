@@ -31,7 +31,8 @@ array (
           0 => 
           array (
             'name' => 'name',
-            'label' => 'LBL_NAME',
+            'label' => 'Name (LIST_ID):',
+'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -41,10 +42,23 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
+          0 => 
+          array (
+            'name' => 'description',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_DESCRIPTION',
+          ),
         ),
         2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'list_id',
+            'label' => 'LBL_LIST_ID',
+          ),
+          1 => '',
+        ),
+        3 => 
         array (
           0 => 
           array (
@@ -53,7 +67,7 @@ array (
           ),
           1 => '',
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
@@ -63,7 +77,7 @@ array (
           ),
           1 => '',
         ),
-        4 => 
+        5 => 
         array (
           0 => 
           array (
@@ -71,30 +85,13 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_LIST_COMMENT',
           ),
-        ),
-        5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'gt_listing_unit_gt_dwelling_unit_name',
-          ),
+          1 => '',
         ),
         6 => 
         array (
           0 => 
           array (
-            'name' => 'gt_listingunt_gt_dwellingunt_name',
-          ),
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'gt_sndsampunt_gt_listingunt_name',
-          ),
-          1 => 
-          array (
-            'name' => 'gt_secsampunt_gt_listingunt_name',
+            'name' => 'gt_listingunt_gt_listingunt_name',
           ),
         ),
       ),
@@ -102,3 +99,4 @@ array (
   ),
 );
 ?>
+
