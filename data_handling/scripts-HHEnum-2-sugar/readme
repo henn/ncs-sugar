@@ -1,0 +1,1 @@
+These are perl scripts to process HH Enum data collected into Sugar.  It reads the Zerion schema to determine which HH Enums need processing, then creates Sugar records.
