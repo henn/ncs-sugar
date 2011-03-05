@@ -39,11 +39,11 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 
 global $current_user;
 
-$dashletData['LTT_ADDRESSDashlet']['searchFields'] = array('date_entered'     => array('default' => ''),
+$dashletData['LTT_AddressDashlet']['searchFields'] = array('date_entered'     => array('default' => ''),
                                                           'date_modified'    => array('default' => ''),
                                                           'assigned_user_id' => array('type'    => 'assigned_user_name', 
                                                                                       'default' => $current_user->name));
-$dashletData['LTT_ADDRESSDashlet']['columns'] =  array(   'name' => array('width'   => '40', 
+$dashletData['LTT_AddressDashlet']['columns'] =  array(   'name' => array('width'   => '40', 
                                                                       'label'   => 'LBL_LIST_NAME',
                                                                       'link'    => true,
                                                                       'default' => true), 

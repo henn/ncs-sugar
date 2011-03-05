@@ -1,5 +1,5 @@
 <?php
-$module_name='LTT_EMAIL';
+$module_name='LTT_Email';
 $subpanel_layout = array (
   'top_buttons' => 
   array (
@@ -10,7 +10,7 @@ $subpanel_layout = array (
     1 => 
     array (
       'widget_class' => 'SubPanelTopSelectButton',
-      'popup_module' => 'LTT_EMAIL',
+      'popup_module' => 'LTT_Email',
     ),
   ),
   'where' => '',
@@ -65,14 +65,14 @@ $subpanel_layout = array (
     'edit_button' => 
     array (
       'widget_class' => 'SubPanelEditButton',
-      'module' => 'LTT_EMAIL',
+      'module' => 'LTT_Email',
       'width' => '4%',
       'default' => true,
     ),
     'remove_button' => 
     array (
       'widget_class' => 'SubPanelRemoveButton',
-      'module' => 'LTT_EMAIL',
+      'module' => 'LTT_Email',
       'width' => '5%',
       'default' => true,
     ),

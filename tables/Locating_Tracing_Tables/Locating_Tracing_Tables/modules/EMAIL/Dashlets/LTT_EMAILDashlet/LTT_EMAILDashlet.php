@@ -43,20 +43,20 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  ********************************************************************************/
 
 require_once('include/Dashlets/DashletGeneric.php');
-require_once('modules/LTT_EMAIL/LTT_EMAIL.php');
+require_once('modules/LTT_Email/LTT_Email.php');
 
 class LTT_EMAILDashlet extends DashletGeneric { 
-    function LTT_EMAILDashlet($id, $def = null) {
+    function LTT_EmailDashlet($id, $def = null) {
 		global $current_user, $app_strings;
-		require('modules/LTT_EMAIL/metadata/dashletviewdefs.php');
+		require('modules/LTT_Email/metadata/dashletviewdefs.php');
 
         parent::DashletGeneric($id, $def);
 
-        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'LTT_EMAIL');
+        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'LTT_Email');
 
-        $this->searchFields = $dashletData['LTT_EMAILDashlet']['searchFields'];
-        $this->columns = $dashletData['LTT_EMAILDashlet']['columns'];
+        $this->searchFields = $dashletData['LTT_EmailDashlet']['searchFields'];
+        $this->columns = $dashletData['LTT_EmailDashlet']['columns'];
 
-        $this->seedBean = new LTT_EMAIL();        
+        $this->seedBean = new LTT_Email();        
     }
 }

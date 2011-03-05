@@ -44,8 +44,8 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  
 global $app_strings;
 
-$dashletMeta['OLT_LINK_PERSON_PROVIDERDashlet'] = array('module'		=> 'OLT_LINK_PERSON_PROVIDER',
-										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'OLT_LINK_PERSON_PROVIDER'), 
+$dashletMeta['OLT_LINK_PERSON_ProviderDashlet'] = array('module'		=> 'OLT_LINK_PERSON_Provider',
+										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'OLT_LINK_PERSON_Provider'), 
                                           'description' => 'A customizable view into OLT_LINK_PERSON_PROVIDER',
                                           'icon'        => 'icon_OLT_PrsnPrvdLnk_32.gif',
                                           'category'    => 'Module Views');

@@ -39,11 +39,11 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 
 global $current_user;
 
-$dashletData['GT_Study_CenterDashlet']['searchFields'] = array('date_entered'     => array('default' => ''),
+$dashletData['GT_StudyCntrDashlet']['searchFields'] = array('date_entered'     => array('default' => ''),
                                                           'date_modified'    => array('default' => ''),
                                                           'assigned_user_id' => array('type'    => 'assigned_user_name', 
                                                                                       'default' => $current_user->name));
-$dashletData['GT_Study_CenterDashlet']['columns'] =  array(   'name' => array('width'   => '40', 
+$dashletData['GT_StudyCntrDashlet']['columns'] =  array(   'name' => array('width'   => '40', 
                                                                       'label'   => 'LBL_LIST_NAME',
                                                                       'link'    => true,
                                                                       'default' => true), 

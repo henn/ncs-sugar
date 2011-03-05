@@ -1,5 +1,5 @@
 <?php
-$module_name = 'LTT_EMAIL';
+$module_name = 'LTT_Email';
 $viewdefs [$module_name] = 
 array (
   'DetailView' => 
@@ -15,7 +15,7 @@ array (
           2 => 'DELETE',
         ),
       ),
-      'maxColumns' => '2',
+      'maxColumns' => '3',
       'widths' => 
       array (
         0 => 

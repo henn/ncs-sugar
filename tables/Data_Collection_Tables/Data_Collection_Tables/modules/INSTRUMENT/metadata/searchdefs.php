@@ -1,5 +1,5 @@
 <?php
-$module_name = 'NCSDC_INSTRUMENT';
+$module_name = 'NCSDC_Instrument';
 $searchdefs [$module_name] = 
 array (
   'layout' => 

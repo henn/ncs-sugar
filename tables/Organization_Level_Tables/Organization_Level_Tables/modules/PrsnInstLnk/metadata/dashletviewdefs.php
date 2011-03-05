@@ -39,11 +39,11 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 
 global $current_user;
 
-$dashletData['OLT_LINK_PERSON_INSTITUTEDashlet']['searchFields'] = array('date_entered'     => array('default' => ''),
+$dashletData['OLT_PrsnInstLnkDashlet']['searchFields'] = array('date_entered'     => array('default' => ''),
                                                           'date_modified'    => array('default' => ''),
                                                           'assigned_user_id' => array('type'    => 'assigned_user_name', 
                                                                                       'default' => $current_user->name));
-$dashletData['OLT_LINK_PERSON_INSTITUTEDashlet']['columns'] =  array(   'name' => array('width'   => '40', 
+$dashletData['OLT_PrsnInstLnkDashlet']['columns'] =  array(   'name' => array('width'   => '40', 
                                                                       'label'   => 'LBL_LIST_NAME',
                                                                       'link'    => true,
                                                                       'default' => true), 

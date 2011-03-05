@@ -43,20 +43,20 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  ********************************************************************************/
 
 require_once('include/Dashlets/DashletGeneric.php');
-require_once('modules/OLT_PROVIDER/OLT_PROVIDER.php');
+require_once('modules/OLT_Provider/OLT_Provider.php');
 
-class OLT_PROVIDERDashlet extends DashletGeneric { 
-    function OLT_PROVIDERDashlet($id, $def = null) {
+class OLT_ProviderDashlet extends DashletGeneric { 
+    function OLT_ProviderDashlet($id, $def = null) {
 		global $current_user, $app_strings;
-		require('modules/OLT_PROVIDER/metadata/dashletviewdefs.php');
+		require('modules/OLT_Provider/metadata/dashletviewdefs.php');
 
         parent::DashletGeneric($id, $def);
 
-        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'OLT_PROVIDER');
+        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'OLT_Provider');
 
-        $this->searchFields = $dashletData['OLT_PROVIDERDashlet']['searchFields'];
-        $this->columns = $dashletData['OLT_PROVIDERDashlet']['columns'];
+        $this->searchFields = $dashletData['OLT_ProviderDashlet']['searchFields'];
+        $this->columns = $dashletData['OLT_ProviderDashlet']['columns'];
 
-        $this->seedBean = new OLT_PROVIDER();        
+        $this->seedBean = new OLT_Provider();        
     }
 }
