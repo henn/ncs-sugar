@@ -1,5 +1,5 @@
 <?php
-$module_name = 'NCSDC_INCIDENT';
+$module_name = 'NCSDC_Incident';
 $viewdefs [$module_name] = 
 array (
   'EditView' => 
@@ -164,7 +164,6 @@ array (
             'label' => 'LBL_INCLOSS_CMPTR_MODEL',
           ),
           1 => 
-
           array (
             'name' => 'incloss_cmptr_sn',
             'label' => 'LBL_INCLOSS_CMPTR_SN',
