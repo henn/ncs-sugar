@@ -6,14 +6,14 @@
 MODULE_GT="DwellingUnt DwlUntHsLnk Household\
 	ListingUnt"
 	
-MODULE_LTT="ADDRESS EMAIL TELEPHONE"
+MODULE_LTT="Address Email Telephone"
 
 MODULE_NCSDC="CntctInfo CntctLnk EventInfo\
-	INCIDENT IncMedMultS IncUnatMltS\
-	INSTRUMENT NIntRptVcnt NIRDUTpMltS\
+	Incident IncMedMultS IncUnatMltS\
+	Instrument NIntRptVcnt NIRDUTpMltS\
 	NIRNAccMltS NIRRfsMltS NonInterRpt"
 
-MODULE_OLT="INSTITUTION PROVIDER PrsnInstLnk\
+MODULE_OLT="Institution Provider PrsnInstLnk\
 	PrsnPrvdLnk"
 	
 MODULE_PLT="LkPrsPrtcpt LnkPrsHshld\
