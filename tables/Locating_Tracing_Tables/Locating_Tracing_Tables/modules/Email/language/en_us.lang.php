@@ -76,5 +76,7 @@ $mod_strings = array (
   'LBL_EMAIL_ID' => 'Email ID',
   'LBL_EMAIL_INFO_DATE' => 'Email Information Date',
   'LBL_EMAIL_INFO_UPDATE' => 'Email Information Update',
+  'LNK_IMPORT_LTT_EMAIL' => 'Import Email',
+  'LBL_LTT_EMAIL_SUBPANEL_TITLE' => 'Email',
 );
 ?>

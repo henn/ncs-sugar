@@ -32,7 +32,7 @@ array (
           array (
             'name' => 'name',
             'label' => 'Name (INCIDENT_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -226,9 +226,10 @@ array (
         ),
         18 => 
         array (
-          0 => 
+          0 => '',
+          1 => 
           array (
-            'name' => 'ncsdc_event_ncsdc_incident_name',
+            'name' => 'ncsdc_cntctinfo_ncsdc_incident_name',
           ),
         ),
       ),

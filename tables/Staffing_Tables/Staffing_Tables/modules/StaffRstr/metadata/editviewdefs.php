@@ -30,9 +30,9 @@ array (
         array (
           0 => 
           array (
- 			'name' => 'name',
+            'name' => 'name',
             'label' => 'Name (STAFF_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -97,6 +97,7 @@ array (
           array (
             'name' => 'gt_study_center_st_staff_name',
           ),
+          1 => '',
         ),
       ),
       'lbl_editview_panel1' => 
@@ -152,4 +153,3 @@ array (
   ),
 );
 ?>
-

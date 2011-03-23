@@ -268,6 +268,7 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PERSON_COMMENT',
           ),
+          1 => '',
         ),
       ),
     ),

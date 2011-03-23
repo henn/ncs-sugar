@@ -2,7 +2,7 @@
 if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
+ * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -34,6 +34,7 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
+
 /*********************************************************************************
 
  * Description:  Defines the English language pack for the base application.
@@ -45,7 +46,7 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 require_once('include/Dashlets/DashletGeneric.php');
 require_once('modules/LTT_Email/LTT_Email.php');
 
-class LTT_EMAILDashlet extends DashletGeneric { 
+class LTT_EmailDashlet extends DashletGeneric { 
     function LTT_EmailDashlet($id, $def = null) {
 		global $current_user, $app_strings;
 		require('modules/LTT_Email/metadata/dashletviewdefs.php');

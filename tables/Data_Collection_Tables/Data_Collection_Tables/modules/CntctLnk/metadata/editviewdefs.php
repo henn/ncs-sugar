@@ -32,7 +32,7 @@ array (
           array (
             'name' => 'name',
             'label' => 'Name (CONTACT_LINK_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -100,6 +100,50 @@ array (
         6 => 
         array (
           0 => '',
+          1 => '',
+        ),
+        7 => 
+        array (
+          0 => '',
+          1 => '',
+        ),
+        8 => 
+        array (
+          0 => '',
+          1 => '',
+        ),
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_cntctlnk_st_staffrstr_name',
+          ),
+          1 => 
+          array (
+            'name' => 'ncsdc_cntctlnk_ncsdc_cntctinfo_name',
+          ),
+        ),
+        10 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_cntctlnk_ncsdc_eventinfo_name',
+          ),
+          1 => 
+          array (
+            'name' => 'ncsdc_cntctlnk_ncsdc_instrument_name',
+          ),
+        ),
+        11 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_cntctlnk_plt_person_name',
+          ),
+          1 => 
+          array (
+            'name' => 'ncsdc_cntctlnk_olt_provider_name',
+          ),
         ),
       ),
     ),

@@ -35,10 +35,10 @@
  ********************************************************************************/
 
 
+$app_list_strings['moduleList']['GT_SndSampUnt'] = 'Secondary Sampling Unit (PSU)';
 $app_list_strings['moduleList']['GT_PrmSampUnt'] = 'Primary Sampling Unit (PSU)';
 $app_list_strings['moduleList']['GT_StudyCntr'] = 'Study Center (SC)';
 $app_list_strings['moduleList']['GT_DwellingUnt'] = 'Dwelling Unit (DU)';
-$app_list_strings['moduleList']['GT_SndSampUnt'] = 'Secondary Sampling Unit (PSU)';
 $app_list_strings['moduleList']['GT_Household'] = 'Household';
 $app_list_strings['moduleList']['GT_ListingUnt'] = 'Listing Unit';
 $app_list_strings['moduleList']['GT_DwlUntHsLnk'] = 'Dwelling Unit Household Linkage';

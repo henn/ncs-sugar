@@ -179,6 +179,10 @@ array (
           array (
             'name' => 'ncsdc_cntctinfo_ncsdc_eventinfo_name',
           ),
+          1 => 
+          array (
+            'name' => 'plt_participant_ncsdc_eventinfo_name',
+          ),
         ),
       ),
     ),

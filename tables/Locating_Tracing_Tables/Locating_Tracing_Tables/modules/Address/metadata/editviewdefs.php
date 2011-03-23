@@ -32,7 +32,7 @@ array (
           array (
             'name' => 'name',
             'label' => 'Name (ADDRESS_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -204,6 +204,21 @@ array (
           0 => 
           array (
             'name' => 'gt_dwellingunt_ltt_address_name',
+          ),
+          1 => 
+          array (
+            'name' => 'plt_person_ltt_address_name',
+          ),
+        ),
+        15 => 
+        array (
+          0 => 
+          array (
+            'name' => 'olt_provider_ltt_address_name',
+          ),
+          1 => 
+          array (
+            'name' => 'olt_institution_ltt_address_name',
           ),
         ),
       ),

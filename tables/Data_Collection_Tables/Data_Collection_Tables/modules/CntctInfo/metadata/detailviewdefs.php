@@ -200,6 +200,7 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_CONTACT_COMMENT',
           ),
+          1 => '',
         ),
       ),
     ),

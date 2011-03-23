@@ -141,9 +141,24 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PHONE_COMMENT',
           ),
+          1 => '',
+        ),
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'plt_person_ltt_telephone_name',
+          ),
           1 => 
           array (
-            'name' => 'gt_dwellingunt_ltt_telephone_name',
+            'name' => 'olt_provider_ltt_telephone_name',
+          ),
+        ),
+        10 => 
+        array (
+          0 => 
+          array (
+            'name' => 'olt_institution_ltt_telephone_name',
           ),
         ),
       ),

@@ -105,6 +105,49 @@ array (
             'label' => 'LBL_SPECIMEN_ID',
           ),
         ),
+        6 => 
+        array (
+          0 => '',
+          1 => '',
+        ),
+        7 => 
+        array (
+          0 => '',
+          1 => '',
+        ),
+        8 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_cntctlnk_st_staffrstr_name',
+          ),
+          1 => 
+          array (
+            'name' => 'ncsdc_cntctlnk_ncsdc_cntctinfo_name',
+          ),
+        ),
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_cntctlnk_ncsdc_eventinfo_name',
+          ),
+          1 => 
+          array (
+            'name' => 'ncsdc_cntctlnk_ncsdc_instrument_name',
+          ),
+        ),
+        10 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_cntctlnk_plt_person_name',
+          ),
+          1 => 
+          array (
+            'name' => 'ncsdc_cntctlnk_olt_provider_name',
+          ),
+        ),
       ),
     ),
   ),

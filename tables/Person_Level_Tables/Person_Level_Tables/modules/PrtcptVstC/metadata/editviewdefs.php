@@ -32,7 +32,7 @@ array (
           array (
             'name' => 'name',
             'label' => 'Name (PID_VISIT_CONSENT_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -117,6 +117,13 @@ array (
           1 => 
           array (
             'name' => 'plt_participant_plt_prtcptvstc_name',
+          ),
+        ),
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_cntctinfo_plt_prtcptvstc_name',
           ),
         ),
       ),

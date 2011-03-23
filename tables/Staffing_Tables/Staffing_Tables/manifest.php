@@ -51,8 +51,8 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'Staffing_Tables',
-          'published_date' => '2011-02-14 22:47:27',
+          'published_date' => '2011-03-23 03:44:58',
           'type' => 'module',
-          'version' => '1297723647',
+          'version' => '1300851898',
           'remove_tables' => 'prompt',
           );

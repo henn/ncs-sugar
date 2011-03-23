@@ -77,5 +77,7 @@ $mod_strings = array (
   'LBL_TEXT_PERMISSION' => 'Text Permission',
   'LBL_PHONE_COMMENT' => 'Phone Comment',
   'LBL_PHONE_NBR' => 'Phone Number',
+  'LNK_IMPORT_LTT_TELEPHONE' => 'Import Telephone',
+  'LBL_LTT_TELEPHONE_SUBPANEL_TITLE' => 'Telephone',
 );
 ?>

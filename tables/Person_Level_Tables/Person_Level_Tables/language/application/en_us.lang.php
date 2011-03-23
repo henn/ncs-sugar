@@ -35,8 +35,8 @@
  ********************************************************************************/
 
 
-$app_list_strings['moduleList']['PLT_Participant'] = 'Participant';
 $app_list_strings['moduleList']['PLT_Person'] = 'Person';
+$app_list_strings['moduleList']['PLT_Participant'] = 'Participant';
 $app_list_strings['moduleList']['PLT_PrtcptVstC'] = 'Participant Visit Consent';
 $app_list_strings['moduleList']['PLT_LnkPrsHshld'] = 'Household-Person Linkage';
 $app_list_strings['moduleList']['PLT_LkPrsPrtcpt'] = 'Person-Participant Linkage';

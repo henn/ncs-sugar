@@ -46,18 +46,18 @@
           ),
           'readme'=>'',
           'key'=>'LTT',
-          'author' => 'CM - SD',
+          'author' => 'CM',
           'description' => '',
           'icon' => '',
           'is_uninstallable' => true,
-          'name' => 'Locating_Tracing_Tables',
-          'published_date' => '2011-02-28 08:46:45',
+          'name' => 'project_Locating_Tracing_Tables',
+          'published_date' => '2011-03-23 03:44:07',
           'type' => 'module',
-          'version' => '1297723605',
+          'version' => '1300851847',
           'remove_tables' => 'prompt',
           );
 $installdefs = array (
-  'id' => 'Deployed_Locating_Tracing_Tables',
+  'id' => 'project_Locating_Tracing_Tables',
   'copy' => 
   array (
     0 => 

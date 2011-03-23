@@ -32,7 +32,7 @@ array (
           array (
             'name' => 'name',
             'label' => 'Name (EVENT_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -170,6 +170,10 @@ array (
           0 => 
           array (
             'name' => 'ncsdc_cntctinfo_ncsdc_eventinfo_name',
+          ),
+          1 => 
+          array (
+            'name' => 'plt_participant_ncsdc_eventinfo_name',
           ),
         ),
       ),

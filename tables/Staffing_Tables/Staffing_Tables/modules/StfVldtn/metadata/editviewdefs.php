@@ -30,9 +30,9 @@ array (
         array (
           0 => 
           array (
- 			'name' => 'name',
+            'name' => 'name',
             'label' => 'Name (STAFF_VAL_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -101,9 +101,15 @@ array (
             'name' => 'st_staffrstr_st_stfvldtn_name',
           ),
         ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_eventinfo_st_stfvldtn_name',
+          ),
+        ),
       ),
     ),
   ),
 );
 ?>
-

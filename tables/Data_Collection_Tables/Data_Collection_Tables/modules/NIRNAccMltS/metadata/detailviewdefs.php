@@ -69,10 +69,7 @@ array (
         ),
         3 => 
         array (
-          0 => 
-          array (
-            'name' => 'ncsdc_eventinfo_ncsdc_nirnaccmlts_name',
-          ),
+          0 => '',
         ),
         4 => 
         array (

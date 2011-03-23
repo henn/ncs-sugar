@@ -32,7 +32,7 @@ array (
           array (
             'name' => 'name',
             'label' => 'Name (PERSON_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => '',
         ),
@@ -174,8 +174,6 @@ array (
           array (
             'name' => 'pref_contact',
             'studio' => 'visible',
-
-
             'label' => 'LBL_PREF_CONTACT',
           ),
           1 => 
@@ -262,10 +260,10 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PERSON_COMMENT',
           ),
+          1 => '',
         ),
       ),
     ),
   ),
 );
 ?>
-

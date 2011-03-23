@@ -32,7 +32,7 @@ array (
           array (
             'name' => 'name',
             'label' => 'Name (INC_UNANTICIPATED_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -57,10 +57,7 @@ array (
         ),
         3 => 
         array (
-          0 => 
-          array (
-            'name' => 'ncsdc_eventinfo_ncsdc_incunatmlts_name',
-          ),
+          0 => '',
           1 => '',
         ),
         4 => 

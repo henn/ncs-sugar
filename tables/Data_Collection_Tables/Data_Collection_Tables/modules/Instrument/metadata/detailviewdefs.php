@@ -180,6 +180,7 @@ array (
           array (
             'name' => 'ncsdc_event_ncsdc_instrument_name',
           ),
+          1 => '',
         ),
       ),
     ),
