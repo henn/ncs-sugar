@@ -34,10 +34,6 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-
-$app_list_strings['moduleList']['NCSDC_CONTACT'] = NULL;
-$app_list_strings['moduleList']['NCSDC_INCIDENT'] = 'Incident';
-$app_list_strings['moduleList']['NCSDC_INSTRUMENT'] = 'Instrument Information';
 $app_list_strings['moduleList']['NCSDC_EventInfo'] = 'Event Information';
 $app_list_strings['moduleList']['NCSDC_Instrument'] = 'Instrument Information';
 $app_list_strings['moduleList']['NCSDC_IncMedMultS'] = 'Incident Media Multi-Select';
