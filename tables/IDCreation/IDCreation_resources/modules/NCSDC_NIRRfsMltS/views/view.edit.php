@@ -5,9 +5,9 @@
 	require_once('include/MVC/View/views/view.edit.php');
 	require_once 'include/utils.php';
 
-	class NCSDC_MIRRfsMltSViewEdit extends ViewEdit {
+	class NCSDC_NIRRfsMltSViewEdit extends ViewEdit {
 		
-		function NCSDC_MIRRfsMltSViewEdit(){
+		function NCSDC_NIRRfsMltSViewEdit(){
 			parent::ViewEdit();
 		}
 

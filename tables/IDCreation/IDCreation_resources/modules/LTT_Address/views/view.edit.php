@@ -5,9 +5,9 @@
 	require_once('include/MVC/View/views/view.edit.php');
 	require_once 'include/utils.php';
 
-	class LTT_ADDRESSViewEdit extends ViewEdit {
+	class LTT_AddressViewEdit extends ViewEdit {
 		
-		function LTT_ADDRESSViewEdit(){
+		function LTT_AddressViewEdit(){
 			parent::ViewEdit();
 		}
 
