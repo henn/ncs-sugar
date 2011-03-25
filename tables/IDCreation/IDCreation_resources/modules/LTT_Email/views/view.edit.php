@@ -5,9 +5,9 @@
 	require_once('include/MVC/View/views/view.edit.php');
 	require_once 'include/utils.php';
 
-	class LTT_EMAILViewEdit extends ViewEdit {
+	class LTT_EmailViewEdit extends ViewEdit {
 		
-		function LTT_EMAILViewEdit(){
+		function LTT_EmailViewEdit(){
 			parent::ViewEdit();
 		}
 

@@ -43,20 +43,20 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  ********************************************************************************/
 
 require_once('include/Dashlets/DashletGeneric.php');
-require_once('modules/OLT_LINK_PERSON_PROVIDER/OLT_LINK_PERSON_PROVIDER.php');
+require_once('modules/OLT_LINK_Person_Provider/OLT_LINK_Person_Provider.php');
 
-class OLT_LINK_PERSON_PROVIDERDashlet extends DashletGeneric { 
-    function OLT_LINK_PERSON_PROVIDERDashlet($id, $def = null) {
+class OLT_LINK_Person_ProviderDashlet extends DashletGeneric { 
+    function OLT_LINK_Person_ProviderDashlet($id, $def = null) {
 		global $current_user, $app_strings;
-		require('modules/OLT_LINK_PERSON_PROVIDER/metadata/dashletviewdefs.php');
+		require('modules/OLT_LINK_Person_Provider/metadata/dashletviewdefs.php');
 
         parent::DashletGeneric($id, $def);
 
         if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'OLT_LINK_PERSON_PROVIDER');
 
-        $this->searchFields = $dashletData['OLT_LINK_PERSON_ProviderDashlet']['searchFields'];
-        $this->columns = $dashletData['OLT_LINK_PERSON_ProviderDashlet']['columns'];
+        $this->searchFields = $dashletData['OLT_LINK_Person_ProviderDashlet']['searchFields'];
+        $this->columns = $dashletData['OLT_LINK_Person_ProviderDashlet']['columns'];
 
-        $this->seedBean = new OLT_LINK_PERSON_Provider();        
+        $this->seedBean = new OLT_LINK_Person_Provider();        
     }
 }

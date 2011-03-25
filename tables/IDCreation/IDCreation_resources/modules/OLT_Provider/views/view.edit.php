@@ -5,9 +5,9 @@
 	require_once('include/MVC/View/views/view.edit.php');
 	require_once 'include/utils.php';
 
-	class OLT_PROVIDERViewEdit extends ViewEdit {
+	class OLT_ProviderViewEdit extends ViewEdit {
 		
-		function OLT_PROVIDERViewEdit(){
+		function OLT_ProviderViewEdit(){
 			parent::ViewEdit();
 		}
 
