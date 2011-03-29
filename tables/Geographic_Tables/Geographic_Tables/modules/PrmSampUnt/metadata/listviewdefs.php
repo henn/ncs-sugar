@@ -22,13 +22,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'PSU_NAME' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_PSU_NAME',
-    'width' => '10%',
-    'default' => true,
-  ),
   'RECRUIT_TYPE' => 
   array (
     'type' => 'enum',

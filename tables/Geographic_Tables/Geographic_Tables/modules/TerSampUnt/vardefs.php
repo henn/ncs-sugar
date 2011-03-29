@@ -37,25 +37,6 @@
 $vardefs = array (
   'fields' => 
   array (
-    'name' => 
-    array (
-      'name' => 'name',
-      'vname' => 'LBL_NAME',
-      'type' => 'name',
-      'dbType' => 'varchar',
-      'len' => '36',
-      'unified_search' => true,
-      'required' => false,
-      'importable' => 'required',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => '',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'size' => '20',
-    ),
     'sc_id' => 
     array (
       'required' => false,
@@ -73,11 +54,32 @@ $vardefs = array (
       'len' => '36',
       'size' => '20',
     ),
-    'ssu_name' => 
+    'psu_id' => 
     array (
       'required' => false,
-      'name' => 'ssu_name',
-      'vname' => 'LBL_SSU_NAME',
+      'name' => 'psu_id',
+      'vname' => 'LBL_PSU_ID',
+      'type' => 'enum',
+      'massupdate' => 0,
+      'default' => '20000054',
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'len' => 100,
+      'size' => '20',
+      'options' => 'PSU_CL1',
+      'studio' => 'visible',
+      'dependency' => false,
+    ),
+    'ssu_id' => 
+    array (
+      'required' => false,
+      'name' => 'ssu_id',
+      'vname' => 'LBL_SSU_ID',
       'type' => 'varchar',
       'massupdate' => 0,
       'comments' => '',
@@ -90,28 +92,30 @@ $vardefs = array (
       'len' => '36',
       'size' => '20',
     ),
-    'transaction_type' => 
+    'name' => 
     array (
-      'required' => false,
-      'name' => 'transaction_type',
-      'vname' => 'LBL_TRANSACTION_TYPE',
-      'type' => 'varchar',
+      'name' => 'name',
+      'vname' => 'LBL_NAME',
+      'type' => 'name',
+      'dbType' => 'varchar',
+      'len' => '36',
+      'unified_search' => true,
+      'required' => true,
+      'importable' => 'required',
       'massupdate' => 0,
       'comments' => '',
       'help' => '',
-      'importable' => 'true',
       'duplicate_merge' => 'disabled',
       'duplicate_merge_dom_value' => '0',
       'audited' => false,
       'reportable' => true,
-      'len' => '36',
       'size' => '20',
     ),
-    'psu_id' => 
+    'tsu_name' => 
     array (
       'required' => false,
-      'name' => 'psu_id',
-      'vname' => 'LBL_PSU_ID',
+      'name' => 'tsu_name',
+      'vname' => 'LBL_TSU_NAME',
       'type' => 'enum',
       'massupdate' => 0,
       'default' => '20000039',

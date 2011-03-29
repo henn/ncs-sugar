@@ -49,6 +49,7 @@ array (
           1 => 
           array (
             'name' => 'psu_id',
+            'studio' => 'visible',
             'label' => 'LBL_PSU_ID',
           ),
         ),
@@ -72,6 +73,10 @@ array (
             'name' => 'description',
             'comment' => 'Full text of the note',
             'label' => 'LBL_DESCRIPTION',
+          ),
+          1 => 
+          array (
+            'name' => 'gt_prmsampunt_gt_secsampunt_name',
           ),
         ),
       ),

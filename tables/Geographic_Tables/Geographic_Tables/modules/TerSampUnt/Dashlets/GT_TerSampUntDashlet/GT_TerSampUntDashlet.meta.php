@@ -1,4 +1,5 @@
-    <?php
+<?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -34,36 +35,18 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
+/*********************************************************************************
 
-    $manifest = array (
-         'acceptable_sugar_versions' => 
-          array (
-            '6.1.2'
-          ),
-          'acceptable_sugar_flavors' =>
-          array(
-            'CE', 'PRO','ENT'
-          ),
-          'readme'=>'',
-          'key'=>'GT',
-          'author' => '',
-          'description' => '',
-          'icon' => '',
-          'is_uninstallable' => true,
-          'name' => 'project_Geographic_Tables',
-          'published_date' => '2011-03-29 19:59:36',
-          'type' => 'module',
-          'version' => '1301428776',
-          'remove_tables' => 'prompt',
-          );
-$installdefs = array (
-  'id' => 'project_Geographic_Tables',
-  'copy' => 
-  array (
-    0 => 
-    array (
-      'from' => '<basepath>/Geographic_Tables',
-      'to' => 'custom/modulebuilder/packages/Geographic_Tables',
-    ),
-  ),
-);
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+ 
+global $app_strings;
+
+$dashletMeta['GT_TerSampUntDashlet'] = array('module'		=> 'GT_TerSampUnt',
+										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'GT_TerSampUnt'), 
+                                          'description' => 'A customizable view into GT_TerSampUnt',
+                                          'icon'        => 'icon_GT_TerSampUnt_32.gif',
+                                          'category'    => 'Module Views');

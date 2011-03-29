@@ -20,14 +20,6 @@ array (
         'default' => true,
         'name' => 'sc_id',
       ),
-      'psu_name' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_PSU_NAME',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'psu_name',
-      ),
       'recruit_type' => 
       array (
         'type' => 'enum',
@@ -54,14 +46,6 @@ array (
         'width' => '10%',
         'default' => true,
         'name' => 'sc_id',
-      ),
-      'psu_name' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_PSU_NAME',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'psu_name',
       ),
       'recruit_type' => 
       array (

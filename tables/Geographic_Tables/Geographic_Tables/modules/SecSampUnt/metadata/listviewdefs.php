@@ -25,10 +25,12 @@ array (
   ),
   'PSU_ID' => 
   array (
-    'type' => 'varchar',
-    'label' => 'LBL_PSU_ID',
-    'width' => '10%',
+    'type' => 'enum',
     'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_PSU_ID',
+    'sortable' => false,
+    'width' => '10%',
   ),
   'TRANSACTION_TYPE' => 
   array (

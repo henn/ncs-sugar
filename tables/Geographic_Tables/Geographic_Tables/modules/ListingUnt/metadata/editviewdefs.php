@@ -32,7 +32,7 @@ array (
           array (
             'name' => 'name',
             'label' => 'Name (LIST_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -100,10 +100,13 @@ array (
           array (
             'name' => 'gt_sndsampunt_gt_listingunt_name',
           ),
+          1 => 
+          array (
+            'name' => 'gt_tersampunt_gt_listingunt_name',
+          ),
         ),
       ),
     ),
   ),
 );
 ?>
-

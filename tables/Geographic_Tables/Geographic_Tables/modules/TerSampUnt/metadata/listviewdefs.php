@@ -1,4 +1,5 @@
-    <?php
+<?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -35,35 +36,21 @@
  ********************************************************************************/
 
 
-    $manifest = array (
-         'acceptable_sugar_versions' => 
-          array (
-            '6.1.2'
-          ),
-          'acceptable_sugar_flavors' =>
-          array(
-            'CE', 'PRO','ENT'
-          ),
-          'readme'=>'',
-          'key'=>'GT',
-          'author' => '',
-          'description' => '',
-          'icon' => '',
-          'is_uninstallable' => true,
-          'name' => 'project_Geographic_Tables',
-          'published_date' => '2011-03-29 19:59:36',
-          'type' => 'module',
-          'version' => '1301428776',
-          'remove_tables' => 'prompt',
-          );
-$installdefs = array (
-  'id' => 'project_Geographic_Tables',
-  'copy' => 
-  array (
-    0 => 
-    array (
-      'from' => '<basepath>/Geographic_Tables',
-      'to' => 'custom/modulebuilder/packages/Geographic_Tables',
-    ),
-  ),
+
+
+$module_name = 'GT_TerSampUnt';
+$listViewDefs[$module_name] = array(
+	'NAME' => array(
+		'width' => '32', 
+		'label' => 'LBL_NAME', 
+		'default' => true,
+        'link' => true),         
+	'ASSIGNED_USER_NAME' => array(
+		'width' => '9', 
+		'label' => 'LBL_ASSIGNED_TO_NAME',
+		'module' => 'Employees',
+        'id' => 'ASSIGNED_USER_ID',
+        'default' => true),
+	
 );
+?>

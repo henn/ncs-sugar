@@ -1,4 +1,4 @@
-    <?php
+<?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -34,36 +34,27 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-
-    $manifest = array (
-         'acceptable_sugar_versions' => 
-          array (
-            '6.1.2'
-          ),
-          'acceptable_sugar_flavors' =>
-          array(
-            'CE', 'PRO','ENT'
-          ),
-          'readme'=>'',
-          'key'=>'GT',
-          'author' => '',
-          'description' => '',
-          'icon' => '',
-          'is_uninstallable' => true,
-          'name' => 'project_Geographic_Tables',
-          'published_date' => '2011-03-29 19:59:36',
-          'type' => 'module',
-          'version' => '1301428776',
-          'remove_tables' => 'prompt',
-          );
-$installdefs = array (
-  'id' => 'project_Geographic_Tables',
-  'copy' => 
+$module_name = 'GT_TerSampUnt';
+$viewdefs[$module_name]['QuickCreate'] = array(
+    'templateMeta' => array('maxColumns' => '2', 
+                            'widths' => array(
+                                            array('label' => '10', 'field' => '30'), 
+                                            array('label' => '10', 'field' => '30')
+                                            ),                                                                                                                                    
+                                            ),
+                                            
+                                            
+ 'panels' =>array (
+  'default' => 
   array (
-    0 => 
+    
     array (
-      'from' => '<basepath>/Geographic_Tables',
-      'to' => 'custom/modulebuilder/packages/Geographic_Tables',
+      'name',
+      'assigned_user_name',
     ),
   ),
+                                                    
+),
+                        
 );
+?>

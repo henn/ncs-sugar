@@ -42,7 +42,7 @@ $vardefs = array (
       'required' => false,
       'name' => 'sc_name',
       'vname' => 'LBL_SC_NAME',
-      'type' => 'varchar',
+      'type' => 'enum',
       'massupdate' => 0,
       'comments' => '',
       'help' => 'Study Center Name',
@@ -53,6 +53,10 @@ $vardefs = array (
       'reportable' => true,
       'len' => '100',
       'size' => '20',
+      'default' => '20000038',
+      'options' => 'STUDY_CENTER_CL1',
+      'studio' => 'visible',
+      'dependency' => false,
     ),
     'comments' => 
     array (

@@ -1,4 +1,4 @@
-    <?php
+<?php
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -34,36 +34,38 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-
-    $manifest = array (
-         'acceptable_sugar_versions' => 
-          array (
-            '6.1.2'
-          ),
-          'acceptable_sugar_flavors' =>
-          array(
-            'CE', 'PRO','ENT'
-          ),
-          'readme'=>'',
-          'key'=>'GT',
-          'author' => '',
-          'description' => '',
-          'icon' => '',
-          'is_uninstallable' => true,
-          'name' => 'project_Geographic_Tables',
-          'published_date' => '2011-03-29 19:59:36',
-          'type' => 'module',
-          'version' => '1301428776',
-          'remove_tables' => 'prompt',
-          );
-$installdefs = array (
-  'id' => 'project_Geographic_Tables',
-  'copy' => 
-  array (
-    0 => 
-    array (
-      'from' => '<basepath>/Geographic_Tables',
-      'to' => 'custom/modulebuilder/packages/Geographic_Tables',
-    ),
-  ),
+$mod_strings = array (
+  'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
+  'LBL_ASSIGNED_TO_NAME' => 'User',
+  'LBL_ID' => 'ID',
+  'LBL_DATE_ENTERED' => 'Date Created',
+  'LBL_DATE_MODIFIED' => 'Date Modified',
+  'LBL_MODIFIED' => 'Modified By',
+  'LBL_MODIFIED_ID' => 'Modified By Id',
+  'LBL_MODIFIED_NAME' => 'Modified By Name',
+  'LBL_CREATED' => 'Created By',
+  'LBL_CREATED_ID' => 'Created By Id',
+  'LBL_DESCRIPTION' => 'Description',
+  'LBL_DELETED' => 'Deleted',
+  'LBL_NAME' => 'TSU ID',
+  'LBL_CREATED_USER' => 'Created by User',
+  'LBL_MODIFIED_USER' => 'Modified by User',
+  'LBL_LIST_NAME' => 'Name',
+  'LBL_LIST_FORM_TITLE' => 'Tertiary Sampling Unit (TSU) List',
+  'LBL_MODULE_NAME' => 'Tertiary Sampling Unit (TSU)',
+  'LBL_MODULE_TITLE' => 'Tertiary Sampling Unit (TSU)',
+  'LBL_HOMEPAGE_TITLE' => 'My Tertiary Sampling Unit (TSU)',
+  'LNK_NEW_RECORD' => 'Create Tertiary Sampling Unit (TSU)',
+  'LNK_LIST' => 'View Tertiary Sampling Unit (TSU)',
+  'LNK_IMPORT_GT_TERSAMPUNT' => 'Import Tertiary Sampling Unit (TSU)',
+  'LBL_SEARCH_FORM_TITLE' => 'Search Tertiary Sampling Unit (TSU)',
+  'LBL_HISTORY_SUBPANEL_TITLE' => 'View History',
+  'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
+  'LBL_GT_TERSAMPUNT_SUBPANEL_TITLE' => 'Tertiary Sampling Unit (TSU)',
+  'LBL_NEW_FORM_TITLE' => 'New Tertiary Sampling Unit (TSU)',
+  'LBL_SC_ID' => 'Study Center ID',
+  'LBL_PSU_ID' => 'PSU ID',
+  'LBL_SSU_ID' => 'SSU ID',
+  'LBL_TSU_NAME' => 'TSU Name',
 );
+?>

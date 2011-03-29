@@ -1,5 +1,5 @@
 <?php
-$module_name = 'GT_ListingUnt';
+$module_name = 'GT_TerSampUnt';
 $viewdefs [$module_name] = 
 array (
   'DetailView' => 
@@ -50,60 +50,58 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
+          0 => 
+          array (
+            'name' => 'date_entered',
+            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
+            'label' => 'LBL_DATE_ENTERED',
+          ),
+          1 => 
+          array (
+            'name' => 'date_modified',
+            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
+            'label' => 'LBL_DATE_MODIFIED',
+          ),
         ),
         2 => 
         array (
           0 => 
           array (
-            'name' => 'list_line',
-            'label' => 'LBL_LIST_LINE',
+            'name' => 'tsu_name',
+            'studio' => 'visible',
+            'label' => 'LBL_TSU_NAME',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'sc_id',
+            'label' => 'LBL_SC_ID',
+          ),
         ),
         3 => 
         array (
           0 => 
           array (
-            'name' => 'list_source',
+            'name' => 'psu_id',
             'studio' => 'visible',
-            'label' => 'LBL_LIST_SOURCE',
+            'label' => 'LBL_PSU_ID',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'ssu_id',
+            'label' => 'LBL_SSU_ID',
+          ),
         ),
         4 => 
         array (
           0 => 
           array (
-            'name' => 'list_comment',
-            'studio' => 'visible',
-            'label' => 'LBL_LIST_COMMENT',
-          ),
-        ),
-        5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'gt_listing_unit_gt_dwelling_unit_name',
-          ),
-        ),
-        6 => 
-        array (
-          0 => 
-          array (
-            'name' => 'gt_listingunt_gt_dwellingunt_name',
-          ),
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'gt_sndsampunt_gt_listingunt_name',
+            'name' => 'description',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_DESCRIPTION',
           ),
           1 => 
           array (
-            'name' => 'gt_tersampunt_gt_listingunt_name',
+            'name' => 'gt_secsampunt_gt_tersampunt_name',
           ),
         ),
       ),

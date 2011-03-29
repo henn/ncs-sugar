@@ -37,8 +37,16 @@ array (
       array (
         0 => 
         array (
-          0 => 'name',
-          1 => 'assigned_user_name',
+          0 => 
+          array (
+            'name' => 'name',
+            'label' => 'LBL_NAME',
+          ),
+          1 => 
+          array (
+            'name' => 'assigned_user_name',
+            'label' => 'LBL_ASSIGNED_TO_NAME',
+          ),
         ),
         1 => 
         array (
@@ -65,6 +73,7 @@ array (
           1 => 
           array (
             'name' => 'psu_id',
+            'studio' => 'visible',
             'label' => 'LBL_PSU_ID',
           ),
         ),
@@ -83,7 +92,16 @@ array (
         ),
         4 => 
         array (
-          0 => 'description',
+          0 => 
+          array (
+            'name' => 'description',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_DESCRIPTION',
+          ),
+          1 => 
+          array (
+            'name' => 'gt_prmsampunt_gt_secsampunt_name',
+          ),
         ),
       ),
     ),
