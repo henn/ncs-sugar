@@ -94,10 +94,6 @@ array (
         array (
           0 => 
           array (
-            'name' => 'st_staff_st_staff_validation_name',
-          ),
-          1 => 
-          array (
             'name' => 'st_staffrstr_st_stfvldtn_name',
           ),
         ),
