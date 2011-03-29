@@ -1,7 +1,8 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
- * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
+ * SugarCRM, Inc. Copyright (C) 2004-2010 SugarCRM Inc.
  * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -33,7 +34,29 @@
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
+/*********************************************************************************
 
-$relationships = array (
-);
-?>
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+
+require_once('include/Dashlets/DashletGeneric.php');
+require_once('modules/NCSDC_INCIDENT/NCSDC_INCIDENT.php');
+
+class NCSDC_INCIDENTDashlet extends DashletGeneric { 
+    function NCSDC_INCIDENTDashlet($id, $def = null) {
+		global $current_user, $app_strings;
+		require('modules/NCSDC_INCIDENT/metadata/dashletviewdefs.php');
+
+        parent::DashletGeneric($id, $def);
+
+        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'NCSDC_INCIDENT');
+
+        $this->searchFields = $dashletData['NCSDC_INCIDENTDashlet']['searchFields'];
+        $this->columns = $dashletData['NCSDC_INCIDENTDashlet']['columns'];
+
+        $this->seedBean = new NCSDC_INCIDENT();        
+    }
+}

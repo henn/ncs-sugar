@@ -1,4 +1,5 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -34,6 +35,18 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$relationships = array (
-);
-?>
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+ 
+global $app_strings;
+
+$dashletMeta['GT_SecSampUntDashlet'] = array('module'		=> 'GT_SecSampUnt',
+										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'GT_SecSampUnt'), 
+                                          'description' => 'A customizable view into GT_SecSampUnt',
+                                          'icon'        => 'icon_GT_SecSampUnt_32.gif',
+                                          'category'    => 'Module Views');

@@ -34,6 +34,17 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$relationships = array (
+$config = array (
+  'assignable' => true,
+  'acl' => true,
+  'has_tab' => true,
+  'studio' => true,
+  'audit' => true,
+  'templates' => 
+  array (
+    'basic' => 1,
+  ),
+  'label' => 'Secondary Sampling Unit (SSU)',
+  'importable' => true,
 );
 ?>

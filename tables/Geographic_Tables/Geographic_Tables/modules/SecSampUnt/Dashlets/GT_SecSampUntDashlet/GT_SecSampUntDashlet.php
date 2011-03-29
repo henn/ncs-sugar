@@ -1,4 +1,5 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -34,6 +35,29 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$relationships = array (
-);
-?>
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+
+require_once('include/Dashlets/DashletGeneric.php');
+require_once('modules/GT_SecSampUnt/GT_SecSampUnt.php');
+
+class GT_SecSampUntDashlet extends DashletGeneric { 
+    function GT_SecSampUntDashlet($id, $def = null) {
+		global $current_user, $app_strings;
+		require('modules/GT_SecSampUnt/metadata/dashletviewdefs.php');
+
+        parent::DashletGeneric($id, $def);
+
+        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'GT_SecSampUnt');
+
+        $this->searchFields = $dashletData['GT_SecSampUntDashlet']['searchFields'];
+        $this->columns = $dashletData['GT_SecSampUntDashlet']['columns'];
+
+        $this->seedBean = new GT_SecSampUnt();        
+    }
+}
