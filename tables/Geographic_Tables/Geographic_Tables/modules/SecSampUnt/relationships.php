@@ -34,24 +34,21 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$app_list_strings['moduleList']['NCSDC_EventInfo'] = 'Event Information';
-$app_list_strings['moduleList']['NCSDC_Instrument'] = 'Instrument Information';
-$app_list_strings['moduleList']['NCSDC_IncMedMultS'] = 'Incident Media Multi-Select';
-$app_list_strings['moduleList']['NCSDC_NIRNAccMltS'] = 'NIR No Access Multi-Select';
-$app_list_strings['moduleList']['NCSDC_IncUnatMltS'] = 'Incident Unanticipated Multi-Select';
-$app_list_strings['moduleList']['NCSDC_NIRRfsMltS'] = 'NIR Refusal Multi-Select';
-$app_list_strings['moduleList']['NCSDC_CntctInfo'] = 'Contact Information';
-$app_list_strings['moduleList']['NCSDC_NonInterRpt'] = 'Non Interview Report';
-$app_list_strings['moduleList']['NCSDC_Incident'] = 'Incident';
-$app_list_strings['moduleList']['NCSDC_NIntRptVcnt'] = 'NIR Vacant Multi-Select';
-$app_list_strings['moduleList']['NCSDC_NIRDUTpMltS'] = 'NIR DU Type Multi Select';
-$app_list_strings['moduleList']['NCSDC_CntctLnk'] = 'Contact Linking';
-$app_list_strings['DU_NIR_REASON_CL1']['1'] = 'Vacant Dwelling Unit';
-$app_list_strings['DU_NIR_REASON_CL1']['2'] = 'Unable to Access';
-$app_list_strings['DU_NIR_REASON_CL1']['3'] = 'Demolished/Condemned Dwelling Unit';
-$app_list_strings['DU_NIR_REASON_CL1']['_5'] = 'Other';
-$app_list_strings['DU_NIR_REASON_CL1']['_7'] = 'Not Applicable';
-$app_list_strings['DU_NIR_REASON_CL1']['_4'] = 'Missing in Error';
-$app_list_strings['parent_type_display']['NCSDC_EventInfo'] = 'Event Information';
-$app_list_strings['record_type_display']['NCSDC_EventInfo'] = 'Event Information';
-$app_list_strings['record_type_display_notes']['NCSDC_EventInfo'] = 'Event Information';
+$relationships = array (
+  'gt_secsampunt_gt_listingunt' => 
+  array (
+    'rhs_label' => 'Listing Unit',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'GT_SecSampUnt',
+    'rhs_module' => 'GT_ListingUnt',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'gt_secsampunt_gt_listingunt',
+  ),
+);
+?>

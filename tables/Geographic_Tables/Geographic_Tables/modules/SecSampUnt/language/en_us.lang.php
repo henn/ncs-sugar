@@ -34,24 +34,38 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$app_list_strings['moduleList']['NCSDC_EventInfo'] = 'Event Information';
-$app_list_strings['moduleList']['NCSDC_Instrument'] = 'Instrument Information';
-$app_list_strings['moduleList']['NCSDC_IncMedMultS'] = 'Incident Media Multi-Select';
-$app_list_strings['moduleList']['NCSDC_NIRNAccMltS'] = 'NIR No Access Multi-Select';
-$app_list_strings['moduleList']['NCSDC_IncUnatMltS'] = 'Incident Unanticipated Multi-Select';
-$app_list_strings['moduleList']['NCSDC_NIRRfsMltS'] = 'NIR Refusal Multi-Select';
-$app_list_strings['moduleList']['NCSDC_CntctInfo'] = 'Contact Information';
-$app_list_strings['moduleList']['NCSDC_NonInterRpt'] = 'Non Interview Report';
-$app_list_strings['moduleList']['NCSDC_Incident'] = 'Incident';
-$app_list_strings['moduleList']['NCSDC_NIntRptVcnt'] = 'NIR Vacant Multi-Select';
-$app_list_strings['moduleList']['NCSDC_NIRDUTpMltS'] = 'NIR DU Type Multi Select';
-$app_list_strings['moduleList']['NCSDC_CntctLnk'] = 'Contact Linking';
-$app_list_strings['DU_NIR_REASON_CL1']['1'] = 'Vacant Dwelling Unit';
-$app_list_strings['DU_NIR_REASON_CL1']['2'] = 'Unable to Access';
-$app_list_strings['DU_NIR_REASON_CL1']['3'] = 'Demolished/Condemned Dwelling Unit';
-$app_list_strings['DU_NIR_REASON_CL1']['_5'] = 'Other';
-$app_list_strings['DU_NIR_REASON_CL1']['_7'] = 'Not Applicable';
-$app_list_strings['DU_NIR_REASON_CL1']['_4'] = 'Missing in Error';
-$app_list_strings['parent_type_display']['NCSDC_EventInfo'] = 'Event Information';
-$app_list_strings['record_type_display']['NCSDC_EventInfo'] = 'Event Information';
-$app_list_strings['record_type_display_notes']['NCSDC_EventInfo'] = 'Event Information';
+$mod_strings = array (
+  'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
+  'LBL_ASSIGNED_TO_NAME' => 'User',
+  'LBL_ID' => 'ID',
+  'LBL_DATE_ENTERED' => 'Date Created',
+  'LBL_DATE_MODIFIED' => 'Date Modified',
+  'LBL_MODIFIED' => 'Modified By',
+  'LBL_MODIFIED_ID' => 'Modified By Id',
+  'LBL_MODIFIED_NAME' => 'Modified By Name',
+  'LBL_CREATED' => 'Created By',
+  'LBL_CREATED_ID' => 'Created By Id',
+  'LBL_DESCRIPTION' => 'Description',
+  'LBL_DELETED' => 'Deleted',
+  'LBL_NAME' => 'SSU ID',
+  'LBL_CREATED_USER' => 'Created by User',
+  'LBL_MODIFIED_USER' => 'Modified by User',
+  'LBL_LIST_NAME' => 'Name',
+  'LBL_LIST_FORM_TITLE' => 'Secondary Sampling Unit (SSU) List',
+  'LBL_MODULE_NAME' => 'Secondary Sampling Unit (SSU)',
+  'LBL_MODULE_TITLE' => 'Secondary Sampling Unit (SSU)',
+  'LBL_HOMEPAGE_TITLE' => 'My Secondary Sampling Unit (SSU)',
+  'LNK_NEW_RECORD' => 'Create Secondary Sampling Unit (SSU)',
+  'LNK_LIST' => 'View Secondary Sampling Unit (SSU)',
+  'LNK_IMPORT_GT_SECSAMPUNT' => 'Import Secondary Sampling Unit (SSU)',
+  'LBL_SEARCH_FORM_TITLE' => 'Search Secondary Sampling Unit (SSU)',
+  'LBL_HISTORY_SUBPANEL_TITLE' => 'View History',
+  'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
+  'LBL_GT_SECSAMPUNT_SUBPANEL_TITLE' => 'Secondary Sampling Unit (SSU)',
+  'LBL_NEW_FORM_TITLE' => 'New Secondary Sampling Unit (SSU)',
+  'LBL_SC_ID' => 'Study Center ID',
+  'LBL_PSU_ID' => 'PSU ID',
+  'LBL_SSU_NAME' => 'Name of SSU',
+  'LBL_TRANSACTION_TYPE' => 'Transaction type',
+);
+?>

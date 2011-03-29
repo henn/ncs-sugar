@@ -1,4 +1,5 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -34,24 +35,26 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$app_list_strings['moduleList']['NCSDC_EventInfo'] = 'Event Information';
-$app_list_strings['moduleList']['NCSDC_Instrument'] = 'Instrument Information';
-$app_list_strings['moduleList']['NCSDC_IncMedMultS'] = 'Incident Media Multi-Select';
-$app_list_strings['moduleList']['NCSDC_NIRNAccMltS'] = 'NIR No Access Multi-Select';
-$app_list_strings['moduleList']['NCSDC_IncUnatMltS'] = 'Incident Unanticipated Multi-Select';
-$app_list_strings['moduleList']['NCSDC_NIRRfsMltS'] = 'NIR Refusal Multi-Select';
-$app_list_strings['moduleList']['NCSDC_CntctInfo'] = 'Contact Information';
-$app_list_strings['moduleList']['NCSDC_NonInterRpt'] = 'Non Interview Report';
-$app_list_strings['moduleList']['NCSDC_Incident'] = 'Incident';
-$app_list_strings['moduleList']['NCSDC_NIntRptVcnt'] = 'NIR Vacant Multi-Select';
-$app_list_strings['moduleList']['NCSDC_NIRDUTpMltS'] = 'NIR DU Type Multi Select';
-$app_list_strings['moduleList']['NCSDC_CntctLnk'] = 'Contact Linking';
-$app_list_strings['DU_NIR_REASON_CL1']['1'] = 'Vacant Dwelling Unit';
-$app_list_strings['DU_NIR_REASON_CL1']['2'] = 'Unable to Access';
-$app_list_strings['DU_NIR_REASON_CL1']['3'] = 'Demolished/Condemned Dwelling Unit';
-$app_list_strings['DU_NIR_REASON_CL1']['_5'] = 'Other';
-$app_list_strings['DU_NIR_REASON_CL1']['_7'] = 'Not Applicable';
-$app_list_strings['DU_NIR_REASON_CL1']['_4'] = 'Missing in Error';
-$app_list_strings['parent_type_display']['NCSDC_EventInfo'] = 'Event Information';
-$app_list_strings['record_type_display']['NCSDC_EventInfo'] = 'Event Information';
-$app_list_strings['record_type_display_notes']['NCSDC_EventInfo'] = 'Event Information';
+
+
+
+global $current_user;
+
+$dashletData['GT_SecSampUntDashlet']['searchFields'] = array('date_entered'     => array('default' => ''),
+                                                          'date_modified'    => array('default' => ''),
+                                                          'assigned_user_id' => array('type'    => 'assigned_user_name', 
+                                                                                      'default' => $current_user->name));
+$dashletData['GT_SecSampUntDashlet']['columns'] =  array(   'name' => array('width'   => '40', 
+                                                                      'label'   => 'LBL_LIST_NAME',
+                                                                      'link'    => true,
+                                                                      'default' => true), 
+                                                      'date_entered' => array('width'   => '15', 
+                                                                              'label'   => 'LBL_DATE_ENTERED',
+                                                                              'default' => true),
+                                                      'date_modified' => array('width'   => '15', 
+                                                                              'label'   => 'LBL_DATE_MODIFIED'),    
+                                                      'created_by' => array('width'   => '8', 
+                                                                            'label'   => 'LBL_CREATED'),
+                                                      'assigned_user_name' => array('width'   => '8', 
+                                                                                     'label'   => 'LBL_LIST_ASSIGNED_USER'),
+                                               );
