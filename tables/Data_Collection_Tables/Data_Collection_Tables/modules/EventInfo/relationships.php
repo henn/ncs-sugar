@@ -35,7 +35,7 @@
  ********************************************************************************/
 
 $relationships = array (
-  'ncsdc_event_ncsdc_instrument' => 
+  'ncsdc_eventinfo_ncsdc_instrument' => 
   array (
     'rhs_label' => 'Instrument Information',
     'rhs_subpanel' => 'default',
@@ -48,7 +48,7 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'ncsdc_event_ncsdc_instrument',
+    'relationship_name' => 'ncsdc_eventinfo_ncsdc_instrument',
   ),
   'ncsdc_eventinfo_plt_participant' => 
   array (

@@ -47,7 +47,7 @@ $mod_strings = array (
   'LBL_CREATED_ID' => 'Created By Id',
   'LBL_DESCRIPTION' => 'Description',
   'LBL_DELETED' => 'Deleted',
-  'LBL_NAME' => 'Name',
+  'LBL_NAME' => 'Contact Link ID',
   'LBL_CREATED_USER' => 'Created by User',
   'LBL_MODIFIED_USER' => 'Modified by User',
   'LBL_LIST_NAME' => 'Name',
@@ -72,8 +72,6 @@ $mod_strings = array (
   'LBL_SPECIMEN_ID' => 'Specimen ID',
   'LBL_PERSON_ID' => 'Person ID',
   'LBL_PROVIDER_ID' => 'Provider ID',
-  'LNK_IMPORT_NCSDC_LINK_CONTACT' => 'Import Contact Linking',
-  'LBL_NCSDC_LINK_CONTACT_SUBPANEL_TITLE' => 'Contact Linking',
   'LNK_IMPORT_NCSDC_CNTCTLNK' => 'Import Contact Linking',
   'LBL_NCSDC_CNTCTLNK_SUBPANEL_TITLE' => 'Contact Linking',
 );

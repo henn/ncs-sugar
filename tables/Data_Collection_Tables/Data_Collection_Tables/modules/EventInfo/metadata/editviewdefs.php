@@ -154,18 +154,10 @@ array (
         array (
           0 => 
           array (
-            'name' => 'ncsdc_contact_ncsdc_event_name',
-          ),
-          1 => '',
-        ),
-        12 => 
-        array (
-          0 => 
-          array (
             'name' => 'ncsdc_eventinfo_plt_participant_name',
           ),
         ),
-        13 => 
+        12 => 
         array (
           0 => 
           array (

@@ -31,13 +31,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'CONTACT_LINK_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_CONTACT_LINK_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'EVENT_ID' => 
   array (
     'type' => 'varchar',

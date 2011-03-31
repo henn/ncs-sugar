@@ -20,14 +20,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'contact_link_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_CONTACT_LINK_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'contact_link_id',
-      ),
       'person_id' => 
       array (
         'type' => 'varchar',
@@ -76,14 +68,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'contact_link_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_CONTACT_LINK_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'contact_link_id',
       ),
       'person_id' => 
       array (

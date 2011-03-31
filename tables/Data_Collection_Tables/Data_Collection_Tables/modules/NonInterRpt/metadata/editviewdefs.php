@@ -290,7 +290,7 @@ array (
         array (
           0 => 
           array (
-            'name' => 'ncsdc_event_ncsdc_noninterrpt_name',
+            'name' => 'ncsdc_eventinfo_ncsdc_noninterrpt_name',
           ),
           1 => '',
         ),

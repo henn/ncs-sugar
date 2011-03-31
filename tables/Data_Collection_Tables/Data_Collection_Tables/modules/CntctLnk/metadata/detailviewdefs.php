@@ -50,11 +50,7 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'contact_link_id',
-            'label' => 'LBL_CONTACT_LINK_ID',
-          ),
+          0 => '',
           1 => '',
         ),
         2 => 

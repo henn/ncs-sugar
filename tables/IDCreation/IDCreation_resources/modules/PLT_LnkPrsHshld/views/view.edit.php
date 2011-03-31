@@ -14,7 +14,7 @@
 		function display() {
 			require_once 'ncs_framework/ncs_controller.php';
 			$ncs = new NCS($this->bean);
-			$ncs->identifier = 'PH';
+			$ncs->identifier = 'HI';
 			$this->ss->assign("NAME", $ncs->get_name());
 			parent::display();
 		}
