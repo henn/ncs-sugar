@@ -35,20 +35,5 @@
  ********************************************************************************/
 
 $relationships = array (
-  'gt_tersampunt_gt_listingunt' => 
-  array (
-    'rhs_label' => 'Listing Unit',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'GT_TerSampUnt',
-    'rhs_module' => 'GT_ListingUnt',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'gt_tersampunt_gt_listingunt',
-  ),
 );
 ?>

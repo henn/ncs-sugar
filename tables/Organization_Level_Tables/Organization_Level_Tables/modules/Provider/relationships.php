@@ -35,50 +35,5 @@
  ********************************************************************************/
 
 $relationships = array (
-  'olt_provider_ltt_address' => 
-  array (
-    'rhs_label' => 'Address',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'OLT_Provider',
-    'rhs_module' => 'LTT_Address',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'olt_provider_ltt_address',
-  ),
-  'olt_provider_ltt_email' => 
-  array (
-    'rhs_label' => 'Email',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'OLT_Provider',
-    'rhs_module' => 'LTT_Email',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'olt_provider_ltt_email',
-  ),
-  'olt_provider_ltt_telephone' => 
-  array (
-    'rhs_label' => 'Telephone',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'OLT_Provider',
-    'rhs_module' => 'LTT_Telephone',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'olt_provider_ltt_telephone',
-  ),
 );
 ?>

@@ -35,35 +35,5 @@
  ********************************************************************************/
 
 $relationships = array (
-  'st_stfwkexpns_st_stfexpmgtsk' => 
-  array (
-    'rhs_label' => 'Weekly Staff Expense Management Tasks',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'ST_StfWkExpns',
-    'rhs_module' => 'ST_StfExpMgTsk',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'st_stfwkexpns_st_stfexpmgtsk',
-  ),
-  'st_stfwkexpns_st_stfexpdctsk' => 
-  array (
-    'rhs_label' => 'Weekly Staff Expense Data Collection Tasks',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'ST_StfWkExpns',
-    'rhs_module' => 'ST_StfExpDCTsk',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'st_stfwkexpns_st_stfexpdctsk',
-  ),
 );
 ?>

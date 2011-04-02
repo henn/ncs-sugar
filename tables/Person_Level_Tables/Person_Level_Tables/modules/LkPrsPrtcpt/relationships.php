@@ -35,35 +35,5 @@
  ********************************************************************************/
 
 $relationships = array (
-  'plt_lkprsprtcpt_plt_person' => 
-  array (
-    'lhs_label' => 'Person-Participant Linkage',
-    'lhs_subpanel' => 'default',
-    'lhs_module' => 'PLT_LkPrsPrtcpt',
-    'rhs_module' => 'PLT_Person',
-    'relationship_type' => 'many-to-one',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'plt_lkprsprtcpt_plt_person',
-  ),
-  'plt_lkprsprtcpt_plt_participant' => 
-  array (
-    'lhs_label' => 'Person-Participant Linkage',
-    'lhs_subpanel' => 'default',
-    'lhs_module' => 'PLT_LkPrsPrtcpt',
-    'rhs_module' => 'PLT_Participant',
-    'relationship_type' => 'many-to-one',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'plt_lkprsprtcpt_plt_participant',
-  ),
 );
 ?>
