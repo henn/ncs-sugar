@@ -5,7 +5,7 @@
 	require_once('include/MVC/View/views/view.edit.php');
 	require_once 'include/utils.php';
 
-	class NCSDC_NonInterRptViewEdit extends ViewEdit {
+	class NCSDC_NonInterRpt extends ViewEdit {
 		
 		function NCSDC_NonInterRptViewEdit(){
 			parent::ViewEdit();

@@ -35,5 +35,18 @@
  ********************************************************************************/
 
 $relationships = array (
+  'gt_listingunt_gt_dwellingunt' => 
+  array (
+    'lhs_module' => 'GT_ListingUnt',
+    'rhs_module' => 'GT_DwellingUnt',
+    'relationship_type' => 'one-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'gt_listingunt_gt_dwellingunt',
+  ),
 );
 ?>

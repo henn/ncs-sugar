@@ -35,5 +35,35 @@
  ********************************************************************************/
 
 $relationships = array (
+  'plt_lnkprshshld_plt_person' => 
+  array (
+    'lhs_label' => 'Household-Person Linkage',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_LnkPrsHshld',
+    'rhs_module' => 'PLT_Person',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_lnkprshshld_plt_person',
+  ),
+  'plt_lnkprshshld_gt_household' => 
+  array (
+    'lhs_label' => 'Household-Person Linkage',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_LnkPrsHshld',
+    'rhs_module' => 'GT_Household',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_lnkprshshld_gt_household',
+  ),
 );
 ?>

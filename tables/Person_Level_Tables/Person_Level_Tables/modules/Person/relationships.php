@@ -35,5 +35,80 @@
  ********************************************************************************/
 
 $relationships = array (
+  'plt_person_plt_personrace' => 
+  array (
+    'rhs_label' => 'Person Race',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_Person',
+    'rhs_module' => 'PLT_PersonRace',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_person_plt_personrace',
+  ),
+  'plt_person_ltt_address' => 
+  array (
+    'rhs_label' => 'LTT_Address',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_Person',
+    'rhs_module' => 'LTT_Address',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_person_ltt_address',
+  ),
+  'plt_person_ltt_telephone' => 
+  array (
+    'rhs_label' => 'Telephone',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_Person',
+    'rhs_module' => 'LTT_Telephone',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_person_ltt_telephone',
+  ),
+  'plt_person_ltt_email' => 
+  array (
+    'rhs_label' => 'Email',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_Person',
+    'rhs_module' => 'LTT_Email',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_person_ltt_email',
+  ),
+  'plt_person_ncsdc_noninterrpt' => 
+  array (
+    'rhs_label' => 'Non Interview Report',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_Person',
+    'rhs_module' => 'NCSDC_NonInterRpt',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_person_ncsdc_noninterrpt',
+  ),
 );
 ?>

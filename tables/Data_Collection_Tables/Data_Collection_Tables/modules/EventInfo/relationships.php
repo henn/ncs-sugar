@@ -35,5 +35,63 @@
  ********************************************************************************/
 
 $relationships = array (
+  'ncsdc_eventinfo_ncsdc_instrument' => 
+  array (
+    'rhs_label' => 'Instrument Information',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'NCSDC_EventInfo',
+    'rhs_module' => 'NCSDC_Instrument',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'ncsdc_eventinfo_ncsdc_instrument',
+  ),
+  'ncsdc_eventinfo_plt_participant' => 
+  array (
+    'lhs_module' => 'NCSDC_EventInfo',
+    'rhs_module' => 'PLT_Participant',
+    'relationship_type' => 'one-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'ncsdc_eventinfo_plt_participant',
+  ),
+  'ncsdc_eventinfo_activities' => 
+  array (
+    'rhs_label' => 'Activities',
+    'rhs_subpanel' => 'Default',
+    'lhs_module' => 'NCSDC_EventInfo',
+    'rhs_module' => 'Activities',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'ncsdc_eventinfo_activities',
+  ),
+  'ncsdc_eventinfo_st_stfvldtn' => 
+  array (
+    'rhs_label' => 'Staff Validation',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'NCSDC_EventInfo',
+    'rhs_module' => 'ST_StfVldtn',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'ncsdc_eventinfo_st_stfvldtn',
+  ),
 );
 ?>

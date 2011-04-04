@@ -35,5 +35,35 @@
  ********************************************************************************/
 
 $relationships = array (
+  'gt_secsampunt_gt_listingunt' => 
+  array (
+    'rhs_label' => 'Listing Unit',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'GT_SecSampUnt',
+    'rhs_module' => 'GT_ListingUnt',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'gt_secsampunt_gt_listingunt',
+  ),
+  'gt_secsampunt_gt_tersampunt' => 
+  array (
+    'rhs_label' => 'Tertiary Sampling Unit (TSU)',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'GT_SecSampUnt',
+    'rhs_module' => 'GT_TerSampUnt',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'gt_secsampunt_gt_tersampunt',
+  ),
 );
 ?>
