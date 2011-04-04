@@ -8,7 +8,7 @@ MODULE_GT="DwellingUnt DwlUntHsLnk Household\
 	
 MODULE_LTT="Address Email Telephone"
 
-MODULE_NCSDC="CntctInfo CntctLnk EventInfo\
+MODULE_NCSDC="CntctInfo CntLnk EventInfo\
 	Incident IncMedMultS IncUnatMltS\
 	Instrument NIntRptVcnt NIRDUTpMltS\
 	NIRNAccMltS NIRRfsMltS NonInterRpt"

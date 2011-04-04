@@ -72,7 +72,7 @@ $mod_strings = array (
   'LBL_SPECIMEN_ID' => 'Specimen ID',
   'LBL_PERSON_ID' => 'Person ID',
   'LBL_PROVIDER_ID' => 'Provider ID',
-  'LNK_IMPORT_NCSDC_CNTCTLNK' => 'Import Contact Linking',
-  'LBL_NCSDC_CNTCTLNK_SUBPANEL_TITLE' => 'Contact Linking',
+  'LNK_IMPORT_NCSDC_CNTLNK' => 'Import Contact Linking',
+  'LBL_NCSDC_CNTLNK_SUBPANEL_TITLE' => 'Contact Linking',
 );
 ?>

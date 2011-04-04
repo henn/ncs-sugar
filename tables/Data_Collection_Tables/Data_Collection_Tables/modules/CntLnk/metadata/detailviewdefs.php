@@ -1,5 +1,5 @@
 <?php
-$module_name = 'NCSDC_CntctLnk';
+$module_name = 'NCSDC_CntLnk';
 $viewdefs [$module_name] = 
 array (
   'DetailView' => 
@@ -115,33 +115,33 @@ array (
         array (
           0 => 
           array (
-            'name' => 'ncsdc_cntctlnk_st_staffrstr_name',
+            'name' => 'ncsdc_cntlnk_st_staffrstr_name',
           ),
           1 => 
           array (
-            'name' => 'ncsdc_cntctlnk_ncsdc_cntctinfo_name',
+            'name' => 'ncsdc_cntlnk_ncsdc_cntctinfo_name',
           ),
         ),
         9 => 
         array (
           0 => 
           array (
-            'name' => 'ncsdc_cntctlnk_ncsdc_eventinfo_name',
+            'name' => 'ncsdc_cntlnk_ncsdc_eventinfo_name',
           ),
           1 => 
           array (
-            'name' => 'ncsdc_cntctlnk_ncsdc_instrument_name',
+            'name' => 'ncsdc_cntlnk_ncsdc_instrument_name',
           ),
         ),
         10 => 
         array (
           0 => 
           array (
-            'name' => 'ncsdc_cntctlnk_plt_person_name',
+            'name' => 'ncsdc_cntlnk_plt_person_name',
           ),
           1 => 
           array (
-            'name' => 'ncsdc_cntctlnk_olt_provider_name',
+            'name' => 'ncsdc_cntlnk_olt_provider_name',
           ),
         ),
       ),

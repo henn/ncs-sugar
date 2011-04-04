@@ -35,11 +35,11 @@
  ********************************************************************************/
 
 $relationships = array (
-  'ncsdc_cntctlnk_st_staffrstr' => 
+  'ncsdc_cntlnk_st_staffrstr' => 
   array (
     'lhs_label' => 'Contact Linking',
     'lhs_subpanel' => 'default',
-    'lhs_module' => 'NCSDC_CntctLnk',
+    'lhs_module' => 'NCSDC_CntLnk',
     'rhs_module' => 'ST_StaffRstr',
     'relationship_type' => 'many-to-one',
     'readonly' => false,
@@ -48,13 +48,13 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'ncsdc_cntctlnk_st_staffrstr',
+    'relationship_name' => 'ncsdc_cntlnk_st_staffrstr',
   ),
-  'ncsdc_cntctlnk_ncsdc_cntctinfo' => 
+  'ncsdc_cntlnk_ncsdc_cntctinfo' => 
   array (
     'lhs_label' => 'Contact Linking',
     'lhs_subpanel' => 'default',
-    'lhs_module' => 'NCSDC_CntctLnk',
+    'lhs_module' => 'NCSDC_CntLnk',
     'rhs_module' => 'NCSDC_CntctInfo',
     'relationship_type' => 'many-to-one',
     'readonly' => false,
@@ -63,13 +63,13 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'ncsdc_cntctlnk_ncsdc_cntctinfo',
+    'relationship_name' => 'ncsdc_cntlnk_ncsdc_cntctinfo',
   ),
-  'ncsdc_cntctlnk_ncsdc_eventinfo' => 
+  'ncsdc_cntlnk_ncsdc_eventinfo' => 
   array (
     'lhs_label' => 'Contact Linking',
     'lhs_subpanel' => 'default',
-    'lhs_module' => 'NCSDC_CntctLnk',
+    'lhs_module' => 'NCSDC_CntLnk',
     'rhs_module' => 'NCSDC_EventInfo',
     'relationship_type' => 'many-to-one',
     'readonly' => false,
@@ -78,13 +78,13 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'ncsdc_cntctlnk_ncsdc_eventinfo',
+    'relationship_name' => 'ncsdc_cntlnk_ncsdc_eventinfo',
   ),
-  'ncsdc_cntctlnk_ncsdc_instrument' => 
+  'ncsdc_cntlnk_ncsdc_instrument' => 
   array (
     'lhs_label' => 'Contact Linking',
     'lhs_subpanel' => 'default',
-    'lhs_module' => 'NCSDC_CntctLnk',
+    'lhs_module' => 'NCSDC_CntLnk',
     'rhs_module' => 'NCSDC_Instrument',
     'relationship_type' => 'many-to-one',
     'readonly' => false,
@@ -93,13 +93,13 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'ncsdc_cntctlnk_ncsdc_instrument',
+    'relationship_name' => 'ncsdc_cntlnk_ncsdc_instrument',
   ),
-  'ncsdc_cntctlnk_plt_person' => 
+  'ncsdc_cntlnk_plt_person' => 
   array (
     'lhs_label' => 'Contact Linking',
     'lhs_subpanel' => 'default',
-    'lhs_module' => 'NCSDC_CntctLnk',
+    'lhs_module' => 'NCSDC_CntLnk',
     'rhs_module' => 'PLT_Person',
     'relationship_type' => 'many-to-one',
     'readonly' => false,
@@ -108,13 +108,13 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'ncsdc_cntctlnk_plt_person',
+    'relationship_name' => 'ncsdc_cntlnk_plt_person',
   ),
-  'ncsdc_cntctlnk_olt_provider' => 
+  'ncsdc_cntlnk_olt_provider' => 
   array (
     'lhs_label' => 'Contact Linking',
     'lhs_subpanel' => 'default',
-    'lhs_module' => 'NCSDC_CntctLnk',
+    'lhs_module' => 'NCSDC_CntLnk',
     'rhs_module' => 'OLT_Provider',
     'relationship_type' => 'many-to-one',
     'readonly' => false,
@@ -123,7 +123,7 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'ncsdc_cntctlnk_olt_provider',
+    'relationship_name' => 'ncsdc_cntlnk_olt_provider',
   ),
 );
 ?>

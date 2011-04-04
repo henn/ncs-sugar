@@ -34,9 +34,9 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * technical reasons, the Appropriate Legal Notices must display the words
  * "Powered by SugarCRM".
  ********************************************************************************/
-$module_name = 'NCSDC_CntctLnk';
-$object_name = 'NCSDC_CntctLnk';
-$_module_name = 'ncsdc_cntctlnk';
+$module_name = 'NCSDC_CntLnk';
+$object_name = 'NCSDC_CntLnk';
+$_module_name = 'ncsdc_cntlnk';
 $popupMeta = array('moduleMain' => $module_name,
 						'varName' => $object_name,
 						'orderBy' => $_module_name.'.name',

@@ -1,5 +1,5 @@
 <?php
-$module_name = 'NCSDC_CntctLnk';
+$module_name = 'NCSDC_CntLnk';
 $listViewDefs [$module_name] = 
 array (
   'NAME' => 

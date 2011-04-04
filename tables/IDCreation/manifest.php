@@ -123,10 +123,10 @@ $installdefs = array (
       'from' => '<basepath>/IDCreation_resources/modules/NCSDC_CntctInfo/views/view.edit.php',
       'to' => 'custom/modules/NCSDC_CntctInfo/views/view.edit.php',
     ),
-####Begin copy of NCSDC_CntctLnk###
+####Begin copy of NCSDC_CntLnk###
     array (
-      'from' => '<basepath>/IDCreation_resources/modules/NCSDC_CntctLnk/views/view.edit.php',
-      'to' => 'custom/modules/NCSDC_CntctLnk/views/view.edit.php',
+      'from' => '<basepath>/IDCreation_resources/modules/NCSDC_CntLnk/views/view.edit.php',
+      'to' => 'custom/modules/NCSDC_CntLnk/views/view.edit.php',
     ),
 ####Begin copy of NCSDC_EventInfo###
     array (
