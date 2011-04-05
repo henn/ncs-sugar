@@ -143,14 +143,14 @@ array (
           array (
             'name' => 'plt_person_ltt_email_name',
           ),
-          2 => 
-          array (
-            'name' => 'olt_provider_ltt_email_name',
-          ),
         ),
         10 => 
         array (
           0 => 
+          array (
+            'name' => 'olt_provider_ltt_email_name',
+          ),
+		  1 => 
           array (
             'name' => 'olt_institution_ltt_email_name',
           ),
