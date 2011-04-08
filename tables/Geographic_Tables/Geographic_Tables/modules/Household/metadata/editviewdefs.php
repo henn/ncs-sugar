@@ -31,7 +31,8 @@ array (
           0 => 
           array (
             'name' => 'name',
-            'label' => 'LBL_NAME',
+            'label' => 'Name (HH_ID):',
+'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -41,10 +42,23 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
+          0 => 
+          array (
+            'name' => 'description',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_DESCRIPTION',
+          ),
         ),
         2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'hh_id',
+            'label' => 'LBL_HH_ID',
+          ),
+          1 => '',
+        ),
+        3 => 
         array (
           0 => 
           array (
@@ -52,14 +66,17 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_HH_STATUS',
           ),
-          1 => 
+        ),
+        4 => 
+        array (
+          0 => 
           array (
             'name' => 'hh_elig',
             'studio' => 'visible',
             'label' => 'LBL_HH_ELIG',
           ),
         ),
-        3 => 
+        5 => 
         array (
           0 => 
           array (
@@ -73,33 +90,43 @@ array (
             'label' => 'LBL_HH_STRUCTURE_OTH',
           ),
         ),
-        4 => 
+        6 => 
         array (
           0 => 
           array (
             'name' => 'num_age_elig',
             'label' => 'LBL_NUM_AGE_ELIG',
           ),
-          1 => 
+          1 => '',
+        ),
+        7 => 
+        array (
+          0 => 
           array (
             'name' => 'num_preg',
             'label' => 'LBL_NUM_PREG',
           ),
+          1 => '',
         ),
-        5 => 
+        8 => 
         array (
           0 => 
           array (
             'name' => 'num_preg_adult',
             'label' => 'LBL_NUM_PREG_ADULT',
           ),
-          1 => 
+          1 => '',
+        ),
+        9 => 
+        array (
+          0 => 
           array (
             'name' => 'num_preg_minor',
             'label' => 'LBL_NUM_PREG_MINOR',
           ),
+          1 => '',
         ),
-        6 => 
+        10 => 
         array (
           0 => 
           array (
@@ -107,9 +134,11 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_HH_COMMENT',
           ),
+          1 => '',
         ),
       ),
     ),
   ),
 );
 ?>
+

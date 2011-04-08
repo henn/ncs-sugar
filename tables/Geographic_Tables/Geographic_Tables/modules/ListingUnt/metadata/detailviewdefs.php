@@ -101,6 +101,10 @@ array (
           array (
             'name' => 'gt_sndsampunt_gt_listingunt_name',
           ),
+          1 => 
+          array (
+            'name' => 'gt_tersampunt_gt_listingunt_name',
+          ),
         ),
       ),
     ),

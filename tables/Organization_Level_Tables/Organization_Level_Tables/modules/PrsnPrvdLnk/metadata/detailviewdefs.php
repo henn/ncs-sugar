@@ -50,24 +50,6 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'person_id',
-            'label' => 'LBL_PERSON_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'provider_id',
-            'label' => 'LBL_PROVIDER_ID',
-          ),
-        ),
-        3 => 
-        array (
           0 => 
           array (
             'name' => 'prov_intro_outcome',
@@ -80,7 +62,7 @@ array (
             'label' => 'LBL_PROV_INTRO_OUTCOME_OTH',
           ),
         ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (
@@ -88,9 +70,8 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_IS_ACTIVE',
           ),
-          1 => '',
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
@@ -99,6 +80,19 @@ array (
           1 => 
           array (
             'name' => 'olt_prsnprvdlnk_olt_provider_name',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'olt_prsnprvlt_person_name',
+            'label' => 'LBL_OLT_PRSNPRVDLNK_PLT_PERSON_FROM_PLT_PERSON_TITLE',
+          ),
+          1 => 
+          array (
+            'name' => 'olt_prsnprv_provider_name',
+            'label' => 'LBL_OLT_PRSNPRVDLNK_OLT_PROVIDER_FROM_OLT_PROVIDER_TITLE',
           ),
         ),
       ),

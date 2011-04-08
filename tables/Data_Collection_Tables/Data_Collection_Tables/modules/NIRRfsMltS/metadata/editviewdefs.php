@@ -31,7 +31,8 @@ array (
           0 => 
           array (
             'name' => 'name',
-            'label' => 'LBL_NAME',
+            'label' => 'Name (NIR_REFUSAL_ID):',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -68,10 +69,7 @@ array (
           array (
             'name' => 'ncsdc_event_ncsdc_non_interview_rpt_refusal_name',
           ),
-          1 => 
-          array (
-            'name' => 'ncsdc_eventinfo_ncsdc_nirrfsmlts_name',
-          ),
+          1 => '',
         ),
       ),
     ),

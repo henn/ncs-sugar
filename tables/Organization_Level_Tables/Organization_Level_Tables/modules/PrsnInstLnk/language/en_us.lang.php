@@ -68,7 +68,7 @@ $mod_strings = array (
   'LBL_INSTITUTE_ID' => 'Institute ID',
   'LBL_PERSON_ID' => 'Person ID',
   'LBL_IS_ACTIVE' => 'Is Active',
-  'LNK_IMPORT_OLT_PrsnInstLnk' => 'Import Person-Institute Linkage',
-  'LBL_OLT_PrsnInstLnk_SUBPANEL_TITLE' => 'Person-Institute Linkage',
+  'LNK_IMPORT_OLT_PRSNINSTLNK' => 'Import Person-Institute Linkage',
+  'LBL_OLT_PRSNINSTLNK_SUBPANEL_TITLE' => 'Person-Institute Linkage',
 );
 ?>

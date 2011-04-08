@@ -31,7 +31,8 @@ array (
           0 => 
           array (
             'name' => 'name',
-            'label' => 'LBL_NAME',
+            'label' => 'Name (EVENT_ID):',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -153,22 +154,18 @@ array (
         array (
           0 => 
           array (
-            'name' => 'ncsdc_contact_ncsdc_event_name',
+            'name' => 'ncsdc_eventinfo_plt_participant_name',
           ),
-          1 => '',
         ),
         12 => 
         array (
           0 => 
           array (
-            'name' => 'ncsdc_eventinfo_plt_participant_name',
-          ),
-        ),
-        13 => 
-        array (
-          0 => 
-          array (
             'name' => 'ncsdc_cntctinfo_ncsdc_eventinfo_name',
+          ),
+          1 => 
+          array (
+            'name' => 'plt_participant_ncsdc_eventinfo_name',
           ),
         ),
       ),

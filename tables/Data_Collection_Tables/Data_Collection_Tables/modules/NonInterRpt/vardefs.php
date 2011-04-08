@@ -632,7 +632,7 @@ $vardefs = array (
     array (
       'required' => false,
       'name' => 'non_interview_rpt',
-      'vname' => 'LBL_NON_INTERVIEW_RPT',
+      'vname' => 'LBL_NONINTERRPT',
       'type' => 'enum',
       'massupdate' => 0,
       'default' => '1',

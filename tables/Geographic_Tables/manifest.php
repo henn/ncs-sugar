@@ -38,7 +38,7 @@
     $manifest = array (
          'acceptable_sugar_versions' => 
           array (
-            '6.1.2'
+            '6.1.4'
           ),
           'acceptable_sugar_flavors' =>
           array(
@@ -51,9 +51,9 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'project_Geographic_Tables',
-          'published_date' => '2011-02-14 22:46:32',
+          'published_date' => '2011-04-08 18:34:07',
           'type' => 'module',
-          'version' => '1297723592',
+          'version' => '1302287647',
           'remove_tables' => 'prompt',
           );
 $installdefs = array (

@@ -55,7 +55,12 @@ array (
             'name' => 'sc_id',
             'label' => 'LBL_SC_ID',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'psu_name',
+            'studio' => 'visible',
+            'label' => 'LBL_PSU_NAME',
+          ),
         ),
         2 => 
         array (
@@ -64,11 +69,7 @@ array (
         ),
         3 => 
         array (
-          0 => 
-          array (
-            'name' => 'psu_name',
-            'label' => 'LBL_PSU_NAME',
-          ),
+          0 => '',
           1 => '',
         ),
         4 => 

@@ -105,6 +105,7 @@ array (
           array (
             'name' => 'gt_study_center_st_staff_name',
           ),
+          1 => '',
         ),
       ),
       'lbl_detailview_panel1' => 

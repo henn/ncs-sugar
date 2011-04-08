@@ -50,11 +50,6 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
           0 => 
           array (
             'name' => 'is_active',
@@ -63,7 +58,7 @@ array (
           ),
           1 => '',
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -77,7 +72,7 @@ array (
             'label' => 'LBL_DU_RANK_OTH',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -86,6 +81,19 @@ array (
           1 => 
           array (
             'name' => 'gt_dwlunthslnk_gt_household_name',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'gt_dwlunthsellingunt_name',
+            'label' => 'LBL_GT_DWLUNTHSLNK_GT_DWELLINGUNT_FROM_GT_DWELLINGUNT_TITLE',
+          ),
+          1 => 
+          array (
+            'name' => 'gt_dwlunthshousehold_name',
+            'label' => 'LBL_GT_DWLUNTHSLNK_GT_HOUSEHOLD_FROM_GT_HOUSEHOLD_TITLE',
           ),
         ),
       ),

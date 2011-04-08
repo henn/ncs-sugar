@@ -31,7 +31,8 @@ array (
           0 => 
           array (
             'name' => 'name',
-            'label' => 'LBL_NAME',
+            'label' => 'Name (NIR_NOACCESS_ID):',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -60,10 +61,7 @@ array (
         ),
         3 => 
         array (
-          0 => 
-          array (
-            'name' => 'ncsdc_eventinfo_ncsdc_nirnaccmlts_name',
-          ),
+          0 => '',
         ),
         4 => 
         array (

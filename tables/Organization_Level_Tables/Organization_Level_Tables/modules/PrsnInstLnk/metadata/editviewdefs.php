@@ -31,7 +31,8 @@ array (
           0 => 
           array (
             'name' => 'name',
-            'label' => 'LBL_NAME',
+            'label' => 'Name (PERSON_INSTITUTE_ID):',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -41,33 +42,14 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'person_id',
-            'label' => 'LBL_PERSON_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'institute_id',
-            'label' => 'LBL_INSTITUTE_ID',
-          ),
-        ),
-        3 => 
-        array (
           0 => 
           array (
             'name' => 'is_active',
             'studio' => 'visible',
             'label' => 'LBL_IS_ACTIVE',
           ),
-          1 => '',
         ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (
@@ -76,6 +58,19 @@ array (
           1 => 
           array (
             'name' => 'olt_prsninstlnk_olt_institution_name',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'olt_prsninslt_person_name',
+            'label' => 'LBL_OLT_PRSNINSTLNK_PLT_PERSON_FROM_PLT_PERSON_TITLE',
+          ),
+          1 => 
+          array (
+            'name' => 'olt_prsninsstitution_name',
+            'label' => 'LBL_OLT_PRSNINSTLNK_OLT_INSTITUTION_FROM_OLT_INSTITUTION_TITLE',
           ),
         ),
       ),

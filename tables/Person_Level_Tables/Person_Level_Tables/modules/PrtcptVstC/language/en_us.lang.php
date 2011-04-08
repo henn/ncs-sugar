@@ -57,11 +57,11 @@ $mod_strings = array (
   'LBL_HOMEPAGE_TITLE' => 'My Participant Visit Consent',
   'LNK_NEW_RECORD' => 'Create Participant Visit Consent',
   'LNK_LIST' => 'View Participant Visit Consent',
-  'LNK_IMPORT_PLT_PARTICIPANT_VISIT_CONSENT' => 'Import Participant Visit Consent',
+  'LNK_IMPORT_PLT_PRTCPTVSTC' => 'Import Participant Visit Consent',
   'LBL_SEARCH_FORM_TITLE' => 'Search Participant Visit Consent',
   'LBL_HISTORY_SUBPANEL_TITLE' => 'View History',
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
-  'LBL_PLT_PARTICIPANT_VISIT_CONSENT_SUBPANEL_TITLE' => 'Participant Visit Consent',
+  'LBL_PLT_PRTCPTVSTC_SUBPANEL_TITLE' => 'Participant Visit Consent',
   'LBL_NEW_FORM_TITLE' => 'New Participant Visit Consent',
   'LBL_VIS_LANGUAGE' => 'VIS Language',
   'LBL_PID_VISIT_CONSENT_ID' => 'PID Visit Consent ID',
@@ -71,7 +71,5 @@ $mod_strings = array (
   'LBL_VIS_WHO_CONSENTED' => 'VIS Who Consented',
   'LBL_VIS_CONSENT_RESPONSE' => 'VIS Consent Response',
   'LBL_VIS_TRANSLATE' => 'VIS Translate',
-  'LNK_IMPORT_PLT_PRTCPTVSTC' => 'Import Participant Visit Consent',
-  'LBL_PLT_PRTCPTVSTC_SUBPANEL_TITLE' => 'Participant Visit Consent',
 );
 ?>

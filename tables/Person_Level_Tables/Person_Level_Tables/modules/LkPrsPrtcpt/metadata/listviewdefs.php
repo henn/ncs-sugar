@@ -24,20 +24,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'P_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_P_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'PERSON_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_PERSON_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'RELATION' => 
   array (
     'type' => 'enum',

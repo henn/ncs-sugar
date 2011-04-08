@@ -33,20 +33,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'PERSON_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_PERSON_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'HH_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_HH_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'HH_RANK' => 
   array (
     'type' => 'enum',

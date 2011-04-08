@@ -35,23 +35,6 @@
  ********************************************************************************/
 
 $relationships = array (
-  'gt_dwellingunt_gt_household' => 
-  array (
-    'rhs_label' => 'Household',
-    'lhs_label' => 'Dwelling Unit (DU)',
-    'lhs_subpanel' => 'default',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'GT_DwellingUnt',
-    'rhs_module' => 'GT_Household',
-    'relationship_type' => 'many-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'gt_dwellingunt_gt_household',
-  ),
   'gt_dwellingunt_ltt_address' => 
   array (
     'lhs_module' => 'GT_DwellingUnt',
@@ -65,12 +48,12 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'gt_dwellingunt_ltt_address',
   ),
-  'gt_dwellingunt_ltt_telephone' => 
+  'gt_dwellingunt_ncsdc_noninterrpt' => 
   array (
-    'rhs_label' => 'Telephone',
+    'rhs_label' => 'Non Interview Report',
     'rhs_subpanel' => 'default',
     'lhs_module' => 'GT_DwellingUnt',
-    'rhs_module' => 'LTT_Telephone',
+    'rhs_module' => 'NCSDC_NonInterRpt',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -78,22 +61,7 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'gt_dwellingunt_ltt_telephone',
-  ),
-  'gt_dwellingunt_ltt_email' => 
-  array (
-    'rhs_label' => 'Email',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'GT_DwellingUnt',
-    'rhs_module' => 'LTT_Email',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'gt_dwellingunt_ltt_email',
+    'relationship_name' => 'gt_dwellingunt_ncsdc_noninterrpt',
   ),
 );
 ?>

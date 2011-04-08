@@ -120,11 +120,14 @@ array (
         array (
           0 => 
           array (
-            'name' => 'plt_participant_plt_participant_visit_consent_name',
-          ),
-          1 => 
-          array (
             'name' => 'plt_participant_plt_prtcptvstc_name',
+          ),
+        ),
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_cntctinfo_plt_prtcptvstc_name',
           ),
         ),
       ),

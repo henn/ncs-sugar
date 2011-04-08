@@ -173,6 +173,13 @@ array (
             'name' => 'plt_participant_plt_prtcptcnsnt_name',
           ),
         ),
+        12 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_cntctinfo_plt_prtcptcnsnt_name',
+          ),
+        ),
       ),
     ),
   ),

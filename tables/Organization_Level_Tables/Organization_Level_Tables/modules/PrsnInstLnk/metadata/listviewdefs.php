@@ -24,20 +24,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'INSTITUTE_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INSTITUTE_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'PERSON_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_PERSON_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'IS_ACTIVE' => 
   array (
     'type' => 'enum',

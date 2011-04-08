@@ -110,5 +110,20 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'plt_participant_plt_ppgdetails',
   ),
+  'plt_participant_ncsdc_eventinfo' => 
+  array (
+    'rhs_label' => 'Event Information',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_Participant',
+    'rhs_module' => 'NCSDC_EventInfo',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_participant_ncsdc_eventinfo',
+  ),
 );
 ?>

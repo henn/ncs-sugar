@@ -31,7 +31,8 @@ array (
           0 => 
           array (
             'name' => 'name',
-            'label' => 'LBL_NAME',
+            'label' => 'Name (NIR_ID):',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -289,11 +290,26 @@ array (
         array (
           0 => 
           array (
-            'name' => 'ncsdc_event_ncsdc_non_interview_reprt_name',
+            'name' => 'ncsdc_eventinfo_ncsdc_noninterrpt_name',
+          ),
+          1 => '',
+        ),
+        22 => 
+        array (
+          0 => 
+          array (
+            'name' => 'gt_dwellingunt_ncsdc_noninterrpt_name',
           ),
           1 => 
           array (
-            'name' => 'ncsdc_eventinfo_ncsdc_noninterrpt_name',
+            'name' => 'plt_person_ncsdc_noninterrpt_name',
+          ),
+        ),
+        23 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_cntctinfo_ncsdc_noninterrpt_name',
           ),
         ),
       ),

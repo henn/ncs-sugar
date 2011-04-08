@@ -90,10 +90,6 @@ array (
         array (
           0 => 
           array (
-            'name' => 'plt_person_plt_person_race_name',
-          ),
-          1 => 
-          array (
             'name' => 'plt_person_plt_personrace_name',
           ),
         ),

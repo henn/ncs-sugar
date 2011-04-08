@@ -38,9 +38,10 @@
 $app_list_strings['moduleList']['GT_PrmSampUnt'] = 'Primary Sampling Unit (PSU)';
 $app_list_strings['moduleList']['GT_StudyCntr'] = 'Study Center (SC)';
 $app_list_strings['moduleList']['GT_DwellingUnt'] = 'Dwelling Unit (DU)';
-$app_list_strings['moduleList']['GT_SndSampUnt'] = 'Secondary Sampling Unit (PSU)';
 $app_list_strings['moduleList']['GT_Household'] = 'Household';
 $app_list_strings['moduleList']['GT_ListingUnt'] = 'Listing Unit';
+$app_list_strings['moduleList']['GT_SecSampUnt'] = 'Secondary Sampling Unit (SSU)';
+$app_list_strings['moduleList']['GT_TerSampUnt'] = 'Tertiary Sampling Unit (TSU)';
 $app_list_strings['moduleList']['GT_DwlUntHsLnk'] = 'Dwelling Unit Household Linkage';
 $app_list_strings['PSU_CL1']['20000054'] = 'Duplin County, NC';
 $app_list_strings['PSU_CL1']['20000032'] = 'Yellow Medicine County, MN';

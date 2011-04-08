@@ -65,10 +65,7 @@ array (
         ),
         3 => 
         array (
-          0 => 
-          array (
-            'name' => 'ncsdc_eventinfo_ncsdc_incunatmlts_name',
-          ),
+          0 => '',
           1 => '',
         ),
         4 => 
