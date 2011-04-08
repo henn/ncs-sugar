@@ -15,20 +15,6 @@ array (
     'label' => 'LBL_ASSIGNED_TO_NAME',
     'default' => true,
   ),
-  'PROVIDER_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_PROVIDER_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'PERSON_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_PERSON_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'IS_ACTIVE' => 
   array (
     'type' => 'enum',

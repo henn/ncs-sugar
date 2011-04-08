@@ -70,7 +70,5 @@ $mod_strings = array (
   'LBL_STAFF_VALIDATE' => 'Staff Validate',
   'LBL_STAFF_VAL_DATE' => 'Staff Validate Date',
   'LBL_STAFF_VAL_COMMENT' => 'Staff Validate Comment',
-  'LNK_IMPORT_ST_STFVLDTN' => 'Import Staff Validation',
-  'LBL_ST_STFVLDTN_SUBPANEL_TITLE' => 'Staff Validation',
 );
 ?>

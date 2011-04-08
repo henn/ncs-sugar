@@ -24,54 +24,5 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'CONTACT_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_CONTACT_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'EVENT_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_EVENT_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'INSTRUMENT_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INSTRUMENT_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'STAFF_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_STAFF_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'SPECIMEN_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_SPECIMEN_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'PERSON_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_PERSON_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'PROVIDER_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_PROVIDER_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
 );
 ?>

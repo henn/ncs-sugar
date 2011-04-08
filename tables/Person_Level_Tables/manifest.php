@@ -38,7 +38,7 @@
     $manifest = array (
          'acceptable_sugar_versions' => 
           array (
-            '6.1.2'
+            '6.1.4'
           ),
           'acceptable_sugar_flavors' =>
           array(
@@ -51,9 +51,9 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'project_Person_Level_Tables',
-          'published_date' => '2011-03-23 03:44:34',
+          'published_date' => '2011-04-08 18:34:42',
           'type' => 'module',
-          'version' => '1300851874',
+          'version' => '1302287682',
           'remove_tables' => 'prompt',
           );
 $installdefs = array (

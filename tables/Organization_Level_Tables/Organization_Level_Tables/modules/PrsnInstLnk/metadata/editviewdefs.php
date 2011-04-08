@@ -42,33 +42,14 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'person_id',
-            'label' => 'LBL_PERSON_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'institute_id',
-            'label' => 'LBL_INSTITUTE_ID',
-          ),
-        ),
-        3 => 
-        array (
           0 => 
           array (
             'name' => 'is_active',
             'studio' => 'visible',
             'label' => 'LBL_IS_ACTIVE',
           ),
-          1 => '',
         ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (
@@ -77,6 +58,19 @@ array (
           1 => 
           array (
             'name' => 'olt_prsninstlnk_olt_institution_name',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'olt_prsninslt_person_name',
+            'label' => 'LBL_OLT_PRSNINSTLNK_PLT_PERSON_FROM_PLT_PERSON_TITLE',
+          ),
+          1 => 
+          array (
+            'name' => 'olt_prsninsstitution_name',
+            'label' => 'LBL_OLT_PRSNINSTLNK_OLT_INSTITUTION_FROM_OLT_INSTITUTION_TITLE',
           ),
         ),
       ),

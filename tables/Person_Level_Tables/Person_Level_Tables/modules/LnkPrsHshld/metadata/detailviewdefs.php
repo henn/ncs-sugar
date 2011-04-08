@@ -50,33 +50,14 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'person_id',
-            'label' => 'LBL_PERSON_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'hh_id',
-            'label' => 'LBL_HH_ID',
-          ),
-        ),
-        3 => 
-        array (
           0 => 
           array (
             'name' => 'is_active',
             'studio' => 'visible',
             'label' => 'LBL_IS_ACTIVE',
           ),
-          1 => '',
         ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (
@@ -90,7 +71,7 @@ array (
             'label' => 'LBL_HH_RANK_OTH',
           ),
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
@@ -99,6 +80,19 @@ array (
           1 => 
           array (
             'name' => 'plt_lnkprshshld_gt_household_name',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'plt_lnkprshlt_person_name',
+            'label' => 'LBL_PLT_LNKPRSHSHLD_PLT_PERSON_FROM_PLT_PERSON_TITLE',
+          ),
+          1 => 
+          array (
+            'name' => 'plt_lnkprshhousehold_name',
+            'label' => 'LBL_PLT_LNKPRSHSHLD_GT_HOUSEHOLD_FROM_GT_HOUSEHOLD_TITLE',
           ),
         ),
       ),

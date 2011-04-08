@@ -71,7 +71,5 @@ $mod_strings = array (
   'LBL_VIS_WHO_CONSENTED' => 'VIS Who Consented',
   'LBL_VIS_CONSENT_RESPONSE' => 'VIS Consent Response',
   'LBL_VIS_TRANSLATE' => 'VIS Translate',
-  'LNK_IMPORT_PLT_PRTCPTVSTC' => 'Import Participant Visit Consent',
-  'LBL_PLT_PRTCPTVSTC_SUBPANEL_TITLE' => 'Participant Visit Consent',
 );
 ?>
