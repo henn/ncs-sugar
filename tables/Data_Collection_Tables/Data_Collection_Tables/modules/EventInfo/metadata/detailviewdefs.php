@@ -184,6 +184,14 @@ array (
             'name' => 'plt_participant_ncsdc_eventinfo_name',
           ),
         ),
+        14 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_eventrticipant_name',
+            'label' => 'LBL_NCSDC_EVENTINFO_PLT_PARTICIPANT_FROM_PLT_PARTICIPANT_TITLE',
+          ),
+        ),
       ),
     ),
   ),

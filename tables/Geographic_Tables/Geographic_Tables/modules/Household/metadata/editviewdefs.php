@@ -32,7 +32,7 @@ array (
           array (
             'name' => 'name',
             'label' => 'Name (HH_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -44,30 +44,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'hh_id',
-            'label' => 'LBL_HH_ID',
-          ),
-          1 => '',
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
             'name' => 'hh_status',
             'studio' => 'visible',
             'label' => 'LBL_HH_STATUS',
           ),
         ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (
@@ -76,7 +58,7 @@ array (
             'label' => 'LBL_HH_ELIG',
           ),
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
@@ -90,7 +72,7 @@ array (
             'label' => 'LBL_HH_STRUCTURE_OTH',
           ),
         ),
-        6 => 
+        4 => 
         array (
           0 => 
           array (
@@ -99,7 +81,7 @@ array (
           ),
           1 => '',
         ),
-        7 => 
+        5 => 
         array (
           0 => 
           array (
@@ -108,7 +90,7 @@ array (
           ),
           1 => '',
         ),
-        8 => 
+        6 => 
         array (
           0 => 
           array (
@@ -117,7 +99,7 @@ array (
           ),
           1 => '',
         ),
-        9 => 
+        7 => 
         array (
           0 => 
           array (
@@ -126,7 +108,7 @@ array (
           ),
           1 => '',
         ),
-        10 => 
+        8 => 
         array (
           0 => 
           array (
@@ -134,11 +116,9 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_HH_COMMENT',
           ),
-          1 => '',
         ),
       ),
     ),
   ),
 );
 ?>
-

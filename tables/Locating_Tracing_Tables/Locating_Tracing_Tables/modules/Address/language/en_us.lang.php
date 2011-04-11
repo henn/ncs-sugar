@@ -88,7 +88,5 @@ $mod_strings = array (
   'LBL_UNIT' => 'Unit',
   'LBL_STATE' => 'State',
   'LBL_DETAILVIEW_PANEL1' => 'New Panel 1',
-  'LNK_IMPORT_LTT_ADDRESS' => 'Import Address',
-  'LBL_LTT_ADDRESS_SUBPANEL_TITLE' => 'Address',
 );
 ?>

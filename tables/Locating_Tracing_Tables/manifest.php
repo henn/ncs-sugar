@@ -38,7 +38,7 @@
     $manifest = array (
          'acceptable_sugar_versions' => 
           array (
-            '6.1.2'
+            '6.1.4'
           ),
           'acceptable_sugar_flavors' =>
           array(
@@ -51,9 +51,9 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'project_Locating_Tracing_Tables',
-          'published_date' => '2011-03-23 03:44:07',
+          'published_date' => '2011-04-11 21:12:57',
           'type' => 'module',
-          'version' => '1300851847',
+          'version' => '1302556377',
           'remove_tables' => 'prompt',
           );
 $installdefs = array (

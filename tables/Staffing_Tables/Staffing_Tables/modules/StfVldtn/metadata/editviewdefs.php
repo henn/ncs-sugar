@@ -44,32 +44,6 @@ array (
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        2 => 
-        array (
-          0 => '',
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'staff_id',
-            'label' => 'LBL_STAFF_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'event_id',
-            'label' => 'LBL_EVENT_ID',
-          ),
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
             'name' => 'staff_validate',
             'studio' => 'visible',
             'label' => 'LBL_STAFF_VALIDATE',
@@ -80,7 +54,7 @@ array (
             'label' => 'LBL_STAFF_VAL_DATE',
           ),
         ),
-        5 => 
+        2 => 
         array (
           0 => 
           array (
@@ -90,18 +64,16 @@ array (
           ),
           1 => '',
         ),
-        6 => 
+        3 => 
         array (
           0 => 
           array (
             'name' => 'st_staffrstr_st_stfvldtn_name',
           ),
-        ),
-        7 => 
-        array (
-          0 => 
+          1 => 
           array (
-            'name' => 'ncsdc_eventinfo_st_stfvldtn_name',
+            'name' => 'st_staffrst_stfvldtn_name',
+            'label' => 'LBL_ST_STAFFRSTR_ST_STFVLDTN_FROM_ST_STAFFRSTR_TITLE',
           ),
         ),
       ),
