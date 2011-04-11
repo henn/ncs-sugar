@@ -50,11 +50,6 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
           0 => 
           array (
             'name' => 'hh_status',
@@ -68,7 +63,7 @@ array (
             'label' => 'LBL_HH_ELIG',
           ),
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -82,7 +77,7 @@ array (
             'label' => 'LBL_HH_STRUCTURE_OTH',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -95,7 +90,7 @@ array (
             'label' => 'LBL_NUM_PREG',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -108,7 +103,7 @@ array (
             'label' => 'LBL_NUM_PREG_MINOR',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (

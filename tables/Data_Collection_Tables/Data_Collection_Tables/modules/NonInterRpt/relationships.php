@@ -35,5 +35,38 @@
  ********************************************************************************/
 
 $relationships = array (
+  'ncsdc_noninterrpt_plt_person' => 
+  array (
+    'rhs_label' => 'PLT_Person',
+    'lhs_label' => 'Non Interview Report',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'NCSDC_NonInterRpt',
+    'rhs_module' => 'PLT_Person',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'ncsdc_noninterrpt_plt_person',
+  ),
+  'ncsdc_noninterrpt_gt_dwellingunt' => 
+  array (
+    'rhs_label' => 'Dwelling Unit',
+    'lhs_label' => 'Non Interview Report',
+    'lhs_subpanel' => 'default',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'NCSDC_NonInterRpt',
+    'rhs_module' => 'GT_DwellingUnt',
+    'relationship_type' => 'many-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'ncsdc_noninterrpt_gt_dwellingunt',
+  ),
 );
 ?>

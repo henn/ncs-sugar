@@ -50,21 +50,6 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'plt_person_plt_personrace',
   ),
-  'plt_person_ltt_address' => 
-  array (
-    'rhs_label' => 'LTT_Address',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'PLT_Person',
-    'rhs_module' => 'LTT_Address',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'plt_person_ltt_address',
-  ),
   'plt_person_ltt_telephone' => 
   array (
     'rhs_label' => 'Telephone',
@@ -95,12 +80,13 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'plt_person_ltt_email',
   ),
-  'plt_person_ncsdc_noninterrpt' => 
+  'plt_person_ltt_address' => 
   array (
-    'rhs_label' => 'Non Interview Report',
+    'rhs_label' => 'Address',
+    'lhs_label' => 'Person',
     'rhs_subpanel' => 'default',
     'lhs_module' => 'PLT_Person',
-    'rhs_module' => 'NCSDC_NonInterRpt',
+    'rhs_module' => 'LTT_Address',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -108,7 +94,7 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'plt_person_ncsdc_noninterrpt',
+    'relationship_name' => 'plt_person_ltt_address',
   ),
 );
 ?>

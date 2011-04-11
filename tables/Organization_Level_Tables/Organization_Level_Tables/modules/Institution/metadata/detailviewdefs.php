@@ -52,56 +52,17 @@ array (
         array (
           0 => 
           array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
-          ),
-          1 => '',
-        ),
-        4 => 
-        array (
-          0 => '',
-          1 => 
-          array (
             'name' => 'institute_type',
             'studio' => 'visible',
             'label' => 'LBL_INSTITUTE_TYPE',
           ),
-        ),
-        5 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'institute_type_oth',
             'label' => 'LBL_INSTITUTE_TYPE_OTH',
           ),
-          1 => '',
         ),
-        6 => 
+        2 => 
         array (
           0 => 
           array (
@@ -115,7 +76,7 @@ array (
             'label' => 'LBL_INSTITUTE_RELATION_OTH',
           ),
         ),
-        7 => 
+        3 => 
         array (
           0 => 
           array (
@@ -129,7 +90,7 @@ array (
             'label' => 'LBL_INSTITUTE_OWNER_OTH',
           ),
         ),
-        8 => 
+        4 => 
         array (
           0 => 
           array (
@@ -138,7 +99,7 @@ array (
           ),
           1 => '',
         ),
-        9 => 
+        5 => 
         array (
           0 => 
           array (
@@ -152,7 +113,7 @@ array (
             'label' => 'LBL_INSTITUTE_UNIT_OTH',
           ),
         ),
-        10 => 
+        6 => 
         array (
           0 => 
           array (
@@ -166,7 +127,7 @@ array (
             'label' => 'LBL_INSTITUTE_INFO_SOURCE_OTH',
           ),
         ),
-        11 => 
+        7 => 
         array (
           0 => 
           array (
@@ -179,7 +140,7 @@ array (
             'label' => 'LBL_INSTITUTE_INFO_UPDATE',
           ),
         ),
-        12 => 
+        8 => 
         array (
           0 => 
           array (

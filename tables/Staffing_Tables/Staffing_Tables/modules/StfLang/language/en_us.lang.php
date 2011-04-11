@@ -70,5 +70,6 @@ $mod_strings = array (
   'LBL_STAFF_LANG_OTH' => 'Staff Language Other',
   'LNK_IMPORT_ST_STFLANG' => 'Import Staff Language',
   'LBL_ST_STFLANG_SUBPANEL_TITLE' => 'Staff Language',
+  'LBL_EDITVIEW_PANEL1' => 'New Panel 1',
 );
 ?>

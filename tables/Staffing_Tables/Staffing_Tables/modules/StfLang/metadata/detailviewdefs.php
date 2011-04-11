@@ -52,53 +52,6 @@ array (
         array (
           0 => 
           array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
-          ),
-          1 => '',
-        ),
-        4 => 
-        array (
-          0 => '',
-        ),
-        5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'staff_id',
-            'label' => 'LBL_STAFF_ID',
-          ),
-          1 => '',
-        ),
-        6 => 
-        array (
-          0 => 
-          array (
             'name' => 'staff_lang',
             'studio' => 'visible',
             'label' => 'LBL_STAFF_LANG',
@@ -109,11 +62,12 @@ array (
             'label' => 'LBL_STAFF_LANG_OTH',
           ),
         ),
-        7 => 
+        2 => 
         array (
           0 => 
           array (
-            'name' => 'st_staff_st_staff_language_name',
+            'name' => 'st_staffrstt_stflang_name',
+            'label' => 'LBL_ST_STAFFRSTR_ST_STFLANG_FROM_ST_STAFFRSTR_TITLE',
           ),
           1 => 
           array (

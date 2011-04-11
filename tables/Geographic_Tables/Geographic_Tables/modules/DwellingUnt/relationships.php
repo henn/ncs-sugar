@@ -48,20 +48,5 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'gt_dwellingunt_ltt_address',
   ),
-  'gt_dwellingunt_ncsdc_noninterrpt' => 
-  array (
-    'rhs_label' => 'Non Interview Report',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'GT_DwellingUnt',
-    'rhs_module' => 'NCSDC_NonInterRpt',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'gt_dwellingunt_ncsdc_noninterrpt',
-  ),
 );
 ?>
