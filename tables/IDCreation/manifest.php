@@ -64,7 +64,7 @@ $installdefs = array (
 ####Begin copy of ncs_framework to the root sugar directory####
     array (
       'from' => '<basepath>/ncs_framework',
-      'to' => '/var/www/sugar/ncs_framework',
+	  'to' => 'ncs_framework',
     ),
 ####End copy of ncs_framework
 ####################################
