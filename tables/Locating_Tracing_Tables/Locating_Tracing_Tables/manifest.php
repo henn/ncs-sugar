@@ -51,8 +51,8 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'Locating_Tracing_Tables',
-          'published_date' => '2011-04-11 21:12:57',
+          'published_date' => '2011-04-20 23:41:41',
           'type' => 'module',
-          'version' => '1302556377',
+          'version' => '1303342901',
           'remove_tables' => 'prompt',
           );
