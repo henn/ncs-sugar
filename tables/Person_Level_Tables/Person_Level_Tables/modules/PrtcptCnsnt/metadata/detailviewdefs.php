@@ -166,18 +166,7 @@ array (
         array (
           0 => 
           array (
-            'name' => 'plt_participant_plt_participant_consent_name',
-          ),
-          1 => 
-          array (
             'name' => 'plt_participant_plt_prtcptcnsnt_name',
-          ),
-        ),
-        12 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ncsdc_cntctinfo_plt_prtcptcnsnt_name',
           ),
         ),
       ),

@@ -65,28 +65,19 @@ array (
         ),
         2 => 
         array (
-          0 => '',
-          1 => 
+          0 => 
           array (
             'name' => 'race',
             'studio' => 'visible',
             'label' => 'LBL_RACE',
           ),
-        ),
-        3 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'race_oth',
             'label' => 'LBL_RACE_OTH',
           ),
         ),
-        4 => 
-        array (
-          0 => '',
-          1 => '',
-        ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (

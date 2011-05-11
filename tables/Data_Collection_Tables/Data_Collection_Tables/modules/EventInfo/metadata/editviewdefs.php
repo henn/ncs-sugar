@@ -42,11 +42,6 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
           0 => 
           array (
             'name' => 'event_type',
@@ -59,7 +54,7 @@ array (
             'label' => 'LBL_EVENT_TYPE_OTH',
           ),
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -68,7 +63,7 @@ array (
           ),
           1 => '',
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -82,7 +77,7 @@ array (
             'label' => 'LBL_EVENT_DISP',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -95,7 +90,7 @@ array (
             'label' => 'LBL_EVENT_END_DATE',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -108,7 +103,7 @@ array (
             'label' => 'LBL_EVENT_END_TIME',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -116,19 +111,14 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_EVENT_BREAKOFF',
           ),
-          1 => '',
-        ),
-        8 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'event_incentive_type',
             'studio' => 'visible',
             'label' => 'LBL_EVENT_INCENTIVE_TYPE',
           ),
-          1 => '',
         ),
-        9 => 
+        7 => 
         array (
           0 => 
           array (
@@ -141,7 +131,7 @@ array (
             'label' => 'LBL_EVENT_INCENT_NONCASH',
           ),
         ),
-        10 => 
+        8 => 
         array (
           0 => 
           array (
@@ -150,27 +140,13 @@ array (
             'label' => 'LBL_EVENT_COMMENT',
           ),
         ),
-        11 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ncsdc_eventinfo_plt_participant_name',
-          ),
-        ),
-        12 => 
+        9 => 
         array (
           0 => 
           array (
             'name' => 'ncsdc_cntctinfo_ncsdc_eventinfo_name',
           ),
           1 => 
-          array (
-            'name' => 'plt_participant_ncsdc_eventinfo_name',
-          ),
-        ),
-        13 => 
-        array (
-          0 => 
           array (
             'name' => 'ncsdc_eventrticipant_name',
             'label' => 'LBL_NCSDC_EVENTINFO_PLT_PARTICIPANT_FROM_PLT_PARTICIPANT_TITLE',

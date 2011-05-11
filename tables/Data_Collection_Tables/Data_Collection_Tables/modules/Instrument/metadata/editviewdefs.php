@@ -42,11 +42,6 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
           0 => 
           array (
             'name' => 'instrument_type',
@@ -59,7 +54,7 @@ array (
             'label' => 'LBL_INSTRUMENT_TYPE_OTH',
           ),
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -68,7 +63,7 @@ array (
           ),
           1 => '',
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -82,7 +77,7 @@ array (
             'label' => 'LBL_INSTRUMENT_REPEAT_KEY',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -92,7 +87,7 @@ array (
           ),
           1 => '',
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -106,7 +101,7 @@ array (
             'label' => 'LBL_INS_MODE_OTH',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -119,7 +114,7 @@ array (
             'label' => 'LBL_INS_DATE_END',
           ),
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (
@@ -132,7 +127,7 @@ array (
             'label' => 'LBL_INS_END_TIME',
           ),
         ),
-        9 => 
+        8 => 
         array (
           0 => 
           array (
@@ -142,7 +137,7 @@ array (
           ),
           1 => '',
         ),
-        10 => 
+        9 => 
         array (
           0 => 
           array (
@@ -157,7 +152,7 @@ array (
             'label' => 'LBL_DATA_PROBLEM',
           ),
         ),
-        11 => 
+        10 => 
         array (
           0 => 
           array (
@@ -166,7 +161,7 @@ array (
             'label' => 'LBL_INSTRU_COMMENT',
           ),
         ),
-        12 => 
+        11 => 
         array (
           0 => 
           array (

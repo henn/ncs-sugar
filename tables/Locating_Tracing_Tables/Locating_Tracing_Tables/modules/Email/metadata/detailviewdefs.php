@@ -42,64 +42,53 @@ array (
             'name' => 'name',
             'label' => 'LBL_NAME',
           ),
-        ),
-        1 => 
-        array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'email',
-            'label' => 'LBL_EMAIL',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
+          2 => 
           array (
             'name' => 'email_type',
             'studio' => 'visible',
             'label' => 'LBL_EMAIL_TYPE',
           ),
-          1 => 
+        ),
+        1 => 
+        array (
+          0 => 
           array (
             'name' => 'email_type_oth',
             'label' => 'LBL_EMAIL_TYPE_OTH',
           ),
-        ),
-        4 => 
-        array (
-          0 => 
+          1 => 
+          array (
+            'name' => 'email',
+            'label' => 'LBL_EMAIL',
+          ),
+          2 => 
           array (
             'name' => 'email_share',
             'studio' => 'visible',
             'label' => 'LBL_EMAIL_SHARE',
           ),
-          1 => 
+        ),
+        2 => 
+        array (
+          0 => 
           array (
             'name' => 'email_active',
             'studio' => 'visible',
             'label' => 'LBL_EMAIL_ACTIVE',
           ),
-        ),
-        5 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'email_info_source',
             'studio' => 'visible',
             'label' => 'LBL_EMAIL_INFO_SOURCE',
           ),
-          1 => 
+          2 => 
           array (
             'name' => 'email_info_source_oth',
             'label' => 'LBL_EMAIL_INFO_SOURCE_OTH',
           ),
         ),
-        6 => 
+        3 => 
         array (
           0 => 
           array (
@@ -112,48 +101,36 @@ array (
             'name' => 'email_rank_oth',
             'label' => 'LBL_EMAIL_RANK_OTH',
           ),
+          2 => '',
         ),
-        7 => 
+        4 => 
         array (
           0 => 
-          array (
-            'name' => 'email_info_date',
-            'label' => 'LBL_EMAIL_INFO_DATE',
-          ),
-          1 => 
           array (
             'name' => 'email_info_update',
             'label' => 'LBL_EMAIL_INFO_UPDATE',
           ),
+          1 => '',
+          2 => 
+          array (
+            'name' => 'email_info_date',
+            'label' => 'LBL_EMAIL_INFO_DATE',
+          ),
         ),
-        8 => 
+        5 => 
         array (
-          0 => 
+          0 => '',
+          1 => '',
+          2 => 
           array (
             'name' => 'email_comment',
             'studio' => 'visible',
             'label' => 'LBL_EMAIL_COMMENT',
           ),
-          1 => '',
         ),
-        9 => 
+        6 => 
         array (
           0 => '',
-          1 => 
-          array (
-            'name' => 'plt_person_ltt_email_name',
-          ),
-        ),
-        10 => 
-        array (
-          0 => 
-          array (
-            'name' => 'olt_provider_ltt_email_name',
-          ),
-		  1 => 
-          array (
-            'name' => 'olt_institution_ltt_email_name',
-          ),
         ),
       ),
     ),

@@ -50,11 +50,6 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
           0 => 
           array (
             'name' => 'ppg_status',
@@ -67,7 +62,7 @@ array (
             'label' => 'LBL_PPG_STATUS_DATE',
           ),
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -82,7 +77,7 @@ array (
             'label' => 'LBL_PPG_INFO_SOURCE',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -95,20 +90,13 @@ array (
             'label' => 'LBL_PPG_INFO_MODE_OTH',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
             'name' => 'ppg_comment',
             'studio' => 'visible',
             'label' => 'LBL_PPG_COMMENT',
-          ),
-        ),
-        6 => 
-        array (
-          0 => 
-          array (
-            'name' => 'plt_participant_plt_ppg_status_history_name',
           ),
           1 => 
           array (

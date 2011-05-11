@@ -62,13 +62,6 @@ array (
             'name' => 'plt_participant_plt_prtcptcnsnt_name',
           ),
         ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ncsdc_cntctinfo_plt_prtcptcnsnt_name',
-          ),
-        ),
       ),
       'lbl_editview_panel1' => 
       array (

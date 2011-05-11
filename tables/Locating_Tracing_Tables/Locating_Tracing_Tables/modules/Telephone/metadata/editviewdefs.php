@@ -37,11 +37,6 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
           0 => 
           array (
             'name' => 'phone_nbr',
@@ -53,7 +48,7 @@ array (
             'label' => 'LBL_PHONE_EXT',
           ),
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -67,7 +62,7 @@ array (
             'label' => 'LBL_PHONE_TYPE_OTH',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -82,7 +77,7 @@ array (
             'label' => 'LBL_PHONE_SHARE',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -97,7 +92,7 @@ array (
             'label' => 'LBL_TEXT_PERMISSION',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -111,7 +106,7 @@ array (
             'label' => 'LBL_PHONE_RANK_OTH',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -125,7 +120,7 @@ array (
             'label' => 'LBL_PHONE_INFO_SOURCE_OTH',
           ),
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (
@@ -135,7 +130,7 @@ array (
           ),
           1 => '',
         ),
-        9 => 
+        8 => 
         array (
           0 => 
           array (
@@ -146,7 +141,7 @@ array (
             'name' => 'olt_provider_ltt_telephone_name',
           ),
         ),
-        10 => 
+        9 => 
         array (
           0 => 
           array (
