@@ -21,7 +21,7 @@ HELPER_DIR="templates"
 FINAL_FILENAME="`date +'%F'`-ncs-modules-snapshot"
 
 
-if [ "`basename $PWD`" != "tables" ]; then
+if [ "`basename \"$PWD\"`" != "tables" ]; then
 	echo "ERROR: Must be within tables directory to package modules"
 	exit 1
 fi
@@ -96,6 +96,7 @@ cd ..
 # Copy other files
 zip -r9qj $COMBINED.zip ../$HELPER_DIR/{README,LICENSE}.txt
 
+zip -9qj ${FINAL_FILENAME}-combined.zip $COMBINED.zip IDCreation.zip ../$HELPER_DIR/README.txt
 
-echo "Created combined package (minus IDCreation...to come later) as: output/$COMBINED.zip"
+echo "Created combined package as: output/${FINAL_FILENAME}-combined.zip"
 
