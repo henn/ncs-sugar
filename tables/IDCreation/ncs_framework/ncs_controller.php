@@ -33,7 +33,7 @@
 		}
 		
 		function check_for_existing_name_id($nameID) {
-			$db = $GLOBALS['db']->query("select name from " . $this->bean->table_name . " where name = '" . $nameID . "' and delete = '0'");
+			$db = $GLOBALS['db']->query("select name from " . $this->bean->table_name . " where name = '" . $nameID . "' and deleted = '0'");
 
 			while ($dbArray = $GLOBALS['db']->fetchByAssoc($db)) {
 				// field is $dbArray['field_name'];

@@ -51,9 +51,9 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'project_IDCreation',
-          'published_date' => '2011-03-23 03:44:47',
+          'published_date' => '2011-05-07 13:20:19',
           'type' => 'module',
-          'version' => '1300851887',
+          'version' => '1.4',
           'remove_tables' => 'prompt',
           );
 $installdefs = array (
