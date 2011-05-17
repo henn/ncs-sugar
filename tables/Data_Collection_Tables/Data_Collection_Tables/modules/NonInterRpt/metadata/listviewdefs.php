@@ -146,13 +146,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'MOVED_LENGTH_TIME' => 
-  array (
-    'type' => 'decimal',
-    'label' => 'LBL_MOVED_LENGTH_TIME',
-    'width' => '10%',
-    'default' => false,
-  ),
   'MOVED_RELATION_OTH' => 
   array (
     'type' => 'varchar',

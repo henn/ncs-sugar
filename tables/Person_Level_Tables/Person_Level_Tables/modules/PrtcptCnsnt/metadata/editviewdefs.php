@@ -59,7 +59,8 @@ array (
         array (
           0 => 
           array (
-            'name' => 'plt_participant_plt_prtcptcnsnt_name',
+            'name' => 'plt_particitcptcnsnt_name',
+            'label' => 'LBL_PLT_PARTICIPANT_PLT_PRTCPTCNSNT_FROM_PLT_PARTICIPANT_TITLE',
           ),
         ),
       ),

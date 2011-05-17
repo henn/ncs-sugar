@@ -86,13 +86,17 @@ array (
         array (
           0 => 
           array (
-            'name' => 'plt_participant_plt_ppgstshstry_name',
-          ),
-          1 => 
-          array (
             'name' => 'ppg_comment',
             'studio' => 'visible',
             'label' => 'LBL_PPG_COMMENT',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'plt_particigstshstry_name',
+            'label' => 'LBL_PLT_PARTICIPANT_PLT_PPGSTSHSTRY_FROM_PLT_PARTICIPANT_TITLE',
           ),
         ),
       ),

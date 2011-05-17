@@ -69,10 +69,6 @@ array (
             'name' => 'st_staffrstt_stflang_name',
             'label' => 'LBL_ST_STAFFRSTR_ST_STFLANG_FROM_ST_STAFFRSTR_TITLE',
           ),
-          1 => 
-          array (
-            'name' => 'st_staffrstr_st_stflang_name',
-          ),
         ),
       ),
     ),

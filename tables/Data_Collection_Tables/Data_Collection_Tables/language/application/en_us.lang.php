@@ -94,3 +94,7 @@ $app_list_strings['ACCESS_ATTEMPT_CL1']['3'] = 'Spoke to Building Owner';
 $app_list_strings['ACCESS_ATTEMPT_CL1']['_5'] = 'Other';
 $app_list_strings['ACCESS_ATTEMPT_CL1']['_7'] = 'Not applicable';
 $app_list_strings['ACCESS_ATTEMPT_CL1']['_4'] = 'Missing in Error';
+$app_list_strings['INC_UNANTICIPATED_CL1']['1'] = 'Unexpected given the  research procedures and characteristics of the subject population';
+$app_list_strings['INC_UNANTICIPATED_CL1']['2'] = 'Related or possibly related to participation in research';
+$app_list_strings['INC_UNANTICIPATED_CL1']['3'] = 'Suggests that research places subjects or others at a greater risk of harm than previously known or recognized';
+$app_list_strings['INC_UNANTICIPATED_CL1']['_4'] = 'Missing in Error';

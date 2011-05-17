@@ -98,9 +98,13 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PPG_COMMENT',
           ),
-          1 => 
+        ),
+        5 => 
+        array (
+          0 => 
           array (
-            'name' => 'plt_participant_plt_ppgstshstry_name',
+            'name' => 'plt_particigstshstry_name',
+            'label' => 'LBL_PLT_PARTICIPANT_PLT_PPGSTSHSTRY_FROM_PLT_PARTICIPANT_TITLE',
           ),
         ),
       ),

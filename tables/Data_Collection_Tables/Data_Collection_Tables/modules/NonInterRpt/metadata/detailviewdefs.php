@@ -287,41 +287,25 @@ array (
         ),
         20 => 
         array (
-          0 => 
-          array (
-            'name' => 'moved_length_time',
-            'label' => 'LBL_MOVED_LENGTH_TIME',
-          ),
-          1 => '',
+          0 => '',
         ),
         21 => 
         array (
           0 => 
           array (
-            'name' => 'ncsdc_eventinfo_ncsdc_noninterrpt_name',
+            'name' => 'ncsdc_noninlt_person_name',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'ncsdc_cntctninterrpt_name',
+            'label' => 'LBL_NCSDC_CNTCTINFO_NCSDC_NONINTERRPT_FROM_NCSDC_CNTCTINFO_TITLE',
+          ),
         ),
         22 => 
         array (
           0 => 
           array (
-            'name' => 'gt_dwellingunt_ncsdc_noninterrpt_name',
-          ),
-          1 => 
-          array (
-            'name' => 'plt_person_ncsdc_noninterrpt_name',
-          ),
-        ),
-        23 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ncsdc_cntctinfo_ncsdc_noninterrpt_name',
-          ),
-          1 => 
-          array (
-            'name' => 'ncsdc_noninlt_person_name',
+            'name' => 'ncsdc_noninellingunt_name',
           ),
         ),
       ),

@@ -75,6 +75,17 @@ array (
         array (
           0 => 
           array (
+            'name' => 'plt_lnkprshshld_plt_person_name',
+          ),
+          1 => 
+          array (
+            'name' => 'plt_lnkprshshld_gt_household_name',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
             'name' => 'plt_lnkprshlt_person_name',
             'label' => 'LBL_PLT_LNKPRSHSHLD_PLT_PERSON_FROM_PLT_PERSON_TITLE',
           ),

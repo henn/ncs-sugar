@@ -2,6 +2,31 @@
 $module_name = 'PLT_PrtcptCnsnt';
 $listViewDefs [$module_name] = 
 array (
+  'NAME' => 
+  array (
+    'width' => '32%',
+    'label' => 'LBL_NAME',
+    'default' => true,
+    'link' => true,
+  ),
+  'CONSENT_TYPE' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_CONSENT_TYPE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'CONSENT_GIVEN' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_CONSENT_GIVEN',
+    'sortable' => false,
+    'width' => '10%',
+  ),
   'DATE_ENTERED' => 
   array (
     'type' => 'datetime',
@@ -64,31 +89,6 @@ array (
     'label' => 'LBL_CONSENT_WITHDRAW',
     'sortable' => false,
     'width' => '10%',
-  ),
-  'CONSENT_GIVEN' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_CONSENT_GIVEN',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'CONSENT_TYPE' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_CONSENT_TYPE',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'NAME' => 
-  array (
-    'width' => '32%',
-    'label' => 'LBL_NAME',
-    'default' => true,
-    'link' => true,
   ),
   'ASSIGNED_USER_NAME' => 
   array (

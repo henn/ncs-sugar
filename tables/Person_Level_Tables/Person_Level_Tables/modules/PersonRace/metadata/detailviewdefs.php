@@ -81,7 +81,8 @@ array (
         array (
           0 => 
           array (
-            'name' => 'plt_person_plt_personrace_name',
+            'name' => 'plt_person_ersonrace_name',
+            'label' => 'LBL_PLT_PERSON_PLT_PERSONRACE_FROM_PLT_PERSON_TITLE',
           ),
         ),
       ),

@@ -100,7 +100,8 @@ array (
           ),
           1 => 
           array (
-            'name' => 'gt_prmsampunt_gt_secsampunt_name',
+            'name' => 'gt_prmsampuecsampunt_name',
+            'label' => 'LBL_GT_PRMSAMPUNT_GT_SECSAMPUNT_FROM_GT_PRMSAMPUNT_TITLE',
           ),
         ),
       ),

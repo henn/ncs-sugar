@@ -37,6 +37,25 @@
 $vardefs = array (
   'fields' => 
   array (
+    'name' => 
+    array (
+      'name' => 'name',
+      'vname' => 'LBL_NAME',
+      'type' => 'name',
+      'dbType' => 'varchar',
+      'len' => '36',
+      'unified_search' => true,
+      'required' => true,
+      'importable' => 'required',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => '',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'size' => '20',
+    ),
     'inc_unanticipated' => 
     array (
       'required' => false,
@@ -57,25 +76,6 @@ $vardefs = array (
       'options' => 'INC_UNANTICIPATED_CL1',
       'studio' => 'visible',
       'dependency' => false,
-    ),
-    'name' => 
-    array (
-      'name' => 'name',
-      'vname' => 'LBL_NAME',
-      'type' => 'name',
-      'dbType' => 'varchar',
-      'len' => '36',
-      'unified_search' => true,
-      'required' => true,
-      'importable' => 'required',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => '',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'size' => '20',
     ),
   ),
   'relationships' => 

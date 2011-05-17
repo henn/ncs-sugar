@@ -67,6 +67,17 @@ array (
         array (
           0 => 
           array (
+            'name' => 'plt_lkprsprtcpt_plt_person_name',
+          ),
+          1 => 
+          array (
+            'name' => 'plt_lkprsprtcpt_plt_participant_name',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
             'name' => 'plt_lkprsprlt_person_name',
             'label' => 'LBL_PLT_LKPRSPRTCPT_PLT_PERSON_FROM_PLT_PERSON_TITLE',
           ),

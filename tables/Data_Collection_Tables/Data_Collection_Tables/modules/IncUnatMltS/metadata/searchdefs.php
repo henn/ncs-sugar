@@ -12,16 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'inc_unanticipated' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_INC_UNANTICIPATED',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'inc_unanticipated',
-      ),
       'assigned_user_name' => 
       array (
         'link' => 'assigned_user_link',

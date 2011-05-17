@@ -50,29 +50,11 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
           0 => 
           array (
             'name' => 'inc_unanticipated',
             'studio' => 'visible',
             'label' => 'LBL_INC_UNANTICIPATED',
-          ),
-          1 => '',
-        ),
-        3 => 
-        array (
-          0 => '',
-          1 => '',
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ncsdc_event_ncsdc_incident_unanticipated_name',
           ),
           1 => '',
         ),

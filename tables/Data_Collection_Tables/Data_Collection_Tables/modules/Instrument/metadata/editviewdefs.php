@@ -42,6 +42,11 @@ array (
         ),
         1 => 
         array (
+          0 => '',
+          1 => '',
+        ),
+        2 => 
+        array (
           0 => 
           array (
             'name' => 'instrument_type',
@@ -54,7 +59,7 @@ array (
             'label' => 'LBL_INSTRUMENT_TYPE_OTH',
           ),
         ),
-        2 => 
+        3 => 
         array (
           0 => 
           array (
@@ -63,7 +68,7 @@ array (
           ),
           1 => '',
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
@@ -77,7 +82,7 @@ array (
             'label' => 'LBL_INSTRUMENT_REPEAT_KEY',
           ),
         ),
-        4 => 
+        5 => 
         array (
           0 => 
           array (
@@ -87,7 +92,7 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
@@ -101,7 +106,7 @@ array (
             'label' => 'LBL_INS_MODE_OTH',
           ),
         ),
-        6 => 
+        7 => 
         array (
           0 => 
           array (
@@ -114,7 +119,7 @@ array (
             'label' => 'LBL_INS_DATE_END',
           ),
         ),
-        7 => 
+        8 => 
         array (
           0 => 
           array (
@@ -127,7 +132,7 @@ array (
             'label' => 'LBL_INS_END_TIME',
           ),
         ),
-        8 => 
+        9 => 
         array (
           0 => 
           array (
@@ -137,7 +142,7 @@ array (
           ),
           1 => '',
         ),
-        9 => 
+        10 => 
         array (
           0 => 
           array (
@@ -152,7 +157,7 @@ array (
             'label' => 'LBL_DATA_PROBLEM',
           ),
         ),
-        10 => 
+        11 => 
         array (
           0 => 
           array (
@@ -161,13 +166,13 @@ array (
             'label' => 'LBL_INSTRU_COMMENT',
           ),
         ),
-        11 => 
+        12 => 
         array (
           0 => 
           array (
-            'name' => 'ncsdc_event_ncsdc_instrument_name',
+            'name' => 'ncsdc_eventnstrument_name',
+            'label' => 'LBL_NCSDC_EVENTINFO_NCSDC_INSTRUMENT_FROM_NCSDC_EVENTINFO_TITLE',
           ),
-          1 => '',
         ),
       ),
     ),

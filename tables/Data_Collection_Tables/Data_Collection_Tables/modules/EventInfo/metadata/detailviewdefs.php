@@ -50,6 +50,11 @@ array (
         ),
         1 => 
         array (
+          0 => '',
+          1 => '',
+        ),
+        2 => 
+        array (
           0 => 
           array (
             'name' => 'event_type',
@@ -62,7 +67,7 @@ array (
             'label' => 'LBL_EVENT_TYPE_OTH',
           ),
         ),
-        2 => 
+        3 => 
         array (
           0 => 
           array (
@@ -71,7 +76,7 @@ array (
           ),
           1 => '',
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
@@ -85,7 +90,7 @@ array (
             'label' => 'LBL_EVENT_DISP',
           ),
         ),
-        4 => 
+        5 => 
         array (
           0 => 
           array (
@@ -98,7 +103,7 @@ array (
             'label' => 'LBL_EVENT_END_DATE',
           ),
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
@@ -111,7 +116,7 @@ array (
             'label' => 'LBL_EVENT_END_TIME',
           ),
         ),
-        6 => 
+        7 => 
         array (
           0 => 
           array (
@@ -119,14 +124,19 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_EVENT_BREAKOFF',
           ),
-          1 => 
+          1 => '',
+        ),
+        8 => 
+        array (
+          0 => 
           array (
             'name' => 'event_incentive_type',
             'studio' => 'visible',
             'label' => 'LBL_EVENT_INCENTIVE_TYPE',
           ),
+          1 => '',
         ),
-        7 => 
+        9 => 
         array (
           0 => 
           array (
@@ -139,7 +149,7 @@ array (
             'label' => 'LBL_EVENT_INCENT_NONCASH',
           ),
         ),
-        8 => 
+        10 => 
         array (
           0 => 
           array (
@@ -148,16 +158,24 @@ array (
             'label' => 'LBL_EVENT_COMMENT',
           ),
         ),
-        9 => 
+        11 => 
         array (
           0 => 
           array (
-            'name' => 'ncsdc_cntctinfo_ncsdc_eventinfo_name',
+            'name' => 'ncsdc_eventrticipant_name',
+            'label' => 'LBL_NCSDC_EVENTINFO_PLT_PARTICIPANT_FROM_PLT_PARTICIPANT_TITLE',
           ),
           1 => 
           array (
-            'name' => 'ncsdc_eventrticipant_name',
-            'label' => 'LBL_NCSDC_EVENTINFO_PLT_PARTICIPANT_FROM_PLT_PARTICIPANT_TITLE',
+            'name' => 'ncsdc_cntcteventinfo_name',
+            'label' => 'LBL_NCSDC_CNTCTINFO_NCSDC_EVENTINFO_FROM_NCSDC_CNTCTINFO_TITLE',
+          ),
+        ),
+        12 => 
+        array (
+          0 => 
+          array (
+            'name' => 'st_otrchstaeventinfo_name',
           ),
         ),
       ),

@@ -50,12 +50,12 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => 
+          0 => 
           array (
             'name' => 'staff_id',
             'label' => 'LBL_STAFF_ID',
           ),
+          1 => '',
         ),
         2 => 
         array (
@@ -110,16 +110,13 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_STAFF_BGCHECK_LVL',
           ),
-          1 => 
-          array (
-            'name' => 'st_staffrstr_st_stfcrttrn_name',
-          ),
         ),
         7 => 
         array (
           0 => 
           array (
-            'name' => 'st_staff_st_staff_cert_training_name',
+            'name' => 'st_staffrststfcrttrn_name',
+            'label' => 'LBL_ST_STAFFRSTR_ST_STFCRTTRN_FROM_ST_STAFFRSTR_TITLE',
           ),
         ),
       ),

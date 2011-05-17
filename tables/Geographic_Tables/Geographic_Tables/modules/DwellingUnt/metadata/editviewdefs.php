@@ -32,7 +32,7 @@ array (
           array (
             'name' => 'name',
             'label' => 'Name (DU_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -111,20 +111,18 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_DUID_COMMENT',
           ),
-          1 => '',
         ),
         8 => 
         array (
           0 => 
           array (
-            'name' => 'gt_listingunt_ltt_address_name',
+            'name' => 'gt_dwellingt_address_name',
+            'label' => 'LBL_GT_DWELLINGUNT_LTT_ADDRESS_FROM_LTT_ADDRESS_TITLE',
           ),
-        ),
-        9 => 
-        array (
-          0 => 
+          1 => 
           array (
-            'name' => 'gt_listingunt_gt_listingunt_name',
+            'name' => 'gt_listinguellingunt_name',
+            'label' => 'LBL_GT_LISTINGUNT_GT_DWELLINGUNT_FROM_GT_LISTINGUNT_TITLE',
           ),
         ),
       ),
@@ -132,4 +130,3 @@ array (
   ),
 );
 ?>
-

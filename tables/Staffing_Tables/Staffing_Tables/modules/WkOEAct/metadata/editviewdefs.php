@@ -30,9 +30,9 @@ array (
         array (
           0 => 
           array (
- 			'name' => 'name',
+            'name' => 'name',
             'label' => 'Name (OUTREACH_EVENT_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -70,11 +70,6 @@ array (
         ),
         3 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        4 => 
-        array (
           0 => 
           array (
             'name' => 'outreach_target',
@@ -87,7 +82,7 @@ array (
             'label' => 'LBL_OUTREACH_TARGET_OTH',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -101,7 +96,7 @@ array (
             'label' => 'LBL_OUTREACH_MODE_OTH',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -115,7 +110,7 @@ array (
             'label' => 'LBL_OUTREACH_TYPE_OTH',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -130,7 +125,7 @@ array (
             'label' => 'LBL_OUTREACH_LANG1',
           ),
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (
@@ -144,7 +139,7 @@ array (
             'label' => 'LBL_OUTREACH_LANG_OTH',
           ),
         ),
-        9 => 
+        8 => 
         array (
           0 => 
           array (
@@ -159,7 +154,7 @@ array (
             'label' => 'LBL_OUTREACH_RACE2',
           ),
         ),
-        10 => 
+        9 => 
         array (
           0 => 
           array (
@@ -173,7 +168,7 @@ array (
             'label' => 'LBL_OUTREACH_CULTURE1',
           ),
         ),
-        11 => 
+        10 => 
         array (
           0 => 
           array (
@@ -187,7 +182,7 @@ array (
             'label' => 'LBL_OUTREACH_CULTURE_OTH',
           ),
         ),
-        12 => 
+        11 => 
         array (
           0 => 
           array (
@@ -200,7 +195,7 @@ array (
             'label' => 'LBL_OUTREACH_COST',
           ),
         ),
-        13 => 
+        12 => 
         array (
           0 => 
           array (
@@ -214,7 +209,7 @@ array (
             'label' => 'LBL_OUTREACH_INCIDENT',
           ),
         ),
-        14 => 
+        13 => 
         array (
           0 => 
           array (
@@ -223,19 +218,16 @@ array (
           ),
           1 => '',
         ),
-        15 => 
-        array (
-          0 => '',
-        ),
-        16 => 
+        14 => 
         array (
           0 => 
           array (
-            'name' => 'st_staff_st_outreach_name',
+            'name' => 'st_staffrstt_wkoeact_name',
+            'label' => 'LBL_ST_STAFFRSTR_ST_WKOEACT_FROM_ST_STAFFRSTR_TITLE',
           ),
           1 => 
           array (
-            'name' => 'st_staffrstr_st_wkoeact_name',
+            'name' => 'st_wkoeact__incident_name',
           ),
         ),
       ),

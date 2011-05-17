@@ -68,10 +68,6 @@ array (
         array (
           0 => 
           array (
-            'name' => 'st_staffrstr_st_stfvldtn_name',
-          ),
-          1 => 
-          array (
             'name' => 'st_staffrst_stfvldtn_name',
             'label' => 'LBL_ST_STAFFRSTR_ST_STFVLDTN_FROM_ST_STAFFRSTR_TITLE',
           ),

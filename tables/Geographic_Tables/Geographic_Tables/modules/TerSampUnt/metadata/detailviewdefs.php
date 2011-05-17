@@ -101,7 +101,8 @@ array (
           ),
           1 => 
           array (
-            'name' => 'gt_secsampunt_gt_tersampunt_name',
+            'name' => 'gt_secsampuersampunt_name',
+            'label' => 'LBL_GT_SECSAMPUNT_GT_TERSAMPUNT_FROM_GT_SECSAMPUNT_TITLE',
           ),
         ),
       ),

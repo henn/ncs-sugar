@@ -84,11 +84,6 @@ array (
         ),
         4 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        5 => 
-        array (
           0 => 
           array (
             'name' => 'staff_weekly_expense_id',
@@ -96,7 +91,7 @@ array (
           ),
           1 => '',
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -110,7 +105,7 @@ array (
             'label' => 'LBL_MGMT_TASK_TYPE_OTH',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -119,7 +114,7 @@ array (
           ),
           1 => '',
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (
@@ -129,15 +124,12 @@ array (
           ),
           1 => '',
         ),
-        9 => 
+        8 => 
         array (
           0 => 
           array (
-            'name' => 'st_staff_weekly_expense_st_staff_exp_mngmnt_tasks_name',
-          ),
-          1 => 
-          array (
-            'name' => 'st_stfwkexpns_st_stfexpmgtsk_name',
+            'name' => 'st_stfwkexpfexpmgtsk_name',
+            'label' => 'LBL_ST_STFWKEXPNS_ST_STFEXPMGTSK_FROM_ST_STFWKEXPNS_TITLE',
           ),
         ),
       ),

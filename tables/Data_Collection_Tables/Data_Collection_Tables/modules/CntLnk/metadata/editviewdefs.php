@@ -57,6 +57,17 @@ array (
         array (
           0 => 
           array (
+            'name' => 'ncsdc_cntlnk_st_staffrstr_name',
+          ),
+          1 => 
+          array (
+            'name' => 'ncsdc_cntlnk_ncsdc_cntctinfo_name',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
             'name' => 'ncsdc_cntlneventinfo_name',
             'label' => 'LBL_NCSDC_CNTLNK_NCSDC_EVENTINFO_FROM_NCSDC_EVENTINFO_TITLE',
           ),
@@ -66,7 +77,18 @@ array (
             'label' => 'LBL_NCSDC_CNTLNK_NCSDC_INSTRUMENT_FROM_NCSDC_INSTRUMENT_TITLE',
           ),
         ),
-        3 => 
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_cntlnk_ncsdc_eventinfo_name',
+          ),
+          1 => 
+          array (
+            'name' => 'ncsdc_cntlnk_ncsdc_instrument_name',
+          ),
+        ),
+        5 => 
         array (
           0 => 
           array (
@@ -77,6 +99,17 @@ array (
           array (
             'name' => 'ncsdc_cntln_provider_name',
             'label' => 'LBL_NCSDC_CNTLNK_OLT_PROVIDER_FROM_OLT_PROVIDER_TITLE',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_cntlnk_plt_person_name',
+          ),
+          1 => 
+          array (
+            'name' => 'ncsdc_cntlnk_olt_provider_name',
           ),
         ),
       ),

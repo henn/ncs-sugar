@@ -84,11 +84,6 @@ array (
         ),
         4 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        5 => 
-        array (
           0 => 
           array (
             'name' => 'staff_id',
@@ -96,7 +91,7 @@ array (
           ),
           1 => '',
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -105,7 +100,7 @@ array (
           ),
           1 => '',
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -114,7 +109,7 @@ array (
           ),
           1 => '',
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (
@@ -123,7 +118,7 @@ array (
           ),
           1 => '',
         ),
-        9 => 
+        8 => 
         array (
           0 => 
           array (
@@ -132,7 +127,7 @@ array (
           ),
           1 => '',
         ),
-        10 => 
+        9 => 
         array (
           0 => 
           array (
@@ -141,7 +136,7 @@ array (
           ),
           1 => '',
         ),
-        11 => 
+        10 => 
         array (
           0 => 
           array (
@@ -151,15 +146,12 @@ array (
           ),
           1 => '',
         ),
-        12 => 
+        11 => 
         array (
           0 => 
           array (
-            'name' => 'st_staff_st_staff_weekly_expense_name',
-          ),
-          1 => 
-          array (
-            'name' => 'st_staffrstr_st_stfwkexpns_name',
+            'name' => 'st_staffrsttfwkexpns_name',
+            'label' => 'LBL_ST_STAFFRSTR_ST_STFWKEXPNS_FROM_ST_STAFFRSTR_TITLE',
           ),
         ),
       ),

@@ -35,5 +35,34 @@
  ********************************************************************************/
 
 $relationships = array (
+  'st_otrchstaff_ncsdc_eventinfo' => 
+  array (
+    'lhs_module' => 'ST_OtrchStaff',
+    'rhs_module' => 'NCSDC_EventInfo',
+    'relationship_type' => 'one-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'st_otrchstaff_ncsdc_eventinfo',
+  ),
+  'st_otrchstaff_st_staffrstr' => 
+  array (
+    'rhs_label' => 'Staff ID',
+    'lhs_label' => 'Staff Participation Outreach Events',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'ST_OtrchStaff',
+    'rhs_module' => 'ST_StaffRstr',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'st_otrchstaff_st_staffrstr',
+  ),
 );
 ?>

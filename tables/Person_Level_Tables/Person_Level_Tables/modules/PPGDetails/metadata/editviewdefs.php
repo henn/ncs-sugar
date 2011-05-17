@@ -81,7 +81,8 @@ array (
         array (
           0 => 
           array (
-            'name' => 'plt_participant_plt_ppgdetails_name',
+            'name' => 'plt_participgdetails_name',
+            'label' => 'LBL_PLT_PARTICIPANT_PLT_PPGDETAILS_FROM_PLT_PARTICIPANT_TITLE',
           ),
         ),
       ),

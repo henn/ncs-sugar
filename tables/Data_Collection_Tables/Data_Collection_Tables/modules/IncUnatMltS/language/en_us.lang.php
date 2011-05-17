@@ -65,5 +65,6 @@ $mod_strings = array (
   'LBL_NCSDC_INCUNATMSEL_SUBPANEL_TITLE' => 'Incident Unanticipated Multi-Select',
   'LNK_IMPORT_NCSDC_INCUNATMLTS' => 'Import Incident Unanticipated Multi-Select',
   'LBL_NCSDC_INCUNATMLTS_SUBPANEL_TITLE' => 'Incident Unanticipated Multi-Select',
+  'LBL_INC_UNANTICIPATED' => 'Unanticipated Incident Type',
 );
 ?>

@@ -30,9 +30,9 @@ array (
         array (
           0 => 
           array (
- 			'name' => 'name',
+            'name' => 'name',
             'label' => 'Name (STAFF_EXP_MGMT_TASK_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -100,11 +100,8 @@ array (
         array (
           0 => 
           array (
-            'name' => 'st_staff_weekly_expense_st_staff_exp_mngmnt_tasks_name',
-          ),
-          1 => 
-          array (
-            'name' => 'st_stfwkexpns_st_stfexpmgtsk_name',
+            'name' => 'st_stfwkexpfexpmgtsk_name',
+            'label' => 'LBL_ST_STFWKEXPNS_ST_STFEXPMGTSK_FROM_ST_STFWKEXPNS_TITLE',
           ),
         ),
       ),
