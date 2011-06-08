@@ -6,7 +6,6 @@
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
  * Free Software Foundation with the addition of the following permission added
- * to Section 15 as permitted in Section 7(a): FOR ANY PART OF THE COVERED WORK
  * IN WHICH THE COPYRIGHT IS OWNED BY SUGARCRM, SUGARCRM DISCLAIMS THE WARRANTY
  * OF NON INFRINGEMENT OF THIRD PARTY RIGHTS.
  * 
@@ -1294,14 +1293,14 @@ $app_list_strings['NEIGHBORHOOD_DEFINITION_CL1']['4'] = 'An area larger than a 1
 $app_list_strings['NEIGHBORHOOD_DEFINITION_CL1']['_1'] = 'Refused';
 $app_list_strings['NEIGHBORHOOD_DEFINITION_CL1']['_2'] = 'Don\'t Know';
 $app_list_strings['NEIGHBORHOOD_DEFINITION_CL1']['_4'] = 'Missing in Error';
-$app_list_strings['NIGHT_WAKE_FREQUENCY_CL1']['1'] = 'Never'
-$app_list_strings['NIGHT_WAKE_FREQUENCY_CL1']['2'] = 'Occasionally'
-$app_list_strings['NIGHT_WAKE_FREQUENCY_CL1']['3'] = 'Most nights'
-$app_list_strings['NIGHT_WAKE_FREQUENCY_CL1']['4'] = 'Every night'
-$app_list_strings['NIGHT_WAKE_FREQUENCY_CL1']['5'] = 'More than once per night'
-$app_list_strings['NIGHT_WAKE_FREQUENCY_CL1']['_1'] = 'Refused'
-$app_list_strings['NIGHT_WAKE_FREQUENCY_CL1']['_2'] = 'Don\'t Know'
-$app_list_strings['NIGHT_WAKE_FREQUENCY_CL1']['_4'] = 'Missing in Error'
+$app_list_strings['NIGHT_WAKE_FREQUENCY_CL1']['1'] = 'Never';
+$app_list_strings['NIGHT_WAKE_FREQUENCY_CL1']['2'] = 'Occasionally';
+$app_list_strings['NIGHT_WAKE_FREQUENCY_CL1']['3'] = 'Most nights';
+$app_list_strings['NIGHT_WAKE_FREQUENCY_CL1']['4'] = 'Every night';
+$app_list_strings['NIGHT_WAKE_FREQUENCY_CL1']['5'] = 'More than once per night';
+$app_list_strings['NIGHT_WAKE_FREQUENCY_CL1']['_1'] = 'Refused';
+$app_list_strings['NIGHT_WAKE_FREQUENCY_CL1']['_2'] = 'Don\'t Know';
+$app_list_strings['NIGHT_WAKE_FREQUENCY_CL1']['_4'] = 'Missing in Error';
 $app_list_strings['NIR_INFORM_RELATION_CL1']['1'] = 'Parent or Legal guardian';
 $app_list_strings['NIR_INFORM_RELATION_CL1']['2'] = 'Spouse';
 $app_list_strings['NIR_INFORM_RELATION_CL1']['3'] = 'Household member';
