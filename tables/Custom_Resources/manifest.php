@@ -50,14 +50,14 @@
           'description' => '',
           'icon' => '',
           'is_uninstallable' => true,
-          'name' => 'project_IDCreation',
+          'name' => 'project_Custom_Resources',
           'published_date' => '2011-05-07 13:20:19',
           'type' => 'module',
           'version' => '1.4',
           'remove_tables' => 'prompt',
           );
 $installdefs = array (
-  'id' => 'project_IDCreation',
+  'id' => 'project_Custom_Resources',
   'copy' => 
   array (
     0 =>     

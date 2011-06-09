@@ -13,7 +13,7 @@
 # Format should be: $DIRNAME/{manifest.php,$DIRNAME, ...}
 MODULE_DIRS="Locating_Tracing_Tables Specific_Code_Tables\
 	Data_Collection_Tables Organization_Level_Tables Staffing_Tables\
-	Geographic_Tables Person_Level_Tables IDCreation"
+	Geographic_Tables Person_Level_Tables Custom_Resources"
 
 DESTDIR="output"
 HELPER_DIR="templates"
@@ -61,8 +61,8 @@ if [ $# -lt 1 -o "$1" != '-c' ]; then
 	exit 0
 fi
 
-# Remove IDCreation for now
-MODULE_DIRS="`echo $MODULE_DIRS | sed 's/IDCreation//'`"
+# Remove Custom_Resources for now
+MODULE_DIRS="`echo $MODULE_DIRS | sed 's/Custom_Resources//'`"
 
 # Create the super-module, which can be installed instead of the indivual ones
 ZIP_ARGS=''
@@ -96,7 +96,7 @@ cd ..
 # Copy other files
 zip -r9qj $COMBINED.zip ../$HELPER_DIR/{README,LICENSE}.txt
 
-zip -9qj ${FINAL_FILENAME}-combined.zip $COMBINED.zip IDCreation.zip ../$HELPER_DIR/README.txt
+zip -9qj ${FINAL_FILENAME}-combined.zip $COMBINED.zip Custom_Resources.zip ../$HELPER_DIR/README.txt
 
 echo "Created combined package as: output/${FINAL_FILENAME}-combined.zip"
 
