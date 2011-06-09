@@ -154,26 +154,20 @@ array (
         array (
           0 => 
           array (
-            'name' => 'ncsdc_eventinfo_plt_participant_name',
+            'name' => 'ncsdc_eventrticipant_name',
+            'label' => 'LBL_NCSDC_EVENTINFO_PLT_PARTICIPANT_FROM_PLT_PARTICIPANT_TITLE',
+          ),
+          1 => 
+          array (
+            'name' => 'ncsdc_cntcteventinfo_name',
+            'label' => 'LBL_NCSDC_CNTCTINFO_NCSDC_EVENTINFO_FROM_NCSDC_CNTCTINFO_TITLE',
           ),
         ),
         12 => 
         array (
           0 => 
           array (
-            'name' => 'ncsdc_cntctinfo_ncsdc_eventinfo_name',
-          ),
-          1 => 
-          array (
-            'name' => 'plt_participant_ncsdc_eventinfo_name',
-          ),
-        ),
-        13 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ncsdc_eventrticipant_name',
-            'label' => 'LBL_NCSDC_EVENTINFO_PLT_PARTICIPANT_FROM_PLT_PARTICIPANT_TITLE',
+            'name' => 'st_otrchstaeventinfo_name',
           ),
         ),
       ),

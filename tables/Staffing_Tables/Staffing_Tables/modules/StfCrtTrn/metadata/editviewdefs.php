@@ -30,17 +30,13 @@ array (
         array (
           0 => 
           array (
- 			'name' => 'name',
+            'name' => 'name',
             'label' => 'Name (STAFF_CERT_LIST_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => '',
         ),
         1 => 
-        array (
-          0 => '',
-        ),
-        2 => 
         array (
           0 => 
           array (
@@ -49,7 +45,7 @@ array (
             'label' => 'LBL_CERT_TRAIN_TYPE',
           ),
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -63,7 +59,7 @@ array (
             'label' => 'LBL_CERT_DATE',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -76,7 +72,7 @@ array (
             'label' => 'LBL_CERT_TYPE_FREQUENCY',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -85,7 +81,7 @@ array (
             'label' => 'LBL_CERT_COMMENT',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -94,15 +90,12 @@ array (
             'label' => 'LBL_STAFF_BGCHECK_LVL',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
-            'name' => 'st_staff_st_staff_cert_training_name',
-          ),
-          1 => 
-          array (
-            'name' => 'st_staffrstr_st_stfcrttrn_name',
+            'name' => 'st_staffrststfcrttrn_name',
+            'label' => 'LBL_ST_STAFFRSTR_ST_STFCRTTRN_FROM_ST_STAFFRSTR_TITLE',
           ),
         ),
       ),

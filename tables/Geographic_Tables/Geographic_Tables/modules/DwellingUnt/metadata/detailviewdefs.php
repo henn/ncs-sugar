@@ -111,28 +111,13 @@ array (
         array (
           0 => 
           array (
-            'name' => 'gt_dwelling_unit_ltt_address_name',
+            'name' => 'gt_dwellingt_address_name',
+            'label' => 'LBL_GT_DWELLINGUNT_LTT_ADDRESS_FROM_LTT_ADDRESS_TITLE',
           ),
-        ),
-        7 => 
-        array (
-          0 => 
+          1 => 
           array (
-            'name' => 'gt_listing_unit_gt_dwelling_unit_name',
-          ),
-        ),
-        8 => 
-        array (
-          0 => 
-          array (
-            'name' => 'gt_listingunt_gt_dwellingunt_name',
-          ),
-        ),
-        9 => 
-        array (
-          0 => 
-          array (
-            'name' => 'gt_dwellingunt_ltt_address_name',
+            'name' => 'gt_listinguellingunt_name',
+            'label' => 'LBL_GT_LISTINGUNT_GT_DWELLINGUNT_FROM_GT_LISTINGUNT_TITLE',
           ),
         ),
       ),

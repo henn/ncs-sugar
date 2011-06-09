@@ -42,11 +42,6 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
           0 => 
           array (
             'name' => 'vis_consent_type',
@@ -55,7 +50,7 @@ array (
           ),
           1 => '',
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -65,7 +60,7 @@ array (
           ),
           1 => '',
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -79,7 +74,7 @@ array (
             'label' => 'LBL_VIS_LANGUAGE_OTH',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -89,7 +84,7 @@ array (
           ),
           1 => '',
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -99,7 +94,7 @@ array (
           ),
           1 => '',
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -108,14 +103,15 @@ array (
             'label' => 'LBL_VIS_COMMENTS',
           ),
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (
-            'name' => 'plt_participant_plt_prtcptvstc_name',
+            'name' => 'plt_particirtcptvstc_name',
+            'label' => 'LBL_PLT_PARTICIPANT_PLT_PRTCPTVSTC_FROM_PLT_PARTICIPANT_TITLE',
           ),
         ),
-        9 => 
+        8 => 
         array (
           0 => 
           array (

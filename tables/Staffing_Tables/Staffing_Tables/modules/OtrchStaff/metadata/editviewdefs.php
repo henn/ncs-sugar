@@ -30,9 +30,9 @@ array (
         array (
           0 => 
           array (
- 			'name' => 'name',
+            'name' => 'name',
             'label' => 'Name (OUTREACH_EVENT_STAFF_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -57,30 +57,23 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PSU_ID',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'outreach_event_id',
+            'label' => 'LBL_OUTREACH_EVENT_ID',
+          ),
         ),
         3 => 
         array (
           0 => 
           array (
-            'name' => 'outreach_event_id',
-            'label' => 'LBL_OUTREACH_EVENT_ID',
+            'name' => 'st_otrchstaeventinfo_name',
           ),
           1 => 
           array (
             'name' => 'staff_id',
             'label' => 'LBL_STAFF_ID',
           ),
-        ),
-        4 => 
-        array (
-          0 => '',
-          1 => '',
-        ),
-        5 => 
-        array (
-          0 => '',
-          1 => '',
         ),
       ),
     ),

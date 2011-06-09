@@ -89,14 +89,12 @@ array (
             'name' => 'outreach_event_id',
             'label' => 'LBL_OUTREACH_EVENT_ID',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'st_otrchevaeventinfo_name',
+          ),
         ),
         5 => 
-        array (
-          0 => '',
-          1 => '',
-        ),
-        6 => 
         array (
           0 => 
           array (

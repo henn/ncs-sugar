@@ -84,11 +84,6 @@ array (
         ),
         4 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        5 => 
-        array (
           0 => 
           array (
             'name' => 'staff_weekly_expense_id',
@@ -96,7 +91,7 @@ array (
           ),
           1 => '',
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -110,7 +105,7 @@ array (
             'label' => 'LBL_DATA_COLL_TASK_TYPE_OTH',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -123,7 +118,7 @@ array (
             'label' => 'LBL_DATA_COLL_TASK_CASES',
           ),
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (
@@ -137,15 +132,12 @@ array (
             'label' => 'LBL_DATA_COLL_TASK_COMMENT',
           ),
         ),
-        9 => 
+        8 => 
         array (
           0 => 
           array (
-            'name' => 'st_staff_weekly_expense_st_staff_exp_data_cllctn_tasks_name',
-          ),
-          1 => 
-          array (
-            'name' => 'st_stfwkexpns_st_stfexpdctsk_name',
+            'name' => 'st_stfwkexpfexpdctsk_name',
+            'label' => 'LBL_ST_STFWKEXPNS_ST_STFEXPDCTSK_FROM_ST_STFWKEXPNS_TITLE',
           ),
         ),
       ),

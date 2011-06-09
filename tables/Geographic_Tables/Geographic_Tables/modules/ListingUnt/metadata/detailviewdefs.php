@@ -50,11 +50,6 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
           0 => 
           array (
             'name' => 'list_line',
@@ -62,7 +57,7 @@ array (
           ),
           1 => '',
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -72,7 +67,7 @@ array (
           ),
           1 => '',
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -81,29 +76,25 @@ array (
             'label' => 'LBL_LIST_COMMENT',
           ),
         ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'gt_listinguellingunt_name',
+            'label' => 'LBL_GT_LISTINGUNT_GT_DWELLINGUNT_FROM_GT_DWELLINGUNT_TITLE',
+          ),
+          1 => 
+          array (
+            'name' => 'gt_secsampuistingunt_name',
+            'label' => 'LBL_GT_SECSAMPUNT_GT_LISTINGUNT_FROM_GT_SECSAMPUNT_TITLE',
+          ),
+        ),
         5 => 
         array (
           0 => 
           array (
-            'name' => 'gt_listing_unit_gt_dwelling_unit_name',
-          ),
-        ),
-        6 => 
-        array (
-          0 => 
-          array (
-            'name' => 'gt_listingunt_gt_dwellingunt_name',
-          ),
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'gt_sndsampunt_gt_listingunt_name',
-          ),
-          1 => 
-          array (
-            'name' => 'gt_tersampunt_gt_listingunt_name',
+            'name' => 'gt_tersampuistingunt_name',
+            'label' => 'LBL_GT_TERSAMPUNT_GT_LISTINGUNT_FROM_GT_TERSAMPUNT_TITLE',
           ),
         ),
       ),

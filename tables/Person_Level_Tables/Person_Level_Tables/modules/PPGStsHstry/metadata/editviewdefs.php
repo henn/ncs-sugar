@@ -32,7 +32,7 @@ array (
           array (
             'name' => 'name',
             'label' => 'Name (PPG_HISTORY_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -41,11 +41,6 @@ array (
           ),
         ),
         1 => 
-        array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
         array (
           0 => 
           array (
@@ -59,7 +54,7 @@ array (
             'label' => 'LBL_PPG_STATUS_DATE',
           ),
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -73,7 +68,7 @@ array (
             'label' => 'LBL_PPG_INFO_MODE_OTH',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -87,7 +82,7 @@ array (
             'label' => 'LBL_PPG_INFO_SOURCE_OTH',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -96,15 +91,12 @@ array (
             'label' => 'LBL_PPG_COMMENT',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
-            'name' => 'plt_participant_plt_ppg_status_history_name',
-          ),
-          1 => 
-          array (
-            'name' => 'plt_participant_plt_ppgstshstry_name',
+            'name' => 'plt_particigstshstry_name',
+            'label' => 'LBL_PLT_PARTICIPANT_PLT_PPGSTSHSTRY_FROM_PLT_PARTICIPANT_TITLE',
           ),
         ),
       ),

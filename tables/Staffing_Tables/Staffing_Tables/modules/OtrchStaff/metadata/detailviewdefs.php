@@ -80,30 +80,23 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PSU_ID',
           ),
-          1 => '',
-        ),
-        4 => 
-        array (
-          0 => '',
-          1 => '',
-        ),
-        5 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'outreach_event_id',
             'label' => 'LBL_OUTREACH_EVENT_ID',
           ),
-          1 => '',
         ),
-        6 => 
+        4 => 
         array (
           0 => 
+          array (
+            'name' => 'st_otrchstaeventinfo_name',
+          ),
+          1 => 
           array (
             'name' => 'staff_id',
             'label' => 'LBL_STAFF_ID',
           ),
-          1 => '',
         ),
       ),
     ),

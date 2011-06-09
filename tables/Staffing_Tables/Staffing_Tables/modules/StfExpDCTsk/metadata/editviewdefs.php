@@ -30,9 +30,9 @@ array (
         array (
           0 => 
           array (
- 			'name' => 'name',
+            'name' => 'name',
             'label' => 'Name (STAFF_EXP_DATA_COLL_TASK_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -61,11 +61,6 @@ array (
         ),
         3 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        4 => 
-        array (
           0 => 
           array (
             'name' => 'staff_weekly_expense_id',
@@ -73,7 +68,7 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -87,7 +82,7 @@ array (
             'label' => 'LBL_DATA_COLL_TASK_TYPE_OTH',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -100,7 +95,7 @@ array (
             'label' => 'LBL_DATA_COLL_TASK_CASES',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -114,15 +109,12 @@ array (
             'label' => 'LBL_DATA_COLL_TASK_COMMENT',
           ),
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (
-            'name' => 'st_staff_weekly_expense_st_staff_exp_data_cllctn_tasks_name',
-          ),
-          1 => 
-          array (
-            'name' => 'st_stfwkexpns_st_stfexpdctsk_name',
+            'name' => 'st_stfwkexpfexpdctsk_name',
+            'label' => 'LBL_ST_STFWKEXPNS_ST_STFEXPDCTSK_FROM_ST_STFWKEXPNS_TITLE',
           ),
         ),
       ),
@@ -130,5 +122,3 @@ array (
   ),
 );
 ?>
-
-

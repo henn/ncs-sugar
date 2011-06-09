@@ -41,11 +41,6 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
           0 => 
           array (
             'name' => 'sc_name',
@@ -53,7 +48,7 @@ array (
           ),
           1 => '',
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (

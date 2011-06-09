@@ -226,10 +226,10 @@ array (
         ),
         18 => 
         array (
-          0 => '',
-          1 => 
+          0 => 
           array (
-            'name' => 'ncsdc_cntctinfo_ncsdc_incident_name',
+            'name' => 'ncsdc_cntct_incident_name',
+            'label' => 'LBL_NCSDC_CNTCTINFO_NCSDC_INCIDENT_FROM_NCSDC_CNTCTINFO_TITLE',
           ),
         ),
       ),

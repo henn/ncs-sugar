@@ -32,7 +32,7 @@ array (
           array (
             'name' => 'name',
             'label' => 'Name (PERSON_RACE_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -48,26 +48,18 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_RACE',
           ),
-        ),
-        2 => 
-        array (
-          0 => '',
-          1 => '',
-        ),
-        3 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'race_oth',
             'label' => 'LBL_RACE_OTH',
           ),
-          1 => '',
         ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (
-            'name' => 'plt_person_plt_personrace_name',
+            'name' => 'plt_person_ersonrace_name',
+            'label' => 'LBL_PLT_PERSON_PLT_PERSONRACE_FROM_PLT_PERSON_TITLE',
           ),
         ),
       ),

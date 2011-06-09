@@ -59,10 +59,6 @@ array (
         ),
         2 => 
         array (
-          0 => '',
-        ),
-        3 => 
-        array (
           0 => 
           array (
             'name' => 'staff_type',
@@ -75,7 +71,7 @@ array (
             'label' => 'LBL_STAFF_TYPE_OTH',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -90,7 +86,7 @@ array (
             'label' => 'LBL_SUBCONTRACTOR',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -99,13 +95,20 @@ array (
             'label' => 'LBL_STAFF_COMMENT',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
             'name' => 'gt_study_center_st_staff_name',
           ),
           1 => '',
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'st_otrchstastaffrstr_name',
+          ),
         ),
       ),
       'lbl_detailview_panel1' => 

@@ -170,9 +170,9 @@ array (
         array (
           0 => 
           array (
-            'name' => 'ncsdc_event_ncsdc_instrument_name',
+            'name' => 'ncsdc_eventnstrument_name',
+            'label' => 'LBL_NCSDC_EVENTINFO_NCSDC_INSTRUMENT_FROM_NCSDC_EVENTINFO_TITLE',
           ),
-          1 => '',
         ),
       ),
     ),

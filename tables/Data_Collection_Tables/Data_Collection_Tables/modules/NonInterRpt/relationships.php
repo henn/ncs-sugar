@@ -53,13 +53,12 @@ $relationships = array (
   ),
   'ncsdc_noninterrpt_gt_dwellingunt' => 
   array (
-    'rhs_label' => 'Dwelling Unit',
+    'rhs_label' => 'Dwelling Unit (DU)',
     'lhs_label' => 'Non Interview Report',
     'lhs_subpanel' => 'default',
-    'rhs_subpanel' => 'default',
     'lhs_module' => 'NCSDC_NonInterRpt',
     'rhs_module' => 'GT_DwellingUnt',
-    'relationship_type' => 'many-to-many',
+    'relationship_type' => 'many-to-one',
     'readonly' => false,
     'deleted' => false,
     'relationship_only' => false,

@@ -35,5 +35,21 @@
  ********************************************************************************/
 
 $relationships = array (
+  'st_otrcheval_ncsdc_eventinfo' => 
+  array (
+    'rhs_label' => 'Event Information',
+    'lhs_label' => 'Evaluation of Weekly Outreach Activities',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'ST_OtrchEval',
+    'rhs_module' => 'NCSDC_EventInfo',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'st_otrcheval_ncsdc_eventinfo',
+  ),
 );
 ?>

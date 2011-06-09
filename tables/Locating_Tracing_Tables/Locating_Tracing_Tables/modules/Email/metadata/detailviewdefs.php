@@ -47,6 +47,7 @@ array (
         array (
           0 => '',
           1 => '',
+          2 => '',
         ),
         2 => 
         array (
@@ -134,12 +135,10 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_EMAIL_COMMENT',
           ),
-          1 => '',
         ),
         9 => 
         array (
-          0 => '',
-          1 => 
+          0 => 
           array (
             'name' => 'plt_person_ltt_email_name',
           ),
@@ -150,10 +149,11 @@ array (
           array (
             'name' => 'olt_provider_ltt_email_name',
           ),
-		  1 => 
+          1 => 
           array (
             'name' => 'olt_institution_ltt_email_name',
           ),
+          2 => '',
         ),
       ),
     ),

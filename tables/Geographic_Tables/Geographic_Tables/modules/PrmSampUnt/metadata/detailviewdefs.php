@@ -64,16 +64,6 @@ array (
         ),
         2 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        3 => 
-        array (
-          0 => '',
-          1 => '',
-        ),
-        4 => 
-        array (
           0 => 
           array (
             'name' => 'recruit_type',
@@ -82,18 +72,12 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
-            'name' => 'gt_study_center_gt_primary_sampling_unit_name',
-          ),
-        ),
-        6 => 
-        array (
-          0 => 
-          array (
-            'name' => 'gt_studycntr_gt_prmsampunt_name',
+            'name' => 'gt_studycntrmsampunt_name',
+            'label' => 'LBL_GT_STUDYCNTR_GT_PRMSAMPUNT_FROM_GT_STUDYCNTR_TITLE',
           ),
         ),
       ),
