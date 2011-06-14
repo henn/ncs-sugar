@@ -133,13 +133,6 @@ array (
             'name' => 'olt_institution_ltt_email_name',
           ),
         ),
-        9 => 
-        array (
-          0 => 
-          array (
-            'name' => 'plt_person_ltt_email_name',
-          ),
-        ),
       ),
     ),
   ),
