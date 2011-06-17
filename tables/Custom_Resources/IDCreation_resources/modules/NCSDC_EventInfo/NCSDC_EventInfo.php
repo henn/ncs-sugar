@@ -1,4 +1,4 @@
-<?php
+<?PHP
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -34,50 +34,28 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$mod_strings = array (
-  'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
-  'LBL_ASSIGNED_TO_NAME' => 'User',
-  'LBL_ID' => 'ID',
-  'LBL_DATE_ENTERED' => 'Date Created',
-  'LBL_DATE_MODIFIED' => 'Date Modified',
-  'LBL_MODIFIED' => 'Modified By',
-  'LBL_MODIFIED_ID' => 'Modified By Id',
-  'LBL_MODIFIED_NAME' => 'Modified By Name',
-  'LBL_CREATED' => 'Created By',
-  'LBL_CREATED_ID' => 'Created By Id',
-  'LBL_DESCRIPTION' => 'Description',
-  'LBL_DELETED' => 'Deleted',
-  'LBL_NAME' => 'Participant ID',
-  'LBL_CREATED_USER' => 'Created by User',
-  'LBL_MODIFIED_USER' => 'Modified by User',
-  'LBL_LIST_NAME' => 'Name',
-  'LBL_LIST_FORM_TITLE' => 'Participant List',
-  'LBL_MODULE_NAME' => 'Participant',
-  'LBL_MODULE_TITLE' => 'Participant',
-  'LBL_HOMEPAGE_TITLE' => 'My Participant',
-  'LNK_NEW_RECORD' => 'Create Participant',
-  'LNK_LIST' => 'View Participant',
-  'LNK_IMPORT_PLT_PARTICIPANT' => 'Import Participant',
-  'LBL_SEARCH_FORM_TITLE' => 'Search Participant',
-  'LBL_HISTORY_SUBPANEL_TITLE' => 'View History',
-  'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
-  'LBL_PLT_PARTICIPANT_SUBPANEL_TITLE' => 'Participant',
-  'LBL_NEW_FORM_TITLE' => 'New Participant',
-  'LBL_P_ID' => 'Participant ID',
-  'LBL_P_TYPE' => 'Participant Type',
-  'LBL_P_TYPE_OTH' => 'Participant Type Other',
-  'LBL_STATUS_INFO_SOURCE' => 'Status Information Source',
-  'LBL_STATUS_INFO_SOURCE_OTH' => 'Status Information Source Other',
-  'LBL_STATUS_INFO_MODE' => 'Status Information Mode',
-  'LBL_STATUS_INFO_MODE_OTH' => 'Status Information Mode Other',
-  'LBL_STATUS_INFO_DATE' => 'Status Information Date',
-  'LBL_ENROLL_STATUS' => 'Enroll Status',
-  'LBL_ENROLL_DATE' => 'Enroll Date',
-  'LBL_PID_ENTRY' => 'PID Entry',
-  'LBL_PID_ENTRY_OTHER' => 'PID Entry Other',
-  'LBL_PID_AGE_ELIG' => 'PID Age Eligible',
-  'LBL_PID_COMMENT' => 'PID Comment',
-  'LBL_PERSON_INFO' => 'Person Information',
-  'LBL_DETAILVIEW_PANEL1' => 'Participant Summary',
-);
+/**
+ * THIS CLASS IS FOR DEVELOPERS TO MAKE CUSTOMIZATIONS IN
+ */
+require_once('modules/NCSDC_EventInfo/NCSDC_EventInfo_sugar.php');
+class NCSDC_EventInfo extends NCSDC_EventInfo_sugar {
+	
+	function NCSDC_EventInfo(){	
+		parent::NCSDC_EventInfo_sugar();
+	}
+	
+	/*
+	*  Integrate ID Creation code with save function.
+	*/
+	public function save($check_notify = false)
+	{						
+		require_once("ncs_framework/IDCreation.php");
+		
+		$IDC = new IDCreation();
+		$IDC->identifier = 'EV';		
+		$this->name =  $IDC->get_new_name("ncsdc_eventinfo");
+		
+		return parent::save($check_notify);
+	}
+}
 ?>

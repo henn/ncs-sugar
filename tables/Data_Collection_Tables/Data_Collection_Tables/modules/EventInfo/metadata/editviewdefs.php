@@ -130,6 +130,11 @@ array (
         ),
         9 => 
         array (
+          0 => '',
+          1 => '',
+        ),
+        10 => 
+        array (
           0 => 
           array (
             'name' => 'event_incent_cash',
@@ -141,7 +146,7 @@ array (
             'label' => 'LBL_EVENT_INCENT_NONCASH',
           ),
         ),
-        10 => 
+        11 => 
         array (
           0 => 
           array (
@@ -150,7 +155,7 @@ array (
             'label' => 'LBL_EVENT_COMMENT',
           ),
         ),
-        11 => 
+        12 => 
         array (
           0 => 
           array (
@@ -163,11 +168,24 @@ array (
             'label' => 'LBL_NCSDC_CNTCTINFO_NCSDC_EVENTINFO_FROM_NCSDC_CNTCTINFO_TITLE',
           ),
         ),
-        12 => 
+        13 => 
         array (
           0 => 
           array (
             'name' => 'st_otrchstaeventinfo_name',
+          ),
+        ),
+        14 => 
+        array (
+          0 => 
+          array (
+            'name' => 'visit_window_starttime_c',
+            'label' => 'LBL_VISIT_WINDOW_STARTDATE',
+          ),
+          1 => 
+          array (
+            'name' => 'visit_window_endtime_c',
+            'label' => 'LBL_VISIT_WINDOW_ENDDATE',
           ),
         ),
       ),

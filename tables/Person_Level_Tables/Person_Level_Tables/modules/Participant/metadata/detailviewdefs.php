@@ -29,10 +29,23 @@ array (
           'field' => '30',
         ),
       ),
-      'useTabs' => false,
+      'useTabs' => true,
     ),
     'panels' => 
     array (
+      'lbl_detailview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'person_info_c',
+            'studio' => 'visible',
+            'label' => 'LBL_PERSON_INFO',
+          ),
+          1 => '',
+        ),
+      ),
       'default' => 
       array (
         0 => 
