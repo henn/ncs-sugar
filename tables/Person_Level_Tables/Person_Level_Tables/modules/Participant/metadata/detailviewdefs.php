@@ -41,7 +41,7 @@ array (
           array (
             'name' => 'person_info_c',
             'studio' => 'visible',
-            'label' => 'LBL_PERSON_INFO',
+            'label' => 'LBL_PERSON_INFO_C',
           ),
           1 => '',
         ),

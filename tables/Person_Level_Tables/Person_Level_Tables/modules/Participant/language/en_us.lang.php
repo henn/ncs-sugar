@@ -77,7 +77,7 @@ $mod_strings = array (
   'LBL_PID_ENTRY_OTHER' => 'PID Entry Other',
   'LBL_PID_AGE_ELIG' => 'PID Age Eligible',
   'LBL_PID_COMMENT' => 'PID Comment',
-  'LBL_PERSON_INFO' => 'Person Information',
+  'LBL_PERSON_INFO_C' => 'Participant Summary',
   'LBL_DETAILVIEW_PANEL1' => 'Participant Summary',
 );
 ?>
