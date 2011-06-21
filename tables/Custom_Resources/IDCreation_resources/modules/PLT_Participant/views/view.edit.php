@@ -12,10 +12,19 @@
 		}
 
 		function display() {
-			require_once 'ncs_framework/ncs_controller.php';
-			$ncs = new NCS($this->bean);
-			$ncs->identifier = 'SP';
-			$this->ss->assign("NAME", $ncs->get_name());
+			
+			if(isset($_REQUEST['person_id']) && trim($_REQUEST['person_id']) != ''){
+				$partID = str_replace('PN', 'SP', $_REQUEST['person_id']);
+				$_SESSION['person_record'] = $_REQUEST['person_record'];
+				$this->ss->assign("NAME", $partID);
+			} else {
+				require_once 'ncs_framework/ncs_controller.php';
+				$ncs = new NCS($this->bean);
+				$ncs->identifier = 'SP';
+				$this->ss->assign("NAME", $ncs->get_name());	
+			}
+			
+			
 			parent::display();
 		}
 		
