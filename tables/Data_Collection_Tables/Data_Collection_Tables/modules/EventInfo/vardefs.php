@@ -35,8 +35,7 @@
  ********************************************************************************/
 
 $vardefs = array (
-  'fields' => 
-  array (
+  'fields' => array (
   'event_type_oth' => 
   array (
     'required' => false,
@@ -347,5 +346,6 @@ $vardefs = array (
   ),
 ),
 	'relationships'=>array (
+	),
 );
 ?>
