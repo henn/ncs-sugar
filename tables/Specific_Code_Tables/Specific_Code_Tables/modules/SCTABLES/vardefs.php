@@ -2998,7 +2998,6 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	),
     'equipment_action_cl1' => 
     array (
       'required' => false,
@@ -8780,7 +8779,7 @@ $vardefs = array (
       'options' => 'WORK_SITUATION_CL1',
       'studio' => 'visible',
       'dependency' => false,
-    ),    
+    ),
   ),
   'relationships' => 
   array (

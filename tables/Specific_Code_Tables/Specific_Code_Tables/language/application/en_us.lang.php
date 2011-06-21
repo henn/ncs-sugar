@@ -3569,7 +3569,7 @@ $app_list_strings['TV_WATCH_FREQUENCY_CL1']['_4'] = 'Missing in Error';
 /* $app_list_strings['UNANTICIPATED_PROBLEM_TYPE_CL1']['1'] = 'Unexpected given the research procedures and characteristics of the subject population';   Retired MDES v1.1*/
 /* $app_list_strings['UNANTICIPATED_PROBLEM_TYPE_CL1']['2'] = 'Related or possibly related to participation in research';   Retired MDES v1.1*/
 /* $app_list_strings['UNANTICIPATED_PROBLEM_TYPE_CL1']['3'] = 'Suggests that research places subjects or others at a greater risk of harm than previously known or recognized';   Retired MDES v1.1*/
-$app_list_strings['UNAVAILABLE_REASON_CL1']['1'Military duty';
+$app_list_strings['UNAVAILABLE_REASON_CL1']['1'] = 'Military duty';
 $app_list_strings['UNAVAILABLE_REASON_CL1']['2'] = 'Extended vacation';
 $app_list_strings['UNAVAILABLE_REASON_CL1']['3'] = 'Away for work for entire field period';
 $app_list_strings['UNAVAILABLE_REASON_CL1']['4'] = 'College/School';
