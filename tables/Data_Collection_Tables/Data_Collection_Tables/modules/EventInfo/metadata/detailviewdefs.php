@@ -158,6 +158,7 @@ array (
             'label' => 'LBL_EVENT_COMMENT',
           ),
         ),
+						
         11 => 
         array (
           0 => 
@@ -176,6 +177,19 @@ array (
           0 => 
           array (
             'name' => 'st_otrchstaeventinfo_name',
+          ),
+        ),
+        13 => 
+        array (
+          0 => 
+          array (
+            'name' => 'visit_window_starttime_c',
+            'label' => 'LBL_VISIT_WINDOW_STARTDATE',
+          ),
+          1 => 
+          array (
+            'name' => 'visit_window_endtime_c',
+            'label' => 'LBL_VISIT_WINDOW_ENDDATE',
           ),
         ),
       ),
