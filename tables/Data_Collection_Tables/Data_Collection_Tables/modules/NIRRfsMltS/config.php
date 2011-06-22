@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'NIR Refusal Multi-Select',
+  'label' => 'NIR Refusal (Multi-Select)',
   'importable' => true,
 );
 ?>

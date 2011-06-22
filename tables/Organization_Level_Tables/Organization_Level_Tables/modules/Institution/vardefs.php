@@ -336,6 +336,23 @@ $vardefs = array (
       'reportable' => true,
       'size' => '20',
     ),
+    'institute_name' => 
+    array (
+      'required' => false,
+      'name' => 'institute_name',
+      'vname' => 'LBL_INSTITUTE_NAME',
+      'type' => 'varchar',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => 'Name of the Institution',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'reportable' => true,
+      'len' => '255',
+      'size' => '20',
+    ),
   ),
   'relationships' => 
   array (

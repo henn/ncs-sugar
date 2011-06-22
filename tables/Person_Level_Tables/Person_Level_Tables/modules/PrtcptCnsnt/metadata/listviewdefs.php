@@ -18,75 +18,19 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
+  'CONSENT_VERSION' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_CONSENT_VERSION',
+    'width' => '10%',
+    'default' => true,
+  ),
   'CONSENT_GIVEN' => 
   array (
     'type' => 'enum',
     'default' => true,
     'studio' => 'visible',
     'label' => 'LBL_CONSENT_GIVEN',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'DATE_ENTERED' => 
-  array (
-    'type' => 'datetime',
-    'label' => 'LBL_DATE_ENTERED',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'MODIFIED_BY_NAME' => 
-  array (
-    'type' => 'relate',
-    'link' => 'modified_user_link',
-    'label' => 'LBL_MODIFIED_NAME',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'DATE_MODIFIED' => 
-  array (
-    'type' => 'datetime',
-    'label' => 'LBL_DATE_MODIFIED',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'WHO_WTHDRW_CONSENT' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_WHO_WTHDRW_CONSENT',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'PERSON_WTHDRW_CONSENT_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_PERSON_WTHDRW_CONSENT_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'WHO_CONSENTED' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_WHO_CONSENTED',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'PERSON_WHO_CONSENTED_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_PERSON_WHO_CONSENTED_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'CONSENT_WITHDRAW' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_CONSENT_WITHDRAW',
     'sortable' => false,
     'width' => '10%',
   ),
@@ -112,6 +56,13 @@ array (
     'width' => '10%',
     'default' => false,
   ),
+  'CONSENT_EXPIRATION' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_CONSENT_EXPIRATION',
+    'width' => '10%',
+    'default' => false,
+  ),
   'CONSENT_WITHDRAW_TYPE' => 
   array (
     'type' => 'enum',
@@ -120,6 +71,69 @@ array (
     'label' => 'LBL_CONSENT_WITHDRAW_TYPE',
     'sortable' => false,
     'width' => '10%',
+  ),
+  'CONSENT_WITHDRAW' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_CONSENT_WITHDRAW',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'PERSON_WHO_CONSENTED_ID' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_PERSON_WHO_CONSENTED_ID',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'WHO_CONSENTED' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_WHO_CONSENTED',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'PERSON_WTHDRW_CONSENT_ID' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_PERSON_WTHDRW_CONSENT_ID',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'WHO_WTHDRW_CONSENT' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_WHO_WTHDRW_CONSENT',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'DATE_MODIFIED' => 
+  array (
+    'type' => 'datetime',
+    'label' => 'LBL_DATE_MODIFIED',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'MODIFIED_BY_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'modified_user_link',
+    'label' => 'LBL_MODIFIED_NAME',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'DATE_ENTERED' => 
+  array (
+    'type' => 'datetime',
+    'label' => 'LBL_DATE_ENTERED',
+    'width' => '10%',
+    'default' => false,
   ),
   'CONSENT_WITHDRAW_DATE' => 
   array (

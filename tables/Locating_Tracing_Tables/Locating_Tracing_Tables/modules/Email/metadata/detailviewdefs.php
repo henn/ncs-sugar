@@ -15,7 +15,7 @@ array (
           2 => 'DELETE',
         ),
       ),
-      'maxColumns' => '3',
+      'maxColumns' => '2',
       'widths' => 
       array (
         0 => 
@@ -47,7 +47,6 @@ array (
         array (
           0 => '',
           1 => '',
-          2 => '',
         ),
         2 => 
         array (
@@ -136,14 +135,8 @@ array (
             'label' => 'LBL_EMAIL_COMMENT',
           ),
         ),
+
         9 => 
-        array (
-          0 => 
-          array (
-            'name' => 'plt_person_ltt_email_name',
-          ),
-        ),
-        10 => 
         array (
           0 => 
           array (
@@ -153,7 +146,6 @@ array (
           array (
             'name' => 'olt_institution_ltt_email_name',
           ),
-          2 => '',
         ),
       ),
     ),

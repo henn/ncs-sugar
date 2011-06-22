@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'Incident Unanticipated Multi-Select',
+  'label' => 'Incident Unanticipated (Multi-Select)',
   'importable' => true,
 );
 ?>

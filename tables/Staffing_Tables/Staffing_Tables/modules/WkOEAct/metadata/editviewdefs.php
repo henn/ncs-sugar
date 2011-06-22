@@ -44,45 +44,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'tsu_id',
-            'label' => 'LBL_TSU_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-          1 => 
-          array (
             'name' => 'outreach_event_date',
             'label' => 'LBL_OUTREACH_EVENT_DATE',
           ),
+          1 => '',
         ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'outreach_target',
-            'studio' => 'visible',
-            'label' => 'LBL_OUTREACH_TARGET',
-          ),
-          1 => 
-          array (
-            'name' => 'outreach_target_oth',
-            'label' => 'LBL_OUTREACH_TARGET_OTH',
-          ),
-        ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (
@@ -96,7 +63,7 @@ array (
             'label' => 'LBL_OUTREACH_MODE_OTH',
           ),
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
@@ -110,7 +77,7 @@ array (
             'label' => 'LBL_OUTREACH_TYPE_OTH',
           ),
         ),
-        6 => 
+        4 => 
         array (
           0 => 
           array (
@@ -118,14 +85,19 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_OUTREACH_TAILORED',
           ),
-          1 => 
+          1 => '',
+        ),
+        5 => 
+        array (
+          0 => 
           array (
             'name' => 'outreach_lang1',
             'studio' => 'visible',
             'label' => 'LBL_OUTREACH_LANG1',
           ),
+          1 => '',
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -139,7 +111,7 @@ array (
             'label' => 'LBL_OUTREACH_LANG_OTH',
           ),
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (
@@ -147,28 +119,19 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_OUTREACH_RACE1',
           ),
-          1 => 
-          array (
-            'name' => 'outreach_race2',
-            'studio' => 'visible',
-            'label' => 'LBL_OUTREACH_RACE2',
-          ),
+          1 => '',
         ),
-        9 => 
+        8 => 
         array (
           0 => 
-          array (
-            'name' => 'outreach_race_oth',
-            'label' => 'LBL_OUTREACH_RACE_OTH',
-          ),
-          1 => 
           array (
             'name' => 'outreach_culture1',
             'studio' => 'visible',
             'label' => 'LBL_OUTREACH_CULTURE1',
           ),
+          1 => '',
         ),
-        10 => 
+        9 => 
         array (
           0 => 
           array (
@@ -182,7 +145,7 @@ array (
             'label' => 'LBL_OUTREACH_CULTURE_OTH',
           ),
         ),
-        11 => 
+        10 => 
         array (
           0 => 
           array (
@@ -194,6 +157,16 @@ array (
             'name' => 'outreach_cost',
             'label' => 'LBL_OUTREACH_COST',
           ),
+        ),
+        11 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outreach_eval_result',
+            'studio' => 'visible',
+            'label' => 'LBL_OUTREACH_EVAL_RESULT',
+          ),
+          1 => '',
         ),
         12 => 
         array (

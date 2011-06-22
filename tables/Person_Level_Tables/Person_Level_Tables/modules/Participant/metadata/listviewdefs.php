@@ -9,28 +9,6 @@ array (
     'default' => true,
     'link' => true,
   ),
-  'DATE_ENTERED' => 
-  array (
-    'type' => 'datetime',
-    'label' => 'LBL_DATE_ENTERED',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'MODIFIED_BY_NAME' => 
-  array (
-    'type' => 'relate',
-    'link' => 'modified_user_link',
-    'label' => 'LBL_MODIFIED_NAME',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'DATE_MODIFIED' => 
-  array (
-    'type' => 'datetime',
-    'label' => 'LBL_DATE_MODIFIED',
-    'width' => '10%',
-    'default' => true,
-  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',
@@ -45,31 +23,6 @@ array (
     'label' => 'LBL_P_TYPE',
     'sortable' => false,
     'width' => '10%',
-  ),
-  'STATUS_INFO_SOURCE' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_STATUS_INFO_SOURCE',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'STATUS_INFO_MODE' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_STATUS_INFO_MODE',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'STATUS_INFO_DATE' => 
-  array (
-    'type' => 'date',
-    'label' => 'LBL_STATUS_INFO_DATE',
-    'width' => '10%',
-    'default' => true,
   ),
   'ENROLL_STATUS' => 
   array (
@@ -114,6 +67,21 @@ array (
     'width' => '10%',
     'default' => false,
   ),
+  'MODIFIED_BY_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'modified_user_link',
+    'label' => 'LBL_MODIFIED_NAME',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'DATE_ENTERED' => 
+  array (
+    'type' => 'datetime',
+    'label' => 'LBL_DATE_ENTERED',
+    'width' => '10%',
+    'default' => false,
+  ),
   'PID_ENTRY_OTHER' => 
   array (
     'type' => 'varchar',
@@ -125,6 +93,38 @@ array (
   array (
     'type' => 'varchar',
     'label' => 'LBL_STATUS_INFO_MODE_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'STATUS_INFO_DATE' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_STATUS_INFO_DATE',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'STATUS_INFO_MODE' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_STATUS_INFO_MODE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'STATUS_INFO_SOURCE' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_STATUS_INFO_SOURCE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'DATE_MODIFIED' => 
+  array (
+    'type' => 'datetime',
+    'label' => 'LBL_DATE_MODIFIED',
     'width' => '10%',
     'default' => false,
   ),

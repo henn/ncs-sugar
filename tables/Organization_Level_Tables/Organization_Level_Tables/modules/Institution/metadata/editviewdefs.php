@@ -32,17 +32,17 @@ array (
           array (
             'name' => 'name',
             'label' => 'Name (INSTITUTE_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
-          1 => 
-          array (
-            'name' => 'assigned_user_name',
-            'label' => 'LBL_ASSIGNED_TO_NAME',
-          ),
+          1 => '',
         ),
         1 => 
         array (
-          0 => '',
+          0 => 
+          array (
+            'name' => 'institute_name',
+            'label' => 'LBL_INSTITUTE_NAME',
+          ),
           1 => '',
         ),
         2 => 

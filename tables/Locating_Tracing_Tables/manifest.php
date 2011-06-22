@@ -46,7 +46,7 @@
           ),
           'readme'=>'',
           'key'=>'LTT',
-          'author' => 'CM',
+          'author' => 'SDSU',
           'description' => '',
           'icon' => '',
           'is_uninstallable' => true,
@@ -57,7 +57,7 @@
           'remove_tables' => 'prompt',
           );
 $installdefs = array (
-  'id' => 'project_Locating_Tracing_Tables',
+  'id' => 'Locating_Tracing_Tables',
   'copy' => 
   array (
     0 => 

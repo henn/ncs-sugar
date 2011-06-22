@@ -33,7 +33,7 @@ array (
     ),
     'panels' => 
     array (
-      'default' => 
+      'lbl_detailview_panel1' => 
       array (
         0 => 
         array (
@@ -50,8 +50,37 @@ array (
         ),
         1 => 
         array (
-          0 => '',
+          0 => 
+          array (
+            'name' => 'plt_particitcptcnsnt_name',
+            'label' => 'LBL_PLT_PARTICIPANT_PLT_PRTCPTCNSNT_FROM_PLT_PARTICIPANT_TITLE',
+          ),
           1 => '',
+        ),
+      ),
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'consent_date',
+            'label' => 'LBL_CONSENT_DATE',
+          ),
+          1 => '',
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'consent_version',
+            'label' => 'LBL_CONSENT_VERSION',
+          ),
+          1 => 
+          array (
+            'name' => 'consent_expiration',
+            'label' => 'LBL_CONSENT_EXPIRATION',
+          ),
         ),
         2 => 
         array (
@@ -72,15 +101,6 @@ array (
         array (
           0 => 
           array (
-            'name' => 'consent_date',
-            'label' => 'LBL_CONSENT_DATE',
-          ),
-          1 => '',
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
             'name' => 'consent_language',
             'studio' => 'visible',
             'label' => 'LBL_CONSENT_LANGUAGE',
@@ -91,7 +111,7 @@ array (
             'label' => 'LBL_CONSENT_LANGUAGE_OTH',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -101,7 +121,7 @@ array (
           ),
           1 => '',
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -115,7 +135,7 @@ array (
             'label' => 'LBL_WHO_CONSENTED',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -129,7 +149,7 @@ array (
             'label' => 'LBL_CONSENT_WITHDRAW_DATE',
           ),
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (
@@ -139,7 +159,7 @@ array (
           ),
           1 => '',
         ),
-        9 => 
+        8 => 
         array (
           0 => 
           array (
@@ -153,21 +173,13 @@ array (
             'label' => 'LBL_WHO_WTHDRW_CONSENT',
           ),
         ),
-        10 => 
+        9 => 
         array (
           0 => 
           array (
             'name' => 'consent_comments',
             'studio' => 'visible',
             'label' => 'LBL_CONSENT_COMMENTS',
-          ),
-        ),
-        11 => 
-        array (
-          0 => 
-          array (
-            'name' => 'plt_particitcptcnsnt_name',
-            'label' => 'LBL_PLT_PARTICIPANT_PLT_PRTCPTCNSNT_FROM_PLT_PARTICIPANT_TITLE',
           ),
         ),
       ),

@@ -52,64 +52,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'tsu_id',
-            'label' => 'LBL_TSU_ID',
-          ),
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
             'name' => 'outreach_event_date',
             'label' => 'LBL_OUTREACH_EVENT_DATE',
           ),
           1 => '',
         ),
-        5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'outreach_target',
-            'studio' => 'visible',
-            'label' => 'LBL_OUTREACH_TARGET',
-          ),
-          1 => 
-          array (
-            'name' => 'outreach_target_oth',
-            'label' => 'LBL_OUTREACH_TARGET_OTH',
-          ),
-        ),
-        6 => 
+        2 => 
         array (
           0 => 
           array (
@@ -123,17 +71,7 @@ array (
             'label' => 'LBL_OUTREACH_TYPE_OTH',
           ),
         ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'outreach_tailored',
-            'studio' => 'visible',
-            'label' => 'LBL_OUTREACH_TAILORED',
-          ),
-          1 => '',
-        ),
-        8 => 
+        3 => 
         array (
           0 => 
           array (
@@ -147,7 +85,17 @@ array (
             'label' => 'LBL_OUTREACH_MODE_OTH',
           ),
         ),
-        9 => 
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outreach_tailored',
+            'studio' => 'visible',
+            'label' => 'LBL_OUTREACH_TAILORED',
+          ),
+          1 => '',
+        ),
+        5 => 
         array (
           0 => 
           array (
@@ -155,23 +103,23 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_OUTREACH_LANG1',
           ),
-          1 => 
+          1 => '',
+        ),
+        6 => 
+        array (
+          0 => 
           array (
             'name' => 'outreach_lang2',
             'studio' => 'visible',
             'label' => 'LBL_OUTREACH_LANG2',
           ),
-        ),
-        10 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'outreach_lang_oth',
             'label' => 'LBL_OUTREACH_LANG_OTH',
           ),
-          1 => '',
         ),
-        11 => 
+        7 => 
         array (
           0 => 
           array (
@@ -179,23 +127,9 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_OUTREACH_RACE1',
           ),
-          1 => 
-          array (
-            'name' => 'outreach_race2',
-            'studio' => 'visible',
-            'label' => 'LBL_OUTREACH_RACE2',
-          ),
-        ),
-        12 => 
-        array (
-          0 => 
-          array (
-            'name' => 'outreach_race_oth',
-            'label' => 'LBL_OUTREACH_RACE_OTH',
-          ),
           1 => '',
         ),
-        13 => 
+        8 => 
         array (
           0 => 
           array (
@@ -203,60 +137,60 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_OUTREACH_CULTURE1',
           ),
-          1 => 
+          1 => '',
+        ),
+        9 => 
+        array (
+          0 => 
           array (
             'name' => 'outreach_culture2',
             'studio' => 'visible',
             'label' => 'LBL_OUTREACH_CULTURE2',
           ),
-        ),
-        14 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'outreach_culture_oth',
             'label' => 'LBL_OUTREACH_CULTURE_OTH',
           ),
-          1 => '',
         ),
-        15 => 
+        10 => 
         array (
           0 => 
           array (
             'name' => 'outreach_quantity',
             'label' => 'LBL_OUTREACH_QUANTITY',
           ),
-          1 => '',
-        ),
-        16 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'outreach_cost',
             'label' => 'LBL_OUTREACH_COST',
           ),
+        ),
+        11 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outreach_eval_result',
+            'studio' => 'visible',
+            'label' => 'LBL_OUTREACH_EVAL_RESULT',
+          ),
           1 => '',
         ),
-        17 => 
+        12 => 
         array (
           0 => 
           array (
             'name' => 'outreach_staffing',
             'label' => 'LBL_OUTREACH_STAFFING',
           ),
-          1 => '',
-        ),
-        18 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'outreach_incident',
             'studio' => 'visible',
             'label' => 'LBL_OUTREACH_INCIDENT',
           ),
-          1 => '',
         ),
-        19 => 
+        13 => 
         array (
           0 => 
           array (
@@ -265,7 +199,7 @@ array (
           ),
           1 => '',
         ),
-        20 => 
+        14 => 
         array (
           0 => 
           array (

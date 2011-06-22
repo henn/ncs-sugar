@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'NIR DU Type Multi Select',
+  'label' => 'NIR DU Type (Multi Select)',
   'importable' => true,
 );
 ?>
