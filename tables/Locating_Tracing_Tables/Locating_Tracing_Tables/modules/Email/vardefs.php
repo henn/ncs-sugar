@@ -280,6 +280,38 @@ $vardefs = array (
       'reportable' => true,
       'size' => '20',
     ),
+    'email_start_date' => 
+    array (
+      'required' => false,
+      'name' => 'email_start_date',
+      'vname' => 'LBL_EMAIL_START_DATE',
+      'type' => 'date',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => 'Date when email address became effective',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'reportable' => true,
+      'size' => '20',
+    ),
+    'email_end_date' => 
+    array (
+      'required' => false,
+      'name' => 'email_end_date',
+      'vname' => 'LBL_EMAIL_END_DATE',
+      'type' => 'date',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => 'Last date at which the email address is effective',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'reportable' => true,
+      'size' => '20',
+    ),
   ),
   'relationships' => 
   array (

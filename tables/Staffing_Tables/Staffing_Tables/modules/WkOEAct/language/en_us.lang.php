@@ -86,6 +86,6 @@ $mod_strings = array (
   'LBL_OUTREACH_TAILORED' => 'Outreach Tailored',
   'LBL_OUTREACH_TYPE' => 'Outreach Type',
   'LBL_OUTREACH_TYPE_OTH' => 'Outreach Type Other',
-  'LBL_ST_WKOEACT_SUBPANEL_TITLE' => 'Weekly Outreach & Engagement Activities',  
+  'LBL_ST_WKOEACT_SUBPANEL_TITLE' => 'Weekly Outreach & Engagement Activities',
 );
 ?>

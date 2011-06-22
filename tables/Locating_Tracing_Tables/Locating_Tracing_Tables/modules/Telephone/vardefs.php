@@ -307,6 +307,38 @@ $vardefs = array (
       'reportable' => true,
       'size' => '20',
     ),
+    'phone_start_date' => 
+    array (
+      'required' => false,
+      'name' => 'phone_start_date',
+      'vname' => 'LBL_PHONE_START_DATE',
+      'type' => 'date',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => 'Date when phone number became effective',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'reportable' => true,
+      'size' => '20',
+    ),
+    'phone_end_date' => 
+    array (
+      'required' => false,
+      'name' => 'phone_end_date',
+      'vname' => 'LBL_PHONE_END_DATE',
+      'type' => 'date',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => 'Last date at which the phone number is effective',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'reportable' => true,
+      'size' => '20',
+    ),
   ),
   'relationships' => 
   array (

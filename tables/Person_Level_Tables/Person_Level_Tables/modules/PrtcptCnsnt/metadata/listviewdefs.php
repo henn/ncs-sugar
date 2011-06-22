@@ -18,6 +18,15 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
+  'CONSENT_FORM_TYPE' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_CONSENT_FORM_TYPE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
   'CONSENT_VERSION' => 
   array (
     'type' => 'varchar',
@@ -103,6 +112,24 @@ array (
     'label' => 'LBL_PERSON_WTHDRW_CONSENT_ID',
     'width' => '10%',
     'default' => false,
+  ),
+  'RECONSIDERATION_SCRIPT_USE' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_RECONSIDERATION_SCRIPT_USE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'CONSENT_WITHDRAW_REASON' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_CONSENT_WITHDRAW_REASON',
+    'sortable' => false,
+    'width' => '10%',
   ),
   'WHO_WTHDRW_CONSENT' => 
   array (

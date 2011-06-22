@@ -22,6 +22,16 @@ array (
         'width' => '10%',
         'name' => 'consent_type',
       ),
+      'consent_form_type' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_CONSENT_FORM_TYPE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'consent_form_type',
+      ),
       'consent_date' => 
       array (
         'type' => 'date',
@@ -79,6 +89,32 @@ array (
         'width' => '10%',
         'name' => 'consent_type',
       ),
+      'consent_form_type' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_CONSENT_FORM_TYPE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'consent_form_type',
+      ),
+      'consent_version' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_CONSENT_VERSION',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'consent_version',
+      ),
+      'consent_expiration' => 
+      array (
+        'type' => 'date',
+        'label' => 'LBL_CONSENT_EXPIRATION',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'consent_expiration',
+      ),
       'consent_date' => 
       array (
         'type' => 'date',
@@ -125,6 +161,16 @@ array (
         'width' => '10%',
         'name' => 'consent_withdraw_type',
       ),
+      'consent_withdraw_reason' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_CONSENT_WITHDRAW_REASON',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'consent_withdraw_reason',
+      ),
       'consent_withdraw_date' => 
       array (
         'type' => 'date',
@@ -160,6 +206,16 @@ array (
         'sortable' => false,
         'width' => '10%',
         'name' => 'who_consented',
+      ),
+      'reconsideration_script_use' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_RECONSIDERATION_SCRIPT_USE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'reconsideration_script_use',
       ),
       'assigned_user_id' => 
       array (

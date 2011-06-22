@@ -130,13 +130,25 @@ array (
         array (
           0 => 
           array (
+            'name' => 'email_start_date',
+            'label' => 'LBL_EMAIL_START_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'email_end_date',
+            'label' => 'LBL_EMAIL_END_DATE',
+          ),
+        ),
+        9 => 
+        array (
+          0 => 
+          array (
             'name' => 'email_comment',
             'studio' => 'visible',
             'label' => 'LBL_EMAIL_COMMENT',
           ),
         ),
-
-        9 => 
+        10 => 
         array (
           0 => 
           array (

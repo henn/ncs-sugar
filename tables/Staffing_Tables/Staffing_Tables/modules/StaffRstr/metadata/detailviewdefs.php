@@ -121,6 +121,7 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_STAFF_GENDER',
           ),
+          1 => '',
         ),
         1 => 
         array (
@@ -144,6 +145,7 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_STAFF_ETHNICITY',
           ),
+          1 => '',
         ),
         3 => 
         array (
@@ -158,6 +160,15 @@ array (
             'name' => 'staff_race_oth',
             'label' => 'LBL_STAFF_RACE_OTH',
           ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'staff_zip',
+            'label' => 'LBL_STAFF_ZIP',
+          ),
+          1 => '',
         ),
       ),
     ),

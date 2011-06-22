@@ -83,6 +83,9 @@ $mod_strings = array (
   'LBL_PERSON_WTHDRW_CONSENT_ID' => 'ID of Person Who Withdrew Consent',
   'LBL_PLT_PRTCPTCNSNT_SUBPANEL_TITLE' => 'Participant Consent',
   'LBL_WHO_CONSENTED' => 'Who Consented',
-  'LBL_WHO_WTHDRW_CONSENT' => 'Who Withdrew Consent',  
+  'LBL_WHO_WTHDRW_CONSENT' => 'Who Withdrew Consent',
+  'LBL_CONSENT_FORM_TYPE' => 'Consent Form Type',
+  'LBL_CONSENT_WITHDRAW_REASON' => 'Consent Withdraw Reason',
+  'LBL_RECONSIDERATION_SCRIPT_USE' => 'Was Reconsideration Script Used?',
 );
 ?>

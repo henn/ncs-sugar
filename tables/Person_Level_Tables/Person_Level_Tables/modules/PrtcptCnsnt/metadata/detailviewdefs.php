@@ -64,10 +64,15 @@ array (
         array (
           0 => 
           array (
+            'name' => 'consent_form_type',
+            'studio' => 'visible',
+            'label' => 'LBL_CONSENT_FORM_TYPE',
+          ),
+          1 => 
+          array (
             'name' => 'consent_date',
             'label' => 'LBL_CONSENT_DATE',
           ),
-          1 => '',
         ),
         1 => 
         array (
@@ -157,23 +162,38 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_CONSENT_WITHDRAW_TYPE',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'consent_withdraw_reason',
+            'studio' => 'visible',
+            'label' => 'LBL_CONSENT_WITHDRAW_REASON',
+          ),
         ),
         8 => 
         array (
           0 => 
           array (
-            'name' => 'person_wthdrw_consent_id',
-            'label' => 'LBL_PERSON_WTHDRW_CONSENT_ID',
-          ),
-          1 => 
-          array (
             'name' => 'who_wthdrw_consent',
             'studio' => 'visible',
             'label' => 'LBL_WHO_WTHDRW_CONSENT',
           ),
+          1 => 
+          array (
+            'name' => 'person_wthdrw_consent_id',
+            'label' => 'LBL_PERSON_WTHDRW_CONSENT_ID',
+          ),
         ),
         9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'reconsideration_script_use',
+            'studio' => 'visible',
+            'label' => 'LBL_RECONSIDERATION_SCRIPT_USE',
+          ),
+          1 => '',
+        ),
+        10 => 
         array (
           0 => 
           array (
