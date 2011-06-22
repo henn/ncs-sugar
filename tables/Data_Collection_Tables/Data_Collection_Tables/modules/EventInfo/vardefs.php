@@ -313,6 +313,38 @@ $vardefs = array (
       'reportable' => true,
       'size' => '20',
     ),
+    'visit_window_starttime_c' => 
+    array (
+      'required' => false,
+      'name' => 'visit_window_starttime_c',
+      'vname' => 'LBL_VISIT_WINDOW_STARTDATE',
+      'type' => 'date',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => 'Visit Window Start Date',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'size' => '20',
+    ),
+    'visit_window_endtime_c' => 
+    array (
+      'required' => false,
+      'name' => 'visit_window_endtime_c',
+      'vname' => 'LBL_VISIT_WINDOW_ENDDATE',
+      'type' => 'date',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => 'Visit Window End Date',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'size' => '20',
+    ),
   ),
   'relationships' => 
   array (

@@ -269,20 +269,14 @@ array (
         ),
         19 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        20 => 
-        array (
           0 => 
           array (
             'name' => 'lt_illness_desc',
             'studio' => 'visible',
             'label' => 'LBL_LT_ILLNESS_DESC',
           ),
-          1 => '',
         ),
-        21 => 
+        20 => 
         array (
           0 => 
           array (
@@ -294,7 +288,7 @@ array (
             'label' => 'LBL_NCSDC_CNTCTINFO_NCSDC_NONINTERRPT_FROM_NCSDC_CNTCTINFO_TITLE',
           ),
         ),
-        22 => 
+        21 => 
         array (
           0 => 
           array (

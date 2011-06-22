@@ -81,5 +81,8 @@ $mod_strings = array (
   'LBL_EVENT_INCENT_NONCASH' => 'Event Incentive Non Cash',
   'LNK_IMPORT_NCSDC_EVENTINFO' => 'Import Event Information',
   'LBL_NCSDC_EVENTINFO_SUBPANEL_TITLE' => 'Event Information',
+  'LBL_VISIT_WINDOW_STARTDATE' => 'Visit Window Start Date',
+  'LBL_VISIT_WINDOW_ENDTIME_C' => 'visit window_endtime_c',
+  'LBL_VISIT_WINDOW_ENDDATE' => 'Visit Window End Date',
 );
 ?>
