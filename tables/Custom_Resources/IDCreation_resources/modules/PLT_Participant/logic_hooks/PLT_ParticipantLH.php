@@ -14,7 +14,8 @@
 				$partL = new PLT_LkPrsPrtcpt();  
 				
 				$partL->name = str_replace('SP', 'PP', $bean->name); 
-				$partL->relation = "Participant/Self";
+				//$partL->relation = "Participant/Self";
+				$partL->relation = "1";
 				$partL->is_active = '1';
 				$partL->assigned_user_id = $current_user->id; 
 				$partL->plt_lkprspe360_person_ida = $_SESSION['person_record'];
