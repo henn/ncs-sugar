@@ -229,6 +229,28 @@ array (
             'name' => 'ncsdc_cntct_incident_name',
             'label' => 'LBL_NCSDC_CNTCTINFO_NCSDC_INCIDENT_FROM_NCSDC_CNTCTINFO_TITLE',
           ),
+          1 => 
+          array (
+            'name' => 'ncsdc_incidstaffrstr_name',
+          ),
+        ),
+        17 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_incidrticipant_name',
+          ),
+          1 => 
+          array (
+            'name' => 'ncsdc_incidellingunt_name',
+          ),
+        ),
+        18 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_incidlt_person_name',
+          ),
         ),
       ),
     ),
