@@ -83,3 +83,6 @@ $app_list_strings['CONFIRM_TYPE_CL21']['1'] = 'Yes';
 $app_list_strings['CONFIRM_TYPE_CL21']['2'] = 'No';
 $app_list_strings['CONFIRM_TYPE_CL21']['_7'] = 'Not applicable';
 $app_list_strings['CONFIRM_TYPE_CL21']['_4'] = 'Missing in Error';
+$app_list_strings['parent_type_display']['PLT_Participant'] = 'Participant';
+$app_list_strings['record_type_display']['PLT_Participant'] = 'Participant';
+$app_list_strings['record_type_display_notes']['PLT_Participant'] = 'Participant';

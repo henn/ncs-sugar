@@ -58,7 +58,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'address_type' => 
+    'address_type' => 
     array (
       'required' => false,
       'name' => 'address_type',
@@ -79,7 +79,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'age_eligible_cl1' => 
+    'age_eligible_cl1' => 
     array (
       'required' => false,
       'name' => 'age_eligible_cl1',
@@ -100,7 +100,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'age_eligible_cl2' => 
+    'age_eligible_cl2' => 
     array (
       'required' => false,
       'name' => 'age_eligible_cl2',
@@ -121,7 +121,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'age_eligible_cl3' => 
+    'age_eligible_cl3' => 
     array (
       'required' => false,
       'name' => 'age_eligible_cl3',
@@ -142,7 +142,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'age_eligible_cl4' => 
+    'age_eligible_cl4' => 
     array (
       'required' => false,
       'name' => 'age_eligible_cl4',
@@ -184,7 +184,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'age_range_cl2' => 
+    'age_range_cl2' => 
     array (
       'required' => false,
       'name' => 'age_range_cl2',
@@ -205,7 +205,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'age_range_cl3' => 
+    'age_range_cl3' => 
     array (
       'required' => false,
       'name' => 'age_range_cl3',
@@ -226,7 +226,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'age_range_cl4' => 
+    'age_range_cl4' => 
     array (
       'required' => false,
       'name' => 'age_range_cl4',
@@ -247,7 +247,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'age_range_cl5' => 
+    'age_range_cl5' => 
     array (
       'required' => false,
       'name' => 'age_range_cl5',
@@ -268,7 +268,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'age_range_cl6' => 
+    'age_range_cl6' => 
     array (
       'required' => false,
       'name' => 'age_range_cl6',
@@ -289,7 +289,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'age_range_cl7' => 
+    'age_range_cl7' => 
     array (
       'required' => false,
       'name' => 'age_range_cl7',
@@ -372,7 +372,7 @@ $vardefs = array (
       'options' => 'PPG_STATUS_CL2',
       'studio' => 'visible',
       'dependency' => false,
-    ),    
+    ),
     'translation_method_cl1' => 
     array (
       'required' => false,
@@ -414,7 +414,7 @@ $vardefs = array (
       'options' => 'PHONE_TYPE_CL1',
       'studio' => 'visible',
       'dependency' => false,
-    ),   
+    ),
     'age_home_cl1' => 
     array (
       'required' => false,
@@ -499,7 +499,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'agreement_level_cl1' => 
+    'agreement_level_cl1' => 
     array (
       'required' => false,
       'name' => 'agreement_level_cl1',
@@ -520,7 +520,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'agreement_level_cl2' => 
+    'agreement_level_cl2' => 
     array (
       'required' => false,
       'name' => 'agreement_level_cl2',
@@ -541,7 +541,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'agreement_level_cl3' => 
+    'agreement_level_cl3' => 
     array (
       'required' => false,
       'name' => 'agreement_level_cl3',
@@ -562,7 +562,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'agreement_level_cl4' => 
+    'agreement_level_cl4' => 
     array (
       'required' => false,
       'name' => 'agreement_level_cl4',
@@ -625,7 +625,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'alcohol_frequency_cl3' => 
+    'alcohol_frequency_cl3' => 
     array (
       'required' => false,
       'name' => 'alcohol_frequency_cl3',
@@ -646,7 +646,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'alcohol_frequency_cl4' => 
+    'alcohol_frequency_cl4' => 
     array (
       'required' => false,
       'name' => 'alcohol_frequency_cl4',
@@ -667,7 +667,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'auth_form_type_cl1' => 
+    'auth_form_type_cl1' => 
     array (
       'required' => false,
       'name' => 'auth_form_type_cl1',
@@ -688,7 +688,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'auth_status_cl1' => 
+    'auth_status_cl1' => 
     array (
       'required' => false,
       'name' => 'auth_status_cl1',
@@ -709,7 +709,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'autoimmune_type_cl1' => 
+    'autoimmune_type_cl1' => 
     array (
       'required' => false,
       'name' => 'autoimmue_type_cl1',
@@ -751,7 +751,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'baby_feeding_cl2' => 
+    'baby_feeding_cl2' => 
     array (
       'required' => false,
       'name' => 'baby_feeding_cl2',
@@ -772,7 +772,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'baby_feeding_cl3' => 
+    'baby_feeding_cl3' => 
     array (
       'required' => false,
       'name' => 'baby_feeding_cl3',
@@ -793,7 +793,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'baby_formula_cl1' => 
+    'baby_formula_cl1' => 
     array (
       'required' => false,
       'name' => 'baby_formula_cl1',
@@ -814,7 +814,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'baby_formula_cl2' => 
+    'baby_formula_cl2' => 
     array (
       'required' => false,
       'name' => 'baby_formula_cl2',
@@ -961,7 +961,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'birth_place_plan_cl2' => 
+    'birth_place_plan_cl2' => 
     array (
       'required' => false,
       'name' => 'birth_place_plan_cl2',
@@ -982,7 +982,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'birth_visit_place_cl1' => 
+    'birth_visit_place_cl1' => 
     array (
       'required' => false,
       'name' => 'birth_visit_place_cl1',
@@ -1003,7 +1003,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'blood_collec_issue_cl1' => 
+    'blood_collec_issue_cl1' => 
     array (
       'required' => false,
       'name' => 'blood_collec_issue_cl1',
@@ -1024,7 +1024,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'blood_draw_prob_cl1' => 
+    'blood_draw_prob_cl1' => 
     array (
       'required' => false,
       'name' => 'blood_draw_prob_cl1',
@@ -1045,7 +1045,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'blood_draw_prob_cl2' => 
+    'blood_draw_prob_cl2' => 
     array (
       'required' => false,
       'name' => 'blood_draw_prob_cl2',
@@ -1066,7 +1066,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'blood_draw_prob_cl3' => 
+    'blood_draw_prob_cl3' => 
     array (
       'required' => false,
       'name' => 'blood_draw_prob_cl3',
@@ -1087,7 +1087,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'blood_hemolyze_cl1' => 
+    'blood_hemolyze_cl1' => 
     array (
       'required' => false,
       'name' => 'blood_hemolyze_cl1',
@@ -1108,7 +1108,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'bottle_fill_status_cl1' => 
+    'bottle_fill_status_cl1' => 
     array (
       'required' => false,
       'name' => 'bottle_fill_status_cl1',
@@ -1129,7 +1129,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'bottle_fill_status_cl2' => 
+    'bottle_fill_status_cl2' => 
     array (
       'required' => false,
       'name' => 'bottle_fill_status_cl2',
@@ -1150,7 +1150,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'breast_milk_feed_cl1' => 
+    'breast_milk_feed_cl1' => 
     array (
       'required' => false,
       'name' => 'breast_milk_feed_cl1',
@@ -1171,7 +1171,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'breast_milk_feed_cl2' => 
+    'breast_milk_feed_cl2' => 
     array (
       'required' => false,
       'name' => 'breast_milk_feed_cl2',
@@ -1192,7 +1192,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'breast_milk_feed_cl3' => 
+    'breast_milk_feed_cl3' => 
     array (
       'required' => false,
       'name' => 'breast_milk_feed_cl3',
@@ -1213,7 +1213,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'breast_milk_feed_cl4' => 
+    'breast_milk_feed_cl4' => 
     array (
       'required' => false,
       'name' => 'breast_milk_feed_cl4',
@@ -1234,7 +1234,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'calib_error_reason_cl1' => 
+    'calib_error_reason_cl1' => 
     array (
       'required' => false,
       'name' => 'calib_error_reason_cl1',
@@ -1255,7 +1255,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'cancer_typer_cl1' => 
+    'cancer_typer_cl1' => 
     array (
       'required' => false,
       'name' => 'cancer_type_cl1',
@@ -1297,7 +1297,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'chamber_status_cl1' => 
+    'chamber_status_cl1' => 
     array (
       'required' => false,
       'name' => 'chamber_status_cl1',
@@ -1318,7 +1318,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'childcare_place_cl1' => 
+    'childcare_place_cl1' => 
     array (
       'required' => false,
       'name' => 'childcare_place_cl1',
@@ -1360,7 +1360,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'child_condition_cl1' => 
+    'child_condition_cl1' => 
     array (
       'required' => false,
       'name' => 'child_condition_cl1',
@@ -1381,7 +1381,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'child_condition_cl2' => 
+    'child_condition_cl2' => 
     array (
       'required' => false,
       'name' => 'child_condition_cl2',
@@ -1402,7 +1402,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'child_sleep_arrangements_cl1' => 
+    'child_sleep_arrangements_cl1' => 
     array (
       'required' => false,
       'name' => 'child_sleep_arrangment_cl1',
@@ -1423,7 +1423,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'child_sleep_room_cl1' => 
+    'child_sleep_room_cl1' => 
     array (
       'required' => false,
       'name' => 'child_sleep_room_cl1',
@@ -1444,7 +1444,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'comm_frequency_cl1' => 
+    'comm_frequency_cl1' => 
     array (
       'required' => false,
       'name' => 'comm_frequency_cl1',
@@ -1465,7 +1465,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'comments_cl1' => 
+    'comments_cl1' => 
     array (
       'required' => false,
       'name' => 'comments_cl1',
@@ -1486,7 +1486,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'communication_rank_cl1' => 
+    'communication_rank_cl1' => 
     array (
       'required' => false,
       'name' => 'communication_rank_cl1',
@@ -1506,7 +1506,7 @@ $vardefs = array (
       'options' => 'COMMUNICATION_RANK_CL1',
       'studio' => 'visible',
       'dependency' => false,
-    ), 
+    ),
     'commute_type_cl1' => 
     array (
       'required' => false,
@@ -1549,7 +1549,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'completion_type_cl1' => 
+    'completion_type_cl1' => 
     array (
       'required' => false,
       'name' => 'completion_type_cl1',
@@ -1591,7 +1591,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'confirm_type_cl2' => 
+    'confirm_type_cl2' => 
     array (
       'required' => false,
       'name' => 'confirm_type_cl2',
@@ -1801,7 +1801,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'confirm_type_cl12' => 
+    'confirm_type_cl12' => 
     array (
       'required' => false,
       'name' => 'confirm_type_cl12',
@@ -1822,7 +1822,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'confirm_type_cl13' => 
+    'confirm_type_cl13' => 
     array (
       'required' => false,
       'name' => 'confirm_type_cl13',
@@ -1843,7 +1843,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'confirm_type_cl14' => 
+    'confirm_type_cl14' => 
     array (
       'required' => false,
       'name' => 'confirm_type_cl14',
@@ -1864,7 +1864,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'confirm_type_cl15' => 
+    'confirm_type_cl15' => 
     array (
       'required' => false,
       'name' => 'confirm_type_cl15',
@@ -1885,7 +1885,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'confirm_type_cl16' => 
+    'confirm_type_cl16' => 
     array (
       'required' => false,
       'name' => 'confirm_type_cl16',
@@ -1906,7 +1906,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'confirm_type_cl17' => 
+    'confirm_type_cl17' => 
     array (
       'required' => false,
       'name' => 'confirm_type_cl17',
@@ -1927,7 +1927,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'confirm_type_cl18' => 
+    'confirm_type_cl18' => 
     array (
       'required' => false,
       'name' => 'confirm_type_cl18',
@@ -1948,7 +1948,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'confirm_type_cl19' => 
+    'confirm_type_cl19' => 
     array (
       'required' => false,
       'name' => 'confirm_type_cl19',
@@ -1969,7 +1969,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'confirm_type_cl20' => 
+    'confirm_type_cl20' => 
     array (
       'required' => false,
       'name' => 'confirm_type_cl20',
@@ -1990,7 +1990,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'confirm_type_cl21' => 
+    'confirm_type_cl21' => 
     array (
       'required' => false,
       'name' => 'confirm_type_cl21',
@@ -2011,7 +2011,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'confirm_type_cl22' => 
+    'confirm_type_cl22' => 
     array (
       'required' => false,
       'name' => 'confirm_type_cl22',
@@ -2032,7 +2032,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'confirm_type_cl23' => 
+    'confirm_type_cl23' => 
     array (
       'required' => false,
       'name' => 'confirm_type_cl23',
@@ -2053,7 +2053,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'confirm_type_cl24' => 
+    'confirm_type_cl24' => 
     array (
       'required' => false,
       'name' => 'confirm_type_cl24',
@@ -2074,7 +2074,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'confirm_type_cl25' => 
+    'confirm_type_cl25' => 
     array (
       'required' => false,
       'name' => 'confirm_type_cl25',
@@ -2095,7 +2095,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'consent_type_cl1' => 
+    'consent_type_cl1' => 
     array (
       'required' => false,
       'name' => 'consent_type_cl1',
@@ -2116,7 +2116,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'consent_type_cl2' => 
+    'consent_type_cl2' => 
     array (
       'required' => false,
       'name' => 'consent_type_cl2',
@@ -2137,7 +2137,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'consent_withdraw_reason_cl1' => 
+    'consent_withdraw_reason_cl1' => 
     array (
       'required' => false,
       'name' => 'consent_withdraw_reason_cl1',
@@ -2158,7 +2158,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'consent_withdraw_reason_cl2' => 
+    'consent_withdraw_reason_cl2' => 
     array (
       'required' => false,
       'name' => 'consent_withdraw_reason_cl2',
@@ -2179,7 +2179,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'contact_location_cl1' => 
+    'contact_location_cl1' => 
     array (
       'required' => false,
       'name' => 'contact_location_cl1',
@@ -2221,7 +2221,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'contact_relationship_cl1' => 
+    'contact_relationship_cl1' => 
     array (
       'required' => false,
       'name' => 'contact_relationship_cl1',
@@ -2242,7 +2242,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'contact_relationship_cl2' => 
+    'contact_relationship_cl2' => 
     array (
       'required' => false,
       'name' => 'contact_relationship_cl2',
@@ -2263,7 +2263,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'contact_relationship_cl3' => 
+    'contact_relationship_cl3' => 
     array (
       'required' => false,
       'name' => 'contact_relationship_cl3',
@@ -2284,7 +2284,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'contact_type_cl1' => 
+    'contact_type_cl1' => 
     array (
       'required' => false,
       'name' => 'contact_type_cl1',
@@ -2326,7 +2326,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'contact_type_cl3' => 
+    'contact_type_cl3' => 
     array (
       'required' => false,
       'name' => 'contact_type_cl3',
@@ -2347,7 +2347,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'contact_type_cl4' => 
+    'contact_type_cl4' => 
     array (
       'required' => false,
       'name' => 'contact_type_cl4',
@@ -2368,7 +2368,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'contact_type_cl5' => 
+    'contact_type_cl5' => 
     array (
       'required' => false,
       'name' => 'contact_type_cl5',
@@ -2389,7 +2389,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'contact_type_cl6' => 
+    'contact_type_cl6' => 
     array (
       'required' => false,
       'name' => 'contact_type_cl6',
@@ -2431,7 +2431,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'cooling_system_type_cl2' => 
+    'cooling_system_type_cl2' => 
     array (
       'required' => false,
       'name' => 'cooling_system_type_cl2',
@@ -2452,7 +2452,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'cooling_system_type_cl3' => 
+    'cooling_system_type_cl3' => 
     array (
       'required' => false,
       'name' => 'cooling_system_type_cl3',
@@ -2473,7 +2473,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'cord_cllctn_location_cl1' => 
+    'cord_cllctn_location_cl1' => 
     array (
       'required' => false,
       'name' => 'cord_cllctn_location_cl1',
@@ -2494,7 +2494,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'cord_container_cl1' => 
+    'cord_container_cl1' => 
     array (
       'required' => false,
       'name' => 'cord_container_cl1',
@@ -2515,7 +2515,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'cord_notcol_reason_cl1' => 
+    'cord_notcol_reason_cl1' => 
     array (
       'required' => false,
       'name' => 'cord_notcol_reason_cl1',
@@ -2536,7 +2536,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	 'cry_rank_cl1' => 
+    'cry_rank_cl1' => 
     array (
       'required' => false,
       'name' => 'cry_rank_cl1',
@@ -2599,7 +2599,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'date_given_cl2' => 
+    'date_given_cl2' => 
     array (
       'required' => false,
       'name' => 'date_given_cl2',
@@ -2620,7 +2620,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'delivery_type_cl1' => 
+    'delivery_type_cl1' => 
     array (
       'required' => false,
       'name' => 'delivery_type_cl1',
@@ -2641,7 +2641,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'difficulty_level_cl1' => 
+    'difficulty_level_cl1' => 
     array (
       'required' => false,
       'name' => 'difficulty_level_cl1',
@@ -2662,7 +2662,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'drug_dose_form_cl1' => 
+    'drug_dose_form_cl1' => 
     array (
       'required' => false,
       'name' => 'drug_dose_form_cl1',
@@ -2683,7 +2683,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'drug_dose_unit_cl1' => 
+    'drug_dose_unit_cl1' => 
     array (
       'required' => false,
       'name' => 'drug_dose_unit_cl1',
@@ -2725,7 +2725,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'du_confirm_cl2' => 
+    'du_confirm_cl2' => 
     array (
       'required' => false,
       'name' => 'du_confirm_cl2',
@@ -2746,7 +2746,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'du_confirm_cl3' => 
+    'du_confirm_cl3' => 
     array (
       'required' => false,
       'name' => 'du_confirm_cl3',
@@ -2851,7 +2851,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'due_date_source_cl2' => 
+    'due_date_source_cl2' => 
     array (
       'required' => false,
       'name' => 'due_date_source_cl2',
@@ -2893,7 +2893,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'education_level_cl2' => 
+    'education_level_cl2' => 
     array (
       'required' => false,
       'name' => 'education_level_cl2',
@@ -2914,7 +2914,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'email_type_cl1' => 
+    'email_type_cl1' => 
     array (
       'required' => false,
       'name' => 'email_type_cl1',
@@ -2956,7 +2956,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'email_use_frequency_cl1' => 
+    'email_use_frequency_cl1' => 
     array (
       'required' => false,
       'name' => 'email_use_frequency_cl1',
@@ -3019,7 +3019,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'equipment_issue_cl1' => 
+    'equipment_issue_cl1' => 
     array (
       'required' => false,
       'name' => 'equipment_issue_cl1',
@@ -3040,7 +3040,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'equipment_issue_cl2' => 
+    'equipment_issue_cl2' => 
     array (
       'required' => false,
       'name' => 'equipment_issue_cl2',
@@ -3061,7 +3061,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'equipment_type_cl1' => 
+    'equipment_type_cl1' => 
     array (
       'required' => false,
       'name' => 'equipment_type_cl1',
@@ -3082,7 +3082,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'equipment_type_cl2' => 
+    'equipment_type_cl2' => 
     array (
       'required' => false,
       'name' => 'equipment_type_cl2',
@@ -3103,7 +3103,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'ethnicity_cl1' => 
+    'ethnicity_cl1' => 
     array (
       'required' => false,
       'name' => 'ethnicity_cl1',
@@ -3124,7 +3124,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'event_dspstn_cat_cl1' => 
+    'event_dspstn_cat_cl1' => 
     array (
       'required' => false,
       'name' => 'event_dspstn_cat_cl1',
@@ -3145,7 +3145,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'event_type_cl1' => 
+    'event_type_cl1' => 
     array (
       'required' => false,
       'name' => 'event_type_cl1',
@@ -3166,51 +3166,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-    /* Retired MDES v1.1
-	'event_type_cl2' => 
-    array (
-      'required' => false,
-      'name' => 'event_type_cl2',
-      'vname' => 'LBL_EVENT_TYPE_CL2',
-      'type' => 'enum',
-      'massupdate' => 0,
-      'default' => '1',
-      'comments' => '',
-      'help' => '',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => 100,
-      'size' => '20',
-      'options' => 'EVENT_TYPE_CL2',
-      'studio' => 'visible',
-      'dependency' => false,
-    ), */
-    /* Retired MDES v1.1
-	'event_type_cl3' => 
-    array (
-      'required' => false,
-      'name' => 'event_type_cl3',
-      'vname' => 'LBL_EVENT_TYPE_CL3',
-      'type' => 'enum',
-      'massupdate' => 0,
-      'default' => '1',
-      'comments' => '',
-      'help' => '',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => 100,
-      'size' => '20',
-      'options' => 'EVENT_TYPE_CL3',
-      'studio' => 'visible',
-      'dependency' => false,
-    ), */
-	'food_quantity_cl1' => 
+    'food_quantity_cl1' => 
     array (
       'required' => false,
       'name' => 'food_quantity_cl1',
@@ -3231,7 +3187,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'formula_type_cl1' => 
+    'formula_type_cl1' => 
     array (
       'required' => false,
       'name' => 'formula_type_cl1',
@@ -3252,7 +3208,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'gender_cl1' => 
+    'gender_cl1' => 
     array (
       'required' => false,
       'name' => 'gender_cl1',
@@ -3294,7 +3250,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'gender_cl3' => 
+    'gender_cl3' => 
     array (
       'required' => false,
       'name' => 'gender_cl3',
@@ -3315,29 +3271,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	/*  Retired MDES v2.0
-	'gender_cl4' => 
-    array (
-      'required' => false,
-      'name' => 'gender_cl4',
-      'vname' => 'LBL_GENDER_CL4',
-      'type' => 'enum',
-      'massupdate' => 0,
-      'default' => '_2',
-      'comments' => '',
-      'help' => '',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => 100,
-      'size' => '20',
-      'options' => 'GENDER_CL4',
-      'studio' => 'visible',
-      'dependency' => false,
-    ),  */
-	'gender_cl5' => 
+    'gender_cl5' => 
     array (
       'required' => false,
       'name' => 'gender_cl5',
@@ -3358,7 +3292,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'gender_cl6' => 
+    'gender_cl6' => 
     array (
       'required' => false,
       'name' => 'gender_cl6',
@@ -3379,7 +3313,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'gender_cl7' => 
+    'gender_cl7' => 
     array (
       'required' => false,
       'name' => 'gender_cl7',
@@ -3421,7 +3355,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'healthcare_place_cl1' => 
+    'healthcare_place_cl1' => 
     array (
       'required' => false,
       'name' => 'healthcare_place_cl1',
@@ -3442,7 +3376,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'healthcare_place_cl2' => 
+    'healthcare_place_cl2' => 
     array (
       'required' => false,
       'name' => 'healthcare_place_cl2',
@@ -3463,7 +3397,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'healthcare_place_cl3' => 
+    'healthcare_place_cl3' => 
     array (
       'required' => false,
       'name' => 'healthcare_place_cl3',
@@ -3505,7 +3439,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'health_status_cl2' => 
+    'health_status_cl2' => 
     array (
       'required' => false,
       'name' => 'health_status_cl2',
@@ -3526,7 +3460,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'health_status_cl3' => 
+    'health_status_cl3' => 
     array (
       'required' => false,
       'name' => 'health_status_cl3',
@@ -3568,7 +3502,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'heat_type_cl2' => 
+    'heat_type_cl2' => 
     array (
       'required' => false,
       'name' => 'heat_type_cl2',
@@ -3589,7 +3523,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'heat_type_cl3' => 
+    'heat_type_cl3' => 
     array (
       'required' => false,
       'name' => 'heat_type_cl3',
@@ -3673,28 +3607,6 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	/*  Retired MDES v1.2
-	'home_ownership_cl3' => 
-    array (
-      'required' => false,
-      'name' => 'home_ownership_cl3',
-      'vname' => 'LBL_HOME_OWNERSHIP_CL3',
-      'type' => 'enum',
-      'massupdate' => 0,
-      'default' => '1',
-      'comments' => '',
-      'help' => '',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => 100,
-      'size' => '20',
-      'options' => 'HOME_OWNERSHIP_CL3',
-      'studio' => 'visible',
-      'dependency' => false,
-    ), */
     'household_eligibility_cl1' => 
     array (
       'required' => false,
@@ -3716,7 +3628,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'household_eligibility_cl2' => 
+    'household_eligibility_cl2' => 
     array (
       'required' => false,
       'name' => 'household_eligibility_cl2',
@@ -3758,7 +3670,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'importance_level_cl2' => 
+    'importance_level_cl2' => 
     array (
       'required' => false,
       'name' => 'importance_level_cl2',
@@ -3800,7 +3712,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'improvement_rank_cl2' => 
+    'improvement_rank_cl2' => 
     array (
       'required' => false,
       'name' => 'improvement_rank_cl2',
@@ -3905,7 +3817,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'income_range_cl2' => 
+    'income_range_cl2' => 
     array (
       'required' => false,
       'name' => 'income_range_cl2',
@@ -3926,7 +3838,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'income_range_cl3' => 
+    'income_range_cl3' => 
     array (
       'required' => false,
       'name' => 'income_range_cl3',
@@ -3947,7 +3859,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'income_range_cl4' => 
+    'income_range_cl4' => 
     array (
       'required' => false,
       'name' => 'income_range_cl4',
@@ -3968,7 +3880,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'information_source_cl1' => 
+    'information_source_cl1' => 
     array (
       'required' => false,
       'name' => 'information_source_cl1',
@@ -3989,7 +3901,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'information_source_cl2' => 
+    'information_source_cl2' => 
     array (
       'required' => false,
       'name' => 'information_source_cl2',
@@ -4031,7 +3943,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'information_source_cl4' => 
+    'information_source_cl4' => 
     array (
       'required' => false,
       'name' => 'information_source_cl4',
@@ -4052,7 +3964,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'information_source_cl5' => 
+    'information_source_cl5' => 
     array (
       'required' => false,
       'name' => 'information_source_cl5',
@@ -4073,7 +3985,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'information_source_cl6' => 
+    'information_source_cl6' => 
     array (
       'required' => false,
       'name' => 'information_source_cl6',
@@ -4094,7 +4006,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'information_source_cl7' => 
+    'information_source_cl7' => 
     array (
       'required' => false,
       'name' => 'information_source_cl7',
@@ -4115,7 +4027,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'instrument_admin_method_cl1' => 
+    'instrument_admin_method_cl1' => 
     array (
       'required' => false,
       'name' => 'instrument_admin_method_cl1',
@@ -4136,7 +4048,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'instrument_admin_mode_cl1' => 
+    'instrument_admin_mode_cl1' => 
     array (
       'required' => false,
       'name' => 'instrument_admin_mode_cl1',
@@ -4157,7 +4069,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'instrument_status_cl1' => 
+    'instrument_status_cl1' => 
     array (
       'required' => false,
       'name' => 'instrument_status_cl1',
@@ -4178,7 +4090,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'instrument_type_cl1' => 
+    'instrument_type_cl1' => 
     array (
       'required' => false,
       'name' => 'instrument_type_cl1',
@@ -4199,51 +4111,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	/*  Retired MDES v1.1
-	'instrument_type_cl2' => 
-    array (
-      'required' => false,
-      'name' => 'instrument_type_cl2',
-      'vname' => 'LBL_INSTRUMENT_TYPE_CL2',
-      'type' => 'enum',
-      'massupdate' => 0,
-      'default' => '1',
-      'comments' => '',
-      'help' => '',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => 100,
-      'size' => '20',
-      'options' => 'INSTRUMENT_TYPE_CL2',
-      'studio' => 'visible',
-      'dependency' => false,
-    ),  */
-    /*  Retired MDES v1.1
-	'instrument_type_cl3' => 
-    array (
-      'required' => false,
-      'name' => 'instrument_type_cl3',
-      'vname' => 'LBL_INSTRUMENT_TYPE_CL3',
-      'type' => 'enum',
-      'massupdate' => 0,
-      'default' => '1',
-      'comments' => '',
-      'help' => '',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => 100,
-      'size' => '20',
-      'options' => 'INSTRUMENT_TYPE_CL3',
-      'studio' => 'visible',
-      'dependency' => false,
-    ),  */
-     'int_length_rank_cl1' => 
+    'int_length_rank_cl1' => 
     array (
       'required' => false,
       'name' => 'int_length_rank_cl1',
@@ -4264,7 +4132,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'int_length_rank_cl2' => 
+    'int_length_rank_cl2' => 
     array (
       'required' => false,
       'name' => 'int_length_rank_cl2',
@@ -4306,7 +4174,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'language_cl2' => 
+    'language_cl2' => 
     array (
       'required' => false,
       'name' => 'language_cl2',
@@ -4390,7 +4258,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'language_cl6' => 
+    'language_cl6' => 
     array (
       'required' => false,
       'name' => 'language_cl6',
@@ -4411,7 +4279,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'language_cl7' => 
+    'language_cl7' => 
     array (
       'required' => false,
       'name' => 'language_cl7',
@@ -4432,7 +4300,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'likelihood_cl1' => 
+    'likelihood_cl1' => 
     array (
       'required' => false,
       'name' => 'likelihood_cl1',
@@ -4453,7 +4321,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'likelihood_cl2' => 
+    'likelihood_cl2' => 
     array (
       'required' => false,
       'name' => 'likelihood_cl2',
@@ -4474,7 +4342,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'listing_source_cl1' => 
+    'listing_source_cl1' => 
     array (
       'required' => false,
       'name' => 'listing_source_cl1',
@@ -4494,7 +4362,7 @@ $vardefs = array (
       'options' => 'LISTING_SOURCE_CL1',
       'studio' => 'visible',
       'dependency' => false,
-    ),  
+    ),
     'marital_status_cl1' => 
     array (
       'required' => false,
@@ -4537,7 +4405,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'marital_status_cl3' => 
+    'marital_status_cl3' => 
     array (
       'required' => false,
       'name' => 'marital_status_cl3',
@@ -4684,7 +4552,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'neighborhood_talk_quantity_cl1' => 
+    'neighborhood_talk_quantity_cl1' => 
     array (
       'required' => false,
       'name' => 'neighborhood_talk_quantity_cl1',
@@ -4705,7 +4573,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'neighborhood_talk_quantity_cl2' => 
+    'neighborhood_talk_quantity_cl2' => 
     array (
       'required' => false,
       'name' => 'neighborhood_talk_quantity_cl2',
@@ -4726,7 +4594,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	 'neighborhood_definition_cl1' => 
+    'neighborhood_definition_cl1' => 
     array (
       'required' => false,
       'name' => 'neighborhood_definition_cl1',
@@ -4747,7 +4615,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'neighborhood_definition_cl2' => 
+    'neighborhood_definition_cl2' => 
     array (
       'required' => false,
       'name' => 'neighborhood_definition_cl2',
@@ -4768,7 +4636,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	 'night_wake_frequency_cl1' => 
+    'night_wake_frequency_cl1' => 
     array (
       'required' => false,
       'name' => 'night_wake_frequency_cl1',
@@ -4873,7 +4741,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'no_log_reason_cl1' => 
+    'no_log_reason_cl1' => 
     array (
       'required' => false,
       'name' => 'no_log_reason_cl1',
@@ -4894,7 +4762,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'opinion_type_cl1' => 
+    'opinion_type_cl1' => 
     array (
       'required' => false,
       'name' => 'opinion_type_cl1',
@@ -4936,7 +4804,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'opinion_type_cl3' => 
+    'opinion_type_cl3' => 
     array (
       'required' => false,
       'name' => 'opinion_type_cl3',
@@ -4957,7 +4825,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'opinion_type_cl4' => 
+    'opinion_type_cl4' => 
     array (
       'required' => false,
       'name' => 'opinion_type_cl4',
@@ -4978,7 +4846,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'opinion_type_cl5' => 
+    'opinion_type_cl5' => 
     array (
       'required' => false,
       'name' => 'opinion_type_cl5',
@@ -4999,7 +4867,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'opinion_type_cl6' => 
+    'opinion_type_cl6' => 
     array (
       'required' => false,
       'name' => 'opinion_type_cl6',
@@ -5167,7 +5035,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'participant_status_cl1' => 
+    'participant_status_cl1' => 
     array (
       'required' => false,
       'name' => 'participant_status_cl1',
@@ -5209,7 +5077,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'past_period_cl1' => 
+    'past_period_cl1' => 
     array (
       'required' => false,
       'name' => 'past_period_cl1',
@@ -5230,7 +5098,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'percent_rate_cl1' => 
+    'percent_rate_cl1' => 
     array (
       'required' => false,
       'name' => 'percent_rate_cl1',
@@ -5251,7 +5119,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'percent_rate_cl2' => 
+    'percent_rate_cl2' => 
     array (
       'required' => false,
       'name' => 'percent_rate_cl2',
@@ -5272,7 +5140,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'person_availability_cl1' => 
+    'person_availability_cl1' => 
     array (
       'required' => false,
       'name' => 'person_availability_cl1',
@@ -5356,7 +5224,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'person_partcpnt_reltnshp_cl4' => 
+    'person_partcpnt_reltnshp_cl4' => 
     array (
       'required' => false,
       'name' => 'person_partcpnt_reltnshp_cl4',
@@ -5377,7 +5245,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'person_treated_cl1' => 
+    'person_treated_cl1' => 
     array (
       'required' => false,
       'name' => 'person_treated_cl1',
@@ -5482,7 +5350,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'practice_characteristic_cl2' => 
+    'practice_characteristic_cl2' => 
     array (
       'required' => false,
       'name' => 'practice_characteristic_cl2',
@@ -5566,7 +5434,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'pregnancy_diagnosis_cl2' => 
+    'pregnancy_diagnosis_cl2' => 
     array (
       'required' => false,
       'name' => 'pregnancy_diagnosis_cl2',
@@ -5608,7 +5476,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'preventive_care_place_cl2' => 
+    'preventive_care_place_cl2' => 
     array (
       'required' => false,
       'name' => 'preventive_care_place_cl2',
@@ -5629,7 +5497,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'preventive_care_place_cl3' => 
+    'preventive_care_place_cl3' => 
     array (
       'required' => false,
       'name' => 'preventive_care_place_cl3',
@@ -5650,7 +5518,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'provider_service_cl1' => 
+    'provider_service_cl1' => 
     array (
       'required' => false,
       'name' => 'provider_service_cl1',
@@ -5734,7 +5602,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'pregnancy_status_cl2' => 
+    'pregnancy_status_cl2' => 
     array (
       'required' => false,
       'name' => 'pregnancy_status_cl2',
@@ -5776,7 +5644,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'pregnancy_trying_status_cl2' => 
+    'pregnancy_trying_status_cl2' => 
     array (
       'required' => false,
       'name' => 'pregnancy_trying_status_cl2',
@@ -5797,7 +5665,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'pregnancy_trying_status_cl3' => 
+    'pregnancy_trying_status_cl3' => 
     array (
       'required' => false,
       'name' => 'pregnancy_trying_status_cl3',
@@ -5818,7 +5686,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'pregnancy_trying_status_cl4' => 
+    'pregnancy_trying_status_cl4' => 
     array (
       'required' => false,
       'name' => 'pregnancy_trying_status_cl4',
@@ -5902,7 +5770,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'proxy_cl2' => 
+    'proxy_cl2' => 
     array (
       'required' => false,
       'name' => 'proxy_cl2',
@@ -5944,7 +5812,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'quantity_cl1' => 
+    'quantity_cl1' => 
     array (
       'required' => false,
       'name' => 'quantity_cl1',
@@ -5965,7 +5833,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'quantity_cl2' => 
+    'quantity_cl2' => 
     array (
       'required' => false,
       'name' => 'quantity_cl2',
@@ -5986,7 +5854,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'race_cl1' => 
+    'race_cl1' => 
     array (
       'required' => false,
       'name' => 'race_cl1',
@@ -6049,7 +5917,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'recurance_rate_cl1' => 
+    'recurance_rate_cl1' => 
     array (
       'required' => false,
       'name' => 'recurance_rate_cl1',
@@ -6154,7 +6022,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'regularity_level_cl1' => 
+    'regularity_level_cl1' => 
     array (
       'required' => false,
       'name' => 'regularity_level_cl1',
@@ -6196,7 +6064,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'regularity_level_cl3' => 
+    'regularity_level_cl3' => 
     array (
       'required' => false,
       'name' => 'regularity_level_cl3',
@@ -6217,7 +6085,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'regularity_level_cl4' => 
+    'regularity_level_cl4' => 
     array (
       'required' => false,
       'name' => 'regularity_level_cl4',
@@ -6238,7 +6106,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'regularity_level_cl5' => 
+    'regularity_level_cl5' => 
     array (
       'required' => false,
       'name' => 'regularity_level_cl5',
@@ -6259,7 +6127,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'regularity_level_cl6' => 
+    'regularity_level_cl6' => 
     array (
       'required' => false,
       'name' => 'regularity_level_cl6',
@@ -6280,7 +6148,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'regularity_level_cl7' => 
+    'regularity_level_cl7' => 
     array (
       'required' => false,
       'name' => 'regularity_level_cl7',
@@ -6301,7 +6169,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'regularity_level_cl8' => 
+    'regularity_level_cl8' => 
     array (
       'required' => false,
       'name' => 'regularity_level_cl8',
@@ -6322,7 +6190,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'regularity_level_cl9' => 
+    'regularity_level_cl9' => 
     array (
       'required' => false,
       'name' => 'regularity_level_cl9',
@@ -6343,7 +6211,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'regularity_level_cl10' => 
+    'regularity_level_cl10' => 
     array (
       'required' => false,
       'name' => 'regularity_level_cl10',
@@ -6364,7 +6232,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'regularity_level_cl11' => 
+    'regularity_level_cl11' => 
     array (
       'required' => false,
       'name' => 'regularity_level_cl11',
@@ -6385,7 +6253,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'regularity_level_cl12' => 
+    'regularity_level_cl12' => 
     array (
       'required' => false,
       'name' => 'regularity_level_cl12',
@@ -6406,7 +6274,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'regularity_level_cl13' => 
+    'regularity_level_cl13' => 
     array (
       'required' => false,
       'name' => 'regularity_level_cl13',
@@ -6427,7 +6295,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'regularity_level_cl14' => 
+    'regularity_level_cl14' => 
     array (
       'required' => false,
       'name' => 'regularity_level_cl14',
@@ -6448,7 +6316,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'regularity_level_cl15' => 
+    'regularity_level_cl15' => 
     array (
       'required' => false,
       'name' => 'regularity_level_cl15',
@@ -6469,7 +6337,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'regularity_level_cl16' => 
+    'regularity_level_cl16' => 
     array (
       'required' => false,
       'name' => 'regularity_level_cl16',
@@ -6490,7 +6358,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'regularity_level_cl17' => 
+    'regularity_level_cl17' => 
     array (
       'required' => false,
       'name' => 'regularity_level_cl17',
@@ -6511,7 +6379,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'regularity_level_cl18' => 
+    'regularity_level_cl18' => 
     array (
       'required' => false,
       'name' => 'regularity_level_cl18',
@@ -6532,7 +6400,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'residence_type_cl1' => 
+    'residence_type_cl1' => 
     array (
       'required' => false,
       'name' => 'residence_type_cl1',
@@ -6553,7 +6421,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'residence_type_cl2' => 
+    'residence_type_cl2' => 
     array (
       'required' => false,
       'name' => 'residence_type_cl2',
@@ -6616,7 +6484,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'resp_reltnshp_cl1' => 
+    'resp_reltnshp_cl1' => 
     array (
       'required' => false,
       'name' => 'resp_reltnshp_cl1',
@@ -6658,7 +6526,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'room_type_cl2' => 
+    'room_type_cl2' => 
     array (
       'required' => false,
       'name' => 'room_type_cl2',
@@ -6679,7 +6547,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'room_type_cl3' => 
+    'room_type_cl3' => 
     array (
       'required' => false,
       'name' => 'room_type_cl3',
@@ -6700,7 +6568,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'room_type_cl4' => 
+    'room_type_cl4' => 
     array (
       'required' => false,
       'name' => 'room_type_cl4',
@@ -6721,7 +6589,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'room_type_cl5' => 
+    'room_type_cl5' => 
     array (
       'required' => false,
       'name' => 'room_type_cl5',
@@ -6742,7 +6610,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'route_of_rx_admin_cl1' => 
+    'route_of_rx_admin_cl1' => 
     array (
       'required' => false,
       'name' => 'route_of_rx_admin_cl1',
@@ -6763,7 +6631,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'samples_shipped_by_cl1' => 
+    'samples_shipped_by_cl1' => 
     array (
       'required' => false,
       'name' => 'samples_shipped_by_cl1',
@@ -6784,7 +6652,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'sample_type_cl1' => 
+    'sample_type_cl1' => 
     array (
       'required' => false,
       'name' => 'sample_type_cl1',
@@ -6805,7 +6673,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'sample_type_cl2' => 
+    'sample_type_cl2' => 
     array (
       'required' => false,
       'name' => 'sample_type_cl2',
@@ -6826,7 +6694,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'sample_type_cl3' => 
+    'sample_type_cl3' => 
     array (
       'required' => false,
       'name' => 'sample_type_cl3',
@@ -6847,7 +6715,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'satistfaction_level_cl1' => 
+    'satistfaction_level_cl1' => 
     array (
       'required' => false,
       'name' => 'satistfaction_level_cl1',
@@ -6868,7 +6736,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'shipment_condition_cl1' => 
+    'shipment_condition_cl1' => 
     array (
       'required' => false,
       'name' => 'shipment_condition_cl1',
@@ -6889,7 +6757,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'shipment_issues_cl1' => 
+    'shipment_issues_cl1' => 
     array (
       'required' => false,
       'name' => 'shipment_issues_cl1',
@@ -6910,7 +6778,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'shipment_temperature_cl1' => 
+    'shipment_temperature_cl1' => 
     array (
       'required' => false,
       'name' => 'shipment_temperature_cl1',
@@ -6931,7 +6799,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'shipment_temperature_cl2' => 
+    'shipment_temperature_cl2' => 
     array (
       'required' => false,
       'name' => 'shipment_temperature_cl2',
@@ -6952,7 +6820,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'shipper_destination_cl1' => 
+    'shipper_destination_cl1' => 
     array (
       'required' => false,
       'name' => 'shipper_destination_cl1',
@@ -7015,7 +6883,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'smoking_frequency_cl1' => 
+    'smoking_frequency_cl1' => 
     array (
       'required' => false,
       'name' => 'smoking_frequency_cl1',
@@ -7036,7 +6904,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'smoking_location_cl1' => 
+    'smoking_location_cl1' => 
     array (
       'required' => false,
       'name' => 'smoking_location_cl1',
@@ -7057,7 +6925,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'smoking_unit_cl1' => 
+    'smoking_unit_cl1' => 
     array (
       'required' => false,
       'name' => 'smoking_unit_cl1',
@@ -7078,7 +6946,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'specimen_cllctn_location_cl1' => 
+    'specimen_cllctn_location_cl1' => 
     array (
       'required' => false,
       'name' => 'specimen_cllctn_location_cl1',
@@ -7120,7 +6988,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'specimen_comments_cl1' => 
+    'specimen_comments_cl1' => 
     array (
       'required' => false,
       'name' => 'specimen_comments_cl1',
@@ -7162,7 +7030,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'specimen_status_cl2' => 
+    'specimen_status_cl2' => 
     array (
       'required' => false,
       'name' => 'specimen_status_cl2',
@@ -7183,7 +7051,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'specimen_status_cl3' => 
+    'specimen_status_cl3' => 
     array (
       'required' => false,
       'name' => 'specimen_status_cl3',
@@ -7204,7 +7072,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'specimen_status_cl4' => 
+    'specimen_status_cl4' => 
     array (
       'required' => false,
       'name' => 'specimen_status_cl4',
@@ -7225,7 +7093,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'specimen_status_cl5' => 
+    'specimen_status_cl5' => 
     array (
       'required' => false,
       'name' => 'specimen_status_cl5',
@@ -7246,7 +7114,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'specimen_status_cl6' => 
+    'specimen_status_cl6' => 
     array (
       'required' => false,
       'name' => 'specimen_status_cl6',
@@ -7267,7 +7135,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'specimen_status_cl7' => 
+    'specimen_status_cl7' => 
     array (
       'required' => false,
       'name' => 'specimen_status_cl7',
@@ -7288,7 +7156,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'specimen_status_cl8' => 
+    'specimen_status_cl8' => 
     array (
       'required' => false,
       'name' => 'specimen_status_cl8',
@@ -7309,7 +7177,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'state_cl1' => 
+    'state_cl1' => 
     array (
       'required' => false,
       'name' => 'state_cl1',
@@ -7329,7 +7197,7 @@ $vardefs = array (
       'options' => 'STATE_CL1',
       'studio' => 'visible',
       'dependency' => false,
-    ), 
+    ),
     'state_cl2' => 
     array (
       'required' => false,
@@ -7372,7 +7240,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'storage_area_cl1' => 
+    'storage_area_cl1' => 
     array (
       'required' => false,
       'name' => 'storage_area_cl1',
@@ -7393,7 +7261,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'storage_area_cl2' => 
+    'storage_area_cl2' => 
     array (
       'required' => false,
       'name' => 'storage_area_cl2',
@@ -7561,7 +7429,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'study_staff_type_cl1' => 
+    'study_staff_type_cl1' => 
     array (
       'required' => false,
       'name' => 'study_staff_type_cl1',
@@ -7582,7 +7450,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'subsample_type_cl1' => 
+    'subsample_type_cl1' => 
     array (
       'required' => false,
       'name' => 'subsample_type_cl1',
@@ -7603,7 +7471,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'subsample_type_cl2' => 
+    'subsample_type_cl2' => 
     array (
       'required' => false,
       'name' => 'subsample_type_cl2',
@@ -7624,7 +7492,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'success_level_cl1' => 
+    'success_level_cl1' => 
     array (
       'required' => false,
       'name' => 'success_level_cl1',
@@ -7645,7 +7513,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'supplement_cl1' => 
+    'supplement_cl1' => 
     array (
       'required' => false,
       'name' => 'supplement_cl1',
@@ -7666,7 +7534,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'supplement_cl2' => 
+    'supplement_cl2' => 
     array (
       'required' => false,
       'name' => 'supplement_cl2',
@@ -7687,7 +7555,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'supplement_cl3' => 
+    'supplement_cl3' => 
     array (
       'required' => false,
       'name' => 'supplement_cl3',
@@ -7708,7 +7576,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'supplement_cl4' => 
+    'supplement_cl4' => 
     array (
       'required' => false,
       'name' => 'supplement_cl4',
@@ -7729,7 +7597,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'temperature_cl1' => 
+    'temperature_cl1' => 
     array (
       'required' => false,
       'name' => 'temperature_cl1',
@@ -7750,7 +7618,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'temperature_cl2' => 
+    'temperature_cl2' => 
     array (
       'required' => false,
       'name' => 'temperature_cl2',
@@ -7771,7 +7639,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'time_of_day_cl1' => 
+    'time_of_day_cl1' => 
     array (
       'required' => false,
       'name' => 'time_of_day_cl1',
@@ -7792,7 +7660,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'time_period_cl1' => 
+    'time_period_cl1' => 
     array (
       'required' => false,
       'name' => 'time_period_cl1',
@@ -7813,7 +7681,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'time_period_cl2' => 
+    'time_period_cl2' => 
     array (
       'required' => false,
       'name' => 'time_period_cl2',
@@ -7855,7 +7723,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'time_unit_cl2' => 
+    'time_unit_cl2' => 
     array (
       'required' => false,
       'name' => 'time_unit_cl2',
@@ -7876,7 +7744,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'time_unit_cl3' => 
+    'time_unit_cl3' => 
     array (
       'required' => false,
       'name' => 'time_unit_cl3',
@@ -7897,7 +7765,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'time_unit_cl4' => 
+    'time_unit_cl4' => 
     array (
       'required' => false,
       'name' => 'time_unit_cl4',
@@ -7918,7 +7786,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'time_unit_cl5' => 
+    'time_unit_cl5' => 
     array (
       'required' => false,
       'name' => 'time_unit_cl5',
@@ -7939,7 +7807,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'time_unit_cl6' => 
+    'time_unit_cl6' => 
     array (
       'required' => false,
       'name' => 'time_unit_cl6',
@@ -7960,7 +7828,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'time_unit_cl7' => 
+    'time_unit_cl7' => 
     array (
       'required' => false,
       'name' => 'time_unit_cl7',
@@ -7981,7 +7849,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'time_unit_cl8' => 
+    'time_unit_cl8' => 
     array (
       'required' => false,
       'name' => 'time_unit_cl8',
@@ -8002,7 +7870,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'time_unit_cl9' => 
+    'time_unit_cl9' => 
     array (
       'required' => false,
       'name' => 'time_unit_cl9',
@@ -8086,7 +7954,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'trigger_status_cl1' => 
+    'trigger_status_cl1' => 
     array (
       'required' => false,
       'name' => 'trigger_status_cl1',
@@ -8107,7 +7975,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'trigger_status_cl2' => 
+    'trigger_status_cl2' => 
     array (
       'required' => false,
       'name' => 'trigger_status_cl2',
@@ -8128,7 +7996,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'true_level_cl1' => 
+    'true_level_cl1' => 
     array (
       'required' => false,
       'name' => 'true_level_cl1',
@@ -8149,7 +8017,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'true_level_cl2' => 
+    'true_level_cl2' => 
     array (
       'required' => false,
       'name' => 'true_level_cl2',
@@ -8170,7 +8038,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'tube_status_cl1' => 
+    'tube_status_cl1' => 
     array (
       'required' => false,
       'name' => 'tube_status_cl1',
@@ -8191,7 +8059,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'tube_type_cl1' => 
+    'tube_type_cl1' => 
     array (
       'required' => false,
       'name' => 'tube_type_cl1',
@@ -8212,7 +8080,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'tube_type_cl2' => 
+    'tube_type_cl2' => 
     array (
       'required' => false,
       'name' => 'tube_type_cl2',
@@ -8233,7 +8101,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'tv_watch_frequency_cl1' => 
+    'tv_watch_frequency_cl1' => 
     array (
       'required' => false,
       'name' => 'tv_watch_frequency_cl1',
@@ -8275,28 +8143,6 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	/*  Retired MDES v1.1
-    'unanticipated_problem_type_cl1' => 
-    array (
-      'required' => false,
-      'name' => 'unanticipated_problem_type_cl1',
-      'vname' => 'LBL_UNANTICIPATED_PROBLEM_TYPE_CL1',
-      'type' => 'enum',
-      'massupdate' => 0,
-      'default' => '1',
-      'comments' => '',
-      'help' => '',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => 100,
-      'size' => '20',
-      'options' => 'UNANTICIPATED_PROBLEM_TYPE_CL1',
-      'studio' => 'visible',
-      'dependency' => false,
-    ), */
     'unavailable_reason_cl1' => 
     array (
       'required' => false,
@@ -8318,7 +8164,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'vacuum_bag_status_cl1' => 
+    'vacuum_bag_status_cl1' => 
     array (
       'required' => false,
       'name' => 'vacuum_bag_status_cl1',
@@ -8339,7 +8185,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'vacuum_collec_prob_cl1' => 
+    'vacuum_collec_prob_cl1' => 
     array (
       'required' => false,
       'name' => 'vacuum_collec_prob_cl1',
@@ -8360,7 +8206,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'vacuum_notcol_reason_cl1' => 
+    'vacuum_notcol_reason_cl1' => 
     array (
       'required' => false,
       'name' => 'vacuum_notcol_reason_cl1',
@@ -8381,7 +8227,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'vacuum_refuse_cl1' => 
+    'vacuum_refuse_cl1' => 
     array (
       'required' => false,
       'name' => 'vacuum_refuse_cl1',
@@ -8402,7 +8248,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'vacuum_type_cl1' => 
+    'vacuum_type_cl1' => 
     array (
       'required' => false,
       'name' => 'vacuum_type_cl1',
@@ -8423,7 +8269,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'vacuum_use_cl1' => 
+    'vacuum_use_cl1' => 
     array (
       'required' => false,
       'name' => 'vacuum_use_cl1',
@@ -8444,7 +8290,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'validation_status_cl1' => 
+    'validation_status_cl1' => 
     array (
       'required' => false,
       'name' => 'validation_status_cl1',
@@ -8465,7 +8311,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'validation_status_cl2' => 
+    'validation_status_cl2' => 
     array (
       'required' => false,
       'name' => 'validation_status_cl2',
@@ -8486,7 +8332,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'validation_status_cl3' => 
+    'validation_status_cl3' => 
     array (
       'required' => false,
       'name' => 'validation_status_cl3',
@@ -8528,7 +8374,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'volume_unit_cl1' => 
+    'volume_unit_cl1' => 
     array (
       'required' => false,
       'name' => 'volume_unit_cl1',
@@ -8549,7 +8395,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'volume_unit_cl2' => 
+    'volume_unit_cl2' => 
     array (
       'required' => false,
       'name' => 'volume_unit_cl2',
@@ -8570,7 +8416,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'volume_unit_cl3' => 
+    'volume_unit_cl3' => 
     array (
       'required' => false,
       'name' => 'volume_unit_cl3',
@@ -8590,8 +8436,8 @@ $vardefs = array (
       'options' => 'VOLUME_UNIT_CL3',
       'studio' => 'visible',
       'dependency' => false,
-    ), 
-	'water_cllctn_reason_cl1' => 
+    ),
+    'water_cllctn_reason_cl1' => 
     array (
       'required' => false,
       'name' => 'water_cllctn_reason_cl1',
@@ -8611,7 +8457,7 @@ $vardefs = array (
       'options' => 'WATER_CLLCTN_REASON_CL1',
       'studio' => 'visible',
       'dependency' => false,
-    ), 
+    ),
     'water_type_cl1' => 
     array (
       'required' => false,
@@ -8633,7 +8479,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'water_type_cl2' => 
+    'water_type_cl2' => 
     array (
       'required' => false,
       'name' => 'water_type_cl2',
@@ -8654,7 +8500,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'water_type_cl3' => 
+    'water_type_cl3' => 
     array (
       'required' => false,
       'name' => 'water_type_cl3',
@@ -8675,7 +8521,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'web_use_frequency_cl1' => 
+    'web_use_frequency_cl1' => 
     array (
       'required' => false,
       'name' => 'web_use_frequency_cl1',
@@ -8696,7 +8542,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'wellchild_care_place_cl1' => 
+    'wellchild_care_place_cl1' => 
     array (
       'required' => false,
       'name' => 'wellchild_care_place_cl1',
@@ -8717,7 +8563,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'wellchild_care_place_cl2' => 
+    'wellchild_care_place_cl2' => 
     array (
       'required' => false,
       'name' => 'wellchild_care_place_cl2',
@@ -8738,7 +8584,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'window_open_cl1' => 
+    'window_open_cl1' => 
     array (
       'required' => false,
       'name' => 'window_open_cl1',
@@ -8759,7 +8605,7 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-	'work_situation_cl1' => 
+    'work_situation_cl1' => 
     array (
       'required' => false,
       'name' => 'work_situation_cl1',
@@ -8777,6 +8623,27 @@ $vardefs = array (
       'len' => 100,
       'size' => '20',
       'options' => 'WORK_SITUATION_CL1',
+      'studio' => 'visible',
+      'dependency' => false,
+    ),
+    'cooler_temp_cl1' => 
+    array (
+      'required' => false,
+      'name' => 'cooler_temp_cl1',
+      'vname' => 'LBL_COOLER_TEMP_CL1',
+      'type' => 'enum',
+      'massupdate' => 0,
+      'default' => '1',
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'reportable' => true,
+      'len' => 100,
+      'size' => '20',
+      'options' => 'COOLER_TEMP_CL1',
       'studio' => 'visible',
       'dependency' => false,
     ),
