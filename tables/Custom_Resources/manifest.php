@@ -1,4 +1,7 @@
-    <?php
+<?php
+	
+/********* new manifest 2B VERSION *************/
+	
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -355,6 +358,1221 @@ $installdefs = array (
       'from' => '<basepath>/IDCreation_resources/modules/ST_WkOEAct/views/view.edit.php',
       'to' => 'custom/modules/ST_WkOEAct/views/view.edit.php',
     ),
+	
+
+############### BEGIN COPY OF ACTIVITIES ###############
+#
+#########################################################
+
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Meetings/metadata/detailviewdefs.php',
+      'to' => 'custom/modules/Meetings/metadata/detailviewdefs.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Meetings/metadata/detailviewdefs.php',
+      'to' => 'custom/working/modules/Meetings/metadata/detailviewdefs.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Meetings/metadata/editviewdefs.php',
+      'to' => 'custom/modules/Meetings/metadata/editviewdefs.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Meetings/metadata/editviewdefs.php',
+      'to' => 'custom/working/modules/Meetings/metadata/editviewdefs.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Meetings/metadata/listviewdefs.php',
+      'to' => 'custom/modules/Meetings/metadata/listviewdefs.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Meetings/metadata/popupdefs.php',
+      'to' => 'custom/modules/Meetings/metadata/popupdefs.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Meetings/metadata/popupdefs.php',
+      'to' => 'custom/working/modules/Meetings/metadata/popupdefs.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Meetings/metadata/quickcreatedefs.php',
+      'to' => 'custom/modules/Meetings/metadata/quickcreatedefs.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Meetings/metadata/quickcreatedefs.php',
+      'to' => 'custom/working/modules/Meetings/metadata/quickcreatedefs.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Notes/metadata/dashletviewdefs.php',
+      'to' => 'custom/modules/Notes/metadata/dashletviewdefs.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Notes/metadata/dashletviewdefs.php',
+      'to' => 'custom/working/modules/Notes/metadata/dashletviewdefs.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Notes/metadata/detailviewdefs.php',
+      'to' => 'custom/modules/Notes/metadata/detailviewdefs.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Notes/metadata/detailviewdefs.php',
+      'to' => 'custom/working/modules/Notes/metadata/detailviewdefs.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Notes/metadata/editviewdefs.php',
+      'to' => 'custom/modules/Notes/metadata/editviewdefs.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Notes/metadata/editviewdefs.php',
+      'to' => 'custom/working/modules/Notes/metadata/editviewdefs.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Notes/metadata/listviewdefs.php',
+      'to' => 'custom/modules/Notes/metadata/listviewdefs.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Notes/metadata/popupdefs.php',
+      'to' => 'custom/modules/Notes/metadata/popupdefs.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Notes/metadata/popupdefs.php',
+      'to' => 'custom/working/modules/Notes/metadata/popupdefs.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Notes/metadata/quickcreatedefs.php',
+      'to' => 'custom/modules/Notes/metadata/quickcreatedefs.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Notes/metadata/quickcreatedefs.php',
+      'to' => 'custom/working/modules/Notes/metadata/quickcreatedefs.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Language/en_us.Data_Collection_Tables.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Language/en_us.Data_Collection_Tables.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Language/en_us.Person_Level_Tables.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Language/en_us.Person_Level_Tables.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Language/en_us.custommeetings_olt_provider.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Language/en_us.custommeetings_olt_provider.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Layoutdefs/meetings_olt_provider_Meetings.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Layoutdefs/meetings_olt_provider_Meetings.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/meetings_olt_provider_Meetings.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/meetings_olt_provider_Meetings.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/ncsdc_eventinfo_activities_meetings_Meetings.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/ncsdc_eventinfo_activities_meetings_Meetings.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/ncsdc_eventinfo_meetings_Meetings.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/ncsdc_eventinfo_meetings_Meetings.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/plt_participant_activities_meetings_Meetings.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/plt_participant_activities_meetings_Meetings.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/plt_participant_meetings_Meetings.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/plt_participant_meetings_Meetings.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_comment_c.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_comment_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_disp_c.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_disp_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_distance_c.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_distance_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_interpret_c.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_interpret_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_interpret_oth_c.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_interpret_oth_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_lang_c.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_lang_c.php',
+    ),
+ 
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_lang_oth_c.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_lang_oth_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_location_c.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_location_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_location_oth_c.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_location_oth_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_private_c.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_private_c.php',
+    ),
+ 
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_private_detail_c.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_private_detail_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_type_c.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_type_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_type_oth_c.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_type_oth_c.php',
+    ),
+ 
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_date_end.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_date_end.php',
+    ),
+ 
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_end_time_c.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_end_time_c.php',
+    ),
+ 
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_name.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_name.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_parent_type.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_parent_type.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_start_date_c.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_start_date_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_transaction_type_c.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_transaction_type_c.php',
+    ),
+ 
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_who_contact_oth_c.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_who_contact_oth_c.php',
+    ),
+ 
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_who_contacted_c.php',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_who_contacted_c.php',
+    ),
+ 
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Language/en_us.Data_Collection_Tables.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Language/en_us.Data_Collection_Tables.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/ncsdc_eventinfo_activities_notes_Notes.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/ncsdc_eventinfo_activities_notes_Notes.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/ncsdc_eventinfo_notes_Notes.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/ncsdc_eventinfo_notes_Notes.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/plt_participant_activities_notes_Notes.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/plt_participant_activities_notes_Notes.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_disp_c.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_disp_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_distance_c.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_distance_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_interpret_c.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_interpret_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_interpret_oth_c.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_interpret_oth_c.php',
+    ),
+ 
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_lang_oth_c.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_lang_oth_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_language_c.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_language_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_location_c.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_location_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_location_oth_c.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_location_oth_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_private_c.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_private_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_private_detail_c.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_private_detail_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_type_c.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_type_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_type_other_c.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_contact_type_other_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_description.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_description.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_end_date_time_c.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_end_date_time_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_start_date_time_c.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_start_date_time_c.php',
+    ),
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_who_contact_oth_c.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_who_contact_oth_c.php',
+    ),
+ 
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_who_contacted_c.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_who_contacted_c.php',
+    ),
+	//*************** end of Activities stuff ********************************
+	
+  ),  //end of copy
+  
+
+
+  //******************************** BEGIN CUSTOM FIELDS ***************************************
+  'custom_fields' => 
+  array (
+    'Meetingscontact_type_c' => 
+    array (
+      'id' => 'Meetingscontact_type_c',
+      'name' => 'contact_type_c',
+      'label' => 'LBL_CONTACT_TYPE',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Meetings',
+      'type' => 'enum',
+      'max_size' => '100',
+      'require_option' => '0',
+      'default_value' => '1',
+      'date_modified' => '2011-05-31 18:17:20',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => 'CONTACT_TYPE_CL1',
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Meetingscontact_type_oth_c' => 
+    array (
+      'id' => 'Meetingscontact_type_oth_c',
+      'name' => 'contact_type_oth_c',
+      'label' => 'LBL_CONTACT_TYPE_OTH',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Meetings',
+      'type' => 'varchar',
+      'max_size' => '255',
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-06 21:59:06',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Meetingscontact_lang_c' => 
+    array (
+      'id' => 'Meetingscontact_lang_c',
+      'name' => 'contact_lang_c',
+      'label' => 'LBL_CONTACT_LANG',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Meetings',
+      'type' => 'enum',
+      'max_size' => '100',
+      'require_option' => '0',
+      'default_value' => '1',
+      'date_modified' => '2011-06-06 22:06:57',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => 'LANGUAGE_CL2',
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Meetingscontact_lang_oth_c' => 
+    array (
+      'id' => 'Meetingscontact_lang_oth_c',
+      'name' => 'contact_lang_oth_c',
+      'label' => 'LBL_CONTACT_LANG_OTH',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Meetings',
+      'type' => 'varchar',
+      'max_size' => '255',
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-06 22:23:57',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Meetingscontact_interpret_c' => 
+    array (
+      'id' => 'Meetingscontact_interpret_c',
+      'name' => 'contact_interpret_c',
+      'label' => 'LBL_CONTACT_INTERPRET',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Meetings',
+      'type' => 'enum',
+      'max_size' => '100',
+      'require_option' => '0',
+      'default_value' => '1',
+      'date_modified' => '2011-06-06 22:27:08',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => 'TRANSLATION_METHOD_CL3',
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Meetingscontact_interpret_oth_c' => 
+    array (
+      'id' => 'Meetingscontact_interpret_oth_c',
+      'name' => 'contact_interpret_oth_c',
+      'label' => 'LBL_CONTACT_INTERPRET_OTH',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Meetings',
+      'type' => 'varchar',
+      'max_size' => '255',
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-07 05:29:55',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Meetingscontact_location_c' => 
+    array (
+      'id' => 'Meetingscontact_location_c',
+      'name' => 'contact_location_c',
+      'label' => 'LBL_CONTACT_LOCATION',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Meetings',
+      'type' => 'enum',
+      'max_size' => '100',
+      'require_option' => '0',
+      'default_value' => '1',
+      'date_modified' => '2011-06-07 05:32:45',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => 'CONTACT_LOCATION_CL1',
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Meetingscontact_location_oth_c' => 
+    array (
+      'id' => 'Meetingscontact_location_oth_c',
+      'name' => 'contact_location_oth_c',
+      'label' => 'LBL_CONTACT_LOCATION_OTH',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Meetings',
+      'type' => 'varchar',
+      'max_size' => '255',
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-07 05:34:47',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Meetingscontact_private_c' => 
+    array (
+      'id' => 'Meetingscontact_private_c',
+      'name' => 'contact_private_c',
+      'label' => 'LBL_CONTACT_PRIVATE',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Meetings',
+      'type' => 'enum',
+      'max_size' => '100',
+      'require_option' => '0',
+      'default_value' => '1',
+      'date_modified' => '2011-06-07 05:37:06',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => 'CONFIRM_TYPE_CL2',
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Meetingscontact_private_detail_c' => 
+    array (
+      'id' => 'Meetingscontact_private_detail_c',
+      'name' => 'contact_private_detail_c',
+      'label' => 'LBL_CONTACT_PRIVATE_DETAIL',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Meetings',
+      'type' => 'varchar',
+      'max_size' => '255',
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-07 05:39:39',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Meetingscontact_distance_c' => 
+    array (
+      'id' => 'Meetingscontact_distance_c',
+      'name' => 'contact_distance_c',
+      'label' => 'LBL_CONTACT_DISTANCE',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Meetings',
+      'type' => 'decimal',
+      'max_size' => '4',
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-07 05:44:41',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => '4',
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Meetingswho_contacted_c' => 
+    array (
+      'id' => 'Meetingswho_contacted_c',
+      'name' => 'who_contacted_c',
+      'label' => 'LBL_WHO_CONTACTED',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Meetings',
+      'type' => 'enum',
+      'max_size' => '100',
+      'require_option' => '0',
+      'default_value' => '1',
+      'date_modified' => '2011-06-07 05:55:44',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => 'CONTACTED_PERSON_CL1',
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Meetingswho_contact_oth_c' => 
+    array (
+      'id' => 'Meetingswho_contact_oth_c',
+      'name' => 'who_contact_oth_c',
+      'label' => 'LBL_WHO_CONTACT_OTH',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Meetings',
+      'type' => 'varchar',
+      'max_size' => '255',
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-07 05:56:37',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Meetingscontact_comment_c' => 
+    array (
+      'id' => 'Meetingscontact_comment_c',
+      'name' => 'contact_comment_c',
+      'label' => 'LBL_CONTACT_COMMENT',
+      'comments' => NULL,
+      'help' => '8000 characters max',
+      'module' => 'Meetings',
+      'type' => 'text',
+      'max_size' => NULL,
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-07 05:59:50',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => '10',
+      'ext3' => '20',
+      'ext4' => NULL,
+    ),
+    'Meetingstransaction_type_c' => 
+    array (
+      'id' => 'Meetingstransaction_type_c',
+      'name' => 'transaction_type_c',
+      'label' => 'LBL_TRANSACTION_TYPE',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Meetings',
+      'type' => 'varchar',
+      'max_size' => '36',
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-07 06:01:06',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Meetingscontact_disp_c' => 
+    array (
+      'id' => 'Meetingscontact_disp_c',
+      'name' => 'contact_disp_c',
+      'label' => 'LBL_CONTACT_DISP',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Meetings',
+      'type' => 'varchar',
+      'max_size' => '255',
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-07 06:02:50',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Meetingsstart_date_c' => 
+    array (
+      'id' => 'Meetingsstart_date_c',
+      'name' => 'start_date_c',
+      'label' => 'LBL_START_DATE',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Meetings',
+      'type' => 'datetimecombo',
+      'max_size' => NULL,
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-15 17:46:53',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Meetingsend_time_c' => 
+    array (
+      'id' => 'Meetingsend_time_c',
+      'name' => 'end_time_c',
+      'label' => 'LBL_END_TIME',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Meetings',
+      'type' => 'datetimecombo',
+      'max_size' => NULL,
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-15 17:47:46',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Notesstart_date_time_c' => 
+    array (
+      'id' => 'Notesstart_date_time_c',
+      'name' => 'start_date_time_c',
+      'label' => 'LBL_START_DATE_TIME',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Notes',
+      'type' => 'datetimecombo',
+      'max_size' => NULL,
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-14 21:17:06',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Notesend_date_time_c' => 
+    array (
+      'id' => 'Notesend_date_time_c',
+      'name' => 'end_date_time_c',
+      'label' => 'LBL_END_DATE_TIME',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Notes',
+      'type' => 'datetimecombo',
+      'max_size' => NULL,
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-14 21:17:42',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Notescontact_type_c' => 
+    array (
+      'id' => 'Notescontact_type_c',
+      'name' => 'contact_type_c',
+      'label' => 'LBL_CONTACT_TYPE',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Notes',
+      'type' => 'enum',
+      'max_size' => '100',
+      'require_option' => '0',
+      'default_value' => '1',
+      'date_modified' => '2011-06-14 21:20:22',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => 'CONTACT_TYPE_CL1',
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Notescontact_type_other_c' => 
+    array (
+      'id' => 'Notescontact_type_other_c',
+      'name' => 'contact_type_other_c',
+      'label' => 'LBL_CONTACT_TYPE_OTHER',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Notes',
+      'type' => 'varchar',
+      'max_size' => '255',
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-14 21:21:38',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Notescontact_language_c' => 
+    array (
+      'id' => 'Notescontact_language_c',
+      'name' => 'contact_language_c',
+      'label' => 'LBL_CONTACT_LANGUAGE',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Notes',
+      'type' => 'enum',
+      'max_size' => '100',
+      'require_option' => '0',
+      'default_value' => '1',
+      'date_modified' => '2011-06-14 21:26:09',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => 'LANGUAGE_CL2',
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Notescontact_lang_oth_c' => 
+    array (
+      'id' => 'Notescontact_lang_oth_c',
+      'name' => 'contact_lang_oth_c',
+      'label' => 'LBL_CONTACT_LANG_OTH',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Notes',
+      'type' => 'varchar',
+      'max_size' => '255',
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-14 21:26:56',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Notescontact_interpret_c' => 
+    array (
+      'id' => 'Notescontact_interpret_c',
+      'name' => 'contact_interpret_c',
+      'label' => 'LBL_CONTACT_INTERPRET',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Notes',
+      'type' => 'enum',
+      'max_size' => '100',
+      'require_option' => '0',
+      'default_value' => '1',
+      'date_modified' => '2011-06-14 21:28:22',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => 'TRANSLATION_METHOD_CL3',
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Notescontact_interpret_oth_c' => 
+    array (
+      'id' => 'Notescontact_interpret_oth_c',
+      'name' => 'contact_interpret_oth_c',
+      'label' => 'LBL_CONTACT_INTERPRET_OTH',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Notes',
+      'type' => 'varchar',
+      'max_size' => '255',
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-14 21:28:52',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Notescontact_location_c' => 
+    array (
+      'id' => 'Notescontact_location_c',
+      'name' => 'contact_location_c',
+      'label' => 'LBL_CONTACT_LOCATION',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Notes',
+      'type' => 'enum',
+      'max_size' => '100',
+      'require_option' => '0',
+      'default_value' => '1',
+      'date_modified' => '2011-06-14 21:29:37',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => 'CONTACT_LOCATION_CL1',
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Notescontact_location_oth_c' => 
+    array (
+      'id' => 'Notescontact_location_oth_c',
+      'name' => 'contact_location_oth_c',
+      'label' => 'LBL_CONTACT_LOCATION_OTH',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Notes',
+      'type' => 'varchar',
+      'max_size' => '255',
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-14 21:31:32',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Notescontact_private_c' => 
+    array (
+      'id' => 'Notescontact_private_c',
+      'name' => 'contact_private_c',
+      'label' => 'LBL_CONTACT_PRIVATE',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Notes',
+      'type' => 'enum',
+      'max_size' => '100',
+      'require_option' => '0',
+      'default_value' => '1',
+      'date_modified' => '2011-06-14 21:32:19',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => 'CONFIRM_TYPE_CL2',
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Notescontact_private_detail_c' => 
+    array (
+      'id' => 'Notescontact_private_detail_c',
+      'name' => 'contact_private_detail_c',
+      'label' => 'LBL_CONTACT_PRIVATE_DETAIL',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Notes',
+      'type' => 'varchar',
+      'max_size' => '255',
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-14 21:33:17',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Notescontact_distance_c' => 
+    array (
+      'id' => 'Notescontact_distance_c',
+      'name' => 'contact_distance_c',
+      'label' => 'LBL_CONTACT_DISTANCE',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Notes',
+      'type' => 'decimal',
+      'max_size' => '10',
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-14 21:33:58',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => '2',
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Noteswho_contacted_c' => 
+    array (
+      'id' => 'Noteswho_contacted_c',
+      'name' => 'who_contacted_c',
+      'label' => 'LBL_WHO_CONTACTED',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Notes',
+      'type' => 'enum',
+      'max_size' => '100',
+      'require_option' => '0',
+      'default_value' => '1',
+      'date_modified' => '2011-06-14 21:34:58',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => 'CONTACTED_PERSON_CL1',
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Noteswho_contact_oth_c' => 
+    array (
+      'id' => 'Noteswho_contact_oth_c',
+      'name' => 'who_contact_oth_c',
+      'label' => 'LBL_WHO_CONTACT_OTH',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Notes',
+      'type' => 'varchar',
+      'max_size' => '255',
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-14 21:35:27',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+    'Notescontact_disp_c' => 
+    array (
+      'id' => 'Notescontact_disp_c',
+      'name' => 'contact_disp_c',
+      'label' => 'LBL_CONTACT_DISP',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Notes',
+      'type' => 'varchar',
+      'max_size' => '255',
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-06-14 21:37:02',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
   ),
-);
+  
+  //****************************** END CUSTOM_FIELDS ****************************
+
+  //*************** BEGIN LANGUAGE FILES FOR ACTIVITIES *************
+
+  'language' => 
+  array (
+    0 => 
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/include/language/en_us.Activities Prototype.php',
+      'to_module' => 'application',
+      'language' => 'en_us',
+    ),
+    1 => 
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Meetings/language/en_us.lang.php',
+      'to_module' => 'Meetings',
+      'language' => 'en_us',
+    ),
+    2 => 
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/modules/Notes/language/en_us.lang.php',
+      'to_module' => 'Notes',
+      'language' => 'en_us',
+    ),
+  ),   
+
+  //*************** END LANGUAGE FILES FOR ACTIVITIES **************
+  
+  
+);  //end of installdefs
 
