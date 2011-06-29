@@ -82,7 +82,6 @@ $installdefs = array (
       'from' => '<basepath>/Sch_Ext_Lang',
 	  'to' => 'custom/Extension/modules/Schedulers/Ext/Language',
     ),
-
 ####################################
 #                                  #
 #	   ALL GT Geographic_Tables    #
@@ -130,8 +129,6 @@ $installdefs = array (
       'from' => '<basepath>/IDCreation_resources/modules/LTT_Telephone/views/view.edit.php',
       'to' => 'custom/modules/LTT_Telephone/views/view.edit.php',
     ),
-	
-	
 ####################################
 #                                  #
 # Event Type Drop down List (JL)   # 
@@ -141,8 +138,6 @@ $installdefs = array (
       'from' => '<basepath>/include',
       'to' => 'custom/include',
     ),		
-		
-	
 ####################################
 #                                  #
 # ALL NCSDC Data_Collection_Tables #
@@ -162,13 +157,11 @@ $installdefs = array (
       'from' => '<basepath>/IDCreation_resources/modules/NCSDC_EventInfo/views/view.edit.php',
       'to' => 'custom/modules/NCSDC_EventInfo/views/view.edit.php',
     ),
-
-	/********** updated stuff ***********/	
+/********** updated stuff ***********/	
     array (
       'from' => '<basepath>/IDCreation_resources/modules/NCSDC_EventInfo/NCSDC_EventInfo.php',
       'to' => 'modules/NCSDC_EventInfo/NCSDC_EventInfo.php',
-    ),
-	
+    ),	
 ####Begin copy of NCSDC_Incident###
     array (
       'from' => '<basepath>/IDCreation_resources/modules/NCSDC_Incident/views/view.edit.php',
@@ -358,12 +351,9 @@ $installdefs = array (
       'from' => '<basepath>/IDCreation_resources/modules/ST_WkOEAct/views/view.edit.php',
       'to' => 'custom/modules/ST_WkOEAct/views/view.edit.php',
     ),
-	
-
 ############### BEGIN COPY OF ACTIVITIES ###############
 #
 #########################################################
-
     array (
       'from' => '<basepath>/Activities_resources/SugarModules/modules/Meetings/metadata/detailviewdefs.php',
       'to' => 'custom/modules/Meetings/metadata/detailviewdefs.php',
