@@ -84,9 +84,9 @@ $installdefs = array (
 ####End copy of Sch_Ext_Lang
 ####Begin copy of XMLCreation_resources to the directory 'custom/service####
 	array (
-	('from'=>'<basepath>/XMLCreation_resources/service',
-	'to'=>'custom/service',	
-	)
+	'from' => '<basepath>/XMLCreation_resources/service',
+	'to' => 'custom/service',	
+	),
 ####End copy of XMLCreation_resources####
 ####################################
 #                                  #
