@@ -9,28 +9,6 @@ array (
     'default' => true,
     'link' => true,
   ),
-  'ASSIGNED_USER_NAME' => 
-  array (
-    'width' => '9%',
-    'label' => 'LBL_ASSIGNED_TO_NAME',
-    'default' => true,
-  ),
-  'PSU_ID' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_PSU_ID',
-    'sortable' => false,
-    'width' => '10%',
-  ),
-  'TSU_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_TSU_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'OUTREACH_EVENT_DATE' => 
   array (
     'type' => 'date',
@@ -47,13 +25,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'OUTREACH_COST' => 
-  array (
-    'type' => 'decimal',
-    'label' => 'LBL_OUTREACH_COST',
-    'width' => '10%',
-    'default' => true,
-  ),
   'OUTREACH_STAFFING' => 
   array (
     'type' => 'varchar',
@@ -61,12 +32,32 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'OUTREACH_INCIDENT' => 
+  'OUTREACH_COST' => 
+  array (
+    'type' => 'decimal',
+    'label' => 'LBL_OUTREACH_COST',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'width' => '9%',
+    'label' => 'LBL_ASSIGNED_TO_NAME',
+    'default' => false,
+  ),
+  'TSU_ID' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_TSU_ID',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'PSU_ID' => 
   array (
     'type' => 'enum',
-    'default' => true,
+    'default' => false,
     'studio' => 'visible',
-    'label' => 'LBL_OUTREACH_INCIDENT',
+    'label' => 'LBL_PSU_ID',
     'sortable' => false,
     'width' => '10%',
   ),
@@ -75,7 +66,16 @@ array (
     'type' => 'varchar',
     'label' => 'LBL_INCIDENT_ID',
     'width' => '10%',
-    'default' => true,
+    'default' => false,
+  ),
+  'OUTREACH_INCIDENT' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_OUTREACH_INCIDENT',
+    'sortable' => false,
+    'width' => '10%',
   ),
   'OUTREACH_QUANTITY' => 
   array (

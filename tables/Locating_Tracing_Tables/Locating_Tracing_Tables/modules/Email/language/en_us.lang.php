@@ -78,5 +78,7 @@ $mod_strings = array (
   'LBL_EMAIL_INFO_UPDATE' => 'Email Information Update',
   'LNK_IMPORT_LTT_EMAIL' => 'Import Email',
   'LBL_LTT_EMAIL_SUBPANEL_TITLE' => 'Email',
+  'LBL_EMAIL_START_DATE' => 'Email Start Date',
+  'LBL_EMAIL_END_DATE' => 'Email End Date',
 );
 ?>

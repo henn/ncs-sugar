@@ -80,5 +80,6 @@ $mod_strings = array (
   'LBL_ST_STAFFRSTR_SUBPANEL_TITLE' => 'Staff Roster',
   'LBL_EDITVIEW_PANEL1' => 'Staff Details',
   'LBL_DETAILVIEW_PANEL1' => 'Staff Details',
+  'LBL_STAFF_ZIP' => 'Staff Residence Zip Code',
 );
 ?>

@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'NIR Vacant Multi-Select',
+  'label' => 'NIR Vacant (Multi-Select)',
   'importable' => true,
 );
 ?>

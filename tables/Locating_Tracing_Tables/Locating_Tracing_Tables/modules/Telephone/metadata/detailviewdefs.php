@@ -137,13 +137,26 @@ array (
         array (
           0 => 
           array (
+            'name' => 'phone_start_date',
+            'label' => 'LBL_PHONE_START_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'phone_end_date',
+            'label' => 'LBL_PHONE_END_DATE',
+          ),
+        ),
+        9 => 
+        array (
+          0 => 
+          array (
             'name' => 'phone_comment',
             'studio' => 'visible',
             'label' => 'LBL_PHONE_COMMENT',
           ),
           1 => '',
         ),
-        9 => 
+        10 => 
         array (
           0 => 
           array (
@@ -154,7 +167,7 @@ array (
             'name' => 'olt_provider_ltt_telephone_name',
           ),
         ),
-        10 => 
+        11 => 
         array (
           0 => 
           array (

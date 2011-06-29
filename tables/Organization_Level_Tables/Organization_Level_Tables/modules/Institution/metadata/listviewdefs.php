@@ -9,6 +9,13 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'INSTITUTE_NAME' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_INSTITUTE_NAME',
+    'width' => '10%',
+    'default' => true,
+  ),
   'INSTITUTE_TYPE' => 
   array (
     'type' => 'enum',

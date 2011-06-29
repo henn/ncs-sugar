@@ -36,6 +36,16 @@
 
 
 $app_list_strings['moduleList']['OLT_Provider'] = 'Provider';
-$app_list_strings['moduleList']['OLT_Institution'] = 'Institution Information';
+$app_list_strings['moduleList']['OLT_MSProvRole'] = 'Provider Role (Multi-Select)';
 $app_list_strings['moduleList']['OLT_PrsnPrvdLnk'] = 'Person-Provider Linkage';
+$app_list_strings['moduleList']['OLT_Institution'] = 'Institution Information';
 $app_list_strings['moduleList']['OLT_PrsnInstLnk'] = 'Person-Institute Linkage';
+$app_list_strings['PROVIDER_STUDY_ROLE_CL1']['1'] = 'SC staff present in provider’s office';
+$app_list_strings['PROVIDER_STUDY_ROLE_CL1']['2'] = 'NCS materials available in provider’s office';
+$app_list_strings['PROVIDER_STUDY_ROLE_CL1']['3'] = 'Provider staff checks DU eligibility- reports to SC';
+$app_list_strings['PROVIDER_STUDY_ROLE_CL1']['4'] = 'Provider staff checks DU eligibility- refers patient to SC';
+$app_list_strings['PROVIDER_STUDY_ROLE_CL1']['5'] = 'Provider staff checks DU eligibility- talks directly to patient about NCS';
+$app_list_strings['PROVIDER_STUDY_ROLE_CL1']['6'] = 'Provider talks directly to all patients about NCS regardless of DU eligibility';
+$app_list_strings['PROVIDER_STUDY_ROLE_CL1']['7'] = 'Provider has no role in NCS recruitment';
+$app_list_strings['PROVIDER_STUDY_ROLE_CL1']['_4'] = 'Missing in Error';
+$app_list_strings['PROVIDER_STUDY_ROLE_CL1']['_5'] = 'Other';

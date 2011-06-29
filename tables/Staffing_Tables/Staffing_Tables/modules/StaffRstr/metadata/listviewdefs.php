@@ -9,12 +9,6 @@ array (
     'default' => true,
     'link' => true,
   ),
-  'ASSIGNED_USER_NAME' => 
-  array (
-    'width' => '9%',
-    'label' => 'LBL_ASSIGNED_TO_NAME',
-    'default' => true,
-  ),
   'STAFF_TYPE' => 
   array (
     'type' => 'enum',
@@ -23,6 +17,55 @@ array (
     'label' => 'LBL_STAFF_TYPE',
     'sortable' => false,
     'width' => '10%',
+  ),
+  'STAFF_GENDER' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_STAFF_GENDER',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'STAFF_AGE_RANGE' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_STAFF_AGE_RANGE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'STAFF_RACE' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_STAFF_RACE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'STAFF_ETHNICITY' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_STAFF_ETHNICITY',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'STAFF_ZIP' => 
+  array (
+    'type' => 'int',
+    'label' => 'LBL_STAFF_ZIP',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'width' => '9%',
+    'label' => 'LBL_ASSIGNED_TO_NAME',
+    'default' => false,
   ),
   'STAFF_TYPE_OTH' => 
   array (
@@ -58,14 +101,19 @@ array (
     'width' => '10%',
     'default' => false,
   ),
-  'STAFF_GENDER' => 
+  'STAFF_RACE_OTH' => 
   array (
-    'type' => 'enum',
-    'default' => false,
-    'studio' => 'visible',
-    'label' => 'LBL_STAFF_GENDER',
-    'sortable' => false,
+    'type' => 'varchar',
+    'label' => 'LBL_STAFF_RACE_OTH',
     'width' => '10%',
+    'default' => false,
+  ),
+  'STAFF_YOB' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_STAFF_YOB',
+    'width' => '10%',
+    'default' => false,
   ),
 );
 ?>

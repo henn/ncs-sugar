@@ -36,26 +36,11 @@ array (
           ),
           1 => 
           array (
-            'name' => 'date_entered',
-            'comment' => 'Date record created',
-            'label' => 'LBL_DATE_ENTERED',
+            'name' => 'assigned_user_name',
+            'label' => 'LBL_ASSIGNED_TO_NAME',
           ),
         ),
         1 => 
-        array (
-          0 => 
-          array (
-            'name' => 'modified_by_name',
-            'label' => 'LBL_MODIFIED_NAME',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'comment' => 'Date record last modified',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
-        ),
-        2 => 
         array (
           0 => 
           array (
@@ -68,7 +53,12 @@ array (
       array (
         0 => 
         array (
-          0 => '',
+          0 => 
+          array (
+            'name' => 'consent_form_type',
+            'studio' => 'visible',
+            'label' => 'LBL_CONSENT_FORM_TYPE',
+          ),
           1 => 
           array (
             'name' => 'consent_date',
@@ -76,6 +66,19 @@ array (
           ),
         ),
         1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'consent_version',
+            'label' => 'LBL_CONSENT_VERSION',
+          ),
+          1 => 
+          array (
+            'name' => 'consent_expiration',
+            'label' => 'LBL_CONSENT_EXPIRATION',
+          ),
+        ),
+        2 => 
         array (
           0 => 
           array (
@@ -90,7 +93,7 @@ array (
             'label' => 'LBL_CONSENT_GIVEN',
           ),
         ),
-        2 => 
+        3 => 
         array (
           0 => 
           array (
@@ -104,7 +107,7 @@ array (
             'label' => 'LBL_CONSENT_LANGUAGE_OTH',
           ),
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
@@ -114,7 +117,7 @@ array (
           ),
           1 => '',
         ),
-        4 => 
+        5 => 
         array (
           0 => 
           array (
@@ -128,7 +131,7 @@ array (
             'label' => 'LBL_WHO_CONSENTED',
           ),
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
@@ -142,7 +145,7 @@ array (
             'label' => 'LBL_CONSENT_WITHDRAW_DATE',
           ),
         ),
-        6 => 
+        7 => 
         array (
           0 => 
           array (
@@ -150,23 +153,38 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_CONSENT_WITHDRAW_TYPE',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'consent_withdraw_reason',
+            'studio' => 'visible',
+            'label' => 'LBL_CONSENT_WITHDRAW_REASON',
+          ),
         ),
-        7 => 
+        8 => 
         array (
           0 => 
-          array (
-            'name' => 'person_wthdrw_consent_id',
-            'label' => 'LBL_PERSON_WTHDRW_CONSENT_ID',
-          ),
-          1 => 
           array (
             'name' => 'who_wthdrw_consent',
             'studio' => 'visible',
             'label' => 'LBL_WHO_WTHDRW_CONSENT',
           ),
+          1 => 
+          array (
+            'name' => 'person_wthdrw_consent_id',
+            'label' => 'LBL_PERSON_WTHDRW_CONSENT_ID',
+          ),
         ),
-        8 => 
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'reconsideration_script_use',
+            'studio' => 'visible',
+            'label' => 'LBL_RECONSIDERATION_SCRIPT_USE',
+          ),
+          1 => '',
+        ),
+        10 => 
         array (
           0 => 
           array (

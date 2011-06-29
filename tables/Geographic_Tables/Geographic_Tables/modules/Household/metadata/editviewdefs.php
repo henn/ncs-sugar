@@ -76,10 +76,14 @@ array (
         array (
           0 => 
           array (
+            'name' => 'num_preg_over49',
+            'label' => 'LBL_NUM_PREG_OVER49',
+          ),
+          1 => 
+          array (
             'name' => 'num_age_elig',
             'label' => 'LBL_NUM_AGE_ELIG',
           ),
-          1 => '',
         ),
         5 => 
         array (
@@ -97,18 +101,13 @@ array (
             'name' => 'num_preg_adult',
             'label' => 'LBL_NUM_PREG_ADULT',
           ),
-          1 => '',
-        ),
-        7 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'num_preg_minor',
             'label' => 'LBL_NUM_PREG_MINOR',
           ),
-          1 => '',
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (

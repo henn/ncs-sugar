@@ -42,13 +42,18 @@ array (
             'name' => 'name',
             'label' => 'LBL_NAME',
           ),
-          1 => 
-          array (
-            'name' => 'assigned_user_name',
-            'label' => 'LBL_ASSIGNED_TO_NAME',
-          ),
+          1 => '',
         ),
         1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'institute_name',
+            'label' => 'LBL_INSTITUTE_NAME',
+          ),
+          1 => '',
+        ),
+        2 => 
         array (
           0 => 
           array (
@@ -62,7 +67,7 @@ array (
             'label' => 'LBL_INSTITUTE_TYPE_OTH',
           ),
         ),
-        2 => 
+        3 => 
         array (
           0 => 
           array (
@@ -76,7 +81,7 @@ array (
             'label' => 'LBL_INSTITUTE_RELATION_OTH',
           ),
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
@@ -90,7 +95,7 @@ array (
             'label' => 'LBL_INSTITUTE_OWNER_OTH',
           ),
         ),
-        4 => 
+        5 => 
         array (
           0 => 
           array (
@@ -99,7 +104,7 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
@@ -113,7 +118,7 @@ array (
             'label' => 'LBL_INSTITUTE_UNIT_OTH',
           ),
         ),
-        6 => 
+        7 => 
         array (
           0 => 
           array (
@@ -127,7 +132,7 @@ array (
             'label' => 'LBL_INSTITUTE_INFO_SOURCE_OTH',
           ),
         ),
-        7 => 
+        8 => 
         array (
           0 => 
           array (
@@ -140,7 +145,7 @@ array (
             'label' => 'LBL_INSTITUTE_INFO_UPDATE',
           ),
         ),
-        8 => 
+        9 => 
         array (
           0 => 
           array (

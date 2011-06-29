@@ -81,16 +81,25 @@ array (
         array (
           0 => 
           array (
+            'name' => 'num_preg_over49',
+            'label' => 'LBL_NUM_PREG_OVER49',
+          ),
+          1 => 
+          array (
             'name' => 'num_age_elig',
             'label' => 'LBL_NUM_AGE_ELIG',
           ),
-          1 => 
+        ),
+        4 => 
+        array (
+          0 => 
           array (
             'name' => 'num_preg',
             'label' => 'LBL_NUM_PREG',
           ),
+          1 => '',
         ),
-        4 => 
+        5 => 
         array (
           0 => 
           array (
@@ -103,7 +112,7 @@ array (
             'label' => 'LBL_NUM_PREG_MINOR',
           ),
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (

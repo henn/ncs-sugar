@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'NIR No Access Multi-Select',
+  'label' => 'NIR No Access (Multi-Select)',
   'importable' => true,
 );
 ?>

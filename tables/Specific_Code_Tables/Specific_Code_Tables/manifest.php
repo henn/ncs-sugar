@@ -46,7 +46,7 @@
           ),
           'readme'=>'',
           'key'=>'SCT',
-          'author' => 'Betty',
+          'author' => 'SDSU',
           'description' => '',
           'icon' => '',
           'is_uninstallable' => true,

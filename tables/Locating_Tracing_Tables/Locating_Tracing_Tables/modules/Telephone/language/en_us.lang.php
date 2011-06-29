@@ -79,5 +79,7 @@ $mod_strings = array (
   'LBL_PHONE_NBR' => 'Phone Number',
   'LNK_IMPORT_LTT_TELEPHONE' => 'Import Telephone',
   'LBL_LTT_TELEPHONE_SUBPANEL_TITLE' => 'Telephone',
+  'LBL_PHONE_START_DATE' => 'Phone Start Date',
+  'LBL_PHONE_END_DATE' => 'Phone End Date',
 );
 ?>

@@ -295,6 +295,24 @@ $vardefs = array (
       'reportable' => true,
       'size' => '20',
     ),
+    'staff_zip' => 
+    array (
+      'required' => false,
+      'name' => 'staff_zip',
+      'vname' => 'LBL_STAFF_ZIP',
+      'type' => 'int',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => 'Zip Code of permanent residence of staff members.',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'reportable' => true,
+      'len' => '5',
+      'size' => '20',
+      'disable_num_format' => '',
+    ),
   ),
   'relationships' => 
   array (

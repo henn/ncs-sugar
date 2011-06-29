@@ -251,6 +251,30 @@ $vardefs = array (
       'reportable' => true,
       'size' => '20',
     ),
+    'num_preg_over49' => 
+    array (
+      'required' => false,
+      'name' => 'num_preg_over49',
+      'vname' => 'LBL_NUM_PREG_OVER49',
+      'type' => 'int',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => 'Any positive number or zero -1 (Refused) -2 (Don\\’t Know) -3 (Legitimate Skip) -4 (Missing in Error) ',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'len' => '255',
+      'size' => '20',
+      'disable_num_format' => '',
+      'validation' => 
+      array (
+        'type' => 'range',
+        'min' => 0,
+        'max' => '100',
+      ),
+    ),
   ),
   'relationships' => 
   array (
