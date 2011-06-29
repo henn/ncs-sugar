@@ -122,17 +122,6 @@ function formSubmitCheck(){ldelim}if(check_form(\'EditView\') && isValidDuration
         array (
           0 => 
           array (
-            'name' => 'plt_partici_meetings_name',
-          ),
-          1 => 
-          array (
-            'name' => 'ncsdc_eventinfo_activities_meetings_name',
-          ),
-        ),
-        5 => 
-        array (
-          0 => 
-          array (
             'name' => 'contact_comment_c',
             'studio' => 'visible',
             'label' => 'LBL_CONTACT_COMMENT',

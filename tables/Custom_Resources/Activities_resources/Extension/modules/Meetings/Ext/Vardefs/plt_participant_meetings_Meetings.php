@@ -1,12 +1,12 @@
 <?php
 // created: 2011-06-15 12:33:01
-$dictionary["Meeting"]["fields"]["plt_participant_meetings"] = array (
-  'name' => 'plt_participant_meetings',
-  'type' => 'link',
-  'relationship' => 'plt_participant_meetings',
-  'source' => 'non-db',
-  'vname' => 'LBL_PLT_PARTICIPANT_MEETINGS_FROM_PLT_PARTICIPANT_TITLE',
-);
+// $dictionary["Meeting"]["fields"]["plt_participant_meetings"] = array (
+//   'name' => 'plt_participant_meetings',
+//   'type' => 'link',
+//   'relationship' => 'plt_participant_meetings',
+//   'source' => 'non-db',
+//   'vname' => 'LBL_PLT_PARTICIPANT_MEETINGS_FROM_PLT_PARTICIPANT_TITLE',
+// );
 $dictionary["Meeting"]["fields"]["plt_partici_meetings_name"] = array (
   'name' => 'plt_partici_meetings_name',
   'type' => 'relate',

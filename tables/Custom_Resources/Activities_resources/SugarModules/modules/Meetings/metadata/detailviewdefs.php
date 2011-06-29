@@ -75,10 +75,6 @@ array (
         ),
         3 => 
         array (
-          0 => 'description',
-        ),
-        4 => 
-        array (
           0 => 
           array (
             'name' => 'reminder_checked',
@@ -94,18 +90,7 @@ array (
             'customLabel' => '{sugar_translate label=\'LBL_MODULE_NAME\' module=$fields.parent_type.value}',
           ),
         ),
-        5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'plt_partici_meetings_name',
-          ),
-          1 => 
-          array (
-            'name' => 'ncsdc_eventinfo_activities_meetings_name',
-          ),
-        ),
-        6 => 
+        4 => 
         array (
           0 => 
           array (
