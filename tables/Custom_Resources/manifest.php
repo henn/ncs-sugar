@@ -70,18 +70,24 @@ $installdefs = array (
 	  'to' => 'ncs_framework',
     ),
 ####End copy of ncs_framework
-
-####Begin copy of Schedulers to the directory '/var/www/sugar/custom/modules/Schedulers####
+####Begin copy of Schedulers to the directory 'custom/modules/Schedulers####
     array (
       'from' => '<basepath>/Schedulers',
 	  'to' => 'custom/modules/Schedulers',
     ),
 ####End copy of Schedulers
-####Begin copy of Sch_Ext_Lang to the directory '/var/www/sugar/custom/Extension/modules/Schedulers/Ext/Language####
+####Begin copy of Sch_Ext_Lang to the directory 'custom/Extension/modules/Schedulers/Ext/Language####
     array (
       'from' => '<basepath>/Sch_Ext_Lang',
 	  'to' => 'custom/Extension/modules/Schedulers/Ext/Language',
     ),
+####End copy of Sch_Ext_Lang
+####Begin copy of XMLCreation_resources to the directory 'custom/service####
+	array (
+	'from' => '<basepath>/XMLCreation_resources/service',
+	'to' => 'custom/service',	
+	),
+####End copy of XMLCreation_resources####
 ####################################
 #                                  #
 #	   ALL GT Geographic_Tables    #
