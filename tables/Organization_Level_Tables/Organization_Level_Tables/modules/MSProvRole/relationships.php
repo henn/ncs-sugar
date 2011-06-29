@@ -35,5 +35,18 @@
  ********************************************************************************/
 
 $relationships = array (
+  'olt_msprovrole_olt_provider' => 
+  array (
+    'lhs_module' => 'OLT_MSProvRole',
+    'rhs_module' => 'OLT_Provider',
+    'relationship_type' => 'one-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'olt_msprovrole_olt_provider',
+  ),
 );
 ?>

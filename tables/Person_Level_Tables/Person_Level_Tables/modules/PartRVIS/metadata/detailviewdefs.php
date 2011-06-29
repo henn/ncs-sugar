@@ -96,6 +96,13 @@ array (
             'label' => 'LBL_TIME_STAMP_2',
           ),
         ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'plt_partrvirticipant_name',
+          ),
+        ),
       ),
       'lbl_detailview_panel1' => 
       array (

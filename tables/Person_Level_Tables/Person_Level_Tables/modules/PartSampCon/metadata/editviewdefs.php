@@ -46,6 +46,17 @@ array (
             'label' => 'LBL_SAMPLE_CONSENT_GIVEN',
           ),
         ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'plt_partsamrticipant_name',
+          ),
+          1 => 
+          array (
+            'name' => 'plt_partsamtcptcnsnt_name',
+          ),
+        ),
       ),
     ),
   ),

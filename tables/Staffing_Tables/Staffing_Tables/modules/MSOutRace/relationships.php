@@ -35,5 +35,18 @@
  ********************************************************************************/
 
 $relationships = array (
+  'st_msoutrace_st_wkoeact' => 
+  array (
+    'lhs_module' => 'ST_MSOutRace',
+    'rhs_module' => 'ST_WkOEAct',
+    'relationship_type' => 'one-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'st_msoutrace_st_wkoeact',
+  ),
 );
 ?>

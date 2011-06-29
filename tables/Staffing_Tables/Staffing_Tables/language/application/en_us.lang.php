@@ -39,7 +39,6 @@ $app_list_strings['moduleList']['ST_WkOEAct'] = 'Weekly Outreach & Engagement Ac
 $app_list_strings['moduleList']['ST_MSOutTarg'] = 'Outreach Target (Multi-Select)';
 $app_list_strings['moduleList']['ST_MSOutRace'] = 'Outreach Race (Multi-Select)';
 $app_list_strings['moduleList']['ST_MSOutLang2'] = 'Outreach Language (Multi-Select)';
-$app_list_strings['moduleList']['ST_OtrchEval'] = 'Evaluation of Weekly Outreach Activities';
 $app_list_strings['moduleList']['ST_MSOutEval'] = 'Outreach Evaluation (Multi-Select)';
 $app_list_strings['moduleList']['ST_OtrchStaff'] = 'Staff Participation Outreach Events';
 $app_list_strings['moduleList']['ST_StfWkExpns'] = 'Weekly Staff Expenses';
