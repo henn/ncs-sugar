@@ -168,18 +168,18 @@ function deleteAttachmentCallBack(text)
           ),
         ),
         9 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ncsdc_eventinfo_activities_notes_name',
-          ),
-          1 => 
-          array (
-            'name' => 'ncsdc_eventnfo_notes_name',
-            'label' => 'LBL_NCSDC_EVENTINFO_NOTES_FROM_NCSDC_EVENTINFO_TITLE',
-          ),
-        ),
-        10 => 
+//         array (
+//           0 => 
+//           array (
+//             'name' => 'ncsdc_eventinfo_activities_notes_name',
+//           ),
+//           1 => 
+//           array (
+//             'name' => 'ncsdc_eventnfo_notes_name',
+//             'label' => 'LBL_NCSDC_EVENTINFO_NOTES_FROM_NCSDC_EVENTINFO_TITLE',
+//           ),
+//         ),
+//         10 => 
         array (
           0 => 
           array (
@@ -194,7 +194,7 @@ function deleteAttachmentCallBack(text)
 											 </span>',
           ),
         ),
-        11 => 
+        10 => 
         array (
           0 => 
           array (

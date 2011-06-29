@@ -161,17 +161,17 @@ array (
           ),
         ),
         11 => 
-        array (
-          0 => 
-          array (
-            'name' => 'plt_participant_activities_notes_name',
-          ),
-          1 => 
-          array (
-            'name' => 'ncsdc_eventinfo_activities_notes_name',
-          ),
-        ),
-        12 => 
+//         array (
+//           0 => 
+//           array (
+//             'name' => 'plt_participant_activities_notes_name',
+//           ),
+//           1 => 
+//           array (
+//             'name' => 'ncsdc_eventinfo_activities_notes_name',
+//           ),
+//         ),
+//         12 => 
         array (
           0 => 
           array (
@@ -184,7 +184,7 @@ array (
             ),
           ),
         ),
-        13 => 
+        12 => 
         array (
           0 => 
           array (
