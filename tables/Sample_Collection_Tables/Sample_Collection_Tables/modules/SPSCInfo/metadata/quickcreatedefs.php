@@ -1,5 +1,4 @@
 <?php
-if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -35,18 +34,27 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-/*********************************************************************************
-
- * Description:  Defines the English language pack for the base application.
- * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
- * All Rights Reserved.
- * Contributor(s): ______________________________________..
- ********************************************************************************/
- 
-global $app_strings;
-
-$dashletMeta['SAMP_SPECSPSCInfoDashlet'] = array('module'		=> 'SAMP_SPECSPSCInfo',
-										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'SAMP_SPECSPSCInfo'), 
-                                          'description' => 'A customizable view into SAMP_SPECSPSCInfo',
-                                          'icon'        => 'icon_SAMP_SPECSPSCInfo_32.gif',
-                                          'category'    => 'Module Views');
+$module_name = 'SAMP_SPSCInfo';
+$viewdefs[$module_name]['QuickCreate'] = array(
+    'templateMeta' => array('maxColumns' => '2', 
+                            'widths' => array(
+                                            array('label' => '10', 'field' => '30'), 
+                                            array('label' => '10', 'field' => '30')
+                                            ),                                                                                                                                    
+                                            ),
+                                            
+                                            
+ 'panels' =>array (
+  'default' => 
+  array (
+    
+    array (
+      'name',
+      'assigned_user_name',
+    ),
+  ),
+                                                    
+),
+                        
+);
+?>

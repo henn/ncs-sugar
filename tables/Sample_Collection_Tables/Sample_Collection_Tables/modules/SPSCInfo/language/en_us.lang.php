@@ -34,27 +34,34 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$module_name = 'SAMP_SPECSPSCInfo';
-$viewdefs[$module_name]['QuickCreate'] = array(
-    'templateMeta' => array('maxColumns' => '2', 
-                            'widths' => array(
-                                            array('label' => '10', 'field' => '30'), 
-                                            array('label' => '10', 'field' => '30')
-                                            ),                                                                                                                                    
-                                            ),
-                                            
-                                            
- 'panels' =>array (
-  'default' => 
-  array (
-    
-    array (
-      'name',
-      'assigned_user_name',
-    ),
-  ),
-                                                    
-),
-                        
+$mod_strings = array (
+  'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
+  'LBL_ASSIGNED_TO_NAME' => 'User',
+  'LBL_ID' => 'ID',
+  'LBL_DATE_ENTERED' => 'Date Created',
+  'LBL_DATE_MODIFIED' => 'Date Modified',
+  'LBL_MODIFIED' => 'Modified By',
+  'LBL_MODIFIED_ID' => 'Modified By Id',
+  'LBL_MODIFIED_NAME' => 'Modified By Name',
+  'LBL_CREATED' => 'Created By',
+  'LBL_CREATED_ID' => 'Created By Id',
+  'LBL_DESCRIPTION' => 'Description',
+  'LBL_DELETED' => 'Deleted',
+  'LBL_NAME' => 'SPSC ID',
+  'LBL_CREATED_USER' => 'Created by User',
+  'LBL_MODIFIED_USER' => 'Modified by User',
+  'LBL_LIST_NAME' => 'Name',
+  'LBL_LIST_FORM_TITLE' => 'Study Center Sample Processing and Shipping Center List',
+  'LBL_MODULE_NAME' => 'Study Center Sample Processing and Shipping Center',
+  'LBL_MODULE_TITLE' => 'Study Center Sample Processing and Shipping Center',
+  'LBL_HOMEPAGE_TITLE' => 'My Study Center Sample Processing and Shipping Center',
+  'LNK_NEW_RECORD' => 'Create Study Center Sample Processing and Shipping Center',
+  'LNK_LIST' => 'View Study Center Sample Processing and Shipping Center',
+  'LNK_IMPORT_SAMP_SPSCINFO' => 'Import Study Center Sample Processing and Shipping Center',
+  'LBL_SEARCH_FORM_TITLE' => 'Search Study Center Sample Processing and Shipping Center',
+  'LBL_HISTORY_SUBPANEL_TITLE' => 'View History',
+  'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
+  'LBL_SAMP_SPSCINFO_SUBPANEL_TITLE' => 'Study Center Sample Processing and Shipping Center',
+  'LBL_NEW_FORM_TITLE' => 'New Study Center Sample Processing and Shipping Center',
 );
 ?>

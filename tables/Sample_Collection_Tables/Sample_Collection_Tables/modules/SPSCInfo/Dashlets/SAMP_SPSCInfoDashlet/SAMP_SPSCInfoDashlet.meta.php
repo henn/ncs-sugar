@@ -1,4 +1,5 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -34,31 +35,18 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$module_name = 'SAMP_SPECSPSCInfo';
-$viewdefs[$module_name]['EditView'] = array(
-    'templateMeta' => array('maxColumns' => '2', 
-                            'widths' => array(
-                                            array('label' => '10', 'field' => '30'), 
-                                            array('label' => '10', 'field' => '30')
-                                            ),                                                                                                                                    
-                                            ),
-                                            
-                                            
- 'panels' =>array (
-  'default' => 
-  array (
-    
-    array (
-      'name',
-      'assigned_user_name',
-    ),
-    
-    array (
-      'description',
-    ),
-  ),
-                                                    
-),
-                        
-);
-?>
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+ 
+global $app_strings;
+
+$dashletMeta['SAMP_SPSCInfoDashlet'] = array('module'		=> 'SAMP_SPSCInfo',
+										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'SAMP_SPSCInfo'), 
+                                          'description' => 'A customizable view into SAMP_SPSCInfo',
+                                          'icon'        => 'icon_SAMP_SPSCInfo_32.gif',
+                                          'category'    => 'Module Views');

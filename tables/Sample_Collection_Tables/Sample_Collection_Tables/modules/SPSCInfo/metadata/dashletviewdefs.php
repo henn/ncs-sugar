@@ -1,4 +1,5 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -34,34 +35,26 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$mod_strings = array (
-  'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
-  'LBL_ASSIGNED_TO_NAME' => 'User',
-  'LBL_ID' => 'ID',
-  'LBL_DATE_ENTERED' => 'Date Created',
-  'LBL_DATE_MODIFIED' => 'Date Modified',
-  'LBL_MODIFIED' => 'Modified By',
-  'LBL_MODIFIED_ID' => 'Modified By Id',
-  'LBL_MODIFIED_NAME' => 'Modified By Name',
-  'LBL_CREATED' => 'Created By',
-  'LBL_CREATED_ID' => 'Created By Id',
-  'LBL_DESCRIPTION' => 'Description',
-  'LBL_DELETED' => 'Deleted',
-  'LBL_NAME' => 'SPSC ID',
-  'LBL_CREATED_USER' => 'Created by User',
-  'LBL_MODIFIED_USER' => 'Modified by User',
-  'LBL_LIST_NAME' => 'Name',
-  'LBL_LIST_FORM_TITLE' => 'Study Center Sample Processing and Shipping Center List',
-  'LBL_MODULE_NAME' => 'Study Center Sample Processing and Shipping Center',
-  'LBL_MODULE_TITLE' => 'Study Center Sample Processing and Shipping Center',
-  'LBL_HOMEPAGE_TITLE' => 'My Study Center Sample Processing and Shipping Center',
-  'LNK_NEW_RECORD' => 'Create Study Center Sample Processing and Shipping Center',
-  'LNK_LIST' => 'View Study Center Sample Processing and Shipping Center',
-  'LNK_IMPORT_SAMP_SPECSPSCINFO' => 'Import Study Center Sample Processing and Shipping Center',
-  'LBL_SEARCH_FORM_TITLE' => 'Search Study Center Sample Processing and Shipping Center',
-  'LBL_HISTORY_SUBPANEL_TITLE' => 'View History',
-  'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
-  'LBL_SAMP_SPECSPSCINFO_SUBPANEL_TITLE' => 'Study Center Sample Processing and Shipping Center',
-  'LBL_NEW_FORM_TITLE' => 'New Study Center Sample Processing and Shipping Center',
-);
-?>
+
+
+
+global $current_user;
+
+$dashletData['SAMP_SPSCInfoDashlet']['searchFields'] = array('date_entered'     => array('default' => ''),
+                                                          'date_modified'    => array('default' => ''),
+                                                          'assigned_user_id' => array('type'    => 'assigned_user_name', 
+                                                                                      'default' => $current_user->name));
+$dashletData['SAMP_SPSCInfoDashlet']['columns'] =  array(   'name' => array('width'   => '40', 
+                                                                      'label'   => 'LBL_LIST_NAME',
+                                                                      'link'    => true,
+                                                                      'default' => true), 
+                                                      'date_entered' => array('width'   => '15', 
+                                                                              'label'   => 'LBL_DATE_ENTERED',
+                                                                              'default' => true),
+                                                      'date_modified' => array('width'   => '15', 
+                                                                              'label'   => 'LBL_DATE_MODIFIED'),    
+                                                      'created_by' => array('width'   => '8', 
+                                                                            'label'   => 'LBL_CREATED'),
+                                                      'assigned_user_name' => array('width'   => '8', 
+                                                                                     'label'   => 'LBL_LIST_ASSIGNED_USER'),
+                                               );

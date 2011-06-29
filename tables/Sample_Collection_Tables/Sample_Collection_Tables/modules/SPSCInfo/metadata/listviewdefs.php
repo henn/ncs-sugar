@@ -35,11 +35,22 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$module_name = 'SAMP_SPECSPSCInfo';
-$searchFields[$module_name] = 
-	array (
-		'name' => array( 'query_type'=>'default'),
-		'current_user_only'=> array('query_type'=>'default','db_field'=>array('assigned_user_id'),'my_items'=>true, 'vname' => 'LBL_CURRENT_USER_FILTER', 'type' => 'bool'),
-		'assigned_user_id'=> array('query_type'=>'default'),
-	);
+
+
+
+$module_name = 'SAMP_SPSCInfo';
+$listViewDefs[$module_name] = array(
+	'NAME' => array(
+		'width' => '32', 
+		'label' => 'LBL_NAME', 
+		'default' => true,
+        'link' => true),         
+	'ASSIGNED_USER_NAME' => array(
+		'width' => '9', 
+		'label' => 'LBL_ASSIGNED_TO_NAME',
+		'module' => 'Employees',
+        'id' => 'ASSIGNED_USER_ID',
+        'default' => true),
+	
+);
 ?>

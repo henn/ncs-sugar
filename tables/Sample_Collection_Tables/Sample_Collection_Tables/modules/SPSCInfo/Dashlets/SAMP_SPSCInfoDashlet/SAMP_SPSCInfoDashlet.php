@@ -35,18 +35,29 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$module_name = 'SAMP_SPECSPSCInfo';
-$object_name = 'SAMP_SPECSPSCInfo';
-$_module_name = 'samp_specspscinfo';
-$popupMeta = array('moduleMain' => $module_name,
-						'varName' => $object_name,
-						'orderBy' => $_module_name.'.name',
-						'whereClauses' => 
-							array('name' => $_module_name . '.name', 
-								),
-						    'searchInputs'=> array($_module_name. '_number', 'name', 'priority','status'),
-							
-						);
-?>
- 
- 
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+
+require_once('include/Dashlets/DashletGeneric.php');
+require_once('modules/SAMP_SPSCInfo/SAMP_SPSCInfo.php');
+
+class SAMP_SPSCInfoDashlet extends DashletGeneric { 
+    function SAMP_SPSCInfoDashlet($id, $def = null) {
+		global $current_user, $app_strings;
+		require('modules/SAMP_SPSCInfo/metadata/dashletviewdefs.php');
+
+        parent::DashletGeneric($id, $def);
+
+        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'SAMP_SPSCInfo');
+
+        $this->searchFields = $dashletData['SAMP_SPSCInfoDashlet']['searchFields'];
+        $this->columns = $dashletData['SAMP_SPSCInfoDashlet']['columns'];
+
+        $this->seedBean = new SAMP_SPSCInfo();        
+    }
+}

@@ -1,5 +1,4 @@
 <?php
-if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -35,22 +34,19 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-
-
-
-$module_name = 'SAMP_SPECSPSCInfo';
-$listViewDefs[$module_name] = array(
-	'NAME' => array(
-		'width' => '32', 
-		'label' => 'LBL_NAME', 
-		'default' => true,
-        'link' => true),         
-	'ASSIGNED_USER_NAME' => array(
-		'width' => '9', 
-		'label' => 'LBL_ASSIGNED_TO_NAME',
-		'module' => 'Employees',
-        'id' => 'ASSIGNED_USER_ID',
-        'default' => true),
-	
-);
+/*
+ * Created on August 2 2007
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - PHPeclipse - PHP - Code Templates
+ */
+$module_name = 'SAMP_SPSCInfo';
+ $metafiles[$module_name] = array(
+	'detailviewdefs'  => 	'modules/' . $module_name . '/metadata/detailviewdefs.php', 	
+	'editviewdefs'    => 	'modules/' . $module_name . '/metadata/editviewdefs.php',
+ 	'listviewdefs'    => 	'modules/' . $module_name . '/metadata/listviewdefs.php',
+ 	'searchdefs'      =>    'modules/' . $module_name . '/metadata/searchdefs.php',
+ 	'popupdefs'	      =>    'modules/' . $module_name . '/metadata/popupdefs.php',
+ 	'searchfields'	  =>    'modules/' . $module_name . '/metadata/SearchFields.php',
+ );
 ?>

@@ -1,5 +1,4 @@
 <?php
-if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -35,29 +34,40 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-/*********************************************************************************
+$module_name = 'SAMP_SPSCInfo';
+$viewdefs[$module_name]['DetailView'] = array(
+'templateMeta' => array('form' => array('buttons'=>array('EDIT', 'DUPLICATE', 'DELETE',
+                                                         )),
+                        'maxColumns' => '2',
+                        'widths' => array(
+                                        array('label' => '10', 'field' => '30'),
+                                        array('label' => '10', 'field' => '30')
+                                        ),
+                        ),
 
- * Description:  Defines the English language pack for the base application.
- * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
- * All Rights Reserved.
- * Contributor(s): ______________________________________..
- ********************************************************************************/
+'panels' =>array (
 
-require_once('include/Dashlets/DashletGeneric.php');
-require_once('modules/SAMP_SPECSPSCInfo/SAMP_SPECSPSCInfo.php');
+  array (
+    'name',
+    'assigned_user_name',
+  ),
 
-class SAMP_SPECSPSCInfoDashlet extends DashletGeneric { 
-    function SAMP_SPECSPSCInfoDashlet($id, $def = null) {
-		global $current_user, $app_strings;
-		require('modules/SAMP_SPECSPSCInfo/metadata/dashletviewdefs.php');
+  array (
+	array (
+      'name' => 'date_entered',
+      'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
+      'label' => 'LBL_DATE_ENTERED',
+    ),
+    array (
+      'name' => 'date_modified',
+      'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
+      'label' => 'LBL_DATE_MODIFIED',
+    ),
+  ),
 
-        parent::DashletGeneric($id, $def);
-
-        if(empty($def['title'])) $this->title = translate('LBL_HOMEPAGE_TITLE', 'SAMP_SPECSPSCInfo');
-
-        $this->searchFields = $dashletData['SAMP_SPECSPSCInfoDashlet']['searchFields'];
-        $this->columns = $dashletData['SAMP_SPECSPSCInfoDashlet']['columns'];
-
-        $this->seedBean = new SAMP_SPECSPSCInfo();        
-    }
-}
+  array (
+    'description',
+  ),
+)
+);
+?>

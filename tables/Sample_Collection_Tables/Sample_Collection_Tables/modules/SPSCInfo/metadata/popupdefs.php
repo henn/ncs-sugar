@@ -1,4 +1,5 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -34,27 +35,18 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-/*
- * Created on May 29, 2007
- *
- * To change the template for this generated file go to
- * Window - Preferences - PHPeclipse - PHP - Code Templates
- */
-$module_name = 'SAMP_SPECSPSCInfo';
-  $searchdefs[$module_name] = array(
-					'templateMeta' => array(
-							'maxColumns' => '3', 
-                            'widths' => array('label' => '10', 'field' => '30'),                 
-                           ),
-                    'layout' => array(  					
-						'basic_search' => array(
-							'name', 
-							array('name'=>'current_user_only', 'label'=>'LBL_CURRENT_USER_FILTER', 'type'=>'bool'),
-							),
-						'advanced_search' => array(
-							'name', 
-							array('name' => 'assigned_user_id', 'label' => 'LBL_ASSIGNED_TO', 'type' => 'enum', 'function' => array('name' => 'get_user_array', 'params' => array(false))),
-						),
-					),
- 			   );
+$module_name = 'SAMP_SPSCInfo';
+$object_name = 'SAMP_SPSCInfo';
+$_module_name = 'samp_spscinfo';
+$popupMeta = array('moduleMain' => $module_name,
+						'varName' => $object_name,
+						'orderBy' => $_module_name.'.name',
+						'whereClauses' => 
+							array('name' => $_module_name . '.name', 
+								),
+						    'searchInputs'=> array($_module_name. '_number', 'name', 'priority','status'),
+							
+						);
 ?>
+ 
+ 
