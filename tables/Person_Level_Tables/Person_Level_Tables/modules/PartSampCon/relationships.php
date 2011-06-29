@@ -35,5 +35,37 @@
  ********************************************************************************/
 
 $relationships = array (
+  'plt_partsampcon_plt_participant' => 
+  array (
+    'rhs_label' => 'Participant',
+    'lhs_label' => 'Participant Sample Collection Consent',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_PartSampCon',
+    'rhs_module' => 'PLT_Participant',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_partsampcon_plt_participant',
+  ),
+  'plt_partsampcon_plt_prtcptcnsnt' => 
+  array (
+    'rhs_label' => 'Participant Consent',
+    'lhs_label' => 'Participant Sample Collection Consent',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_PartSampCon',
+    'rhs_module' => 'PLT_PrtcptCnsnt',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_partsampcon_plt_prtcptcnsnt',
+  ),
 );
 ?>

@@ -32,7 +32,7 @@ array (
           array (
             'name' => 'name',
             'label' => 'Name (PROVIDER_ID):',
-'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (
@@ -137,6 +137,10 @@ array (
             'name' => 'provider_comment',
             'studio' => 'visible',
             'label' => 'LBL_PROVIDER_COMMENT',
+          ),
+          1 => 
+          array (
+            'name' => 'olt_msprovr_provider_name',
           ),
         ),
       ),

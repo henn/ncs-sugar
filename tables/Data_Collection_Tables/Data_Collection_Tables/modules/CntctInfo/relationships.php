@@ -110,5 +110,21 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'ncsdc_cntctinfo_ncsdc_incident',
   ),
+  'ncsdc_cntctinfo_plt_partauthfrm' => 
+  array (
+    'rhs_label' => 'Participant Authorization Form',
+    'lhs_label' => 'Contact Information',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'NCSDC_CntctInfo',
+    'rhs_module' => 'PLT_PartAuthFrm',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'ncsdc_cntctinfo_plt_partauthfrm',
+  ),
 );
 ?>

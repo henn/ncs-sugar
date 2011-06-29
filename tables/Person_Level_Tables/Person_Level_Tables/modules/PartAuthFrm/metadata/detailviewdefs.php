@@ -68,6 +68,24 @@ array (
             'label' => 'LBL_AUTH_STATUS_OTH',
           ),
         ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'plt_partautrticipant_name',
+          ),
+          1 => 
+          array (
+            'name' => 'olt_providertauthfrm_name',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_cntctrtauthfrm_name',
+          ),
+        ),
       ),
     ),
   ),

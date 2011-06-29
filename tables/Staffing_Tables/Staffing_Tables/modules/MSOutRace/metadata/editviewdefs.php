@@ -45,6 +45,13 @@ array (
             'label' => 'LBL_OUTREACH_RACE_OTH',
           ),
         ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'st_msoutract_wkoeact_name',
+          ),
+        ),
       ),
     ),
   ),

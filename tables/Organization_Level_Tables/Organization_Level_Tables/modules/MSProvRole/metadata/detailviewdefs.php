@@ -54,6 +54,13 @@ array (
             'label' => 'LBL_PROVIDER_NCS_ROLE_OTH',
           ),
         ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'olt_msprovr_provider_name',
+          ),
+        ),
       ),
     ),
   ),

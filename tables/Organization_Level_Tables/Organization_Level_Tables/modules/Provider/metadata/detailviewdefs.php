@@ -146,6 +146,10 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_PROVIDER_COMMENT',
           ),
+          1 => 
+          array (
+            'name' => 'olt_msprovr_provider_name',
+          ),
         ),
       ),
     ),

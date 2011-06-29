@@ -80,5 +80,21 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'olt_provider_ltt_telephone',
   ),
+  'olt_provider_plt_partauthfrm' => 
+  array (
+    'rhs_label' => 'Participant Authorization Form',
+    'lhs_label' => 'Provider',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'OLT_Provider',
+    'rhs_module' => 'PLT_PartAuthFrm',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'olt_provider_plt_partauthfrm',
+  ),
 );
 ?>

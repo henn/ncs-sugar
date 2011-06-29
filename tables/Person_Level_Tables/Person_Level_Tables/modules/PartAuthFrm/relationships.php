@@ -35,5 +35,21 @@
  ********************************************************************************/
 
 $relationships = array (
+  'plt_partauthfrm_plt_participant' => 
+  array (
+    'rhs_label' => 'Participant',
+    'lhs_label' => 'Participant Authorization Form',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_PartAuthFrm',
+    'rhs_module' => 'PLT_Participant',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_partauthfrm_plt_participant',
+  ),
 );
 ?>

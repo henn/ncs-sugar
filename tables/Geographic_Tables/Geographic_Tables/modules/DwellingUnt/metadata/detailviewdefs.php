@@ -120,6 +120,13 @@ array (
             'label' => 'LBL_GT_LISTINGUNT_GT_DWELLINGUNT_FROM_GT_LISTINGUNT_TITLE',
           ),
         ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'gt_secsampuellingunt_name',
+          ),
+        ),
       ),
     ),
   ),
