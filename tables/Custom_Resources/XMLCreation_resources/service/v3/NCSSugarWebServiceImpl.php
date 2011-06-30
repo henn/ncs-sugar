@@ -10,6 +10,8 @@ require_once('NCSSugarWebServiceConstants.php');
 
 class NCSSugarWebServiceImpl extends SugarWebServiceImplv3 {
     
+    protected $tempfilename;
+    
     public function __construct()
     {
         self::$helperObject = new NCSSugarWebServiceUtil();
@@ -23,10 +25,13 @@ class NCSSugarWebServiceImpl extends SugarWebServiceImplv3 {
     function export_vdr_data($session, $doValidation = false)
     {
     	$error = new SoapError();
-    	if (!self::$helperObject->checkSessionAndModuleAccess($session, 'invalid_session', '', '', '', $error)) {
+        global $current_user;
+    	if (!self::$helperObject->checkSessionAndModuleAccess($session, 'invalid_session', '', '', '', $error) || !is_admin($current_user)) {
     		$error->set_error('invalid_login');
+                self::$helperObject->setFaultObject($error);
     		return;
-    	} // if        
+    	} // if   
+        $this->tempfilename = tempnam('cache/xml', 'NCS'); // Windows only takes first 3 characters for prefix anyway
         $xmlWriter = new XMLWriter();
         $xmlWriter->openMemory();
         $xmlWriter->setIndent(true);
@@ -35,14 +40,18 @@ class NCSSugarWebServiceImpl extends SugarWebServiceImplv3 {
         $this->insert_vdr_header($session, $xmlWriter);
         $this->insert_vdr_tables($session, $xmlWriter);
         $xmlWriter->endElement();
-        $xmlWriter->endDocument();      
+        $xmlWriter->endDocument();   
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // DO VALIDATION - MAY HAVE FLAG TO REQUEST IT, DEFAULT FALSE
         if ($doValidation) {
-            $xmlResponse = $xmlWriter->outputMemory();  
-            $this->validate_document($xmlResponse);
-            return $xmlResponse;
+            //$xmlResponse = $xmlWriter->outputMemory();  
+            //$this->validate_document($xmlResponse);
+            // return $xmlResponse;
+            $this->validate_xml_document();
+            return file_get_contents($this->tempfilename);
         } else {
-            return $xmlWriter->outputMemory();
+            // return $xmlWriter->outputMemory();
+            return file_get_contents($this->tempfilename);
         }
     }
     
@@ -62,6 +71,7 @@ class NCSSugarWebServiceImpl extends SugarWebServiceImplv3 {
                 $xmlWriter->text('true');
             $xmlWriter->endElement();
         $xmlWriter->endElement();
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
     }
     
     private function insert_vdr_tables($session, &$xmlWriter){
@@ -69,48 +79,63 @@ class NCSSugarWebServiceImpl extends SugarWebServiceImplv3 {
         // STUDY CENTER
         $results = parent::get_entry_list($session, STUDY_CENTER_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseStudyCenter($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // PRIMARY SAMPLING UNIT
         $results = parent::get_entry_list($session, PSU_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parsePSU($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // SECONDARY SAMPLING UNIT
         $results = parent::get_entry_list($session, SSU_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseSSU($xmlWriter, $results);   
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // TERTIARY SAMPLING UNIT
         $results = parent::get_entry_list($session, TSU_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseTSU($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // LISTING UNIT
         $results = parent::get_entry_list($session, LISTING_UNIT_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseListingUnit($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // DWELLING UNIT
         $results = parent::get_entry_list($session, DWELLING_UNIT_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseDwellingUnit($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // HOUSEHOLD UNIT
         $results = parent::get_entry_list($session, HOUSEHOLD_UNIT_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseHouseHoldUnit($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // HOUSEHOLD TO DWELLING LINK
         $results = parent::get_entry_list($session, LINK_HOUSEHOLD_DWELLING_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseLinkHouseHoldDwelling($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // STAFF
         $results = parent::get_entry_list($session, STAFF_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseStaff($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // STAFF LANGUAGE
         $results = parent::get_entry_list($session, STAFF_LANGUAGE_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseStaffLanguage($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // STAFF VALIDATION
         $results = parent::get_entry_list($session, STAFF_VALIDATION_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseStaffValidation($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // STAFF WEEKLY EXPENSE
         $results = parent::get_entry_list($session, STAFF_WEEKLY_EXPENSE_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseStaffWeeklyExpense($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // STAFF EXPENSE MANAGEMENT TASKS
         $results = parent::get_entry_list($session, STAFF_EXP_MNGMNT_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseStaffExpenseManagementTask($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // STAFF EXPENSE DATA COLLECTION TASKS
         $results = parent::get_entry_list($session, STAFF_EXP_DATA_CLLCTN_TASKS_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseStaffExpenseDataCollectionTask($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // OUTREACH
         $results = parent::get_entry_list($session, OUTREACH_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseOutreach($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
        
 	   //// ***** 2.0 Modules ***
 		//// OUTREACH RACE
@@ -122,9 +147,11 @@ class NCSSugarWebServiceImpl extends SugarWebServiceImplv3 {
         // WITHOUT USING A MODULE DEFINITION **
         $results = parent::get_entry_list($session, OUTREACH_STAFF_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseOutreachStaff($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // OUTREACH EVAL ** ARE THESE RIGHT?? **
         $results = parent::get_entry_list($session, OUTREACH_EVAL_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseOutreachEval($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         
 		//// ***** 2.0 Modules ***
 		//// OUTREACH TARGET
@@ -138,21 +165,27 @@ class NCSSugarWebServiceImpl extends SugarWebServiceImplv3 {
 		// STAFF CERTIFICATION TRAINING
         $results = parent::get_entry_list($session, STAFF_CERT_TRAINING_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseStaffCertTraining($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // PERSON
         $results = parent::get_entry_list($session, PERSON_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parsePerson($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // PERSON RACE
         $results = parent::get_entry_list($session, PERSON_RACE_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parsePersonRace($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // LINK PERSON TO HOUSEHOLD
         $results = parent::get_entry_list($session, LINK_PERSON_HOUSEHOLD_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseLinkPersonHousehold($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // PARTICIPANT
         $results = parent::get_entry_list($session, PARTICIPANT_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseParticipant($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // LINK PERSON PARTICIPANT
         $results = parent::get_entry_list($session, LINK_PERSON_PARTICIPANT_SUGAR_MODULE, '', '', '', array(),null,'100000',false);
         self::$helperObject->parseLinkPersonParticipant($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
        
 	    //// ***** 2.0 Modules ***
 		//// OUTREACH RACE
@@ -163,18 +196,23 @@ class NCSSugarWebServiceImpl extends SugarWebServiceImplv3 {
 	    // PARTICIPANT CONSENT
         $results = parent::get_entry_list($session, PARTICIPANT_CONSENT_SUGAR_MODULE, '', '', '', array(),null,'100000',false);
         self::$helperObject->parseParticipantConsent($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
 		////PARTICIPANT VISIT CONSENT //MOVED 
         $results = parent::get_entry_list($session, PARTICIPANT_VIS_CONSENT_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseParticipantVisitConsent($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
 	    // PPG DETAILS
         $results = parent::get_entry_list($session, PPG_DETAILS_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parsePPGDetails($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // PPG STATUS HISTORY
         $results = parent::get_entry_list($session, PPG_STATUS_HISTORY_SUGAR_MODULE, '', '','', array(), null, '100000', false);
         self::$helperObject->parsePPGStatusHistory($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // PROVIDER
         $results = parent::get_entry_list($session, PROVIDER_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseProvider($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
        	//// ***** 2.0 Modules ***
 		//// PROVIDER ROLE
         // $results = parent::get_entry_list($session, PROVIDER_ROLE_SUGAR_MODULE, '', '', '', array(), NULL, '10000', false);
@@ -183,59 +221,77 @@ class NCSSugarWebServiceImpl extends SugarWebServiceImplv3 {
         // LINK PERSON TO PROVIDER
         $results = parent::get_entry_list($session, LINK_PERSON_PROVIDER_SUGAR_MODULE, '', '', '',array(),null,'100000', false);
         self::$helperObject->parseLinkPersonProvider($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // INSTITUTION
         $results = parent::get_entry_list($session, INSTITUTION_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseInstitution($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // LINK PERSON TO INSTITUTE
         $results = parent::get_entry_list($session, LINK_PERSON_INSTITUTE_SUGAR_MODULE, '', '', '', array(), null, '100000', false); 
         self::$helperObject->parseLinkPersonIntitute($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // ADDRESS
         $results = parent::get_entry_list($session, ADDRESS_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseAddress($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // TELEPHONE
         $results = parent::get_entry_list($session, TELEPHONE_SUGAR_MODULE, '', '', '', array(), null, '100000', false);
         self::$helperObject->parseTelephone($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // EMAIL  *** BROKEN MODULE!!! ***
         $results = parent::get_entry_list($session, EMAIL_SUGAR_MODULE, '', '', '', array(), null, '100000', false); // THIS MODULE IS BROKEN, CANNOT RELATE OR SAVE
         self::$helperObject->processEmail($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
         // EVENT
         $results = parent::get_entry_list($session, EVENT_SUGAR_MODULE, '', '', '', array(), NULL, '10000', false);
         self::$helperObject->processEvent($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
 		
 		// *********************
 		 // INSTRUMENT
         $results = parent::get_entry_list($session, INSTRUMENT_SUGAR_MODULE, '', '', '', array(), NULL, '10000', false);
         self::$helperObject->processInstrument($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
 		 // CONTACT
         $results = parent::get_entry_list($session, CONTACT_SUGAR_MODULE, '', '', '', array(), NULL, '10000', false);
         self::$helperObject->processContact($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
 		 // LINK CONTACT
         $results = parent::get_entry_list($session, LINK_CONTACT_SUGAR_MODULE, '', '', '', array(), NULL, '10000', false);
         self::$helperObject->processContactLinking($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
 		 // NON INTERVIEW REPORT
         $results = parent::get_entry_list($session, NON_INTERVIEW_RPT_SUGAR_MODULE, '', '', '', array(), NULL, '10000', false);
         self::$helperObject->processNonInterviewReprt($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
 		 // NON INTERVIEW REPORT VACANT
         $results = parent::get_entry_list($session, NON_INTERVIEW_RPT_VACANT_SUGAR_MODULE, '', '', '', array(), NULL, '10000', false);
         self::$helperObject->processNIRVacant($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
 		 // NON INTERVIEW REPORT NOACCESS
         $results = parent::get_entry_list($session, NON_INTERVIEW_RPT_NOACCESS_SUGAR_MODULE, '', '', '', array(), NULL, '10000', false);
         self::$helperObject->processNIRNoAccess($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
 		 // NON INTERVIEW REPORT REFUSAL
         $results = parent::get_entry_list($session, NON_INTERVIEW_RPT_REFUSAL_SUGAR_MODULE, '', '', '', array(), NULL, '10000', false);
         self::$helperObject->processNIRRefusal($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
 		 // NON INTERVIEW REPORT DUTYPE
         $results = parent::get_entry_list($session, NON_INTERVIEW_RPT_DUTYPE_SUGAR_MODULE, '', '', '', array(), NULL, '10000', false);
         self::$helperObject->processNIRDuType($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
 		 // INCIDENT
         $results = parent::get_entry_list($session, INCIDENT_SUGAR_MODULE, '', '', '', array(), NULL, '10000', false);
         self::$helperObject->processIncident($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
 		 // INCIDENT MEDIA
         $results = parent::get_entry_list($session, INCIDENT_MEDIA_SUGAR_MODULE, '', '', '', array(), NULL, '10000', false);
         self::$helperObject->processIncidentMedia($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
 		 // INCIDENT UNANTICIPATED
         $results = parent::get_entry_list($session, INCIDENT_UNANTICIPATED_SUGAR_MODULE, '', '', '', array(), NULL, '10000', false);
         self::$helperObject->processIncidentUnanticipated($xmlWriter, $results);
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
 		// *********************
 		//// ***** 2.0 Modules ***
 		 //// SPEC EQUIPMENT
@@ -300,6 +356,7 @@ class NCSSugarWebServiceImpl extends SugarWebServiceImplv3 {
         // self::$helperObject->parseSampleReceiptConfirmation($xmlWriter, $results);
 		//// *********************
         $xmlWriter->endElement();
+        file_put_contents($this->tempfilename, $xmlWriter->flush(true), FILE_APPEND);
     }
     
     private function validate_document(&$xmlResponse) {
@@ -310,6 +367,30 @@ class NCSSugarWebServiceImpl extends SugarWebServiceImplv3 {
                 $this->generate_doc_errors($xmlResponse);
             }
         }
+    }
+    
+    private function validate_xml_document() {
+        libxml_use_internal_errors(true);
+        $testDoc = new DOMDocument();
+        if ($testDoc->load($this->tempfilename)) {
+            if (!$testDoc->schemaValidate('custom/service/v3/schema1_2.xsd')) {
+                $this->generate_xml_doc_errors();
+            }
+        }
+    }
+    
+    private function generate_xml_doc_errors() {
+        $errors = libxml_get_errors();
+        $xmlErrorWriter = new XMLWriter();
+        $xmlErrorWriter->openMemory();
+        $xmlErrorWriter->setIndent(true);
+        $xmlErrorWriter->startElement('errors');
+        foreach ($errors as $error) {
+            $this->report_doc_error($error, $xmlErrorWriter);
+        }
+        libxml_clear_errors();
+        $xmlErrorWriter->endElement();
+        file_put_contents($this->tempfilename, $xmlErrorWriter->flush(true), FILE_APPEND);
     }
     
     private function generate_doc_errors(&$xmlResponse) {
