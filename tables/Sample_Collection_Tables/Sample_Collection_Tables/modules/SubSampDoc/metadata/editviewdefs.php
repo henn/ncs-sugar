@@ -40,6 +40,13 @@ array (
           ),
           1 => '',
         ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_subsameventinfo_name',
+          ),
+        ),
       ),
     ),
   ),

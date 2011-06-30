@@ -35,5 +35,53 @@
  ********************************************************************************/
 
 $relationships = array (
+  'samp_specshippin_samp_specspscinfo' => 
+  array (
+    'rhs_label' => 'Study Center Sample Processing and Shipping Center',
+    'lhs_label' => 'Specimen Shipping',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'SAMP_SPECShippin',
+    'rhs_module' => 'SAMP_SPECSPSCInfo',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'samp_specshippin_samp_specspscinfo',
+  ),
+  'samp_specshippin_samp_sampship' => 
+  array (
+    'rhs_label' => 'Sample Shipping',
+    'lhs_label' => 'Specimen Shipping',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'SAMP_SPECShippin',
+    'rhs_module' => 'SAMP_SampShip',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'samp_specshippin_samp_sampship',
+  ),
+  'samp_specshippin_st_staffrstr' => 
+  array (
+    'rhs_label' => 'Staff Information',
+    'lhs_label' => 'Specimen Shipping',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'SAMP_SPECShippin',
+    'rhs_module' => 'ST_StaffRstr',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'samp_specshippin_st_staffrstr',
+  ),
 );
 ?>

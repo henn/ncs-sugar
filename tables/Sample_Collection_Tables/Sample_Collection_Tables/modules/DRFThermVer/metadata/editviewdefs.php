@@ -78,6 +78,10 @@ array (
         5 => 
         array (
           0 => 'description',
+          1 => 
+          array (
+            'name' => 'samp_drfthestaffrstr_name',
+          ),
         ),
       ),
     ),

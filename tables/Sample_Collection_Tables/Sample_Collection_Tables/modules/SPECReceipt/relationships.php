@@ -35,5 +35,69 @@
  ********************************************************************************/
 
 $relationships = array (
+  'samp_specreceipt_samp_specspscinfo' => 
+  array (
+    'rhs_label' => 'Study Center Sample Processing and Shipping Center',
+    'lhs_label' => 'Specimen Receipt',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'SAMP_SPECReceipt',
+    'rhs_module' => 'SAMP_SPECSPSCInfo',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'samp_specreceipt_samp_specspscinfo',
+  ),
+  'samp_specreceipt_samp_specstorage' => 
+  array (
+    'rhs_label' => 'Specimen Storage',
+    'lhs_label' => 'Specimen Receipt',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'SAMP_SPECReceipt',
+    'rhs_module' => 'SAMP_SPECStorage',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'samp_specreceipt_samp_specstorage',
+  ),
+  'samp_specreceipt_samp_specequip' => 
+  array (
+    'rhs_label' => 'SPSC Equipment Information',
+    'lhs_label' => 'Specimen Receipt',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'SAMP_SPECReceipt',
+    'rhs_module' => 'SAMP_SPECEquip',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'samp_specreceipt_samp_specequip',
+  ),
+  'samp_specreceipt_st_staffrstr' => 
+  array (
+    'rhs_label' => 'Staff Information',
+    'lhs_label' => 'Specimen Receipt',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'SAMP_SPECReceipt',
+    'rhs_module' => 'ST_StaffRstr',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'samp_specreceipt_st_staffrstr',
+  ),
 );
 ?>

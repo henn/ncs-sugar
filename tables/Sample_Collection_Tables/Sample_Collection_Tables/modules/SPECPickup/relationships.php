@@ -35,5 +35,69 @@
  ********************************************************************************/
 
 $relationships = array (
+  'samp_specpickup_samp_specspscinfo' => 
+  array (
+    'rhs_label' => 'Study Center Sample Processing and Shipping Center',
+    'lhs_label' => 'Specimen Pickup',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'SAMP_SPECPickup',
+    'rhs_module' => 'SAMP_SPECSPSCInfo',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'samp_specpickup_samp_specspscinfo',
+  ),
+  'samp_specpickup_ncsdc_eventinfo' => 
+  array (
+    'rhs_label' => 'Event Information',
+    'lhs_label' => 'Specimen Pickup',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'SAMP_SPECPickup',
+    'rhs_module' => 'NCSDC_EventInfo',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'samp_specpickup_ncsdc_eventinfo',
+  ),
+  'samp_specpickup_ncsdc_instrument' => 
+  array (
+    'rhs_label' => 'Instrument Information',
+    'lhs_label' => 'Specimen Pickup',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'SAMP_SPECPickup',
+    'rhs_module' => 'NCSDC_Instrument',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'samp_specpickup_ncsdc_instrument',
+  ),
+  'samp_specpickup_st_staffrstr' => 
+  array (
+    'rhs_label' => 'Staff Information',
+    'lhs_label' => 'Specimen Pickup',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'SAMP_SPECPickup',
+    'rhs_module' => 'ST_StaffRstr',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'samp_specpickup_st_staffrstr',
+  ),
 );
 ?>

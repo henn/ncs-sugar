@@ -51,8 +51,8 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'Sample_Collection_Tables',
-          'published_date' => '2011-06-24 17:52:18',
+          'published_date' => '2011-06-30 19:36:10',
           'type' => 'module',
-          'version' => '1308937938',
+          'version' => '1309462570',
           'remove_tables' => 'prompt',
           );

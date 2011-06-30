@@ -63,6 +63,25 @@ array (
           ),
           1 => '',
         ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_specpieventinfo_name',
+          ),
+          1 => 
+          array (
+            'name' => 'samp_specpinstrument_name',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_specpistaffrstr_name',
+            'label' => 'LBL_SAMP_SPECPICKUP_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
+          ),
+        ),
       ),
     ),
   ),

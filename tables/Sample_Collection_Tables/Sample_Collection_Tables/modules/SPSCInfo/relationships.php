@@ -35,5 +35,18 @@
  ********************************************************************************/
 
 $relationships = array (
+  'samp_spscinfo_ltt_address' => 
+  array (
+    'lhs_module' => 'SAMP_SPSCInfo',
+    'rhs_module' => 'LTT_Address',
+    'relationship_type' => 'one-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'samp_spscinfo_ltt_address',
+  ),
 );
 ?>

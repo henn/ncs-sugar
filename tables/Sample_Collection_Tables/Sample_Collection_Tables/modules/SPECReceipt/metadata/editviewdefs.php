@@ -89,6 +89,14 @@ array (
             'label' => 'LBL_LOWER_TRIGGER_AMBIENT ',
           ),
         ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_specrestaffrstr_name',
+            'label' => 'LBL_SAMP_SPECRECEIPT_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
+          ),
+        ),
       ),
       'lbl_editview_panel1' => 
       array (

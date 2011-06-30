@@ -35,5 +35,21 @@
  ********************************************************************************/
 
 $relationships = array (
+  'samp_samprecconf_samp_srscinfo' => 
+  array (
+    'rhs_label' => 'Study Center Sample Receipt and Shipping Center',
+    'lhs_label' => 'Sample Receipt Confirmation',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'SAMP_SampRecConf',
+    'rhs_module' => 'SAMP_SRSCInfo',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'samp_samprecconf_samp_srscinfo',
+  ),
 );
 ?>

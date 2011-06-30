@@ -68,6 +68,13 @@ array (
             'label' => 'LBL_TRH_CALIB_FAIL_REAS_OTHER',
           ),
         ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_trhmetstaffrstr_name',
+          ),
+        ),
       ),
       'lbl_editview_panel2' => 
       array (

@@ -67,6 +67,17 @@ array (
             'label' => 'LBL_GOVERNMENT_ASSET_TAG_NO',
           ),
         ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_specrespecequip_name',
+          ),
+          1 => 
+          array (
+            'name' => 'samp_specstspecequip_name',
+          ),
+        ),
       ),
     ),
   ),

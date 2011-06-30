@@ -73,6 +73,13 @@ array (
           ),
           1 => '',
         ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_samprestaffrstr_name',
+          ),
+        ),
       ),
       'lbl_detailview_panel2' => 
       array (

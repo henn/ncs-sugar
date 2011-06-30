@@ -76,6 +76,17 @@ array (
             'label' => 'LBL_STORAGE_COMMENT_OTH',
           ),
         ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_specreecstorage_name',
+          ),
+          1 => 
+          array (
+            'name' => 'samp_specststaffrstr_name',
+          ),
+        ),
       ),
       'lbl_detailview_panel1' => 
       array (

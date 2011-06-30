@@ -78,6 +78,13 @@ array (
             'label' => 'LBL_EQUIP_ACTION',
           ),
         ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_envequstaffrstr_name',
+          ),
+        ),
       ),
       'lbl_detailview_panel1' => 
       array (

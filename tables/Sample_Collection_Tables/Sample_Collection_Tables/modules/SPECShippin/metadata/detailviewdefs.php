@@ -67,6 +67,14 @@ array (
             'label' => 'LBL_SHIPMENT_TRACKING_NO',
           ),
         ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_specshstaffrstr_name',
+            'label' => 'LBL_SAMP_SPECSHIPPIN_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
+          ),
+        ),
       ),
       'lbl_detailview_panel1' => 
       array (

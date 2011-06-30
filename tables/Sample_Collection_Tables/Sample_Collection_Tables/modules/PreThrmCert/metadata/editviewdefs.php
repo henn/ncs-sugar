@@ -54,6 +54,14 @@ array (
             'label' => 'LBL_CERTIFICATION_EXPIRE_DT',
           ),
         ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_prethrstaffrstr_name',
+            'label' => 'LBL_SAMP_PRETHRMCERT_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
+          ),
+        ),
       ),
     ),
   ),

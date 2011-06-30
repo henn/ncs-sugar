@@ -87,6 +87,22 @@ array (
           ),
           1 => '',
         ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_specsh_sampship_name',
+          ),
+          1 => '',
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_sampshstaffrstr_name',
+            'label' => 'LBL_SAMP_SAMPSHIP_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
+          ),
+        ),
       ),
     ),
   ),

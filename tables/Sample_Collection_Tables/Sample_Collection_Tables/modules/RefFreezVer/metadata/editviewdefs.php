@@ -70,6 +70,13 @@ array (
             'label' => 'LBL_MAXIMUM_TEMP',
           ),
         ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_reffrestaffrstr_name',
+          ),
+        ),
       ),
     ),
   ),
