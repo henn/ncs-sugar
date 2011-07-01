@@ -3,7 +3,17 @@
 
 session_start();
 
-$sugar_root = "/var/www/sugar/";
+//$sugar_root = "/var/www/sugar/";
+
+$path_arr = explode("/", $_SERVER['REQUEST_URI']);
+$sugar_root = $_SERVER['DOCUMENT_ROOT'];
+if(!empty($path_arr))
+ $sugar_root .= "/".$path_arr[1]."/";
+else
+{
+ echo "Couldn't find sugar root";
+ die("");
+}
 
 require_once($sugar_root."ncs_framework/utils/includes/SugarUtils.php");
 require_once($sugar_root."ncs_framework/utils/includes/EventHelperFunctions.php");
