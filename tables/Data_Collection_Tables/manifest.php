@@ -48,13 +48,14 @@
           'key'=>'NCSDC',
           'author' => 'SDSU',
           'description' => 'An Event is a set of one or more scheduled or unscheduled, partially executed or completely executed data collection activities with a single subject. The subject may be a Household or a Participant. All activities in an Event have the same subject.
+
 ',
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'Data_Collection_Tables',
-          'published_date' => '2011-05-17 21:48:48',
+		  'published_date' => '2011-06-30 18:00:00',
           'type' => 'module',
-          'version' => '1305668928',
+          'version' => '2.00',
           'remove_tables' => 'prompt',
           );
 $installdefs = array (
