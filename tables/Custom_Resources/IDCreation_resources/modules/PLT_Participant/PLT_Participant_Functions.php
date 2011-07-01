@@ -7,25 +7,77 @@
 require_once("ncs_framework/utils/DateTimeClass.php");
 
 class PLT_Participant_Functions extends SugarBean {
-
-	const C3M_VISIT = '23';
-	const C6M_VISIT = '24';
-	const C9M_VISIT = '26';
-	const C12M_VISIT = '27';	
-
-	// 18 and 24 month visits are not defined yet by the Program Office.	
-	//const C18M_VISIT = '30';  
-	//const C24M_VISIT = '31';  
-
-	//Birth Visit Events
-	const CBIRTH_VISIT = '18'; 
-	const CIPI = '13';  //Pregnancy Visit 1
-	const CSPI = '15';  //Pregnancy Visit 2
+	
+	public $event_setting_arr = array();	
 		
 	function PLT_Participant_Functions(){	
 		parent::SugarBean();
+		
+		$this->event_setting_arr = $this->get_event_setting();
 	}
+	
 
+	/*
+	*	Get settings for postnatal and prenatal event infos which will be used in auto event generation code.
+	*	$get_inactive_event_setting = true: this variable is useful when we want to get all event info that were generated in the past, but 
+	*   the event setting is set to inactive at the present.
+	*/
+	function get_event_setting($event_cat = "all", $get_inactive_event_setting=false)
+	{		
+		$event_arr = array();
+	
+		$query = "select * from auto_eventinfo_setting where 1";
+		
+		if(!$get_inactive_event_setting)
+		{
+			$query .= " and active=1";
+		}
+		
+		if($event_cat == "postnatal")
+			$query = $query." and event_cat = 'postnatal'";
+		elseif($event_cat == "prenatal")
+			$query = $query." and event_cat = 'prenatal'";
+		else {}
+				
+				
+		$result = $GLOBALS['db']->query($query);
+		
+		while($row = $GLOBALS['db']->fetchByAssoc($result)) {	
+			$event_arr[$row['event_type_code']] = $row;						
+		}
+		
+		
+		return $event_arr;
+	}
+	
+	//helper function.
+	function get_prenatal_event_setting($specific_event = "", $active_only = true)
+	{
+		$setting_array = array();
+		
+		if($specific_event == "") return null;
+		
+		$query = "SELECT * FROM auto_eventinfo_setting WHERE 1 ";
+		
+		if($active_only)
+			$query .= " AND active=1";
+		
+		if($specific_event == "spi")
+			$query .= " AND spi_time_frame > 0 ";
+		elseif($specific_event == "bv")
+			$query .= " AND bv_time_frame > 0 ";
+		elseif($specific_event == "ipi")
+			$query .= " AND ipi_time_frame > 0 ";
+		else{}
+									
+		$result = $GLOBALS['db']->query($query);
+		
+		while($row = $GLOBALS['db']->fetchByAssoc($result))
+		{
+			$setting_array[] = $row;
+		}	
+		return $setting_array;	
+	}	
 	
 	/*
 	*	Return a person info associated with the participant (with ptid)
@@ -208,8 +260,7 @@ class PLT_Participant_Functions extends SugarBean {
 								$person_list[$counter]['person'] = $row2;									
 																
 								if($get_participant_records)
-								{		
-								
+								{										
 									//echo "<font size='+5' color='red'>GET PART RECORD</font><br>";
 								
 									//get participant info associated with the retrieved person if exists.							
@@ -323,25 +374,15 @@ class PLT_Participant_Functions extends SugarBean {
 												
 			$result = $GLOBALS['db']->query($query);
 			
+			//Get all event setting.
+			$ev_settings = $this->get_event_setting("all", true);
+			
 			while($row = $GLOBALS['db']->fetchByAssoc($result)) {	
 				
-				switch($row["event_type"])
-				{								
-					case $this::C3M_VISIT:
-					case $this::C6M_VISIT:
-					case $this::C9M_VISIT:
-					case $this::C12M_VISIT:
-					 					 
-					case $this::CBIRTH_VISIT:
-					case $this::CIPI:
-					case $this::CSPI:
-										 
-					 //case $this::C18M_VISIT:
-					 //case $this::C24M_VISIT:	
-					 
-						$all_visit_events[$row["event_type"]] = $row;
-						break;
-				}												
+				if(array_key_exists($row["event_type"], $ev_settings))
+				{
+					$all_visit_events[$row["event_type"]] = $row;
+				}				
 			}																		
 		}						
 		return $all_visit_events;		
@@ -353,7 +394,13 @@ class PLT_Participant_Functions extends SugarBean {
 	function get_pregnancy_visits_for_participant(&$bean)
 	{	
 		$all_visit_events = array();
-
+				
+		$IPI_arr = $this->get_prenatal_event_setting("ipi", false);
+		$SPI_arr = $this->get_prenatal_event_setting("spi", false);
+		$BV_arr = $this->get_prenatal_event_setting("bv", false);
+		
+		if(empty($IPI_arr) || empty($SPI_arr) || empty($BV_arr)) return false;
+		
 		//look at this relationship
 		//	ncsdc_eventlt_participant ==> ncsdc_eventinfo_plt_participant
 	
@@ -368,7 +415,7 @@ class PLT_Participant_Functions extends SugarBean {
 			
 			while($row = $bean->db->fetchByAssoc($result))
 			{
-				if($row['event_type'] == $this::CBIRTH_VISIT || $row['event_type'] == $this::CIPI || $row['event_type'] == $this::CSPI)
+				if($row['event_type'] == $BV_arr[0]['event_type_code'] || $row['event_type'] == $IPI_arr[0]['event_type_code'] || $row['event_type'] == $SPI_arr[0]['event_type_code'])
 				{
 					$all_visit_events[] = $row;
 				}											
@@ -376,8 +423,7 @@ class PLT_Participant_Functions extends SugarBean {
 		}	
 		return $all_visit_events;
 	}
-	
-	
+		
 	
 	//***********************************************************************************
 	//$ptid = participant_id
@@ -419,36 +465,27 @@ class PLT_Participant_Functions extends SugarBean {
 	}
 			
 	
-	//Return a list of date time (visit_window_start time and visit window end time) for all events (birth_visit, 3 month visit, 6 month visit, 9, 12, 18, and 24 ...)
+	//Return a list of date time (visit_window_start time and visit window end time) for all events (3 month visit, 6 month visit, 9, 12, 18, and 24 ...)
 	function get_visitwindow_datetime($dob)
 	{			
 		$dtc = new DateTimeClass();
 	
 		//visit window array contains the list of visit dates.
 		$vw_arr = array();			
-	
-		//9 am = 15;
-		//Birth Visit
-		//$vw_arr[$this::CBIRTH_VISIT] = array($this->add_date_to_date($dob, 10, 15), $this->add_date_to_date($dob, 10, 20));
+							
+		//Full Texts 	id 	event_type_code 	event_name 	event_cat 	event_disposition_cat 	visit_window_start_month 	visit_window_end_month
 		
-		//3 Month visit
-		$vw_arr[$this::C3M_VISIT] = array($dtc->add_month_to_date($dob,2), $dtc->add_month_to_date($dob,4));
-
-		//6 Month visit
-		$vw_arr[$this::C6M_VISIT] = array($dtc->add_month_to_date($dob,5), $dtc->add_month_to_date($dob,7));
-		
-		//9 Month visit
-		$vw_arr[$this::C9M_VISIT] = array($dtc->add_month_to_date($dob,8), $dtc->add_month_to_date($dob,10));
-
-		//12 Month visit
-		$vw_arr[$this::C12M_VISIT] = array($dtc->add_month_to_date($dob,11), $dtc->add_month_to_date($dob,15));
-
-		//18 Month visit
-		//$vw_arr[$this::C18M_VISIT] = array($dtc->add_month_to_date($dob,16, 1), $dtc->add_month_to_date($dob,22, 17));
-				
-		//24 Month visit
-		//$vw_arr[$this::C24M_VISIT] = array($dtc->add_month_to_date($dob,23, 1), $dtc->add_month_to_date($dob,28, 17));
-				
+		//Get all visit window date time if there 
+		if(!empty($this->event_setting_arr))
+		{									
+			foreach($this->event_setting_arr as $row)
+			{			
+				if($row['event_cat'] == "postnatal" && !empty($row['visit_window_start_month']) && !empty($row['visit_window_end_month']))
+				{
+					$vw_arr[$row['event_type_code']] = array($dtc->add_month_to_date($dob, $row['visit_window_start_month']), $dtc->add_month_to_date($dob,$row['visit_window_end_month']));
+				}				
+			}		
+		}						
 		return $vw_arr;
 	}
 			

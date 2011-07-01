@@ -7,20 +7,18 @@
 
 if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 
-
 class PersonSummary{
 
 	function person_summary(&$bean, $event, $arguments)
 	{			
 		require_once("custom/modules/PLT_Participant/PLT_Participant_Functions.php");
-			
-		$ppf = new PLT_Participant_Functions();			
+		
+		$ppf = new 	PLT_Participant_Functions();
 		$ppl = $ppf->get_related_person_list_info_from_participant($bean);
 				
 		$this_participant_html = "";
 		$other_persons_html = "";
-				
-		
+						
 		if(!empty($ppl))
 		{
 			for($i = 0; $i < count($ppl); $i++)
