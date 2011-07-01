@@ -35,13 +35,13 @@
  ********************************************************************************/
 
 $relationships = array (
-  'samp_specpickup_samp_specspscinfo' => 
+  'samp_specpickup_samp_spscinfo' => 
   array (
     'rhs_label' => 'Study Center Sample Processing and Shipping Center',
     'lhs_label' => 'Specimen Pickup',
     'rhs_subpanel' => 'default',
     'lhs_module' => 'SAMP_SPECPickup',
-    'rhs_module' => 'SAMP_SPECSPSCInfo',
+    'rhs_module' => 'SAMP_SPSCInfo',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -49,7 +49,7 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'samp_specpickup_samp_specspscinfo',
+    'relationship_name' => 'samp_specpickup_samp_spscinfo',
   ),
   'samp_specpickup_ncsdc_eventinfo' => 
   array (

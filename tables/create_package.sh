@@ -13,7 +13,8 @@
 # Format should be: $DIRNAME/{manifest.php,$DIRNAME, ...}
 MODULE_DIRS="Locating_Tracing_Tables Specific_Code_Tables\
 	Data_Collection_Tables Organization_Level_Tables Staffing_Tables\
-	Geographic_Tables Person_Level_Tables Custom_Resources"
+	Geographic_Tables Person_Level_Tables Custom_Resources\
+	Sample_Collection_Tables"
 
 DESTDIR="output"
 HELPER_DIR="templates"
