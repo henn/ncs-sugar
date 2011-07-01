@@ -26,6 +26,26 @@ In order to use Event Generation Scheduler Run the following SQL script to creat
 
 
 
+-- --------------------------------------------------------
+--
+-- Table structure for table `auto_event_log`
+--
+CREATE TABLE IF NOT EXISTS `auto_event_log` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `event_guid` varchar(36) DEFAULT NULL,
+  `date_created` datetime NOT NULL,
+  `participant_id` varchar(36) NOT NULL,
+  PRIMARY KEY (`id`)
+) ;
+
+-- --------------------------------------------------------
+--
+-- Dumping data for table `schedulers`  
+-- Setting up scheduled tasks for event generation code.
+--
+INSERT INTO `schedulers` (`id`, `deleted`, `date_entered`, `date_modified`, `created_by`, `modified_user_id`, `name`, `job`, `date_time_start`, `date_time_end`, `job_interval`, `time_from`, `time_to`, `last_run`, `status`, `catch_up`) VALUES
+('6a0d941a-9f73-a27b-9500-4ddfe92efd26', 0, now(), now(), '1', '1', 'Auto Generate Postnatal Event Info', 'function::autoGenerateEventInfo', '2005-01-01 07:00:00', NULL, '*/30::*::*::*::*', NULL, NULL, '2011-06-02 18:57:00', 'Active', 1),
+('ddb9861c-2b7e-fed9-8747-4ddfe941e8c8', 0, now(), now(), '1', '1', 'Auto Generate Prenatal Event Info', 'function::autoGeneratePIEventInfo', '2005-01-01 07:00:00', NULL, '*/30::*::*::*::*', NULL, NULL, '2011-06-02 18:58:00', 'Active', 1);
 
 -- --------------------------------------------------------
 
@@ -62,5 +82,5 @@ INSERT INTO `auto_eventinfo_setting` (`event_type_code`, `event_name`, `event_ca
 ('26', '9 Month Visit', 'postnatal', '1', 8, 10, 0, 0, 0, '2011-06-24 03:15:53', '2011-06-30 17:26:07', '', '', 1),
 ('27', '12 Month Visit', 'postnatal', '6', 11, 18, 0, 0, 0, '2011-06-24 03:15:53', '2011-06-30 19:50:02', '', '', 1),
 ('15', 'Pregnancy Visit 2/SPI', 'prenatal', '2', 0, 0, 60, 0, 0, '2011-06-24 03:15:53', '2011-06-30 18:38:08', '', '', 1),
-('18', 'Birth Visit', 'prenatal', '1', 0, 0, 0, 45, 0, '2011-06-24 03:15:53', '2011-06-30 18:38:09', '', '', 1),
+('18', 'Birth Visit', 'prenatal', '1', 0, 0, 0, 30, 0, '2011-06-24 03:15:53', '2011-06-30 18:38:09', '', '', 1),
 ('13', 'Pregnancy Visit 1', 'prenatal', '1', 0, 0, 0, 0, 1, '2011-06-30 00:00:00', '2011-06-30 00:00:00', '', '', 1);
