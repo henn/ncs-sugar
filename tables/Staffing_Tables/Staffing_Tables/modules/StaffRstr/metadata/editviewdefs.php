@@ -32,7 +32,7 @@ array (
           array (
             'name' => 'name',
             'label' => 'Name (STAFF_ID):',
-            'customCode' => '<strong>{$NAME}</strong><name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'customCode' => '<input type= "text" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 
           array (

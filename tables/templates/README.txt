@@ -10,6 +10,7 @@ The steps to deploy this instance are:
 		5) Person Level Tables
 		6) Organization Level Tables
 		7) Data Collection Tables
+		8) Sample Collection Tables
  
 
 	3) Install Custom_Resources
