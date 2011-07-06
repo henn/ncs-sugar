@@ -107,7 +107,7 @@ $vardefs = array (
       'help' => '',
       'duplicate_merge' => 'disabled',
       'duplicate_merge_dom_value' => '0',
-      'audited' => false,
+      'audited' => true,
       'reportable' => true,
       'size' => '20',
     ),
