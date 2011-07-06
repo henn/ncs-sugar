@@ -88,6 +88,12 @@ $installdefs = array (
 	'to' => 'custom/service',	
 	),
 ####End copy of XMLCreation_resources####
+####Begin copy of Home to the directory 'custom/Home####
+	array (
+	'from' => '<basepath>/Home',
+	'to' => 'custom/modules/Home',	
+	),
+####End copy of Home Customisations ####
 ####################################
 #                                  #
 #	   ALL GT Geographic_Tables    #
