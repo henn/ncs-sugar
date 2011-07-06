@@ -1,4 +1,5 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -34,54 +35,26 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$relationships = array (
-  'samp_drfthermver_samp_srscinfo' => 
-  array (
-    'rhs_label' => 'Study Center Sample Receipt and Shipping Center',
-    'lhs_label' => 'Digital Refrigerator/Freezer Thermometer Verification',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'SAMP_DRFThermVer',
-    'rhs_module' => 'SAMP_SRSCInfo',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'samp_drfthermver_samp_srscinfo',
-  ),
-  'samp_drfthermver_samp_enequip' => 
-  array (
-    'rhs_label' => 'Environmental Equipment Information',
-    'lhs_label' => 'Digital Refrigerator/Freezer Thermometer Verification',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'SAMP_DRFThermVer',
-    'rhs_module' => 'SAMP_EnEquip',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'samp_drfthermver_samp_enequip',
-  ),
-  'samp_drfthermver_st_staffrstr' => 
-  array (
-    'rhs_label' => 'Staff Information',
-    'lhs_label' => 'Digital Refrigerator/Freezer Thermometer Verification',
-    'lhs_subpanel' => 'default',
-    'lhs_module' => 'SAMP_DRFThermVer',
-    'rhs_module' => 'ST_StaffRstr',
-    'relationship_type' => 'many-to-one',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'samp_drfthermver_st_staffrstr',
-  ),
-);
-?>
+
+
+
+global $current_user;
+
+$dashletData['SAMP_RecConfDashlet']['searchFields'] = array('date_entered'     => array('default' => ''),
+                                                          'date_modified'    => array('default' => ''),
+                                                          'assigned_user_id' => array('type'    => 'assigned_user_name', 
+                                                                                      'default' => $current_user->name));
+$dashletData['SAMP_RecConfDashlet']['columns'] =  array(   'name' => array('width'   => '40', 
+                                                                      'label'   => 'LBL_LIST_NAME',
+                                                                      'link'    => true,
+                                                                      'default' => true), 
+                                                      'date_entered' => array('width'   => '15', 
+                                                                              'label'   => 'LBL_DATE_ENTERED',
+                                                                              'default' => true),
+                                                      'date_modified' => array('width'   => '15', 
+                                                                              'label'   => 'LBL_DATE_MODIFIED'),    
+                                                      'created_by' => array('width'   => '8', 
+                                                                            'label'   => 'LBL_CREATED'),
+                                                      'assigned_user_name' => array('width'   => '8', 
+                                                                                     'label'   => 'LBL_LIST_ASSIGNED_USER'),
+                                               );

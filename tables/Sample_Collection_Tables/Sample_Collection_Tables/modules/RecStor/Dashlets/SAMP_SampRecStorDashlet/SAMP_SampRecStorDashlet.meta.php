@@ -1,4 +1,5 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -34,54 +35,18 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$relationships = array (
-  'samp_drfthermver_samp_srscinfo' => 
-  array (
-    'rhs_label' => 'Study Center Sample Receipt and Shipping Center',
-    'lhs_label' => 'Digital Refrigerator/Freezer Thermometer Verification',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'SAMP_DRFThermVer',
-    'rhs_module' => 'SAMP_SRSCInfo',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'samp_drfthermver_samp_srscinfo',
-  ),
-  'samp_drfthermver_samp_enequip' => 
-  array (
-    'rhs_label' => 'Environmental Equipment Information',
-    'lhs_label' => 'Digital Refrigerator/Freezer Thermometer Verification',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'SAMP_DRFThermVer',
-    'rhs_module' => 'SAMP_EnEquip',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'samp_drfthermver_samp_enequip',
-  ),
-  'samp_drfthermver_st_staffrstr' => 
-  array (
-    'rhs_label' => 'Staff Information',
-    'lhs_label' => 'Digital Refrigerator/Freezer Thermometer Verification',
-    'lhs_subpanel' => 'default',
-    'lhs_module' => 'SAMP_DRFThermVer',
-    'rhs_module' => 'ST_StaffRstr',
-    'relationship_type' => 'many-to-one',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'samp_drfthermver_st_staffrstr',
-  ),
-);
-?>
+/*********************************************************************************
+
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+ 
+global $app_strings;
+
+$dashletMeta['SAMP_RecStorDashlet'] = array('module'		=> 'SAMP_RecStor',
+										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'SAMP_RecStor'), 
+                                          'description' => 'A customizable view into SAMP_RecStor',
+                                          'icon'        => 'icon_SAMP_RecStor_32.gif',
+                                          'category'    => 'Module Views');

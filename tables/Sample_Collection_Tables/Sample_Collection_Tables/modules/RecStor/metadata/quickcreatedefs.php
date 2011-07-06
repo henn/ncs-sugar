@@ -34,54 +34,27 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-$relationships = array (
-  'samp_drfthermver_samp_srscinfo' => 
+$module_name = 'SAMP_RecStor';
+$viewdefs[$module_name]['QuickCreate'] = array(
+    'templateMeta' => array('maxColumns' => '2', 
+                            'widths' => array(
+                                            array('label' => '10', 'field' => '30'), 
+                                            array('label' => '10', 'field' => '30')
+                                            ),                                                                                                                                    
+                                            ),
+                                            
+                                            
+ 'panels' =>array (
+  'default' => 
   array (
-    'rhs_label' => 'Study Center Sample Receipt and Shipping Center',
-    'lhs_label' => 'Digital Refrigerator/Freezer Thermometer Verification',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'SAMP_DRFThermVer',
-    'rhs_module' => 'SAMP_SRSCInfo',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'samp_drfthermver_samp_srscinfo',
+    
+    array (
+      'name',
+      'assigned_user_name',
+    ),
   ),
-  'samp_drfthermver_samp_enequip' => 
-  array (
-    'rhs_label' => 'Environmental Equipment Information',
-    'lhs_label' => 'Digital Refrigerator/Freezer Thermometer Verification',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'SAMP_DRFThermVer',
-    'rhs_module' => 'SAMP_EnEquip',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'samp_drfthermver_samp_enequip',
-  ),
-  'samp_drfthermver_st_staffrstr' => 
-  array (
-    'rhs_label' => 'Staff Information',
-    'lhs_label' => 'Digital Refrigerator/Freezer Thermometer Verification',
-    'lhs_subpanel' => 'default',
-    'lhs_module' => 'SAMP_DRFThermVer',
-    'rhs_module' => 'ST_StaffRstr',
-    'relationship_type' => 'many-to-one',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'samp_drfthermver_st_staffrstr',
-  ),
+                                                    
+),
+                        
 );
 ?>

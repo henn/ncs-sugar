@@ -35,12 +35,12 @@
  ********************************************************************************/
 
 $relationships = array (
-  'samp_drfthermver_samp_srscinfo' => 
+  'samp_enlogequip_samp_srscinfo' => 
   array (
     'rhs_label' => 'Study Center Sample Receipt and Shipping Center',
-    'lhs_label' => 'Digital Refrigerator/Freezer Thermometer Verification',
+    'lhs_label' => 'Environmental Equipment Problem Log',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'SAMP_DRFThermVer',
+    'lhs_module' => 'SAMP_EnLogEquip',
     'rhs_module' => 'SAMP_SRSCInfo',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
@@ -49,14 +49,14 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'samp_drfthermver_samp_srscinfo',
+    'relationship_name' => 'samp_enlogequip_samp_srscinfo',
   ),
-  'samp_drfthermver_samp_enequip' => 
+  'samp_enlogequip_samp_enequip' => 
   array (
     'rhs_label' => 'Environmental Equipment Information',
-    'lhs_label' => 'Digital Refrigerator/Freezer Thermometer Verification',
+    'lhs_label' => 'Environmental Equipment Problem Log',
     'rhs_subpanel' => 'default',
-    'lhs_module' => 'SAMP_DRFThermVer',
+    'lhs_module' => 'SAMP_EnLogEquip',
     'rhs_module' => 'SAMP_EnEquip',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
@@ -65,14 +65,14 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'samp_drfthermver_samp_enequip',
+    'relationship_name' => 'samp_enlogequip_samp_enequip',
   ),
-  'samp_drfthermver_st_staffrstr' => 
+  'samp_enlogequip_st_staffrstr' => 
   array (
     'rhs_label' => 'Staff Information',
-    'lhs_label' => 'Digital Refrigerator/Freezer Thermometer Verification',
+    'lhs_label' => 'Environmental Equipment Problem Log',
     'lhs_subpanel' => 'default',
-    'lhs_module' => 'SAMP_DRFThermVer',
+    'lhs_module' => 'SAMP_EnLogEquip',
     'rhs_module' => 'ST_StaffRstr',
     'relationship_type' => 'many-to-one',
     'readonly' => false,
@@ -81,7 +81,7 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'samp_drfthermver_st_staffrstr',
+    'relationship_name' => 'samp_enlogequip_st_staffrstr',
   ),
 );
 ?>

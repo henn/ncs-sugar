@@ -51,13 +51,13 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'samp_prethrmcert_samp_srscinfo',
   ),
-  'samp_prethrmcert_samp_envequip' => 
+  'samp_prethrmcert_samp_enequip' => 
   array (
     'rhs_label' => 'Environmental Equipment Information',
     'lhs_label' => 'Precision Thermometer Certification',
     'rhs_subpanel' => 'default',
     'lhs_module' => 'SAMP_PreThrmCert',
-    'rhs_module' => 'SAMP_ENVEquip',
+    'rhs_module' => 'SAMP_EnEquip',
     'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
@@ -65,7 +65,7 @@ $relationships = array (
     'for_activities' => false,
     'is_custom' => false,
     'from_studio' => false,
-    'relationship_name' => 'samp_prethrmcert_samp_envequip',
+    'relationship_name' => 'samp_prethrmcert_samp_enequip',
   ),
   'samp_prethrmcert_st_staffrstr' => 
   array (
