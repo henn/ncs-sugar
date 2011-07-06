@@ -12,24 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'outreach_race2 ' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_OUTREACH_RACE2 ',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'outreach_race2 ',
-      ),
-      'outreach_race_oth' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_OUTREACH_RACE_OTH',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'outreach_race_oth',
-      ),
       'current_user_only' => 
       array (
         'name' => 'current_user_only',
@@ -47,15 +29,15 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'outreach_race2 ' => 
+      'outreach_race2' => 
       array (
         'type' => 'enum',
         'default' => true,
         'studio' => 'visible',
-        'label' => 'LBL_OUTREACH_RACE2 ',
+        'label' => 'LBL_OUTREACH_RACE2',
         'sortable' => false,
         'width' => '10%',
-        'name' => 'outreach_race2 ',
+        'name' => 'outreach_race2',
       ),
       'outreach_race_oth' => 
       array (

@@ -35,9 +35,9 @@ array (
         array (
           0 => 
           array (
-            'name' => 'outreach_race2 ',
+            'name' => 'outreach_race2',
             'studio' => 'visible',
-            'label' => 'LBL_OUTREACH_RACE2 ',
+            'label' => 'LBL_OUTREACH_RACE2',
           ),
           1 => 
           array (

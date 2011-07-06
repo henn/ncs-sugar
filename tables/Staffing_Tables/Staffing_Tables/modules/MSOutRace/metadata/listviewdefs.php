@@ -14,7 +14,7 @@ array (
     'type' => 'enum',
     'default' => true,
     'studio' => 'visible',
-    'label' => 'LBL_OUTREACH_RACE2 ',
+    'label' => 'LBL_OUTREACH_RACE2',
     'sortable' => false,
     'width' => '10%',
   ),
