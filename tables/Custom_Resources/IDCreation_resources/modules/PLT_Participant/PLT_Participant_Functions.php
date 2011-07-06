@@ -26,7 +26,7 @@ class PLT_Participant_Functions extends SugarBean {
 	{		
 		$event_arr = array();
 	
-		$query = "select * from auto_eventinfo_setting where 1";
+		$query = "SELECT * FROM auto_eventinfo_setting WHERE 1=1";
 		
 		if(!$get_inactive_event_setting)
 		{
@@ -57,7 +57,7 @@ class PLT_Participant_Functions extends SugarBean {
 		
 		if($specific_event == "") return null;
 		
-		$query = "SELECT * FROM auto_eventinfo_setting WHERE 1 ";
+		$query = "SELECT * FROM auto_eventinfo_setting WHERE 1=1 ";
 		
 		if($active_only)
 			$query .= " AND active=1";

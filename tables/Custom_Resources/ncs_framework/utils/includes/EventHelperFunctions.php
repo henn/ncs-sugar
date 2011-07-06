@@ -10,7 +10,7 @@ function get_event_setting_array($SU, $event_type = "all", $active_only = true)
 {
 	$setting_array = array();
 	
-	$query = "SELECT * FROM auto_eventinfo_setting WHERE 1 ";
+	$query = "SELECT * FROM auto_eventinfo_setting WHERE 1=1 ";
 	
 	if($active_only)
 		$query .= " AND active=1";
@@ -36,7 +36,7 @@ function get_prenatal_event_setting($SU, $specific_event = "", $active_only = tr
 	
 	if($specific_event == "") return null;
 	
-	$query = "SELECT * FROM auto_eventinfo_setting WHERE 1 ";
+	$query = "SELECT * FROM auto_eventinfo_setting WHERE 1=1 ";
 	
 	if($active_only)
 		$query .= " AND active=1";
