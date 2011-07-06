@@ -158,7 +158,6 @@ array (
             'label' => 'LBL_EVENT_COMMENT',
           ),
         ),
-						
         11 => 
         array (
           0 => 
@@ -174,10 +173,7 @@ array (
         ),
         12 => 
         array (
-          0 => 
-          array (
-            'name' => 'st_otrchstaeventinfo_name',
-          ),
+          0 => '',
         ),
         13 => 
         array (
@@ -190,6 +186,13 @@ array (
           array (
             'name' => 'visit_window_endtime_c',
             'label' => 'LBL_VISIT_WINDOW_ENDDATE',
+          ),
+        ),
+        14 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_eventtrchstaff_name',
           ),
         ),
       ),

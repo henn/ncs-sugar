@@ -198,10 +198,7 @@ array (
             'name' => 'st_staffrstt_wkoeact_name',
             'label' => 'LBL_ST_STAFFRSTR_ST_WKOEACT_FROM_ST_STAFFRSTR_TITLE',
           ),
-          1 => 
-          array (
-            'name' => 'st_wkoeact__incident_name',
-          ),
+          1 => '',
         ),
         15 => 
         array (

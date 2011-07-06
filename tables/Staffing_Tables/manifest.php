@@ -38,7 +38,7 @@
     $manifest = array (
          'acceptable_sugar_versions' => 
           array (
-            '6.1.4'
+            '6.1.6'
           ),
           'acceptable_sugar_flavors' =>
           array(
@@ -50,10 +50,10 @@
           'description' => '',
           'icon' => '',
           'is_uninstallable' => true,
-          'name' => 'Staffing_Tables',
-		  'published_date' => '2011-06-30 18:00:00',
+          'name' => 'project_Staffing_Tables',
+          'published_date' => '2011-07-05 22:32:51',
           'type' => 'module',
-          'version' => '2.00',
+          'version' => '1309905171',
           'remove_tables' => 'prompt',
           );
 $installdefs = array (

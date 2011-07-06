@@ -65,14 +65,18 @@ array (
         ),
         3 => 
         array (
-          0 => 
-          array (
-            'name' => 'st_otrchstaeventinfo_name',
-          ),
+          0 => '',
           1 => 
           array (
             'name' => 'staff_id',
             'label' => 'LBL_STAFF_ID',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_eventtrchstaff_name',
           ),
         ),
       ),

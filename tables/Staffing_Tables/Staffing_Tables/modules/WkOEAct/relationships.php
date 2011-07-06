@@ -35,21 +35,5 @@
  ********************************************************************************/
 
 $relationships = array (
-  'st_wkoeact_ncsdc_incident' => 
-  array (
-    'rhs_label' => 'Incident',
-    'lhs_label' => 'Weekly Outreach ',
-    'lhs_subpanel' => 'default',
-    'lhs_module' => 'ST_WkOEAct',
-    'rhs_module' => 'NCSDC_Incident',
-    'relationship_type' => 'many-to-one',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'st_wkoeact_ncsdc_incident',
-  ),
 );
 ?>

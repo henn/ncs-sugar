@@ -170,10 +170,7 @@ array (
         ),
         13 => 
         array (
-          0 => 
-          array (
-            'name' => 'st_otrchstaeventinfo_name',
-          ),
+          0 => '',
         ),
         14 => 
         array (
@@ -186,6 +183,13 @@ array (
           array (
             'name' => 'visit_window_endtime_c',
             'label' => 'LBL_VISIT_WINDOW_ENDDATE',
+          ),
+        ),
+        15 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_eventtrchstaff_name',
           ),
         ),
       ),

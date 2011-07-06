@@ -36,18 +36,18 @@
 
 
 $app_list_strings['moduleList']['ST_WkOEAct'] = 'Weekly Outreach & Engagement Activities';
-$app_list_strings['moduleList']['ST_MSOutTarg'] = 'Outreach Target (Multi-Select)';
-$app_list_strings['moduleList']['ST_MSOutRace'] = 'Outreach Race (Multi-Select)';
-$app_list_strings['moduleList']['ST_MSOutLang2'] = 'Outreach Language (Multi-Select)';
-$app_list_strings['moduleList']['ST_MSOutEval'] = 'Outreach Evaluation (Multi-Select)';
-$app_list_strings['moduleList']['ST_OtrchStaff'] = 'Staff Participation Outreach Events';
-$app_list_strings['moduleList']['ST_StfWkExpns'] = 'Weekly Staff Expenses';
 $app_list_strings['moduleList']['ST_StfExpMgTsk'] = 'Weekly Staff Expense Management Tasks';
-$app_list_strings['moduleList']['ST_StfExpDCTsk'] = 'Weekly Staff Expense Data Collection Tasks';
+$app_list_strings['moduleList']['ST_StfWkExpns'] = 'Weekly Staff Expenses';
+$app_list_strings['moduleList']['ST_MSOutRace'] = 'Outreach Race (Multi-Select)';
 $app_list_strings['moduleList']['ST_StaffRstr'] = 'Staff Roster';
-$app_list_strings['moduleList']['ST_StfLang'] = 'Staff Language';
-$app_list_strings['moduleList']['ST_StfCrtTrn'] = 'Staff Trainings and Certifications';
 $app_list_strings['moduleList']['ST_StfVldtn'] = 'Staff Validation';
+$app_list_strings['moduleList']['ST_OtrchStaff'] = 'Staff Participation Outreach Events';
+$app_list_strings['moduleList']['ST_StfCrtTrn'] = 'Staff Trainings and Certifications';
+$app_list_strings['moduleList']['ST_StfExpDCTsk'] = 'Weekly Staff Expense Data Collection Tasks';
+$app_list_strings['moduleList']['ST_StfLang'] = 'Staff Language';
+$app_list_strings['moduleList']['ST_MSOutTarg'] = 'Outreach Target (Multi-Select)';
+$app_list_strings['moduleList']['ST_MSOutEval'] = 'Outreach Evaluation (Multi-Select)';
+$app_list_strings['moduleList']['ST_MSOutLang2'] = 'Outreach Language (Multi-Select)';
 $app_list_strings['LANGUAGE_CL2']['1'] = 'English';
 $app_list_strings['LANGUAGE_CL2']['2'] = 'Spanish';
 $app_list_strings['LANGUAGE_CL2']['3'] = 'Arabic';

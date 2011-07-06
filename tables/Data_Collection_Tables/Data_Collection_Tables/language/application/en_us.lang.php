@@ -35,18 +35,18 @@
  ********************************************************************************/
 
 
-$app_list_strings['moduleList']['NCSDC_CntctInfo'] = 'Contact Information';
-$app_list_strings['moduleList']['NCSDC_CntLnk'] = 'Contact Linking';
 $app_list_strings['moduleList']['NCSDC_EventInfo'] = 'Event Information';
 $app_list_strings['moduleList']['NCSDC_Instrument'] = 'Instrument Information';
-$app_list_strings['moduleList']['NCSDC_Incident'] = 'Incident';
+$app_list_strings['moduleList']['NCSDC_CntLnk'] = 'Contact Linking';
 $app_list_strings['moduleList']['NCSDC_IncMedMultS'] = 'Incident Media (Multi-Select)';
-$app_list_strings['moduleList']['NCSDC_IncUnatMltS'] = 'Incident Unanticipated (Multi-Select)';
-$app_list_strings['moduleList']['NCSDC_NonInterRpt'] = 'Non Interview Report';
-$app_list_strings['moduleList']['NCSDC_NIRDUTpMltS'] = 'NIR DU Type (Multi Select)';
 $app_list_strings['moduleList']['NCSDC_NIRNAccMltS'] = 'NIR No Access (Multi-Select)';
+$app_list_strings['moduleList']['NCSDC_IncUnatMltS'] = 'Incident Unanticipated (Multi-Select)';
 $app_list_strings['moduleList']['NCSDC_NIRRfsMltS'] = 'NIR Refusal (Multi-Select)';
+$app_list_strings['moduleList']['NCSDC_CntctInfo'] = 'Contact Information';
+$app_list_strings['moduleList']['NCSDC_NonInterRpt'] = 'Non Interview Report';
+$app_list_strings['moduleList']['NCSDC_Incident'] = 'Incident';
 $app_list_strings['moduleList']['NCSDC_NIntRptVcnt'] = 'NIR Vacant (Multi-Select)';
+$app_list_strings['moduleList']['NCSDC_NIRDUTpMltS'] = 'NIR DU Type (Multi Select)';
 $app_list_strings['DU_NIR_REASON_CL1']['1'] = 'Vacant Dwelling Unit';
 $app_list_strings['DU_NIR_REASON_CL1']['2'] = 'Unable to Access';
 $app_list_strings['DU_NIR_REASON_CL1']['3'] = 'Demolished/Condemned Dwelling Unit';

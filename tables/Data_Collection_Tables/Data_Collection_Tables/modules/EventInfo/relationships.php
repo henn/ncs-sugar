@@ -96,5 +96,18 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'ncsdc_eventinfo_plt_participant',
   ),
+  'ncsdc_eventinfo_st_otrchstaff' => 
+  array (
+    'lhs_module' => 'NCSDC_EventInfo',
+    'rhs_module' => 'ST_OtrchStaff',
+    'relationship_type' => 'one-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'ncsdc_eventinfo_st_otrchstaff',
+  ),
 );
 ?>

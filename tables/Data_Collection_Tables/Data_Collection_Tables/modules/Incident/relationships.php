@@ -131,5 +131,21 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'ncsdc_incident_plt_person',
   ),
+  'ncsdc_incident_st_wkoeact' => 
+  array (
+    'rhs_label' => 'Weekly Outreach & Engagement Activities',
+    'lhs_label' => 'Incident',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'NCSDC_Incident',
+    'rhs_module' => 'ST_WkOEAct',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'ncsdc_incident_st_wkoeact',
+  ),
 );
 ?>
