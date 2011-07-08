@@ -50,7 +50,9 @@ class PLT_Participant_Functions extends SugarBean {
 		return $event_arr;
 	}
 	
-	//helper function.
+	/*
+	*	get a IPI, SPI, Birth Visit event setting.
+	*/
 	function get_prenatal_event_setting($specific_event = "", $active_only = true)
 	{
 		$setting_array = array();
@@ -306,10 +308,7 @@ class PLT_Participant_Functions extends SugarBean {
 		$load_result = $person_bean->load_relationship('plt_lkprsprcpt_plt_person');
 		
 		if($load_result)
-		{	
-			//debug
-			//echo "load rel OK";		
-		
+		{			
 			$query_array = $person_bean->plt_lkprsprcpt_plt_person->getQuery($return_as_array=true);
 			$query_array['select'] = "SELECT plt_lkprsprtcpt.*";	
 			$query = implode(" ", $query_array);						
@@ -320,9 +319,6 @@ class PLT_Participant_Functions extends SugarBean {
 				if($row['relation'] == "1")
 				{
 					$linkage_id = $row['id'];
-					
-					//debug
-					//echo "<BR>".$linkage_id."<BR>";
 					
 					break;
 				}
@@ -483,6 +479,9 @@ class PLT_Participant_Functions extends SugarBean {
 				if($row['event_cat'] == "postnatal" && !empty($row['visit_window_start_month']) && !empty($row['visit_window_end_month']))
 				{
 					$vw_arr[$row['event_type_code']] = array($dtc->add_month_to_date($dob, $row['visit_window_start_month']), $dtc->add_month_to_date($dob,$row['visit_window_end_month']));
+					
+					//event disposition code.
+					$vw_arr[$row['event_type_code']]['event_disposition_cat'] = $row['event_disposition_cat'];					
 				}				
 			}		
 		}						

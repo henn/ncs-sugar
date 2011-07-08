@@ -22,15 +22,14 @@
 			$ptInfo = $ppf->get_participantinfo_from_person($bean);										
 									
 			//If this participant/person is a NCS Child (p_type = 6), then auto-generate Birth Visit Event info.
-			if(is_array($ptInfo) && $ptInfo["p_type"] == 6)
-			{		
-				//parent participant ids.
-			
+			if(is_array($ptInfo) && $ptInfo["p_type"] == "6")
+			{						
+				//parent participant ids.			
 				if($bean->person_dob != "")				
 				{								
 					//Check to see if visit windows were generated. If not, auto-generate event info.	
 					$all_visit_events = $ppf->get_all_visitwindow_events_for_participant($ptInfo["id"]);																
-												
+															
 					if(!empty($all_visit_events) && count($all_visit_events) > 0)
 					{
 						//echo "<font color='red' size='+5'>Found events. No need to generate visit events for participant [".$ptInfo['id']."]</font>";
@@ -38,7 +37,7 @@
 					else
 					{								
 						$vw_arr = $ppf->get_visitwindow_datetime($bean->person_dob);						
-																				
+																			
 						if(!empty($vw_arr) && count($vw_arr))
 						{												
 							$visit_keys = array_keys($vw_arr);
@@ -52,11 +51,11 @@
 								
 								$assigned_user_id = $ptInfo["assigned_user_id"];
 								$visit_window_starttime = $vw_arr[$visit_keys[$i]][0];
-								$visit_window_endtime = $vw_arr[$visit_keys[$i]][1];;	
-								$event_disp_cat = "2";    //Pregnancy Screening Events
+								$visit_window_endtime = $vw_arr[$visit_keys[$i]][1];								
+								$event_disp_cat = $vw_arr[$event_type]['event_disposition_cat'];
 																	
 								//Log in auto_event_log file.
-								$event_id = $ppf->insert_event_info($event_type, $event_disp_cat, $ptid, $assigned_user_id, $visit_window_starttime, $visit_window_endtime);																							
+								$event_id = $ppf->insert_event_info($event_type, $event_disp_cat, $ptid, $assigned_user_id, $visit_window_starttime, $visit_window_endtime, true);																							
 							}
 						}												
 					}																		
@@ -69,8 +68,7 @@
 		/*
 		* 	Need to figure out household information and schedule the interview with the right person/participants (not with a NCS Child)
 		*   Populate IPI, SPI, Birth visit/Birth Interview. This function is called in logic_hooks.php under PTL_PrtcptCnsnt module.
-		*/
-				
+		*/				
 		function populate_pregnancy_interviews(&$bean, $event, $arguments)		
 		{			
 			//*****************************************************************************
@@ -79,9 +77,17 @@
 		
 			require_once("custom/modules/PLT_Participant/PLT_Participant_Functions.php");
 			require_once("ncs_framework/utils/DateTimeClass.php");
-												
-			$dtc = new DateTimeClass();					
+
+			$dtc = new DateTimeClass();
+				
 			$ppf = new PLT_Participant_Functions();
+						
+			$IPI_arr = $ppf->get_prenatal_event_setting("ipi", false);
+			$SPI_arr = $ppf->get_prenatal_event_setting("spi", false);
+			$BV_arr = $ppf->get_prenatal_event_setting("bv", false);						
+				
+							
+			if(empty($IPI_arr) || empty($SPI_arr) || empty($BV_arr)) return false;		
 						
 			//For multiple Pregnancies (i.e There are multiple PPG records associated with this participant)
 			// + A complete pregnancy should have a) general consent b) consent for child participant
@@ -90,7 +96,8 @@
 			
 			//If the Participant Consent is "Genereal Consent", Consent Withdraw is NO, Consent Given = YES			
 			if($bean->consent_type == "1" && $bean->consent_withdraw != "1" && $bean->consent_given == "1" && !empty($bean->field_name_map['plt_particitcptcnsnt_name']))
-			{																
+			{					
+			
 				// relationship name in array is = plt_particilt_prtcptcnsnt ->		plt_participant_plt_prtcptcnsnt  (in db)		
 				$participant_field_name = $bean->field_name_map['plt_particitcptcnsnt_name']['id_name'];				
 				$ptid = $bean->$participant_field_name;
@@ -101,7 +108,7 @@
 				
 				//$ppg_details = $ppf->get_participant_ppg_details($pt);
 				$pcst = $ppf->get_participant_consents($pt);		
-																
+										
 				if($ptid != "")
 				{															
 					//get person info associated with this participant.
@@ -110,7 +117,6 @@
 					//First the participant has to be female and 'Pregnant eligible'													
 					if(is_array($person_info) && $person_info["sex"] == "2" && $pt->p_type == "3")
 					{		
-
 						//Get PPG records. Top record is the current ppg.
 						$ppgs = $ppf->get_participant_ppg_details($pt);
 		
@@ -198,10 +204,12 @@
 						if($num_of_ipi < $num_of_pregnancies)
 						{
 							//Generate IPI event 
-																																													
-							$event_type = constant("PLT_Participant_Functions::CIPI");							
+							
+							$event_type = $IPI_arr[0]['event_type_code'];
 							$assigned_user_id = $pinfo["assigned_user_id"];
-							$event_disp_cat = "3";  //
+							//$event_disp_cat = "3";  //
+							
+							$event_disp_cat = $IPI_arr[0]['event_disposition_cat'];
 							
 							//Visit window starttime = current date time.
 							$visit_window_starttime = date("Y-m-d");
@@ -222,16 +230,21 @@
 							if($num_of_completed_ipi == $num_of_pregnancies)
 							{
 								//Generate SPI
-								$event_type = constant("PLT_Participant_Functions::CSPI");							
+								//$event_type = constant("PLT_Participant_Functions::CSPI");							
+								$event_type = $SPI_arr[0]['event_type_code'];
 								$assigned_user_id = $pinfo["assigned_user_id"];
 								
+								$spi_time_frame = $SPI_arr[0]['spi_time_frame'];
+								
 								//visit window starttime = IPI's end date + 60 days
-								$visit_window_starttime = date("Y-m-d", strtotime("+60 days", strtotime($last_ipi_completed_date)));
+								//$visit_window_starttime = date("Y-m-d", strtotime("+60 days", strtotime($last_ipi_completed_date)));
+								$visit_window_starttime = date("Y-m-d", strtotime("+".$spi_time_frame." days", strtotime($last_ipi_completed_date)));
 								
 								//visit window endtime = child's date of birth (CDOB)
 								$visit_window_endtime = date("Y-m-d", strtotime($due_date));
 									
-								$event_disp_cat = "3";
+								//$event_disp_cat = "3";
+								$event_disp_cat = $SPI_arr[0]['event_disposition_cat'];
 																	
 								$event_id = $ppf->insert_event_info($event_type, $event_disp_cat, $ptid, $assigned_user_id, $visit_window_starttime, $visit_window_endtime, true);																																
 							}							
@@ -240,16 +253,21 @@
 						//********** Generate Birth Visit (BV)						
 						if($num_of_bv < $num_of_pregnancies - $num_of_miscarriage)
 						{																					
-							$event_type = constant("PLT_Participant_Functions::CBIRTH_VISIT");							
+							//$event_type = constant("PLT_Participant_Functions::CBIRTH_VISIT");							
+							$event_type = $BV_arr[0]['event_type_code'];
 							$assigned_user_id = $pinfo["assigned_user_id"];
+							
+							$bv_time_frame = $BV_arr[0]['bv_time_frame'];
 							
 							//start time = CDOB
 							$visit_window_starttime = date("Y-m-d", strtotime($due_date));
 							
 							//visit window endtime = CDOB + 30 days
-							$visit_window_endtime = date("Y-m-d", strtotime("+30 days", strtotime($due_date)));																																					
+							//$visit_window_endtime = date("Y-m-d", strtotime("+30 days", strtotime($due_date)));																																					
+							$visit_window_endtime = date("Y-m-d", strtotime("+".$bv_time_frame." days", strtotime($due_date)));																																					
 							
-							$event_disp_cat = "3";
+							//$event_disp_cat = "3";
+							$event_disp_cat = $BV_arr[0]['event_disposition_cat'];
 							
 							$event_id = $ppf->insert_event_info($event_type, $event_disp_cat, $ptid, $assigned_user_id, $visit_window_starttime, $visit_window_endtime, true);																														
 						}
@@ -262,6 +280,9 @@
 					//echo "participant id not found";
 				}						
 			}													
-		}		
+		}	
+		
+		
+		
 	}
 ?>
