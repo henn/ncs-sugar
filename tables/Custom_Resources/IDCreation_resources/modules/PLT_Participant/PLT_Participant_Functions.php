@@ -104,7 +104,7 @@ class PLT_Participant_Functions extends SugarBean {
 					break;
 				}
 			}			
-			@mysql_free_result($result);		
+			//@mysql_free_result($result);		
 		
 			if(!empty($linkage_id))
 			{			
@@ -196,7 +196,7 @@ class PLT_Participant_Functions extends SugarBean {
 					}												
 				}													
 			}			
-			@mysql_free_result($result);				
+			//@mysql_free_result($result);				
 		}						
 		
 		return $person_list;
@@ -291,7 +291,7 @@ class PLT_Participant_Functions extends SugarBean {
 				
 			}//end while
 			
-			@mysql_free_result($result);				
+			//@mysql_free_result($result);				
 		}						
 		return $person_list;
 	}	
@@ -327,7 +327,7 @@ class PLT_Participant_Functions extends SugarBean {
 					break;
 				}
 			}			
-			@mysql_free_result($result);
+			//@mysql_free_result($result);
 			
 			if(!empty($linkage_id))
 			{			
@@ -348,7 +348,7 @@ class PLT_Participant_Functions extends SugarBean {
 					if($result2)
 					{
 						$participant_info_array = $pp_linkage->db->fetchByAssoc($result2);
-						@mysql_free_result($result2);
+						//@mysql_free_result($result2);
 					}									
 				}												
 			}

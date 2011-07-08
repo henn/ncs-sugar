@@ -18,19 +18,13 @@
 				$_SESSION['person_record'] = $_REQUEST['person_record'];
 				//$this->ss->assign("NAME", $partID);
 				$this->ss->assign("NAME", $_REQUEST['person_id']);
-			} // else {
-// 				require_once 'ncs_framework/ncs_controller.php';
-// 				$ncs = new NCS($this->bean);
-// 				$ncs->identifier = 'SP';
-// 				$this->ss->assign("NAME", $ncs->get_name());	
-// 			}
-			
+			}
+			elseif(!empty($this->bean->name))
+			{
+				$this->ss->assign("NAME", $this->bean->name);				
+			}else{}			
 			
 			parent::display();
 		}
-		
-		
-
 	} 
-
 ?>

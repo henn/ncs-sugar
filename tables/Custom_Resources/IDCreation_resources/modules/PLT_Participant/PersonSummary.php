@@ -35,6 +35,8 @@ class PersonSummary{
 				}
 			}											
 		}
+		
+		$bean->person_info_c = "";
 						
 		if(!empty($this_participant_html))
 			$bean->person_info_c .= $this_participant_html;
