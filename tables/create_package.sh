@@ -95,9 +95,9 @@ zip -r9qj ../$COMBINED.zip manifest.php
 cd ..
 
 # Copy other files
-zip -r9qj $COMBINED.zip ../$HELPER_DIR/{README,LICENSE}.txt
+zip -r9qj $COMBINED.zip ../$HELPER_DIR/{README_MicrosoftSQL,README_MySQL,LICENSE}.txt
 
-zip -9qj ${FINAL_FILENAME}-combined.zip $COMBINED.zip Custom_Resources.zip ../$HELPER_DIR/README.txt
+zip -9qj ${FINAL_FILENAME}-combined.zip $COMBINED.zip Custom_Resources.zip ../$HELPER_DIR/README_MicrosoftSQL.txt ../$HELPER_DIR/README_MySQL.txt
 
 echo "Created combined package as: output/${FINAL_FILENAME}-combined.zip"
 
