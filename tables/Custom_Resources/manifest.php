@@ -721,9 +721,296 @@ $installdefs = array (
       'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_who_contacted_c.php',
     ),
 	//*************** end of Activities stuff ********************************
+  
+############### BEGIN COPY OF Custom Module Extension ###############
+#   'custom/Extension/modules/'MODULENAME'/Ext/Vardefs/custom.php   #
+#####################################################################
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/GT_DwellingUnt/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/GT_DwellingUnt/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/GT_DwlUntHsLnk/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/GT_DwlUntHsLnk/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/GT_Household/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/GT_Household/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/GT_ListingUnt/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/GT_ListingUnt/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/GT_PrmSampUnt/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/GT_PrmSampUnt/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/GT_SecSampUnt/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/GT_SecSampUnt/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/GT_StudyCntr/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/GT_StudyCntr/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/GT_TerSampUnt/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/GT_TerSampUnt/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/LTT_Address/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/LTT_Address/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/LTT_Email/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/LTT_Email/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/LTT_Telephone/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/LTT_Telephone/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/NCSDC_CntctInfo/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/NCSDC_CntctInfo/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/NCSDC_CntLnk/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/NCSDC_CntLnk/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/NCSDC_EventInfo/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/NCSDC_EventInfo/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/NCSDC_Incident/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/NCSDC_Incident/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/NCSDC_IncMedMultS/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/NCSDC_IncMedMultS/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/NCSDC_IncUnatMltS/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/NCSDC_IncUnatMltS/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/NCSDC_Instrument/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/NCSDC_Instrument/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/NCSDC_NIntRptVcnt/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/NCSDC_NIntRptVcnt/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/NCSDC_NIRDUTpMltS/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/NCSDC_NIRDUTpMltS/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/NCSDC_NIRNAccMltS/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/NCSDC_NIRNAccMltS/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/NCSDC_NIRRfsMltS/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/NCSDC_NIRRfsMltS/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/NCSDC_NonInterRpt/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/NCSDC_NonInterRpt/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/OLT_Institution/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/OLT_Institution/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/OLT_MSProvRole/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/OLT_MSProvRole/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/OLT_Provider/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/OLT_Provider/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/OLT_PrsnInstLnk/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/OLT_PrsnInstLnk/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/OLT_PrsnPrvdLnk/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/OLT_PrsnPrvdLnk/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/PLT_LkPrsPrtcpt/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/PLT_LkPrsPrtcpt/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/PLT_LnkPrsHshld/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/PLT_LnkPrsHshld/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/PLT_PartAuthFrm/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/PLT_PartAuthFrm/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/PLT_Participant/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/PLT_Participant/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/PLT_PartRVIS/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/PLT_PartRVIS/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/PLT_PartSampCon/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/PLT_PartSampCon/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/PLT_Person/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/PLT_Person/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/PLT_PersonRace/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/PLT_PersonRace/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/PLT_PPGDetails/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/PLT_PPGDetails/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/PLT_PPGStsHstry/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/PLT_PPGStsHstry/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/PLT_PrtcptCnsnt/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/PLT_PrtcptCnsnt/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/PLT_PrtcptVstC/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/PLT_PrtcptVstC/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_DRFThermVer/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/SAMP_DRFThermVer/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_ENVEquip/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/SAMP_ENVEquip/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_ENVEquipLog/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/SAMP_ENVEquipLog/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_PreThrmCert/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/SAMP_PreThrmCert/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_RefFreezVer/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/SAMP_RefFreezVer/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_SampRecConf/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/SAMP_SampRecConf/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_SampRecStor/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/SAMP_SampRecStor/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_SampShip/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/SAMP_SampShip/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_SPECEquip/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/SAMP_SPECEquip/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_SPECPickup/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/SAMP_SPECPickup/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_SPECReceipt/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/SAMP_SPECReceipt/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_SPECShippin/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/SAMP_SPECShippin/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_SPECStorage/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/SAMP_SPECStorage/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_SPSCInfo/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/SAMP_SPSCInfo/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_SRSCInfo/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/SAMP_SRSCInfo/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_SubSampDoc/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/SAMP_SubSampDoc/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_TRhMeterCal/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/SAMP_TRhMeterCal/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/ST_MSOutEval/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/ST_MSOutEval/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/ST_MSOutLang2/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/ST_MSOutLang2/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/ST_MSOutRace/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/ST_MSOutRace/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/ST_MSOutTarg/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/ST_MSOutTarg/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/ST_OtrchStaff/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/ST_OtrchStaff/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/ST_StaffRstr/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/ST_StaffRstr/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/ST_StfCrtTrn/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/ST_StfCrtTrn/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/ST_StfExpDCTsk/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/ST_StfExpDCTsk/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/ST_StfExpMgTsk/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/ST_StfExpMgTsk/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/ST_StfLang/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/ST_StfLang/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/ST_StfVldtn/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/ST_StfVldtn/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/ST_StfWkExpns/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/ST_StfWkExpns/Ext/Vardefs/custom.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/ST_WkOEAct/Ext/Vardefs/custom.php',
+      'to' => 'custom/Extension/modules/ST_WkOEAct/Ext/Vardefs/custom.php',
+    ),
+
+	//*************** end of Custom Extension stuff ********************************
+	
 	
   ),  //end of copy
-  
 
 
   //******************************** BEGIN CUSTOM FIELDS ***************************************
