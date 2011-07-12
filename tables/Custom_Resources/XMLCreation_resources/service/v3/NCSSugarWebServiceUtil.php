@@ -58,7 +58,6 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $xmlWriter->startElement('tsu');
                 $this->addXMLElement($xmlWriter, 'sc_id', $record['name_value_list']['sc_id']['value']);
                 $this->addXMLElement($xmlWriter, 'psu_id', $record['name_value_list']['psu_id']['value']);
-                $this->addXMLElement($xmlWriter, 'ssu_id', $record['name_value_list']['ssu_id']['value']);
                 $this->addXMLElement($xmlWriter, 'tsu_id', $record['name_value_list']['name']['value']);
                 $this->addXMLElement($xmlWriter, 'tsu_name', $record['name_value_list']['tsu_name']['value']);
                 $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
@@ -88,10 +87,10 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $xmlWriter->startElement('dwelling_unit');
                 $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id)); // NO DIRECT RELATIONSHIP
                 $this->addXMLElement($xmlWriter, 'du_id', $record['name_value_list']['name']['value']);
-                //$this->addXMLElement($xmlWriter, 'list_id', $this->getRelatedModuleID(DWELLING_UNIT_SUGAR_MODULE, $record['name_value_list']['list_id']['value'], '???', 'name'));
-                //$this->addXMLElement($xmlWriter, 'tsu_id', $this->getRelatedModuleID(DWELLING_UNIT_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		//$this->addXMLElement($xmlWriter, 'ssu_id', $this->getRelatedModuleID(DWELLING_UNIT_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		$this->addXMLElement($xmlWriter, 'duplicate_du', $record['name_value_list']['duplicate_du']['value']);
+                $this->addXMLElement($xmlWriter, 'list_id', $this->getRelatedModuleID(DWELLING_UNIT_SUGAR_MODULE, $record['name_value_list']['list_id']['value'], 'gt_listingunt_gt_dwellingunt', 'name'));
+                $this->addXMLElement($xmlWriter, 'tsu_id', $this->getRelatedModuleID(DWELLING_UNIT_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'gt_secsampunt_gt_dwellingunt', 'name'));
+				$this->addXMLElement($xmlWriter, 'ssu_id', $this->getRelatedModuleID(DWELLING_UNIT_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'gt_secsampunt_gt_dwellingunt', 'name'));
+				$this->addXMLElement($xmlWriter, 'duplicate_du', $record['name_value_list']['duplicate_du']['value']);
                 $this->addXMLElement($xmlWriter, 'missed_du', $record['name_value_list']['missed_du']['value']);
                 $this->addXMLElement($xmlWriter, 'du_type', $record['name_value_list']['du_type']['value']);
                 $this->addXMLElement($xmlWriter, 'du_type_oth', $record['name_value_list']['du_type_oth']['value']);
@@ -154,8 +153,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'staff_gender', $record['name_value_list']['staff_gender']['value']);
                 $this->addXMLElement($xmlWriter, 'staff_race', $record['name_value_list']['staff_race']['value']);
                 $this->addXMLElement($xmlWriter, 'staff_race_oth', $record['name_value_list']['name']['value']);
+                $this->addXMLElement($xmlWriter, 'staff_zip', $record['name_value_list']['staff_zip']['value']);
                 $this->addXMLElement($xmlWriter, 'staff_ethnicity', $record['name_value_list']['staff_ethnicity']['value']);
-                $this->addXMLElement($xmlWriter, 'staff_zip', $record['name_value_list']['staff_zip']['value']);// CHECK IF THE FIELD NAME MATCHES
 		$this->addXMLElement($xmlWriter, 'staff_exp', $record['name_value_list']['staff_exp']['value']);
                 $this->addXMLElement($xmlWriter, 'staff_comment', $record['name_value_list']['staff_comment']['value']);
                 $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
@@ -237,7 +236,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'data_coll_task_type', $record['name_value_list']['data_coll_task_type']['value']);
                 $this->addXMLElement($xmlWriter, 'data_coll_task_type_oth', $record['name_value_list']['data_coll_task_type_oth']['value']);
                 $this->addXMLElement($xmlWriter, 'data_coll_tasks_hrs', $record['name_value_list']['data_coll_tasks_hrs']['value']);
-                $this->addXMLElement($xmlWriter, 'data_coll_tasks_cases', $record['name_value_list']['data_coll_tasks_cases']['value']);
+                $this->addXMLElement($xmlWriter, 'data_coll_task_cases', $record['name_value_list']['data_coll_task_cases']['value']);
                 $this->addXMLElement($xmlWriter, 'data_coll_transmit', $record['name_value_list']['data_coll_transmit']['value']);
                 $this->addXMLElement($xmlWriter, 'data_coll_task_comment', $record['name_value_list']['data_coll_task_comment']['value']);
                 $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
@@ -275,27 +274,27 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'outreach_staffing', $record['name_value_list']['outreach_staffing']['value']);
                 $this->addXMLElement($xmlWriter, 'outreach_incident', $record['name_value_list']['outreach_incident']['value']);
                 $this->addXMLElement($xmlWriter, 'incident_id', $record['name_value_list']['incident_id']['value']);
-                $this->addXMLElement($xmlWriter, 'outreach_eval_result', $record['name_value_list']['outreach_eval_result']['value']); // NO DB FIELD
+                $this->addXMLElement($xmlWriter, 'outreach_eval_result', $record['name_value_list']['outreach_eval_result']['value']);
                 $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
         }
     }
 	
-	//// *************** 2.0 MODULE INSERTED ******************
-	// function parseOutreachRace(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('outreach_race');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id)); //CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'outreach_race_id', $record['name_value_list']['name']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'outreach_event_id', $this->getRelatedModuleID(OUTREACH_RACE_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                // $this->addXMLElement($xmlWriter, 'outreach_race2', $record['name_value_list']['outreach_race2']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'outreach_race_oth', $record['name_value_list']['outreach_race_oth']['value']);//CHECH IF THE FIELD NAME MATCHES
-				// $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-    // }
-	//// *****************************************************
+	// *************** 2.0 MODULE INSERTED ******************
+	function parseOutreachRace(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('outreach_race');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'outreach_race_id', $record['name_value_list']['name']['value']);
+                $this->addXMLElement($xmlWriter, 'outreach_event_id', $this->getRelatedModuleID(OUTREACH_RACE_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'st_msoutrace_st_wkoeact', 'name'));
+                $this->addXMLElement($xmlWriter, 'outreach_race2', str_replace("_", "-", $record['name_value_list']['outreach_race2']['value']));
+                $this->addXMLElement($xmlWriter, 'outreach_race_oth', $record['name_value_list']['outreach_race_oth']['value']);
+				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+    }
+	// *****************************************************
     
     function parseOutreachStaff(&$xmlWriter, $results)
     {
@@ -305,7 +304,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'outreach_event_staff_id', $record['name_value_list']['name']['value']); 
                 $this->addXMLElement($xmlWriter, 'outreach_event_id', $this->getRelatedModuleID(OUTREACH_STAFF_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'st_otrchstaff_st_wkoeact', 'name'));
                 $this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(OUTREACH_STAFF_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'st_otrchstaff_st_staffrstr', 'name'));
-		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
         }
     }
@@ -317,41 +316,41 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
                 $this->addXMLElement($xmlWriter, 'outreach_event_eval_id', $record['name_value_list']['name']['value']);
                 $this->addXMLElement($xmlWriter, 'outreach_event_id', $this->getRelatedModuleID(OUTREACH_EVAL_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'st_otrcheval_st_wkoeact', 'name'));
-		$this->addXMLElement($xmlWriter, 'outreach_eval', $record['name_value_list']['outreach_eval']['value']);
+				$this->addXMLElement($xmlWriter, 'outreach_eval', $record['name_value_list']['outreach_eval']['value']);
                 $this->addXMLElement($xmlWriter, 'outreach_eval_oth', $record['name_value_list']['outreach_eval_oth']['value']);
                 $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
         }
     }
     
-	//// *************** 2.0 MODULE INSERTED ******************
-	// function parseOutreachTarget(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('outreach_target');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-                // $this->addXMLElement($xmlWriter, 'outreach_target_id', $record['name_value_list']['name']['value']);
-                ////$this->addXMLElement($xmlWriter, 'outreach_event_id', $this->getRelatedModuleID(OUTREACH_TARGET_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                // $this->addXMLElement($xmlWriter, 'outreach_target_ms', $record['name_value_list']['outreach_target_ms']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'outreach_target_ms_oth', $record['name_value_list']['outreach_target_ms_oth']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-    // }
+	// *************** 2.0 MODULE INSERTED ******************
+	function parseOutreachTarget(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('outreach_target');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'outreach_target_id', $record['name_value_list']['name']['value']);
+                $this->addXMLElement($xmlWriter, 'outreach_event_id', $this->getRelatedModuleID(OUTREACH_TARGET_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'st_msouttarg_st_wkoeact', 'name'));
+                $this->addXMLElement($xmlWriter, 'outreach_target_ms', $record['name_value_list']['outreach_target_ms']['value']);
+                $this->addXMLElement($xmlWriter, 'outreach_target_ms_oth', $record['name_value_list']['outreach_target_ms_oth']['value']);
+                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+    }
 	
-	// function parseOutreachLanguage2(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('outreach_lang2');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-                // $this->addXMLElement($xmlWriter, 'outreach_lang2_id', $record['name_value_list']['name']['value']);
-                ////$this->addXMLElement($xmlWriter, 'outreach_event_id', $this->getRelatedModuleID(OUTREACH_LANG2_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                // $this->addXMLElement($xmlWriter, 'outreach_lang2', $record['name_value_list']['outreach_lang2']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-    // }
-	//// ******************************************************
+	function parseOutreachLanguage2(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('outreach_lang2');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'outreach_lang2_id', $record['name_value_list']['name']['value']);
+                $this->addXMLElement($xmlWriter, 'outreach_event_id', $this->getRelatedModuleID(OUTREACH_LANG2_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'st_msoutlang2_st_wkoeact', 'name'));
+                $this->addXMLElement($xmlWriter, 'outreach_lang2', $record['name_value_list']['outreach_lang2']['value']);
+                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+    }
+	// ******************************************************
 	
     function parseStaffCertTraining(&$xmlWriter, $results)
     {
@@ -378,12 +377,12 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $xmlWriter->startElement('person');
                 $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id); // NO CLEAR RELATIONSHIP
                 $this->addXMLElement($xmlWriter, 'person_id', $record['name_value_list']['name']['value']);
-                $this->addXMLElement($xmlWriter, 'prefix', $record['name_value_list']['prefix']['value']);
+                $this->addXMLElement($xmlWriter, 'prefix', str_replace("_", "-", $record['name_value_list']['prefix']['value']));
                 $this->addXMLElement($xmlWriter, 'first_name', $record['name_value_list']['first_name']['value']);
                 $this->addXMLElement($xmlWriter, 'last_name', $record['name_value_list']['last_name']['value']);
                 $this->addXMLElement($xmlWriter, 'middle_name', $record['name_value_list']['middle_name']['value']);
                 $this->addXMLElement($xmlWriter, 'maiden_name', $record['name_value_list']['maiden_name']['value']);
-                $this->addXMLElement($xmlWriter, 'suffix', $record['name_value_list']['suffix']['value']);
+                $this->addXMLElement($xmlWriter, 'suffix', str_replace("_", "-", $record['name_value_list']['suffix']['value']));
                 $this->addXMLElement($xmlWriter, 'title', $record['name_value_list']['title']['value']);
                 $this->addXMLElement($xmlWriter, 'sex', $record['name_value_list']['sex']['value']);
                 $this->addXMLElement($xmlWriter, 'age', $record['name_value_list']['age']['value']);
@@ -397,10 +396,10 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'maristat_oth', $record['name_value_list']['maristat_oth']['value']);
                 $this->addXMLElement($xmlWriter, 'pref_contact', $record['name_value_list']['pref_contact']['value']);
                 $this->addXMLElement($xmlWriter, 'pref_contact_oth', $record['name_value_list']['pref_contact_oth']['value']);
-                $this->addXMLElement($xmlWriter, 'plan_move', $record['name_value_list']['plan_move']['value']);
-                $this->addXMLElement($xmlWriter, 'move_info', $record['name_value_list']['move_info']['value']);
-                $this->addXMLElement($xmlWriter, 'new_address_id', $record['name_value_list']['new_address_id']['value']); // SHOULD BE RELATIONSHIP
-                $this->addXMLElement($xmlWriter, 'when_move', $record['name_value_list']['when_move']['value']);
+                $this->addXMLElement($xmlWriter, 'plan_move', str_replace("_", "-", $record['name_value_list']['plan_move']['value']));
+                $this->addXMLElement($xmlWriter, 'move_info', str_replace("_", "-", $record['name_value_list']['move_info']['value']));
+                $this->addXMLElement($xmlWriter, 'new_address_id', $record['name_value_list']['new_address_id']['value']);
+                $this->addXMLElement($xmlWriter, 'when_move', str_replace("_", "-", $record['name_value_list']['when_move']['value']));
                 $this->addXMLElement($xmlWriter, 'date_move', $record['name_value_list']['date_move']['value']);
                 $this->addXMLElement($xmlWriter, 'p_tracing', $record['name_value_list']['p_tracing']['value']);
                 $this->addXMLElement($xmlWriter, 'p_info_source', $record['name_value_list']['p_info_source']['value']);
@@ -483,25 +482,25 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         }
     }
 	
-    //// *************** 2.0 MODULE INSERTED ******************
-	// function parseParticipantAuthorizationForm(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('participant_auth');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-                // $this->addXMLElement($xmlWriter, 'auth_form_id', $record['name_value_list']['name']['value']);
-                ////$this->addXMLElement($xmlWriter, 'p_id', $this->getRelatedModuleID(PARTICIPANT_AUTHORIZATION_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                ////$this->addXMLElement($xmlWriter, 'contact_id', $this->getRelatedModuleID(PARTICIPANT_AUTHORIZATION_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                ////$this->addXMLElement($xmlWriter, 'provider_id', $this->getRelatedModuleID(PARTICIPANT_AUTHORIZATION_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		// $this->addXMLElement($xmlWriter, 'auth_form_type', $record['name_value_list']['auth_form_type']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'auth_type_oth', $record['name_value_list']['auth_type_oth']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'auth_status', $record['name_value_list']['auth_status']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'auth_status_oth', $record['name_value_list']['auth_status_oth']['value']);//CHECH IF THE FIELD NAME MATCHES
-            	// $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-    // }
-	//// ******************************************************
+    // *************** 2.0 MODULE INSERTED ******************
+	function parseParticipantAuthorizationForm(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('participant_auth');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'auth_form_id', $record['name_value_list']['name']['value']);
+                $this->addXMLElement($xmlWriter, 'p_id', $this->getRelatedModuleID(PARTICIPANT_AUTHORIZATION_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'plt_partauthfrm_plt_participant', 'name'));
+                $this->addXMLElement($xmlWriter, 'contact_id', $this->getRelatedModuleID(PARTICIPANT_AUTHORIZATION_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'ncsdc_cntctinfo_plt_partauthfrm', 'name'));
+                $this->addXMLElement($xmlWriter, 'provider_id', $this->getRelatedModuleID(PARTICIPANT_AUTHORIZATION_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'olt_provider_plt_partauthfrm', 'name'));
+		$this->addXMLElement($xmlWriter, 'auth_form_type', $record['name_value_list']['auth_form_type']['value']);
+                $this->addXMLElement($xmlWriter, 'auth_type_oth', $record['name_value_list']['auth_type_oth']['value']);
+                $this->addXMLElement($xmlWriter, 'auth_status', $record['name_value_list']['auth_status']['value']);
+                $this->addXMLElement($xmlWriter, 'auth_status_oth', $record['name_value_list']['auth_status_oth']['value']);
+            	$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+    }
+	// ******************************************************
 	
     function parseParticipantConsent(&$xmlWriter, $results) 
     {
@@ -509,27 +508,27 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $xmlWriter->startElement('participant_consent');
                 $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
                 $this->addXMLElement($xmlWriter, 'participant_consent_id', $record['name_value_list']['name']['value']);
-                $this->addXMLElement($xmlWriter, 'p_id', $this->getRelatedModuleID(PARTICIPANT_CONSENT_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'plt_particilt_prtcptcnsnt', 'name'));
+                $this->addXMLElement($xmlWriter, 'p_id', $this->getRelatedModuleID(PARTICIPANT_CONSENT_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'plt_participant_plt_prtcptcnsnt', 'name'));
                 $this->addXMLElement($xmlWriter, 'consent_version', $record['name_value_list']['consent_version']['value']);
                 $this->addXMLElement($xmlWriter, 'consent_expiration', $record['name_value_list']['consent_expiration']['value']);
                 $this->addXMLElement($xmlWriter, 'consent_type', $record['name_value_list']['consent_type']['value']);
-                $this->addXMLElement($xmlWriter, 'consent_form_type', $record['name_value_list']['consent_form_type']['value']);//2.0 ADDED & CHECH IF THE FIELD NAME MATCHES
+                $this->addXMLElement($xmlWriter, 'consent_form_type', $record['name_value_list']['consent_form_type']['value']);
               	$this->addXMLElement($xmlWriter, 'consent_given', $record['name_value_list']['consent_given']['value']);
                 $this->addXMLElement($xmlWriter, 'consent_date', $record['name_value_list']['consent_date']['value']);
                 $this->addXMLElement($xmlWriter, 'consent_withdraw', $record['name_value_list']['consent_withdraw']['value']);
-                $this->addXMLElement($xmlWriter, 'consent_withdraw_type', $record['name_value_list']['consent_withdraw_type']['value']);
-                $this->addXMLElement($xmlWriter, 'consent_withdraw_reason', $record['name_value_list']['consent_withdraw_reason']['value']);//2.0 ADDED & CHECH IF THE FIELD NAME MATCHES
+                $this->addXMLElement($xmlWriter, 'consent_withdraw_type', str_replace("_", "-", $record['name_value_list']['consent_withdraw_type']['value']));
+                $this->addXMLElement($xmlWriter, 'consent_withdraw_reason', $record['name_value_list']['consent_withdraw_reason']['value']);
 		$this->addXMLElement($xmlWriter, 'consent_withdraw_date', $record['name_value_list']['consent_withdraw_date']['value']);
                 $this->addXMLElement($xmlWriter, 'consent_language', $record['name_value_list']['consent_language']['value']);
                 $this->addXMLElement($xmlWriter, 'consent_language_oth', $record['name_value_list']['consent_language_oth']['value']);
                 $this->addXMLElement($xmlWriter, 'person_who_consented_id', $record['name_value_list']['person_who_consented_id']['value']);
                 $this->addXMLElement($xmlWriter, 'who_consented', $record['name_value_list']['who_consented']['value']);
-                $this->addXMLElement($xmlWriter, 'person_wthdrw_consent_id', $record['name_value_list']['person_wthdrw_consent_id']['value']); //WHY IS THIS NOT A RELATIONSHIP? RELATIONSHIP MISSING
-                $this->addXMLElement($xmlWriter, 'who_wthdrw_consent', $record['name_value_list']['who_wthdrw_consent']['value']);
+                $this->addXMLElement($xmlWriter, 'person_wthdrw_consent_id', $record['name_value_list']['person_wthdrw_consent_id']['value']);
+                $this->addXMLElement($xmlWriter, 'who_wthdrw_consent', str_replace("_", "-", $record['name_value_list']['who_wthdrw_consent']['value']));
                 $this->addXMLElement($xmlWriter, 'consent_translate', $record['name_value_list']['consent_translate']['value']);
                 $this->addXMLElement($xmlWriter, 'consent_comments', $record['name_value_list']['consent_comments']['value']);
-                $this->addXMLElement($xmlWriter, 'contact_id', $this->getRelatedModuleID(PARTICIPANT_CONSENT_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'ncsdc_cntctlt_prtcptcnsnt', 'name'));
-                $this->addXMLElement($xmlWriter, 'reconsideration_script_use', $record['name_value_list']['reconsideration_script_use']['value']);//2.0 ADDED & CHECH IF THE FIELD NAME MATCHES
+                $this->addXMLElement($xmlWriter, 'contact_id', $this->getRelatedModuleID(PARTICIPANT_CONSENT_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'ncsdc_cntctinfo_plt_prtcptcnsnt', 'name'));
+                $this->addXMLElement($xmlWriter, 'reconsideration_script_use', $record['name_value_list']['reconsideration_script_use']['value']);
 		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
         }
@@ -579,7 +578,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'provider_id', $record['name_value_list']['name']['value']);
                 $this->addXMLElement($xmlWriter, 'provider_type', $record['name_value_list']['provider_type']['value']);
                 $this->addXMLElement($xmlWriter, 'provider_type_oth', $record['name_value_list']['provider_type_oth']['value']);
-                $this->addXMLElement($xmlWriter, 'provider_ncs_role', $record['name_value_list']['provider_ncs_role']['value']);
+                $this->addXMLElement($xmlWriter, 'provider_ncs_role', str_replace("_", "-", $record['name_value_list']['provider_ncs_role']['value']));
                 $this->addXMLElement($xmlWriter, 'provider_ncs_role_oth', $record['name_value_list']['provider_ncs_role_oth']['value']);
                 $this->addXMLElement($xmlWriter, 'practice_info', $record['name_value_list']['practice_info']['value']);
                 $this->addXMLElement($xmlWriter, 'practice_patient_load', $record['name_value_list']['practice_patient_load']['value']);
@@ -595,21 +594,21 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         }
     }
 	
-	//// *************** 2.0 MODULE INSERTED ******************
-	// function parseProviderRole(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('provider_role');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-                // $this->addXMLElement($xmlWriter, 'provider_role_id', $record['name_value_list']['name']['value']);
-                ////$this->addXMLElement($xmlWriter, 'provider_id', $this->getRelatedModuleID(PROVIDER_ROLE_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                // $this->addXMLElement($xmlWriter, 'provider_ncs_role', $record['name_value_list']['provider_ncs_role']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'provider_ncs_role_oth', $record['name_value_list']['provider_ncs_role_oth']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-    // }
-	//// ******************************************************
+	// *************** 2.0 MODULE INSERTED ******************
+	function parseProviderRole(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('provider_role');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'provider_role_id', $record['name_value_list']['name']['value']);
+                $this->addXMLElement($xmlWriter, 'provider_id', $this->getRelatedModuleID(PROVIDER_ROLE_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'olt_msprovrole_olt_provider', 'name'));
+                $this->addXMLElement($xmlWriter, 'provider_ncs_role', $record['name_value_list']['provider_ncs_role']['value']);
+                $this->addXMLElement($xmlWriter, 'provider_ncs_role_oth', $record['name_value_list']['provider_ncs_role_oth']['value']);
+                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+    }
+	// ******************************************************
 	
     
     function parseLinkPersonProvider(&$xmlWriter, $results)
@@ -623,7 +622,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'is_active', $record['name_value_list']['is_active']['value']);
                 $this->addXMLElement($xmlWriter, 'prov_intro_outcome', $record['name_value_list']['prov_intro_outcome']['value']);
                 $this->addXMLElement($xmlWriter, 'prov_intro_outcome_oth', $record['name_value_list']['prov_intro_outcome_oth']['value']);
-                //$this->addXMLElement($xmlWriter, 'psu_id', $record['name_value_list']['psu_id']['value']);
+              	$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
         }
     }
@@ -729,14 +728,14 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'cell_permission', $record['name_value_list']['cell_permission']['value']);
                 $this->addXMLElement($xmlWriter, 'text_permission', $record['name_value_list']['text_permission']['value']);
                 $this->addXMLElement($xmlWriter, 'phone_comment', $record['name_value_list']['phone_comment']['value']);
-                $this->addXMLElement($xmlWriter, 'phone_start_date', $record['name_value_list']['phone_start_date']['value']);//2.0 ADDED & CHECH IF THE FIELD NAME MATCHES
-                $this->addXMLElement($xmlWriter, 'phone_end_date', $record['name_value_list']['phone_end_date']['value']);//2.0 ADDED & CHECH IF THE FIELD NAME MATCHES
+                $this->addXMLElement($xmlWriter, 'phone_start_date', $record['name_value_list']['phone_start_date']['value']);
+                $this->addXMLElement($xmlWriter, 'phone_end_date', $record['name_value_list']['phone_end_date']['value']);
                 $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
         }
     }
     
-    function processEmail(&$xmlWriter, $results)
+    function parseEmail(&$xmlWriter, $results)
     {
         foreach ($results['entry_list'] as $record) {
             $xmlWriter->startElement('email');
@@ -757,21 +756,21 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'email_share', $record['name_value_list']['email_share']['value']);
                 $this->addXMLElement($xmlWriter, 'email_active', $record['name_value_list']['email_active']['value']);
                 $this->addXMLElement($xmlWriter, 'email_comment', $record['name_value_list']['email_comment']['value']);
-                $this->addXMLElement($xmlWriter, 'email_start_date', $record['name_value_list']['email_start_date']['value']);//2.0 ADDED & CHECH IF THE FIELD NAME MATCHES
-                $this->addXMLElement($xmlWriter, 'email_end_date', $record['name_value_list']['email_end_date']['value']);//2.0 ADDED & CHECH IF THE FIELD NAME MATCHES
+                $this->addXMLElement($xmlWriter, 'email_start_date', $record['name_value_list']['email_start_date']['value']);
+                $this->addXMLElement($xmlWriter, 'email_end_date', $record['name_value_list']['email_end_date']['value']);
                 $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
         }
     }
     
-    function processEvent(&$xmlWriter, $results)
+    function parseEvent(&$xmlWriter, $results)
     {
         foreach ($results['entry_list'] as $record) {
             $xmlWriter->startElement('event');
                 $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
                 $this->addXMLElement($xmlWriter, 'event_id', $record['name_value_list']['name']['value']);
                 $this->addXMLElement($xmlWriter, 'participant_id', $this->getRelatedModuleID(EVENT_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'ncsdc_eventlt_participant', 'name'));
-                $this->addXMLElement($xmlWriter, 'event_type', $record['name_value_list']['psevent_typeu_id']['value']);
+                $this->addXMLElement($xmlWriter, 'event_type', str_replace("_", "-", $record['name_value_list']['psevent_typeu_id']['value']));
                 $this->addXMLElement($xmlWriter, 'event_type_oth', $record['name_value_list']['event_type_oth']['value']);
                 $this->addXMLElement($xmlWriter, 'event_repeat_key', $record['name_value_list']['event_repeat_key']['value']);
                 $this->addXMLElement($xmlWriter, 'event_disp', $record['name_value_list']['event_disp']['value']);
@@ -793,7 +792,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
     }
 	
 	//***************************** 
-	function processInstrument(&$xmlWriter, $results)
+	function parseInstrument(&$xmlWriter, $results)
 	{
 		foreach ($results['entry_list'] as $record) {
 			$xmlWriter->startElement('instrument');
@@ -805,10 +804,10 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 				$this->addXMLElement($xmlWriter, 'instrument_version', $record['name_value_list']['instrument_version']['value']);
 				$this->addXMLElement($xmlWriter, 'instrument_repeat_key', $record['name_value_list']['instrument_repeat_key']['value']);
 				$ins_start_time = preg_split('/[ ]/', $record['name_value_list']['ins_start_time']['value']);
-                                $this->addXMLElement($xmlWriter, 'ins_start_time', $ins_start_time[1]);
+                $this->addXMLElement($xmlWriter, 'ins_start_time', $ins_start_time[1]);
 				$ins_end_time = preg_split('/[ ]/', $record['name_value_list']['ins_end_time']['value']);
-                                $this->addXMLElement($xmlWriter, 'ins_end_time', $ins_end_time[1]);
-                                $this->addXMLElement($xmlWriter, 'ins_date_start', $record['name_value_list']['ins_date_start']['value']);
+                $this->addXMLElement($xmlWriter, 'ins_end_time', $ins_end_time[1]);
+                $this->addXMLElement($xmlWriter, 'ins_date_start', $record['name_value_list']['ins_date_start']['value']);
 				$this->addXMLElement($xmlWriter, 'ins_date_end', $record['name_value_list']['ins_date_end']['value']);
 				$this->addXMLElement($xmlWriter, 'ins_breakoff', $record['name_value_list']['ins_breakoff']['value']);
 				$this->addXMLElement($xmlWriter, 'ins_status', $record['name_value_list']['ins_status']['value']);
@@ -823,7 +822,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 		}
 	}
 	
-	function processContact(&$xmlWriter, $results)
+	function parseContact(&$xmlWriter, $results)
 	{
 		foreach ($results['entry_list'] as $record) {
 			$xmlWriter->startElement('contact');
@@ -834,10 +833,10 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 				$this->addXMLElement($xmlWriter, 'contact_type_oth', $record['name_value_list']['contact_type_oth']['value']);
 				$this->addXMLElement($xmlWriter, 'contact_date', $record['name_value_list']['contact_date']['value']);
 				$contact_start_time = preg_split('/[ ]/', $record['name_value_list']['contact_start_time']['value']);
-                                $this->addXMLElement($xmlWriter, 'contact_start_time', $contact_start_time[1]);
+                $this->addXMLElement($xmlWriter, 'contact_start_time', $contact_start_time[1]);
 				$contact_end_time = preg_split('/[ ]/', $record['name_value_list']['contact_end_time']['value']);
-                                $this->addXMLElement($xmlWriter, 'contact_end_time', $contact_end_time[1]);
-                                $this->addXMLElement($xmlWriter, 'contact_lang', $record['name_value_list']['contact_lang']['value']);
+                $this->addXMLElement($xmlWriter, 'contact_end_time', $contact_end_time[1]);
+                $this->addXMLElement($xmlWriter, 'contact_lang', $record['name_value_list']['contact_lang']['value']);
 				$this->addXMLElement($xmlWriter, 'contact_lang_oth', $record['name_value_list']['contact_lang_oth']['value']);
 				$this->addXMLElement($xmlWriter, 'contact_interpret', $record['name_value_list']['contact_interpret']['value']);
 				$this->addXMLElement($xmlWriter, 'contact_interpret_oth', $record['name_value_list']['contact_interpret_oth']['value']);
@@ -854,7 +853,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 		}
 	}
 	
-	function processContactLinking(&$xmlWriter, $results)
+	function parseContactLinking(&$xmlWriter, $results)
 	{
 		foreach ($results['entry_list'] as $record) {
 			$xmlWriter->startElement('link_contact');
@@ -871,7 +870,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 		}
 	}
 	
-	function processNonInterviewReprt(&$xmlWriter, $results)
+	function parseNonInterviewReprt(&$xmlWriter, $results)
 	{
 		foreach ($results['entry_list'] as $record) {
 			$xmlWriter->startElement('non_interview_rpt');
@@ -917,7 +916,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 		}
 	}
 	
-	function processNIRVacant(&$xmlWriter, $results)
+	function parseNIRVacant(&$xmlWriter, $results)
 	{
 		foreach ($results['entry_list'] as $record) {
 			$xmlWriter->startElement('non_interview_rpt_vacant');
@@ -931,21 +930,21 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 		}
 	}
 	
-	function processNIRNoAccess(&$xmlWriter, $results)
+	function parseNIRNoAccess(&$xmlWriter, $results)
 	{
 		foreach ($results['entry_list'] as $record) {
 			$xmlWriter->startElement('non_interview_rpt_noaccess');
 				$this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
 				$this->addXMLElement($xmlWriter, 'nir_noaccess_id', $record['name_value_list']['name']['value']);
 				$this->addXMLElement($xmlWriter, 'nir_id', $this->getRelatedModuleID(NON_INTERVIEW_RPT_NOACCESS_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'ncsdc_noninterrpt_ncsdc_nirnaccmlts', 'name'));
-				$this->addXMLElement($xmlWriter, 'nir_noaccess', $record['name_value_list']['nir_noaccess']['value']);
+				$this->addXMLElement($xmlWriter, 'nir_noaccess', str_replace("_", "-", $record['name_value_list']['nir_noaccess']['value']));
 				$this->addXMLElement($xmlWriter, 'nir_noaccess_oth', $record['name_value_list']['nir_noaccess_oth']['value']);
 				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
 			$xmlWriter->endElement();
 		}
 	}
 	
-	function processNIRRefusal(&$xmlWriter, $results)
+	function parseNIRRefusal(&$xmlWriter, $results)
 	{
 		foreach ($results['entry_list'] as $record) {
 			$xmlWriter->startElement('non_interview_rpt_refusal');
@@ -959,7 +958,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 		}
 	}
 	
-	function processNIRDuType(&$xmlWriter, $results)
+	function parseNIRDuType(&$xmlWriter, $results)
 	{
 		foreach ($results['entry_list'] as $record) {
 			$xmlWriter->startElement('non_interview_rpt_dutype');
@@ -973,7 +972,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 		}
 	}
 	
-	function processIncident(&$xmlWriter, $results)
+	function parseIncident(&$xmlWriter, $results)
 	{
 		foreach ($results['entry_list'] as $record) {
 			$xmlWriter->startElement('incident');
@@ -1011,7 +1010,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 		}
 	}
 	
-	function processIncidentMedia(&$xmlWriter, $results)
+	function parseIncidentMedia(&$xmlWriter, $results)
 	{
 		foreach ($results['entry_list'] as $record) {
 			$xmlWriter->startElement('incident_media');
@@ -1026,7 +1025,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 		}
 	}
 	
-	function processIncidentUnanticipated(&$xmlWriter, $results)
+	function parseIncidentUnanticipated(&$xmlWriter, $results)
 	{
 		foreach ($results['entry_list'] as $record) {
 			$xmlWriter->startElement('incident_unanticipated');
@@ -1041,408 +1040,409 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 	
 	//*****************************
     
-	//// *************** 2.0 MODULES INSERTED ******************
-	// function parseSPECEquipment(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('spec_equipment');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-                ////$this->addXMLElement($xmlWriter, 'spsc_id', $this->getRelatedModuleID(SPEC_EUIPMENT_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		// $this->addXMLElement($xmlWriter, 'equip_id', $record['name_value_list']['name']['value']);
-                // $this->addXMLElement($xmlWriter, 'equipment_type', $record['name_value_list']['equipment_type']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'equipment_type_oth', $record['name_value_list']['equipment_type_oth']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'serial_no', $record['name_value_list']['serial_no']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'government_asset_tag_no', $record['name_value_list']['government_asset_tag_no']['value']);//CHECH IF THE FIELD NAME MATCHES
-		// $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-    // }
+	// *************** 2.0 MODULES INSERTED ******************
+	function parseSPECEquipment(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('spec_equipment');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'spsc_id', $this->getRelatedModuleID(SPEC_EUIPMENT_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_specequip_samp_spscinfo', 'name'));
+		$this->addXMLElement($xmlWriter, 'equip_id', $record['name_value_list']['name']['value']);
+                $this->addXMLElement($xmlWriter, 'equipment_type', $record['name_value_list']['equipment_type']['value']);
+                $this->addXMLElement($xmlWriter, 'equipment_type_oth', $record['name_value_list']['equipment_type_oth']['value']);
+                $this->addXMLElement($xmlWriter, 'serial_no', $record['name_value_list']['serial_no']['value']);
+                $this->addXMLElement($xmlWriter, 'government_asset_tag_no', $record['name_value_list']['government_asset_tag_no']['value']);
+		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+    }
 	
-	// function parseSpecimenPickup(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('spec_pickup');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-                ////$this->addXMLElement($xmlWriter, 'spsc_id', $this->getRelatedModuleID(SPECIMEN_PICKUP_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		// $this->addXMLElement($xmlWriter, 'specimen_id', $record['name_value_list']['name']['value']);
-                ////$this->addXMLElement($xmlWriter, 'event_id', $this->getRelatedModuleID(SPECIMEN_PICKUP_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                ////$this->addXMLElement($xmlWriter, 'instrument_id', $this->getRelatedModuleID(SPECIMEN_PICKUP_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                ////$this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(SPECIMEN_PICKUP_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		// $this->addXMLElement($xmlWriter, 'specimen_pickup_dt', $record['name_value_list']['specimen_pickup_dt']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'specimen_pickup_comment', $record['name_value_list']['specimen_pickup_comment']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'specimen_pickup_cmt_oth', $record['name_value_list']['specimen_pickup_cmt_oth']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'specimen_trans_temp', $record['name_value_list']['specimen_trans_temp']['value']);//CHECH IF THE FIELD NAME MATCHES
-		// $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-    // }
+	function parseSpecimenPickup(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('spec_pickup');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'spsc_id', $this->getRelatedModuleID(SPECIMEN_PICKUP_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_specpickup_samp_spscinfo', 'name'));
+		$this->addXMLElement($xmlWriter, 'specimen_id', $record['name_value_list']['name']['value']);
+                $this->addXMLElement($xmlWriter, 'event_id', $this->getRelatedModuleID(SPECIMEN_PICKUP_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_specpickup_ncsdc_eventinfo', 'name'));
+                $this->addXMLElement($xmlWriter, 'instrument_id', $this->getRelatedModuleID(SPECIMEN_PICKUP_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_specpickup_ncsdc_instrument', 'name'));
+                $this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(SPECIMEN_PICKUP_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_specpickup_st_staffrstr', 'name'));
+		$this->addXMLElement($xmlWriter, 'specimen_pickup_dt', $record['name_value_list']['specimen_pickup_dt']['value']);
+                $this->addXMLElement($xmlWriter, 'specimen_pickup_comment', $record['name_value_list']['specimen_pickup_comment']['value']);
+                $this->addXMLElement($xmlWriter, 'specimen_pickup_cmt_oth', $record['name_value_list']['specimen_pickup_cmt_oth']['value']);
+                $this->addXMLElement($xmlWriter, 'specimen_trans_temp', $record['name_value_list']['specimen_trans_temp']['value']);
+		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+    }
 	
-	// function parseSpecimenReceipt(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('spec_receipt');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-                // $this->addXMLElement($xmlWriter, 'specimen_id', $record['name_value_list']['name']['value']);
-		////$this->addXMLElement($xmlWriter, 'spsc_id', $this->getRelatedModuleID(SPECIMEN_RECEIPT_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		////$this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(SPECIMEN_RECEIPT_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                // $this->addXMLElement($xmlWriter, 'receipt_comment', $record['name_value_list']['receipt_comment']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'receipt_comment_oth', $record['name_value_list']['receipt_comment_oth']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'receipt_dt', $record['name_value_list']['receipt_dt']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'cooler_temp', $record['name_value_list']['cooler_temp']['value']);//CHECH IF THE FIELD NAME MATCHES
-		// $this->addXMLElement($xmlWriter, 'monitor_status', $record['name_value_list']['monitor_status']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'upper_trigger', $record['name_value_list']['upper_trigger']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'upper_trigger_lvl', $record['name_value_list']['upper_trigger_lvl']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'lower_trigger_cold', $record['name_value_list']['lower_trigger_cold']['value']);//CHECH IF THE FIELD NAME MATCHES
-		// $this->addXMLElement($xmlWriter, 'lower_trigger_ambient', $record['name_value_list']['lower_trigger_ambient']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'storage_container_id', $record['name_value_list']['storage_container_id']['value']);//Should be relationship to storage_container_id in SPEC_Shipping
-                // $this->addXMLElement($xmlWriter, 'centrifuge_comment', $record['name_value_list']['centrifuge_comment']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'centrifuge_comment_oth', $record['name_value_list']['centrifuge_comment_oth']['value']);//CHECH IF THE FIELD NAME MATCHES
-		// $this->addXMLElement($xmlWriter, 'centrifuge_st', $record['name_value_list']['centrifuge_st']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'centrifuge_et', $record['name_value_list']['centrifuge_et']['value']);//CHECH IF THE FIELD NAME MATCHES
-		// $this->addXMLElement($xmlWriter, 'centrifuge_staff_id', $record['name_value_list']['centrifuge_staff_id']['value']);//CHECH IF THE FIELD NAME MATCHES
-		////$this->addXMLElement($xmlWriter, 'equip_id', $this->getRelatedModuleID(SPECIMEN_RECEIPT_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name')); // Equipment ID in SPEC Equipment Info Table
-		// $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-    // }
+	function parseSpecimenReceipt(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('spec_receipt');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'specimen_id', $record['name_value_list']['name']['value']);
+		$this->addXMLElement($xmlWriter, 'spsc_id', $this->getRelatedModuleID(SPECIMEN_RECEIPT_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_specreceipt_samp_spscinfo', 'name'));
+		$this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(SPECIMEN_RECEIPT_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_specreceipt_st_staffrstr', 'name'));
+                $this->addXMLElement($xmlWriter, 'receipt_comment', $record['name_value_list']['receipt_comment']['value']);
+                $this->addXMLElement($xmlWriter, 'receipt_comment_oth', $record['name_value_list']['receipt_comment_oth']['value']);
+                $this->addXMLElement($xmlWriter, 'receipt_dt', $record['name_value_list']['receipt_dt']['value']);
+                $this->addXMLElement($xmlWriter, 'cooler_temp', $record['name_value_list']['cooler_temp']['value']);
+		$this->addXMLElement($xmlWriter, 'monitor_status', $record['name_value_list']['monitor_status']['value']);
+                $this->addXMLElement($xmlWriter, 'upper_trigger', $record['name_value_list']['upper_trigger']['value']);
+                $this->addXMLElement($xmlWriter, 'upper_trigger_lvl', $record['name_value_list']['upper_trigger_lvl']['value']);
+                $this->addXMLElement($xmlWriter, 'lower_trigger_cold', $record['name_value_list']['lower_trigger_cold']['value']);
+		$this->addXMLElement($xmlWriter, 'lower_trigger_ambient', $record['name_value_list']['lower_trigger_ambient']['value']);
+                $this->addXMLElement($xmlWriter, 'storage_container_id', $this->getRelatedModuleID(SPECIMEN_RECEIPT_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_specreceipt_samp_specstorage', 'name'));
+		$this->addXMLElement($xmlWriter, 'centrifuge_comment', $record['name_value_list']['centrifuge_comment']['value']);
+                $this->addXMLElement($xmlWriter, 'centrifuge_comment_oth', $record['name_value_list']['centrifuge_comment_oth']['value']);
+		$this->addXMLElement($xmlWriter, 'centrifuge_st', $record['name_value_list']['centrifuge_st']['value']);
+                $this->addXMLElement($xmlWriter, 'centrifuge_et', $record['name_value_list']['centrifuge_et']['value']);
+		$this->addXMLElement($xmlWriter, 'centrifuge_staff_id', $record['name_value_list']['centrifuge_staff_id']['value']);
+		$this->addXMLElement($xmlWriter, 'equip_id', $this->getRelatedModuleID(SPECIMEN_RECEIPT_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_specreceipt_samp_specequip', 'name'));
+		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+    }
 	
-	// function parseSpecimenShipping(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('spec_shipping');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-                // $this->addXMLElement($xmlWriter, 'storage_container_id', $record['name_value_list']['name']['value']);
-		////$this->addXMLElement($xmlWriter, 'spsc_id', $this->getRelatedModuleID(SPECIMEN_SHIPPING_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		////$this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(SPECIMEN_SHIPPING_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                ////$this->addXMLElement($xmlWriter, 'shipper_id', $this->getRelatedModuleID(SPECIMEN_SHIPPING_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name')); // Equipment ID in SPEC Equipment Info Table
-		// $this->addXMLElement($xmlWriter, 'shipper_destination', $record['name_value_list']['shipper_destination']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'shipment_date', $record['name_value_list']['shipment_date']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'shipment_temperature', $record['name_value_list']['shipment_temperature']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'shipment_tracking_no', $record['name_value_list']['shipment_tracking_no']['value']);//CHECH IF THE FIELD NAME MATCHES
-		// $this->addXMLElement($xmlWriter, 'shipment_receipt_confirmed', $record['name_value_list']['shipment_receipt_confirmed']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $record['name_value_list']['shipment_receipt_dt']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'shipment_issues', $record['name_value_list']['shipment_issues']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'shipment_issues_oth', $record['name_value_list']['shipment_issues_oth']['value']);//CHECH IF THE FIELD NAME MATCHES
-		// $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-    // }
+	function parseSpecimenShipping(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('spec_shipping');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'storage_container_id', $record['name_value_list']['name']['value']);
+		$this->addXMLElement($xmlWriter, 'spsc_id', $this->getRelatedModuleID(SPECIMEN_SHIPPING_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_specshippin_samp_spscinfo', 'name'));
+		$this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(SPECIMEN_SHIPPING_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_specshippin_st_staffrstr', 'name'));
+                $this->addXMLElement($xmlWriter, 'shipper_id', $this->getRelatedModuleID(SPECIMEN_SHIPPING_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_specshippin_samp_sampship', 'name'));
+		$this->addXMLElement($xmlWriter, 'shipper_destination', $record['name_value_list']['shipper_destination']['value']);
+                $this->addXMLElement($xmlWriter, 'shipment_date', $record['name_value_list']['shipment_date']['value']);
+                $this->addXMLElement($xmlWriter, 'shipment_temperature', $record['name_value_list']['shipment_temperature']['value']);
+                $this->addXMLElement($xmlWriter, 'shipment_tracking_no', $record['name_value_list']['shipment_tracking_no']['value']);
+		$this->addXMLElement($xmlWriter, 'shipment_receipt_confirmed', $record['name_value_list']['shipment_receipt_confirmed']['value']);
+                $this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $record['name_value_list']['shipment_receipt_dt']['value']);
+                $this->addXMLElement($xmlWriter, 'shipment_issues', $record['name_value_list']['shipment_issues']['value']);
+                $this->addXMLElement($xmlWriter, 'shipment_issues_oth', $record['name_value_list']['shipment_issues_oth']['value']);
+		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+    }
 	
-	// function parseSpecimenStorage(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('spec_storage');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-		////$this->addXMLElement($xmlWriter, 'spsc_id', $this->getRelatedModuleID(SPECIMEN_STORAGE_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		// $this->addXMLElement($xmlWriter, 'storage_container_id', $record['name_value_list']['name']['value']);
-		// $this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $record['name_value_list']['placed_in_storage_dt']['value']);//CHECH IF THE FIELD NAME MATCHES
-		////$this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(SPECIMEN_STORAGE_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		////$this->addXMLElement($xmlWriter, 'equip_id', $this->getRelatedModuleID(SPECIMEN_STORAGE_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                // $this->addXMLElement($xmlWriter, 'master_storage_unit', $record['name_value_list']['master_storage_unit']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'storage_comment', $record['name_value_list']['storage_comment']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'storage_comment_oth', $record['name_value_list']['storage_comment_oth']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $record['name_value_list']['removed_from_storage_dt']['value']);//CHECH IF THE FIELD NAME MATCHES
-		// $this->addXMLElement($xmlWriter, 'temp_event_st', $record['name_value_list']['temp_event_st']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'temp_event_et', $record['name_value_list']['temp_event_et']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'temp_event_low_temp', $record['name_value_list']['temp_event_low_temp']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'temp_event_high_temp', $record['name_value_list']['temp_event_high_temp']['value']);//CHECH IF THE FIELD NAME MATCHES
-		// $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-	// }
+	function parseSpecimenStorage(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('spec_storage');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+		$this->addXMLElement($xmlWriter, 'spsc_id', $this->getRelatedModuleID(SPECIMEN_STORAGE_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_specstorage_samp_spscinfo', 'name'));
+		$this->addXMLElement($xmlWriter, 'storage_container_id', $record['name_value_list']['name']['value']);
+		$this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $record['name_value_list']['placed_in_storage_dt']['value']);
+		$this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(SPECIMEN_STORAGE_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_specstorage_st_staffrstr', 'name'));
+		$this->addXMLElement($xmlWriter, 'equip_id', $this->getRelatedModuleID(SPECIMEN_STORAGE_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_specstorage_samp_specequip', 'name'));
+                $this->addXMLElement($xmlWriter, 'master_storage_unit', $record['name_value_list']['master_storage_unit']['value']);
+                $this->addXMLElement($xmlWriter, 'storage_comment', $record['name_value_list']['storage_comment']['value']);
+                $this->addXMLElement($xmlWriter, 'storage_comment_oth', $record['name_value_list']['storage_comment_oth']['value']);
+                $this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $record['name_value_list']['removed_from_storage_dt']['value']);
+		$this->addXMLElement($xmlWriter, 'temp_event_st', $record['name_value_list']['temp_event_st']['value']);
+                $this->addXMLElement($xmlWriter, 'temp_event_et', $record['name_value_list']['temp_event_et']['value']);
+                $this->addXMLElement($xmlWriter, 'temp_event_low_temp', $record['name_value_list']['temp_event_low_temp']['value']);
+                $this->addXMLElement($xmlWriter, 'temp_event_high_temp', $record['name_value_list']['temp_event_high_temp']['value']);
+		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+	}
 	
-	// function parseSpecimenInfo(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('spec_spsc_info');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-		////$this->addXMLElement($xmlWriter, 'spsc_id', $this->getRelatedModuleID(SPECIMEN_INFO_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		////$this->addXMLElement($xmlWriter, 'address_id', $this->getRelatedModuleID(SPECIMEN_INFO_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		// $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-	// }
+	function parseSpecimenInfo(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('spec_spsc_info');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+		$this->addXMLElement($xmlWriter, 'spsc_id', $record['name_value_list']['name']['value']);
+		$this->addXMLElement($xmlWriter, 'address_id', $this->getRelatedModuleID(SPECIMEN_INFO_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_spscinfo_ltt_address', 'name'));
+		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+	}
 	
-	// function parseEnvironmentalEquipmentInformation(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('env_equipment');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-		////$this->addXMLElement($xmlWriter, 'spsc_id', $this->getRelatedModuleID(ENVIRONMENTAL_EQUIPMENT_INFO_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		// $this->addXMLElement($xmlWriter, 'equip_id', $record['name_value_list']['name']['value']);
-		// $this->addXMLElement($xmlWriter, 'equipment_type', $record['name_value_list']['equipment_type']['value']);//CHECH IF THE FIELD NAME MATCHES
-		// $this->addXMLElement($xmlWriter, 'equipment_type_oth', $record['name_value_list']['equipment_type_oth']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'serial_no', $record['name_value_list']['serial_no']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'government_asset_tag_no', $record['name_value_list']['government_asset_tag_no']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'retired_date', $record['name_value_list']['retired_date']['value']);//CHECH IF THE FIELD NAME MATCHES
-		// $this->addXMLElement($xmlWriter, 'retired_reason', $record['name_value_list']['retired_reason']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'retired_reason_oth', $record['name_value_list']['retired_reason_oth']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-	// }
+	function parseEnvironmentalEquipmentInformation(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('env_equipment');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+		$this->addXMLElement($xmlWriter, 'spsc_id', $this->getRelatedModuleID(ENVIRONMENTAL_EQUIPMENT_INFO_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_enequip_samp_srscinfo', 'name'));
+		$this->addXMLElement($xmlWriter, 'equip_id', $record['name_value_list']['name']['value']);
+		$this->addXMLElement($xmlWriter, 'equipment_type', $record['name_value_list']['equipment_type']['value']);
+		$this->addXMLElement($xmlWriter, 'equipment_type_oth', $record['name_value_list']['equipment_type_oth']['value']);
+                $this->addXMLElement($xmlWriter, 'serial_no', $record['name_value_list']['serial_no']['value']);
+                $this->addXMLElement($xmlWriter, 'government_asset_tag_no', $record['name_value_list']['government_asset_tag_no']['value']);
+                $this->addXMLElement($xmlWriter, 'retired_date', $record['name_value_list']['retired_date']['value']);
+		$this->addXMLElement($xmlWriter, 'retired_reason', $record['name_value_list']['retired_reason']['value']);
+                $this->addXMLElement($xmlWriter, 'retired_reason_oth', $record['name_value_list']['retired_reason_oth']['value']);
+                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+	}
 	
-	// function parseEnvironmentalEquipmentProblemLog(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('env_equipment_prob_log');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-		////$this->addXMLElement($xmlWriter, 'spsc_id', $this->getRelatedModuleID(ENV_EQUIPMENT_PROBLEM_LOG_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		////$this->addXMLElement($xmlWriter, 'equip_id', $this->getRelatedModuleID(ENV_EQUIPMENT_PROBLEM_LOG_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		// $this->addXMLElement($xmlWriter, 'problem_id', $record['name_value_list']['name']['value']);
-		// $this->addXMLElement($xmlWriter, 'equipment_type', $record['name_value_list']['equipment_type']['value']);//CHECH IF THE FIELD NAME MATCHES
-		// $this->addXMLElement($xmlWriter, 'equipment_type_oth', $record['name_value_list']['equipment_type_oth']['value']);//CHECH IF THE FIELD NAME MATCHES
-               	////$this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(ENV_EQUIPMENT_PROBLEM_LOG_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                // $this->addXMLElement($xmlWriter, 'problem_dt', $record['name_value_list']['problem_dt']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'equip_issue', $record['name_value_list']['equip_issue']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'equip_action', $record['name_value_list']['equip_action']['value']);//CHECH IF THE FIELD NAME MATCHES
-		////$this->addXMLElement($xmlWriter, 'staff_id_reviewer', $this->getRelatedModuleID(ENV_EQUIPMENT_PROBLEM_LOG_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		// $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-	// }
+	function parseEnvironmentalEquipmentProblemLog(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('env_equipment_prob_log');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+		$this->addXMLElement($xmlWriter, 'spsc_id', $this->getRelatedModuleID(ENV_EQUIPMENT_PROBLEM_LOG_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_enlogequip_samp_srscinfo', 'name'));
+		$this->addXMLElement($xmlWriter, 'equip_id', $this->getRelatedModuleID(ENV_EQUIPMENT_PROBLEM_LOG_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_enlogequip_samp_enequip', 'name'));
+		$this->addXMLElement($xmlWriter, 'problem_id', $record['name_value_list']['name']['value']);
+		$this->addXMLElement($xmlWriter, 'equipment_type', $record['name_value_list']['equipment_type']['value']);
+		$this->addXMLElement($xmlWriter, 'equipment_type_oth', $record['name_value_list']['equipment_type_oth']['value']);
+               	$this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(ENV_EQUIPMENT_PROBLEM_LOG_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_enlogequip_st_staffrstr', 'name'));
+                $this->addXMLElement($xmlWriter, 'problem_dt', $record['name_value_list']['problem_dt']['value']);
+                $this->addXMLElement($xmlWriter, 'equip_issue', $record['name_value_list']['equip_issue']['value']);
+                $this->addXMLElement($xmlWriter, 'equip_action', $record['name_value_list']['equip_action']['value']);
+		$this->addXMLElement($xmlWriter, 'staff_id_reviewer', $record['name_value_list']['staff_id_reviewer']['value']);
+		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+	}
 	
-	// function parseParticipantConsentSample(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('participant_consent_sample');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-		////$this->addXMLElement($xmlWriter, 'p_id', $this->getRelatedModuleID(PARTICIPANT_CONSENT_SAMPLE_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		////$this->addXMLElement($xmlWriter, 'participant_consent_id', $this->getRelatedModuleID(PARTICIPANT_CONSENT_SAMPLE_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		// $this->addXMLElement($xmlWriter, 'participant_consent_sample_id', $record['name_value_list']['name']['value']);
-		// $this->addXMLElement($xmlWriter, 'sample_consent_type', $record['name_value_list']['sample_consent_type']['value']);//CHECH IF THE FIELD NAME MATCHES
-		// $this->addXMLElement($xmlWriter, 'sample_consent_given', $record['name_value_list']['sample_consent_given']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-	// }
+	function parseParticipantConsentSample(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('participant_consent_sample');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+				$this->addXMLElement($xmlWriter, 'p_id', $this->getRelatedModuleID(PARTICIPANT_CONSENT_SAMPLE_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'plt_partsampcon_plt_participant', 'name'));
+				$this->addXMLElement($xmlWriter, 'participant_consent_id', $this->getRelatedModuleID(PARTICIPANT_CONSENT_SAMPLE_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'plt_partsampcon_plt_prtcptcnsnt', 'name'));
+				$this->addXMLElement($xmlWriter, 'participant_consent_sample_id', $record['name_value_list']['name']['value']);
+				$this->addXMLElement($xmlWriter, 'sample_consent_type', $record['name_value_list']['sample_consent_type']['value']);
+				$this->addXMLElement($xmlWriter, 'sample_consent_given', $record['name_value_list']['sample_consent_given']['value']);
+                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+	}
 	
-	// function parseParticipantRecordVisit(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('participant_rvis');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-		// $this->addXMLElement($xmlWriter, 'rvis_id', $record['name_value_list']['name']['value']);
-		////$this->addXMLElement($xmlWriter, 'p_id', $this->getRelatedModuleID(PARTICIPANT_RECORD_VISIT_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		// $this->addXMLElement($xmlWriter, 'rvis_language', $record['name_value_list']['rvis_language']['value']);
-		// $this->addXMLElement($xmlWriter, 'rvis_language_oth', $record['name_value_list']['rvis_language_oth']['value']);//CHECH IF THE FIELD NAME MATCHES
-		////$this->addXMLElement($xmlWriter, 'rvis_person', $this->getRelatedModuleID(PARTICIPANT_RECORD_VISIT_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		// $this->addXMLElement($xmlWriter, 'rvis_who_consented', $record['name_value_list']['rvis_who_consented']['value']);
-		// $this->addXMLElement($xmlWriter, 'rvis_translate', $record['name_value_list']['rvis_translate']['value']);//CHECH IF THE FIELD NAME MATCHES
-		////$this->addXMLElement($xmlWriter, 'contact_id', $this->getRelatedModuleID(PARTICIPANT_RECORD_VISIT_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                // $this->addXMLElement($xmlWriter, 'time_stamp_1', $record['name_value_list']['time_stamp_1']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'rvis_sections', $record['name_value_list']['rvis_sections']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'rvis_during_interv', $record['name_value_list']['rvis_during_interv']['value']);//CHECH IF THE FIELD NAME MATCHES
-		// $this->addXMLElement($xmlWriter, 'rvis_during_bio', $record['name_value_list']['rvis_during_bio']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'rvis_bio_cord', $record['name_value_list']['rvis_bio_cord']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'rvis_during_env', $record['name_value_list']['rvis_during_env']['value']);//CHECH IF THE FIELD NAME MATCHES
-		// $this->addXMLElement($xmlWriter, 'rvis_during_thanks', $record['name_value_list']['rvis_during_thanks']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'rvis_after_saq', $record['name_value_list']['rvis_after_saq']['value']);//CHECH IF THE FIELD NAME MATCHES
-                // $this->addXMLElement($xmlWriter, 'rvis_reconsideration', $record['name_value_list']['rvis_reconsideration']['value']);//CHECH IF THE FIELD NAME MATCHES
-		// $this->addXMLElement($xmlWriter, 'time_stamp_2', $record['name_value_list']['time_stamp_2']['value']);//CHECH IF THE FIELD NAME MATCHES
-		// $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-	// }
+	function parseParticipantRecordVisit(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('participant_rvis');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+				$this->addXMLElement($xmlWriter, 'rvis_id', $record['name_value_list']['name']['value']);
+				$this->addXMLElement($xmlWriter, 'p_id', $this->getRelatedModuleID(PARTICIPANT_RECORD_VISIT_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'plt_partrvis_plt_participant', 'name'));
+				$this->addXMLElement($xmlWriter, 'rvis_language', $record['name_value_list']['rvis_language']['value']);
+				$this->addXMLElement($xmlWriter, 'rvis_language_oth', $record['name_value_list']['rvis_language_oth']['value']);
+				$this->addXMLElement($xmlWriter, 'rvis_person', $record['name_value_list']['rvis_person']['value']);
+				$this->addXMLElement($xmlWriter, 'rvis_who_consented', $record['name_value_list']['rvis_who_consented']['value']);
+				$this->addXMLElement($xmlWriter, 'rvis_translate', $record['name_value_list']['rvis_translate']['value']);
+				//$this->addXMLElement($xmlWriter, 'contact_id', $this->getRelatedModuleID(PARTICIPANT_RECORD_VISIT_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
+                $this->addXMLElement($xmlWriter, 'time_stamp_1', $record['name_value_list']['time_stamp_1']['value']);
+                $this->addXMLElement($xmlWriter, 'rvis_sections', $record['name_value_list']['rvis_sections']['value']);
+                $this->addXMLElement($xmlWriter, 'rvis_during_interv', $record['name_value_list']['rvis_during_interv']['value']);
+				$this->addXMLElement($xmlWriter, 'rvis_during_bio', $record['name_value_list']['rvis_during_bio']['value']);
+                $this->addXMLElement($xmlWriter, 'rvis_bio_cord', $record['name_value_list']['rvis_bio_cord']['value']);
+                $this->addXMLElement($xmlWriter, 'rvis_during_env', $record['name_value_list']['rvis_during_env']['value']);
+				$this->addXMLElement($xmlWriter, 'rvis_during_thanks', $record['name_value_list']['rvis_during_thanks']['value']);
+                $this->addXMLElement($xmlWriter, 'rvis_after_saq', $record['name_value_list']['rvis_after_saq']['value']);
+                $this->addXMLElement($xmlWriter, 'rvis_reconsideration', $record['name_value_list']['rvis_reconsideration']['value']);
+				$this->addXMLElement($xmlWriter, 'time_stamp_2', $record['name_value_list']['time_stamp_2']['value']);
+				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+	}
 	
-	function parseParticipantVisitConsent(&$xmlWriter, $results) //CHANGED ORDER DUE TO 2.0
+	function parseParticipantVisitConsent(&$xmlWriter, $results)
         {
             foreach ($results['entry_list'] as $record) {
                 $xmlWriter->startElement('participant_vis_consent');
                     $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
                     $this->addXMLElement($xmlWriter, 'pid_visit_consent_id', $record['name_value_list']['name']['value']);
-                    $this->addXMLElement($xmlWriter, 'p_id', $this->getRelatedModuleID(PARTICIPANT_VIS_CONSENT_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'plt_participlt_prtcptvstc', 'name'));
+                    $this->addXMLElement($xmlWriter, 'p_id', $this->getRelatedModuleID(PARTICIPANT_VIS_CONSENT_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'plt_participant_plt_prtcptvstc', 'name'));
                     $this->addXMLElement($xmlWriter, 'vis_consent_type', $record['name_value_list']['vis_consent_type']['value']);
                     $this->addXMLElement($xmlWriter, 'vis_consent_response', $record['name_value_list']['vis_consent_response']['value']);
                     $this->addXMLElement($xmlWriter, 'vis_language', $record['name_value_list']['vis_language']['value']);
                     $this->addXMLElement($xmlWriter, 'vis_language_oth', $record['name_value_list']['vis_language_oth']['value']);
-                    $this->addXMLElement($xmlWriter, 'vis_person_who_consented_id', $record['name_value_list']['vis_person_who_consented_id']['value']); //Should be relationship to Person Person_id
+                    $this->addXMLElement($xmlWriter, 'vis_person_who_consented_id', $record['name_value_list']['vis_person_who_consented_id']['value']);
                     $this->addXMLElement($xmlWriter, 'vis_who_consented', $record['name_value_list']['vis_who_consented']['value']);
                     $this->addXMLElement($xmlWriter, 'vis_translate', $record['name_value_list']['vis_translate']['value']);
                     $this->addXMLElement($xmlWriter, 'vis_comments', $record['name_value_list']['vis_comments']['value']);
-                    $this->addXMLElement($xmlWriter, 'contact_id', $this->getRelatedModuleID(PARTICIPANT_VIS_CONSENT_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'ncsdc_cntctplt_prtcptvstc', 'name'));
+                    $this->addXMLElement($xmlWriter, 'contact_id', $this->getRelatedModuleID(PARTICIPANT_VIS_CONSENT_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'ncsdc_cntctinfo_plt_prtcptvstc', 'name'));
                     $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
                 $xmlWriter->endElement();
             }
         }
 	
-	// function parsePrecisionThermometerCertification(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('prec_therm_cert');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-                ////$this->addXMLElement($xmlWriter, 'srsc_id', $this->getRelatedModuleID(PRECISION_THERMOMETER_CERT_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                ////$this->addXMLElement($xmlWriter, 'equip_id', $this->getRelatedModuleID(PRECISION_THERMOMETER_CERT_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                ////$this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(PRECISION_THERMOMETER_CERT_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		// $this->addXMLElement($xmlWriter, 'certification_id', $record['name_value_list']['name']['value']);
-                // $this->addXMLElement($xmlWriter, 'precision_cert_status', $record['name_value_list']['precision_cert_status']['value']);
-                // $this->addXMLElement($xmlWriter, 'certification_date', $record['name_value_list']['certification_date']['value']);
-                // $this->addXMLElement($xmlWriter, 'certification_expire_dt', $record['name_value_list']['certification_expire_dt']['value']);
-                // $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-    // }
+	function parsePrecisionThermometerCertification(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('prec_therm_cert');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'srsc_id', $this->getRelatedModuleID(PRECISION_THERMOMETER_CERT_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_prethrmcert_samp_srscinfo', 'name'));
+                $this->addXMLElement($xmlWriter, 'equip_id', $this->getRelatedModuleID(PRECISION_THERMOMETER_CERT_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_prethrmcert_samp_enequip', 'name'));
+                $this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(PRECISION_THERMOMETER_CERT_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_prethrmcert_st_staffrstr', 'name'));
+		$this->addXMLElement($xmlWriter, 'certification_id', $record['name_value_list']['name']['value']);
+                $this->addXMLElement($xmlWriter, 'precision_cert_status', $record['name_value_list']['precision_cert_status']['value']);
+                $this->addXMLElement($xmlWriter, 'certification_date', $record['name_value_list']['certification_date']['value']);
+                $this->addXMLElement($xmlWriter, 'certification_expire_dt', $record['name_value_list']['certification_expire_dt']['value']);
+                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+    }
 	
-	// function parseRefrigeratorFreezerVerification(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('ref_freezer_verification');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-                ////$this->addXMLElement($xmlWriter, 'srsc_id', $this->getRelatedModuleID(REFRIGERATOR_FREEZER_VER_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                ////$this->addXMLElement($xmlWriter, 'equip_id', $this->getRelatedModuleID(REFRIGERATOR_FREEZER_VER_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                ////$this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(REFRIGERATOR_FREEZER_VER_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		// $this->addXMLElement($xmlWriter, 'verification_id', $record['name_value_list']['name']['value']);
-                // $this->addXMLElement($xmlWriter, 'verification_dt', $record['name_value_list']['verification_dt']['value']);
-                // $this->addXMLElement($xmlWriter, 'rf_thermometer_equip_id', $record['name_value_list']['rf_thermometer_equip_id']['value']); 
-                // $this->addXMLElement($xmlWriter, 'correction_factor_temp', $record['name_value_list']['correction_factor_temp']['value']);
-                // $this->addXMLElement($xmlWriter, 'current_temp', $record['name_value_list']['current_temp']['value']);
-                // $this->addXMLElement($xmlWriter, 'maximum_temp', $record['name_value_list']['maximum_temp']['value']);
-                // $this->addXMLElement($xmlWriter, 'minimum_temp', $record['name_value_list']['minimum_temp']['value']);
-                // $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-    // }
+	function parseRefrigeratorFreezerVerification(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('ref_freezer_verification');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'srsc_id', $this->getRelatedModuleID(REFRIGERATOR_FREEZER_VER_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_reffreezver_samp_srscinfo', 'name'));
+                $this->addXMLElement($xmlWriter, 'equip_id', $this->getRelatedModuleID(REFRIGERATOR_FREEZER_VER_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_reffreezver_samp_enequip', 'name'));
+                $this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(REFRIGERATOR_FREEZER_VER_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_reffreezver_st_staffrstr', 'name'));
+		$this->addXMLElement($xmlWriter, 'verification_id', $record['name_value_list']['name']['value']);
+                $this->addXMLElement($xmlWriter, 'verification_dt', $record['name_value_list']['verification_dt']['value']);
+                $this->addXMLElement($xmlWriter, 'rf_thermometer_equip_id', $record['name_value_list']['rf_thermometer_equip_id']['value']); 
+                $this->addXMLElement($xmlWriter, 'correction_factor_temp', $record['name_value_list']['correction_factor_temp']['value']);
+                $this->addXMLElement($xmlWriter, 'current_temp', $record['name_value_list']['current_temp']['value']);
+                $this->addXMLElement($xmlWriter, 'maximum_temp', $record['name_value_list']['maximum_temp']['value']);
+                $this->addXMLElement($xmlWriter, 'minimum_temp', $record['name_value_list']['minimum_temp']['value']);
+                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+    }
 	
-	// function parseSampleReceiptStorage(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('sample_receipt_store');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-                // $this->addXMLElement($xmlWriter, 'sample_id', $record['name_value_list']['name']['value']);
-		////$this->addXMLElement($xmlWriter, 'srsc_id', $this->getRelatedModuleID(SAMPLE_RECEIPT_STORAGE_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                ////$this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(SAMPLE_RECEIPT_STORAGE_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                // $this->addXMLElement($xmlWriter, 'sample_condition', $record['name_value_list']['sample_condition']['value']);
-                // $this->addXMLElement($xmlWriter, 'receipt_comment_oth', $record['name_value_list']['receipt_comment_oth']['value']); 
-                // $this->addXMLElement($xmlWriter, 'receipt_dt', $record['name_value_list']['receipt_dt']['value']);
-                ////$this->addXMLElement($xmlWriter, 'equip_id', $this->getRelatedModuleID(SAMPLE_RECEIPT_STORAGE_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		// $this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $record['name_value_list']['placed_in_storage_dt']['value']);
-                // $this->addXMLElement($xmlWriter, 'storage_compartment_area', $record['name_value_list']['storage_compartment_area']['value']);
-                // $this->addXMLElement($xmlWriter, 'storage_comment_oth', $record['name_value_list']['storage_comment_oth']['value']);
-                // $this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $record['name_value_list']['removed_from_storage_dt']['value']);
-                // $this->addXMLElement($xmlWriter, 'temp_event_occurred', $record['name_value_list']['temp_event_occurred']['value']);
-                // $this->addXMLElement($xmlWriter, 'temp_event_action', $record['name_value_list']['temp_event_action']['value']);
-                // $this->addXMLElement($xmlWriter, 'temp_event_action_oth', $record['name_value_list']['temp_event_action_oth']['value']);
-		// $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-    // }
+	function parseSampleReceiptStorage(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('sample_receipt_store');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'sample_id', $record['name_value_list']['name']['value']);
+		$this->addXMLElement($xmlWriter, 'srsc_id', $this->getRelatedModuleID(SAMPLE_RECEIPT_STORAGE_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_recstor_samp_srscinfo', 'name'));
+                $this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(SAMPLE_RECEIPT_STORAGE_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_recstor_st_staffrstr', 'name'));
+                $this->addXMLElement($xmlWriter, 'sample_condition', $record['name_value_list']['sample_condition']['value']);
+                $this->addXMLElement($xmlWriter, 'receipt_comment_oth', $record['name_value_list']['receipt_comment_oth']['value']); 
+                $this->addXMLElement($xmlWriter, 'receipt_dt', $record['name_value_list']['receipt_dt']['value']);
+		$this->addXMLElement($xmlWriter, 'cooler_temp_cond', $record['name_value_list']['cooler_temp_cond']['value']);
+                $this->addXMLElement($xmlWriter, 'equip_id', $this->getRelatedModuleID(SAMPLE_RECEIPT_STORAGE_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_recstor_samp_enequip', 'name'));
+		$this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $record['name_value_list']['placed_in_storage_dt']['value']);
+                $this->addXMLElement($xmlWriter, 'storage_compartment_area', $record['name_value_list']['storage_compartment_area']['value']);
+                $this->addXMLElement($xmlWriter, 'storage_comment_oth', $record['name_value_list']['storage_comment_oth']['value']);
+                $this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $record['name_value_list']['removed_from_storage_dt']['value']);
+                $this->addXMLElement($xmlWriter, 'temp_event_occurred', $record['name_value_list']['temp_event_occurred']['value']);
+                $this->addXMLElement($xmlWriter, 'temp_event_action', $record['name_value_list']['temp_event_action']['value']);
+                $this->addXMLElement($xmlWriter, 'temp_event_action_oth', $record['name_value_list']['temp_event_action_oth']['value']);
+		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+    }
 	
-	// function parseSampleShipping(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('sample_shipping');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-                // $this->addXMLElement($xmlWriter, 'sample_id', $record['name_value_list']['name']['value']);
-		////$this->addXMLElement($xmlWriter, 'srsc_id', $this->getRelatedModuleID(SAMPLE_SHIPPING_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                ////$this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(SAMPLE_SHIPPING_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                // $this->addXMLElement($xmlWriter, 'shipper_id', $record['name_value_list']['shipper_id']['value']);
-                // $this->addXMLElement($xmlWriter, 'shipper_destination', $record['name_value_list']['shipper_destination']['value']); 
-                // $this->addXMLElement($xmlWriter, 'shipment_date', $record['name_value_list']['shipment_date']['value']);
-                // $this->addXMLElement($xmlWriter, 'shipment_coolant', $record['name_value_list']['shipment_coolant']['value']);
-                // $this->addXMLElement($xmlWriter, 'shipment_tracking_no', $record['name_value_list']['shipment_tracking_no']['value']);
-                // $this->addXMLElement($xmlWriter, 'shipment_issues_oth', $record['name_value_list']['shipment_issues_oth']['value']);
-                ////$this->addXMLElement($xmlWriter, 'staff_id_track', $this->getRelatedModuleID(SAMPLE_SHIPPING_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		// $this->addXMLElement($xmlWriter, 'sample_shipped_by', $record['name_value_list']['sample_shipped_by']['value']);
-		// $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-    // }
+	function parseSampleShipping(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('sample_shipping');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'sample_id', $record['name_value_list']['name']['value']);
+		$this->addXMLElement($xmlWriter, 'srsc_id', $this->getRelatedModuleID(SAMPLE_SHIPPING_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_sampship_samp_srscinfo', 'name'));
+                $this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(SAMPLE_SHIPPING_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_sampship_st_staffrstr', 'name'));
+                $this->addXMLElement($xmlWriter, 'shipper_id', $record['name_value_list']['shipper_id']['value']);
+                $this->addXMLElement($xmlWriter, 'shipper_destination', $record['name_value_list']['shipper_destination']['value']); 
+                $this->addXMLElement($xmlWriter, 'shipment_date', $record['name_value_list']['shipment_date']['value']);
+                $this->addXMLElement($xmlWriter, 'shipment_coolant', $record['name_value_list']['shipment_coolant']['value']);
+                $this->addXMLElement($xmlWriter, 'shipment_tracking_no', $record['name_value_list']['shipment_tracking_no']['value']);
+                $this->addXMLElement($xmlWriter, 'shipment_issues_oth', $record['name_value_list']['shipment_issues_oth']['value']);
+                $this->addXMLElement($xmlWriter, 'staff_id_track', $record['name_value_list']['staff_id_track']['value']);
+                $this->addXMLElement($xmlWriter, 'sample_shipped_by', $record['name_value_list']['sample_shipped_by']['value']);
+		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+    }
 	
-	// function parseSrscInformation(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('srsc_info');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-                // $this->addXMLElement($xmlWriter, 'srsc_id', $record['name_value_list']['name']['value']);
-		////$this->addXMLElement($xmlWriter, 'address_id', $this->getRelatedModuleID(SRSC_INFO_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                // $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-    // }
+	function parseSrscInformation(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('srsc_info');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'srsc_id', $record['name_value_list']['name']['value']);
+		$this->addXMLElement($xmlWriter, 'address_id', $this->getRelatedModuleID(SRSC_INFO_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_srscinfo_ltt_address', 'name'));
+                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+    }
 	
-	// function parseSubsampleDocument(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('subsample_doc');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-                ////$this->addXMLElement($xmlWriter, 'event_id', $this->getRelatedModuleID(SUBSAMPLE_DOC_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		// $this->addXMLElement($xmlWriter, 'subsample_doc_id', $record['name_value_list']['name']['value']);
-                // $this->addXMLElement($xmlWriter, 'random_order_no', $record['name_value_list']['random_order_no']['value']);
-		// $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-    // }
+	function parseSubsampleDocument(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('subsample_doc');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'event_id', $this->getRelatedModuleID(SUBSAMPLE_DOC_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_subsampdoc_ncsdc_eventinfo', 'name'));
+		$this->addXMLElement($xmlWriter, 'subsample_doc_id', $record['name_value_list']['name']['value']);
+                $this->addXMLElement($xmlWriter, 'random_order_no', $record['name_value_list']['random_order_no']['value']);
+		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+    }
 	
-	// function parseTRHMeterCalibration(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('trh_meter_calibration');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-                ////$this->addXMLElement($xmlWriter, 'srsc_id', $this->getRelatedModuleID(TRH_METER_CALIBRATION_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                ////$this->addXMLElement($xmlWriter, 'equip_id', $this->getRelatedModuleID(TRH_METER_CALIBRATION_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                ////$this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(TRH_METER_CALIBRATION_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		// $this->addXMLElement($xmlWriter, 'calibration_id', $record['name_value_list']['name']['value']);
-		// $this->addXMLElement($xmlWriter, 'sample_condition', $record['name_value_list']['sample_condition']['value']);
-                // $this->addXMLElement($xmlWriter, 'calibration_expire_dt', $record['name_value_list']['calibration_expire_dt']['value']); 
-                // $this->addXMLElement($xmlWriter, 'verification_dt', $record['name_value_list']['verification_dt']['value']);
-                // $this->addXMLElement($xmlWriter, 'thr_equip_id', $record['name_value_list']['thr_equip_id']['value']);
-                // $this->addXMLElement($xmlWriter, 'precision_term_temp', $record['name_value_list']['precision_term_temp']['value']);
-                // $this->addXMLElement($xmlWriter, 'trh_temp', $record['name_value_list']['trh_temp']['value']);
-                // $this->addXMLElement($xmlWriter, 'salts_moist', $record['name_value_list']['salts_moist']['value']);
-                // $this->addXMLElement($xmlWriter, 's_33rh_reading', $record['name_value_list']['s_33rh_reading']['value']);
-                // $this->addXMLElement($xmlWriter, 's_75rh_reading', $record['name_value_list']['s_75rh_reading']['value']);
-                // $this->addXMLElement($xmlWriter, 's_33_rh_need_calib', $record['name_value_list']['s_33_rh_need_calib']['value']);
-		// $this->addXMLElement($xmlWriter, 's_75_rh_need_calib', $record['name_value_list']['s_75_rh_need_calib']['value']);
-		// $this->addXMLElement($xmlWriter, 's_33rh_reading_calib', $record['name_value_list']['s_33rh_reading_calib']['value']);
-		// $this->addXMLElement($xmlWriter, 's_75rh_reading_calib', $record['name_value_list']['s_75rh_reading_calib']['value']);
-		// $this->addXMLElement($xmlWriter, 'trh_calib_fail_rsn', $record['name_value_list']['trh_calib_fail_rsn']['value']);
-		// $this->addXMLElement($xmlWriter, 'trh_calib_fail_reas_other', $record['name_value_list']['trh_calib_fail_reas_other']['value']);
-		// $this->addXMLElement($xmlWriter, 'trh_calib_status', $record['name_value_list']['trh_calib_status']['value']);
-		// $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-    // }
+	function parseTRHMeterCalibration(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('trh_meter_calibration');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'srsc_id', $this->getRelatedModuleID(TRH_METER_CALIBRATION_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_trhmetercal_samp_srscinfo', 'name'));
+                $this->addXMLElement($xmlWriter, 'equip_id', $this->getRelatedModuleID(TRH_METER_CALIBRATION_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_trhmetercal_samp_enequip', 'name'));
+                $this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(TRH_METER_CALIBRATION_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_trhmetercal_st_staffrstr', 'name'));
+		$this->addXMLElement($xmlWriter, 'calibration_id', $record['name_value_list']['name']['value']);
+		$this->addXMLElement($xmlWriter, 'sample_condition', $record['name_value_list']['sample_condition']['value']);
+                $this->addXMLElement($xmlWriter, 'calibration_expire_dt', $record['name_value_list']['calibration_expire_dt']['value']); 
+                $this->addXMLElement($xmlWriter, 'verification_dt', $record['name_value_list']['verification_dt']['value']);
+                $this->addXMLElement($xmlWriter, 'thr_equip_id', $record['name_value_list']['thr_equip_id']['value']);
+                $this->addXMLElement($xmlWriter, 'precision_term_temp', $record['name_value_list']['precision_term_temp']['value']);
+                $this->addXMLElement($xmlWriter, 'trh_temp', $record['name_value_list']['trh_temp']['value']);
+                $this->addXMLElement($xmlWriter, 'salts_moist', $record['name_value_list']['salts_moist']['value']);
+                $this->addXMLElement($xmlWriter, 's_33rh_reading', $record['name_value_list']['s_33rh_reading']['value']);
+                $this->addXMLElement($xmlWriter, 's_75rh_reading', $record['name_value_list']['s_75rh_reading']['value']);
+                $this->addXMLElement($xmlWriter, 's_33_rh_need_calib', $record['name_value_list']['s_33_rh_need_calib']['value']);
+		$this->addXMLElement($xmlWriter, 's_75_rh_need_calib', $record['name_value_list']['s_75_rh_need_calib']['value']);
+		$this->addXMLElement($xmlWriter, 's_33rh_reading_calib', $record['name_value_list']['s_33rh_reading_calib']['value']);
+		$this->addXMLElement($xmlWriter, 's_75rh_reading_calib', $record['name_value_list']['s_75rh_reading_calib']['value']);
+		$this->addXMLElement($xmlWriter, 'trh_calib_fail_rsn', $record['name_value_list']['trh_calib_fail_rsn']['value']);
+		$this->addXMLElement($xmlWriter, 'trh_calib_fail_reas_other', $record['name_value_list']['trh_calib_fail_reas_other']['value']);
+		$this->addXMLElement($xmlWriter, 'trh_calib_status', $record['name_value_list']['trh_calib_status']['value']);
+		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+    }
 	
-	// function parseDigitalRefrigeratorFreezerThermVerification(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('drf_therm_verification');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-                ////$this->addXMLElement($xmlWriter, 'srsc_id', $this->getRelatedModuleID(DRFT_THERM_VERIFICATION_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-                ////$this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(DRFT_THERM_VERIFICATION_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		// $this->addXMLElement($xmlWriter, 'drf_therm_verification_date', $record['name_value_list']['drf_therm_verification_date']['value']);
-		// $this->addXMLElement($xmlWriter, 'drf_verification_id', $record['name_value_list']['name']['value']);
-                // $this->addXMLElement($xmlWriter, 'equip_id', $record['name_value_list']['equip_id']['value']); 
-                // $this->addXMLElement($xmlWriter, 'rf_thermometer_equip_id', $record['name_value_list']['rf_thermometer_equip_id']['value']);
-                // $this->addXMLElement($xmlWriter, 'certification_expire_dt', $record['name_value_list']['certification_expire_dt']['value']);
-                // $this->addXMLElement($xmlWriter, 'precision_term_temp', $record['name_value_list']['precision_term_temp']['value']);
-                // $this->addXMLElement($xmlWriter, 'rf_temp', $record['name_value_list']['rf_temp']['value']);
-                // $this->addXMLElement($xmlWriter, 'correction_factor_temp', $record['name_value_list']['correction_factor_temp']['value']);
-		// $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-    // }
+	function parseDigitalRefrigeratorFreezerThermVerification(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('drf_therm_verification');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'srsc_id', $this->getRelatedModuleID(DRFT_THERM_VERIFICATION_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_drfthermver_samp_srscinfo', 'name'));
+                $this->addXMLElement($xmlWriter, 'staff_id', $this->getRelatedModuleID(DRFT_THERM_VERIFICATION_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_drfthermver_st_staffrstr', 'name'));
+		$this->addXMLElement($xmlWriter, 'drf_therm_verification_date', $record['name_value_list']['drf_therm_verification_date']['value']);
+		$this->addXMLElement($xmlWriter, 'drf_verification_id', $record['name_value_list']['name']['value']);
+                $this->addXMLElement($xmlWriter, 'equip_id', $this->getRelatedModuleID(DRFT_THERM_VERIFICATION_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_drfthermver_samp_enequip', 'name'));
+		$this->addXMLElement($xmlWriter, 'rf_thermometer_equip_id', $record['name_value_list']['rf_thermometer_equip_id']['value']);
+                $this->addXMLElement($xmlWriter, 'certification_expire_dt', $record['name_value_list']['certification_expire_dt']['value']);
+                $this->addXMLElement($xmlWriter, 'precision_term_temp', $record['name_value_list']['precision_term_temp']['value']);
+                $this->addXMLElement($xmlWriter, 'rf_temp', $record['name_value_list']['rf_temp']['value']);
+                $this->addXMLElement($xmlWriter, 'correction_factor_temp', $record['name_value_list']['correction_factor_temp']['value']);
+		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+    }
 	
-	// function parseSampleReceiptConfirmation(&$xmlWriter, $results)
-    // {
-        // foreach ($results['entry_list'] as $record) {
-            // $xmlWriter->startElement('sample_receipt_confirm');
-                // $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
-                ////$this->addXMLElement($xmlWriter, 'srsc_id', $this->getRelatedModuleID(SAMPLE_RECEIPT_CONFIRM_SUGAR_MODULE, $record['name_value_list']['id']['value'], '???', 'name'));
-		// $this->addXMLElement($xmlWriter, 'shipment_receipt_confirmed', $record['name_value_list']['shipment_receipt_confirmed']['value']); 
-                // $this->addXMLElement($xmlWriter, 'shipper_id', $record['name_value_list']['shipper_id']['value']);
-                // $this->addXMLElement($xmlWriter, 'shipment_tracking_no', $record['name_value_list']['shipment_tracking_no']['value']);
-                // $this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $record['name_value_list']['shipment_receipt_dt']['value']);
-                // $this->addXMLElement($xmlWriter, 'shipment_condition', $record['name_value_list']['shipment_condition']['value']);
-                // $this->addXMLElement($xmlWriter, 'shipment_damaged_reason', $record['name_value_list']['shipment_damaged_reason']['value']);
-		// $this->addXMLElement($xmlWriter, 'sample_id', $record['name_value_list']['name']['value']);
-                // $this->addXMLElement($xmlWriter, 'sample_receipt_temp', $record['name_value_list']['sample_receipt_temp']['value']);
-		// $this->addXMLElement($xmlWriter, 'sample_condition', $record['name_value_list']['sample_condition']['value']);
-		// $this->addXMLElement($xmlWriter, 'shipment_received_by', $record['name_value_list']['shipment_received_by']['value']);
-		// $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            // $xmlWriter->endElement();
-        // }
-    // }
+	function parseSampleReceiptConfirmation(&$xmlWriter, $results)
+    {
+        foreach ($results['entry_list'] as $record) {
+            $xmlWriter->startElement('sample_receipt_confirm');
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['name_value_list']['psu_id']['value'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'srsc_id', $this->getRelatedModuleID(SAMPLE_RECEIPT_CONFIRM_SUGAR_MODULE, $record['name_value_list']['id']['value'], 'samp_recconf_samp_srscinfo', 'name'));
+		$this->addXMLElement($xmlWriter, 'shipment_receipt_confirmed', $record['name_value_list']['shipment_receipt_confirmed']['value']); 
+                $this->addXMLElement($xmlWriter, 'shipper_id', $record['name_value_list']['shipper_id']['value']);
+                $this->addXMLElement($xmlWriter, 'shipment_tracking_no', $record['name_value_list']['shipment_tracking_no']['value']);
+                $this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $record['name_value_list']['shipment_receipt_dt']['value']);
+                $this->addXMLElement($xmlWriter, 'shipment_condition', $record['name_value_list']['shipment_condition']['value']);
+                $this->addXMLElement($xmlWriter, 'shipment_damaged_reason', $record['name_value_list']['shipment_damaged_reason']['value']);
+		$this->addXMLElement($xmlWriter, 'sample_id', $record['name_value_list']['name']['value']);
+                $this->addXMLElement($xmlWriter, 'sample_receipt_temp', $record['name_value_list']['sample_receipt_temp']['value']);
+		$this->addXMLElement($xmlWriter, 'sample_condition', $record['name_value_list']['sample_condition']['value']);
+		$this->addXMLElement($xmlWriter, 'shipment_received_by', $record['name_value_list']['shipment_received_by']['value']);
+		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $xmlWriter->endElement();
+        }
+    }
 	
 	//// ******************************************************
 	
@@ -1471,7 +1471,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
     	$mod = new $class_name();
     	$mod->retrieve($primaryModuleID);
         $field_list = array($secondaryModuleIDField);
-        $result = parent::getRelationshipResults($mod, $relationshipName, $field_list, $related_module_query,$order_by);
+        $result = parent::getRelationshipResults($mod, $relationshipName, $field_list);
         if ($result){
             return $result['rows'][0][$secondaryModuleIDField];
         }
