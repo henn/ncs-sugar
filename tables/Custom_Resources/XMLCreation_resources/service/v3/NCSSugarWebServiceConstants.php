@@ -5,6 +5,11 @@
  */
 
 /*
+ * PAGE SIZE FOR INCREMENTAL EXTRACTION OF MODULE DATA
+ */
+define('EXTRACT_PAGE_SIZE',                         '200');
+
+/*
  * MODULE MAPPINGS
  */
 define('STUDY_CENTER_SUGAR_MODULE',                 'GT_StudyCntr');
