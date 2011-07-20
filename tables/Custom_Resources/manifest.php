@@ -363,6 +363,28 @@ $installdefs = array (
       'from' => '<basepath>/IDCreation_resources/modules/ST_WkOEAct/views/view.edit.php',
       'to' => 'custom/modules/ST_WkOEAct/views/view.edit.php',
     ),
+---------
+####Begin copy of ST_MSOutEval######
+	array (
+	  'from' => '<basepath>/IDCreation_resources/modules/ST_MSOutEval/views/view.edit.php',
+	  'to' => 'custom/modules/ST_MSOutEval/views/view.edit.php',
+	),
+####Begin copy of ST_MSOutLang2######
+	array (
+	  'from' => '<basepath>/IDCreation_resources/modules/ST_MSOutLang2/views/view.edit.php',
+	  'to' => 'custom/modules/ST_MSOutLang2/views/view.edit.php',
+	),
+####Begin copy of ST_MSOutRace######
+	array (
+	  'from' => '<basepath>/IDCreation_resources/modules/ST_MSOutRace/views/view.edit.php',
+	  'to' => 'custom/modules/ST_MSOutRace/views/view.edit.php',
+	),
+####Begin copy of ST_MSOutTarg######
+	array (
+	  'from' => '<basepath>/IDCreation_resources/modules/ST_MSOutTarg/views/view.edit.php',
+	  'to' => 'custom/modules/ST_MSOutTarg/views/view.edit.php',
+	),
+---------
 ############### BEGIN COPY OF ACTIVITIES ###############
 #
 #########################################################
