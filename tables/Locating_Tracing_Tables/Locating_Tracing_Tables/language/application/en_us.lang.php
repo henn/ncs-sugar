@@ -38,6 +38,3 @@
 $app_list_strings['moduleList']['LTT_Email'] = 'Email';
 $app_list_strings['moduleList']['LTT_Address'] = 'Address';
 $app_list_strings['moduleList']['LTT_Telephone'] = 'Telephone';
-$app_list_strings['CONFIRM_TYPE_CL2']['1'] = 'Yes';
-$app_list_strings['CONFIRM_TYPE_CL2']['2'] = 'No';
-$app_list_strings['CONFIRM_TYPE_CL2']['_4'] = 'Missing in Error';
