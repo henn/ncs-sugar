@@ -99,5 +99,5 @@ INSERT INTO auto_eventinfo_setting (event_type_code, event_name, event_cat, even
 -- Setting up scheduled tasks for event generation code.
 --
 INSERT INTO schedulers (id, deleted, date_entered, date_modified, created_by, modified_user_id, name, job, date_time_start, date_time_end, job_interval, time_from, time_to, last_run, status, catch_up) VALUES
-('6a0d941a-9f73-a27b-9500-4ddfe92efd26', 0, now(), now(), '1', '1', 'Auto Generate Postnatal Event Info', 'function::autoGenerateEventInfo', '2005-01-01 07:00:00', NULL, '*/30::*::*::*::*', NULL, NULL, '2011-06-02 18:57:00', 'Active', 1),
-('ddb9861c-2b7e-fed9-8747-4ddfe941e8c8', 0, now(), now(), '1', '1', 'Auto Generate Prenatal Event Info', 'function::autoGeneratePIEventInfo', '2005-01-01 07:00:00', NULL, '*/30::*::*::*::*', NULL, NULL, '2011-06-02 18:58:00', 'Active', 1);
+('6a0d941a-9f73-a27b-9500-4ddfe92efd26', 0, GETDATE(), GETDATE(), '1', '1', 'Auto Generate Postnatal Event Info', 'function::autoGenerateEventInfo', '2005-01-01 07:00:00', NULL, '*/30::*::*::*::*', NULL, NULL, '2011-06-02 18:57:00', 'Active', 1),
+('ddb9861c-2b7e-fed9-8747-4ddfe941e8c8', 0, GETDATE(), GETDATE(), '1', '1', 'Auto Generate Prenatal Event Info', 'function::autoGeneratePIEventInfo', '2005-01-01 07:00:00', NULL, '*/30::*::*::*::*', NULL, NULL, '2011-06-02 18:58:00', 'Active', 1);
