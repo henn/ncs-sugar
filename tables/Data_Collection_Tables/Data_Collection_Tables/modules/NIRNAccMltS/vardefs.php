@@ -37,27 +37,6 @@
 $vardefs = array (
   'fields' => 
   array (
-    'nir_noaccess' => 
-    array (
-      'required' => false,
-      'name' => 'nir_noaccess',
-      'vname' => 'LBL_NIR_NOACCESS',
-      'type' => 'enum',
-      'massupdate' => 0,
-      'default' => 'Yes',
-      'comments' => '',
-      'help' => 'Description of lack of building access',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => 100,
-      'size' => '20',
-      'options' => 'NO_ACCESS_DESCR_CL1',
-      'studio' => 'visible',
-      'dependency' => false,
-    ),
     'nir_noaccess_oth' => 
     array (
       'required' => false,
@@ -93,6 +72,26 @@ $vardefs = array (
       'audited' => true,
       'reportable' => true,
       'size' => '20',
+    ),
+    'nir_noaccess' => 
+    array (
+      'required' => false,
+      'name' => 'nir_noaccess',
+      'vname' => 'LBL_NIR_NOACCESS',
+      'type' => 'multienum',
+      'massupdate' => 0,
+      'default' => '^1^',
+      'comments' => '',
+      'help' => 'Description of lack of building access',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'size' => '20',
+      'options' => 'NO_ACCESS_DESCR_CL1',
+      'studio' => 'visible',
+      'isMultiSelect' => true,
     ),
   ),
   'relationships' => 

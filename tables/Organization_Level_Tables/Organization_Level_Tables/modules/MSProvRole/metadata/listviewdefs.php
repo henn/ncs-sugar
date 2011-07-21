@@ -11,11 +11,10 @@ array (
   ),
   'PROVIDER_NCS_ROLE' => 
   array (
-    'type' => 'enum',
+    'type' => 'multienum',
     'default' => true,
     'studio' => 'visible',
     'label' => 'LBL_PROVIDER_NCS_ROLE',
-    'sortable' => false,
     'width' => '10%',
   ),
   'PROVIDER_NCS_ROLE_OTH' => 

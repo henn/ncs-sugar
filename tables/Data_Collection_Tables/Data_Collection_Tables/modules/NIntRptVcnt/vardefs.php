@@ -37,27 +37,6 @@
 $vardefs = array (
   'fields' => 
   array (
-    'nir_vacant' => 
-    array (
-      'required' => false,
-      'name' => 'nir_vacant',
-      'vname' => 'LBL_NIR_VACANT',
-      'type' => 'enum',
-      'massupdate' => 0,
-      'default' => 'Yes',
-      'comments' => '',
-      'help' => 'How is vacancy known &quot;The combination of NIR_ID and NIR_VACANT is unique (such that the same value of NIR_ID for the same NIR_VACANT is not repeated)',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => 100,
-      'size' => '20',
-      'options' => 'CONFIRM_TYPE_CL3',
-      'studio' => 'visible',
-      'dependency' => false,
-    ),
     'nir_vacant_oth' => 
     array (
       'required' => false,
@@ -93,6 +72,26 @@ $vardefs = array (
       'audited' => true,
       'reportable' => true,
       'size' => '20',
+    ),
+    'nir_vacant' => 
+    array (
+      'required' => false,
+      'name' => 'nir_vacant',
+      'vname' => 'LBL_NIR_VACANT',
+      'type' => 'multienum',
+      'massupdate' => 0,
+      'default' => '^6^',
+      'comments' => '',
+      'help' => 'How is vacancy known',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'size' => '20',
+      'options' => 'DU_VACANCY_INDICATOR_CL1',
+      'studio' => 'visible',
+      'isMultiSelect' => true,
     ),
   ),
   'relationships' => 

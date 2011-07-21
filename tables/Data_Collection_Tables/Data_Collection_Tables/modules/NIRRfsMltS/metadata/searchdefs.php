@@ -20,16 +20,6 @@ array (
         'default' => true,
         'name' => 'nir_id',
       ),
-      'refusal_reason' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_REFUSAL_REASON',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'refusal_reason',
-      ),
       'assigned_user_name' => 
       array (
         'link' => 'assigned_user_link',
@@ -55,16 +45,6 @@ array (
         'width' => '10%',
         'default' => true,
         'name' => 'nir_id',
-      ),
-      'refusal_reason' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_REFUSAL_REASON',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'refusal_reason',
       ),
       'refusal_reason_oth' => 
       array (

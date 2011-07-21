@@ -61,6 +61,17 @@ array (
             'name' => 'samp_prethrstaffrstr_name',
             'label' => 'LBL_SAMP_PRETHRMCERT_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
           ),
+          1 => 
+          array (
+            'name' => 'samp_prethr_srscinfo_name',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_prethrp_enequip_name',
+          ),
         ),
       ),
     ),

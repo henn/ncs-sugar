@@ -29,16 +29,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'outreach_race2' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_OUTREACH_RACE2',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'outreach_race2',
-      ),
       'outreach_race_oth' => 
       array (
         'type' => 'varchar',

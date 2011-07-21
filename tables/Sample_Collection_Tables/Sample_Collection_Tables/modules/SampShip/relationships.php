@@ -35,22 +35,6 @@
  ********************************************************************************/
 
 $relationships = array (
-  'samp_sampship_samp_srscinfo' => 
-  array (
-    'rhs_label' => 'Study Center Sample Receipt and Shipping Center',
-    'lhs_label' => 'Sample Shipping',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'SAMP_SampShip',
-    'rhs_module' => 'SAMP_SRSCInfo',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'samp_sampship_samp_srscinfo',
-  ),
   'samp_sampship_st_staffrstr' => 
   array (
     'rhs_label' => 'Staff Information',
@@ -66,6 +50,22 @@ $relationships = array (
     'is_custom' => false,
     'from_studio' => false,
     'relationship_name' => 'samp_sampship_st_staffrstr',
+  ),
+  'samp_sampship_samp_srscinfo' => 
+  array (
+    'rhs_label' => 'Study Center Sample Receipt and Shipping Center',
+    'lhs_label' => 'Sample Shipping',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'SAMP_SampShip',
+    'rhs_module' => 'SAMP_SRSCInfo',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'samp_sampship_samp_srscinfo',
   ),
 );
 ?>

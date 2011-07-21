@@ -12,16 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'outreach_target_ms' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_OUTREACH_TARGET_MS',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'outreach_target_ms',
-      ),
       'outreach_target_ms_oth' => 
       array (
         'type' => 'varchar',
@@ -46,16 +36,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'outreach_target_ms' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_OUTREACH_TARGET_MS',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'outreach_target_ms',
       ),
       'outreach_target_ms_oth' => 
       array (

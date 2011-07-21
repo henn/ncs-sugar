@@ -65,6 +65,17 @@ array (
             'name' => 'samp_specshstaffrstr_name',
             'label' => 'LBL_SAMP_SPECSHIPPIN_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
           ),
+          1 => 
+          array (
+            'name' => 'samp_specsh_spscinfo_name',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_specsh_sampship_name',
+          ),
         ),
       ),
       'lbl_editview_panel1' => 

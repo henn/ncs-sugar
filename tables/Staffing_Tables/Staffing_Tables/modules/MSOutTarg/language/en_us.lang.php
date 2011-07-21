@@ -63,7 +63,7 @@ $mod_strings = array (
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
   'LBL_ST_MSOUTTARG_SUBPANEL_TITLE' => 'Outreach Target (Multi-Select)',
   'LBL_NEW_FORM_TITLE' => 'New Outreach Target (Multi-Select)',
-  'LBL_OUTREACH_TARGET_MS' => 'Outreach Target',
+  'LBL_OUTREACH_TARGET_MS' => 'Outreach Target (Multi-Select)',
   'LBL_OUTREACH_TARGET_MS_OTH' => 'Outreach Target Other',
 );
 ?>

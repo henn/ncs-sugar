@@ -85,6 +85,17 @@ array (
           array (
             'name' => 'samp_reffrestaffrstr_name',
           ),
+          1 => 
+          array (
+            'name' => 'samp_reffre_srscinfo_name',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_reffrep_enequip_name',
+          ),
         ),
       ),
     ),

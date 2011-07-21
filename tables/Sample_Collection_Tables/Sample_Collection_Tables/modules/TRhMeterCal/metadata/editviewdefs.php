@@ -74,6 +74,17 @@ array (
           array (
             'name' => 'samp_trhmetstaffrstr_name',
           ),
+          1 => 
+          array (
+            'name' => 'samp_trhmet_srscinfo_name',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_trhmetp_enequip_name',
+          ),
         ),
       ),
       'lbl_editview_panel2' => 

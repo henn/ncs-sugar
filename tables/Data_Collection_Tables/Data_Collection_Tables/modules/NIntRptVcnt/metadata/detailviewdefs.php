@@ -50,11 +50,6 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
           0 => 
           array (
             'name' => 'nir_vacant',
@@ -67,11 +62,7 @@ array (
             'label' => 'LBL_NIR_VACANT_OTH',
           ),
         ),
-        3 => 
-        array (
-          0 => '',
-        ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (

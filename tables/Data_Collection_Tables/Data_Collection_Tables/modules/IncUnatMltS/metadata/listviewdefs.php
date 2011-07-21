@@ -11,12 +11,19 @@ array (
   ),
   'INC_UNANTICIPATED' => 
   array (
-    'type' => 'enum',
+    'type' => 'multienum',
     'default' => true,
     'studio' => 'visible',
     'label' => 'LBL_INC_UNANTICIPATED',
+    'width' => '10%',
+  ),
+  'DESCRIPTION' => 
+  array (
+    'type' => 'text',
+    'label' => 'LBL_DESCRIPTION',
     'sortable' => false,
     'width' => '10%',
+    'default' => true,
   ),
   'ASSIGNED_USER_NAME' => 
   array (

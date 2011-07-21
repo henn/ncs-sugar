@@ -78,13 +78,26 @@ array (
         ),
         4 => 
         array (
-          0 => 
-          array (
-            'name' => 'samp_specreecstorage_name',
-          ),
+          0 => '',
           1 => 
           array (
             'name' => 'samp_specststaffrstr_name',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_specstspecequip_name',
+          ),
+          1 => '',
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_specst_spscinfo_name',
+            'label' => 'LBL_SAMP_SPECSTORAGE_SAMP_SPSCINFO_FROM_SAMP_SPSCINFO_TITLE',
           ),
         ),
       ),

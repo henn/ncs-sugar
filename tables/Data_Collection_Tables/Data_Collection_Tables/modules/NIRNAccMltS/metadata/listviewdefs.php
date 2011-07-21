@@ -17,11 +17,10 @@ array (
   ),
   'NIR_NOACCESS' => 
   array (
-    'type' => 'enum',
+    'type' => 'multienum',
     'default' => true,
     'studio' => 'visible',
     'label' => 'LBL_NIR_NOACCESS',
-    'sortable' => false,
     'width' => '10%',
   ),
   'NIR_NOACCESS_OTH' => 

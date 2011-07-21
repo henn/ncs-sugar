@@ -42,10 +42,6 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-        ),
-        2 => 
-        array (
           0 => 
           array (
             'name' => 'nir_type_du',
@@ -58,7 +54,7 @@ array (
             'label' => 'LBL_NIR_TYPE_DU_OTH',
           ),
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -69,7 +65,7 @@ array (
             'name' => 'ncsdc_event_ncsdc_non_interview_rpt_dutype_1_name',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (

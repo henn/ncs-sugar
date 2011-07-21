@@ -50,21 +50,6 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'inssev',
-            'studio' => 'visible',
-            'label' => 'LBL_INSSEV',
-          ),
-          1 => '',
-        ),
-        3 => 
-        array (
           0 => 
           array (
             'name' => 'incloss_media',
@@ -77,11 +62,16 @@ array (
             'label' => 'LBL_INCLOSS_MEDIA_OTH',
           ),
         ),
-        4 => 
+        2 => 
         array (
-          0 => '',
+          0 => 
+          array (
+            'name' => 'inssev',
+            'studio' => 'visible',
+            'label' => 'LBL_INSSEV',
+          ),
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (

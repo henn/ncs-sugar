@@ -17,12 +17,11 @@ array (
   ),
   'NIR_TYPE_DU' => 
   array (
-    'type' => 'enum',
+    'type' => 'multienum',
+    'default' => true,
     'studio' => 'visible',
     'label' => 'LBL_NIR_TYPE_DU',
-    'sortable' => false,
     'width' => '10%',
-    'default' => true,
   ),
   'NIR_TYPE_DU_OTH' => 
   array (

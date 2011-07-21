@@ -73,14 +73,14 @@ $vardefs = array (
       'len' => '255',
       'size' => '20',
     ),
-    'outreach_race2' => 
+    'outreach_race2 ' => 
     array (
       'required' => false,
       'name' => 'outreach_race2',
       'vname' => 'LBL_OUTREACH_RACE2',
-      'type' => 'enum',
-      'massupdate' => 0,
-      'default' => '1',
+      'type' => 'multienum',
+      'massupdate' => '1',
+      'default' => '^4^',
       'comments' => '',
       'help' => 'Targeted racial group',
       'importable' => 'true',
@@ -88,11 +88,10 @@ $vardefs = array (
       'duplicate_merge_dom_value' => '0',
       'audited' => true,
       'reportable' => true,
-      'len' => 100,
       'size' => '20',
       'options' => 'RACE_CL3',
       'studio' => 'visible',
-      'dependency' => false,
+      'isMultiSelect' => true,
     ),
   ),
   'relationships' => 

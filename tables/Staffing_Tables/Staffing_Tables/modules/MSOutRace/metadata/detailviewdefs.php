@@ -45,7 +45,6 @@ array (
           0 => 
           array (
             'name' => 'outreach_race2',
-            'studio' => 'visible',
             'label' => 'LBL_OUTREACH_RACE2',
           ),
           1 => 

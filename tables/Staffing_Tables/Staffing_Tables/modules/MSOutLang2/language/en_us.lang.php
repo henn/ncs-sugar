@@ -63,6 +63,6 @@ $mod_strings = array (
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
   'LBL_ST_MSOUTLANG2_SUBPANEL_TITLE' => 'Outreach Language (Multi-Select)',
   'LBL_NEW_FORM_TITLE' => 'New Outreach Language (Multi-Select)',
-  'LBL_OUTREACH_LANG2' => 'Outreach Language',
+  'LBL_OUTREACH_LANG2' => 'Outreach Language 2',
 );
 ?>

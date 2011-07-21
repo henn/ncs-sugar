@@ -84,6 +84,17 @@ array (
           array (
             'name' => 'samp_envequstaffrstr_name',
           ),
+          1 => 
+          array (
+            'name' => 'samp_enlogep_enequip_name',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_enloge_srscinfo_name',
+          ),
         ),
       ),
       'lbl_detailview_panel1' => 

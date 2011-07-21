@@ -9,25 +9,32 @@ array (
     'default' => true,
     'link' => true,
   ),
-  'ASSIGNED_USER_NAME' => 
-  array (
-    'width' => '9%',
-    'label' => 'LBL_ASSIGNED_TO_NAME',
-    'default' => true,
-  ),
   'NIR_VACANT' => 
   array (
-    'type' => 'enum',
+    'type' => 'multienum',
     'default' => true,
     'studio' => 'visible',
     'label' => 'LBL_NIR_VACANT',
-    'sortable' => false,
     'width' => '10%',
   ),
   'NIR_VACANT_OTH' => 
   array (
     'type' => 'varchar',
     'label' => 'LBL_NIR_VACANT_OTH',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'width' => '9%',
+    'label' => 'LBL_ASSIGNED_TO_NAME',
+    'default' => true,
+  ),
+  'DESCRIPTION' => 
+  array (
+    'type' => 'text',
+    'label' => 'LBL_DESCRIPTION',
+    'sortable' => false,
     'width' => '10%',
     'default' => true,
   ),

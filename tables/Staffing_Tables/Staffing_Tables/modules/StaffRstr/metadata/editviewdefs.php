@@ -95,13 +95,6 @@ array (
           ),
           1 => '',
         ),
-        6 => 
-        array (
-          0 => 
-          array (
-            'name' => 'st_otrchstastaffrstr_name',
-          ),
-        ),
       ),
       'lbl_editview_panel1' => 
       array (

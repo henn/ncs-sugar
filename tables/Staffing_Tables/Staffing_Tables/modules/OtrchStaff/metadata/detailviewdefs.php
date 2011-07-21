@@ -67,39 +67,20 @@ array (
         array (
           0 => 
           array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
+            'name' => 'st_otrchstastaffrstr_name',
+          ),
+          1 => 
+          array (
+            'name' => 'st_otrchstat_wkoeact_name',
           ),
         ),
         3 => 
         array (
           0 => 
           array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'outreach_event_id',
-            'label' => 'LBL_OUTREACH_EVENT_ID',
-          ),
-        ),
-        4 => 
-        array (
-          0 => '',
-          1 => 
-          array (
-            'name' => 'staff_id',
-            'label' => 'LBL_STAFF_ID',
-          ),
-        ),
-        5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ncsdc_eventtrchstaff_name',
+            'name' => 'description',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_DESCRIPTION',
           ),
         ),
       ),

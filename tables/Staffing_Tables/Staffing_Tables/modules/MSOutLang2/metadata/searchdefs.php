@@ -12,16 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'outreach_lang2' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_OUTREACH_LANG2',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'outreach_lang2',
-      ),
       'current_user_only' => 
       array (
         'name' => 'current_user_only',
@@ -38,16 +28,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'outreach_lang2' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_OUTREACH_LANG2',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'outreach_lang2',
       ),
       'assigned_user_id' => 
       array (

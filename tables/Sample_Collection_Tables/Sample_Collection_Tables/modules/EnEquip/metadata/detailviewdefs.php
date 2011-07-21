@@ -100,6 +100,13 @@ array (
             'name' => 'samp_drfthe_enequip_name',
           ),
         ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_enequi_srscinfo_name',
+          ),
+        ),
       ),
       'lbl_detailview_panel1' => 
       array (

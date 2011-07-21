@@ -12,22 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'outreach_event_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_OUTREACH_EVENT_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'outreach_event_id',
-      ),
-      'staff_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_STAFF_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'staff_id',
-      ),
     ),
     'advanced_search' => 
     array (
@@ -36,22 +20,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'outreach_event_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_OUTREACH_EVENT_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'outreach_event_id',
-      ),
-      'staff_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_STAFF_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'staff_id',
       ),
       'assigned_user_id' => 
       array (

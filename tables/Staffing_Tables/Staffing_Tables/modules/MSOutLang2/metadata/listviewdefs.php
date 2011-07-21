@@ -11,11 +11,10 @@ array (
   ),
   'OUTREACH_LANG2' => 
   array (
-    'type' => 'enum',
+    'type' => 'multienum',
     'default' => true,
     'studio' => 'visible',
     'label' => 'LBL_OUTREACH_LANG2',
-    'sortable' => false,
     'width' => '10%',
   ),
   'ASSIGNED_USER_NAME' => 

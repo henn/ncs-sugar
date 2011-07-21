@@ -65,5 +65,6 @@ $mod_strings = array (
   'LBL_NEW_FORM_TITLE' => 'New Provider Role (Multi-Select)',
   'LBL_PROVIDER_NCS_ROLE' => 'NCS Provider Role',
   'LBL_PROVIDER_NCS_ROLE_OTH' => 'NCS Provider Role Other',
+  'LBL_NCS_PROVIDER_ROLE' => 'ncs provider_role',
 );
 ?>

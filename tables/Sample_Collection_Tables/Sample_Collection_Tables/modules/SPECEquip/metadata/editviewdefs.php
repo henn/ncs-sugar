@@ -60,13 +60,15 @@ array (
         ),
         3 => 
         array (
+          0 => '',
+          1 => '',
+        ),
+        4 => 
+        array (
           0 => 
           array (
-            'name' => 'samp_specrespecequip_name',
-          ),
-          1 => 
-          array (
-            'name' => 'samp_specstspecequip_name',
+            'name' => 'samp_speceq_spscinfo_name',
+            'label' => 'LBL_SAMP_SPECEQUIP_SAMP_SPSCINFO_FROM_SAMP_SPSCINFO_TITLE',
           ),
         ),
       ),

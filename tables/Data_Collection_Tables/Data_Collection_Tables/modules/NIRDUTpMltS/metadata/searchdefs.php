@@ -12,16 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'nir_type_du' => 
-      array (
-        'type' => 'enum',
-        'studio' => 'visible',
-        'label' => 'LBL_NIR_TYPE_DU',
-        'sortable' => false,
-        'width' => '10%',
-        'default' => true,
-        'name' => 'nir_type_du',
-      ),
       'assigned_user_name' => 
       array (
         'link' => 'assigned_user_link',
@@ -39,16 +29,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'nir_type_du' => 
-      array (
-        'type' => 'enum',
-        'studio' => 'visible',
-        'label' => 'LBL_NIR_TYPE_DU',
-        'sortable' => false,
-        'width' => '10%',
-        'default' => true,
-        'name' => 'nir_type_du',
       ),
       'nir_type_du_oth' => 
       array (

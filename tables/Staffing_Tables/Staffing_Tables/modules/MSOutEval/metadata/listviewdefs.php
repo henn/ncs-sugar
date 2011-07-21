@@ -11,11 +11,10 @@ array (
   ),
   'OUTREACH_EVAL' => 
   array (
-    'type' => 'enum',
+    'type' => 'multienum',
     'default' => true,
     'studio' => 'visible',
     'label' => 'LBL_OUTREACH_EVAL',
-    'sortable' => false,
     'width' => '10%',
   ),
   'OUTREACH_EVAL_OTH' => 

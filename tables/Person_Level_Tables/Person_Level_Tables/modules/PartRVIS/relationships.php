@@ -51,5 +51,20 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'plt_partrvis_plt_participant',
   ),
+  'plt_partrvis_ncsdc_cntctinfo' => 
+  array (
+    'lhs_label' => 'Participant Record of Visit',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_PartRVIS',
+    'rhs_module' => 'NCSDC_CntctInfo',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_partrvis_ncsdc_cntctinfo',
+  ),
 );
 ?>

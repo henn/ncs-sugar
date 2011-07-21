@@ -26,16 +26,6 @@ $dashletData['ST_MSOutLang2Dashlet']['columns'] = array (
     'default' => true,
     'name' => 'name',
   ),
-  'outreach_lang2' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_OUTREACH_LANG2',
-    'sortable' => false,
-    'width' => '10%',
-    'name' => 'outreach_lang2',
-  ),
   'assigned_user_name' => 
   array (
     'width' => '8%',

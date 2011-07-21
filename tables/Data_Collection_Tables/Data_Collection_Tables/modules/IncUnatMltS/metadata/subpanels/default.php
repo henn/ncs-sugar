@@ -23,15 +23,6 @@ $subpanel_layout = array (
       'width' => '45%',
       'default' => true,
     ),
-    'inc_unanticipated' => 
-    array (
-      'type' => 'enum',
-      'default' => true,
-      'studio' => 'visible',
-      'vname' => 'LBL_INC_UNANTICIPATED',
-      'sortable' => false,
-      'width' => '10%',
-    ),
     'date_modified' => 
     array (
       'vname' => 'LBL_DATE_MODIFIED',

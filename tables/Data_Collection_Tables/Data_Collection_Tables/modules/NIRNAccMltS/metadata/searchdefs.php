@@ -12,16 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'nir_noaccess' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_NIR_NOACCESS',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'nir_noaccess',
-      ),
       'assigned_user_name' => 
       array (
         'link' => 'assigned_user_link',
@@ -39,16 +29,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'nir_noaccess' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_NIR_NOACCESS',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'nir_noaccess',
       ),
       'nir_noaccess_oth' => 
       array (

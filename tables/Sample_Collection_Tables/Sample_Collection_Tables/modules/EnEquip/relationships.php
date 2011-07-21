@@ -39,10 +39,10 @@ $relationships = array (
   array (
     'rhs_label' => 'Study Center Sample Receipt and Shipping Center',
     'lhs_label' => 'Environmental Equipment Information',
-    'rhs_subpanel' => 'default',
+    'lhs_subpanel' => 'default',
     'lhs_module' => 'SAMP_EnEquip',
     'rhs_module' => 'SAMP_SRSCInfo',
-    'relationship_type' => 'one-to-many',
+    'relationship_type' => 'many-to-one',
     'readonly' => false,
     'deleted' => false,
     'relationship_only' => false,

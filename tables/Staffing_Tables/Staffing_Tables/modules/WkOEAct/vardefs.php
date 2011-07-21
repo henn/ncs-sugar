@@ -457,6 +457,25 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
+    'comments' => 
+    array (
+      'required' => false,
+      'name' => 'comments',
+      'vname' => 'LBL_COMMENTS',
+      'type' => 'text',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'size' => '20',
+      'studio' => 'visible',
+      'rows' => '10',
+      'cols' => '20',
+    ),
   ),
   'relationships' => 
   array (

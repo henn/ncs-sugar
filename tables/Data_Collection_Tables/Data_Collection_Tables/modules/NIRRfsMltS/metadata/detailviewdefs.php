@@ -50,15 +50,6 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => 
-          array (
-            'name' => 'nir_id',
-            'label' => 'LBL_NIR_ID',
-          ),
-        ),
-        2 => 
-        array (
           0 => 
           array (
             'name' => 'refusal_reason',
@@ -71,15 +62,19 @@ array (
             'label' => 'LBL_REFUSAL_REASON_OTH',
           ),
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
             'name' => 'ncsdc_event_ncsdc_non_interview_rpt_refusal_name',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'nir_id',
+            'label' => 'LBL_NIR_ID',
+          ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (

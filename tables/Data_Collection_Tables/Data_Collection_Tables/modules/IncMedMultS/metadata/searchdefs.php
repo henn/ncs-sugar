@@ -12,26 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'incloss_media' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_INCLOSS_MEDIA',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'incloss_media',
-      ),
-      'inssev' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_INSSEV',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'inssev',
-      ),
       'assigned_user_name' => 
       array (
         'link' => 'assigned_user_link',
@@ -50,16 +30,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'incloss_media' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_INCLOSS_MEDIA',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'incloss_media',
-      ),
       'incloss_media_oth' => 
       array (
         'type' => 'varchar',
@@ -67,16 +37,6 @@ array (
         'width' => '10%',
         'default' => true,
         'name' => 'incloss_media_oth',
-      ),
-      'inssev' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_INSSEV',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'inssev',
       ),
       'assigned_user_id' => 
       array (

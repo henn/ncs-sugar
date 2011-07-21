@@ -39,10 +39,10 @@ $relationships = array (
   array (
     'rhs_label' => 'Staff ID',
     'lhs_label' => 'Staff Participation Outreach Events',
-    'rhs_subpanel' => 'default',
+    'lhs_subpanel' => 'default',
     'lhs_module' => 'ST_OtrchStaff',
     'rhs_module' => 'ST_StaffRstr',
-    'relationship_type' => 'one-to-many',
+    'relationship_type' => 'many-to-one',
     'readonly' => false,
     'deleted' => false,
     'relationship_only' => false,
@@ -50,6 +50,22 @@ $relationships = array (
     'is_custom' => false,
     'from_studio' => false,
     'relationship_name' => 'st_otrchstaff_st_staffrstr',
+  ),
+  'st_otrchstaff_st_wkoeact' => 
+  array (
+    'rhs_label' => 'Weekly Outreach & Engagement Activities',
+    'lhs_label' => 'Staff Participation Outreach Events',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'ST_OtrchStaff',
+    'rhs_module' => 'ST_WkOEAct',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'st_otrchstaff_st_wkoeact',
   ),
 );
 ?>

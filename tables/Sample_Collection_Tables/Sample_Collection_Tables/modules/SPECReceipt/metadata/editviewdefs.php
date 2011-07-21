@@ -96,6 +96,21 @@ array (
             'name' => 'samp_specrestaffrstr_name',
             'label' => 'LBL_SAMP_SPECRECEIPT_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
           ),
+          1 => 
+          array (
+            'name' => 'samp_specre_spscinfo_name',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_specrespecequip_name',
+          ),
+          1 => 
+          array (
+            'name' => 'samp_specreecstorage_name',
+          ),
         ),
       ),
       'lbl_editview_panel1' => 

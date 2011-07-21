@@ -50,11 +50,6 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
           0 => 
           array (
             'name' => 'nir_noaccess',
@@ -67,11 +62,7 @@ array (
             'label' => 'LBL_NIR_NOACCESS_OTH',
           ),
         ),
-        3 => 
-        array (
-          0 => '',
-        ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (

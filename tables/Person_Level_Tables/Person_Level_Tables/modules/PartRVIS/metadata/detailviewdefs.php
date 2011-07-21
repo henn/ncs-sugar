@@ -102,6 +102,10 @@ array (
           array (
             'name' => 'plt_partrvirticipant_name',
           ),
+          1 => 
+          array (
+            'name' => 'plt_partrvicntctinfo_name',
+          ),
         ),
       ),
       'lbl_detailview_panel1' => 

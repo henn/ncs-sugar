@@ -38,11 +38,11 @@ $relationships = array (
   'samp_specequip_samp_spscinfo' => 
   array (
     'rhs_label' => 'Study Center Sample Processing and Shipping Center',
-    'lhs_label' => 'SPSC Equipment Info',
-    'rhs_subpanel' => 'default',
+    'lhs_label' => 'SPSC Equipment Information',
+    'lhs_subpanel' => 'default',
     'lhs_module' => 'SAMP_SPECEquip',
     'rhs_module' => 'SAMP_SPSCInfo',
-    'relationship_type' => 'one-to-many',
+    'relationship_type' => 'many-to-one',
     'readonly' => false,
     'deleted' => false,
     'relationship_only' => false,

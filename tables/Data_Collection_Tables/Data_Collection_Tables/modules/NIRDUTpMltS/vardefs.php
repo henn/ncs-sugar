@@ -37,27 +37,6 @@
 $vardefs = array (
   'fields' => 
   array (
-    'nir_type_du' => 
-    array (
-      'required' => false,
-      'name' => 'nir_type_du',
-      'vname' => 'LBL_NIR_TYPE_DU',
-      'type' => 'enum',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => 'Description of Non-Interview of Dwelling Unit',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => 100,
-      'size' => '20',
-      'options' => 'DU_NIR_REASON_CL1',
-      'studio' => 'visible',
-      'dependency' => false,
-      'default' => '1',
-    ),
     'nir_type_du_oth' => 
     array (
       'required' => false,
@@ -93,6 +72,26 @@ $vardefs = array (
       'audited' => true,
       'reportable' => true,
       'size' => '20',
+    ),
+    'nir_type_du' => 
+    array (
+      'required' => false,
+      'name' => 'nir_type_du',
+      'vname' => 'LBL_NIR_TYPE_DU',
+      'type' => 'multienum',
+      'massupdate' => 0,
+      'default' => '^1^',
+      'comments' => '',
+      'help' => 'Description of Non-Interview of Dwelling Unit',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'size' => '20',
+      'options' => 'DU_NIR_REASON_CL1',
+      'studio' => 'visible',
+      'isMultiSelect' => true,
     ),
   ),
   'relationships' => 

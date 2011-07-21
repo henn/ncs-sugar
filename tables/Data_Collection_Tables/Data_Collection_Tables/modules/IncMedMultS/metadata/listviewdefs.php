@@ -15,28 +15,34 @@ array (
     'label' => 'LBL_ASSIGNED_TO_NAME',
     'default' => true,
   ),
-  'INSSEV' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_INSSEV',
-    'sortable' => false,
-    'width' => '10%',
-  ),
   'INCLOSS_MEDIA' => 
   array (
-    'type' => 'enum',
+    'type' => 'multienum',
     'default' => true,
     'studio' => 'visible',
     'label' => 'LBL_INCLOSS_MEDIA',
-    'sortable' => false,
     'width' => '10%',
   ),
   'INCLOSS_MEDIA_OTH' => 
   array (
     'type' => 'varchar',
     'label' => 'LBL_INCLOSS_MEDIA_OTH',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'INSSEV' => 
+  array (
+    'type' => 'multienum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_INSSEV',
+    'width' => '10%',
+  ),
+  'DESCRIPTION' => 
+  array (
+    'type' => 'text',
+    'label' => 'LBL_DESCRIPTION',
+    'sortable' => false,
     'width' => '10%',
     'default' => true,
   ),

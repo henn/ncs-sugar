@@ -9,11 +9,13 @@ array (
     'default' => true,
     'link' => true,
   ),
-  'ASSIGNED_USER_NAME' => 
+  'REFUSAL_REASON' => 
   array (
-    'width' => '9%',
-    'label' => 'LBL_ASSIGNED_TO_NAME',
+    'type' => 'multienum',
     'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_REFUSAL_REASON',
+    'width' => '10%',
   ),
   'REFUSAL_REASON_OTH' => 
   array (
@@ -22,14 +24,11 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'REFUSAL_REASON' => 
+  'ASSIGNED_USER_NAME' => 
   array (
-    'type' => 'enum',
+    'width' => '9%',
+    'label' => 'LBL_ASSIGNED_TO_NAME',
     'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_REFUSAL_REASON',
-    'sortable' => false,
-    'width' => '10%',
   ),
   'NIR_ID' => 
   array (

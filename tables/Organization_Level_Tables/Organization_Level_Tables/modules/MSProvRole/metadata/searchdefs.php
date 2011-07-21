@@ -12,16 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'provider_ncs_role' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_PROVIDER_NCS_ROLE',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'provider_ncs_role',
-      ),
       'provider_ncs_role_oth' => 
       array (
         'type' => 'varchar',
@@ -46,16 +36,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'provider_ncs_role' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_PROVIDER_NCS_ROLE',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'provider_ncs_role',
       ),
       'provider_ncs_role_oth' => 
       array (

@@ -83,6 +83,17 @@ array (
             'name' => 'samp_drfthestaffrstr_name',
           ),
         ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_drfthe_srscinfo_name',
+          ),
+          1 => 
+          array (
+            'name' => 'samp_drfthep_enequip_name',
+          ),
+        ),
       ),
     ),
   ),

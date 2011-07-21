@@ -79,6 +79,17 @@ array (
           array (
             'name' => 'samp_samprestaffrstr_name',
           ),
+          1 => 
+          array (
+            'name' => 'samp_recsto_srscinfo_name',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_recstop_enequip_name',
+          ),
         ),
       ),
       'lbl_detailview_panel2' => 

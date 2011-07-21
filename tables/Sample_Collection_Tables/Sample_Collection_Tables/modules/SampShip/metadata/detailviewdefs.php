@@ -98,10 +98,7 @@ array (
         ),
         6 => 
         array (
-          0 => 
-          array (
-            'name' => 'samp_specsh_sampship_name',
-          ),
+          0 => '',
           1 => '',
         ),
         7 => 
@@ -110,6 +107,10 @@ array (
           array (
             'name' => 'samp_sampshstaffrstr_name',
             'label' => 'LBL_SAMP_SAMPSHIP_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
+          ),
+          1 => 
+          array (
+            'name' => 'samp_sampsh_srscinfo_name',
           ),
         ),
       ),

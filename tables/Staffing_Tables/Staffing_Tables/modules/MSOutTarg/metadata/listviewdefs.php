@@ -11,11 +11,10 @@ array (
   ),
   'OUTREACH_TARGET_MS' => 
   array (
-    'type' => 'enum',
+    'type' => 'multienum',
     'default' => true,
     'studio' => 'visible',
     'label' => 'LBL_OUTREACH_TARGET_MS',
-    'sortable' => false,
     'width' => '10%',
   ),
   'OUTREACH_TARGET_MS_OTH' => 
