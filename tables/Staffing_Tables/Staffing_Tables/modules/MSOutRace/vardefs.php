@@ -73,7 +73,7 @@ $vardefs = array (
       'len' => '255',
       'size' => '20',
     ),
-    'outreach_race2 ' => 
+    'outreach_race2' => 
     array (
       'required' => false,
       'name' => 'outreach_race2',

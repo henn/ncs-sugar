@@ -9,7 +9,7 @@ array (
     'default' => true,
     'link' => true,
   ),
-  'OUTREACH_RACE2 ' => 
+  'OUTREACH_RACE2' => 
   array (
     'type' => 'enum',
     'default' => true,

@@ -28,7 +28,12 @@ array (
       array (
         0 => 
         array (
-          0 => 'name',
+          0 => 
+          array (
+            'name' => 'name',
+            'label' => 'Name:',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+          ),
           1 => 'assigned_user_name',
         ),
         1 => 
@@ -36,6 +41,7 @@ array (
           0 => 
           array (
             'name' => 'outreach_race2',
+            'studio' => 'visible',
             'label' => 'LBL_OUTREACH_RACE2',
           ),
           1 => 
