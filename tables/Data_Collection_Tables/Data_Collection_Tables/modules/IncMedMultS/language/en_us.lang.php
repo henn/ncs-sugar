@@ -66,7 +66,7 @@ $mod_strings = array (
   'LBL_INCIDENT_MEDIA_ID' => 'Incident Media ID',
   'LBL_INCLOSS_MEDIA' => 'Incident Loss Media',
   'LBL_INCLOSS_MEDIA_OTH' => 'Incident Loss Media Other',
-  'LBL_INSSEV' => 'Incident Consequence',
+  'LBL_INSSEV' => 'Incidence Consequence',
   'LNK_IMPORT_NCSDC_INCMEDMULTS' => 'Import Incident Media (Multi-Select)',
   'LBL_NCSDC_INCMEDMULTS_SUBPANEL_TITLE' => 'Incident Media (Multi-Select)',
 );
