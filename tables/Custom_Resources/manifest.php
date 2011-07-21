@@ -363,7 +363,6 @@ $installdefs = array (
       'from' => '<basepath>/IDCreation_resources/modules/ST_WkOEAct/views/view.edit.php',
       'to' => 'custom/modules/ST_WkOEAct/views/view.edit.php',
     ),
----------
 ####Begin copy of ST_MSOutEval######
 	array (
 	  'from' => '<basepath>/IDCreation_resources/modules/ST_MSOutEval/views/view.edit.php',
@@ -384,7 +383,6 @@ $installdefs = array (
 	  'from' => '<basepath>/IDCreation_resources/modules/ST_MSOutTarg/views/view.edit.php',
 	  'to' => 'custom/modules/ST_MSOutTarg/views/view.edit.php',
 	),
----------
 ############### BEGIN COPY OF ACTIVITIES ###############
 #
 #########################################################
