@@ -95,20 +95,5 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'st_staffrstr_st_stfcrttrn',
   ),
-  'st_staffrstr_st_wkoeact' => 
-  array (
-    'rhs_label' => 'Weekly Outreach & Engagement Activities',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'ST_StaffRstr',
-    'rhs_module' => 'ST_WkOEAct',
-    'relationship_type' => 'one-to-many',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'st_staffrstr_st_wkoeact',
-  ),
 );
 ?>

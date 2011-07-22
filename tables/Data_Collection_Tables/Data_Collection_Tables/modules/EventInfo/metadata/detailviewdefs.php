@@ -188,13 +188,6 @@ array (
             'label' => 'LBL_VISIT_WINDOW_ENDDATE',
           ),
         ),
-        14 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ncsdc_eventtrchstaff_name',
-          ),
-        ),
       ),
     ),
   ),

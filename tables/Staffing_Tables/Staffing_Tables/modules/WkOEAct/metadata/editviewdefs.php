@@ -189,11 +189,7 @@ array (
             'name' => 'incident_id',
             'label' => 'LBL_INCIDENT_ID',
           ),
-          1 => 
-          array (
-            'name' => 'st_staffrstt_wkoeact_name',
-            'label' => 'LBL_ST_STAFFRSTR_ST_WKOEACT_FROM_ST_STAFFRSTR_TITLE',
-          ),
+          1 => '',
         ),
         14 => 
         array (
