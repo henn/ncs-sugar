@@ -45,6 +45,6 @@ $config = array (
     'basic' => 1,
   ),
   'label' => 'Participant Record of Visit',
-  'importable' => false,
+  'importable' => true,
 );
 ?>

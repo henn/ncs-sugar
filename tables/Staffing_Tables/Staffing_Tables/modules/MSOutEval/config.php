@@ -45,6 +45,6 @@ $config = array (
     'basic' => 1,
   ),
   'label' => 'Outreach Evaluation (Multi-Select)',
-  'importable' => false,
+  'importable' => true,
 );
 ?>

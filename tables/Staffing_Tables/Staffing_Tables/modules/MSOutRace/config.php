@@ -45,6 +45,6 @@ $config = array (
     'basic' => 1,
   ),
   'label' => 'Outreach Race (Multi-Select)',
-  'importable' => false,
+  'importable' => true,
 );
 ?>

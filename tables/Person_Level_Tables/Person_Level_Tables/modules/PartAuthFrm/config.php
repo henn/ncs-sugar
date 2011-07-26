@@ -45,6 +45,6 @@ $config = array (
     'basic' => 1,
   ),
   'label' => 'Participant Authorization Form',
-  'importable' => false,
+  'importable' => true,
 );
 ?>
