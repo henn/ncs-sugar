@@ -11,20 +11,27 @@
 		    }
 
 			function display() {   
-				$checkID = '';
+				global $current_user;
+														
+				$old_admin_flag = $current_user->is_admin;
+				
+				//temp allow user to be admin
+				$current_user->is_admin = 1;
+				
+				$checkID = '';				
 				
 				$p2p = $this->bean->get_linked_beans("plt_lkprsprcpt_plt_person", "PLT_LkPrsPrtcpt");
 				
 				if(isset($p2p[0]->id) && trim($p2p[0]->id) != '') {
 
-				   	require_once('modules/Administration/QuickRepairAndRebuild.php'); 
-					$clear_cache=new RepairAndClear(); 
-					$clear_cache->repairAndClearAll(array('clearTpls'),array('PLT_Person'),false,false);
+						require_once('modules/Administration/QuickRepairAndRebuild.php'); 
+						$clear_cache=new RepairAndClear(); 
+						$clear_cache->repairAndClearAll(array('clearTpls'),array('PLT_Person'),false,false);
 
 				} else {
 					
 					$maxButtons = sizeof($this->dv->defs['templateMeta']['form']['buttons']);  
-					
+									
 					$this->dv->defs['templateMeta']['form']['buttons'][$maxButtons++] = array(
 						'customCode' => 
 						'<input title="Convert to Participant" 
@@ -44,14 +51,20 @@
 					// let me know. This *only* runs a super quick repair
 					// isolated to just the detail view of the PLT_Person.
 					//-------------------------------------------------
+					
 					require_once('modules/Administration/QuickRepairAndRebuild.php'); 
 					$clear_cache=new RepairAndClear(); 
 					$clear_cache->repairAndClearAll(array('clearTpls'),array('PLT_Person'),false,false);
 					
-					$this->dv->process();
-					
+					$this->dv->process();					
 				}
 				
+				//set user back to regular user
+				if($current_user->is_admin != $old_admin_flag)
+				{
+					$current_user->is_admin = $old_admin_flag;
+				}
+										
 				parent::display();
 			}
 		} 
