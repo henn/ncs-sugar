@@ -51,9 +51,9 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'Organization_Level_Tables',
-		  'published_date' => '2011-07-08 16:30:00',
+		  'published_date' => '2011-07-26 07:00:00',
           'type' => 'module',
-          'version' => '2.01',
+          'version' => '2.02',
           'remove_tables' => 'prompt',
           );
 $installdefs = array (
