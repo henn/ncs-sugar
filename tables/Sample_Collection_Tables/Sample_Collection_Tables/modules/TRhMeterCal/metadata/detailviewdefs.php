@@ -152,7 +152,7 @@ array (
           0 => 
           array (
             'name' => 's_33rh_reading_calib',
-            'label' => 'LBL_S_33RH_READING_CALIB ',
+            'label' => 'LBL_S_33RH_READING_CALIB',
           ),
           1 => '',
         ),

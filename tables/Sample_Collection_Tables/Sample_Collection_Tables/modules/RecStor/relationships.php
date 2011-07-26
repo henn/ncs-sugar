@@ -38,7 +38,7 @@ $relationships = array (
   'samp_recstor_st_staffrstr' => 
   array (
     'rhs_label' => 'Staff Information',
-    'lhs_label' => 'Sample Receipt ',
+    'lhs_label' => 'Sample Receipt',
     'lhs_subpanel' => 'default',
     'lhs_module' => 'SAMP_RecStor',
     'rhs_module' => 'ST_StaffRstr',
@@ -54,7 +54,7 @@ $relationships = array (
   'samp_recstor_samp_srscinfo' => 
   array (
     'rhs_label' => 'Study Center Sample Receipt and Shipping Center',
-    'lhs_label' => 'Sample Receipt ',
+    'lhs_label' => 'Sample Receipt',
     'lhs_subpanel' => 'default',
     'lhs_module' => 'SAMP_RecStor',
     'rhs_module' => 'SAMP_SRSCInfo',
@@ -70,7 +70,7 @@ $relationships = array (
   'samp_recstor_samp_enequip' => 
   array (
     'rhs_label' => 'Environmental Equipment Information',
-    'lhs_label' => 'Sample Receipt ',
+    'lhs_label' => 'Sample Receipt',
     'lhs_subpanel' => 'default',
     'lhs_module' => 'SAMP_RecStor',
     'rhs_module' => 'SAMP_EnEquip',

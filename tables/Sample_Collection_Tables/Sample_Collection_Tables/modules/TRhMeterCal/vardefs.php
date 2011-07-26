@@ -242,7 +242,7 @@ $vardefs = array (
     array (
       'required' => false,
       'name' => 's_33rh_reading_calib',
-      'vname' => 'LBL_S_33RH_READING_CALIB ',
+      'vname' => 'LBL_S_33RH_READING_CALIB',
       'type' => 'decimal',
       'massupdate' => 0,
       'comments' => '',

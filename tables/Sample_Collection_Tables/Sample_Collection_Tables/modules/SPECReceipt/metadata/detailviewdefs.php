@@ -95,7 +95,7 @@ array (
           array (
             'name' => 'lower_trigger_ambient',
             'studio' => 'visible',
-            'label' => 'LBL_LOWER_TRIGGER_AMBIENT ',
+            'label' => 'LBL_LOWER_TRIGGER_AMBIENT',
           ),
         ),
         5 => 

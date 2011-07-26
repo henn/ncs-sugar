@@ -78,7 +78,7 @@ $vardefs = array (
     array (
       'required' => false,
       'name' => 'master_storage_unit',
-      'vname' => 'LBL_MASTER_STORAGE_UNIT ',
+      'vname' => 'LBL_MASTER_STORAGE_UNIT',
       'type' => 'enum',
       'massupdate' => 0,
       'default' => '1',

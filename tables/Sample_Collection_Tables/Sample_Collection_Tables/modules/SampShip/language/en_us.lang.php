@@ -68,7 +68,7 @@ $mod_strings = array (
   'LBL_SHIPMENT_COOLANT' => 'Shipment Coolant Material',
   'LBL_SHIPMENT_TRACKING_NO' => 'Air bill Number',
   'LBL_SHIPMENT_ISSUES_OTH' => 'Shipment Issues',
-  'LBL_STAFF_ID_TRACK' => 'Staff (ID) who tracked the receipt of the sample ',
+  'LBL_STAFF_ID_TRACK' => 'Staff (ID) who tracked the receipt of the sample',
   'LBL_SAMPLE_SHIPPED_BY' => 'Samples Shipped By',
 );
 ?>

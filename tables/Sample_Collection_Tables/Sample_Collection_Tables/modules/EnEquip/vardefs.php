@@ -60,7 +60,7 @@ $vardefs = array (
     array (
       'required' => false,
       'name' => 'equipment_type',
-      'vname' => 'LBL_EQUIPMENT_TYPE ',
+      'vname' => 'LBL_EQUIPMENT_TYPE',
       'type' => 'enum',
       'massupdate' => 0,
       'default' => '1',
@@ -132,7 +132,7 @@ $vardefs = array (
     array (
       'required' => false,
       'name' => 'retired_reason',
-      'vname' => 'LBL_RETIRED_REASON ',
+      'vname' => 'LBL_RETIRED_REASON',
       'type' => 'enum',
       'massupdate' => 0,
       'default' => '1',

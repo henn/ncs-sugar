@@ -14,7 +14,7 @@ array (
     'type' => 'enum',
     'default' => true,
     'studio' => 'visible',
-    'label' => 'LBL_MASTER_STORAGE_UNIT ',
+    'label' => 'LBL_MASTER_STORAGE_UNIT',
     'sortable' => false,
     'width' => '10%',
   ),

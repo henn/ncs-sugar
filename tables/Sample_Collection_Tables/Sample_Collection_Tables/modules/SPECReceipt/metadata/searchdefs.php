@@ -112,7 +112,7 @@ array (
         'type' => 'enum',
         'default' => true,
         'studio' => 'visible',
-        'label' => 'LBL_LOWER_TRIGGER_AMBIENT ',
+        'label' => 'LBL_LOWER_TRIGGER_AMBIENT',
         'sortable' => false,
         'width' => '10%',
         'name' => 'lower_trigger_ambient',

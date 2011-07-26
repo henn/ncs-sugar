@@ -37,7 +37,7 @@ array (
           array (
             'name' => 'equipment_type',
             'studio' => 'visible',
-            'label' => 'LBL_EQUIPMENT_TYPE ',
+            'label' => 'LBL_EQUIPMENT_TYPE',
           ),
           1 => 
           array (
@@ -107,7 +107,7 @@ array (
           array (
             'name' => 'retired_reason',
             'studio' => 'visible',
-            'label' => 'LBL_RETIRED_REASON ',
+            'label' => 'LBL_RETIRED_REASON',
           ),
           1 => 
           array (

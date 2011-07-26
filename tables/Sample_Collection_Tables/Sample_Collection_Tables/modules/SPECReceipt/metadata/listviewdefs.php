@@ -97,7 +97,7 @@ array (
     'type' => 'enum',
     'default' => false,
     'studio' => 'visible',
-    'label' => 'LBL_LOWER_TRIGGER_AMBIENT ',
+    'label' => 'LBL_LOWER_TRIGGER_AMBIENT',
     'sortable' => false,
     'width' => '10%',
   ),
