@@ -911,12 +911,12 @@ $installdefs = array (
       'to' => 'custom/Extension/modules/SAMP_DRFThermVer/Ext/Vardefs',
     ),
     array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_ENVEquip/Ext/Vardefs',
-      'to' => 'custom/Extension/modules/SAMP_ENVEquip/Ext/Vardefs',
+      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_EnEquip/Ext/Vardefs',
+      'to' => 'custom/Extension/modules/SAMP_EnEquip/Ext/Vardefs',
     ),
     array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_ENVEquipLog/Ext/Vardefs',
-      'to' => 'custom/Extension/modules/SAMP_ENVEquipLog/Ext/Vardefs',
+      'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_EnLogEquip/Ext/Vardefs',
+      'to' => 'custom/Extension/modules/SAMP_EnLogEquip/Ext/Vardefs',
     ),
     array (
       'from' => '<basepath>/Activities_resources/Extension/modules/SAMP_PreThrmCert/Ext/Vardefs',
