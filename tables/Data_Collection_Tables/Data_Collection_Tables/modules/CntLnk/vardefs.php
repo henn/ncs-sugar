@@ -37,27 +37,6 @@
 $vardefs = array (
   'fields' => 
   array (
-    'psu_id' => 
-    array (
-      'required' => false,
-      'name' => 'psu_id',
-      'vname' => 'LBL_PSU_ID',
-      'type' => 'enum',
-      'massupdate' => 0,
-      'default' => '20000014',
-      'comments' => '',
-      'help' => '',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => 100,
-      'size' => '20',
-      'options' => 'PSU_CL1',
-      'studio' => 'visible',
-      'dependency' => false,
-    ),
     'name' => 
     array (
       'name' => 'name',

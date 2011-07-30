@@ -70,12 +70,7 @@ array (
             'name' => 'sc_id',
             'label' => 'LBL_SC_ID',
           ),
-          1 => 
-          array (
-            'name' => 'psu_id',
-            'studio' => 'visible',
-            'label' => 'LBL_PSU_ID',
-          ),
+          1 => '',
         ),
         3 => 
         array (

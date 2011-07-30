@@ -43,15 +43,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'PSU_ID' => 
-  array (
-    'type' => 'enum',
-    'default' => false,
-    'studio' => 'visible',
-    'label' => 'LBL_PSU_ID',
-    'sortable' => false,
-    'width' => '10%',
-  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

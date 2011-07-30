@@ -15,14 +15,5 @@ array (
     'label' => 'LBL_ASSIGNED_TO_NAME',
     'default' => true,
   ),
-  'PSU_ID' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_PSU_ID',
-    'sortable' => false,
-    'width' => '10%',
-  ),
 );
 ?>

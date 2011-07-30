@@ -37,27 +37,6 @@
 $vardefs = array (
   'fields' => 
   array (
-    'psu_id' => 
-    array (
-      'required' => false,
-      'name' => 'psu_id',
-      'vname' => 'LBL_PSU_ID',
-      'type' => 'enum',
-      'massupdate' => 0,
-      'default' => '20000014',
-      'comments' => '',
-      'help' => '',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => 100,
-      'size' => '20',
-      'options' => 'PSU_CL1',
-      'studio' => 'visible',
-      'dependency' => false,
-    ),
     'tsu_id' => 
     array (
       'required' => false,
@@ -206,27 +185,6 @@ $vardefs = array (
       'len' => 100,
       'size' => '20',
       'options' => 'CONFIRM_TYPE_CL2',
-      'studio' => 'visible',
-      'dependency' => false,
-    ),
-    'outreach_lang2' => 
-    array (
-      'required' => false,
-      'name' => 'outreach_lang2',
-      'vname' => 'LBL_OUTREACH_LANG2',
-      'type' => 'enum',
-      'massupdate' => 0,
-      'default' => '1',
-      'comments' => '',
-      'help' => '',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => 100,
-      'size' => '20',
-      'options' => 'LANGUAGE_CL2',
       'studio' => 'visible',
       'dependency' => false,
     ),

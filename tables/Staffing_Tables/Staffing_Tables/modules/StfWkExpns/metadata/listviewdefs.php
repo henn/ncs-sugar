@@ -15,26 +15,10 @@ array (
     'label' => 'LBL_ASSIGNED_TO_NAME',
     'default' => true,
   ),
-  'PSU_ID' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_PSU_ID',
-    'sortable' => false,
-    'width' => '10%',
-  ),
   'WEEK_START_DATE' => 
   array (
     'type' => 'date',
     'label' => 'LBL_WEEK_START_DATE',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'STAFF_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_STAFF_ID',
     'width' => '10%',
     'default' => true,
   ),

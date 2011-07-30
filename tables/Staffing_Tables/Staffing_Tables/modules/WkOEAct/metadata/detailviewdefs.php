@@ -109,12 +109,6 @@ array (
         array (
           0 => 
           array (
-            'name' => 'outreach_lang2',
-            'studio' => 'visible',
-            'label' => 'LBL_OUTREACH_LANG2',
-          ),
-          1 => 
-          array (
             'name' => 'outreach_lang_oth',
             'label' => 'LBL_OUTREACH_LANG_OTH',
           ),

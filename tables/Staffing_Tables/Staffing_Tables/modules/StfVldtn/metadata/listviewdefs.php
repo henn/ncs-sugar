@@ -9,20 +9,6 @@ array (
     'default' => true,
     'link' => true,
   ),
-  'STAFF_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_STAFF_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'EVENT_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_EVENT_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'STAFF_VALIDATE' => 
   array (
     'type' => 'enum',

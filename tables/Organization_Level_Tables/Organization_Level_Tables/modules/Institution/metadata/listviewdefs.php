@@ -58,15 +58,6 @@ array (
     'label' => 'LBL_ASSIGNED_TO_NAME',
     'default' => false,
   ),
-  'PSU_ID' => 
-  array (
-    'type' => 'enum',
-    'default' => false,
-    'studio' => 'visible',
-    'label' => 'LBL_PSU_ID',
-    'sortable' => false,
-    'width' => '10%',
-  ),
   'INSTITUTE_INFO_UPDATE' => 
   array (
     'type' => 'date',

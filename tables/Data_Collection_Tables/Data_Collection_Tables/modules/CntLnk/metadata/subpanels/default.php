@@ -23,15 +23,6 @@ $subpanel_layout = array (
       'width' => '45%',
       'default' => true,
     ),
-    'psu_id' => 
-    array (
-      'type' => 'enum',
-      'default' => true,
-      'studio' => 'visible',
-      'vname' => 'LBL_PSU_ID',
-      'sortable' => false,
-      'width' => '10%',
-    ),
     'assigned_user_name' => 
     array (
       'link' => 'assigned_user_link',

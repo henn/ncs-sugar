@@ -9,13 +9,6 @@ array (
     'default' => true,
     'link' => true,
   ),
-  'STAFF_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_STAFF_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
   'CERT_COMPLETED' => 
   array (
     'type' => 'enum',

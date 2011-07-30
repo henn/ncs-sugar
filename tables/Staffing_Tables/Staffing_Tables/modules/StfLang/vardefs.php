@@ -37,44 +37,6 @@
 $vardefs = array (
   'fields' => 
   array (
-    'psu_id' => 
-    array (
-      'required' => false,
-      'name' => 'psu_id',
-      'vname' => 'LBL_PSU_ID',
-      'type' => 'enum',
-      'massupdate' => 0,
-      'default' => 'Providence County RI',
-      'comments' => '',
-      'help' => '',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => 100,
-      'size' => '20',
-      'options' => 'PSU_CL1',
-      'studio' => 'visible',
-      'dependency' => false,
-    ),
-    'staff_id' => 
-    array (
-      'required' => false,
-      'name' => 'staff_id',
-      'vname' => 'LBL_STAFF_ID',
-      'type' => 'varchar',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => '',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => '36',
-      'size' => '20',
-    ),
     'staff_lang' => 
     array (
       'required' => false,

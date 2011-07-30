@@ -32,15 +32,6 @@ $subpanel_layout = array (
       'sortable' => false,
       'width' => '10%',
     ),
-    'psu_id' => 
-    array (
-      'type' => 'enum',
-      'default' => true,
-      'studio' => 'visible',
-      'vname' => 'LBL_PSU_ID',
-      'sortable' => false,
-      'width' => '10%',
-    ),
     'prov_intro_outcome' => 
     array (
       'type' => 'enum',

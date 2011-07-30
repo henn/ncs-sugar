@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'staff_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_STAFF_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'staff_id',
-      ),
       'staff_val_date' => 
       array (
         'type' => 'date',
@@ -47,14 +39,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'staff_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_STAFF_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'staff_id',
-      ),
       'staff_validate' => 
       array (
         'type' => 'enum',
@@ -72,14 +56,6 @@ array (
         'width' => '10%',
         'default' => true,
         'name' => 'staff_val_date',
-      ),
-      'event_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_EVENT_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'event_id',
       ),
       'assigned_user_name' => 
       array (

@@ -33,15 +33,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'PSU_ID' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_PSU_ID',
-    'sortable' => false,
-    'width' => '10%',
-  ),
   'PROV_INTRO_OUTCOME_OTH' => 
   array (
     'type' => 'varchar',

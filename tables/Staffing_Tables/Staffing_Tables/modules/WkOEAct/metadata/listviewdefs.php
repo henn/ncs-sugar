@@ -52,15 +52,6 @@ array (
     'width' => '10%',
     'default' => false,
   ),
-  'PSU_ID' => 
-  array (
-    'type' => 'enum',
-    'default' => false,
-    'studio' => 'visible',
-    'label' => 'LBL_PSU_ID',
-    'sortable' => false,
-    'width' => '10%',
-  ),
   'INCIDENT_ID' => 
   array (
     'type' => 'varchar',
@@ -140,15 +131,6 @@ array (
     'label' => 'LBL_OUTREACH_LANG_OTH',
     'width' => '10%',
     'default' => false,
-  ),
-  'OUTREACH_LANG2' => 
-  array (
-    'type' => 'enum',
-    'default' => false,
-    'studio' => 'visible',
-    'label' => 'LBL_OUTREACH_LANG2',
-    'sortable' => false,
-    'width' => '10%',
   ),
   'OUTREACH_LANG1' => 
   array (

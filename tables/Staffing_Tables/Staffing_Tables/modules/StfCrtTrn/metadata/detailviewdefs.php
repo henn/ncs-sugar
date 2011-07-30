@@ -52,21 +52,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'staff_id',
-            'label' => 'LBL_STAFF_ID',
-          ),
-          1 => '',
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
             'name' => 'cert_train_type',
             'studio' => 'visible',
             'label' => 'LBL_CERT_TRAIN_TYPE',
           ),
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -80,7 +71,7 @@ array (
             'label' => 'LBL_CERT_DATE',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -93,7 +84,7 @@ array (
             'label' => 'LBL_CERT_TYPE_FREQUENCY',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -102,7 +93,7 @@ array (
             'label' => 'LBL_CERT_COMMENT',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -111,7 +102,7 @@ array (
             'label' => 'LBL_STAFF_BGCHECK_LVL',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (

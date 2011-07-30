@@ -30,16 +30,6 @@ array (
         'width' => '10%',
         'name' => 'outreach_target',
       ),
-      'outreach_lang2' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_OUTREACH_LANG2',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'outreach_lang2',
-      ),
       'outreach_culture2' => 
       array (
         'type' => 'enum',
@@ -104,16 +94,6 @@ array (
         'sortable' => false,
         'width' => '10%',
         'name' => 'outreach_culture2',
-      ),
-      'outreach_lang2' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_OUTREACH_LANG2',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'outreach_lang2',
       ),
       'outreach_staffing' => 
       array (
