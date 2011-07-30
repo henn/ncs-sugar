@@ -5,8 +5,8 @@ require_once ('NCSExportUtils.php');
 
 class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
     
-    private $master_psu_id;
-    private $master_sc_id;
+    private $master_psu_id = '200000XX';
+    private $master_sc_id = '200000XY';
     
     function parseHeaderValues(&$xmlWriter)
     {
@@ -43,7 +43,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             if (strlen($this->master_sc_id) == 0 && strlen($record['name']) != 0) {
                 $this->master_sc_id = $record['name'];
             }
-        } 
+        }
         $xmlWriter->flush();
         unset($results);
     }
@@ -72,15 +72,15 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(SSU_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('ssu');
-                $this->addXMLElement($xmlWriter, 'sc_id',  $this->replaceIfMissing($record['sc_id'], $this->master_sc_id));
-                $this->addXMLElement($xmlWriter, 'psu_id',  $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'sc_id', $this->master_sc_id);
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'ssu_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'ssu_name', $record['ssu_name']);
                 $this->addXMLElement($xmlWriter, 'transaction_type', $record['transaction_type']);
             $xmlWriter->endElement();
         }
         $xmlWriter->flush();
-        unset($results);        
+        unset($results);
     }
     
     
@@ -89,8 +89,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(TSU_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('tsu');
-                $this->addXMLElement($xmlWriter, 'sc_id',  $this->replaceIfMissing($record['sc_id'], $this->master_sc_id));
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'sc_id',  $this->master_sc_id);
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'tsu_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'tsu_name', $record['tsu_name']);
                 $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
@@ -105,7 +105,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(LISTING_UNIT_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('listing_unit');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id)); // NO DIRECT RELATIONSHIP
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id); // NO DIRECT RELATIONSHIP
                 $this->addXMLElement($xmlWriter, 'list_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'ssu_id', $record['gt_secsampuistingunt_name']);
                 $this->addXMLElement($xmlWriter, 'tsu_id', $record['gt_tersampuistingunt_name']);
@@ -119,28 +119,29 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         unset($results);        
     }
     
-    function parseDwellingUnit(&$xmlWriter)
+    function parseDwellingUnit(&$xmlWriter) 
     {
         $results = export(DWELLING_UNIT_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('dwelling_unit');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id)); // NO DIRECT RELATIONSHIP
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id); // NO DIRECT RELATIONSHIP
                 $this->addXMLElement($xmlWriter, 'du_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'list_id', $record['gt_listinguellingunt_name']);
                 $this->addXMLElement($xmlWriter, 'tsu_id', $record['gt_secsampuellingunt_name']);
                 $this->addXMLElement($xmlWriter, 'ssu_id', $record['gt_secsampuellingunt_name']);
-		$this->addXMLElement($xmlWriter, 'duplicate_du', $record['duplicate_du']);
+                $this->addXMLElement($xmlWriter, 'duplicate_du', $record['duplicate_du']);
                 $this->addXMLElement($xmlWriter, 'missed_du', $record['missed_du']);
                 $this->addXMLElement($xmlWriter, 'du_type', $record['du_type']);
                 $this->addXMLElement($xmlWriter, 'du_type_oth', $record['du_type_oth']);
-                $this->addXMLElement($xmlWriter, 'du_ineligible', $record['du_ineligible']);
+                //$this->addXMLElement($xmlWriter, 'du_ineligible', $record['du_ineligible']);
+                $this->addXMLElement($xmlWriter, 'du_ineligible', str_replace("_", "-", $record['du_ineligible']['value']));
                 $this->addXMLElement($xmlWriter, 'du_access', $record['du_access']);
                 $this->addXMLElement($xmlWriter, 'duid_comment', $record['duid_comment']);
                 $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
         }
         $xmlWriter->flush();
-        unset($results);         
+        unset($results);
     }
     
     function parseHouseHoldUnit(&$xmlWriter)
@@ -193,14 +194,16 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $xmlWriter->startElement('staff');
                 $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);  // NO DIRECT RELATIONSHIP
                 $this->addXMLElement($xmlWriter, 'staff_id', $record['name']);
-                $this->addXMLElement($xmlWriter, 'staff_type', $record['staff_type']);
-                $this->addXMLElement($xmlWriter, 'staff_type_oth', $record['staff_type_oth']);
+                //$this->addXMLElement($xmlWriter, 'staff_type', $record['staff_type']);
+                $this->addXMLElement($xmlWriter, 'staff_type', str_replace("_", "-", $record['staff_type']['value']));
+				$this->addXMLElement($xmlWriter, 'staff_type_oth', $record['staff_type_oth']);
                 $this->addXMLElement($xmlWriter, 'subcontractor', $record['subcontractor']);
                 $this->addXMLElement($xmlWriter, 'staff_yob', $record['staff_yob']);
                 $this->addXMLElement($xmlWriter, 'staff_age_range', $record['staff_age_range']);
                 $this->addXMLElement($xmlWriter, 'staff_gender', $record['staff_gender']);
                 $this->addXMLElement($xmlWriter, 'staff_race', $record['staff_race']);
-                $this->addXMLElement($xmlWriter, 'staff_race_oth', $record['name']);
+                //$this->addXMLElement($xmlWriter, 'staff_race_oth', $record['name']);
+				$this->addXMLElement($xmlWriter, 'staff_race_oth', str_replace("_", "-", $record['staff_race_oth']['value']));
                 $this->addXMLElement($xmlWriter, 'staff_zip', $record['staff_zip']);
                 $this->addXMLElement($xmlWriter, 'staff_ethnicity', $record['staff_ethnicity']);
 		$this->addXMLElement($xmlWriter, 'staff_exp', $record['staff_exp']);
@@ -253,7 +256,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(STAFF_WEEKLY_EXPENSE_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('staff_weekly_expense');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id',  $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'weekly_exp_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'staff_id', $record['st_staffrsttfwkexpns_name']);
                 $this->addXMLElement($xmlWriter, 'week_start_date', $record['week_start_date']);
@@ -274,7 +277,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(STAFF_EXP_MNGMNT_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('staff_exp_mngmnt_tasks');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'staff_exp_mgmt_task_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'staff_weekly_expense_id', $record['st_stfwkexpfexpmgtsk_name']);
                 $this->addXMLElement($xmlWriter, 'mgmt_task_type', $record['mgmt_task_type']);
@@ -293,7 +296,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(STAFF_EXP_DATA_CLLCTN_TASKS_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('staff_exp_data_cllctn_tasks');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'staff_exp_data_coll_task_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'staff_weekly_expense_id', $record['st_stfwkexpfexpdctsk_name']);
                 $this->addXMLElement($xmlWriter, 'data_coll_task_type', $record['data_coll_task_type']);
@@ -314,7 +317,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(OUTREACH_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('outreach');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'tsu_id', $record['tsu_id']);
                 $this->addXMLElement($xmlWriter, 'ssu_id', $value);  // NO DB FIELD OR RELATIONSHIP
                 $this->addXMLElement($xmlWriter, 'outreach_event_id', $record['name']);
@@ -349,21 +352,22 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
     }
 	
 	// *************** 2.0 MODULE INSERTED ******************
-	function parseOutreachRace(&$xmlWriter)
+    function parseOutreachRace(&$xmlWriter)
     {
         $results = export(OUTREACH_RACE_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('outreach_race');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
-                $this->addXMLElement($xmlWriter, 'outreach_race_id', $record['name']);
-                $this->addXMLElement($xmlWriter, 'outreach_event_id', $record['st_msoutract_wkoeact_name']);
-                $this->addXMLElement($xmlWriter, 'outreach_race2', str_replace("_", "-", $record['outreach_race2']));
-                $this->addXMLElement($xmlWriter, 'outreach_race_oth', $record['outreach_race_oth']);
-				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+            $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+            $this->addXMLElement($xmlWriter, 'outreach_race_id', $record['name']);
+            $this->addXMLElement($xmlWriter, 'outreach_event_id', $record['st_msoutract_wkoeact_name']);
+            //$this->addXMLElement($xmlWriter, 'outreach_race2', str_replace("_", "-", $record['outreach_race2']['value']));
+            $this->addXMLElement($xmlWriter, 'outreach_race2', $record['outreach_race2']);
+            $this->addXMLElement($xmlWriter, 'outreach_race_oth', $record['outreach_race_oth']);
+            $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
         }
         $xmlWriter->flush();
-        unset($results);  
+        unset($results);
     }
 	// *****************************************************
     
@@ -372,10 +376,10 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(OUTREACH_STAFF_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('outreach_staff');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'outreach_event_staff_id', $record['name']); 
                 $this->addXMLElement($xmlWriter, 'outreach_event_id', $record['st_otrchstat_wkoeact_name']);
-                $this->addXMLElement($xmlWriter, 'staff_id', $record['st_otrchstastaffrstr_name']); // Missing field name in vardef
+                $this->addXMLElement($xmlWriter, 'staff_id', $record['']); // Missing field name in vardef
 		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
         }
@@ -388,7 +392,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(OUTREACH_EVAL_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('outreach_eval');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'outreach_event_eval_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'outreach_event_id', $record['st_msoutevat_wkoeact_name']);
 		$this->addXMLElement($xmlWriter, 'outreach_eval', $record['outreach_eval']);
@@ -406,7 +410,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(OUTREACH_TARGET_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('outreach_target');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'outreach_target_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'outreach_event_id', $record['st_msouttart_wkoeact_name']);
                 $this->addXMLElement($xmlWriter, 'outreach_target_ms', $record['outreach_target_ms']);
@@ -423,7 +427,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(OUTREACH_LANG2_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('outreach_lang2');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'outreach_lang2_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'outreach_event_id', $record['st_msoutlant_wkoeact_name']);
                 $this->addXMLElement($xmlWriter, 'outreach_lang2', $record['outreach_lang2']);
@@ -440,7 +444,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(STAFF_CERT_TRAINING_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('staff_cert_training');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'staff_cert_list_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'staff_id', $record['st_staffrststfcrttrn_name']);
                 $this->addXMLElement($xmlWriter, 'cert_train_type', $record['cert_train_type']);
@@ -473,13 +477,16 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'title', $record['title']);
                 $this->addXMLElement($xmlWriter, 'sex', $record['sex']);
                 $this->addXMLElement($xmlWriter, 'age', $record['age']);
-                $this->addXMLElement($xmlWriter, 'age_range', $record['age_range']);
+                //$this->addXMLElement($xmlWriter, 'age_range', $record['age_range']);
+		        $this->addXMLElement($xmlWriter, 'age_range', str_replace("_", "-", $record['age_range']['value']));
                 $this->addXMLElement($xmlWriter, 'person_dob', $record['person_dob']);
                 $this->addXMLElement($xmlWriter, 'deceased', $record['deceased']);
-                $this->addXMLElement($xmlWriter, 'ethnic_group', $record['ethnic_group']);
+                //$this->addXMLElement($xmlWriter, 'ethnic_group', $record['ethnic_group']);
+		        $this->addXMLElement($xmlWriter, 'ethnic_group', str_replace("_", "-", $record['ethnic_group']['value']));
                 $this->addXMLElement($xmlWriter, 'person_lang', $record['person_lang']);
                 $this->addXMLElement($xmlWriter, 'person_lang_oth', $record['person_lang_oth']);
-                $this->addXMLElement($xmlWriter, 'maristat', $record['maristat']);
+                //$this->addXMLElement($xmlWriter, 'maristat', $record['maristat']);
+		        $this->addXMLElement($xmlWriter, 'maristat', str_replace("_", "-", $record['maristat']['value']));
                 $this->addXMLElement($xmlWriter, 'maristat_oth', $record['maristat_oth']);
                 $this->addXMLElement($xmlWriter, 'pref_contact', $record['pref_contact']);
                 $this->addXMLElement($xmlWriter, 'pref_contact_oth', $record['pref_contact_oth']);
@@ -508,7 +515,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $xmlWriter->startElement('person_race');
                 $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id); // NO RELATIONSHIP
                 $this->addXMLElement($xmlWriter, 'person_race_id', $record['name']);
-                $this->addXMLElement($xmlWriter, 'person_id', $record['plt_person_ersonrace_name']);
+                //$this->addXMLElement($xmlWriter, 'person_id', $record['plt_person_ersonrace_name']);
+                $this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(PERSON_RACE_SUGAR_MODULE, $record['id'], 'plt_person_plt_personrace', 'name'));
                 $this->addXMLElement($xmlWriter, 'race', $record['race']);
                 $this->addXMLElement($xmlWriter, 'race_oth', $record['race_oth']);
                 $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
@@ -523,9 +531,10 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(LINK_PERSON_HOUSEHOLD_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('link_person_household');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'person_hh_id', $record['name']);
-                $this->addXMLElement($xmlWriter, 'person_id', $record['plt_lnkprshlt_person_name']);
+                //$this->addXMLElement($xmlWriter, 'person_id', $record['plt_lnkprshlt_person_name']);
+                $this->addXMLElement($xmlWriter, 'personn_id', $this->getRelatedModuleID(LINK_PERSON_HOUSEHOLD_SUGAR_MODULE, $record['id'], 'plt_lnkprshhld_plt_person', 'name'));
                 $this->addXMLElement($xmlWriter, 'hh_id', $record['plt_lnkprshhousehold_name']);
                 $this->addXMLElement($xmlWriter, 'is_active', $record['is_active']);
                 $this->addXMLElement($xmlWriter, 'hh_rank', $record['hh_rank']);
@@ -544,8 +553,9 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $xmlWriter->startElement('participant');
                 $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'p_id', $record['name']);
-                $this->addXMLElement($xmlWriter, 'p_type', $record['p_type']);
-                $this->addXMLElement($xmlWriter, 'p_type_oth', $record['p_type_oth']);
+                //$this->addXMLElement($xmlWriter, 'p_type', $record['p_type']);
+                $this->addXMLElement($xmlWriter, 'p_type', str_replace("_", "-", $record['p_type']));
+				$this->addXMLElement($xmlWriter, 'p_type_oth', $record['p_type_oth']);
                 $this->addXMLElement($xmlWriter, 'status_info_source', $record['status_info_source']);
                 $this->addXMLElement($xmlWriter, 'status_info_source_oth', $record['status_info_source_oth']);
                 $this->addXMLElement($xmlWriter, 'status_info_mode', $record['status_info_mode']);
@@ -555,7 +565,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'enroll_date', $record['enroll_date']);
                 $this->addXMLElement($xmlWriter, 'pid_entry', $record['pid_entry']);
                 $this->addXMLElement($xmlWriter, 'pid_entry_other', $record['pid_entry_other']);
-                $this->addXMLElement($xmlWriter, 'pid_age_elig', $record['pid_age_elig']);
+                //$this->addXMLElement($xmlWriter, 'pid_age_elig', $record['pid_age_elig']);
+				$this->addXMLElement($xmlWriter, 'pid_age_elig', str_replace("_", "-", $record['pid_age_elig']));
                 $this->addXMLElement($xmlWriter, 'pid_comment', $record['pid_comment']);
                 $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
@@ -569,10 +580,11 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(LINK_PERSON_PARTICIPANT_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('link_person_participant');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id']['value'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'person_pid_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'p_id', $record['plt_lkprsprrticipant_name']);
-                $this->addXMLElement($xmlWriter, 'person_id', $record['plt_lkprsprlt_person_name']);
+                //$this->addXMLElement($xmlWriter, 'person_id', $record['plt_lkprsprlt_person_name']);
+                $this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(LINK_PERSON_PARTICIPANT_SUGAR_MODULE, $record['id'], 'plt_lkprsprcpt_plt_person', 'name'));
                 $this->addXMLElement($xmlWriter, 'relation', $record['relation']);
                 $this->addXMLElement($xmlWriter, 'relation_oth', $record['relation_oth']);
                 $this->addXMLElement($xmlWriter, 'is_active', $record['is_active']);
@@ -589,7 +601,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(PARTICIPANT_AUTHORIZATION_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('participant_auth');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'auth_form_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'p_id', $record['olt_providertauthfrm_name']);
                 $this->addXMLElement($xmlWriter, 'contact_id', $record['ncsdc_cntctrtauthfrm_name']);
@@ -611,7 +623,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(PARTICIPANT_CONSENT_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('participant_consent');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'participant_consent_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'p_id', $record['plt_particitcptcnsnt_name']);
                 $this->addXMLElement($xmlWriter, 'consent_version', $record['consent_version']);
@@ -646,7 +658,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(PPG_DETAILS_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('ppg_details');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'ppg_details_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'p_id', $record['plt_participgdetails_name']);
                 $this->addXMLElement($xmlWriter, 'ppg_pid_status', $record['ppg_pid_status']);
@@ -666,7 +678,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(PPG_STATUS_HISTORY_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('ppg_status_history');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'ppg_history_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'p_id', $record['plt_particigstshstry_name']);
                 $this->addXMLElement($xmlWriter, 'ppg_status', $record['ppg_status']);
@@ -688,7 +700,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(PROVIDER_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('provider');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'provider_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'provider_type', $record['provider_type']);
                 $this->addXMLElement($xmlWriter, 'provider_type_oth', $record['provider_type_oth']);
@@ -716,7 +728,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(PROVIDER_ROLE_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('provider_role');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'provider_role_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'provider_id', $record['olt_msprovr_provider_name']);
                 $this->addXMLElement($xmlWriter, 'provider_ncs_role', $record['provider_ncs_role']);
@@ -735,10 +747,11 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(LINK_PERSON_PROVIDER_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('link_person_provider');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'person_provider_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'provider_id', $record['olt_prsnprv_provider_name']);
-                $this->addXMLElement($xmlWriter, 'person_id', $record['olt_prsnprvlt_person_name']);
+                //$this->addXMLElement($xmlWriter, 'person_id', $record['olt_prsnprvlt_person_name']);
+                $this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(LINK_PERSON_PROVIDER_SUGAR_MODULE, $record['id'], 'olt_prsnprvlnk_plt_person', 'name'));
                 $this->addXMLElement($xmlWriter, 'is_active', $record['is_active']);
                 $this->addXMLElement($xmlWriter, 'prov_intro_outcome', $record['prov_intro_outcome']);
                 $this->addXMLElement($xmlWriter, 'prov_intro_outcome_oth', $record['prov_intro_outcome_oth']);
@@ -754,7 +767,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(INSTITUTION_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('institution');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'institute_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'institute_type', $record['institute_type']);
                 $this->addXMLElement($xmlWriter, 'institute_name', $record['institute_name']);
@@ -783,10 +796,11 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(LINK_PERSON_INSTITUTE_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('link_person_institute');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'person_institute_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'institute_id', $record['olt_prsninsstitution_name']);
-                $this->addXMLElement($xmlWriter, 'person_id', $record['olt_prsninslt_person_name']);
+                //$this->addXMLElement($xmlWriter, 'person_id', $record['olt_prsninslt_person_name']);
+                $this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(LINK_PERSON_INSTITUTE_SUGAR_MODULE, $record['id'], 'olt_prsninslnk_plt_person', 'name'));
                 $this->addXMLElement($xmlWriter, 'is_active', $record['is_active']);
                 $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
@@ -800,10 +814,11 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(ADDRESS_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('address');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'address_id', $record['name']);
-                $this->addXMLElement($xmlWriter, 'person_id', $record['plt_person_t_address_name']);
-                $this->addXMLElement($xmlWriter, 'institute_id', $record['olt_institut_address_name']);
+                //$this->addXMLElement($xmlWriter, 'person_id', $record['plt_person_t_address_name']);
+                $this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(ADDRESS_SUGAR_MODULE, $record['id'], 'plt_person_ltt_address', 'name'));
+		$this->addXMLElement($xmlWriter, 'institute_id', $record['olt_institut_address_name']);
                 $this->addXMLElement($xmlWriter, 'provider_id', $record['olt_providet_address_name']);
                 $this->addXMLElement($xmlWriter, 'du_id', $record['gt_dwellingt_address_name']);
                 $this->addXMLElement($xmlWriter, 'address_rank', $record['address_rank']);
@@ -840,9 +855,10 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(TELEPHONE_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('telephone');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'phone_id', $record['name']);
-                $this->addXMLElement($xmlWriter, 'person_id', $record['plt_person_telephone_name']);
+                //$this->addXMLElement($xmlWriter, 'person_id', $record['plt_person_telephone_name']);
+                $this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(TELEPHONE_SUGAR_MODULE, $record['id'], 'plt_person_ltt_telephone', 'name'));
                 $this->addXMLElement($xmlWriter, 'institute_id', $record['olt_institutelephone_name']);
                 $this->addXMLElement($xmlWriter, 'provider_id', $record['olt_providetelephone_name']);
                 $this->addXMLElement($xmlWriter, 'phone_info_source', $record['phone_info_source']);
@@ -874,9 +890,10 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(EMAIL_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('email');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'email_id', $record['name']);
-                $this->addXMLElement($xmlWriter, 'person_id', $record['plt_person_ltt_email_name']);
+                //$this->addXMLElement($xmlWriter, 'person_id', $record['plt_person_ltt_email_name']);
+                $this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(EMAIL_SUGAR_MODULE, $record['id'], 'plt_person_ltt_email', 'name'));
                 $this->addXMLElement($xmlWriter, 'institute_id', $record['olt_institultt_email_name']);
                 $this->addXMLElement($xmlWriter, 'provider_id', $record['olt_provideltt_email_name']);
                 $this->addXMLElement($xmlWriter, 'email', $record['email']);
@@ -905,7 +922,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(EVENT_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('event');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'event_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'participant_id', $record['ncsdc_eventrticipant_name']);
                 $this->addXMLElement($xmlWriter, 'event_type', str_replace("_", "-", $record['psevent_typeu_id']));
@@ -937,7 +954,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $results = export(INSTRUMENT_SUGAR_MODULE);
 		foreach ($results as $record) {
 			$xmlWriter->startElement('instrument');
-				$this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+				$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
 				$this->addXMLElement($xmlWriter, 'instrument_id', $record['name']);
 				$this->addXMLElement($xmlWriter, 'event_id', $record['ncsdc_eventnstrument_name']);
 				$this->addXMLElement($xmlWriter, 'instrument_type', $record['instrument_type']);
@@ -970,7 +987,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $results = export(CONTACT_SUGAR_MODULE);
 		foreach ($results as $record) {
 			$xmlWriter->startElement('contact');
-				$this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+				$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
 				$this->addXMLElement($xmlWriter, 'contact_id', $record['name']);
 				$this->addXMLElement($xmlWriter, 'contact_disp', $record['contact_disp']);
 				$this->addXMLElement($xmlWriter, 'contact_type', $record['contact_type']);
@@ -1004,13 +1021,14 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $results = export(LINK_CONTACT_SUGAR_MODULE);
 		foreach ($results as $record) {
 			$xmlWriter->startElement('link_contact');
-				$this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+				$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
 				$this->addXMLElement($xmlWriter, 'contact_link_id', $record['name']);
 				$this->addXMLElement($xmlWriter, 'contact_id', $record['ncsdc_cntlncntctinfo_name']);
 				$this->addXMLElement($xmlWriter, 'event_id', $record['ncsdc_cntlneventinfo_name']);
 				$this->addXMLElement($xmlWriter, 'instrument_id', $record['ncsdc_cntlnnstrument_name']);
 				$this->addXMLElement($xmlWriter, 'staff_id', $record['ncsdc_cntlnstaffrstr_name']);
-				$this->addXMLElement($xmlWriter, 'person_id', $record['ncsdc_cntlnlt_person_name']);
+				//$this->addXMLElement($xmlWriter, 'person_id', $record['ncsdc_cntlnlt_person_name']);
+                                $this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(LINK_CONTACT_SUGAR_MODULE, $record['id'], 'ncsdc_cntlnk_plt_person', 'name'));
 				$this->addXMLElement($xmlWriter, 'provider_id', $record['ncsdc_cntln_provider_name']);
 				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
 			$xmlWriter->endElement();
@@ -1024,12 +1042,13 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $results = export(NON_INTERVIEW_RPT_SUGAR_MODULE);
 		foreach ($results as $record) {
 			$xmlWriter->startElement('non_interview_rpt');
-				$this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+				$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
 				$this->addXMLElement($xmlWriter, 'nir_id', $record['name']);
 				$this->addXMLElement($xmlWriter, 'contact_id', $record['ncsdc_cntctninterrpt_name']);
 				$this->addXMLElement($xmlWriter, 'nir', $record['nir']);
 				$this->addXMLElement($xmlWriter, 'du_id', $record['ncsdc_noninellingunt_name']);
-				$this->addXMLElement($xmlWriter, 'person_id', $record['ncsdc_noninlt_person_name']);
+				//$this->addXMLElement($xmlWriter, 'person_id', $record['ncsdc_noninlt_person_name']);
+                                $this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(NON_INTERVIEW_RPT_SUGAR_MODULE, $record['id'], 'ncsdc_noninterrpt_plt_person', 'name'));
 				$this->addXMLElement($xmlWriter, 'nir_vac_info', $record['nir_vac_info']);
 				$this->addXMLElement($xmlWriter, 'nir_vac_info_oth', $record['nir_vac_info_oth']);
 				$this->addXMLElement($xmlWriter, 'nir_noaccess', $record['nir_noaccess']);
@@ -1073,7 +1092,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $results = export(NON_INTERVIEW_RPT_VACANT_SUGAR_MODULE);
 		foreach ($results as $record) {
 			$xmlWriter->startElement('non_interview_rpt_vacant');
-				$this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+				$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
 				$this->addXMLElement($xmlWriter, 'nir_vacant_id', $record['name']);
 				$this->addXMLElement($xmlWriter, 'nir_id', $record['ncsdc_noninntrptvcnt_name']);
 				$this->addXMLElement($xmlWriter, 'nir_vacant', $record['nir_vacant']);
@@ -1090,10 +1109,10 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $results = export(NON_INTERVIEW_RPT_NOACCESS_SUGAR_MODULE);
 		foreach ($results as $record) {
 			$xmlWriter->startElement('non_interview_rpt_noaccess');
-				$this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+				$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
 				$this->addXMLElement($xmlWriter, 'nir_noaccess_id', $record['name']);
 				$this->addXMLElement($xmlWriter, 'nir_id', $record['ncsdc_noninrnaccmlts_name']);
-				$this->addXMLElement($xmlWriter, 'nir_noaccess', str_replace("_", "-", $record['nir_noaccess']['value']));
+				$this->addXMLElement($xmlWriter, 'nir_noaccess', str_replace("^","",str_replace("_", "-", $record['nir_noaccess'])));
 				$this->addXMLElement($xmlWriter, 'nir_noaccess_oth', $record['nir_noaccess_oth']);
 				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
 			$xmlWriter->endElement();
@@ -1107,7 +1126,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $results = export(NON_INTERVIEW_RPT_REFUSAL_SUGAR_MODULE);
 		foreach ($results as $record) {
 			$xmlWriter->startElement('non_interview_rpt_refusal');
-				$this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+				$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
 				$this->addXMLElement($xmlWriter, 'nir_refusal_id', $record['name']);
 				$this->addXMLElement($xmlWriter, 'nir_id', $report['ncsdc_noninirrfsmlts_name']);
 				$this->addXMLElement($xmlWriter, 'refusal_reason', $record['refusal_reason']);
@@ -1124,7 +1143,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $results = export(NON_INTERVIEW_RPT_DUTYPE_SUGAR_MODULE);
 		foreach ($results as $record) {
 			$xmlWriter->startElement('non_interview_rpt_dutype');
-				$this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+				$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
 				$this->addXMLElement($xmlWriter, 'nir_dutype_id', $record['name']);
 				$this->addXMLElement($xmlWriter, 'nir_id', $report['ncsdc_noninrdutpmlts_name']);
 				$this->addXMLElement($xmlWriter, 'nir_type_du', $record['nir_type_du']);
@@ -1141,7 +1160,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $results = export(INCIDENT_SUGAR_MODULE);
 		foreach ($results as $record) {
 			$xmlWriter->startElement('incident');
-				$this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+				$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
 				$this->addXMLElement($xmlWriter, 'incident_id', $record['name']);
 				$this->addXMLElement($xmlWriter, 'incident_date', $record['incident_date']);
 				$incident_time = preg_split('/[ ]/', $record['incident_time']);
@@ -1182,12 +1201,12 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $results = export(INCIDENT_MEDIA_SUGAR_MODULE);
 		foreach ($results as $record) {
 			$xmlWriter->startElement('incident_media');
-				$this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+				$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
 				$this->addXMLElement($xmlWriter, 'incident_media_id', $record['name']);
 				$this->addXMLElement($xmlWriter, 'incident_id', $record['ncsdc_incidcmedmults_name']);
-				$this->addXMLElement($xmlWriter, 'incloss_media', $record['incloss_media']);
+				$this->addXMLElement($xmlWriter, 'incloss_media', str_replace("^","",$record['incloss_media']));
 				$this->addXMLElement($xmlWriter, 'incloss_media_oth', $record['incloss_media_oth']);
-				$this->addXMLElement($xmlWriter, 'inssev', $record['inssev']);
+				$this->addXMLElement($xmlWriter, 'inssev', str_replace("^","",$record['inssev']));
 				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
 			$xmlWriter->endElement();
 		}
@@ -1200,10 +1219,10 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $results = export(INCIDENT_UNANTICIPATED_SUGAR_MODULE);
 		foreach ($results as $record) {
 			$xmlWriter->startElement('incident_unanticipated');
-				$this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+				$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
 				$this->addXMLElement($xmlWriter, 'inc_unanticipated_id', $record['name']);
 				$this->addXMLElement($xmlWriter, 'incident_id', $record['ncsdc_incidcunatmlts_name']);
-				$this->addXMLElement($xmlWriter, 'inc_unanticipated', $record['inc_unanticipated']);
+				$this->addXMLElement($xmlWriter, 'inc_unanticipated', str_replace("^","",$record['inc_unanticipated']));
 				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
 			$xmlWriter->endElement();
 		}
@@ -1219,7 +1238,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $results = export(SPEC_EQUIPMENT_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('spec_equipment');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'spsc_id', $record['']); // MISSING FIELD NAME IN VARDEF FILE
 		$this->addXMLElement($xmlWriter, 'equip_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'equipment_type', $record['equipment_type']);
@@ -1238,7 +1257,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(SPECIMEN_PICKUP_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('spec_pickup');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id',  $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'spsc_id', $record['']); // MISSING FIELD IN VARDEFS
 		$this->addXMLElement($xmlWriter, 'specimen_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'event_id', $record['samp_specpieventinfo_name']);
@@ -1260,7 +1279,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(SPECIMEN_RECEIPT_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('spec_receipt');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'specimen_id', $record['name']);
 		$this->addXMLElement($xmlWriter, 'spsc_id', $record['']); // MISSING FIELD IN VARDEFS
 		$this->addXMLElement($xmlWriter, 'staff_id', $record['samp_specrestaffrstr_name']);
@@ -1292,7 +1311,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(SPECIMEN_SHIPPING_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('spec_shipping');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id',  $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'storage_container_id', $record['name']);
 		$this->addXMLElement($xmlWriter, 'spsc_id', $record['']); // MISSING FIELD IN VARDEFS
 		$this->addXMLElement($xmlWriter, 'staff_id', $record['samp_specshstaffrstr_name']);
@@ -1317,7 +1336,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(SPECIMEN_STORAGE_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('spec_storage');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
 		$this->addXMLElement($xmlWriter, 'spsc_id', $record['']); // MISSING FIELD IN VARDEFS
 		$this->addXMLElement($xmlWriter, 'storage_container_id', $record['name']);
 		$this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $record['placed_in_storage_dt']);
@@ -1343,7 +1362,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(SPECIMEN_INFO_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('spec_spsc_info');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
 		$this->addXMLElement($xmlWriter, 'spsc_id', $record['name']);
 		$this->addXMLElement($xmlWriter, 'address_id', $record['samp_spscint_address_name']);
 		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
@@ -1358,7 +1377,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(ENVIRONMENTAL_EQUIPMENT_INFO_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('env_equipment');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
 		$this->addXMLElement($xmlWriter, 'spsc_id', $record['']); // MISSING FIELD IN VARDEFS
 		$this->addXMLElement($xmlWriter, 'equip_id', $record['name']);
 		$this->addXMLElement($xmlWriter, 'equipment_type', $record['equipment_type']);
@@ -1380,7 +1399,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(ENV_EQUIPMENT_PROBLEM_LOG_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('env_equipment_prob_log');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
 		$this->addXMLElement($xmlWriter, 'spsc_id', $record['']); // MISSING FIELD IN VARDEFS
 		$this->addXMLElement($xmlWriter, 'equip_id', $record['']); // MISSING FIELD IN VARDEFS
 		$this->addXMLElement($xmlWriter, 'problem_id', $record['name']);
@@ -1403,7 +1422,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(PARTICIPANT_CONSENT_SAMPLE_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('participant_consent_sample');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'p_id', $record['plt_partsamrticipant_name']);
                 $this->addXMLElement($xmlWriter, 'participant_consent_id', $record['']);
                 $this->addXMLElement($xmlWriter, 'participant_consent_sample_id', $record['name']);
@@ -1421,7 +1440,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(PARTICIPANT_RECORD_VISIT_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('participant_rvis');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'rvis_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'p_id', $record['plt_partrvirticipant_name']);
                 $this->addXMLElement($xmlWriter, 'rvis_language', $record['rvis_language']);
@@ -1452,7 +1471,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $results = export(PARTICIPANT_VIS_CONSENT_SUGAR_MODULE);
             foreach ($results as $record) {
                 $xmlWriter->startElement('participant_vis_consent');
-                    $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                    $this->addXMLElement($xmlWriter, 'psu_id',  $this->master_psu_id);
                     $this->addXMLElement($xmlWriter, 'pid_visit_consent_id', $record['name']);
                     $this->addXMLElement($xmlWriter, 'p_id', $record['plt_particirtcptvstc_name']);
                     $this->addXMLElement($xmlWriter, 'vis_consent_type', $record['vis_consent_type']);
@@ -1476,7 +1495,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(PRECISION_THERMOMETER_CERT_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('prec_therm_cert');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'srsc_id', $record['']); // MISSING FIELD IN VARDEFS
                 $this->addXMLElement($xmlWriter, 'equip_id', $record['']); // MISSING FIELD IN VARDEFS
                 $this->addXMLElement($xmlWriter, 'staff_id', $record['samp_prethrstaffrstr_name']);
@@ -1496,7 +1515,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(REFRIGERATOR_FREEZER_VER_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('ref_freezer_verification');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'srsc_id', $record['']); // MISSING FIELD IN VARDEFS
                 $this->addXMLElement($xmlWriter, 'equip_id', $record['']); // MISSING FIELD IN VARDEFS
                 $this->addXMLElement($xmlWriter, 'staff_id', $record['samp_reffrestaffrstr_name']);
@@ -1519,7 +1538,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(SAMPLE_RECEIPT_STORAGE_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('sample_receipt_store');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'sample_id', $record['name']); // MISSING FIELD IN VARDEFS
 		$this->addXMLElement($xmlWriter, 'srsc_id', $record['']); // MISSING FIELD IN VARDEFS
                 $this->addXMLElement($xmlWriter, 'staff_id', $record['samp_samprestaffrstr_name']);
@@ -1547,7 +1566,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(SAMPLE_SHIPPING_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('sample_shipping');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'sample_id', $record['name']);
 		$this->addXMLElement($xmlWriter, 'srsc_id', $record['']); // MISSING FIELD IN VARDEFS
                 $this->addXMLElement($xmlWriter, 'staff_id', $record['samp_sampshstaffrstr_name']);
@@ -1572,7 +1591,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(SRSC_INFO_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('srsc_info');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'srsc_id', $record['name']);
 		$this->addXMLElement($xmlWriter, 'address_id', $record['samp_srscint_address_name']);
                 $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
@@ -1587,7 +1606,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(SUBSAMPLE_DOC_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('subsample_doc');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'event_id', $record['samp_subsameventinfo_name']);
 		$this->addXMLElement($xmlWriter, 'subsample_doc_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'random_order_no', $record['random_order_no']);
@@ -1603,7 +1622,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(TRH_METER_CALIBRATION_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('trh_meter_calibration');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'srsc_id', $record['']); // MISSING FIELD IN VARDEFS
                 $this->addXMLElement($xmlWriter, 'equip_id', $record['']); // MISSING FIELD IN VARDEFS
                 $this->addXMLElement($xmlWriter, 'staff_id', $record['samp_trhmetstaffrstr_name']);
@@ -1636,7 +1655,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(DRFT_THERM_VERIFICATION_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('drf_therm_verification');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'srsc_id', $record['']); // MISSING FIELD IN VARDEFS
                 $this->addXMLElement($xmlWriter, 'staff_id', $record['samp_drfthestaffrstr_name']);
 		$this->addXMLElement($xmlWriter, 'drf_therm_verification_date', $record['drf_therm_verification_date']);
@@ -1659,7 +1678,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export(SAMPLE_RECEIPT_CONFIRM_SUGAR_MODULE);
         foreach ($results as $record) {
             $xmlWriter->startElement('sample_receipt_confirm');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
+                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'srsc_id', $record['']); // MISSING FIELD IN VARDEFS
 		$this->addXMLElement($xmlWriter, 'shipment_receipt_confirmed', $record['shipment_receipt_confirmed']); 
                 $this->addXMLElement($xmlWriter, 'shipper_id', $record['shipper_id']);
@@ -1707,9 +1726,11 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $field_list = array($secondaryModuleIDField);
         $result = parent::getRelationshipResults($mod, $relationshipName, $field_list);
         if ($result){
+            unset($mod);
             return $result['rows'][0][$secondaryModuleIDField];
         }
         else {
+            unset($mod);
             return '';
         }
     }
