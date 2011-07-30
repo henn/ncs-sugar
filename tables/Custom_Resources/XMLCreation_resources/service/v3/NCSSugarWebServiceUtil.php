@@ -319,19 +319,19 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'ssu_id', $value);  // NO DB FIELD OR RELATIONSHIP
                 $this->addXMLElement($xmlWriter, 'outreach_event_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'outreach_event_date', $record['outreach_event_date']);
-                $this->addXMLElement($xmlWriter, 'outreach_target', $record['outreach_target']);
-                $this->addXMLElement($xmlWriter, 'outreach_target_oth', $record['outreach_target_oth']);
+                //$this->addXMLElement($xmlWriter, 'outreach_target', $record['st_msouttart_wkoeact_name']);
+                //$this->addXMLElement($xmlWriter, 'outreach_target_oth', $record['outreach_target_oth']);
                 $this->addXMLElement($xmlWriter, 'outreach_mode', $record['outreach_mode']);
                 $this->addXMLElement($xmlWriter, 'outreach_mode_oth', $record['outreach_mode_oth']);
                 $this->addXMLElement($xmlWriter, 'outreach_type', $record['outreach_type']);
                 $this->addXMLElement($xmlWriter, 'outreach_type_oth', $record['outreach_type_oth']);
                 $this->addXMLElement($xmlWriter, 'outreach_tailored', $record['outreach_tailored']);
                 $this->addXMLElement($xmlWriter, 'outreach_lang1', $record['outreach_lang1']);
-                $this->addXMLElement($xmlWriter, 'outreach_lang2', $record['outreach_lang2']);
+                //$this->addXMLElement($xmlWriter, 'outreach_lang2', $record['outreach_lang2']);
                 $this->addXMLElement($xmlWriter, 'outreach_lang_oth', $record['outreach_lang_oth']);
                 $this->addXMLElement($xmlWriter, 'outreach_race1', $record['outreach_race1']);
-                $this->addXMLElement($xmlWriter, 'outreach_race2', $record['outreach_race2']);
-                $this->addXMLElement($xmlWriter, 'outreach_race_oth', $record['outreach_race_oth']);
+                //$this->addXMLElement($xmlWriter, 'outreach_race2', $record['st_msoutract_wkoeact_name']);
+                //$this->addXMLElement($xmlWriter, 'outreach_race_oth', $record['outreach_race_oth']);
                 $this->addXMLElement($xmlWriter, 'outreach_culture1', $record['outreach_culture1']);
                 $this->addXMLElement($xmlWriter, 'outreach_culture2', $record['outreach_culture2']);
                 $this->addXMLElement($xmlWriter, 'outreach_culture_oth', $record['outreach_culture_oth']);
@@ -357,7 +357,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
                 $this->addXMLElement($xmlWriter, 'outreach_race_id', $record['name']);
                 $this->addXMLElement($xmlWriter, 'outreach_event_id', $record['st_msoutract_wkoeact_name']);
-                $this->addXMLElement($xmlWriter, 'outreach_race2', str_replace("_", "-", $record['outreach_race2']['value']));
+                $this->addXMLElement($xmlWriter, 'outreach_race2', str_replace("_", "-", $record['outreach_race2']));
                 $this->addXMLElement($xmlWriter, 'outreach_race_oth', $record['outreach_race_oth']);
 				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
@@ -374,8 +374,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $xmlWriter->startElement('outreach_staff');
                 $this->addXMLElement($xmlWriter, 'psu_id', $this->replaceIfMissing($record['psu_id'], $this->master_psu_id));
                 $this->addXMLElement($xmlWriter, 'outreach_event_staff_id', $record['name']); 
-                $this->addXMLElement($xmlWriter, 'outreach_event_id', $record['ncsdc_eventtrchstaff_name']);
-                $this->addXMLElement($xmlWriter, 'staff_id', $record['']); // Missing field name in vardef
+                $this->addXMLElement($xmlWriter, 'outreach_event_id', $record['st_otrchstat_wkoeact_name']);
+                $this->addXMLElement($xmlWriter, 'staff_id', $record['st_otrchstastaffrstr_name']); // Missing field name in vardef
 		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
         }
