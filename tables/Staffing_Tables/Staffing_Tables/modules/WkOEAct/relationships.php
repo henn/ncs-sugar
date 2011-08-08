@@ -35,5 +35,21 @@
  ********************************************************************************/
 
 $relationships = array (
+  'st_wkoeact_gt_secsampunt' => 
+  array (
+    'rhs_label' => 'Secondary Sampling Unit (SSU)',
+    'lhs_label' => 'Weekly Outreach ',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'ST_WkOEAct',
+    'rhs_module' => 'GT_SecSampUnt',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'st_wkoeact_gt_secsampunt',
+  ),
 );
 ?>

@@ -66,6 +66,5 @@ $mod_strings = array (
   'LNK_IMPORT_ST_MSOUTRACE_' => 'Import Outreach Race (Multi-Select)',
   'LBL_OUTREACH_RACE2' => 'Outreach Race (Multi-Select)',
   'LBL_OUTREACH_RACE_OTH' => 'Other Specified Outreach Race',
-  'LBL_ST_MSOUTRACE_SUBPANEL_TITLE' => 'Outreach Race (Multi-Select)',
 );
 ?>
