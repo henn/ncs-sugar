@@ -37,15 +37,15 @@
 $vardefs = array (
   'fields' => 
   array (
-    'incident_time' => 
+      'incident_date_time' => 
     array (
-      'required' => false,
-      'name' => 'incident_time',
-      'vname' => 'LBL_INCIDENT_TIME',
+      'required' => true,
+      'name' => 'incident_date_time',
+      'vname' => 'LBL_INCIDENT_DATE_TIME',
       'type' => 'datetimecombo',
-      'massupdate' => 0,
+      'massupdate' => '1',
       'comments' => '',
-      'help' => 'Time incident occurred',
+      'help' => '',
       'importable' => 'true',
       'duplicate_merge' => 'disabled',
       'duplicate_merge_dom_value' => '0',
@@ -54,31 +54,15 @@ $vardefs = array (
       'size' => '20',
       'dbType' => 'datetime',
     ),
-    'inc_report_date' => 
+    'incident_report_date_time' => 
     array (
-      'required' => false,
-      'name' => 'inc_report_date',
-      'vname' => 'LBL_INC_REPORT_DATE',
-      'type' => 'date',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => 'Date incident reported',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'size' => '20',
-    ),
-    'inc_report_time' => 
-    array (
-      'required' => false,
-      'name' => 'inc_report_time',
-      'vname' => 'LBL_INC_REPORT_TIME',
+      'required' => true,
+      'name' => 'incident_report_date_time',
+      'vname' => 'LBL_INCIDENT_REPORT_DATE_TIME',
       'type' => 'datetimecombo',
-      'massupdate' => 0,
+      'massupdate' => '1',
       'comments' => '',
-      'help' => 'Time incident reported',
+      'help' => '',
       'importable' => 'true',
       'duplicate_merge' => 'disabled',
       'duplicate_merge_dom_value' => '0',
@@ -421,22 +405,6 @@ $vardefs = array (
       'studio' => 'visible',
       'rows' => '4',
       'cols' => '20',
-    ),
-    'incident_date' => 
-    array (
-      'required' => false,
-      'name' => 'incident_date',
-      'vname' => 'LBL_INCIDENT_DATE',
-      'type' => 'date',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => '&quot;YYYY-MM-DD For missing values use &quot;&quot;9&quot;&quot; prefix followed by: 6 (Unknown), e.g. 2009-96-96 (Unknown Month and Day) 9666-96-96 (Unknown date)&quot;',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'size' => '20',
     ),
     'inc_recip_is_other' => 
     array (

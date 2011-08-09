@@ -84,5 +84,7 @@ $mod_strings = array (
   'LBL_VISIT_WINDOW_STARTDATE' => 'Visit Window Start Date',
   'LBL_VISIT_WINDOW_ENDTIME_C' => 'visit window_endtime_c',
   'LBL_VISIT_WINDOW_ENDDATE' => 'Visit Window End Date',
+  'LBL_EVENT_START_DATE_TIME' => 'Event Start Date & Time',
+  'LBL_EVENT_END_DATE_TIME' => 'Event end date & time',
 );
 ?>

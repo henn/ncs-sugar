@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'inc_report_date' => 
-      array (
-        'type' => 'date',
-        'label' => 'LBL_INC_REPORT_DATE',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'inc_report_date',
-      ),
       'inc_staff_reporter_id' => 
       array (
         'type' => 'varchar',
@@ -37,14 +29,6 @@ array (
         'sortable' => false,
         'width' => '10%',
         'name' => 'inctype',
-      ),
-      'incident_date' => 
-      array (
-        'type' => 'date',
-        'label' => 'LBL_INCIDENT_DATE',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'incident_date',
       ),
       'inc_action' => 
       array (
@@ -80,22 +64,6 @@ array (
         'width' => '10%',
         'default' => true,
         'name' => 'inc_staff_supervisor_id',
-      ),
-      'incident_date' => 
-      array (
-        'type' => 'date',
-        'label' => 'LBL_INCIDENT_DATE',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'incident_date',
-      ),
-      'inc_report_date' => 
-      array (
-        'type' => 'date',
-        'label' => 'LBL_INC_REPORT_DATE',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'inc_report_date',
       ),
       'inctype' => 
       array (

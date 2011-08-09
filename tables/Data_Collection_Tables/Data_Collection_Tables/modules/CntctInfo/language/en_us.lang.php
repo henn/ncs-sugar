@@ -87,5 +87,7 @@ $mod_strings = array (
   'LBL_NCSDC_CONTACT_SUBPANEL_TITLE' => 'Contact Information',
   'LNK_IMPORT_NCSDC_CNTCTINFO' => 'Import Contact Information',
   'LBL_NCSDC_CNTCTINFO_SUBPANEL_TITLE' => 'Contact Information',
+  'LBL_CONTACT_START_DATE_TIME' => 'Contact Start Date & Time',
+  'LBL_CONTACT_END_DATE_TIME' => 'Contact End Date & Time',
 );
 ?>

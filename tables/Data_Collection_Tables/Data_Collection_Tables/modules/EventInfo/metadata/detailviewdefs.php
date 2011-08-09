@@ -50,11 +50,6 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
           0 => 
           array (
             'name' => 'event_type',
@@ -67,7 +62,7 @@ array (
             'label' => 'LBL_EVENT_TYPE_OTH',
           ),
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -76,7 +71,7 @@ array (
           ),
           1 => '',
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -90,33 +85,20 @@ array (
             'label' => 'LBL_EVENT_DISP',
           ),
         ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'event_start_date_time',
+            'label' => 'LBL_EVENT_START_DATE_TIME',
+          ),
+          1 => 
+          array (
+            'name' => 'event_end_date_time',
+            'label' => 'LBL_EVENT_END_DATE_TIME',
+          ),
+        ),
         5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'event_start_date',
-            'label' => 'LBL_EVENT_START_DATE',
-          ),
-          1 => 
-          array (
-            'name' => 'event_end_date',
-            'label' => 'LBL_EVENT_END_DATE',
-          ),
-        ),
-        6 => 
-        array (
-          0 => 
-          array (
-            'name' => 'event_start_time',
-            'label' => 'LBL_EVENT_START_TIME',
-          ),
-          1 => 
-          array (
-            'name' => 'event_end_time',
-            'label' => 'LBL_EVENT_END_TIME',
-          ),
-        ),
-        7 => 
         array (
           0 => 
           array (
@@ -126,7 +108,7 @@ array (
           ),
           1 => '',
         ),
-        8 => 
+        6 => 
         array (
           0 => 
           array (
@@ -136,7 +118,7 @@ array (
           ),
           1 => '',
         ),
-        9 => 
+        7 => 
         array (
           0 => 
           array (
@@ -149,7 +131,7 @@ array (
             'label' => 'LBL_EVENT_INCENT_NONCASH',
           ),
         ),
-        10 => 
+        8 => 
         array (
           0 => 
           array (
@@ -158,7 +140,7 @@ array (
             'label' => 'LBL_EVENT_COMMENT',
           ),
         ),
-        11 => 
+        9 => 
         array (
           0 => 
           array (
@@ -171,11 +153,7 @@ array (
             'label' => 'LBL_NCSDC_CNTCTINFO_NCSDC_EVENTINFO_FROM_NCSDC_CNTCTINFO_TITLE',
           ),
         ),
-        12 => 
-        array (
-          0 => '',
-        ),
-        13 => 
+        10 => 
         array (
           0 => 
           array (

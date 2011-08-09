@@ -30,14 +30,6 @@ array (
         'default' => true,
         'name' => 'contact_disp',
       ),
-      'contact_date' => 
-      array (
-        'type' => 'date',
-        'label' => 'LBL_CONTACT_DATE',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'contact_date',
-      ),
       'contact_location' => 
       array (
         'type' => 'enum',
@@ -94,14 +86,6 @@ array (
         'sortable' => false,
         'width' => '10%',
         'name' => 'contact_lang',
-      ),
-      'contact_date' => 
-      array (
-        'type' => 'date',
-        'label' => 'LBL_CONTACT_DATE',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'contact_date',
       ),
       'contact_location' => 
       array (

@@ -318,29 +318,13 @@ $vardefs = array (
       'rows' => '4',
       'cols' => '20',
     ),
-    'contact_date' => 
+    'contact_start_date_time' => 
     array (
-      'required' => false,
-      'name' => 'contact_date',
-      'vname' => 'LBL_CONTACT_DATE',
-      'type' => 'date',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => '',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'size' => '20',
-    ),
-    'contact_start_time' => 
-    array (
-      'required' => false,
-      'name' => 'contact_start_time',
-      'vname' => 'LBL_CONTACT_START_TIME',
+      'required' => true,
+      'name' => 'contact_start_date_time',
+      'vname' => 'LBL_CONTACT_START_DATE_TIME',
       'type' => 'datetimecombo',
-      'massupdate' => 0,
+      'massupdate' => '1',
       'comments' => '',
       'help' => '',
       'importable' => 'true',
@@ -351,13 +335,13 @@ $vardefs = array (
       'size' => '20',
       'dbType' => 'datetime',
     ),
-    'contact_end_time' => 
+    'contact_end_date_time' => 
     array (
-      'required' => false,
-      'name' => 'contact_end_time',
-      'vname' => 'LBL_CONTACT_END_TIME',
+      'required' => true,
+      'name' => 'contact_end_date_time',
+      'vname' => 'LBL_CONTACT_END_DATE_TIME',
       'type' => 'datetimecombo',
-      'massupdate' => 0,
+      'massupdate' => '1',
       'comments' => '',
       'help' => '',
       'importable' => 'true',

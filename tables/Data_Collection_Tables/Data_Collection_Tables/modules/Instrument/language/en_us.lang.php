@@ -80,5 +80,7 @@ $mod_strings = array (
   'LBL_INSTRU_COMMENT' => 'Instrument Comment',
   'LBL_INSTRUMENT_TYPE' => 'Instrument Type',
   'LBL_INSTRUMENT_REPEAT_KEY' => 'Instrument Repeat Key',
+  'LBL_INSTRUMENT_START_DATE_TIME' => 'Instrument Start Date & Time',
+  'LBL_INSTRUMENT_END_DATE_TIME' => 'Instrument End Date & Time',
 );
 ?>

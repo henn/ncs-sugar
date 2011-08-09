@@ -40,38 +40,10 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'INCIDENT_DATE' => 
-  array (
-    'type' => 'date',
-    'label' => 'LBL_INCIDENT_DATE',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'INCIDENT_TIME' => 
-  array (
-    'type' => 'datetimecombo',
-    'label' => 'LBL_INCIDENT_TIME',
-    'width' => '10%',
-    'default' => true,
-  ),
   'INC_STAFF_REPORTER_ID' => 
   array (
     'type' => 'varchar',
     'label' => 'LBL_INC_STAFF_REPORTER_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'INC_REPORT_DATE' => 
-  array (
-    'type' => 'date',
-    'label' => 'LBL_INC_REPORT_DATE',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'INC_REPORT_TIME' => 
-  array (
-    'type' => 'datetimecombo',
-    'label' => 'LBL_INC_REPORT_TIME',
     'width' => '10%',
     'default' => true,
   ),

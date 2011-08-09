@@ -40,14 +40,6 @@ array (
         'default' => true,
         'name' => 'event_disp',
       ),
-      'event_start_date' => 
-      array (
-        'type' => 'date',
-        'label' => 'LBL_EVENT_START_DATE',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'event_start_date',
-      ),
       'event_incentive_type' => 
       array (
         'type' => 'enum',
@@ -110,22 +102,6 @@ array (
         'width' => '10%',
         'default' => true,
         'name' => 'event_repeat_key',
-      ),
-      'event_start_date' => 
-      array (
-        'type' => 'date',
-        'label' => 'LBL_EVENT_START_DATE',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'event_start_date',
-      ),
-      'event_end_date' => 
-      array (
-        'type' => 'date',
-        'label' => 'LBL_EVENT_END_DATE',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'event_end_date',
       ),
       'event_breakoff' => 
       array (

@@ -33,13 +33,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'INS_DATE_START' => 
-  array (
-    'type' => 'date',
-    'label' => 'LBL_INS_DATE_START',
-    'width' => '10%',
-    'default' => true,
-  ),
   'INS_MODE' => 
   array (
     'type' => 'enum',
@@ -96,27 +89,6 @@ array (
   array (
     'type' => 'varchar',
     'label' => 'LBL_INS_MODE_OTH',
-    'width' => '10%',
-    'default' => false,
-  ),
-  'INS_END_TIME' => 
-  array (
-    'type' => 'datetimecombo',
-    'label' => 'LBL_INS_END_TIME',
-    'width' => '10%',
-    'default' => false,
-  ),
-  'INS_START_TIME' => 
-  array (
-    'type' => 'datetimecombo',
-    'label' => 'LBL_INS_START_TIME',
-    'width' => '10%',
-    'default' => false,
-  ),
-  'INS_DATE_END' => 
-  array (
-    'type' => 'date',
-    'label' => 'LBL_INS_DATE_END',
     'width' => '10%',
     'default' => false,
   ),

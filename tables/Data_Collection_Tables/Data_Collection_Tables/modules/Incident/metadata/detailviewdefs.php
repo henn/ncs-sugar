@@ -50,11 +50,6 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
           0 => 
           array (
             'name' => 'inctype',
@@ -67,7 +62,7 @@ array (
             'label' => 'LBL_INCTYPE_OTH',
           ),
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -76,7 +71,7 @@ array (
           ),
           1 => '',
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -85,20 +80,16 @@ array (
             'label' => 'LBL_INC_ACTION',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
-            'name' => 'incident_date',
-            'label' => 'LBL_INCIDENT_DATE',
+            'name' => 'incident_date_time',
+            'label' => 'LBL_INCIDENT_DATE_TIME',
           ),
-          1 => 
-          array (
-            'name' => 'incident_time',
-            'label' => 'LBL_INCIDENT_TIME',
-          ),
+          1 => '',
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -111,20 +102,7 @@ array (
             'label' => 'LBL_INC_STAFF_SUPERVISOR_ID',
           ),
         ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'inc_report_date',
-            'label' => 'LBL_INC_REPORT_DATE',
-          ),
-          1 => 
-          array (
-            'name' => 'inc_report_time',
-            'label' => 'LBL_INC_REPORT_TIME',
-          ),
-        ),
-        8 => 
+        6 => 
         array (
           0 => 
           array (
@@ -137,7 +115,7 @@ array (
             'label' => 'LBL_INC_RECIP_IS_DU',
           ),
         ),
-        9 => 
+        7 => 
         array (
           0 => 
           array (
@@ -150,7 +128,7 @@ array (
             'label' => 'LBL_INC_RECIP_IS_FAMILY',
           ),
         ),
-        10 => 
+        8 => 
         array (
           0 => 
           array (
@@ -164,7 +142,7 @@ array (
             'label' => 'LBL_INC_RECIP_IS_OTHER',
           ),
         ),
-        11 => 
+        9 => 
         array (
           0 => 
           array (
@@ -177,7 +155,7 @@ array (
             'label' => 'LBL_INCLOSS_CMPTR_SN',
           ),
         ),
-        12 => 
+        10 => 
         array (
           0 => 
           array (
@@ -190,7 +168,7 @@ array (
             'label' => 'LBL_INCLOSS_REM_MEDIA',
           ),
         ),
-        13 => 
+        11 => 
         array (
           0 => 
           array (
@@ -203,7 +181,7 @@ array (
             'label' => 'LBL_INCLOSS_OTH',
           ),
         ),
-        14 => 
+        12 => 
         array (
           0 => 
           array (
@@ -211,9 +189,13 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_INC_REPORTED',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'incident_report_date_time',
+            'label' => 'LBL_INCIDENT_REPORT_DATE_TIME',
+          ),
         ),
-        15 => 
+        13 => 
         array (
           0 => 
           array (
@@ -222,7 +204,7 @@ array (
             'label' => 'LBL_INC_DESCRIPTION',
           ),
         ),
-        16 => 
+        14 => 
         array (
           0 => 
           array (
@@ -234,7 +216,7 @@ array (
             'name' => 'ncsdc_incidstaffrstr_name',
           ),
         ),
-        17 => 
+        15 => 
         array (
           0 => 
           array (
@@ -245,7 +227,7 @@ array (
             'name' => 'ncsdc_incidellingunt_name',
           ),
         ),
-        18 => 
+        16 => 
         array (
           0 => 
           array (

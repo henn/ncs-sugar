@@ -88,5 +88,7 @@ $mod_strings = array (
   'LBL_INC_REPORTED' => 'Incident Reported',
   'LBL_INCIDENT_DATE' => 'Incident Date',
   'LBL_INC_RECIP_IS_OTHER' => 'Incident Recipient Is Other',
+  'LBL_INCIDENT_DATE_TIME' => 'Incident Date & Time',
+  'LBL_INCIDENT_REPORT_DATE_TIME' => 'Incident Report Date & Time',
 );
 ?>

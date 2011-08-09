@@ -42,11 +42,6 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
           0 => 
           array (
             'name' => 'contact_disp',
@@ -54,7 +49,7 @@ array (
           ),
           1 => '',
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -68,29 +63,20 @@ array (
             'label' => 'LBL_CONTACT_TYPE_OTH',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
-            'name' => 'contact_date',
-            'label' => 'LBL_CONTACT_DATE',
-          ),
-          1 => '',
-        ),
-        5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'contact_start_time',
-            'label' => 'LBL_CONTACT_START_TIME',
+            'name' => 'contact_start_date_time',
+            'label' => 'LBL_CONTACT_START_DATE_TIME',
           ),
           1 => 
           array (
-            'name' => 'contact_end_time',
-            'label' => 'LBL_CONTACT_END_TIME',
+            'name' => 'contact_end_date_time',
+            'label' => 'LBL_CONTACT_END_DATE_TIME',
           ),
         ),
-        6 => 
+        4 => 
         array (
           0 => 
           array (
@@ -104,7 +90,7 @@ array (
             'label' => 'LBL_CONTACT_LANG_OTH',
           ),
         ),
-        7 => 
+        5 => 
         array (
           0 => 
           array (
@@ -118,7 +104,7 @@ array (
             'label' => 'LBL_CONTACT_INTERPRET_OTH',
           ),
         ),
-        8 => 
+        6 => 
         array (
           0 => 
           array (
@@ -132,7 +118,7 @@ array (
             'label' => 'LBL_CONTACT_LOCATION_OTH',
           ),
         ),
-        9 => 
+        7 => 
         array (
           0 => 
           array (
@@ -142,7 +128,7 @@ array (
           ),
           1 => '',
         ),
-        10 => 
+        8 => 
         array (
           0 => 
           array (
@@ -151,7 +137,7 @@ array (
           ),
           1 => '',
         ),
-        11 => 
+        9 => 
         array (
           0 => 
           array (
@@ -160,7 +146,7 @@ array (
           ),
           1 => '',
         ),
-        12 => 
+        10 => 
         array (
           0 => 
           array (
@@ -174,7 +160,7 @@ array (
             'label' => 'LBL_WHO_CONTACT_OTH',
           ),
         ),
-        13 => 
+        11 => 
         array (
           0 => 
           array (

@@ -30,14 +30,6 @@ array (
         'default' => true,
         'name' => 'instrument_version',
       ),
-      'ins_date_start' => 
-      array (
-        'type' => 'date',
-        'label' => 'LBL_INS_DATE_START',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'ins_date_start',
-      ),
       'ins_status' => 
       array (
         'type' => 'enum',
@@ -94,22 +86,6 @@ array (
         'width' => '10%',
         'default' => true,
         'name' => 'instrument_version',
-      ),
-      'ins_date_start' => 
-      array (
-        'type' => 'date',
-        'label' => 'LBL_INS_DATE_START',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'ins_date_start',
-      ),
-      'ins_date_end' => 
-      array (
-        'type' => 'date',
-        'label' => 'LBL_INS_DATE_END',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'ins_date_end',
       ),
       'ins_status' => 
       array (

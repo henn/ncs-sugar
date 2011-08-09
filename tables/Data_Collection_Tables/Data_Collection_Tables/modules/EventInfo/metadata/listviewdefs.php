@@ -24,20 +24,6 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
-  'EVENT_START_TIME' => 
-  array (
-    'type' => 'datetimecombo',
-    'label' => 'LBL_EVENT_START_TIME',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'EVENT_END_TIME' => 
-  array (
-    'type' => 'datetimecombo',
-    'label' => 'LBL_EVENT_END_TIME',
-    'width' => '10%',
-    'default' => true,
-  ),
   'EVENT_INCENTIVE_TYPE' => 
   array (
     'type' => 'enum',
@@ -78,20 +64,6 @@ array (
     'label' => 'LBL_EVENT_BREAKOFF',
     'sortable' => false,
     'width' => '10%',
-  ),
-  'EVENT_END_DATE' => 
-  array (
-    'type' => 'date',
-    'label' => 'LBL_EVENT_END_DATE',
-    'width' => '10%',
-    'default' => false,
-  ),
-  'EVENT_START_DATE' => 
-  array (
-    'type' => 'date',
-    'label' => 'LBL_EVENT_START_DATE',
-    'width' => '10%',
-    'default' => false,
   ),
   'EVENT_INCENT_NONCASH' => 
   array (

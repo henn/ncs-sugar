@@ -50,11 +50,6 @@ array (
         ),
         1 => 
         array (
-          0 => '',
-          1 => '',
-        ),
-        2 => 
-        array (
           0 => 
           array (
             'name' => 'instrument_type',
@@ -67,7 +62,7 @@ array (
             'label' => 'LBL_INSTRUMENT_TYPE_OTH',
           ),
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -76,7 +71,7 @@ array (
           ),
           1 => '',
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -90,7 +85,7 @@ array (
             'label' => 'LBL_INSTRUMENT_REPEAT_KEY',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -100,7 +95,7 @@ array (
           ),
           1 => '',
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -114,33 +109,20 @@ array (
             'label' => 'LBL_INS_MODE_OTH',
           ),
         ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'instrument_start_date_time',
+            'label' => 'LBL_INSTRUMENT_START_DATE_TIME',
+          ),
+          1 => 
+          array (
+            'name' => 'instrument_end_date_time',
+            'label' => 'LBL_INSTRUMENT_END_DATE_TIME',
+          ),
+        ),
         7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ins_date_start',
-            'label' => 'LBL_INS_DATE_START',
-          ),
-          1 => 
-          array (
-            'name' => 'ins_date_end',
-            'label' => 'LBL_INS_DATE_END',
-          ),
-        ),
-        8 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ins_start_time',
-            'label' => 'LBL_INS_START_TIME',
-          ),
-          1 => 
-          array (
-            'name' => 'ins_end_time',
-            'label' => 'LBL_INS_END_TIME',
-          ),
-        ),
-        9 => 
         array (
           0 => 
           array (
@@ -150,7 +132,7 @@ array (
           ),
           1 => '',
         ),
-        10 => 
+        8 => 
         array (
           0 => 
           array (
@@ -165,7 +147,7 @@ array (
             'label' => 'LBL_DATA_PROBLEM',
           ),
         ),
-        11 => 
+        9 => 
         array (
           0 => 
           array (
@@ -174,7 +156,7 @@ array (
             'label' => 'LBL_INSTRU_COMMENT',
           ),
         ),
-        12 => 
+        10 => 
         array (
           0 => 
           array (
