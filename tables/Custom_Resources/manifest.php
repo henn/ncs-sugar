@@ -829,6 +829,13 @@ $installdefs = array (
       'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_who_contacted_c.php',
       'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_who_contacted_c.php',
     ),
+	
+	/** for Note Subject **/
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_notes_subject_c.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_notes_subject_c.php',
+    ),
+	
 	//*************** end of Activities stuff ********************************
   
 ############### BEGIN COPY OF Custom Module Extension ###############
@@ -1941,6 +1948,33 @@ $installdefs = array (
       'ext3' => NULL,
       'ext4' => NULL,
     ),
+	
+	/** subject field for Notes **/
+    'Notesnotes_subject_c' => 
+    array (
+      'id' => 'Notesnotes_subject_c',
+      'name' => 'notes_subject_c',
+      'label' => 'LBL_NOTES_SUBJECT',
+      'comments' => NULL,
+      'help' => NULL,
+      'module' => 'Notes',
+      'type' => 'varchar',
+      'max_size' => '255',
+      'require_option' => '0',
+      'default_value' => NULL,
+      'date_modified' => '2011-08-09 21:17:03',
+      'deleted' => '0',
+      'audited' => '1',
+      'mass_update' => '0',
+      'duplicate_merge' => '0',
+      'reportable' => '1',
+      'importable' => 'true',
+      'ext1' => NULL,
+      'ext2' => NULL,
+      'ext3' => NULL,
+      'ext4' => NULL,
+    ),
+
   ),
   
   //****************************** END CUSTOM_FIELDS ****************************

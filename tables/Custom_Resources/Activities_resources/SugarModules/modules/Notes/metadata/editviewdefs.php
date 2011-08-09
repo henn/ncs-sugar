@@ -59,6 +59,15 @@ function deleteAttachmentCallBack(text)
         array (
           0 => 
           array (
+            'name' => 'notes_subject_c',
+            'label' => 'LBL_NOTES_SUBJECT',
+          ),
+          1 => '',
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
             'name' => 'start_date_time_c',
             'label' => 'LBL_START_DATE_TIME',
           ),
@@ -68,7 +77,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_END_DATE_TIME',
           ),
         ),
-        2 => 
+        3 => 
         array (
           0 => 
           array (
@@ -82,7 +91,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_CONTACT_TYPE_OTHER',
           ),
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
@@ -96,7 +105,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_CONTACT_LANG_OTH',
           ),
         ),
-        4 => 
+        5 => 
         array (
           0 => 
           array (
@@ -110,7 +119,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_CONTACT_INTERPRET_OTH',
           ),
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
@@ -124,7 +133,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_CONTACT_LOCATION_OTH',
           ),
         ),
-        6 => 
+        7 => 
         array (
           0 => 
           array (
@@ -138,7 +147,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_CONTACT_PRIVATE_DETAIL',
           ),
         ),
-        7 => 
+        8 => 
         array (
           0 => 
           array (
@@ -152,7 +161,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_WHO_CONTACTED',
           ),
         ),
-        8 => 
+        9 => 
         array (
           0 => 
           array (
@@ -165,19 +174,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_CONTACT_DISP',
           ),
         ),
-        9 => 
-//         array (
-//           0 => 
-//           array (
-//             'name' => 'ncsdc_eventinfo_activities_notes_name',
-//           ),
-//           1 => 
-//           array (
-//             'name' => 'ncsdc_eventnfo_notes_name',
-//             'label' => 'LBL_NCSDC_EVENTINFO_NOTES_FROM_NCSDC_EVENTINFO_TITLE',
-//           ),
-//         ),
-//         10 => 
+        10 => 
         array (
           0 => 
           array (
@@ -192,7 +189,7 @@ function deleteAttachmentCallBack(text)
 											 </span>',
           ),
         ),
-        10 => 
+        11 => 
         array (
           0 => 
           array (

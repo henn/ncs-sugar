@@ -63,6 +63,15 @@ function deleteAttachmentCallBack(text)
         array (
           0 => 
           array (
+            'name' => 'notes_subject_c',
+            'label' => 'LBL_NOTES_SUBJECT',
+          ),
+          1 => '',
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
             'name' => 'filename',
             'customCode' => '<span id=\'new_attachment\' style=\'display:{if !empty($fields.filename.value)}none{/if}\'>
         									 <input name="uploadfile" tabindex="3" type="file" size="60"/>
@@ -74,7 +83,7 @@ function deleteAttachmentCallBack(text)
 											 </span>',
           ),
         ),
-        2 => 
+        3 => 
         array (
           0 => 
           array (
@@ -87,7 +96,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_END_DATE_TIME',
           ),
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
@@ -101,7 +110,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_CONTACT_TYPE_OTHER',
           ),
         ),
-        4 => 
+        5 => 
         array (
           0 => 
           array (
@@ -115,7 +124,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_CONTACT_LANG_OTH',
           ),
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
@@ -129,7 +138,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_CONTACT_INTERPRET_OTH',
           ),
         ),
-        6 => 
+        7 => 
         array (
           0 => 
           array (
@@ -143,7 +152,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_CONTACT_LOCATION_OTH',
           ),
         ),
-        7 => 
+        8 => 
         array (
           0 => 
           array (
@@ -157,7 +166,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_CONTACT_PRIVATE_DETAIL',
           ),
         ),
-        8 => 
+        9 => 
         array (
           0 => 
           array (
@@ -171,7 +180,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_WHO_CONTACTED',
           ),
         ),
-        9 => 
+        10 => 
         array (
           0 => 
           array (
@@ -184,7 +193,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_CONTACT_DISP',
           ),
         ),
-        10 => 
+        11 => 
         array (
           0 => 
           array (

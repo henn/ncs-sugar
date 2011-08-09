@@ -19,9 +19,11 @@ $mod_strings['LBL_WHO_CONTACT_OTH'] = 'Other person providing information';
 $mod_strings['LBL_DESCRIPTION'] = 'Contact Comment:';
 $mod_strings['LBL_CONTACT_DISP'] = 'Contact Disposition';
 $mod_strings['LBL_CONTACT_NAME'] = 'Contact ID: ';
-$mod_strings['LBL_NOTE_SUBJECT'] = 'Contact ID:';
+$mod_strings['LBL_NOTE_SUBJECT'] = 'Note ID:';
 $mod_strings['LBL_EVENT'] = 'Event';
-$mod_strings['LBL_LIST_SUBJECT'] = 'Contact ID:';
+$mod_strings['LBL_LIST_SUBJECT'] = 'Note ID:';
 $mod_strings['LBL_NOTE_STATUS'] = 'Comments:';
+$mod_strings['LBL_NOTES_SUBJECT'] = 'Subject';  /* J New */
+$mod_strings['LBL_SUBJECT'] = 'Note ID';   /* J New */
 
 ?>

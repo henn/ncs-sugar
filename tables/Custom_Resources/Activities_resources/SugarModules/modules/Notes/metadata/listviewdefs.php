@@ -21,6 +21,12 @@ array (
     array (
       0 => 'contact_id',
     ),
+  'NOTES_SUBJECT_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_NOTES_SUBJECT',
+    'width' => '10%',
   ),
   'CONTACT_TYPE_C' => 
   array (
@@ -30,6 +36,14 @@ array (
     'label' => 'LBL_CONTACT_TYPE',
     'sortable' => false,
     'width' => '10%',
+  ),
+  'NCSDC_EVENTNFO_NOTES_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'ncsdc_eventinfo_notes',
+    'label' => 'LBL_NCSDC_EVENTINFO_NOTES_FROM_NCSDC_EVENTINFO_TITLE',
+    'width' => '10%',
+    'default' => true,
   ),
   'PARENT_NAME' => 
   array (
@@ -59,6 +73,13 @@ array (
       1 => 'id',
     ),
     'customCode' => '<a href="index.php?entryPoint=download&id={$ID}&type=Notes" >{$FILENAME}</a>',
+  ),
+  'FILE_URL' => 
+  array (
+    'type' => 'function',
+    'label' => 'LBL_FILE_URL',
+    'width' => '10%',
+    'default' => true,
   ),
   'DESCRIPTION' => 
   array (
@@ -92,6 +113,15 @@ array (
     array (
       0 => 'created_by',
     ),
+  ),
+  'PLT_PARTICIANT_NOTES_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'plt_participant_notes',
+    'label' => 'LBL_PLT_PARTICIPANT_NOTES_FROM_PLT_PARTICIPANT_TITLE',
+    'width' => '10%',
+    'default' => false,
+  ),
   ),
 );
 ?>

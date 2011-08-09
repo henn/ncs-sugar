@@ -42,15 +42,24 @@ array (
         array (
           0 => 
           array (
+            'name' => 'notes_subject_c',
+            'label' => 'LBL_NOTES_SUBJECT',
+          ),
+          1 => '',
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
             'name' => 'ncsdc_eventnfo_notes_name',
             'label' => 'LBL_NCSDC_EVENTINFO_NOTES_FROM_NCSDC_EVENTINFO_TITLE',
           ),
         ),
-        2 => 
+        3 => 
         array (
           0 => 'assigned_user_name',
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
@@ -63,7 +72,7 @@ array (
             'label' => 'LBL_END_DATE_TIME',
           ),
         ),
-        4 => 
+        5 => 
         array (
           0 => 
           array (
@@ -77,7 +86,7 @@ array (
             'label' => 'LBL_CONTACT_TYPE_OTHER',
           ),
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
@@ -91,7 +100,7 @@ array (
             'label' => 'LBL_CONTACT_LANG_OTH',
           ),
         ),
-        6 => 
+        7 => 
         array (
           0 => 
           array (
@@ -105,7 +114,7 @@ array (
             'label' => 'LBL_CONTACT_INTERPRET_OTH',
           ),
         ),
-        7 => 
+        8 => 
         array (
           0 => 
           array (
@@ -119,7 +128,7 @@ array (
             'label' => 'LBL_CONTACT_LOCATION_OTH',
           ),
         ),
-        8 => 
+        9 => 
         array (
           0 => 
           array (
@@ -133,7 +142,7 @@ array (
             'label' => 'LBL_CONTACT_PRIVATE_DETAIL',
           ),
         ),
-        9 => 
+        10 => 
         array (
           0 => 
           array (
@@ -147,7 +156,7 @@ array (
             'label' => 'LBL_WHO_CONTACT_OTH',
           ),
         ),
-        10 => 
+        11 => 
         array (
           0 => 
           array (
@@ -160,18 +169,7 @@ array (
             'label' => 'LBL_CONTACT_DISP',
           ),
         ),
-        11 => 
-//         array (
-//           0 => 
-//           array (
-//             'name' => 'plt_participant_activities_notes_name',
-//           ),
-//           1 => 
-//           array (
-//             'name' => 'ncsdc_eventinfo_activities_notes_name',
-//           ),
-//         ),
-//         12 => 
+        12 => 
         array (
           0 => 
           array (
@@ -184,7 +182,7 @@ array (
             ),
           ),
         ),
-        12 => 
+        13 => 
         array (
           0 => 
           array (
