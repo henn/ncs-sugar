@@ -243,6 +243,15 @@ $installdefs = array (
       'from' => '<basepath>/IDCreation_resources/modules/OLT_PrsnPrvdLnk/views/view.edit.php',
       'to' => 'custom/modules/OLT_PrsnPrvdLnk/views/view.edit.php',
     ),
+####Begin copy of OLT_MSProvRole###
+    array (
+      'from' => '<basepath>/IDCreation_resources/modules/OLT_MSProvRole/views/view.edit.php',
+      'to' => 'custom/modules/OLT_MSProvRole/views/view.edit.php',
+    ),
+	 array (
+      'from' => '<basepath>/IDCreation_resources/modules/OLT_MSProvRole/metadata/editviewdefs.php',
+      'to' => 'custom/modules/OLT_MSProvRole/metadata/editviewdefs.php',
+    ),
 ####################################
 #                                  #
 #   ALL PLT_Person_Level_Tables    #
@@ -383,6 +392,127 @@ $installdefs = array (
 	  'from' => '<basepath>/IDCreation_resources/modules/ST_MSOutTarg/views/view.edit.php',
 	  'to' => 'custom/modules/ST_MSOutTarg/views/view.edit.php',
 	),
+###############################################
+#                                             #
+#      ALL SAMP_Sample_Collection_Tables      #
+#                                             #
+####Begin copy of SAMP_DRFThermVer#############
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_DRFThermVer/views/view.edit.php',
+      'to' => 'custom/modules/SAMP_DRFThermVer/views/view.edit.php',
+    ),
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_DRFThermVer/metadata/editviewdefs.php',
+      'to' => 'custom/modules/SAMP_DRFThermVer/metadata/editviewdefs.php',
+    ),
+####Begin copy of SAMP_EnEquip#############
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_EnEquip/views/view.edit.php',
+      'to' => 'custom/modules/SAMP_EnEquip/views/view.edit.php',
+    ),
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_EnEquip/metadata/editviewdefs.php',
+      'to' => 'custom/modules/SAMP_EnEquip/metadata/editviewdefs.php',
+    ),
+####Begin copy of SAMP_EnLogEquip#############
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_EnLogEquip/views/view.edit.php',
+      'to' => 'custom/modules/SAMP_EnLogEquip/views/view.edit.php',
+    ),
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_EnLogEquip/metadata/editviewdefs.php',
+      'to' => 'custom/modules/SAMP_EnLogEquip/metadata/editviewdefs.php',
+    ),	
+####Begin copy of SAMP_PreThrmCert#############
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_PreThrmCert/views/view.edit.php',
+      'to' => 'custom/modules/SAMP_PreThrmCert/views/view.edit.php',
+    ),
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_PreThrmCert/metadata/editviewdefs.php',
+      'to' => 'custom/modules/SAMP_PreThrmCert/metadata/editviewdefs.php',
+    ),
+####Begin copy of SAMP_RecConf#############
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_RecConf/views/view.edit.php',
+      'to' => 'custom/modules/SAMP_RecConf/views/view.edit.php',
+    ),
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_RecConf/metadata/editviewdefs.php',
+      'to' => 'custom/modules/SAMP_RecConf/metadata/editviewdefs.php',
+    ),	
+####Begin copy of SAMP_RecStor#############
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_RecStor/views/view.edit.php',
+      'to' => 'custom/modules/SAMP_RecStor/views/view.edit.php',
+    ),
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_RecStor/metadata/editviewdefs.php',
+      'to' => 'custom/modules/SAMP_RecStor/metadata/editviewdefs.php',
+    ),	
+####Begin copy of SAMP_RefFreezVer#############
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_RefFreezVer/views/view.edit.php',
+      'to' => 'custom/modules/SAMP_RefFreezVer/views/view.edit.php',
+    ),
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_RefFreezVer/metadata/editviewdefs.php',
+      'to' => 'custom/modules/SAMP_RefFreezVer/metadata/editviewdefs.php',
+    ),	
+####Begin copy of SAMP_SPECEquip#############
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_SPECEquip/views/view.edit.php',
+      'to' => 'custom/modules/SAMP_SPECEquip/views/view.edit.php',
+    ),
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_SPECEquip/metadata/editviewdefs.php',
+      'to' => 'custom/modules/SAMP_SPECEquip/metadata/editviewdefs.php',
+    ),
+####Begin copy of SAMP_SPECShippin#############
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_SPECShippin/views/view.edit.php',
+      'to' => 'custom/modules/SAMP_SPECShippin/views/view.edit.php',
+    ),
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_SPECShippin/metadata/editviewdefs.php',
+      'to' => 'custom/modules/SAMP_SPECShippin/metadata/editviewdefs.php',
+    ),
+####Begin copy of SAMP_SPSCInfo#############
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_SPSCInfo/views/view.edit.php',
+      'to' => 'custom/modules/SAMP_SPSCInfo/views/view.edit.php',
+    ),
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_SPSCInfo/metadata/editviewdefs.php',
+      'to' => 'custom/modules/SAMP_SPSCInfo/metadata/editviewdefs.php',
+    ),
+####Begin copy of SAMP_SRSCInfo#############
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_SRSCInfo/views/view.edit.php',
+      'to' => 'custom/modules/SAMP_SRSCInfo/views/view.edit.php',
+    ),
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_SRSCInfo/metadata/editviewdefs.php',
+      'to' => 'custom/modules/SAMP_SRSCInfo/metadata/editviewdefs.php',
+    ),
+####Begin copy of SAMP_SubSampDoc#############
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_SubSampDoc/views/view.edit.php',
+      'to' => 'custom/modules/SAMP_SubSampDoc/views/view.edit.php',
+    ),
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_SubSampDoc/metadata/editviewdefs.php',
+      'to' => 'custom/modules/SAMP_SubSampDoc/metadata/editviewdefs.php',
+    ),
+####Begin copy of SAMP_TRhMeterCal#############
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_TRhMeterCal/views/view.edit.php',
+      'to' => 'custom/modules/SAMP_TRhMeterCal/views/view.edit.php',
+    ),
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_TRhMeterCal/metadata/editviewdefs.php',
+      'to' => 'custom/modules/SAMP_TRhMeterCal/metadata/editviewdefs.php',
+    ),
 ############### BEGIN COPY OF ACTIVITIES ###############
 #
 #########################################################
