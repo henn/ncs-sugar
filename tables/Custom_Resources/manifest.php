@@ -248,10 +248,6 @@ $installdefs = array (
       'from' => '<basepath>/IDCreation_resources/modules/OLT_MSProvRole/views/view.edit.php',
       'to' => 'custom/modules/OLT_MSProvRole/views/view.edit.php',
     ),
-	 array (
-      'from' => '<basepath>/IDCreation_resources/modules/OLT_MSProvRole/metadata/editviewdefs.php',
-      'to' => 'custom/modules/OLT_MSProvRole/metadata/editviewdefs.php',
-    ),
 ####################################
 #                                  #
 #   ALL PLT_Person_Level_Tables    #
