@@ -13,6 +13,22 @@
 
 		function display() {
 			require_once 'ncs_framework/ncs_controller.php';
+			
+
+			
+			
+			//auto-fill Participant relate field when creating new event from participant summary page.
+			if(empty($this->bean->id) && isset($_REQUEST['participant_name'])  && isset($_REQUEST['participant_id']) && isset($this->bean->field_name_map['ncsdc_eventrticipant_name']['id_name']))
+			{			
+				$participant_ida = $this->bean->field_name_map['ncsdc_eventrticipant_name']['id_name'];			
+				$this->bean->ncsdc_eventrticipant_name = $_REQUEST['participant_name'];											
+				$this->bean->$participant_ida = $_REQUEST['participant_id'];								
+			}	
+				
+			// echo "<pre>";
+			// print_r($this->bean);
+			// echo "</pre>";
+				
 			$ncs = new NCS($this->bean);
 			$ncs->identifier = 'EV';
 			$this->ss->assign("NAME", $ncs->get_name());
