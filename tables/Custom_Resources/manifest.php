@@ -462,6 +462,16 @@ $installdefs = array (
       'from' => '<basepath>/IDCreation_resources/modules/Notes/views/view.edit.php',
       'to' => 'custom/modules/Notes/views/view.edit.php',
     ),
+####Begin copy of PLT_PartAuthFrm#############
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/PLT_PartAuthFrm/views/view.edit.php',
+      'to' => 'custom/modules/PLT_PartAuthFrm/views/view.edit.php',
+    ),
+####Begin copy of PLT_PartRVIS#############
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/PLT_PartRVIS/views/view.edit.php',
+      'to' => 'custom/modules/PLT_PartRVIS/views/view.edit.php',
+    ),
 ############### BEGIN COPY OF ACTIVITIES ###############
 #
 #########################################################
