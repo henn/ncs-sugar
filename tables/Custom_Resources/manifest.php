@@ -462,10 +462,6 @@ $installdefs = array (
       'from' => '<basepath>/IDCreation_resources/modules/Notes/views/view.edit.php',
       'to' => 'custom/modules/Notes/views/view.edit.php',
     ),
-	array (
-	  'from' => '<basepath>/IDCreation_resources/modules/Notes/metadata/editviewdefs.php',
-	  'to' => 'custom/modules/Notes/metadata/editviewdefs.php',
-	),
 ############### BEGIN COPY OF ACTIVITIES ###############
 #
 #########################################################

@@ -75,9 +75,9 @@ $vardefs = array (
       'studio' => 'visible',
       'dependency' => false,
     ),
-    'event_start_date' => 
+    'event_start_date_time' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'event_start_date_time',
       'vname' => 'LBL_EVENT_START_DATE_TIME',
       'type' => 'datetimecombo',
@@ -94,7 +94,7 @@ $vardefs = array (
     ),
     'event_end_date_time' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'event_end_date_time',
       'vname' => 'LBL_EVENT_END_DATE_TIME',
       'type' => 'datetimecombo',
