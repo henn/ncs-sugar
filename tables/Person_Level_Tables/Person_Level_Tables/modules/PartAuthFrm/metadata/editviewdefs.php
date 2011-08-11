@@ -70,17 +70,6 @@ array (
           array (
             'name' => 'plt_partautrticipant_name',
           ),
-          1 => 
-          array (
-            'name' => 'olt_providertauthfrm_name',
-          ),
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ncsdc_cntctrtauthfrm_name',
-          ),
         ),
       ),
     ),
