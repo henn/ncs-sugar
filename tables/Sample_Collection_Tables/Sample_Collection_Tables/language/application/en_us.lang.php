@@ -35,23 +35,23 @@
  ********************************************************************************/
 
 
-$app_list_strings['moduleList']['SAMP_DRFThermVer'] = 'Digital Refrigerator/Freezer Thermometer Verification';
+$app_list_strings['moduleList']['SAMP_DRFThermVer'] = 'Verification: Digital Refrigerator/Freezer Thermometer';
 $app_list_strings['moduleList']['SAMP_EnEquip'] = 'Environmental Equipment Information';
 $app_list_strings['moduleList']['SAMP_EnLogEquip'] = 'Environmental Equipment Problem Log';
-$app_list_strings['moduleList']['SAMP_PreThrmCert'] = 'Precision Thermometer Certification';
-$app_list_strings['moduleList']['SAMP_RecConf'] = 'Sample Receipt Confirmation';
-$app_list_strings['moduleList']['SAMP_RecStor'] = 'Sample Receipt & Storage';
-$app_list_strings['moduleList']['SAMP_RefFreezVer'] = 'Refrigerator and Freezer Verification ';
-$app_list_strings['moduleList']['SAMP_SampShip'] = 'Sample Shipping';
-$app_list_strings['moduleList']['SAMP_SPECEquip'] = 'SPSC Equipment Info';
-$app_list_strings['moduleList']['SAMP_SPECPickup'] = 'Specimen Pickup';
-$app_list_strings['moduleList']['SAMP_SPECReceipt'] = 'Specimen Receipt';
-$app_list_strings['moduleList']['SAMP_SPECShippin'] = 'Specimen Shipping';
-$app_list_strings['moduleList']['SAMP_SPECStorage'] = 'Specimen Storage';
-$app_list_strings['moduleList']['SAMP_SPSCInfo'] = 'Study Center Sample Processing and Shipping Center';
-$app_list_strings['moduleList']['SAMP_SRSCInfo'] = 'Study Center Sample Receipt and Shipping Center';
-$app_list_strings['moduleList']['SAMP_SubSampDoc'] = 'Subsample Documentation';
-$app_list_strings['moduleList']['SAMP_TRhMeterCal'] = 'T/RH Meter Calibration';
+$app_list_strings['moduleList']['SAMP_PreThrmCert'] = 'Verification: Precision Thermometer Certification';
+$app_list_strings['moduleList']['SAMP_RecConf'] = 'Environmental Sample Receipt Confirmation';
+$app_list_strings['moduleList']['SAMP_RecStor'] = 'Environmental Sample Receipt & Storage';
+$app_list_strings['moduleList']['SAMP_RefFreezVer'] = 'Verification: Refrigerator and Freezer';
+$app_list_strings['moduleList']['SAMP_SampShip'] = 'Environmental Sample Shipping';
+$app_list_strings['moduleList']['SAMP_SPECEquip'] = 'Biological Equipment Information';
+$app_list_strings['moduleList']['SAMP_SPECPickup'] = 'Biological Specimen Pickup';
+$app_list_strings['moduleList']['SAMP_SPECReceipt'] = 'Biological Specimen Receipt';
+$app_list_strings['moduleList']['SAMP_SPECShippin'] = 'Biological Specimen Shipping';
+$app_list_strings['moduleList']['SAMP_SPECStorage'] = 'Biological Storage Unit';
+$app_list_strings['moduleList']['SAMP_SPSCInfo'] = 'SPSC (Biological)';
+$app_list_strings['moduleList']['SAMP_SRSCInfo'] = 'SRSC (Environmental)';
+$app_list_strings['moduleList']['SAMP_SubSampDoc'] = 'Environmental Subsample Documentation';
+$app_list_strings['moduleList']['SAMP_TRhMeterCal'] = 'Verification: T/RH Meter Calibration';
 $app_list_strings['CONFIRM_TYPE_CL21']['1'] = 'Yes';
 $app_list_strings['CONFIRM_TYPE_CL21']['2'] = 'No';
 $app_list_strings['CONFIRM_TYPE_CL21']['_7'] = 'Not applicable';

@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'Subsample Documentation',
+  'label' => 'Environmental Subsample Documentation',
   'importable' => true,
 );
 ?>

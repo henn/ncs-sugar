@@ -58,7 +58,7 @@ $vardefs = array (
     ),
     'shipment_receipt_confirmed' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'shipment_receipt_confirmed',
       'vname' => 'LBL_SHIPMENT_RECEIPT_CONFIRMED',
       'type' => 'enum',
@@ -79,7 +79,7 @@ $vardefs = array (
     ),
     'shipment_tracking_no' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'shipment_tracking_no',
       'vname' => 'LBL_SHIPMENT_TRACKING_NO',
       'type' => 'varchar',
@@ -96,7 +96,7 @@ $vardefs = array (
     ),
     'shipment_receipt_dt' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'shipment_receipt_dt',
       'vname' => 'LBL_SHIPMENT_RECEIPT_DT',
       'type' => 'datetimecombo',
@@ -113,7 +113,7 @@ $vardefs = array (
     ),
     'shipment_condition' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'shipment_condition',
       'vname' => 'LBL_SHIPMENT_CONDITION',
       'type' => 'enum',
@@ -153,7 +153,7 @@ $vardefs = array (
     ),
     'sample_receipt_temp' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'sample_receipt_temp',
       'vname' => 'LBL_SAMPLE_RECEIPT_TEMP',
       'type' => 'decimal',
@@ -171,7 +171,7 @@ $vardefs = array (
     ),
     'sample_condition' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'sample_condition',
       'vname' => 'LBL_SAMPLE_CONDITION',
       'type' => 'enum',
@@ -192,7 +192,7 @@ $vardefs = array (
     ),
     'shipment_received_by' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'shipment_received_by',
       'vname' => 'LBL_SHIPMENT_RECEIVED_BY',
       'type' => 'varchar',

@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'Sample Receipt & Storage',
+  'label' => 'Environmental Sample Receipt & Storage',
   'importable' => true,
 );
 ?>

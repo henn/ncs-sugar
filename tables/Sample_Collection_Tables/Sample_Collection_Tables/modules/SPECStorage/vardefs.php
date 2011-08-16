@@ -58,7 +58,7 @@ $vardefs = array (
     ),
     'placed_in_storage_dt' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'placed_in_storage_dt',
       'vname' => 'LBL_PLACED_IN_STORAGE_DT',
       'type' => 'datetimecombo',
@@ -76,7 +76,7 @@ $vardefs = array (
     ),
     'master_storage_unit' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'master_storage_unit',
       'vname' => 'LBL_MASTER_STORAGE_UNIT',
       'type' => 'enum',
@@ -97,7 +97,7 @@ $vardefs = array (
     ),
     'storage_comment' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'storage_comment',
       'vname' => 'LBL_STORAGE_COMMENT',
       'type' => 'varchar',
@@ -131,7 +131,7 @@ $vardefs = array (
     ),
     'removed_from_storage_dt' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'removed_from_storage_dt',
       'vname' => 'LBL_REMOVED_FROM_STORAGE_DT',
       'type' => 'datetimecombo',

@@ -58,7 +58,7 @@ $vardefs = array (
     ),
     'receipt_comment' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'receipt_comment',
       'vname' => 'LBL_RECEIPT_COMMENT',
       'type' => 'enum',
@@ -114,7 +114,7 @@ $vardefs = array (
     ),
     'monitor_status' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'monitor_status',
       'vname' => 'LBL_MONITOR_STATUS',
       'type' => 'enum',
@@ -135,7 +135,7 @@ $vardefs = array (
     ),
     'upper_trigger' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'upper_trigger',
       'vname' => 'LBL_UPPER_TRIGGER',
       'type' => 'enum',
@@ -156,7 +156,7 @@ $vardefs = array (
     ),
     'upper_trigger_lvl' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'upper_trigger_lvl',
       'vname' => 'LBL_UPPER_TRIGGER_LVL',
       'type' => 'enum',
@@ -177,7 +177,7 @@ $vardefs = array (
     ),
     'lower_trigger_cold' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'lower_trigger_cold',
       'vname' => 'LBL_LOWER_TRIGGER_COLD',
       'type' => 'enum',
@@ -198,7 +198,7 @@ $vardefs = array (
     ),
     'lower_trigger_ambient' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'lower_trigger_ambient',
       'vname' => 'LBL_LOWER_TRIGGER_AMBIENT',
       'type' => 'enum',
@@ -219,7 +219,7 @@ $vardefs = array (
     ),
     'centrifuge_comment' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'centrifuge_comment',
       'vname' => 'LBL_CENTRIFUGE_COMMENT',
       'type' => 'enum',
@@ -307,6 +307,23 @@ $vardefs = array (
       'reportable' => true,
       'len' => '255',
       'size' => '20',
+    ),
+    'receipt_dt' => 
+    array (
+      'required' => true,
+      'name' => 'receipt_dt',
+      'vname' => 'LBL_RECEIPT_DT',
+      'type' => 'datetimecombo',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => 'Date and Time of specimen receipt',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'reportable' => true,
+      'size' => '20',
+      'dbType' => 'datetime',
     ),
   ),
   'relationships' => 

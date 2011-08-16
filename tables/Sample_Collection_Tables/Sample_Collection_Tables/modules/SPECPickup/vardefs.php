@@ -58,7 +58,7 @@ $vardefs = array (
     ),
     'specimen_pickup_dt' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'specimen_pickup_dt',
       'vname' => 'LBL_SPECIMEN_PICKUP_DT',
       'type' => 'datetimecombo',
@@ -76,7 +76,7 @@ $vardefs = array (
     ),
     'specimen_pickup_comment' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'specimen_pickup_comment',
       'vname' => 'LBL_SPECIMEN_PICKUP_COMMENT',
       'type' => 'enum',

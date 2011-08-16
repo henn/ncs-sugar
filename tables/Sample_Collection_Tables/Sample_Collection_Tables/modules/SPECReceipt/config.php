@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'Specimen Receipt',
+  'label' => 'Biological Specimen Receipt',
   'importable' => true,
 );
 ?>

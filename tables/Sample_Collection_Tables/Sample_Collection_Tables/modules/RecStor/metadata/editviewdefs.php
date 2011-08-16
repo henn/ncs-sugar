@@ -97,11 +97,7 @@ array (
             'name' => 'placed_in_storage_dt',
             'label' => 'LBL_PLACED_IN_STORAGE_DT',
           ),
-          1 => 
-          array (
-            'name' => 'removed_from_storage_dt',
-            'label' => 'LBL_REMOVED_FROM_STORAGE_DT',
-          ),
+          1 => '',
         ),
         1 => 
         array (
@@ -147,6 +143,25 @@ array (
           array (
             'name' => 'temp_event_action_oth',
             'label' => 'LBL_TEMP_EVENT_ACTION_OTH',
+          ),
+        ),
+      ),
+      'lbl_editview_panel4' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'removed_from_storage_dt',
+            'label' => 'LBL_REMOVED_FROM_STORAGE_DT',
+          ),
+          1 => '',
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_sampshp_recstor_name',
           ),
         ),
       ),

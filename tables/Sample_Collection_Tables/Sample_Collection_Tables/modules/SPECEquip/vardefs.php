@@ -58,7 +58,7 @@ $vardefs = array (
     ),
     'equipment_type' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'equipment_type',
       'vname' => 'LBL_EQUIPMENT_TYPE',
       'type' => 'enum',

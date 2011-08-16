@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'Refrigerator and Freezer Verification',
+  'label' => 'Verification: Refrigerator and Freezer',
   'importable' => true,
 );
 ?>

@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'Specimen Storage',
+  'label' => 'Biological Storage Unit',
   'importable' => true,
 );
 ?>

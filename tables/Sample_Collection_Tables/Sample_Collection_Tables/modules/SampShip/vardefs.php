@@ -58,7 +58,7 @@ $vardefs = array (
     ),
     'shipper_destination' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'shipper_destination',
       'vname' => 'LBL_SHIPPER_DESTINATION',
       'type' => 'enum',
@@ -79,7 +79,7 @@ $vardefs = array (
     ),
     'shipment_date' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'shipment_date',
       'vname' => 'LBL_SHIPMENT_DATE',
       'type' => 'date',
@@ -96,7 +96,7 @@ $vardefs = array (
     ),
     'shipment_coolant' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'shipment_coolant',
       'vname' => 'LBL_SHIPMENT_COOLANT',
       'type' => 'enum',
@@ -117,7 +117,7 @@ $vardefs = array (
     ),
     'shipment_tracking_no' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'shipment_tracking_no',
       'vname' => 'LBL_SHIPMENT_TRACKING_NO',
       'type' => 'varchar',
@@ -168,7 +168,7 @@ $vardefs = array (
     ),
     'sample_shipped_by' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'sample_shipped_by',
       'vname' => 'LBL_SAMPLE_SHIPPED_BY',
       'type' => 'enum',

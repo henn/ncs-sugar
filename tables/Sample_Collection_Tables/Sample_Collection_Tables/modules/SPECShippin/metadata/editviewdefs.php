@@ -30,9 +30,7 @@ array (
         array (
           0 => 
 		   array (
-            'name' => 'name',
-            'label' => 'Name:',
-            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'name' => 'samp_specsh_spscinfo_name',
           ),
           1 => 'assigned_user_name',
         ),
@@ -40,47 +38,62 @@ array (
         array (
           0 => 
           array (
+            'name' => 'samp_specshstaffrstr_name',
+            'label' => 'LBL_SAMP_SPECSHIPPIN_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
+          ),
+          1 => '',
+        ),
+        2 => 
+        array (
+          0 => 0 => 
+		   array (
+            'name' => 'name',
+            'label' => 'Name:',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+          ),
+          1 => '',
+        ),
+        3 => 
+        array (
+          0 => '',
+          1 => '',
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'shipment_tracking_no',
+            'label' => 'LBL_SHIPMENT_TRACKING_NO',
+          ),
+          1 => '',
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
             'name' => 'shipment_date',
             'label' => 'LBL_SHIPMENT_DATE',
           ),
-          1 => 
+          1 => '',
+        ),
+        6 => 
+        array (
+          0 => 
           array (
             'name' => 'shipment_temperature',
             'studio' => 'visible',
             'label' => 'LBL_SHIPMENT_TEMPERATURE',
           ),
+          1 => '',
         ),
-        2 => 
+        7 => 
         array (
           0 => 
           array (
             'name' => 'shipper_destination',
             'label' => 'LBL_SHIPPER_DESTINATION',
           ),
-          1 => 
-          array (
-            'name' => 'shipment_tracking_no',
-            'label' => 'LBL_SHIPMENT_TRACKING_NO',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'samp_specshstaffrstr_name',
-            'label' => 'LBL_SAMP_SPECSHIPPIN_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
-          ),
-          1 => 
-          array (
-            'name' => 'samp_specsh_spscinfo_name',
-          ),
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'samp_specsh_sampship_name',
-          ),
+          1 => '',
         ),
       ),
       'lbl_editview_panel1' => 
@@ -93,13 +106,18 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_SHIPMENT_RECEIPT_CONFIRMED',
           ),
-          1 => 
+          1 => '',
+        ),
+        1 => 
+        array (
+          0 => 
           array (
             'name' => 'shipment_receipt_dt',
             'label' => 'LBL_SHIPMENT_RECEIPT_DT',
           ),
+          1 => '',
         ),
-        1 => 
+        2 => 
         array (
           0 => 
           array (
@@ -107,11 +125,16 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_SHIPMENT_ISSUES',
           ),
-          1 => 
+          1 => '',
+        ),
+        3 => 
+        array (
+          0 => 
           array (
             'name' => 'shipment_issues_oth',
             'label' => 'LBL_SHIPMENT_ISSUES_OTH',
           ),
+          1 => '',
         ),
       ),
     ),

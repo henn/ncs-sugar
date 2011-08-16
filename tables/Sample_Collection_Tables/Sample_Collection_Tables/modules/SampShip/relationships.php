@@ -67,5 +67,21 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'samp_sampship_samp_srscinfo',
   ),
+  'samp_sampship_samp_recstor' => 
+  array (
+    'rhs_label' => 'Environmental Sample Receipt & Storage',
+    'lhs_label' => 'Environmental Sample Shipping',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'SAMP_SampShip',
+    'rhs_module' => 'SAMP_RecStor',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'samp_sampship_samp_recstor',
+  ),
 );
 ?>

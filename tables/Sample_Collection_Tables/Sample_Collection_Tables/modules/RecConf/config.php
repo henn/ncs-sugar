@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'Sample Receipt Confirmation',
+  'label' => 'Environmental Sample Receipt Confirmation',
   'importable' => true,
 );
 ?>

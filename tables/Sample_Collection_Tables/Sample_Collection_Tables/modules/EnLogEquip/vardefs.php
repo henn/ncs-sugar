@@ -58,7 +58,7 @@ $vardefs = array (
     ),
     'equipment_type' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'equipment_type',
       'vname' => 'LBL_EQUIPMENT_TYPE',
       'type' => 'enum',
@@ -96,7 +96,7 @@ $vardefs = array (
     ),
     'problem_dt' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'problem_dt',
       'vname' => 'LBL_PROBLEM_DT',
       'type' => 'date',
@@ -112,7 +112,7 @@ $vardefs = array (
     ),
     'equip_issue' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'equip_issue',
       'vname' => 'LBL_EQUIP_ISSUE',
       'type' => 'enum',
@@ -133,7 +133,7 @@ $vardefs = array (
     ),
     'equip_action' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'equip_action',
       'vname' => 'LBL_EQUIP_ACTION',
       'type' => 'enum',

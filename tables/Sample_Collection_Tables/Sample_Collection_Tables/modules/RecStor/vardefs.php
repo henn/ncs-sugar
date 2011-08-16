@@ -58,7 +58,7 @@ $vardefs = array (
     ),
     'sample_condition' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'sample_condition',
       'vname' => 'LBL_SAMPLE_CONDITION',
       'type' => 'enum',
@@ -96,7 +96,7 @@ $vardefs = array (
     ),
     'receipt_dt' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'receipt_dt',
       'vname' => 'LBL_RECEIPT_DT',
       'type' => 'datetimecombo',
@@ -114,7 +114,7 @@ $vardefs = array (
     ),
     'cooler_temp_cond' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'cooler_temp_cond',
       'vname' => 'LBL_COOLER_TEMP_COND',
       'type' => 'enum',
@@ -135,7 +135,7 @@ $vardefs = array (
     ),
     'placed_in_storage_dt' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'placed_in_storage_dt',
       'vname' => 'LBL_PLACED_IN_STORAGE_DT',
       'type' => 'datetimecombo',
@@ -153,7 +153,7 @@ $vardefs = array (
     ),
     'storage_compartment_area' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'storage_compartment_area',
       'vname' => 'LBL_STORAGE_COMPARTMENT_AREA',
       'type' => 'enum',
@@ -208,7 +208,7 @@ $vardefs = array (
     ),
     'temp_event_occurred' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'temp_event_occurred',
       'vname' => 'LBL_TEMP_EVENT_OCCURRED',
       'type' => 'enum',
@@ -229,7 +229,7 @@ $vardefs = array (
     ),
     'temp_event_action' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'temp_event_action',
       'vname' => 'LBL_TEMP_EVENT_ACTION',
       'type' => 'enum',

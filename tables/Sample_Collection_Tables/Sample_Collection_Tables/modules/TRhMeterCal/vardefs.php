@@ -58,7 +58,7 @@ $vardefs = array (
     ),
     'calibration_expire_dt' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'calibration_expire_dt',
       'vname' => 'LBL_CALIBRATION_EXPIRE_DT',
       'type' => 'date',
@@ -74,7 +74,7 @@ $vardefs = array (
     ),
     'verification_dt' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'verification_dt',
       'vname' => 'LBL_VERIFICATION_DT',
       'type' => 'date',
@@ -90,7 +90,7 @@ $vardefs = array (
     ),
     'thr_equip_id' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'thr_equip_id',
       'vname' => 'LBL_THR_EQUIP_ID',
       'type' => 'varchar',
@@ -107,7 +107,7 @@ $vardefs = array (
     ),
     'precision_term_temp' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'precision_term_temp',
       'vname' => 'LBL_PRECISION_TERM_TEMP',
       'type' => 'decimal',
@@ -125,7 +125,7 @@ $vardefs = array (
     ),
     'trh_temp' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'trh_temp',
       'vname' => 'LBL_TRH_TEMP',
       'type' => 'decimal',
@@ -143,7 +143,7 @@ $vardefs = array (
     ),
     'salts_moist' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'salts_moist',
       'vname' => 'LBL_SALTS_MOIST',
       'type' => 'enum',
@@ -164,7 +164,7 @@ $vardefs = array (
     ),
     's_33rh_reading' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 's_33rh_reading',
       'vname' => 'LBL_S_33RH_READING',
       'type' => 'varchar',
@@ -181,7 +181,7 @@ $vardefs = array (
     ),
     's_75rh_reading' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 's_75rh_reading',
       'vname' => 'LBL_S_75RH_READING',
       'type' => 'varchar',
@@ -198,7 +198,7 @@ $vardefs = array (
     ),
     's_33_rh_need_calib' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 's_33_rh_need_calib',
       'vname' => 'LBL_S_33_RH_NEED_CALIB',
       'type' => 'enum',
@@ -219,7 +219,7 @@ $vardefs = array (
     ),
     's_75_rh_need_calib' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 's_75_rh_need_calib',
       'vname' => 'LBL_S_75_RH_NEED_CALIB',
       'type' => 'enum',
@@ -240,7 +240,7 @@ $vardefs = array (
     ),
     's_33rh_reading_calib' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 's_33rh_reading_calib',
       'vname' => 'LBL_S_33RH_READING_CALIB',
       'type' => 'decimal',
@@ -258,7 +258,7 @@ $vardefs = array (
     ),
     's_75rh_reading_calib' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 's_75rh_reading_calib',
       'vname' => 'LBL_S_75RH_READING_CALIB',
       'type' => 'decimal',
@@ -276,7 +276,7 @@ $vardefs = array (
     ),
     'trh_calib_fail_rsn' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'trh_calib_fail_rsn',
       'vname' => 'LBL_TRH_CALIB_FAIL_RSN',
       'type' => 'enum',
@@ -314,7 +314,7 @@ $vardefs = array (
     ),
     'trh_calib_status' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'trh_calib_status',
       'vname' => 'LBL_TRH_CALIB_STATUS',
       'type' => 'enum',

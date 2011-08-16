@@ -15,7 +15,7 @@ array (
           2 => 'DELETE',
         ),
       ),
-      'maxColumns' => '2',
+      'maxColumns' => '1',
       'widths' => 
       array (
         0 => 
@@ -37,10 +37,35 @@ array (
       array (
         0 => 
         array (
-          0 => 'name',
-          1 => 'assigned_user_name',
+          0 => 
+          array (
+            'name' => 'samp_specst_spscinfo_name',
+            'label' => 'LBL_SAMP_SPECSTORAGE_SAMP_SPSCINFO_FROM_SAMP_SPSCINFO_TITLE',
+          ),
         ),
         1 => 
+        array (
+          0 => 'assigned_user_name',
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_specststaffrstr_name',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 'name',
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_specstspecequip_name',
+          ),
+        ),
+        5 => 
         array (
           0 => 
           array (
@@ -48,56 +73,47 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_MASTER_STORAGE_UNIT',
           ),
-          1 => '',
         ),
-        2 => 
+        6 => 
         array (
           0 => 
           array (
             'name' => 'placed_in_storage_dt',
             'label' => 'LBL_PLACED_IN_STORAGE_DT',
           ),
-          1 => 
-          array (
-            'name' => 'removed_from_storage_dt',
-            'label' => 'LBL_REMOVED_FROM_STORAGE_DT',
-          ),
         ),
-        3 => 
+        7 => 
         array (
           0 => 
           array (
             'name' => 'storage_comment',
             'label' => 'LBL_STORAGE_COMMENT',
           ),
-          1 => 
+        ),
+        8 => 
+        array (
+          0 => 
           array (
             'name' => 'storage_comment_oth',
             'label' => 'LBL_STORAGE_COMMENT_OTH',
           ),
         ),
-        4 => 
-        array (
-          0 => '',
-          1 => 
-          array (
-            'name' => 'samp_specststaffrstr_name',
-          ),
-        ),
-        5 => 
+        9 => 
         array (
           0 => 
           array (
-            'name' => 'samp_specstspecequip_name',
+            'name' => 'samp_specshecstorage_name',
           ),
-          1 => '',
         ),
-        6 => 
+      ),
+      'lbl_detailview_panel2' => 
+      array (
+        0 => 
         array (
           0 => 
           array (
-            'name' => 'samp_specst_spscinfo_name',
-            'label' => 'LBL_SAMP_SPECSTORAGE_SAMP_SPSCINFO_FROM_SAMP_SPSCINFO_TITLE',
+            'name' => 'removed_from_storage_dt',
+            'label' => 'LBL_REMOVED_FROM_STORAGE_DT',
           ),
         ),
       ),

@@ -58,7 +58,7 @@ $vardefs = array (
     ),
     'random_order_no' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'random_order_no',
       'vname' => 'LBL_RANDOM_ORDER_NO',
       'type' => 'varchar',

@@ -58,7 +58,7 @@ $vardefs = array (
     ),
     'drf_therm_verification_date' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'drf_therm_verification_date',
       'vname' => 'LBL_DRF_THERM_VERIFICATION_DATE',
       'type' => 'date',
@@ -75,7 +75,7 @@ $vardefs = array (
     ),
     'certification_expire_dt' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'certification_expire_dt',
       'vname' => 'LBL_CERTIFICATION_EXPIRE_DT',
       'type' => 'date',
@@ -91,7 +91,7 @@ $vardefs = array (
     ),
     'rf_thermometer_equip_id' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'rf_thermometer_equip_id',
       'vname' => 'LBL_RF_THERMOMETER_EQUIP_ID',
       'type' => 'varchar',
@@ -108,7 +108,7 @@ $vardefs = array (
     ),
     'precision_term_temp' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'precision_term_temp',
       'vname' => 'LBL_PRECISION_TERM_TEMP',
       'type' => 'decimal',
@@ -126,7 +126,7 @@ $vardefs = array (
     ),
     'rf_temp' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'rf_temp',
       'vname' => 'LBL_RF_TEMP',
       'type' => 'decimal',

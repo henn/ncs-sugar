@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'T/RH Meter Calibration',
+  'label' => 'Verification: T/RH Meter Calibration',
   'importable' => true,
 );
 ?>

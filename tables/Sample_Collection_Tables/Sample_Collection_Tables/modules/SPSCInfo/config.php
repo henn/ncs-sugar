@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'Study Center Sample Processing and Shipping Center',
+  'label' => 'SPSC (Biological)',
   'importable' => true,
 );
 ?>

@@ -58,7 +58,7 @@ $vardefs = array (
     ),
     'verification_dt' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'verification_dt',
       'vname' => 'LBL_VERIFICATION_DT',
       'type' => 'date',
@@ -75,7 +75,7 @@ $vardefs = array (
     ),
     'rf_thermometer_equip_id' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'rf_thermometer_equip_id',
       'vname' => 'LBL_RF_THERMOMETER_EQUIP_ID',
       'type' => 'varchar',
@@ -92,7 +92,7 @@ $vardefs = array (
     ),
     'correction_factor_temp' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'correction_factor_temp',
       'vname' => 'LBL_CORRECTION_FACTOR_TEMP',
       'type' => 'decimal',
@@ -110,7 +110,7 @@ $vardefs = array (
     ),
     'current_temp' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'current_temp',
       'vname' => 'LBL_CURRENT_TEMP',
       'type' => 'decimal',
@@ -128,7 +128,7 @@ $vardefs = array (
     ),
     'maximum_temp' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'maximum_temp',
       'vname' => 'LBL_MAXIMUM_TEMP',
       'type' => 'decimal',
@@ -146,7 +146,7 @@ $vardefs = array (
     ),
     'minimum_temp' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'minimum_temp',
       'vname' => 'LBL_MINIMUM_TEMP',
       'type' => 'decimal',

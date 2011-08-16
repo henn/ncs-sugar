@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'Specimen Pickup',
+  'label' => 'Biological Specimen Pickup',
   'importable' => true,
 );
 ?>

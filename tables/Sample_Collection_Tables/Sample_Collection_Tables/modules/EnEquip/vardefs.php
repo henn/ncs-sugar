@@ -58,7 +58,7 @@ $vardefs = array (
     ),
     'equipment_type' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'equipment_type',
       'vname' => 'LBL_EQUIPMENT_TYPE',
       'type' => 'enum',
@@ -96,7 +96,7 @@ $vardefs = array (
     ),
     'serial_no' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'serial_no',
       'vname' => 'LBL_SERIAL_NO',
       'type' => 'varchar',
@@ -130,7 +130,7 @@ $vardefs = array (
     ),
     'retired_reason' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'retired_reason',
       'vname' => 'LBL_RETIRED_REASON',
       'type' => 'enum',

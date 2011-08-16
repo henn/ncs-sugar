@@ -58,7 +58,7 @@ $vardefs = array (
     ),
     'precision_cert_status' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'precision_cert_status',
       'vname' => 'LBL_PRECISION_CERT_STATUS',
       'type' => 'enum',
@@ -79,7 +79,7 @@ $vardefs = array (
     ),
     'certification_date' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'certification_date',
       'vname' => 'LBL_CERTIFICATION_DATE',
       'type' => 'date',
@@ -96,7 +96,7 @@ $vardefs = array (
     ),
     'certification_expire_dt' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'certification_expire_dt',
       'vname' => 'LBL_CERTIFICATION_EXPIRE_DT',
       'type' => 'date',

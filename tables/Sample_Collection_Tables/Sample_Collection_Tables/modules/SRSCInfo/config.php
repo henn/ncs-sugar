@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'Study Center Sample Receipt and Shipping Center',
+  'label' => 'SRSC (Environmental)',
   'importable' => true,
 );
 ?>

@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'Precision Thermometer Certification',
+  'label' => 'Verification: Precision Thermometer Certification',
   'importable' => true,
 );
 ?>

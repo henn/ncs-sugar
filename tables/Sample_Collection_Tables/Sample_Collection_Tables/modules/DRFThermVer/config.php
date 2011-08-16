@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'Digital Refrigerator/Freezer Thermometer Verification',
+  'label' => 'Verification: Digital Refrigerator/Freezer Thermometer',
   'importable' => true,
 );
 ?>

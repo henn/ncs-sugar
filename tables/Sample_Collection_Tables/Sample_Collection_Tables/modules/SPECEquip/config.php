@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'SPSC Equipment Info',
+  'label' => 'Biological Equipment Information',
   'importable' => true,
 );
 ?>
