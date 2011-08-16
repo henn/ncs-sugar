@@ -45,10 +45,10 @@ class PLT_ParticipantController extends SugarController {
             echo "<pre>";
 
 		//Clear session summary first.
-		unset($_SESSSION['summary']);
+		if(isset($_SESSION['summary']))
+			unset($_SESSSION['summary']);
 
         if ($_REQUEST['action'] == "DetailView") {
-
 						
 		// require_once('modules/PLT_LkPrsPrtcpt/PLT_LkPrsPrtcpt.php');
 		// get related bean information (linkage info as well as person info)

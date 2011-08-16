@@ -291,9 +291,7 @@ class PLT_Participant_Functions extends SugarBean {
 				}
 				//$counter++;
 				
-			}//end while
-			
-			//@mysql_free_result($result);				
+			}//end while			
 		}						
 		return $person_list;
 	}	
@@ -301,7 +299,8 @@ class PLT_Participant_Functions extends SugarBean {
 			
 	//Returns an associative array that contains the participant info given a person id. (guid) 	
 	//Returns an empty array if no record found.
-	function get_participantinfo_from_person(&$person_bean)
+	//if $get_participant_bean = true -> return a participant bean instead of a sql result record. Participant bean take more time to retrieve.
+	function get_participantinfo_from_person(&$person_bean, $get_participant_bean=false)
 	{			
 		$participant_info_array = array();
 		$linkage_id = "";
@@ -322,8 +321,7 @@ class PLT_Participant_Functions extends SugarBean {
 					
 					break;
 				}
-			}			
-			//@mysql_free_result($result);
+			}						
 			
 			if(!empty($linkage_id))
 			{			
@@ -343,12 +341,27 @@ class PLT_Participant_Functions extends SugarBean {
 						
 					if($result2)
 					{
-						$participant_info_array = $pp_linkage->db->fetchByAssoc($result2);
-						//@mysql_free_result($result2);
+						$participant_info_array = $pp_linkage->db->fetchByAssoc($result2);																		
 					}									
 				}												
 			}
 		}
+		
+		//get participant bean if specified.
+		if($get_participant_bean)
+		{
+			if(!empty($participant_info_array))
+			{
+				require_once("modules/PLT_Participant/PLT_Participant.php");
+				$p = new PLT_Participant();
+				$p->retrieve($participant_info_array['id']);
+				
+				return $p;
+			}
+			else
+				return null;
+		}
+		
 		return $participant_info_array;
 	}	
 	

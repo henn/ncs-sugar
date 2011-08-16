@@ -15,50 +15,81 @@
 		*/		
 		function populate_visit_eventInfo(&$bean, $event, $arguments){
 			
-			require_once("custom/modules/PLT_Participant/PLT_Participant_Functions.php");
-			
+			require_once("custom/modules/PLT_Participant/PLT_Participant_Functions.php");			
 			$ppf = new PLT_Participant_Functions();
 			
-			$ptInfo = $ppf->get_participantinfo_from_person($bean);										
+			//get participant bean
+			$ptInfo = $ppf->get_participantinfo_from_person($bean, true);										
 									
-			//If this participant/person is a NCS Child (p_type = 6), then auto-generate Birth Visit Event info.
-			if(is_array($ptInfo) && $ptInfo["p_type"] == "6")
-			{						
-				//parent participant ids.			
+			//If this participant/person is a NCS Child (p_type = 6), then auto-generate visit event info (3 month, 6 month, 9 month visits ....)
+			if(!empty($ptInfo) && $ptInfo->p_type == "6")
+			{									
+				//Find the mom's participant record.
+				$mom_id = null;			
+				$related_records = $ppf->get_related_person_list_info_from_participant($ptInfo, true, false);
+						
+				if(!empty($related_records))
+				{
+					foreach($related_records as $p_record)
+					{						
+						//found bio mom.
+						if(!empty($p_record['person']) && !empty($p_record['participant']) && $p_record['person']['relation'] == "2")
+						{
+							//debug
+							//echo "<font size='+6' color='blue'>FOUND BIO MOM (id = ".$p_record['participant']['id'].")</font>";
+							$mom_id = $p_record['participant']['id'];
+							break;
+						}
+					}				
+				}
+							
+			
+				//do not generate event info if bio mom is not be found.
+				if(empty($mom_id))
+				{
+					//echo "<font color='red' size='+6'>NO BIO MOM FOUND</font>";
+					return;
+				}
+			
 				if($bean->person_dob != "")				
-				{								
-					//Check to see if visit windows were generated. If not, auto-generate event info.	
-					$all_visit_events = $ppf->get_all_visitwindow_events_for_participant($ptInfo["id"]);																
-															
-					if(!empty($all_visit_events) && count($all_visit_events) > 0)
-					{
-						//echo "<font color='red' size='+5'>Found events. No need to generate visit events for participant [".$ptInfo['id']."]</font>";
+				{		
+					$vw_arr = $ppf->get_visitwindow_datetime($bean->person_dob);						
+								
+					//Check to see if visit windows were generated. If not, auto-generate event info.					
+					$all_visit_events = $ppf->get_all_visitwindow_events_for_participant($mom_id);																
+							
+					//****************************************************************************************	
+					//Determine which events were generated, which are not, then generate missing events.	
+					$missing_events_arr = array();
+					$visit_keys = array_keys($vw_arr);
+					
+					if(empty($all_visit_events))
+					{						
+						$missing_events_arr = $vw_arr;							
 					}
 					else
-					{								
-						$vw_arr = $ppf->get_visitwindow_datetime($bean->person_dob);						
-																			
-						if(!empty($vw_arr) && count($vw_arr))
-						{												
-							$visit_keys = array_keys($vw_arr);
-																								
-							for($i = 0; $i < count($visit_keys);$i++)
+					{
+						foreach($visit_keys as $index => $key)
+						{
+							if(!array_key_exists($key, $all_visit_events))
 							{
-								$event_type = $visit_keys[$i]; 
-								
-								//NCS child participant id.
-								$ptid = $ptInfo["id"];																	
-								
-								$assigned_user_id = $ptInfo["assigned_user_id"];
-								$visit_window_starttime = $vw_arr[$visit_keys[$i]][0];
-								$visit_window_endtime = $vw_arr[$visit_keys[$i]][1];								
-								$event_disp_cat = $vw_arr[$event_type]['event_disposition_cat'];
-																	
-								//Log in auto_event_log file.
-								$event_id = $ppf->insert_event_info($event_type, $event_disp_cat, $ptid, $assigned_user_id, $visit_window_starttime, $visit_window_endtime, true);																							
-							}
-						}												
-					}																		
+								$missing_events_arr[$key] = $vw_arr[$key];
+							}	
+						}
+					}
+					
+					//Generate events if needed.
+					foreach($missing_events_arr as $event_type => $event_setting)
+					{												
+						$assigned_user_id = $ptInfo->assigned_user_id;
+						$visit_window_starttime = $event_setting[0];
+						$visit_window_endtime = $event_setting[1];								
+						$event_disp_cat = $event_setting['event_disposition_cat'];						
+														
+						//Log in auto_event_log file.						
+						$event_id = $ppf->insert_event_info($event_type, $event_disp_cat, $mom_id, $assigned_user_id, $visit_window_starttime, $visit_window_endtime, true);																							
+					}					
+					
 				}				
 			}
 		}
