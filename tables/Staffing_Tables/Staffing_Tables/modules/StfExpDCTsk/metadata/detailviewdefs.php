@@ -50,43 +50,10 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
-        array (
           0 => '',
           1 => '',
         ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'staff_weekly_expense_id',
-            'label' => 'LBL_STAFF_WEEKLY_EXPENSE_ID',
-          ),
-          1 => '',
-        ),
-        5 => 
+        2 => 
         array (
           0 => 
           array (
@@ -100,34 +67,39 @@ array (
             'label' => 'LBL_DATA_COLL_TASK_TYPE_OTH',
           ),
         ),
-        6 => 
+        3 => 
         array (
           0 => 
           array (
             'name' => 'data_coll_tasks_hrs',
             'label' => 'LBL_DATA_COLL_TASKS_HRS',
           ),
-          1 => 
+          1 => '',
+        ),
+        4 => 
+        array (
+          0 => 
           array (
             'name' => 'data_coll_task_cases',
             'label' => 'LBL_DATA_COLL_TASK_CASES',
           ),
-        ),
-        7 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'data_coll_transmit',
             'label' => 'LBL_DATA_COLL_TRANSMIT',
           ),
-          1 => 
+        ),
+        5 => 
+        array (
+          0 => 
           array (
             'name' => 'data_coll_task_comment',
             'studio' => 'visible',
             'label' => 'LBL_DATA_COLL_TASK_COMMENT',
           ),
+          1 => '',
         ),
-        8 => 
+        6 => 
         array (
           0 => 
           array (

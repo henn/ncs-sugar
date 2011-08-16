@@ -42,28 +42,19 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        2 => 
-        array (
           0 => '',
           1 => '',
         ),
-        3 => 
+        2 => 
         array (
-          0 => '',
-          1 => 
+          0 => 
           array (
             'name' => 'week_start_date',
             'label' => 'LBL_WEEK_START_DATE',
           ),
+          1 => '',
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -76,7 +67,7 @@ array (
             'label' => 'LBL_STAFF_HOURS',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -89,7 +80,7 @@ array (
             'label' => 'LBL_STAFF_MILES',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -99,7 +90,7 @@ array (
           ),
           1 => '',
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (

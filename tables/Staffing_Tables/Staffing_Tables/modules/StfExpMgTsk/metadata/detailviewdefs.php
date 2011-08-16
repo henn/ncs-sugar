@@ -50,43 +50,10 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
-        array (
           0 => '',
           1 => '',
         ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'staff_weekly_expense_id',
-            'label' => 'LBL_STAFF_WEEKLY_EXPENSE_ID',
-          ),
-          1 => '',
-        ),
-        5 => 
+        2 => 
         array (
           0 => 
           array (
@@ -100,7 +67,7 @@ array (
             'label' => 'LBL_MGMT_TASK_TYPE_OTH',
           ),
         ),
-        6 => 
+        3 => 
         array (
           0 => 
           array (
@@ -109,7 +76,7 @@ array (
           ),
           1 => '',
         ),
-        7 => 
+        4 => 
         array (
           0 => 
           array (
@@ -119,13 +86,14 @@ array (
           ),
           1 => '',
         ),
-        8 => 
+        5 => 
         array (
           0 => 
           array (
             'name' => 'st_stfwkexpfexpmgtsk_name',
             'label' => 'LBL_ST_STFWKEXPNS_ST_STFEXPMGTSK_FROM_ST_STFWKEXPNS_TITLE',
           ),
+          1 => '',
         ),
       ),
     ),

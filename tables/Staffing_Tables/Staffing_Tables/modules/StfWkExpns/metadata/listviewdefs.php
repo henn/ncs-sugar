@@ -9,10 +9,32 @@ array (
     'default' => true,
     'link' => true,
   ),
-  'ASSIGNED_USER_NAME' => 
+  'STAFF_PAY' => 
   array (
-    'width' => '9%',
-    'label' => 'LBL_ASSIGNED_TO_NAME',
+    'type' => 'decimal',
+    'label' => 'LBL_STAFF_PAY',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'STAFF_HOURS' => 
+  array (
+    'type' => 'decimal',
+    'label' => 'LBL_STAFF_HOURS',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'STAFF_EXPENSES' => 
+  array (
+    'type' => 'decimal',
+    'label' => 'LBL_STAFF_EXPENSES',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'STAFF_MILES' => 
+  array (
+    'type' => 'decimal',
+    'label' => 'LBL_STAFF_MILES',
+    'width' => '10%',
     'default' => true,
   ),
   'WEEK_START_DATE' => 
@@ -22,34 +44,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'STAFF_EXPENSES' => 
-  array (
-    'type' => 'decimal',
-    'label' => 'LBL_STAFF_EXPENSES',
-    'width' => '10%',
-    'default' => false,
-  ),
-  'STAFF_MILES' => 
-  array (
-    'type' => 'decimal',
-    'label' => 'LBL_STAFF_MILES',
-    'width' => '10%',
-    'default' => false,
-  ),
-  'STAFF_HOURS' => 
-  array (
-    'type' => 'decimal',
-    'label' => 'LBL_STAFF_HOURS',
-    'width' => '10%',
-    'default' => false,
-  ),
-  'STAFF_PAY' => 
-  array (
-    'type' => 'decimal',
-    'label' => 'LBL_STAFF_PAY',
-    'width' => '10%',
-    'default' => false,
-  ),
   'WEEKLY_EXPENSES_COMMENT' => 
   array (
     'type' => 'text',
@@ -57,6 +51,12 @@ array (
     'label' => 'LBL_WEEKLY_EXPENSES_COMMENT',
     'sortable' => false,
     'width' => '10%',
+    'default' => false,
+  ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'width' => '9%',
+    'label' => 'LBL_ASSIGNED_TO_NAME',
     'default' => false,
   ),
 );

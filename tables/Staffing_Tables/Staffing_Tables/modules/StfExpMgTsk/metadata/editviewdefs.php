@@ -42,46 +42,33 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        2 => 
-        array (
           0 => '',
           1 => '',
         ),
-        3 => 
+        2 => 
         array (
           0 => 
-          array (
-            'name' => 'staff_weekly_expense_id',
-            'label' => 'LBL_STAFF_WEEKLY_EXPENSE_ID',
-          ),
-          1 => 
           array (
             'name' => 'mgmt_task_type',
             'studio' => 'visible',
             'label' => 'LBL_MGMT_TASK_TYPE',
           ),
-        ),
-        4 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'mgmt_task_type_oth',
             'label' => 'LBL_MGMT_TASK_TYPE_OTH',
           ),
-          1 => 
+        ),
+        3 => 
+        array (
+          0 => 
           array (
             'name' => 'mgmt_task_hrs',
             'label' => 'LBL_MGMT_TASK_HRS',
           ),
+          1 => '',
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -91,13 +78,14 @@ array (
           ),
           1 => '',
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
             'name' => 'st_stfwkexpfexpmgtsk_name',
             'label' => 'LBL_ST_STFWKEXPNS_ST_STFEXPMGTSK_FROM_ST_STFWKEXPNS_TITLE',
           ),
+          1 => '',
         ),
       ),
     ),

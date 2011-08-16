@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'Weekly Outreach & Engagement Activities',
+  'label' => 'Outreach & Engagement Activities',
   'importable' => true,
 );
 ?>

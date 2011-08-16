@@ -47,23 +47,12 @@ array (
             'name' => 'outreach_event_date',
             'label' => 'LBL_OUTREACH_EVENT_DATE',
           ),
-          1 => '',
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'outreach_mode',
-            'studio' => 'visible',
-            'label' => 'LBL_OUTREACH_MODE',
-          ),
           1 => 
           array (
-            'name' => 'outreach_mode_oth',
-            'label' => 'LBL_OUTREACH_MODE_OTH',
+            'name' => 'st_wkoeact_ecsampunt_name',
           ),
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -75,6 +64,20 @@ array (
           array (
             'name' => 'outreach_type_oth',
             'label' => 'LBL_OUTREACH_TYPE_OTH',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'outreach_mode',
+            'studio' => 'visible',
+            'label' => 'LBL_OUTREACH_MODE',
+          ),
+          1 => 
+          array (
+            'name' => 'outreach_mode_oth',
+            'label' => 'LBL_OUTREACH_MODE_OTH',
           ),
         ),
         4 => 
@@ -91,9 +94,7 @@ array (
         array (
           0 => 
           array (
-            'name' => 'outreach_lang1',
-            'studio' => 'visible',
-            'label' => 'LBL_OUTREACH_LANG1',
+            'name' => 'st_msouttart_wkoeact_name',
           ),
           1 => '',
         ),
@@ -101,11 +102,25 @@ array (
         array (
           0 => 
           array (
+            'name' => 'outreach_lang1',
+            'studio' => 'visible',
+            'label' => 'LBL_OUTREACH_LANG1',
+          ),
+          1 => '',
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'st_msoutlant_wkoeact_name',
+          ),
+          1 => 
+          array (
             'name' => 'outreach_lang_oth',
             'label' => 'LBL_OUTREACH_LANG_OTH',
           ),
         ),
-        7 => 
+        8 => 
         array (
           0 => 
           array (
@@ -115,7 +130,15 @@ array (
           ),
           1 => '',
         ),
-        8 => 
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'st_msoutract_wkoeact_name',
+          ),
+          1 => '',
+        ),
+        10 => 
         array (
           0 => 
           array (
@@ -125,7 +148,7 @@ array (
           ),
           1 => '',
         ),
-        9 => 
+        11 => 
         array (
           0 => 
           array (
@@ -139,29 +162,6 @@ array (
             'label' => 'LBL_OUTREACH_CULTURE_OTH',
           ),
         ),
-        10 => 
-        array (
-          0 => 
-          array (
-            'name' => 'outreach_quantity',
-            'label' => 'LBL_OUTREACH_QUANTITY',
-          ),
-          1 => 
-          array (
-            'name' => 'outreach_cost',
-            'label' => 'LBL_OUTREACH_COST',
-          ),
-        ),
-        11 => 
-        array (
-          0 => 
-          array (
-            'name' => 'outreach_eval_result',
-            'studio' => 'visible',
-            'label' => 'LBL_OUTREACH_EVAL_RESULT',
-          ),
-          1 => '',
-        ),
         12 => 
         array (
           0 => 
@@ -171,17 +171,16 @@ array (
           ),
           1 => 
           array (
-            'name' => 'outreach_incident',
-            'studio' => 'visible',
-            'label' => 'LBL_OUTREACH_INCIDENT',
+            'name' => 'outreach_cost',
+            'label' => 'LBL_OUTREACH_COST',
           ),
         ),
         13 => 
         array (
           0 => 
           array (
-            'name' => 'incident_id',
-            'label' => 'LBL_INCIDENT_ID',
+            'name' => 'outreach_quantity',
+            'label' => 'LBL_OUTREACH_QUANTITY',
           ),
           1 => '',
         ),
@@ -189,39 +188,38 @@ array (
         array (
           0 => 
           array (
-            'name' => 'comments',
+            'name' => 'st_msoutevat_wkoeact_name',
+          ),
+          1 => 
+          array (
+            'name' => 'outreach_eval_result',
             'studio' => 'visible',
-            'label' => 'LBL_COMMENTS',
+            'label' => 'LBL_OUTREACH_EVAL_RESULT',
           ),
         ),
         15 => 
         array (
           0 => 
           array (
-            'name' => 'st_msoutract_wkoeact_name',
+            'name' => 'outreach_incident',
+            'studio' => 'visible',
+            'label' => 'LBL_OUTREACH_INCIDENT',
           ),
           1 => 
           array (
-            'name' => 'st_msoutevat_wkoeact_name',
+            'name' => 'incident_id',
+            'label' => 'LBL_INCIDENT_ID',
           ),
         ),
         16 => 
         array (
           0 => 
           array (
-            'name' => 'st_msouttart_wkoeact_name',
+            'name' => 'comments',
+            'studio' => 'visible',
+            'label' => 'LBL_COMMENTS',
           ),
-          1 => 
-          array (
-            'name' => 'st_msoutlant_wkoeact_name',
-          ),
-        ),
-        17 => 
-        array (
-          0 => 
-          array (
-            'name' => 'st_wkoeact_ecsampunt_name',
-          ),
+          1 => '',
         ),
       ),
     ),

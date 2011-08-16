@@ -12,6 +12,14 @@ array (
         'default' => true,
         'width' => '10%',
       ),
+      'week_start_date' => 
+      array (
+        'type' => 'date',
+        'label' => 'LBL_WEEK_START_DATE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'week_start_date',
+      ),
       'staff_pay' => 
       array (
         'type' => 'decimal',

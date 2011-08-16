@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'Staff Participation Outreach Events',
+  'label' => 'Outreach Staff Participation',
   'importable' => true,
 );
 ?>

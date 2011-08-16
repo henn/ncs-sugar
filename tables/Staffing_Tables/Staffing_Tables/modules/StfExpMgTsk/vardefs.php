@@ -127,8 +127,8 @@ $vardefs = array (
       'len' => '255',
       'size' => '20',
       'studio' => 'visible',
-      'rows' => '4',
-      'cols' => '20',
+      'rows' => '6',
+      'cols' => '80',
     ),
     'name' => 
     array (

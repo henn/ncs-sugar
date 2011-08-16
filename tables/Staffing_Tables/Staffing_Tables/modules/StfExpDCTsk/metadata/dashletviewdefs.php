@@ -47,13 +47,77 @@ $dashletData['ST_StfExpDCTskDashlet']['columns'] =  array(   'name' => array('wi
                                                                       'label'   => 'LBL_LIST_NAME',
                                                                       'link'    => true,
                                                                       'default' => true), 
-                                                      'date_entered' => array('width'   => '15', 
-                                                                              'label'   => 'LBL_DATE_ENTERED',
-                                                                              'default' => true),
-                                                      'date_modified' => array('width'   => '15', 
-                                                                              'label'   => 'LBL_DATE_MODIFIED'),    
-                                                      'created_by' => array('width'   => '8', 
-                                                                            'label'   => 'LBL_CREATED'),
-                                                      'assigned_user_name' => array('width'   => '8', 
-                                                                                     'label'   => 'LBL_LIST_ASSIGNED_USER'),
-                                               );
+    'name' => 'name',
+  ),
+  'data_coll_task_type' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_DATA_COLL_TASK_TYPE',
+    'sortable' => false,
+    'width' => '10%',
+    'name' => 'data_coll_task_type',
+  ),
+  'data_coll_tasks_hrs' => 
+  array (
+    'type' => 'decimal',
+    'label' => 'LBL_DATA_COLL_TASKS_HRS',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'data_coll_tasks_hrs',
+  ),
+  'data_coll_task_cases' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_DATA_COLL_TASK_CASES',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'data_coll_task_cases',
+  ),
+  'data_coll_transmit' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_DATA_COLL_TRANSMIT',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'data_coll_transmit',
+  ),
+  'st_stfwkexpfexpdctsk_name' => 
+  array (
+    'type' => 'relate',
+    'link' => 'st_stfwkexpst_stfexpdctsk',
+    'label' => 'LBL_ST_STFWKEXPNS_ST_STFEXPDCTSK_FROM_ST_STFWKEXPNS_TITLE',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'st_stfwkexpfexpdctsk_name',
+  ),
+  'date_modified' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_DATE_MODIFIED',
+    'name' => 'date_modified',
+    'default' => false,
+  ),
+  'date_entered' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_DATE_ENTERED',
+    'default' => false,
+    'name' => 'date_entered',
+  ),
+  'created_by' => 
+  array (
+    'width' => '8%',
+    'label' => 'LBL_CREATED',
+    'name' => 'created_by',
+    'default' => false,
+  ),
+  'assigned_user_name' => 
+  array (
+    'width' => '8%',
+    'label' => 'LBL_LIST_ASSIGNED_USER',
+    'name' => 'assigned_user_name',
+    'default' => false,
+  ),
+);

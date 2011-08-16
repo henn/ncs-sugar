@@ -47,13 +47,78 @@ $dashletData['ST_StfWkExpnsDashlet']['columns'] =  array(   'name' => array('wid
                                                                       'label'   => 'LBL_LIST_NAME',
                                                                       'link'    => true,
                                                                       'default' => true), 
-                                                      'date_entered' => array('width'   => '15', 
-                                                                              'label'   => 'LBL_DATE_ENTERED',
-                                                                              'default' => true),
-                                                      'date_modified' => array('width'   => '15', 
-                                                                              'label'   => 'LBL_DATE_MODIFIED'),    
-                                                      'created_by' => array('width'   => '8', 
-                                                                            'label'   => 'LBL_CREATED'),
-                                                      'assigned_user_name' => array('width'   => '8', 
-                                                                                     'label'   => 'LBL_LIST_ASSIGNED_USER'),
-                                               );
+    'name' => 'name',
+  ),
+  'week_start_date' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_WEEK_START_DATE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'staff_pay' => 
+  array (
+    'type' => 'decimal',
+    'label' => 'LBL_STAFF_PAY',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'staff_hours' => 
+  array (
+    'type' => 'decimal',
+    'label' => 'LBL_STAFF_HOURS',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'staff_expenses' => 
+  array (
+    'type' => 'decimal',
+    'label' => 'LBL_STAFF_EXPENSES',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'staff_miles' => 
+  array (
+    'type' => 'decimal',
+    'label' => 'LBL_STAFF_MILES',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'date_modified' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_DATE_MODIFIED',
+    'name' => 'date_modified',
+    'default' => false,
+  ),
+  'created_by' => 
+  array (
+    'width' => '8%',
+    'label' => 'LBL_CREATED',
+    'name' => 'created_by',
+    'default' => false,
+  ),
+  'assigned_user_name' => 
+  array (
+    'width' => '8%',
+    'label' => 'LBL_LIST_ASSIGNED_USER',
+    'name' => 'assigned_user_name',
+    'default' => false,
+  ),
+  'date_entered' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_DATE_ENTERED',
+    'default' => false,
+    'name' => 'date_entered',
+  ),
+  'weekly_expenses_comment' => 
+  array (
+    'type' => 'text',
+    'studio' => 'visible',
+    'label' => 'LBL_WEEKLY_EXPENSES_COMMENT',
+    'sortable' => false,
+    'width' => '10%',
+    'default' => false,
+  ),
+  );

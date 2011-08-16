@@ -50,39 +50,10 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
-          ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
+          0 => '',
+          1 => '',
         ),
         2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
-        ),
-        3 => 
-        array (
-          0 => '',
-          1 => '',
-        ),
-        4 => 
-        array (
-          0 => '',
-          1 => '',
-        ),
-        5 => 
         array (
           0 => 
           array (
@@ -91,43 +62,33 @@ array (
           ),
           1 => '',
         ),
-        6 => 
+        3 => 
         array (
           0 => 
           array (
             'name' => 'staff_pay',
             'label' => 'LBL_STAFF_PAY',
           ),
-          1 => '',
-        ),
-        7 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'staff_hours',
             'label' => 'LBL_STAFF_HOURS',
           ),
-          1 => '',
         ),
-        8 => 
+        4 => 
         array (
           0 => 
           array (
             'name' => 'staff_expenses',
             'label' => 'LBL_STAFF_EXPENSES',
           ),
-          1 => '',
-        ),
-        9 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'staff_miles',
             'label' => 'LBL_STAFF_MILES',
           ),
-          1 => '',
         ),
-        10 => 
+        5 => 
         array (
           0 => 
           array (
@@ -137,7 +98,7 @@ array (
           ),
           1 => '',
         ),
-        11 => 
+        6 => 
         array (
           0 => 
           array (
