@@ -19,10 +19,11 @@ class NCSSugarWebServiceImpl extends SugarWebServiceImplv3 {
     
     /**
      *
-     * @param type $session Session ID returned by a previous call to login. Requried to use this method.
-     * @param type $doValidation Set to true if you want the service to validate the response against the schema
+     * @param string $session Session ID returned by a previous call to login. Requried to use this method.
+     * @param array $parts An array of sections (parts) to export in one call. They are labelled A, B, C
+     * @param boolean $doValidation Set to true if you want the service to validate the response against the schema
      */
-    function export_vdr_data($session, $doValidation = false)
+    function export_vdr_data($session, $parts, $doValidation = false)
     {
         $GLOBALS['log']->error('');
         $GLOBALS['log']->error('=========================================================');
@@ -45,76 +46,100 @@ class NCSSugarWebServiceImpl extends SugarWebServiceImplv3 {
         self::$helperObject->parseHeaderValues($xmlWriter);
         // INSERT TABLES
         $xmlWriter->startElementNS('ns1','transmission_tables', null);
-        self::$helperObject->parseStudyCenter($xmlWriter);
-        self::$helperObject->parsePSU($xmlWriter);
-        self::$helperObject->parseSSU($xmlWriter);
-        self::$helperObject->parseTSU($xmlWriter);
-        self::$helperObject->parseListingUnit($xmlWriter);
-        self::$helperObject->parseDwellingUnit($xmlWriter);
-        self::$helperObject->parseHouseHoldUnit($xmlWriter);
-        self::$helperObject->parseLinkHouseHoldDwelling($xmlWriter);
-        self::$helperObject->parseStaff($xmlWriter);
-        self::$helperObject->parseStaffLanguage($xmlWriter);
-        self::$helperObject->parseStaffValidation($xmlWriter);
-        self::$helperObject->parseStaffWeeklyExpense($xmlWriter);
-        self::$helperObject->parseStaffExpenseManagementTask($xmlWriter);
-        self::$helperObject->parseStaffExpenseDataCollectionTask($xmlWriter);
-        self::$helperObject->parseOutreach($xmlWriter);
-        self::$helperObject->parseOutreachRace($xmlWriter);
-        self::$helperObject->parseOutreachStaff($xmlWriter);
-        self::$helperObject->parseOutreachEval($xmlWriter);
-        self::$helperObject->parseOutreachTarget($xmlWriter);
-        self::$helperObject->parseOutreachLanguage2($xmlWriter);
-        self::$helperObject->parseStaffCertTraining($xmlWriter);
-        self::$helperObject->parsePerson($xmlWriter);
-        self::$helperObject->parsePersonRace($xmlWriter);
-        self::$helperObject->parseLinkPersonHousehold($xmlWriter);
-        self::$helperObject->parseParticipant($xmlWriter);
-        self::$helperObject->parseLinkPersonParticipant($xmlWriter);
-        self::$helperObject->parseParticipantAuthorizationForm($xmlWriter);
-        self::$helperObject->parseParticipantConsent($xmlWriter);
-        self::$helperObject->parsePPGDetails($xmlWriter);
-        self::$helperObject->parsePPGStatusHistory($xmlWriter);
-        self::$helperObject->parseProvider($xmlWriter);
-        self::$helperObject->parseProviderRole($xmlWriter);
-        self::$helperObject->parseLinkPersonProvider($xmlWriter);
-        self::$helperObject->parseInstitution($xmlWriter);
-        self::$helperObject->parseLinkPersonIntitute($xmlWriter);
-        self::$helperObject->parseAddress($xmlWriter);
-        self::$helperObject->parseTelephone($xmlWriter);
-        self::$helperObject->parseEmail($xmlWriter);
-        self::$helperObject->parseEvent($xmlWriter);
-        self::$helperObject->parseInstrument($xmlWriter);
-        self::$helperObject->parseContact($xmlWriter);
-        self::$helperObject->parseContactLinking($xmlWriter);
-        self::$helperObject->parseNonInterviewReprt($xmlWriter);
-        self::$helperObject->parseNIRVacant($xmlWriter);
-        self::$helperObject->parseNIRNoAccess($xmlWriter);
-        self::$helperObject->parseNIRRefusal($xmlWriter);
-        self::$helperObject->parseNIRDuType($xmlWriter);
-        self::$helperObject->parseIncident($xmlWriter);
-        self::$helperObject->parseIncidentMedia($xmlWriter);
-        self::$helperObject->parseIncidentUnanticipated($xmlWriter);
-        self::$helperObject->parseSPECEquipment($xmlWriter);
-        self::$helperObject->parseSpecimenPickup($xmlWriter);
-        self::$helperObject->parseSpecimenReceipt($xmlWriter);
-        self::$helperObject->parseSpecimenShipping($xmlWriter);
-        self::$helperObject->parseSpecimenStorage($xmlWriter);
-        self::$helperObject->parseSpecimenInfo($xmlWriter);
-        self::$helperObject->parseEnvironmentalEquipmentInformation($xmlWriter);
-        self::$helperObject->parseEnvironmentalEquipmentProblemLog($xmlWriter);
-        self::$helperObject->parseParticipantConsentSample($xmlWriter);
-        self::$helperObject->parseParticipantRecordVisit($xmlWriter);
-        self::$helperObject->parseParticipantVisitConsent($xmlWriter);
-        self::$helperObject->parsePrecisionThermometerCertification($xmlWriter);
-        self::$helperObject->parseRefrigeratorFreezerVerification($xmlWriter); 
-        self::$helperObject->parseSampleReceiptStorage($xmlWriter); 
-        self::$helperObject->parseSampleShipping($xmlWriter); 
-        //self::$helperObject->parseSrscInformation($xmlWriter); <-- PROBLEM WITH JOIN TABLE
-        self::$helperObject->parseSubsampleDocument($xmlWriter);
-        self::$helperObject->parseTRHMeterCalibration($xmlWriter);
-        self::$helperObject->parseDigitalRefrigeratorFreezerThermVerification($xmlWriter);
-        self::$helperObject->parseSampleReceiptConfirmation($xmlWriter);
+        if($parts["partA"] == 'true'){
+            $xmlWriter->writeComment("Beginning of part A");
+            self::$helperObject->parseStudyCenter($xmlWriter);
+            self::$helperObject->parsePSU($xmlWriter);
+            self::$helperObject->parseSSU($xmlWriter);
+            self::$helperObject->parseTSU($xmlWriter);
+            self::$helperObject->parseListingUnit($xmlWriter);
+            self::$helperObject->parseDwellingUnit($xmlWriter);
+            self::$helperObject->parseHouseHoldUnit($xmlWriter);
+            self::$helperObject->parseLinkHouseHoldDwelling($xmlWriter);
+            self::$helperObject->parseStaff($xmlWriter);
+            self::$helperObject->parseStaffLanguage($xmlWriter);
+            self::$helperObject->parseStaffValidation($xmlWriter);
+            self::$helperObject->parseStaffWeeklyExpense($xmlWriter);
+            self::$helperObject->parseStaffExpenseManagementTask($xmlWriter);
+            self::$helperObject->parseStaffExpenseDataCollectionTask($xmlWriter);
+            $xmlWriter->writeComment("End of part A");
+        }
+        if($parts["partB"] == 'true'){
+            $xmlWriter->writeComment("Beginning of part B");
+            self::$helperObject->parseOutreach($xmlWriter);
+            self::$helperObject->parseOutreachRace($xmlWriter);
+            self::$helperObject->parseOutreachStaff($xmlWriter);
+            self::$helperObject->parseOutreachEval($xmlWriter);
+            self::$helperObject->parseOutreachTarget($xmlWriter);
+            self::$helperObject->parseOutreachLanguage2($xmlWriter);
+            self::$helperObject->parseStaffCertTraining($xmlWriter);
+            self::$helperObject->parsePerson($xmlWriter);
+            self::$helperObject->parsePersonRace($xmlWriter);
+            self::$helperObject->parseLinkPersonHousehold($xmlWriter);
+            self::$helperObject->parseParticipant($xmlWriter);
+            self::$helperObject->parseLinkPersonParticipant($xmlWriter);
+            self::$helperObject->parseParticipantAuthorizationForm($xmlWriter);
+            self::$helperObject->parseParticipantConsent($xmlWriter);
+            $xmlWriter->writeComment("End of part B");
+        }
+        if($parts["partC"] == 'true'){
+            $xmlWriter->writeComment("Beginning of part C");
+            self::$helperObject->parsePPGDetails($xmlWriter);
+            self::$helperObject->parsePPGStatusHistory($xmlWriter);
+            self::$helperObject->parseProvider($xmlWriter);
+            self::$helperObject->parseProviderRole($xmlWriter);
+            self::$helperObject->parseLinkPersonProvider($xmlWriter);
+            self::$helperObject->parseInstitution($xmlWriter);
+            self::$helperObject->parseLinkPersonIntitute($xmlWriter);
+            self::$helperObject->parseAddress($xmlWriter);
+            $xmlWriter->writeComment("End of part C");
+        }
+        if($parts["partD"] == 'true'){
+            $xmlWriter->writeComment("Beginning of part D");
+            self::$helperObject->parseTelephone($xmlWriter);
+            self::$helperObject->parseEmail($xmlWriter);
+            self::$helperObject->parseEvent($xmlWriter);
+            self::$helperObject->parseInstrument($xmlWriter);
+            self::$helperObject->parseContact($xmlWriter);
+            self::$helperObject->parseContactLinking($xmlWriter);
+            self::$helperObject->parseNonInterviewReprt($xmlWriter);
+            self::$helperObject->parseNIRVacant($xmlWriter);
+            self::$helperObject->parseNIRNoAccess($xmlWriter);
+            self::$helperObject->parseNIRRefusal($xmlWriter);
+            self::$helperObject->parseNIRDuType($xmlWriter);
+            $xmlWriter->writeComment("End of part D");
+        }
+        if($parts["partE"] == 'true'){
+            $xmlWriter->writeComment("Beginning of part E");
+            self::$helperObject->parseIncident($xmlWriter);
+            self::$helperObject->parseIncidentMedia($xmlWriter);
+            self::$helperObject->parseIncidentUnanticipated($xmlWriter);
+            self::$helperObject->parseSPECEquipment($xmlWriter);
+            self::$helperObject->parseSpecimenPickup($xmlWriter);
+            self::$helperObject->parseSpecimenReceipt($xmlWriter);
+            self::$helperObject->parseSpecimenShipping($xmlWriter);
+            self::$helperObject->parseSpecimenStorage($xmlWriter);
+            self::$helperObject->parseSpecimenInfo($xmlWriter);
+            $xmlWriter->writeComment("End of part E");
+        }
+        if($parts["partF"] == 'true'){
+            $xmlWriter->writeComment("Beginning of part F");
+            self::$helperObject->parseEnvironmentalEquipmentInformation($xmlWriter);
+            self::$helperObject->parseEnvironmentalEquipmentProblemLog($xmlWriter);
+            self::$helperObject->parseParticipantConsentSample($xmlWriter);
+            self::$helperObject->parseParticipantRecordVisit($xmlWriter);
+            self::$helperObject->parseParticipantVisitConsent($xmlWriter);
+            self::$helperObject->parsePrecisionThermometerCertification($xmlWriter);
+            self::$helperObject->parseRefrigeratorFreezerVerification($xmlWriter); 
+            self::$helperObject->parseSampleReceiptStorage($xmlWriter); 
+            self::$helperObject->parseSampleShipping($xmlWriter); 
+            //self::$helperObject->parseSrscInformation($xmlWriter); <-- PROBLEM WITH JOIN TABLE
+            self::$helperObject->parseSubsampleDocument($xmlWriter);
+            self::$helperObject->parseTRHMeterCalibration($xmlWriter);
+            self::$helperObject->parseDigitalRefrigeratorFreezerThermVerification($xmlWriter);
+            self::$helperObject->parseSampleReceiptConfirmation($xmlWriter);
+            $xmlWriter->writeComment("End of part F");
+        }
         $xmlWriter->endElement(); // tables
         $xmlWriter->endElement(); // Envelope
         $xmlWriter->endDocument();
