@@ -29,7 +29,7 @@ array (
         0 => 
         array (
           0 => 
-		   array (
+          array (
             'name' => 'name',
             'label' => 'Name:',
             'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
@@ -53,10 +53,6 @@ array (
         2 => 
         array (
           0 => 
-          array (
-            'name' => 'olt_msprovr_provider_name',
-          ),
-          1 => 
           array (
             'name' => 'olt_providesprovrole_name',
           ),

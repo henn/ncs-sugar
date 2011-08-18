@@ -58,10 +58,6 @@ array (
         array (
           0 => 
           array (
-            'name' => 'olt_msprovr_provider_name',
-          ),
-          1 => 
-          array (
             'name' => 'olt_providesprovrole_name',
           ),
         ),
