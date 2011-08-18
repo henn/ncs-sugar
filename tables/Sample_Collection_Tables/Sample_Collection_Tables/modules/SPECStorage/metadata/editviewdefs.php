@@ -37,23 +37,18 @@ array (
         ),
         1 => 
         array (
-          0 => 'assigned_user_name',
-          1 => '',
-        ),
-        2 => 
-        array (
           0 => 
           array (
             'name' => 'samp_specststaffrstr_name',
           ),
           1 => '',
         ),
-        3 => 
+        2 => 
         array (
           0 => 'name',
           1 => '',
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -61,7 +56,7 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -71,7 +66,7 @@ array (
           ),
           1 => '',
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -80,7 +75,7 @@ array (
           ),
           1 => '',
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -89,7 +84,7 @@ array (
           ),
           1 => '',
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (
@@ -98,12 +93,15 @@ array (
           ),
           1 => '',
         ),
-        9 => 
+        8 => 
         array (
           0 => 
           array (
-            'name' => 'samp_specshecstorage_name',
+            'name' => 'storage_fill',
+            'studio' => 'visible',
+            'label' => 'LBL_STORAGE_FILL',
           ),
+          1 => '',
         ),
       ),
       'lbl_editview_panel2' => 
@@ -115,7 +113,10 @@ array (
             'name' => 'removed_from_storage_dt',
             'label' => 'LBL_REMOVED_FROM_STORAGE_DT',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'samp_specshecstorage_name',
+          ),
         ),
       ),
       'lbl_editview_panel1' => 

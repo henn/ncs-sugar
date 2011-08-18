@@ -26,19 +26,7 @@ array (
     array (
       'default' => 
       array (
-	  
         0 => 
-        array (
-          0 =>
-		   array (
-            'name' => 'name',
-            'label' => 'Name:',
-            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
-          ),
-          1 => '',
-        ),
-		
-        1 => 
         array (
           0 => 
 		   array (
@@ -46,7 +34,7 @@ array (
           ),
           1 => 'assigned_user_name',
         ),
-        2 => 
+        1 => 
         array (
           0 => 
           array (
@@ -55,7 +43,16 @@ array (
           ),
           1 => '',
         ),
-
+        2 => 
+        array (
+          0 => 0 => 
+		   array (
+            'name' => 'name',
+            'label' => 'Name:',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+          ),
+          1 => '',
+        ),
         3 => 
         array (
           0 => '',

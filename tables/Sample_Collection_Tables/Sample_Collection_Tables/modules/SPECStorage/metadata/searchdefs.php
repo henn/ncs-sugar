@@ -22,6 +22,16 @@ array (
         'width' => '10%',
         'name' => 'master_storage_unit',
       ),
+      'storage_fill' => 
+      array (
+        'type' => 'enum',
+        'studio' => 'visible',
+        'label' => 'LBL_STORAGE_FILL',
+        'sortable' => false,
+        'width' => '10%',
+        'default' => true,
+        'name' => 'storage_fill',
+      ),
       'placed_in_storage_dt' => 
       array (
         'type' => 'datetimecombo',
@@ -64,6 +74,16 @@ array (
         'sortable' => false,
         'width' => '10%',
         'name' => 'master_storage_unit',
+      ),
+      'storage_fill' => 
+      array (
+        'type' => 'enum',
+        'studio' => 'visible',
+        'label' => 'LBL_STORAGE_FILL',
+        'sortable' => false,
+        'width' => '10%',
+        'default' => true,
+        'name' => 'storage_fill',
       ),
       'placed_in_storage_dt' => 
       array (

@@ -76,5 +76,6 @@ $mod_strings = array (
   'LBL_DETAILVIEW_PANEL1' => 'Sensaphone Panel',
   'LBL_EDITVIEW_PANEL2' => 'For Shipping Only',
   'LBL_DETAILVIEW_PANEL2' => 'For Shipping Only',
+  'LBL_STORAGE_FILL' => 'Storage Unit Fill Status',
 );
 ?>

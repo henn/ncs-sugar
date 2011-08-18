@@ -44,7 +44,7 @@ $config = array (
   array (
     'basic' => 1,
   ),
-  'label' => 'Environmental Sample Shipping',
+  'label' => 'Environmental Sample Shipment',
   'importable' => true,
 );
 ?>

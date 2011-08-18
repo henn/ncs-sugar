@@ -4,10 +4,19 @@ $listViewDefs [$module_name] =
 array (
   'NAME' => 
   array (
-    'width' => '32%',
+    'width' => '15%',
     'label' => 'LBL_NAME',
     'default' => true,
     'link' => true,
+  ),
+  'STORAGE_FILL' => 
+  array (
+    'type' => 'enum',
+    'studio' => 'visible',
+    'label' => 'LBL_STORAGE_FILL',
+    'sortable' => false,
+    'width' => '15%',
+    'default' => true,
   ),
   'MASTER_STORAGE_UNIT' => 
   array (

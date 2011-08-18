@@ -45,27 +45,23 @@ array (
         ),
         1 => 
         array (
-          0 => 'assigned_user_name',
-        ),
-        2 => 
-        array (
           0 => 
           array (
             'name' => 'samp_specststaffrstr_name',
           ),
         ),
-        3 => 
+        2 => 
         array (
           0 => 'name',
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
             'name' => 'samp_specstspecequip_name',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -74,7 +70,7 @@ array (
             'label' => 'LBL_MASTER_STORAGE_UNIT',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -82,7 +78,7 @@ array (
             'label' => 'LBL_PLACED_IN_STORAGE_DT',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -90,7 +86,7 @@ array (
             'label' => 'LBL_STORAGE_COMMENT',
           ),
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (
@@ -98,11 +94,13 @@ array (
             'label' => 'LBL_STORAGE_COMMENT_OTH',
           ),
         ),
-        9 => 
+        8 => 
         array (
           0 => 
           array (
-            'name' => 'samp_specshecstorage_name',
+            'name' => 'storage_fill',
+            'studio' => 'visible',
+            'label' => 'LBL_STORAGE_FILL',
           ),
         ),
       ),
@@ -116,6 +114,13 @@ array (
             'label' => 'LBL_REMOVED_FROM_STORAGE_DT',
           ),
         ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_specshecstorage_name',
+          ),
+        ),
       ),
       'lbl_detailview_panel1' => 
       array (
@@ -126,20 +131,26 @@ array (
             'name' => 'temp_event_st',
             'label' => 'LBL_TEMP_EVENT_ST',
           ),
-          1 => 
+        ),
+        1 => 
+        array (
+          0 => 
           array (
             'name' => 'temp_event_et',
             'label' => 'LBL_TEMP_EVENT_ET',
           ),
         ),
-        1 => 
+        2 => 
         array (
           0 => 
           array (
             'name' => 'temp_event_low_temp',
             'label' => 'LBL_TEMP_EVENT_LOW_TEMP',
           ),
-          1 => 
+        ),
+        3 => 
+        array (
+          0 => 
           array (
             'name' => 'temp_event_high_temp',
             'label' => 'LBL_TEMP_EVENT_HIGH_TEMP',
