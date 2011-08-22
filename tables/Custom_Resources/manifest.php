@@ -565,6 +565,7 @@ $installdefs = array (
       'to' => 'custom/working/modules/Notes/metadata/popupdefs.php',
     ),
 
+	/*
     array (
       'from' => '<basepath>/Activities_resources/SugarModules/modules/Notes/metadata/quickcreatedefs.php',
       'to' => 'custom/modules/Notes/metadata/quickcreatedefs.php',
@@ -574,6 +575,7 @@ $installdefs = array (
       'from' => '<basepath>/Activities_resources/SugarModules/modules/Notes/metadata/quickcreatedefs.php',
       'to' => 'custom/working/modules/Notes/metadata/quickcreatedefs.php',
     ),
+	*/
 
     array (
       'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Language/en_us.Data_Collection_Tables.php',
@@ -1124,6 +1126,198 @@ $installdefs = array (
     ),
 
 	//*************** end of Custom Extension stuff ********************************
+	
+	
+	
+	//*************** BEGIN COPY OF quickcreatedefs.php ************************
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/GT_DwlUntHsLnk/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/GT_DwlUntHsLnk/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/LTT_Address/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/LTT_Address/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/LTT_Email/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/LTT_Email/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/LTT_Telephone/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/LTT_Telephone/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/NCSDC_CntLnk/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/NCSDC_CntLnk/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/NCSDC_EventInfo/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/NCSDC_EventInfo/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/NCSDC_Incident/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/NCSDC_Incident/metadata/quickcreatedefs.php',
+		),
+
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/NCSDC_Instrument/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/NCSDC_Instrument/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/NCSDC_NIntRptVcnt/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/NCSDC_NIntRptVcnt/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/NCSDC_NIRDUTpMltS/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/NCSDC_NIRDUTpMltS/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/NCSDC_NIRNAccMltS/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/NCSDC_NIRNAccMltS/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/NCSDC_NIRRfsMltS/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/NCSDC_NIRRfsMltS/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/NCSDC_NonInterRpt/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/NCSDC_NonInterRpt/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/OLT_PrsnInstLnk/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/OLT_PrsnInstLnk/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/OLT_PrsnPrvdLnk/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/OLT_PrsnPrvdLnk/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/PLT_LkPrsPrtcpt/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/PLT_LkPrsPrtcpt/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/PLT_LnkPrsHshld/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/PLT_LnkPrsHshld/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/PLT_PersonRace/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/PLT_PersonRace/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/PLT_PPGDetails/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/PLT_PPGDetails/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/PLT_PPGStsHstry/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/PLT_PPGStsHstry/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/PLT_PrtcptCnsnt/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/PLT_PrtcptCnsnt/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/PLT_PrtcptVstC/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/PLT_PrtcptVstC/metadata/quickcreatedefs.php',
+		),
+		
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/ST_OtrchStaff/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/ST_OtrchStaff/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/ST_StfExpDCTsk/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/ST_StfExpDCTsk/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/ST_StfExpMgTsk/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/ST_StfExpMgTsk/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/ST_StfVldtn/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/ST_StfVldtn/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/SAMP_DRFThermVer/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/SAMP_DRFThermVer/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/SAMP_EnLogEquip/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/SAMP_EnLogEquip/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/SAMP_PreThrmCert/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/SAMP_PreThrmCert/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/SAMP_RecStor/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/SAMP_RecStor/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/SAMP_RefFreezVer/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/SAMP_RefFreezVer/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/SAMP_SRSCInfo/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/SAMP_SRSCInfo/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/SAMP_SubSampDoc/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/SAMP_SubSampDoc/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/SAMP_TRhMeterCal/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/SAMP_TRhMeterCal/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/Notes/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/Notes/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/PLT_PartAuthFrm/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/PLT_PartAuthFrm/metadata/quickcreatedefs.php',
+		),
+
+	array(
+		'from' => '<basepath>/IDCreation_resources/modules/PLT_PartRVIS/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/PLT_PartRVIS/metadata/quickcreatedefs.php',
+		),
+
+
+	//*************** END COPY OF quickcreatedefs.php *************************
 	
 	
   ),  //end of copy
