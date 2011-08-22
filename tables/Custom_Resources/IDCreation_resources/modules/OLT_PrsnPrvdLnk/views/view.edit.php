@@ -7,6 +7,8 @@
 
 	class OLT_PrsnPrvdLnkViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;		
+		
 		function OLT_PrsnPrvdLnkViewEdit(){
 			parent::ViewEdit();
 		}

@@ -7,18 +7,15 @@
 
 	class LTT_TelephoneViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;			
+		
 		function LTT_TelephoneViewEdit(){
 			parent::ViewEdit();
 		}
 
 		function display() {
 			require_once 'ncs_framework/ncs_controller.php';				
-		
-			// echo "<pre>";
-			// print_r($this->bean);
-			// echo "</pre>";
-			// die("");
-				
+						
 			//auto-fill PLT_Person relate field
 			if(empty($this->bean->id) && isset($_REQUEST['person_name'])  && isset($_REQUEST['person_id']) && isset($this->bean->field_name_map['plt_person_telephone_name']['id_name']))
 			{			

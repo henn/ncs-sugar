@@ -7,6 +7,8 @@
 
 	class GT_DwlUntHsLnkViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;				
+		
 		function GT_DwlUntHsLnkViewEdit(){
 			parent::ViewEdit();
 		}

@@ -7,6 +7,8 @@
 
 	class SAMP_PreThrmCertViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;		
+		
 		function SAMP_PreThrmCertViewEdit(){
 			parent::ViewEdit();
 		}
@@ -19,8 +21,6 @@
 			parent::display();
 		}
 		
-		
-
 	} 
 
 ?>

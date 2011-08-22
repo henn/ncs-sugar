@@ -7,6 +7,8 @@
 
 	class LTT_EmailViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;			
+		
 		function LTT_EmailViewEdit(){
 			parent::ViewEdit();
 		}
@@ -14,9 +16,7 @@
 		function display() {
 			require_once 'ncs_framework/ncs_controller.php';			
 				
-			//auto-fill relate fields problem
-			//http://www.sugarcrm.com/forums/showthread.php?p=255687
-			//http://www.sugarcrm.com/forums/showthread.php?p=257879		
+			//auto-fill relate fields problem	
 			if(empty($this->bean->id) && isset($_REQUEST['person_name'])  && isset($_REQUEST['person_id']) && isset($this->bean->field_name_map['plt_person_ltt_email_name']['id_name']))
 			{			
 				$person_ida = $this->bean->field_name_map['plt_person_ltt_email_name']['id_name'];			

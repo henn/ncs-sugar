@@ -7,6 +7,8 @@
 
 	class NotesViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;				
+		
 		function NotesViewEdit(){
 			parent::ViewEdit();
 		}

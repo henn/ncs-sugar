@@ -7,6 +7,8 @@
 
 	class SAMP_RefFreezVerViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;			
+		
 		function SAMP_RefFreezVerViewEdit(){
 			parent::ViewEdit();
 		}

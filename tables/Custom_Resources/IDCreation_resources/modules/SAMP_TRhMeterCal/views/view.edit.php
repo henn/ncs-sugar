@@ -7,6 +7,8 @@
 
 	class SAMP_TRhMeterCalViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;				
+		
 		function SAMP_TRhMeterCalViewEdit(){
 			parent::ViewEdit();
 		}

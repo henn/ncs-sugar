@@ -7,6 +7,8 @@
 
 	class NCSDC_INSTRUMENTViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;			
+		
 		function NCSDC_INSTRUMENTViewEdit(){
 			parent::ViewEdit();
 		}

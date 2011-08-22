@@ -7,18 +7,16 @@
 
 	class LTT_AddressViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;			
+		
 		function LTT_AddressViewEdit(){
 			parent::ViewEdit();
 		}
 
 		function display() {
 			require_once 'ncs_framework/ncs_controller.php';
-			
-			// echo "<pre>";
-			// print_r($this->bean);
-			// echo "</pre>";
-			
-			//auto-fill PLT_Person relate field
+						
+			//auto-fill PLT_Person relate field if exists
 			if(empty($this->bean->id) && isset($_REQUEST['person_name'])  && isset($_REQUEST['person_id']) && isset($this->bean->field_name_map['plt_person_t_address_name']['id_name']))
 			{			
 				$person_ida = $this->bean->field_name_map['plt_person_t_address_name']['id_name'];			

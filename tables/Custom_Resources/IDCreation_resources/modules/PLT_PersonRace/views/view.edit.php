@@ -7,6 +7,8 @@
 
 	class PLT_PersonRaceViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;			
+		
 		function PLT_PersonRaceViewEdit(){
 			parent::ViewEdit();
 		}

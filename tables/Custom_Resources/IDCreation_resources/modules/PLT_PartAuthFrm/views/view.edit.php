@@ -7,6 +7,8 @@
 
 	class PLT_PartAuthFrmViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;		
+		
 		function PLT_PartAuthFrmViewEdit(){
 			parent::ViewEdit();
 		}

@@ -7,6 +7,8 @@
 
 	class PLT_PrtcptVstCViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;
+		
 		function PLT_PrtcptVstCViewEdit(){
 			parent::ViewEdit();
 		}
@@ -18,9 +20,6 @@
 			$this->ss->assign("NAME", $ncs->get_name());
 			parent::display();
 		}
-		
-		
-
 	} 
 
 ?>

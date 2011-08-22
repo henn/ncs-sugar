@@ -7,6 +7,8 @@
 
 	class ST_StfVldtnViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;			
+		
 		function ST_StfVldtnViewEdit(){
 			parent::ViewEdit();
 		}

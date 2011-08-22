@@ -7,6 +7,8 @@
 
 	class SAMP_SubSampDocViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;		
+		
 		function SAMP_SubSampDocViewEdit(){
 			parent::ViewEdit();
 		}
@@ -18,9 +20,7 @@
 			$this->ss->assign("NAME", $ncs->get_name());
 			parent::display();
 		}
-		
-		
-
+				
 	} 
 
 ?>

@@ -7,6 +7,8 @@
 
 	class SAMP_DRFThermVerViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;		
+		
 		function SAMP_DRFThermVerViewEdit(){
 			parent::ViewEdit();
 		}

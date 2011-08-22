@@ -7,6 +7,8 @@
 
 	class ST_OtrchStaffViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;		
+		
 		function ST_OtrchStaffViewEdit(){
 			parent::ViewEdit();
 		}

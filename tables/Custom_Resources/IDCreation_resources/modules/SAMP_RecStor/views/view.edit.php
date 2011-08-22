@@ -7,6 +7,8 @@
 
 	class SAMP_RecStorViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;			
+		
 		function SAMP_RecStorViewEdit(){
 			parent::ViewEdit();
 		}

@@ -7,6 +7,8 @@
 
 	class NCSDC_NIRNAccMltSViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;			
+		
 		function NCSDC_NIRNAccMltSViewEdit(){
 			parent::ViewEdit();
 		}

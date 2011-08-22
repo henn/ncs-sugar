@@ -6,7 +6,9 @@
 	require_once 'include/utils.php';
 
 	class NCSDC_NIntRptVcntViewEdit extends ViewEdit {
-		
+
+		public $useForSubpanel = true;	
+	
 		function NCSDC_NIntRptVcntViewEdit(){
 			parent::ViewEdit();
 		}

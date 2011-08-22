@@ -7,6 +7,8 @@
 
 	class NCSDC_NonInterRptViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;			
+		
 		function NCSDC_NonInterRptViewEdit(){
 			parent::ViewEdit();
 		}

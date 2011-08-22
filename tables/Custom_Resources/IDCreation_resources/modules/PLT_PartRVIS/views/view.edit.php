@@ -7,6 +7,8 @@
 
 	class PLT_PartRVISViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;			
+		
 		function PLT_PartRVISViewEdit(){
 			parent::ViewEdit();
 		}

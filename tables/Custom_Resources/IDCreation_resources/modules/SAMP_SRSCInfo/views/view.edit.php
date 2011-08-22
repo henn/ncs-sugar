@@ -6,6 +6,8 @@
 	require_once 'include/utils.php';
 
 	class SAMP_SRSCInfoViewEdit extends ViewEdit {
+	
+		public $useForSubpanel = true;				
 		
 		function SAMP_SRSCInfoViewEdit(){
 			parent::ViewEdit();

@@ -7,6 +7,8 @@
 
 	class OLT_PrsnInstLnkViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;				
+		
 		function OLT_PrsnInstLnkViewEdit(){
 			parent::ViewEdit();
 		}
@@ -18,9 +20,7 @@
 			$this->ss->assign("NAME", $ncs->get_name());
 			parent::display();
 		}
-		
-		
-
+			
 	} 
 
 ?>

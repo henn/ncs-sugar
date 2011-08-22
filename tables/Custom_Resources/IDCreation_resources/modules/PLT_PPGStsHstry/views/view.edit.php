@@ -7,6 +7,8 @@
 
 	class PLT_PPGStsHstryViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;				
+		
 		function PLT_PPGStsHstryViewEdit(){
 			parent::ViewEdit();
 		}

@@ -7,6 +7,8 @@
 
 	class NCSDC_CntLnkViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;			
+		
 		function NCSDC_CntLnkViewEdit(){
 			parent::ViewEdit();
 		}

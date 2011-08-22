@@ -7,6 +7,8 @@
 
 	class PLT_LnkPrsHshldViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;			
+		
 		function PLT_LnkPrsHshldViewEdit(){
 			parent::ViewEdit();
 		}

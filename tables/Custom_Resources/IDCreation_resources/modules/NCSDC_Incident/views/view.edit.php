@@ -7,6 +7,8 @@
 
 	class NCSDC_IncidentViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;			
+		
 		function NCSDC_IncidentViewEdit(){
 			parent::ViewEdit();
 		}

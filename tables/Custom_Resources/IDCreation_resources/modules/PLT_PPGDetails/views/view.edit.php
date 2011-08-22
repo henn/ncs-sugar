@@ -7,11 +7,15 @@
 
 	class PLT_PPGDetailsViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;
+		
 		function PLT_PPGDetailsViewEdit(){
 			parent::ViewEdit();
 		}
 
 		function display() {
+		
+			//for quickcreate form and regular edit view.
 			require_once 'ncs_framework/ncs_controller.php';
 			$ncs = new NCS($this->bean);
 			$ncs->identifier = 'GD';

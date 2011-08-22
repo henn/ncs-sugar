@@ -7,6 +7,8 @@
 
 	class ST_StfExpDCTskViewEdit extends ViewEdit {
 		
+		public $useForSubpanel = true;				
+		
 		function ST_StfExpDCTskViewEdit(){
 			parent::ViewEdit();
 		}
