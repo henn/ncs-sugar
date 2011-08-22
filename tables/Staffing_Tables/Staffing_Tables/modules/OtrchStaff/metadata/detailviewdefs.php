@@ -69,10 +69,7 @@ array (
           array (
             'name' => 'st_otrchstastaffrstr_name',
           ),
-          1 => 
-          array (
-            'name' => 'st_otrchstat_wkoeact_name',
-          ),
+          1 => '',
         ),
         3 => 
         array (
@@ -81,6 +78,11 @@ array (
             'name' => 'description',
             'comment' => 'Full text of the note',
             'label' => 'LBL_DESCRIPTION',
+          ),
+          1 => 
+          array (
+            'name' => 'st_otrchstat_wkoeact_name',
+            'label' => 'LBL_ST_OTRCHSTAFF_ST_WKOEACT_FROM_ST_WKOEACT_TITLE',
           ),
         ),
       ),

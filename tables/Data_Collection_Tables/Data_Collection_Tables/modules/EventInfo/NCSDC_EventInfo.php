@@ -45,16 +45,19 @@ class NCSDC_EventInfo extends NCSDC_EventInfo_sugar {
 	}
 	
 	/*
-	*  Integrate ID Creation code with save function.
+	*  Integrate ID Creation code with save function for auto event generation.
 	*/
 	public function save($check_notify = false)
 	{						
 		require_once("ncs_framework/IDCreation.php");
-		
-		$IDC = new IDCreation();
-		$IDC->identifier = 'EV';		
-		$this->name =  $IDC->get_new_name("ncsdc_eventinfo");
-		
+	
+		if(empty($this->id) && empty($this->name))
+		{
+			$IDC = new IDCreation();
+			$IDC->identifier = 'EV';		
+			$this->name =  $IDC->get_new_name("ncsdc_eventinfo");		
+		}
+								
 		return parent::save($check_notify);
 	}
 }

@@ -46,10 +46,7 @@ array (
           array (
             'name' => 'st_otrchstastaffrstr_name',
           ),
-          1 => 
-          array (
-            'name' => 'st_otrchstat_wkoeact_name',
-          ),
+          1 => '',
         ),
         2 => 
         array (
@@ -60,6 +57,14 @@ array (
             'label' => 'LBL_DESCRIPTION',
           ),
           1 => '',
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'st_otrchstat_wkoeact_name',
+            'label' => 'LBL_ST_OTRCHSTAFF_ST_WKOEACT_FROM_ST_WKOEACT_TITLE',
+          ),
         ),
       ),
     ),

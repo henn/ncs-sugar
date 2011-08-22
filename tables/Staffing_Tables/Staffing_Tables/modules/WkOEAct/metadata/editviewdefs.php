@@ -146,17 +146,16 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_OUTREACH_CULTURE1',
           ),
-          1 => '',
-        ),
-        11 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'outreach_culture2',
             'studio' => 'visible',
             'label' => 'LBL_OUTREACH_CULTURE2',
           ),
-          1 => 
+        ),
+        11 => 
+        array (
+          0 => 
           array (
             'name' => 'outreach_culture_oth',
             'label' => 'LBL_OUTREACH_CULTURE_OTH',
@@ -205,11 +204,7 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_OUTREACH_INCIDENT',
           ),
-          1 => 
-          array (
-            'name' => 'incident_id',
-            'label' => 'LBL_INCIDENT_ID',
-          ),
+          1 => '',
         ),
         16 => 
         array (

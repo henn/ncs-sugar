@@ -52,13 +52,6 @@ array (
     'width' => '10%',
     'default' => false,
   ),
-  'INCIDENT_ID' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_INCIDENT_ID',
-    'width' => '10%',
-    'default' => false,
-  ),
   'OUTREACH_INCIDENT' => 
   array (
     'type' => 'enum',

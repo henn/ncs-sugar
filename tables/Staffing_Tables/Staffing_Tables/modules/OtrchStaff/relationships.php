@@ -54,7 +54,7 @@ $relationships = array (
   'st_otrchstaff_st_wkoeact' => 
   array (
     'rhs_label' => 'Weekly Outreach & Engagement Activities',
-    'lhs_label' => 'Staff Participation Outreach Events',
+    'lhs_label' => 'Outreach Staff Participation',
     'lhs_subpanel' => 'default',
     'lhs_module' => 'ST_OtrchStaff',
     'rhs_module' => 'ST_WkOEAct',

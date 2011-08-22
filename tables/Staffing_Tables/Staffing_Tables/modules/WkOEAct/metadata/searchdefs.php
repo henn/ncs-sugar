@@ -103,14 +103,6 @@ array (
         'default' => true,
         'name' => 'outreach_staffing',
       ),
-      'incident_id' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_INCIDENT_ID',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'incident_id',
-      ),
       'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',
