@@ -110,7 +110,6 @@ $vardefs = array (
       'reportable' => true,
       'size' => '20',
       'dbType' => 'datetime',
-      'display_default' => 'now&12:00am',
     ),
     'cooler_temp_cond' => 
     array (
@@ -149,7 +148,6 @@ $vardefs = array (
       'reportable' => true,
       'size' => '20',
       'dbType' => 'datetime',
-      'display_default' => 'now&12:00am',
     ),
     'storage_compartment_area' => 
     array (

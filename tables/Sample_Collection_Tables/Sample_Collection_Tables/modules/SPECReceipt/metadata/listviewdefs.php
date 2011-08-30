@@ -43,6 +43,13 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  'RECEIPT_DT' => 
+  array (
+    'type' => 'datetimecombo',
+    'label' => 'LBL_RECEIPT_DT',
+    'width' => '10%',
+    'default' => true,
+  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',
