@@ -402,6 +402,10 @@ $installdefs = array (
       'from' => '<basepath>/IDCreation_resources/modules/SAMP_EnEquip/views/view.edit.php',
       'to' => 'custom/modules/SAMP_EnEquip/views/view.edit.php',
     ),
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_EnEquip/Ext/Layoutdefs/layoutdefs.ext.php',
+      'to' => 'custom/modules/SAMP_EnEquip/Ext/Layoutdefs/layoutdefs.ext.php',
+    ),	
 ####Begin copy of SAMP_EnLogEquip#############
 	array (
       'from' => '<basepath>/IDCreation_resources/modules/SAMP_EnLogEquip/views/view.edit.php',
@@ -432,6 +436,11 @@ $installdefs = array (
       'from' => '<basepath>/IDCreation_resources/modules/SAMP_SPECEquip/views/view.edit.php',
       'to' => 'custom/modules/SAMP_SPECEquip/views/view.edit.php',
     ),
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_SPECEquip/Ext/Layoutdefs/layoutdefs.ext.php',
+      'to' => 'custom/modules/SAMP_SPECEquip/Ext/Layoutdefs/layoutdefs.ext.php',
+    ),			
+	
 ####Begin copy of SAMP_SPECShippin#############
 	array (
       'from' => '<basepath>/IDCreation_resources/modules/SAMP_SPECShippin/views/view.edit.php',
@@ -442,11 +451,19 @@ $installdefs = array (
       'from' => '<basepath>/IDCreation_resources/modules/SAMP_SPSCInfo/views/view.edit.php',
       'to' => 'custom/modules/SAMP_SPSCInfo/views/view.edit.php',
     ),
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_SPSCInfo/Ext/Layoutdefs/layoutdefs.ext.php',
+      'to' => 'custom/modules/SAMP_SPSCInfo/Ext/Layoutdefs/layoutdefs.ext.php',
+    ),		
 ####Begin copy of SAMP_SRSCInfo#############
 	array (
       'from' => '<basepath>/IDCreation_resources/modules/SAMP_SRSCInfo/views/view.edit.php',
       'to' => 'custom/modules/SAMP_SRSCInfo/views/view.edit.php',
     ),
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_SRSCInfo/Ext/Layoutdefs/layoutdefs.ext.php',
+      'to' => 'custom/modules/SAMP_SRSCInfo/Ext/Layoutdefs/layoutdefs.ext.php',
+    ),			
 ####Begin copy of SAMP_SubSampDoc#############
 	array (
       'from' => '<basepath>/IDCreation_resources/modules/SAMP_SubSampDoc/views/view.edit.php',

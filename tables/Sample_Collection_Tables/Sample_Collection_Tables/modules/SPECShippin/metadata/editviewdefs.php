@@ -45,7 +45,7 @@ array (
         ),
         2 => 
         array (
-          0 => 0 => 
+          0 =>
 		   array (
             'name' => 'name',
             'label' => 'Name:',
