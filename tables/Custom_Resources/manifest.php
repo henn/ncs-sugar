@@ -422,10 +422,10 @@ $installdefs = array (
       'to' => 'custom/modules/SAMP_RecConf/views/view.edit.php',
     ),
 ####Begin copy of SAMP_RecStor#############
-	array (
-      'from' => '<basepath>/IDCreation_resources/modules/SAMP_RecStor/views/view.edit.php',
-      'to' => 'custom/modules/SAMP_RecStor/views/view.edit.php',
-    ),
+#	array (
+#      'from' => '<basepath>/IDCreation_resources/modules/SAMP_RecStor/views/view.edit.php',
+#      'to' => 'custom/modules/SAMP_RecStor/views/view.edit.php',
+#    ),
 ####Begin copy of SAMP_RefFreezVer#############
 	array (
       'from' => '<basepath>/IDCreation_resources/modules/SAMP_RefFreezVer/views/view.edit.php',
@@ -440,7 +440,11 @@ $installdefs = array (
       'from' => '<basepath>/IDCreation_resources/modules/SAMP_SPECEquip/Ext/Layoutdefs/layoutdefs.ext.php',
       'to' => 'custom/modules/SAMP_SPECEquip/Ext/Layoutdefs/layoutdefs.ext.php',
     ),			
-	
+##### Begin copy of SAMP_SampShip ############
+ array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_SampShip/views/view.edit.php',
+      'to' => 'custom/modules/SAMP_SampShip/views/view.edit.php',
+    ),	
 ####Begin copy of SAMP_SPECShippin#############
 	array (
       'from' => '<basepath>/IDCreation_resources/modules/SAMP_SPECShippin/views/view.edit.php',
@@ -1293,10 +1297,10 @@ $installdefs = array (
 		'to' => 'custom/modules/SAMP_PreThrmCert/metadata/quickcreatedefs.php',
 		),
 
-	array(
-		'from' => '<basepath>/IDCreation_resources/modules/SAMP_RecStor/metadata/quickcreatedefs.php',
-		'to' => 'custom/modules/SAMP_RecStor/metadata/quickcreatedefs.php',
-		),
+#	array(
+#		'from' => '<basepath>/IDCreation_resources/modules/SAMP_RecStor/metadata/quickcreatedefs.php',
+#		'to' => 'custom/modules/SAMP_RecStor/metadata/quickcreatedefs.php',
+#		),
 
 	array(
 		'from' => '<basepath>/IDCreation_resources/modules/SAMP_RefFreezVer/metadata/quickcreatedefs.php',

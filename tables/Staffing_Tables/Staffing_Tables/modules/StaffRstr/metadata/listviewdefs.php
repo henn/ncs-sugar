@@ -9,6 +9,12 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'width' => '9%',
+    'label' => 'LBL_ASSIGNED_TO_NAME',
+    'default' => true,
+  ),
   'STAFF_TYPE' => 
   array (
     'type' => 'enum',
@@ -60,12 +66,6 @@ array (
     'label' => 'LBL_STAFF_ZIP',
     'width' => '10%',
     'default' => true,
-  ),
-  'ASSIGNED_USER_NAME' => 
-  array (
-    'width' => '9%',
-    'label' => 'LBL_ASSIGNED_TO_NAME',
-    'default' => false,
   ),
   'STAFF_TYPE_OTH' => 
   array (

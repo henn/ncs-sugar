@@ -41,8 +41,6 @@ $viewdefs[$module_name]['QuickCreate'] = array(
                                             array('label' => '10', 'field' => '30'), 
                                             array('label' => '10', 'field' => '30')
                                             ),                                                                                                                                    
-        ),
-      ),
       'useTabs' => false,
     ),
     'panels' => 
@@ -202,6 +200,5 @@ $viewdefs[$module_name]['QuickCreate'] = array(
         ),
       ),
     ),
-  ),
 );
 ?>

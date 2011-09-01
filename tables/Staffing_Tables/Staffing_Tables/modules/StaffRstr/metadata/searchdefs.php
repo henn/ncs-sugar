@@ -12,6 +12,15 @@ array (
         'default' => true,
         'width' => '10%',
       ),
+      'assigned_user_name' => 
+      array (
+        'link' => 'assigned_user_link',
+        'type' => 'relate',
+        'label' => 'LBL_ASSIGNED_TO_NAME',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'assigned_user_name',
+      ),
       'staff_type' => 
       array (
         'type' => 'enum',

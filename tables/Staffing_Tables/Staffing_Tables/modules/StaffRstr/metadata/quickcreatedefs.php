@@ -43,19 +43,11 @@ array (
         array (
           0 => 
           array (
-            'name' => 'staff_id',
-            'label' => 'LBL_STAFF_ID',
-          ),
-          1 => 
-          array (
             'name' => 'staff_type',
             'studio' => 'visible',
             'label' => 'LBL_STAFF_TYPE',
           ),
-        ),
-        2 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'staff_exp',
             'studio' => 'visible',

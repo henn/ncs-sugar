@@ -38,14 +38,62 @@ $module_name = 'ST_StaffRstr';
 $object_name = 'ST_StaffRstr';
 $_module_name = 'st_staffrstr';
 $popupMeta = array('moduleMain' => $module_name,
-						'varName' => $object_name,
-						'orderBy' => $_module_name.'.name',
-						'whereClauses' => 
-							array('name' => $_module_name . '.name', 
-								),
-						    'searchInputs'=> array($_module_name. '_number', 'name', 'priority','status'),
-							
-						);
-?>
- 
- 
+    'label' => 'LBL_STAFF_TYPE',
+    'sortable' => false,
+    'width' => '10%',
+    'name' => 'staff_type',
+  ),
+  'staff_gender' => 
+  array (
+    'type' => 'enum',
+    'studio' => 'visible',
+    'label' => 'LBL_STAFF_GENDER',
+    'sortable' => false,
+    'width' => '10%',
+    'name' => 'staff_gender',
+  ),
+  'assigned_user_name' => 
+  array (
+    'link' => 'assigned_user_link',
+    'type' => 'relate',
+    'label' => 'LBL_ASSIGNED_TO_NAME',
+    'width' => '10%',
+    'name' => 'assigned_user_name',
+  ),
+),
+    'listviewdefs' => array (
+  'NAME' => 
+  array (
+    'type' => 'name',
+    'label' => 'LBL_NAME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'link' => 'assigned_user_link',
+    'type' => 'relate',
+    'label' => 'LBL_ASSIGNED_TO_NAME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'STAFF_TYPE' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_STAFF_TYPE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'STAFF_GENDER' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_STAFF_GENDER',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+),
+);
