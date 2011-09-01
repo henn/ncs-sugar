@@ -54,9 +54,9 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'project_Custom_Resources',
-		  'published_date' => '2011-07-26 07:00:00',
+		  'published_date' => '2011-09-01 14:00:00',
 		  'type' => 'module',
-          'version' => '2.02',
+          'version' => '2.03',
           'remove_tables' => 'prompt',
           );
 $installdefs = array (
