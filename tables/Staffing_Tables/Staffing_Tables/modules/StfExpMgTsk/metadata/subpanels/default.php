@@ -36,35 +36,69 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  ********************************************************************************/
 
 $module_name='ST_StfExpMgTsk';
-$subpanel_layout = array(
-	'top_buttons' => array(
-		array('widget_class' => 'SubPanelTopCreateButton'),
-		array('widget_class' => 'SubPanelTopSelectButton', 'popup_module' => $module_name),
-	),
-
-	'where' => '',
-
-	'list_fields' => array(
-		'name'=>array(
-	 		'vname' => 'LBL_NAME',
-			'widget_class' => 'SubPanelDetailViewLink',
-	 		'width' => '45%',
-		),
-		'date_modified'=>array(
-	 		'vname' => 'LBL_DATE_MODIFIED',
-	 		'width' => '45%',
-		),
-		'edit_button'=>array(
-			'widget_class' => 'SubPanelEditButton',
-		 	'module' => $module_name,
-	 		'width' => '4%',
-		),
-		'remove_button'=>array(
-			'widget_class' => 'SubPanelRemoveButton',
-		 	'module' => $module_name,
-			'width' => '5%',
-		),
-	),
+$subpanel_layout = array (
+  'top_buttons' => 
+  array (
+    0 => 
+    array (
+      'widget_class' => 'SubPanelTopCreateButton',
+    ),
+    1 => 
+    array (
+      'widget_class' => 'SubPanelTopSelectButton',
+      'popup_module' => 'ST_StfExpMgTsk',
+    ),
+  ),
+  'where' => '',
+  'list_fields' => 
+  array (
+    'name' => 
+    array (
+      'vname' => 'LBL_NAME',
+      'widget_class' => 'SubPanelDetailViewLink',
+      'width' => '25%',
+      'default' => true,
+    ),
+    'mgmt_task_type' => 
+    array (
+      'type' => 'enum',
+      'default' => true,
+      'studio' => 'visible',
+      'vname' => 'LBL_MGMT_TASK_TYPE',
+      'sortable' => false,
+      'width' => '15%',
+    ),
+    'mgmt_task_hrs' => 
+    array (
+      'type' => 'decimal',
+      'vname' => 'LBL_MGMT_TASK_HRS',
+      'width' => '25%',
+      'default' => true,
+    ),
+    'mgmt_task_comment' => 
+    array (
+      'type' => 'text',
+      'studio' => 'visible',
+      'vname' => 'LBL_MGMT_TASK_COMMENT',
+      'sortable' => false,
+      'width' => '25%',
+      'default' => true,
+    ),
+    'edit_button' => 
+    array (
+      'widget_class' => 'SubPanelEditButton',
+      'module' => 'ST_StfExpMgTsk',
+      'width' => '4%',
+      'default' => true,
+    ),
+    'remove_button' => 
+    array (
+      'widget_class' => 'SubPanelRemoveButton',
+      'module' => 'ST_StfExpMgTsk',
+      'width' => '5%',
+      'default' => true,
+    ),
+  ),
 );
 
 ?>

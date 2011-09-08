@@ -75,7 +75,7 @@ $mod_strings = array (
   'LBL_COG_INFORM_RELATION_OTH' => 'COG Inform Relation Other',
   'LBL_COG_DIS_DESC' => 'Cognitive Disability Description',
   'LBL_PERM_DISABILITY' => 'Permanent Disability',
-  'LBL_DECEASED_INFORM_RELATION' => 'Deceases Inform Relation',
+  'LBL_DECEASED_INFORM_RELATION' => 'Deceased Inform Relation',
   'LBL_DECEASED_INFORM_OTH' => 'Deceased Inform Other',
   'LBL_YOD' => 'Year of Death',
   'LBL_WHO_REFUSED' => 'Who Refused',
@@ -83,7 +83,7 @@ $mod_strings = array (
   'LBL_REFUSER_STRENGTH' => 'Refuser Strength',
   'LBL_REF_ACTION' => 'Reference Action',
   'LBL_LT_ILLNESS_DESC' => 'Longterm Illness Description',
-  'LBL_PERM_LTR' => 'Permanent LTR',
+  'LBL_PERM_LTR' => 'Will the participant ever be able to participate in the study?',
   'LBL_REASON_UNAVAIL' => 'Reason Unavailable',
   'LBL_REASON_UNAVAIL_OTH' => 'Reason Unavailable Other',
   'LBL_DATE_AVAILABLE' => 'Date Available',
@@ -95,5 +95,9 @@ $mod_strings = array (
   'LBL_NIR_OTHER' => 'Non Interview Report Other',
   'LBL_NONINTERRPT' => 'Non Interview Report',
   'LBL_STATE_DEATH' => 'State Death',
+  'LBL_DETAILVIEW_PANEL1' => 'Access Information',
+  'LBL_DETAILVIEW_PANEL2' => 'Disability & Death',
+  'LBL_EDITVIEW_PANEL1' => 'Access Information',
+  'LBL_EDITVIEW_PANEL2' => 'Disablility & Death',
 );
 ?>

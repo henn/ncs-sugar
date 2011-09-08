@@ -4,7 +4,7 @@ $listViewDefs [$module_name] =
 array (
   'NAME' => 
   array (
-    'width' => '32%',
+    'width' => '15%',
     'label' => 'LBL_NAME',
     'default' => true,
     'link' => true,
@@ -25,17 +25,12 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'DATA_COLL_TASK_CASES' => 
+  'DATA_COLL_TASK_COMMENT' => 
   array (
-    'type' => 'varchar',
-    'label' => 'LBL_DATA_COLL_TASK_CASES',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'DATA_COLL_TRANSMIT' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_DATA_COLL_TRANSMIT',
+    'type' => 'text',
+    'studio' => 'visible',
+    'label' => 'LBL_DATA_COLL_TASK_COMMENT',
+    'sortable' => false,
     'width' => '10%',
     'default' => true,
   ),
@@ -46,15 +41,6 @@ array (
     'label' => 'LBL_ST_STFWKEXPNS_ST_STFEXPDCTSK_FROM_ST_STFWKEXPNS_TITLE',
     'width' => '10%',
     'default' => true,
-  ),
-  'DATA_COLL_TASK_COMMENT' => 
-  array (
-    'type' => 'text',
-    'studio' => 'visible',
-    'label' => 'LBL_DATA_COLL_TASK_COMMENT',
-    'sortable' => false,
-    'width' => '10%',
-    'default' => false,
   ),
   'STAFF_WEEKLY_EXPENSE_ID' => 
   array (
@@ -67,6 +53,20 @@ array (
   array (
     'width' => '9%',
     'label' => 'LBL_ASSIGNED_TO_NAME',
+    'default' => false,
+  ),
+  'DATA_COLL_TASK_CASES' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_DATA_COLL_TASK_CASES',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'DATA_COLL_TRANSMIT' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_DATA_COLL_TRANSMIT',
+    'width' => '10%',
     'default' => false,
   ),
   'DATA_COLL_TASK_TYPE_OTH' => 

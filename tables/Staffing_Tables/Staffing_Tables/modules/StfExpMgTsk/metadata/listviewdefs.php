@@ -25,14 +25,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'ST_STFWKEXPFEXPMGTSK_NAME' => 
-  array (
-    'type' => 'relate',
-    'link' => 'st_stfwkexpst_stfexpmgtsk',
-    'label' => 'LBL_ST_STFWKEXPNS_ST_STFEXPMGTSK_FROM_ST_STFWKEXPNS_TITLE',
-    'width' => '10%',
-    'default' => true,
-  ),
   'MGMT_TASK_COMMENT' => 
   array (
     'type' => 'text',
@@ -40,7 +32,15 @@ array (
     'label' => 'LBL_MGMT_TASK_COMMENT',
     'sortable' => false,
     'width' => '10%',
-    'default' => false,
+    'default' => true,
+  ),
+  'ST_STFWKEXPFEXPMGTSK_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'st_stfwkexpst_stfexpmgtsk',
+    'label' => 'LBL_ST_STFWKEXPNS_ST_STFEXPMGTSK_FROM_ST_STFWKEXPNS_TITLE',
+    'width' => '10%',
+    'default' => true,
   ),
   'MGMT_TASK_TYPE_OTH' => 
   array (
