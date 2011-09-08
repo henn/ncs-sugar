@@ -9,6 +9,12 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'width' => '9%',
+    'label' => 'LBL_ASSIGNED_TO_NAME',
+    'default' => true,
+  ),
   'STAFF_PAY' => 
   array (
     'type' => 'decimal',
@@ -51,12 +57,6 @@ array (
     'label' => 'LBL_WEEKLY_EXPENSES_COMMENT',
     'sortable' => false,
     'width' => '10%',
-    'default' => false,
-  ),
-  'ASSIGNED_USER_NAME' => 
-  array (
-    'width' => '9%',
-    'label' => 'LBL_ASSIGNED_TO_NAME',
     'default' => false,
   ),
 );

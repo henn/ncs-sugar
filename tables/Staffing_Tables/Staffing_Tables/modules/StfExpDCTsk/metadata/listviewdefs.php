@@ -18,10 +18,24 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
+  'DATA_COLL_TASK_TYPE_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_DATA_COLL_TASK_TYPE_OTH',
+    'width' => '10%',
+    'default' => true,
+  ),
   'DATA_COLL_TASKS_HRS' => 
   array (
     'type' => 'decimal',
     'label' => 'LBL_DATA_COLL_TASKS_HRS',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'DATA_COLL_TASK_CASES' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_DATA_COLL_TASK_CASES',
     'width' => '10%',
     'default' => true,
   ),
@@ -55,24 +69,10 @@ array (
     'label' => 'LBL_ASSIGNED_TO_NAME',
     'default' => false,
   ),
-  'DATA_COLL_TASK_CASES' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_DATA_COLL_TASK_CASES',
-    'width' => '10%',
-    'default' => false,
-  ),
   'DATA_COLL_TRANSMIT' => 
   array (
     'type' => 'varchar',
     'label' => 'LBL_DATA_COLL_TRANSMIT',
-    'width' => '10%',
-    'default' => false,
-  ),
-  'DATA_COLL_TASK_TYPE_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_DATA_COLL_TASK_TYPE_OTH',
     'width' => '10%',
     'default' => false,
   ),

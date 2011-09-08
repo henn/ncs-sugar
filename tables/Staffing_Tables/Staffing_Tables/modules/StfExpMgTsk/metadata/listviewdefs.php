@@ -18,6 +18,13 @@ array (
     'sortable' => false,
     'width' => '30%',
   ),
+  'MGMT_TASK_TYPE_OTH' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_MGMT_TASK_TYPE_OTH',
+    'width' => '10%',
+    'default' => true,
+  ),
   'MGMT_TASK_HRS' => 
   array (
     'type' => 'decimal',
@@ -41,13 +48,6 @@ array (
     'label' => 'LBL_ST_STFWKEXPNS_ST_STFEXPMGTSK_FROM_ST_STFWKEXPNS_TITLE',
     'width' => '10%',
     'default' => true,
-  ),
-  'MGMT_TASK_TYPE_OTH' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_MGMT_TASK_TYPE_OTH',
-    'width' => '10%',
-    'default' => false,
   ),
   'ASSIGNED_USER_NAME' => 
   array (
