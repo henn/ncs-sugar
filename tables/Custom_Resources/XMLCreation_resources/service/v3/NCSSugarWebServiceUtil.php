@@ -336,7 +336,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $xmlWriter->startElement('outreach');
                 $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'tsu_id', $val['tsu_id']);
-                $this->addXMLElement($xmlWriter, 'ssu_id', $record['st_wkoeact_ecsampunt_name']);  // NO DB FIELD OR RELATIONSHIP
+                $this->addXMLElement($xmlWriter, 'ssu_id', $val['st_wkoeact_ecsampunt_name']);
                 $this->addXMLElement($xmlWriter, 'outreach_event_id', $val['name']);
                 $this->addXMLElement($xmlWriter, 'outreach_event_date', $val['outreach_event_date']);
                 //$this->addXMLElement($xmlWriter, 'outreach_target', $record['st_msouttart_wkoeact_name']);
