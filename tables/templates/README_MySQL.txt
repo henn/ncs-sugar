@@ -27,6 +27,10 @@ In order to use Event Generation Scheduler Run the following SQL script to creat
 
 
 
+
+
+
+
 -- --------------------------------------------------------
 --
 -- Table structure for table `auto_event_log`
@@ -78,10 +82,10 @@ CREATE TABLE IF NOT EXISTS `auto_eventinfo_setting` (
 --
 
 INSERT INTO `auto_eventinfo_setting` (`event_type_code`, `event_name`, `event_cat`, `event_disposition_cat`, `visit_window_start_month`, `visit_window_end_month`, `spi_time_frame`, `bv_time_frame`, `ipi_time_frame`, `date_created`, `date_modified`, `added_by`, `modified_by`, `active`) VALUES
-('23', '3 Month Visit', 'postnatal', '5', 2, 4, 0, 0, 0, '2011-06-24 03:15:53', '2011-06-30 18:33:22', '', '', 1),
-('24', '6 Month Visit', 'postnatal', '3', 5, 7, 0, 0, 0, '2011-06-24 03:15:53', '2011-06-30 18:38:06', '', '', 1),
-('26', '9 Month Visit', 'postnatal', '5', 8, 10, 0, 0, 0, '2011-06-24 03:15:53', '2011-06-30 17:26:07', '', '', 1),
-('27', '12 Month Visit', 'postnatal', '3', 11, 18, 0, 0, 0, '2011-06-24 03:15:53', '2011-06-30 19:50:02', '', '', 1),
+('23', '3 Month', 'postnatal', '5', 2, 4, 0, 0, 0, '2011-06-24 03:15:53', '2011-06-30 18:33:22', '', '', 1),
+('24', '6 Month', 'postnatal', '3', 5, 7, 0, 0, 0, '2011-06-24 03:15:53', '2011-06-30 18:38:06', '', '', 1),
+('26', '9 Month', 'postnatal', '5', 8, 10, 0, 0, 0, '2011-06-24 03:15:53', '2011-06-30 17:26:07', '', '', 1),
+('27', '12 Month', 'postnatal', '3', 11, 18, 0, 0, 0, '2011-06-24 03:15:53', '2011-06-30 19:50:02', '', '', 1),
 ('15', 'Pregnancy Visit 2/SPI', 'prenatal', '3', 0, 0, 60, 0, 0, '2011-06-24 03:15:53', '2011-06-30 18:38:08', '', '', 1),
 ('18', 'Birth Visit', 'prenatal', '3', 0, 0, 0, 30, 0, '2011-06-24 03:15:53', '2011-06-30 18:38:09', '', '', 1),
 ('13', 'Pregnancy Visit 1', 'prenatal', '3', 0, 0, 0, 0, 1, '2011-06-30 00:00:00', '2011-06-30 00:00:00', '', '', 1);
