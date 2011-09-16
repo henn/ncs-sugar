@@ -9,9 +9,8 @@ debug = True
 if debug:
     httplib.HTTPConnection.debuglevel = 1
 
+
 url = 'http://192.168.65.128/sugarcrm/custom/service/v3/rest.php'
-#url = 'https://127.0.0.1/custom/service/v3/rest.php'
-#url = 'http://localhost/sugar/service/v2/rest.php'
 
 
 # Parsed by datetime.strftime()

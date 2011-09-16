@@ -134,7 +134,7 @@ class SugarRestXML extends SugarRest{
                 $this->generateFaultResponse($this->faultObject);
             } else {
                 ob_clean();
-                if ($_REQUEST['method'] == 'export_vdr_data' || $_REQUEST['method'] == 'vdr_export'){  // ALREADY IN XML
+                if ($_REQUEST['method'] == 'export_vdr_data'){  // ALREADY IN XML
                     echo $input;
                 } else {
                     echo $this->convertArrayToXML($input);

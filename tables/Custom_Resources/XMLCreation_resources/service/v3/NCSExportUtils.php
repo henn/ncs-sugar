@@ -1,13 +1,33 @@
 <?php
 if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
+
+function getObjectList($type)
+{
+    global $beanList;
+    global $beanFiles;
+    $bean = $beanList[$type];
+    require_once($beanFiles[$bean]);
+    $focus = new $bean;
+    $tablename = $focus->getTableName();
+    $query = 'select id from ' . $tablename . ' where deleted = 0';
+    $db = DBManagerFactory::getInstance();
+    $result = $db->query($query, true, 'Unable to get id list for '.$type. ':' .$query);
+    while($val = $db->fetchByAssoc($result,-1,false))
+    {
+        $objectList[] = $val['id'];
+    }
+    unset($result);
+    return $objectList;
+}
+
 /**
  *
- * @param db $db The database instance to use for the query
+ * @param db $db The database instance
  * @param type $type The sugar bean we want to export
+ * @param array $chunk An array of record IDs to process
  */
-function export(&$db, $type)
+function export(&$db, $type, $chunk)
 {
-    $GLOBALS['log']->error($type . ' --- export called: ' . memory_get_usage());
     global $beanList;
     global $beanFiles;
     global $current_user;
@@ -20,7 +40,10 @@ function export(&$db, $type)
     require_once($beanFiles[$bean]);
     $focus = new $bean;
     $searchFields = array();
-    $where = '';
+    if ($chunk != null)
+        $where = $focus->getTableName(). '.id in ("' . join('","', $chunk) . '")';
+    else
+        $where = '';
     $order_by = '';
     $beginWhere = substr(trim($where), 0, 5);
     if ($beginWhere == "where")
@@ -30,7 +53,18 @@ function export(&$db, $type)
     $result = $db->query($query, true, $app_strings['ERR_EXPORT_TYPE'].$type.": <BR>.".$query);
     unset($focus);
     unset($query);
-    $GLOBALS['log']->error($type . ' --- export finished: ' . memory_get_usage());
     return $result;
+}
+
+function getModuleNameByID($tablename, $id)
+{
+    $db = DBManagerFactory::getInstance();
+    $query = 'select id, name from ' . $tablename . " where id='" . $id . "'";
+    $result = $db->query($query, true, $app_strings['ERR_EXPORT_TYPE'].$type.": <BR>.".$query);
+    unset($focus);
+    unset($query);
+    $val = $db->fetchByAssoc($result, -1, false);
+    unset($result);
+    return $val['name'];
 }
 ?>
