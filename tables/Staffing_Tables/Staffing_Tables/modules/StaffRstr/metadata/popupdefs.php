@@ -42,7 +42,6 @@ $popupMeta = array('moduleMain' => $module_name,
     'sortable' => false,
     'width' => '10%',
     'name' => 'staff_type',
-  ),
   'staff_gender' => 
   array (
     'type' => 'enum',
@@ -60,7 +59,6 @@ $popupMeta = array('moduleMain' => $module_name,
     'width' => '10%',
     'name' => 'assigned_user_name',
   ),
-),
   'listviewdefs' => array (
   'NAME' => 
   array (
