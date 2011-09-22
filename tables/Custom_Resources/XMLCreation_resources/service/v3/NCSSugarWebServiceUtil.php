@@ -148,7 +148,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $this->addXMLElement($xmlWriter, 'du_type_oth', $val['du_type_oth']);
             //$this->addXMLElement($xmlWriter, 'du_ineligible', $record['du_ineligible']);
             $this->addXMLElement($xmlWriter, 'du_ineligible', str_replace("_", "-", $val['du_ineligible']));
-            $this->addXMLElement($xmlWriter, 'du_access', $val['du_access']);
+            // $this->addXMLElement($xmlWriter, 'du_access', $val['du_access']);
+			$this->addXMLElement($xmlWriter, 'du_access', str_replace("_", "-", $val['du_access']));
             $this->addXMLElement($xmlWriter, 'duid_comment', $val['duid_comment']);
             $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
@@ -358,8 +359,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'ssu_id', $val['st_wkoeact_ecsampunt_name']);  // NO DB FIELD OR RELATIONSHIP
                 $this->addXMLElement($xmlWriter, 'outreach_event_id', $val['name']);
                 // $this->addXMLElement($xmlWriter, 'outreach_event_date', $val['outreach_event_date']);
-				$start_date = preg_split('/[ ]/', $val['outreach_event_id']);
-                $this->addXMLElement($xmlWriter, 'outreach_event_id', $start_date[0]);
+				$outreach_event_date = preg_split('/[ ]/', $val['outreach_event_date']);
+                $this->addXMLElement($xmlWriter, 'outreach_event_date', $outreach_event_date[0]);
                 //$this->addXMLElement($xmlWriter, 'outreach_target', $record['st_msouttart_wkoeact_name']);
                 //$this->addXMLElement($xmlWriter, 'outreach_target_oth', $record['outreach_target_oth']);
                 // $this->addXMLElement($xmlWriter, 'outreach_mode', $val['outreach_mode']);
@@ -542,7 +543,9 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'age', $val['age']);
                 //$this->addXMLElement($xmlWriter, 'age_range', $record['age_range']);
 				$this->addXMLElement($xmlWriter, 'age_range', str_replace("_", "-", $val['age_range']));
-                $this->addXMLElement($xmlWriter, 'person_dob', $val['person_dob']);
+                // $this->addXMLElement($xmlWriter, 'person_dob', $val['person_dob']);
+				$person_dob = preg_split('/[ ]/', $val['person_dob']);
+				$this->addXMLElement($xmlWriter, 'person_dob', $person_dob[0]);
                 $this->addXMLElement($xmlWriter, 'deceased', $val['deceased']);
                 //$this->addXMLElement($xmlWriter, 'ethnic_group', $record['ethnic_group']);
 				$this->addXMLElement($xmlWriter, 'ethnic_group', str_replace("_", "-", $val['ethnic_group']));
@@ -564,8 +567,12 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 // $this->addXMLElement($xmlWriter, 'p_info_source', $val['p_info_source']);
 				$this->addXMLElement($xmlWriter, 'p_info_source', str_replace("_", "-", $val['p_info_source']));
                 $this->addXMLElement($xmlWriter, 'p_info_source_oth', $val['p_info_source_oth']);
-                $this->addXMLElement($xmlWriter, 'p_info_date', $val['p_info_date']);
-                $this->addXMLElement($xmlWriter, 'p_info_update', $val['p_info_update']);
+                // $this->addXMLElement($xmlWriter, 'p_info_date', $val['p_info_date']);
+				$p_info_date = preg_split('/[ ]/', $val['p_info_date']);
+				$this->addXMLElement($xmlWriter, 'p_info_date', $p_info_date[0]);
+                // $this->addXMLElement($xmlWriter, 'p_info_update', $val['p_info_update']);
+				$p_info_update = preg_split('/[ ]/', $val['p_info_update']);
+				$this->addXMLElement($xmlWriter, 'p_info_update', $p_info_update[0]);
                 $this->addXMLElement($xmlWriter, 'person_comment', $val['person_comment']);
                 $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
@@ -587,7 +594,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 //$this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(PERSON_RACE_SUGAR_MODULE, $val['id'], 'plt_person_plt_personrace', 'name'));
                 // $this->addXMLElement($xmlWriter, 'race', $val['race']);
 				$this->addXMLElement($xmlWriter, 'race', str_replace("_", "-", $val['race']));
-                $this->addXMLElement($xmlWriter, 'race_oth', $val['race_oth']);
+                // $this->addXMLElement($xmlWriter, 'race_oth', $val['race_oth']);
+				$this->addXMLElement($xmlWriter, 'race_oth', str_replace("_", "-", $val['race_oth']));
                 $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
         }
@@ -639,7 +647,9 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'status_info_date', $val['status_info_date']);
                 // $this->addXMLElement($xmlWriter, 'enroll_status', $val['enroll_status']);
 				$this->addXMLElement($xmlWriter, 'enroll_status', str_replace("_", "-", $val['enroll_status']));
-                $this->addXMLElement($xmlWriter, 'enroll_date', $val['enroll_date']);
+                // $this->addXMLElement($xmlWriter, 'enroll_date', $val['enroll_date']);
+				$enroll_date = preg_split('/[ ]/', $val['enroll_date']);
+				$this->addXMLElement($xmlWriter, 'enroll_date', $enroll_date[0]);
                 // $this->addXMLElement($xmlWriter, 'pid_entry', $val['pid_entry']);
 				$this->addXMLElement($xmlWriter, 'pid_entry', str_replace("_", "-", $val['pid_entry']));
                 $this->addXMLElement($xmlWriter, 'pid_entry_other', $val['pid_entry_other']);
@@ -722,12 +732,16 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 				$this->addXMLElement($xmlWriter, 'consent_form_type', str_replace("_", "-", $val['consent_form_type']));
               	// $this->addXMLElement($xmlWriter, 'consent_given', $val['consent_given']);
 				$this->addXMLElement($xmlWriter, 'consent_given', str_replace("_", "-", $val['consent_given']));
-				$this->addXMLElement($xmlWriter, 'consent_date', $val['consent_date']);
+				// $this->addXMLElement($xmlWriter, 'consent_date', $val['consent_date']);
+				$consent_date = preg_split('/[ ]/', $val['consent_date']);
+				$this->addXMLElement($xmlWriter, 'consent_date', $consent_date[0]);
                 $this->addXMLElement($xmlWriter, 'consent_withdraw', $val['consent_withdraw']);
                 $this->addXMLElement($xmlWriter, 'consent_withdraw_type', str_replace("_", "-", $val['consent_withdraw_type']));
                 // $this->addXMLElement($xmlWriter, 'consent_withdraw_reason', $val['consent_withdraw_reason']);
 				$this->addXMLElement($xmlWriter, 'consent_withdraw_reason', str_replace("_", "-", $val['consent_withdraw_reason']));
-				$this->addXMLElement($xmlWriter, 'consent_withdraw_date', $val['consent_withdraw_date']);
+				// $this->addXMLElement($xmlWriter, 'consent_withdraw_date', $val['consent_withdraw_date']);
+				$consent_withdraw_date = preg_split('/[ ]/', $val['consent_withdraw_date']);
+				$this->addXMLElement($xmlWriter, 'consent_withdraw_date', $consent_withdraw_date[0]);
                 // $this->addXMLElement($xmlWriter, 'consent_language', $val['consent_language']);
 				$this->addXMLElement($xmlWriter, 'consent_language', str_replace("_", "-", $val['consent_language']));
 				$this->addXMLElement($xmlWriter, 'consent_language_oth', $val['consent_language_oth']);
@@ -735,8 +749,6 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 // $this->addXMLElement($xmlWriter, 'who_consented', $val['who_consented']);
 				$this->addXMLElement($xmlWriter, 'who_consented', str_replace("_", "-", $val['who_consented']));
 				$this->addXMLElement($xmlWriter, 'person_wthdrw_consent_id', $val['person_wthdrw_consent_id']);
-				$w_date = preg_split('/[ ]/', $val['person_wthdrw_consent_id']);
-				$this->addXMLElement($xmlWriter, 'person_wthdrw_consent_id', $w_date[0]);
                 $this->addXMLElement($xmlWriter, 'who_wthdrw_consent', str_replace("_", "-", $val['who_wthdrw_consent']));
                 // $this->addXMLElement($xmlWriter, 'consent_translate', $val['consent_translate']);
 				$this->addXMLElement($xmlWriter, 'consent_translate', str_replace("_", "-", $val['consent_translate']));
@@ -759,7 +771,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $xmlWriter->startElement('ppg_details');
                 $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'ppg_details_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'p_id', $val['plt_participgdetails_name']);
+                $this->addXMLElement($xmlWriter, 'p_id', $val['plt_partiFeinstcipgdetails_name']);
                 // $this->addXMLElement($xmlWriter, 'ppg_pid_status', $val['ppg_pid_status']);
 				$this->addXMLElement($xmlWriter, 'ppg_pid_status', str_replace("_", "-", $val['ppg_pid_status']));
                 // $this->addXMLElement($xmlWriter, 'ppg_first', $val['ppg_first']);
@@ -819,8 +831,6 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 // $this->addXMLElement($xmlWriter, 'provider_type', $val['provider_type']);
 					$this->addXMLElement($xmlWriter, 'provider_type', str_replace("_", "-", $val['provider_type']));
                 $this->addXMLElement($xmlWriter, 'provider_type_oth', $val['provider_type_oth']);
-                $this->addXMLElement($xmlWriter, 'provider_ncs_role', str_replace("_", "-", $val['provider_ncs_role']));
-                $this->addXMLElement($xmlWriter, 'provider_ncs_role_oth', $val['provider_ncs_role_oth']);
                 // $this->addXMLElement($xmlWriter, 'practice_info', $val['practice_info']);
 				$this->addXMLElement($xmlWriter, 'practice_info', str_replace("_", "-", $val['practice_info']));
                 // $this->addXMLElement($xmlWriter, 'practice_patient_load', $val['practice_patient_load']);
@@ -854,7 +864,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $xmlWriter->startElement('provider_role');
                 $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'provider_role_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'provider_id', $val['olt_msprovr_provider_name']);
+                // $this->addXMLElement($xmlWriter, 'provider_id', $val['olt_msprovr_provider_name']);
+				$this->addXMLElement($xmlWriter, 'provider_id', $val['olt_providesprovrole_name']);
                 // $this->addXMLElement($xmlWriter, 'provider_ncs_role', $val['provider_ncs_role']);
 				$this->addXMLElement($xmlWriter, 'provider_ncs_role', str_replace("^","",str_replace("_", "-", $val['provider_ncs_role'])));
                 $this->addXMLElement($xmlWriter, 'provider_ncs_role_oth', $val['provider_ncs_role_oth']);
@@ -976,7 +987,9 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 // $this->addXMLElement($xmlWriter, 'address_info_mode', $val['address_info_mode']);
 				$this->addXMLElement($xmlWriter, 'address_info_mode', str_replace("_", "-", $val['address_info_mode']));
                 $this->addXMLElement($xmlWriter, 'address_info_mode_oth', $val['address_info_mode_oth']);
-                $this->addXMLElement($xmlWriter, 'address_info_date', $val['address_info_date']);
+                // $this->addXMLElement($xmlWriter, 'address_info_date', $val['address_info_date']);
+				$address_info_date = preg_split('/[ ]/', $val['address_info_date']);
+				$this->addXMLElement($xmlWriter, 'address_info_date', $address_info_date[0]);
                 $this->addXMLElement($xmlWriter, 'address_info_update', $val['address_info_update']);
                 $this->addXMLElement($xmlWriter, 'address_start_date', $val['address_start_date']);
                 $this->addXMLElement($xmlWriter, 'address_end_date', $val['address_end_date']);
@@ -1038,7 +1051,9 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 // $this->addXMLElement($xmlWriter, 'text_permission', $val['text_permission']);
 				$this->addXMLElement($xmlWriter, 'text_permission', str_replace("_", "-", $val['text_permission']));
                 $this->addXMLElement($xmlWriter, 'phone_comment', $val['phone_comment']);
-                $this->addXMLElement($xmlWriter, 'phone_start_date', $val['phone_start_date']);
+                // $this->addXMLElement($xmlWriter, 'phone_start_date', $val['phone_start_date']);
+				$phone_start_date = preg_split('/[ ]/', $val['phone_start_date']);
+				$this->addXMLElement($xmlWriter, 'phone_start_date', $phone_start_date[0]);
                 $this->addXMLElement($xmlWriter, 'phone_end_date', $val['phone_end_date']);
                 $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
@@ -1067,8 +1082,12 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 // $this->addXMLElement($xmlWriter, 'email_info_source', $val['email_info_source']);
 				$this->addXMLElement($xmlWriter, 'email_info_source', str_replace("_", "-", $val['email_info_source']));
                 $this->addXMLElement($xmlWriter, 'email_info_source_oth', $val['email_info_source_oth']);
-                $this->addXMLElement($xmlWriter, 'email_info_date', $val['email_info_date']);
-                $this->addXMLElement($xmlWriter, 'email_info_update', $val['email_info_update']);
+                // $this->addXMLElement($xmlWriter, 'email_info_date', $val['email_info_date']);
+				$email_info_date = preg_split('/[ ]/', $val['email_info_date']);
+				$this->addXMLElement($xmlWriter, 'email_info_date', $email_info_date[0]);
+                // $this->addXMLElement($xmlWriter, 'email_info_update', $val['email_info_update']);
+				$email_info_update = preg_split('/[ ]/', $val['email_info_update']);
+				$this->addXMLElement($xmlWriter, 'email_info_update', $email_info_update[0]);
                 // $this->addXMLElement($xmlWriter, 'email_type', $val['email_type']);
 				$this->addXMLElement($xmlWriter, 'email_type', str_replace("_", "-", $val['email_type']));
                 $this->addXMLElement($xmlWriter, 'email_type_oth', $val['email_type_oth']);
@@ -1077,7 +1096,9 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 // $this->addXMLElement($xmlWriter, 'email_active', $val['email_active']);
 				$this->addXMLElement($xmlWriter, 'email_active', str_replace("_", "-", $val['email_active']));
                 $this->addXMLElement($xmlWriter, 'email_comment', $val['email_comment']);
-                $this->addXMLElement($xmlWriter, 'email_start_date', $val['email_start_date']);
+                // $this->addXMLElement($xmlWriter, 'email_start_date', $val['email_start_date']);
+				$email_start_date = preg_split('/[ ]/', $val['email_start_date']);
+				$this->addXMLElement($xmlWriter, 'email_start_date', $email_start_date[0]);
                 $this->addXMLElement($xmlWriter, 'email_end_date', $val['email_end_date']);
                 $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
@@ -1095,7 +1116,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
                 $this->addXMLElement($xmlWriter, 'event_id', $val['name']);
                 $this->addXMLElement($xmlWriter, 'participant_id', $val['ncsdc_eventrticipant_name']);
-                $this->addXMLElement($xmlWriter, 'event_type', str_replace("_", "-", $val['psevent_typeu_id']));
+                $this->addXMLElement($xmlWriter, 'event_type', str_replace("_", "-", $val['event_type']));
                 $this->addXMLElement($xmlWriter, 'event_type_oth', $val['event_type_oth']);
                 $this->addXMLElement($xmlWriter, 'event_repeat_key', $val['event_repeat_key']);
                 $this->addXMLElement($xmlWriter, 'event_disp', $val['event_disp']);
@@ -1110,7 +1131,6 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'event_end_date', $end_date[0]);
                 $end_time = preg_split('/[ ]/', $val['event_end_date_time']);
                 $this->addXMLElement($xmlWriter, 'event_end_time', $end_time[1]);
-				$this->addXMLElement($xmlWriter, 'event_end_time', $end_time[1]);
                 // $this->addXMLElement($xmlWriter, 'event_breakoff', $val['event_breakoff']);
 				$this->addXMLElement($xmlWriter, 'event_breakoff', str_replace("_", "-", $val['event_breakoff']));
                 // $this->addXMLElement($xmlWriter, 'event_incentive_type', $val['event_incentive_type']);
