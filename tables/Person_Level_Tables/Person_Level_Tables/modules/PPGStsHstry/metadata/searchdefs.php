@@ -77,6 +77,51 @@ array (
         'width' => '10%',
         'name' => 'ppg_info_source',
       ),
+      'ppg_info_mode' => 
+      array (
+        'type' => 'enum',
+        'default' => true,
+        'studio' => 'visible',
+        'label' => 'LBL_PPG_INFO_MODE',
+        'sortable' => false,
+        'width' => '10%',
+        'name' => 'ppg_info_mode',
+      ),
+      'ppg_info_source_oth' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_PPG_INFO_SOURCE_OTH',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'ppg_info_source_oth',
+      ),
+      'ppg_info_mode_oth' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_PPG_INFO_MODE_OTH',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'ppg_info_mode_oth',
+      ),
+      'ppg_comment' => 
+      array (
+        'type' => 'text',
+        'studio' => 'visible',
+        'label' => 'LBL_PPG_COMMENT',
+        'sortable' => false,
+        'width' => '10%',
+        'default' => true,
+        'name' => 'ppg_comment',
+      ),
+      'plt_particigstshstry_name' => 
+      array (
+        'type' => 'relate',
+        'link' => 'plt_particilt_ppgstshstry',
+        'label' => 'LBL_PLT_PARTICIPANT_PLT_PPGSTSHSTRY_FROM_PLT_PARTICIPANT_TITLE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'plt_particigstshstry_name',
+      ),
       'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',

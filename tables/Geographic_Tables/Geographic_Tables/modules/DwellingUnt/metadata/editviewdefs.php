@@ -114,11 +114,7 @@ array (
         ),
         8 => 
         array (
-          0 => 
-          array (
-            'name' => 'gt_dwellingt_address_name',
-            'label' => 'LBL_GT_DWELLINGUNT_LTT_ADDRESS_FROM_LTT_ADDRESS_TITLE',
-          ),
+          0 => '',
           1 => 
           array (
             'name' => 'gt_listinguellingunt_name',
@@ -130,6 +126,11 @@ array (
           0 => 
           array (
             'name' => 'gt_secsampuellingunt_name',
+          ),
+          1 => 
+          array (
+            'name' => 'gt_dwellingt_address_name',
+            'label' => 'LBL_GT_DWELLINGUNT_LTT_ADDRESS_FROM_LTT_ADDRESS_TITLE',
           ),
         ),
       ),

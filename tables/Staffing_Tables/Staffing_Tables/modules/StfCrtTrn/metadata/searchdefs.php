@@ -89,6 +89,41 @@ array (
         'width' => '10%',
         'name' => 'staff_bgcheck_lvl',
       ),
+      'cert_type_frequency' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_CERT_TYPE_FREQUENCY',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'cert_type_frequency',
+      ),
+      'cert_type_exp_date' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_CERT_TYPE_EXP_DATE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'cert_type_exp_date',
+      ),
+      'cert_comment' => 
+      array (
+        'type' => 'text',
+        'studio' => 'visible',
+        'label' => 'LBL_CERT_COMMENT',
+        'sortable' => false,
+        'width' => '10%',
+        'default' => true,
+        'name' => 'cert_comment',
+      ),
+      'st_staffrststfcrttrn_name' => 
+      array (
+        'type' => 'relate',
+        'link' => 'st_staffrstr_st_stfcrttrn',
+        'label' => 'LBL_ST_STAFFRSTR_ST_STFCRTTRN_FROM_ST_STAFFRSTR_TITLE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'st_staffrststfcrttrn_name',
+      ),
       'assigned_user_name' => 
       array (
         'link' => 'assigned_user_link',

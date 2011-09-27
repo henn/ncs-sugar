@@ -44,6 +44,15 @@ array (
         'default' => true,
         'name' => 'staff_miles',
       ),
+      'st_staffrsttfwkexpns_name' => 
+      array (
+        'type' => 'relate',
+        'link' => 'st_staffrst_st_stfwkexpns',
+        'label' => 'LBL_ST_STAFFRSTR_ST_STFWKEXPNS_FROM_ST_STAFFRSTR_TITLE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'st_staffrsttfwkexpns_name',
+      ),
     ),
     'advanced_search' => 
     array (
@@ -93,6 +102,16 @@ array (
         'default' => true,
         'name' => 'week_start_date',
       ),
+      'weekly_expenses_comment' => 
+      array (
+        'type' => 'text',
+        'studio' => 'visible',
+        'label' => 'LBL_WEEKLY_EXPENSES_COMMENT',
+        'sortable' => false,
+        'width' => '10%',
+        'default' => true,
+        'name' => 'weekly_expenses_comment',
+      ),
       'assigned_user_id' => 
       array (
         'name' => 'assigned_user_id',
@@ -108,6 +127,15 @@ array (
         ),
         'default' => true,
         'width' => '10%',
+      ),
+      'st_staffrsttfwkexpns_name' => 
+      array (
+        'type' => 'relate',
+        'link' => 'st_staffrst_st_stfwkexpns',
+        'label' => 'LBL_ST_STAFFRSTR_ST_STFWKEXPNS_FROM_ST_STAFFRSTR_TITLE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'st_staffrsttfwkexpns_name',
       ),
     ),
   ),

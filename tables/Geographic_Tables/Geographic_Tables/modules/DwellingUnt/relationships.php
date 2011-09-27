@@ -37,9 +37,12 @@
 $relationships = array (
   'gt_dwellingunt_ltt_address' => 
   array (
+    'rhs_label' => 'LTT_Address',
+    'lhs_label' => 'Dwelling Unit (DU)',
+    'lhs_subpanel' => 'default',
     'lhs_module' => 'GT_DwellingUnt',
     'rhs_module' => 'LTT_Address',
-    'relationship_type' => 'one-to-one',
+    'relationship_type' => 'many-to-one',
     'readonly' => false,
     'deleted' => false,
     'relationship_only' => false,
