@@ -62,7 +62,8 @@ $popupMeta = array('moduleMain' => $module_name,
   'listviewdefs' => array (
   'NAME' => 
   array (
-    'type' => 'name',
+	'link' => 'name',
+    'type' => 'relate',
     'label' => 'LBL_NAME',
     'width' => '10%',
     'default' => true,
