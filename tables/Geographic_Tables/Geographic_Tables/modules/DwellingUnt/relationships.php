@@ -39,10 +39,10 @@ $relationships = array (
   array (
     'rhs_label' => 'LTT_Address',
     'lhs_label' => 'Dwelling Unit (DU)',
-    'lhs_subpanel' => 'default',
+    'rhs_subpanel' => 'default',
     'lhs_module' => 'GT_DwellingUnt',
     'rhs_module' => 'LTT_Address',
-    'relationship_type' => 'many-to-one',
+    'relationship_type' => 'one-to-many',
     'readonly' => false,
     'deleted' => false,
     'relationship_only' => false,

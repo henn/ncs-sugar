@@ -122,11 +122,7 @@ array (
           array (
             'name' => 'gt_secsampuellingunt_name',
           ),
-          1 => 
-          array (
-            'name' => 'gt_dwellingt_address_name',
-            'label' => 'LBL_GT_DWELLINGUNT_LTT_ADDRESS_FROM_LTT_ADDRESS_TITLE',
-          ),
+          1 => '',
         ),
       ),
     ),
