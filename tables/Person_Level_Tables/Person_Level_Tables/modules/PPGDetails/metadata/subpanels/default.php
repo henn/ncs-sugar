@@ -30,6 +30,20 @@ $subpanel_layout = array (
       'width' => '10%',
       'default' => true,
     ),
+    'due_date_2' => 
+    array (
+      'type' => 'date',
+      'vname' => 'LBL_DUE_DATE_2',
+      'width' => '10%',
+      'default' => true,
+    ),
+    'due_date_3' => 
+    array (
+      'type' => 'date',
+      'vname' => 'LBL_DUE_DATE_3',
+      'width' => '10%',
+      'default' => true,
+    ),
     'ppg_first' => 
     array (
       'type' => 'enum',

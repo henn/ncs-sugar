@@ -77,6 +77,46 @@ array (
         'width' => '10%',
         'name' => 'event_type',
       ),
+      'event_type_oth' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_EVENT_TYPE_OTH',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_type_oth',
+      ),
+      'event_start_date_time' => 
+      array (
+        'type' => 'datetimecombo',
+        'label' => 'LBL_EVENT_START_DATE_TIME',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_start_date_time',
+      ),
+      'event_end_date_time' => 
+      array (
+        'type' => 'datetimecombo',
+        'label' => 'LBL_EVENT_END_DATE_TIME',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_end_date_time',
+      ),
+      'visit_window_starttime_c' => 
+      array (
+        'type' => 'date',
+        'label' => 'LBL_VISIT_WINDOW_STARTDATE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'visit_window_starttime_c',
+      ),
+      'visit_window_endtime_c' => 
+      array (
+        'type' => 'date',
+        'label' => 'LBL_VISIT_WINDOW_ENDDATE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'visit_window_endtime_c',
+      ),
       'event_disp_cat' => 
       array (
         'type' => 'enum',
@@ -138,6 +178,34 @@ array (
         'width' => '10%',
         'default' => true,
         'name' => 'event_incent_noncash',
+      ),
+      'event_comment' => 
+      array (
+        'type' => 'text',
+        'studio' => 'visible',
+        'label' => 'LBL_EVENT_COMMENT',
+        'sortable' => false,
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_comment',
+      ),
+      'ncsdc_cntcteventinfo_name' => 
+      array (
+        'type' => 'relate',
+        'link' => 'ncsdc_cntctcsdc_eventinfo',
+        'label' => 'LBL_NCSDC_CNTCTINFO_NCSDC_EVENTINFO_FROM_NCSDC_CNTCTINFO_TITLE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'ncsdc_cntcteventinfo_name',
+      ),
+      'ncsdc_eventrticipant_name' => 
+      array (
+        'type' => 'relate',
+        'link' => 'ncsdc_eventlt_participant',
+        'label' => 'LBL_NCSDC_EVENTINFO_PLT_PARTICIPANT_FROM_PLT_PARTICIPANT_TITLE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'ncsdc_eventrticipant_name',
       ),
       'assigned_user_id' => 
       array (
