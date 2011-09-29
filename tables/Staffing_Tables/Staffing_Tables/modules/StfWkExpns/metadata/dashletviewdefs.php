@@ -47,8 +47,6 @@ $dashletData['ST_StfWkExpnsDashlet']['columns'] =  array(   'name' => array('wid
                                                                       'label'   => 'LBL_LIST_NAME',
                                                                       'link'    => true,
                                                                       'default' => true), 
-    'name' => 'name',
-  ),
   'week_start_date' => 
   array (
     'type' => 'date',
