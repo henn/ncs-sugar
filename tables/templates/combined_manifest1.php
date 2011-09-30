@@ -52,9 +52,9 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'Collated_NCS_Modules',
-		  'published_date' => '2011-09-20 10:00:00',
+		  'published_date' => '2011-09-30 09:00:00',
 		  'type' => 'module',
-          'version' => '2.04.1',
+          'version' => '2.04.2',
           'remove_tables' => 'prompt',
           );
 $installdefs = array (
