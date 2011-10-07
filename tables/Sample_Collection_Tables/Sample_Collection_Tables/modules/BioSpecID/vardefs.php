@@ -37,23 +37,6 @@
 $vardefs = array (
   'fields' => 
   array (
-    'collection_id' => 
-    array (
-      'required' => false,
-      'name' => 'collection_id',
-      'vname' => 'LBL_COLLECTION_ID',
-      'type' => 'varchar',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => '',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => '255',
-      'size' => '20',
-    ),
     'item_type' => 
     array (
       'required' => false,
@@ -86,6 +69,25 @@ $vardefs = array (
       'audited' => true,
       'reportable' => true,
       'len' => '255',
+      'size' => '20',
+    ),
+    'name' => 
+    array (
+      'name' => 'name',
+      'vname' => 'LBL_NAME',
+      'type' => 'name',
+      'dbType' => 'varchar',
+      'len' => '255',
+      'unified_search' => true,
+      'required' => true,
+      'importable' => 'required',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => '',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'reportable' => true,
       'size' => '20',
     ),
   ),

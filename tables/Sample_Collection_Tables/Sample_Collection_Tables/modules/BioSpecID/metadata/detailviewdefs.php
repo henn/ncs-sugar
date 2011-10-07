@@ -39,8 +39,8 @@ array (
         array (
           0 => 
           array (
-            'name' => 'collection_id',
-            'label' => 'LBL_COLLECTION_ID',
+            'name' => 'name',
+            'label' => 'LBL_NAME',
           ),
           1 => 
           array (

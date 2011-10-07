@@ -392,6 +392,16 @@ $installdefs = array (
 #                                             #
 #      ALL SAMP_Sample_Collection_Tables      #
 #                                             #
+####Begin copy of SAMP_BioSpecID#############
+	array (
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_BioSpecID/views/view.edit.php',
+      'to' => 'custom/modules/SAMP_BioSpecID/views/view.edit.php',
+    ),
+####Begin copy of SAMP_SPECReceipt#############
+array (
+  'from' => '<basepath>/IDCreation_resources/modules/SAMP_SPECReceipt',
+  'to' => 'custom/modules/SAMP_SPECReceipt',
+),
 ####Begin copy of SAMP_DRFThermVer#############
 	array (
       'from' => '<basepath>/IDCreation_resources/modules/SAMP_DRFThermVer/views/view.edit.php',

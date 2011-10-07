@@ -2,12 +2,12 @@
 $module_name = 'SAMP_BioSpecID';
 $listViewDefs [$module_name] = 
 array (
-  'COLLECTION_ID' => 
+  'NAME' => 
   array (
-    'type' => 'varchar',
-    'label' => 'LBL_COLLECTION_ID',
-    'width' => '10%',
+    'width' => '32%',
+    'label' => 'LBL_NAME',
     'default' => true,
+    'link' => true,
   ),
   'ITEM_TYPE' => 
   array (
@@ -22,13 +22,6 @@ array (
     'label' => 'LBL_ITEM_PROMPT',
     'width' => '10%',
     'default' => true,
-  ),
-  'NAME' => 
-  array (
-    'width' => '32%',
-    'label' => 'LBL_NAME',
-    'default' => false,
-    'link' => true,
   ),
   'ASSIGNED_USER_NAME' => 
   array (
