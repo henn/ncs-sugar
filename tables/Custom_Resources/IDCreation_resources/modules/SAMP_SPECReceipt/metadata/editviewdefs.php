@@ -6,22 +6,6 @@ array (
   array (
     'templateMeta' => 
     array (
-	'form' =>
-      array(
-         'buttons' =>
-        array (
-         0 =>
-          array(
-           'customCode' =>
-            '<input title="Save [Alt+S]" accessKey="S" onclick="this.form.action.value=\'Save\'; if(!specimenIDOK) alert(\'Please enter a correct Specimen ID\'); return specimenIDOK;" type="submit" name="button" value="'.$GLOBALS['app_strings']['LBL_SAVE_BUTTON_LABEL'].'">',
-			),
-         1 =>
-          array(
-           'customCode' =>
-            '<input title="Cancel [Alt+X]" accessKey="X" onclick="this.form.action.value=\'index\'; this.form.module.value=\''.$module_name.'\'; this.form.record.value=\'\';" type="submit" name="button" value="'.$GLOBALS['app_strings']['LBL_CANCEL_BUTTON_LABEL'].'">'
-          )
-        )
-      ),
 	  
       'includes'=> array(
 			array(
