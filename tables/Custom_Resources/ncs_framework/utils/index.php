@@ -1,19 +1,9 @@
 <?php
-//error_reporting(E_ALL);
+error_reporting(E_ALL);
 
 session_start();
 
-//$sugar_root = "/var/www/sugar/";
-
-$path_arr = explode("/", $_SERVER['REQUEST_URI']);
-$sugar_root = $_SERVER['DOCUMENT_ROOT'];
-if(!empty($path_arr))
- $sugar_root .= "/".$path_arr[1]."/";
-else
-{
- echo "Couldn't find sugar root";
- die("");
-}
+$sugar_root = "../../";
 
 require_once($sugar_root."ncs_framework/utils/includes/SugarUtils.php");
 require_once($sugar_root."ncs_framework/utils/includes/EventHelperFunctions.php");
@@ -94,8 +84,7 @@ elseif(!empty($_POST['bv_update']))
 		echo "<div style='background-color:#DEE4F7; border:1px solid #414D72; padding:10px; width:600px''>Birth Event Setting was updated successfully.</div>";
 	else
 		echo "<div style='background-color:#F1FCBD; border:1px solid #414D72; padding:10px; width:600px'>Event Setting was not updated.</div>";	
-	
-		
+			
 }
 elseif(isset($_POST['update_ev']))
 {
@@ -183,13 +172,6 @@ function show_select_list($dom_array, $list_name, $selected_value = "", $bgcolor
 
 //================================ GET EVENT SETTING FOR ALL EVENT TYPES ================================
 $postnatal_setting_arr = get_event_setting_array($SU, 'postnatal', false);
-
-// echo "<pre>";
-// print_r($postnatal_setting_arr);
-// echo "</pre>";
-
-//$prenatal_setting_arr = get_event_setting_array($SU, 'prenatal', false);
-
 $spi_setting_arr = get_prenatal_event_setting(&$SU, "spi", false);
 $bv_setting_arr = get_prenatal_event_setting(&$SU, "bv", false);
 
@@ -242,8 +224,6 @@ if(count($postnatal_setting_arr))
 		echo "</tr>\n";		
 	}
 		
-					
-	//echo "	<tr><td colspan='3' align='right'><input type='submit' name='EUpdateSubmit' value='Update' /></td></tr>";
 	echo "</table>";
 	
 }
