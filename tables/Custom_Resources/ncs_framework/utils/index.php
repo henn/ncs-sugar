@@ -53,7 +53,7 @@ if(!empty($_POST['spi_update']))
 	else
 		$spi_arr['active'] = 0;
 	
-	$result = update_event_setting(&$SU, $spi_arr);
+	$result = update_event_setting($SU, $spi_arr);
 	
 	if($result)
 		echo "<div style='background-color:#DEE4F7; border:1px solid #414D72; padding:10px; width:600px''>SPI Event Setting was updated successfully.</div>";
@@ -78,7 +78,7 @@ elseif(!empty($_POST['bv_update']))
 	else
 		$bv_arr['active'] = 0;	
 		
-	$result = update_event_setting(&$SU, $bv_arr);
+	$result = update_event_setting($SU, $bv_arr);
 	
 	if($result)
 		echo "<div style='background-color:#DEE4F7; border:1px solid #414D72; padding:10px; width:600px''>Birth Event Setting was updated successfully.</div>";
@@ -103,7 +103,7 @@ elseif(isset($_POST['update_ev']))
 	else
 		$ev_arr['active'] = 0;	
 		
-	$result = update_event_setting(&$SU, $ev_arr);
+	$result = update_event_setting($SU, $ev_arr);
 	
 	if($result)
 		echo "<div style='background-color:#DEE4F7; border:1px solid #414D72; padding:10px; width:600px''>Event Setting was updated successfully.</div>";
@@ -172,8 +172,8 @@ function show_select_list($dom_array, $list_name, $selected_value = "", $bgcolor
 
 //================================ GET EVENT SETTING FOR ALL EVENT TYPES ================================
 $postnatal_setting_arr = get_event_setting_array($SU, 'postnatal', false);
-$spi_setting_arr = get_prenatal_event_setting(&$SU, "spi", false);
-$bv_setting_arr = get_prenatal_event_setting(&$SU, "bv", false);
+$spi_setting_arr = get_prenatal_event_setting($SU, "spi", false);
+$bv_setting_arr = get_prenatal_event_setting($SU, "bv", false);
 
 //===============================================================================================
 

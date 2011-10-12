@@ -75,7 +75,6 @@ function update_event_setting($SU, $ev_setting_arr)
 						visit_window_end_month =  '".$ev_setting_arr['visit_window_end_month']."', 
 						spi_time_frame =  '".$ev_setting_arr['spi_time_frame']."', 
 						bv_time_frame =  '".$ev_setting_arr['bv_time_frame']."', 
-						date_modified =  now(), 
 						active = '".$ev_setting_arr['active']."'
 					WHERE id='".$ev_setting_arr['id']."'";
 				
