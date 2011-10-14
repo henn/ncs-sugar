@@ -20,7 +20,7 @@ function get_event_setting_array($SU, $event_type = "all", $active_only = true)
 			
 	$result = $SU->sugar_query($query);
 	
-	while($row = mysql_fetch_assoc($result))
+	while($row = $SU->db_fetch_assoc($result))
 	{
 		$setting_array[] = $row;
 	}	
@@ -52,7 +52,7 @@ function get_prenatal_event_setting($SU, $specific_event = "", $active_only = tr
 
 	$result = $SU->sugar_query($query);
 	
-	while($row = mysql_fetch_assoc($result))
+	while($row = $SU->db_fetch_assoc($result))
 	{
 		$setting_array[] = $row;
 	}	
@@ -75,13 +75,10 @@ function update_event_setting($SU, $ev_setting_arr)
 						visit_window_end_month =  '".$ev_setting_arr['visit_window_end_month']."', 
 						spi_time_frame =  '".$ev_setting_arr['spi_time_frame']."', 
 						bv_time_frame =  '".$ev_setting_arr['bv_time_frame']."', 
-						date_modified =  now(), 
 						active = '".$ev_setting_arr['active']."'
 					WHERE id='".$ev_setting_arr['id']."'";
-		
-	//echo "update query = ".$update_query."<br>";
-		
-	$result = $SU->sugar_query($update_query) or die(mysql_error());
+				
+	$result = $SU->sugar_query($update_query);
 	
 	if($result)
 		return true;

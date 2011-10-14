@@ -38,6 +38,7 @@ $dashletData['NCSDC_EventInfoDashlet']['columns'] = array (
     'label' => 'LBL_EVENT_TYPE',
     'sortable' => false,
     'width' => '10%',
+    'name' => 'event_type',
   ),
   'visit_window_starttime_c' => 
   array (
@@ -45,6 +46,7 @@ $dashletData['NCSDC_EventInfoDashlet']['columns'] = array (
     'label' => 'LBL_VISIT_WINDOW_STARTDATE',
     'width' => '10%',
     'default' => true,
+    'name' => 'visit_window_starttime_c',
   ),
   'visit_window_endtime_c' => 
   array (
@@ -52,6 +54,7 @@ $dashletData['NCSDC_EventInfoDashlet']['columns'] = array (
     'label' => 'LBL_VISIT_WINDOW_ENDDATE',
     'width' => '10%',
     'default' => true,
+    'name' => 'visit_window_endtime_c',
   ),
   'date_modified' => 
   array (
@@ -74,12 +77,110 @@ $dashletData['NCSDC_EventInfoDashlet']['columns'] = array (
     'name' => 'assigned_user_name',
     'default' => false,
   ),
+  'description' => 
+  array (
+    'type' => 'text',
+    'label' => 'LBL_DESCRIPTION',
+    'sortable' => false,
+    'width' => '10%',
+    'default' => false,
+    'name' => 'description',
+  ),
+  'event_disp' => 
+  array (
+    'type' => 'int',
+    'label' => 'LBL_EVENT_DISP',
+    'width' => '10%',
+    'default' => false,
+    'name' => 'event_disp',
+  ),
+  'event_disp_cat' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_EVENT_DISP_CAT',
+    'sortable' => false,
+    'width' => '10%',
+    'name' => 'event_disp_cat',
+  ),
   'event_type_oth' => 
   array (
     'type' => 'varchar',
     'label' => 'LBL_EVENT_TYPE_OTH',
     'width' => '10%',
     'default' => false,
+    'name' => 'event_type_oth',
+  ),
+  'event_start_date_time' => 
+  array (
+    'type' => 'datetimecombo',
+    'label' => 'LBL_EVENT_START_DATE_TIME',
+    'width' => '10%',
+    'default' => false,
+    'name' => 'event_start_date_time',
+  ),
+  'event_end_date_time' => 
+  array (
+    'type' => 'datetimecombo',
+    'label' => 'LBL_EVENT_END_DATE_TIME',
+    'width' => '10%',
+    'default' => false,
+    'name' => 'event_end_date_time',
+  ),
+  'event_breakoff' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_EVENT_BREAKOFF',
+    'sortable' => false,
+    'width' => '10%',
+    'name' => 'event_breakoff',
+  ),
+  'event_incentive_type' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_EVENT_INCENTIVE_TYPE',
+    'sortable' => false,
+    'width' => '10%',
+    'name' => 'event_incentive_type',
+  ),
+  'event_incent_cash' => 
+  array (
+    'type' => 'decimal',
+    'label' => 'LBL_EVENT_INCENT_CASH',
+    'width' => '10%',
+    'default' => false,
+    'name' => 'event_incent_cash',
+  ),
+  'event_comment' => 
+  array (
+    'type' => 'text',
+    'studio' => 'visible',
+    'label' => 'LBL_EVENT_COMMENT',
+    'sortable' => false,
+    'width' => '10%',
+    'default' => false,
+    'name' => 'event_comment',
+  ),
+  'event_repeat_key' => 
+  array (
+    'type' => 'int',
+    'label' => 'LBL_EVENT_REPEAT_KEY',
+    'width' => '10%',
+    'default' => false,
+    'name' => 'event_repeat_key',
+  ),
+  'event_incent_noncash' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_EVENT_INCENT_NONCASH',
+    'width' => '10%',
+    'default' => false,
+    'name' => 'event_incent_noncash',
   ),
   'ncsdc_eventrticipant_name' => 
   array (
@@ -88,6 +189,7 @@ $dashletData['NCSDC_EventInfoDashlet']['columns'] = array (
     'label' => 'LBL_NCSDC_EVENTINFO_PLT_PARTICIPANT_FROM_PLT_PARTICIPANT_TITLE',
     'width' => '10%',
     'default' => false,
+    'name' => 'ncsdc_eventrticipant_name',
   ),
   'ncsdc_cntcteventinfo_name' => 
   array (
@@ -96,5 +198,6 @@ $dashletData['NCSDC_EventInfoDashlet']['columns'] = array (
     'label' => 'LBL_NCSDC_CNTCTINFO_NCSDC_EVENTINFO_FROM_NCSDC_CNTCTINFO_TITLE',
     'width' => '10%',
     'default' => false,
+    'name' => 'ncsdc_cntcteventinfo_name',
   ),
 );

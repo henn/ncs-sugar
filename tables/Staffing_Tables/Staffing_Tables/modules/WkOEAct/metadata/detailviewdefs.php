@@ -52,15 +52,23 @@ array (
         array (
           0 => 
           array (
+            'name' => 'title',
+            'label' => 'LBL_TITLE',
+          ),
+          1 => 
+          array (
             'name' => 'outreach_event_date',
             'label' => 'LBL_OUTREACH_EVENT_DATE',
           ),
-          1 => 
+        ),
+        2 => 
+        array (
+          0 => 
           array (
             'name' => 'st_wkoeact_ecsampunt_name',
           ),
         ),
-        2 => 
+        3 => 
         array (
           0 => 
           array (
@@ -74,7 +82,7 @@ array (
             'label' => 'LBL_OUTREACH_TYPE_OTH',
           ),
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
@@ -88,7 +96,7 @@ array (
             'label' => 'LBL_OUTREACH_MODE_OTH',
           ),
         ),
-        4 => 
+        5 => 
         array (
           0 => 
           array (
@@ -98,7 +106,7 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
@@ -106,7 +114,7 @@ array (
           ),
           1 => '',
         ),
-        6 => 
+        7 => 
         array (
           0 => 
           array (
@@ -116,7 +124,7 @@ array (
           ),
           1 => '',
         ),
-        7 => 
+        8 => 
         array (
           0 => 
           array (
@@ -128,7 +136,7 @@ array (
             'label' => 'LBL_OUTREACH_LANG_OTH',
           ),
         ),
-        8 => 
+        9 => 
         array (
           0 => 
           array (
@@ -138,7 +146,7 @@ array (
           ),
           1 => '',
         ),
-        9 => 
+        10 => 
         array (
           0 => 
           array (
@@ -146,7 +154,7 @@ array (
           ),
           1 => '',
         ),
-        10 => 
+        11 => 
         array (
           0 => 
           array (
@@ -161,7 +169,7 @@ array (
             'label' => 'LBL_OUTREACH_CULTURE2',
           ),
         ),
-        11 => 
+        12 => 
         array (
           0 => 
           array (
@@ -169,7 +177,7 @@ array (
             'label' => 'LBL_OUTREACH_CULTURE_OTH',
           ),
         ),
-        12 => 
+        13 => 
         array (
           0 => 
           array (
@@ -182,7 +190,7 @@ array (
             'label' => 'LBL_OUTREACH_COST',
           ),
         ),
-        13 => 
+        14 => 
         array (
           0 => 
           array (
@@ -191,7 +199,7 @@ array (
           ),
           1 => '',
         ),
-        14 => 
+        15 => 
         array (
           0 => 
           array (
@@ -204,7 +212,7 @@ array (
             'label' => 'LBL_OUTREACH_EVAL_RESULT',
           ),
         ),
-        15 => 
+        16 => 
         array (
           0 => 
           array (
@@ -214,7 +222,7 @@ array (
           ),
           1 => '',
         ),
-        16 => 
+        17 => 
         array (
           0 => 
           array (

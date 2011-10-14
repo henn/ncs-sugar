@@ -9,6 +9,13 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'TITLE' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'OUTREACH_EVENT_DATE' => 
   array (
     'type' => 'date',

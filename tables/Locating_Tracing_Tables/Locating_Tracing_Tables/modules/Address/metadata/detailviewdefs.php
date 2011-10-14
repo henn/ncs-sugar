@@ -106,20 +106,6 @@ array (
         array (
           0 => 
           array (
-            'name' => 'address_description',
-            'studio' => 'visible',
-            'label' => 'LBL_ADDRESS_DESCRIPTION',
-          ),
-          1 => 
-          array (
-            'name' => 'address_description_oth',
-            'label' => 'LBL_ADDRESS_DESCRIPTION_OTH',
-          ),
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
             'name' => 'address_type',
             'studio' => 'visible',
             'label' => 'LBL_ADDRESS_TYPE',
@@ -128,6 +114,20 @@ array (
           array (
             'name' => 'address_type_oth',
             'label' => 'LBL_ADDRESS_TYPE_OTH',
+          ),
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'address_description',
+            'studio' => 'visible',
+            'label' => 'LBL_ADDRESS_DESCRIPTION',
+          ),
+          1 => 
+          array (
+            'name' => 'address_description_oth',
+            'label' => 'LBL_ADDRESS_DESCRIPTION_OTH',
           ),
         ),
         8 => 

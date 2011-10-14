@@ -117,4 +117,77 @@ $dashletData['PLT_ParticipantDashlet']['columns'] = array (
     'default' => false,
     'name' => 'status_info_date',
   ),
+  'p_type_oth' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_P_TYPE_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'status_info_source' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_STATUS_INFO_SOURCE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'status_info_source_oth' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_STATUS_INFO_SOURCE_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'status_info_mode' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_STATUS_INFO_MODE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'status_info_mode_oth' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_STATUS_INFO_MODE_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'pid_entry' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_PID_ENTRY',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'pid_entry_other' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_PID_ENTRY_OTHER',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'pid_age_elig' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_PID_AGE_ELIG',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'person_info_c' => 
+  array (
+    'type' => 'html',
+    'studio' => 'visible',
+    'label' => 'LBL_PERSON_INFO_C',
+    'sortable' => false,
+    'width' => '10%',
+    'default' => false,
+  ),
 );

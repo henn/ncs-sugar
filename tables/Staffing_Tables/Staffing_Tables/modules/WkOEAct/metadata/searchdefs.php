@@ -12,6 +12,14 @@ array (
         'default' => true,
         'width' => '10%',
       ),
+      'title' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_TITLE',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'title',
+      ),
       'outreach_event_date' => 
       array (
         'type' => 'date',
