@@ -122,6 +122,13 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'default' => false,
     'name' => 'last_name',
   ),
+  'middle_name' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_MIDDLE_NAME',
+    'width' => '10%',
+    'default' => false,
+  ),
   'first_name' => 
   array (
     'type' => 'varchar',
@@ -129,5 +136,169 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'width' => '10%',
     'default' => false,
     'name' => 'first_name',
+  ),
+  'maiden_name' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_MAIDEN_NAME',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'prefix' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_PREFIX',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'suffix' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_SUFFIX',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'title' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_TITLE',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'sex' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_SEX',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'person_lang_other' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_PERSON_LANG_OTHER',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'maristat' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_MARISTAT',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'maristat_oth' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_MARISTAT_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'pref_contact_oth' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_PREF_CONTACT_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'ethnic_group' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_ETHNIC_GROUP',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'plan_move' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_PLAN_MOVE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'deceased' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_DECEASED',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'move_info' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_MOVE_INFO',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'new_address_id' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_NEW_ADDRESS_ID',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'when_move' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_WHEN_MOVE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'date_move' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_DATE_MOVE',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'p_tracing' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_P_TRACING',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'p_info_source' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_P_INFO_SOURCE',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'p_info_source_oth' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_P_INFO_SOURCE_OTH',
+    'width' => '10%',
+    'default' => false,
+  ),
+  'age_range' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_AGE_RANGE',
+    'sortable' => false,
+    'width' => '10%',
   ),
 );

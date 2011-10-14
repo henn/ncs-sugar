@@ -89,5 +89,6 @@ $mod_strings = array (
   'LBL_ST_WKOEACT_SUBPANEL_TITLE' => 'Outreach & Engagement Activities',
   'LBL_COMMENTS' => 'Comments',
   'LBL_DETAILVIEW_PANEL1' => 'New Panel 1',
+  'LBL_TITLE' => 'Outreach Event Title',
 );
 ?>

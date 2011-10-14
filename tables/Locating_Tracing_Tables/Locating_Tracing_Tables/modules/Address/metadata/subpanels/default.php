@@ -20,7 +20,7 @@ $subpanel_layout = array (
     array (
       'vname' => 'LBL_NAME',
       'widget_class' => 'SubPanelDetailViewLink',
-      'width' => '45%',
+      'width' => '25%',
       'default' => true,
     ),
     'address_type' => 
@@ -43,6 +43,13 @@ $subpanel_layout = array (
     array (
       'type' => 'varchar',
       'vname' => 'LBL_ADDRESS_2',
+      'width' => '10%',
+      'default' => true,
+    ),
+    'unit' => 
+    array (
+      'type' => 'varchar',
+      'vname' => 'LBL_UNIT',
       'width' => '10%',
       'default' => true,
     ),
@@ -81,7 +88,7 @@ $subpanel_layout = array (
     'date_modified' => 
     array (
       'vname' => 'LBL_DATE_MODIFIED',
-      'width' => '45%',
+      'width' => '15%',
       'default' => true,
     ),
     'edit_button' => 

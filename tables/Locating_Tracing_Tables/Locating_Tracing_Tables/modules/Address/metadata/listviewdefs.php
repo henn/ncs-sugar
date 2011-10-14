@@ -4,7 +4,7 @@ $listViewDefs [$module_name] =
 array (
   'NAME' => 
   array (
-    'width' => '32%',
+    'width' => '20%',
     'label' => 'LBL_NAME',
     'default' => true,
     'link' => true,
@@ -13,7 +13,7 @@ array (
   array (
     'type' => 'varchar',
     'label' => 'LBL_ADDRESS_1',
-    'width' => '10%',
+    'width' => '20%',
     'default' => true,
   ),
   'ADDRESS_2' => 
