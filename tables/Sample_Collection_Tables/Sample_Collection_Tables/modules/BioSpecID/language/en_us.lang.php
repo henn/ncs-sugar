@@ -34,19 +34,38 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-
-$app_list_strings['moduleList']['PLT_LkPrsPrtcpt'] = 'Person-Participant Linkage';
-$app_list_strings['moduleList']['PLT_LnkPrsHshld'] = 'Household-Person Linkage';
-$app_list_strings['moduleList']['PLT_PartAuthFrm'] = 'Participant Authorization Form';
-$app_list_strings['moduleList']['PLT_Participant'] = 'Participant';
-$app_list_strings['moduleList']['PLT_PartRVIS'] = 'Participant Record of Visit';
-$app_list_strings['moduleList']['PLT_PartSampCon'] = 'Participant Sample Collection Consent';
-$app_list_strings['moduleList']['PLT_Person'] = 'Person';
-$app_list_strings['moduleList']['PLT_PersonRace'] = 'Person Race';
-$app_list_strings['moduleList']['PLT_PPGDetails'] = 'PPG Details';
-$app_list_strings['moduleList']['PLT_PPGStsHstry'] = 'PPG Status History';
-$app_list_strings['moduleList']['PLT_PrtcptCnsnt'] = 'Participant Consent';
-$app_list_strings['moduleList']['PLT_PrtcptVstC'] = 'Participant Visit Consent';
-$app_list_strings['parent_type_display']['PLT_Participant'] = 'Participant';
-$app_list_strings['record_type_display']['PLT_Participant'] = 'Participant';
-$app_list_strings['record_type_display_notes']['PLT_Participant'] = 'Participant';
+$mod_strings = array (
+  'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
+  'LBL_ASSIGNED_TO_NAME' => 'User',
+  'LBL_ID' => 'ID',
+  'LBL_DATE_ENTERED' => 'Date Created',
+  'LBL_DATE_MODIFIED' => 'Date Modified',
+  'LBL_MODIFIED' => 'Modified By',
+  'LBL_MODIFIED_ID' => 'Modified By Id',
+  'LBL_MODIFIED_NAME' => 'Modified By Name',
+  'LBL_CREATED' => 'Created By',
+  'LBL_CREATED_ID' => 'Created By Id',
+  'LBL_DESCRIPTION' => 'Description',
+  'LBL_DELETED' => 'Deleted',
+  'LBL_NAME' => 'Collection ID',
+  'LBL_CREATED_USER' => 'Created by User',
+  'LBL_MODIFIED_USER' => 'Modified by User',
+  'LBL_LIST_NAME' => 'Name',
+  'LBL_LIST_FORM_TITLE' => 'Bio Specimen Predetermined ID List',
+  'LBL_MODULE_NAME' => 'Bio Specimen Predetermined ID',
+  'LBL_MODULE_TITLE' => 'Bio Specimen Predetermined ID',
+  'LBL_HOMEPAGE_TITLE' => 'My Bio Specimen Predetermined ID',
+  'LNK_NEW_RECORD' => 'Create Bio Specimen Predetermined ID',
+  'LNK_LIST' => 'View Bio Specimen Predetermined ID',
+  'LNK_IMPORT_SAMP_BIOSPECID' => 'Import Bio Specimen Predetermined ID',
+  'LBL_SEARCH_FORM_TITLE' => 'Search Bio Specimen Predetermined ID',
+  'LBL_HISTORY_SUBPANEL_TITLE' => 'View History',
+  'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
+  'LBL_SAMP_BIOSPECID_SUBPANEL_TITLE' => 'Bio Specimen Predetermined ID',
+  'LBL_NEW_FORM_TITLE' => 'New Bio Specimen Predetermined ID',
+  'LBL_COLLECTION_ID' => 'Collection ID',
+  'LBL_ITEM_TYPE' => 'Item Type',
+  'LBL_ITEM_PROMPT' => 'Item Prompt',
+  'LBL_EDITVIEW_PANEL1' => 'FileUploadPanel',
+);
+?>

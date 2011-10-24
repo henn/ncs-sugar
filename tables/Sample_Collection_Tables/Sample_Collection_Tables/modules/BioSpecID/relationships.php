@@ -34,19 +34,6 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-
-$app_list_strings['moduleList']['PLT_LkPrsPrtcpt'] = 'Person-Participant Linkage';
-$app_list_strings['moduleList']['PLT_LnkPrsHshld'] = 'Household-Person Linkage';
-$app_list_strings['moduleList']['PLT_PartAuthFrm'] = 'Participant Authorization Form';
-$app_list_strings['moduleList']['PLT_Participant'] = 'Participant';
-$app_list_strings['moduleList']['PLT_PartRVIS'] = 'Participant Record of Visit';
-$app_list_strings['moduleList']['PLT_PartSampCon'] = 'Participant Sample Collection Consent';
-$app_list_strings['moduleList']['PLT_Person'] = 'Person';
-$app_list_strings['moduleList']['PLT_PersonRace'] = 'Person Race';
-$app_list_strings['moduleList']['PLT_PPGDetails'] = 'PPG Details';
-$app_list_strings['moduleList']['PLT_PPGStsHstry'] = 'PPG Status History';
-$app_list_strings['moduleList']['PLT_PrtcptCnsnt'] = 'Participant Consent';
-$app_list_strings['moduleList']['PLT_PrtcptVstC'] = 'Participant Visit Consent';
-$app_list_strings['parent_type_display']['PLT_Participant'] = 'Participant';
-$app_list_strings['record_type_display']['PLT_Participant'] = 'Participant';
-$app_list_strings['record_type_display_notes']['PLT_Participant'] = 'Participant';
+$relationships = array (
+);
+?>

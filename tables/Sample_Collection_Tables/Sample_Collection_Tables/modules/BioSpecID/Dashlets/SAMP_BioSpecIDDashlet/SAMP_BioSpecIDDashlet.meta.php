@@ -1,4 +1,5 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -34,19 +35,18 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
+/*********************************************************************************
 
-$app_list_strings['moduleList']['PLT_LkPrsPrtcpt'] = 'Person-Participant Linkage';
-$app_list_strings['moduleList']['PLT_LnkPrsHshld'] = 'Household-Person Linkage';
-$app_list_strings['moduleList']['PLT_PartAuthFrm'] = 'Participant Authorization Form';
-$app_list_strings['moduleList']['PLT_Participant'] = 'Participant';
-$app_list_strings['moduleList']['PLT_PartRVIS'] = 'Participant Record of Visit';
-$app_list_strings['moduleList']['PLT_PartSampCon'] = 'Participant Sample Collection Consent';
-$app_list_strings['moduleList']['PLT_Person'] = 'Person';
-$app_list_strings['moduleList']['PLT_PersonRace'] = 'Person Race';
-$app_list_strings['moduleList']['PLT_PPGDetails'] = 'PPG Details';
-$app_list_strings['moduleList']['PLT_PPGStsHstry'] = 'PPG Status History';
-$app_list_strings['moduleList']['PLT_PrtcptCnsnt'] = 'Participant Consent';
-$app_list_strings['moduleList']['PLT_PrtcptVstC'] = 'Participant Visit Consent';
-$app_list_strings['parent_type_display']['PLT_Participant'] = 'Participant';
-$app_list_strings['record_type_display']['PLT_Participant'] = 'Participant';
-$app_list_strings['record_type_display_notes']['PLT_Participant'] = 'Participant';
+ * Description:  Defines the English language pack for the base application.
+ * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
+ * All Rights Reserved.
+ * Contributor(s): ______________________________________..
+ ********************************************************************************/
+ 
+global $app_strings;
+
+$dashletMeta['SAMP_BioSpecIDDashlet'] = array('module'		=> 'SAMP_BioSpecID',
+										  'title'       => translate('LBL_HOMEPAGE_TITLE', 'SAMP_BioSpecID'), 
+                                          'description' => 'A customizable view into SAMP_BioSpecID',
+                                          'icon'        => 'icon_SAMP_BioSpecID_32.gif',
+                                          'category'    => 'Module Views');

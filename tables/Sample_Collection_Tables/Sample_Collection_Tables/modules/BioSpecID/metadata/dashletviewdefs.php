@@ -1,4 +1,5 @@
 <?php
+if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 /*********************************************************************************
  * SugarCRM is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2011 SugarCRM Inc.
@@ -35,18 +36,25 @@
  ********************************************************************************/
 
 
-$app_list_strings['moduleList']['PLT_LkPrsPrtcpt'] = 'Person-Participant Linkage';
-$app_list_strings['moduleList']['PLT_LnkPrsHshld'] = 'Household-Person Linkage';
-$app_list_strings['moduleList']['PLT_PartAuthFrm'] = 'Participant Authorization Form';
-$app_list_strings['moduleList']['PLT_Participant'] = 'Participant';
-$app_list_strings['moduleList']['PLT_PartRVIS'] = 'Participant Record of Visit';
-$app_list_strings['moduleList']['PLT_PartSampCon'] = 'Participant Sample Collection Consent';
-$app_list_strings['moduleList']['PLT_Person'] = 'Person';
-$app_list_strings['moduleList']['PLT_PersonRace'] = 'Person Race';
-$app_list_strings['moduleList']['PLT_PPGDetails'] = 'PPG Details';
-$app_list_strings['moduleList']['PLT_PPGStsHstry'] = 'PPG Status History';
-$app_list_strings['moduleList']['PLT_PrtcptCnsnt'] = 'Participant Consent';
-$app_list_strings['moduleList']['PLT_PrtcptVstC'] = 'Participant Visit Consent';
-$app_list_strings['parent_type_display']['PLT_Participant'] = 'Participant';
-$app_list_strings['record_type_display']['PLT_Participant'] = 'Participant';
-$app_list_strings['record_type_display_notes']['PLT_Participant'] = 'Participant';
+
+
+global $current_user;
+
+$dashletData['SAMP_BioSpecIDDashlet']['searchFields'] = array('date_entered'     => array('default' => ''),
+                                                          'date_modified'    => array('default' => ''),
+                                                          'assigned_user_id' => array('type'    => 'assigned_user_name', 
+                                                                                      'default' => $current_user->name));
+$dashletData['SAMP_BioSpecIDDashlet']['columns'] =  array(   'name' => array('width'   => '40', 
+                                                                      'label'   => 'LBL_LIST_NAME',
+                                                                      'link'    => true,
+                                                                      'default' => true), 
+                                                      'date_entered' => array('width'   => '15', 
+                                                                              'label'   => 'LBL_DATE_ENTERED',
+                                                                              'default' => true),
+                                                      'date_modified' => array('width'   => '15', 
+                                                                              'label'   => 'LBL_DATE_MODIFIED'),    
+                                                      'created_by' => array('width'   => '8', 
+                                                                            'label'   => 'LBL_CREATED'),
+                                                      'assigned_user_name' => array('width'   => '8', 
+                                                                                     'label'   => 'LBL_LIST_ASSIGNED_USER'),
+                                               );

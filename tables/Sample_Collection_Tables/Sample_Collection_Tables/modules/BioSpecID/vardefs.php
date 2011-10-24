@@ -34,19 +34,65 @@
  * "Powered by SugarCRM".
  ********************************************************************************/
 
-
-$app_list_strings['moduleList']['PLT_LkPrsPrtcpt'] = 'Person-Participant Linkage';
-$app_list_strings['moduleList']['PLT_LnkPrsHshld'] = 'Household-Person Linkage';
-$app_list_strings['moduleList']['PLT_PartAuthFrm'] = 'Participant Authorization Form';
-$app_list_strings['moduleList']['PLT_Participant'] = 'Participant';
-$app_list_strings['moduleList']['PLT_PartRVIS'] = 'Participant Record of Visit';
-$app_list_strings['moduleList']['PLT_PartSampCon'] = 'Participant Sample Collection Consent';
-$app_list_strings['moduleList']['PLT_Person'] = 'Person';
-$app_list_strings['moduleList']['PLT_PersonRace'] = 'Person Race';
-$app_list_strings['moduleList']['PLT_PPGDetails'] = 'PPG Details';
-$app_list_strings['moduleList']['PLT_PPGStsHstry'] = 'PPG Status History';
-$app_list_strings['moduleList']['PLT_PrtcptCnsnt'] = 'Participant Consent';
-$app_list_strings['moduleList']['PLT_PrtcptVstC'] = 'Participant Visit Consent';
-$app_list_strings['parent_type_display']['PLT_Participant'] = 'Participant';
-$app_list_strings['record_type_display']['PLT_Participant'] = 'Participant';
-$app_list_strings['record_type_display_notes']['PLT_Participant'] = 'Participant';
+$vardefs = array (
+  'fields' => 
+  array (
+    'item_type' => 
+    array (
+      'required' => false,
+      'name' => 'item_type',
+      'vname' => 'LBL_ITEM_TYPE',
+      'type' => 'varchar',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'len' => '255',
+      'size' => '20',
+    ),
+    'item_prompt' => 
+    array (
+      'required' => false,
+      'name' => 'item_prompt',
+      'vname' => 'LBL_ITEM_PROMPT',
+      'type' => 'varchar',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'len' => '255',
+      'size' => '20',
+    ),
+    'name' => 
+    array (
+      'name' => 'name',
+      'vname' => 'LBL_NAME',
+      'type' => 'name',
+      'dbType' => 'varchar',
+      'len' => '255',
+      'unified_search' => true,
+      'required' => true,
+      'importable' => 'required',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => '',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'reportable' => true,
+      'size' => '20',
+    ),
+  ),
+  'relationships' => 
+  array (
+  ),
+);
+?>
