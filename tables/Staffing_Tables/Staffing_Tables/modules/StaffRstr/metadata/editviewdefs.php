@@ -42,12 +42,8 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
+          0 => '',
+          1 => '',
         ),
         2 => 
         array (
@@ -80,6 +76,11 @@ array (
         ),
         4 => 
         array (
+          0 => '',
+          1 => '',
+        ),
+        5 => 
+        array (
           0 => 
           array (
             'name' => 'staff_comment',
@@ -87,19 +88,11 @@ array (
             'label' => 'LBL_STAFF_COMMENT',
           ),
         ),
-        5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'gt_study_center_st_staff_name',
-          ),
-          1 => '',
-        ),
         6 => 
         array (
           0 => 
           array (
-            'name' => 'st_otrchstastaffrstr_name',
+            'name' => 'gt_study_center_st_staff_name',
           ),
         ),
       ),

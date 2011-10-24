@@ -235,6 +235,20 @@ array (
         array (
           0 => 
           array (
+            'name' => 'nir_noaccess',
+            'studio' => 'visible',
+            'label' => 'LBL_NIR_NOACCESS',
+          ),
+          1 => 
+          array (
+            'name' => 'nir_noaccess_oth',
+            'label' => 'LBL_NIR_NOACCESS_OTH',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
             'name' => 'moved_inform_relation',
             'studio' => 'visible',
             'label' => 'LBL_MOVED_INFORM_RELATION',
@@ -245,7 +259,7 @@ array (
             'label' => 'LBL_MOVED_RELATION_OTH',
           ),
         ),
-        2 => 
+        3 => 
         array (
           0 => 
           array (
@@ -259,7 +273,7 @@ array (
             'label' => 'LBL_MOVED_UNIT',
           ),
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (

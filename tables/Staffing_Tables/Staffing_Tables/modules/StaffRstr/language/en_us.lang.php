@@ -81,5 +81,7 @@ $mod_strings = array (
   'LBL_EDITVIEW_PANEL1' => 'Staff Details',
   'LBL_DETAILVIEW_PANEL1' => 'Staff Details',
   'LBL_STAFF_ZIP' => 'Staff Residence Zip Code',
+  'LBL_NCS_ACTIVE_DATE' => 'NCS Active Date',
+  'LBL_NCS_INACTIVE_DATE' => 'NCS Inactive Date',
 );
 ?>

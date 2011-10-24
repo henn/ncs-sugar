@@ -116,7 +116,12 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_EVENT_INCENTIVE_TYPE',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'incentive_checked_out',
+            'studio' => 'visible',
+            'label' => 'LBL_INCENTIVE_CHECKED_OUT',
+          ),
         ),
         7 => 
         array (

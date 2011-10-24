@@ -148,6 +148,15 @@ $dashletData['NCSDC_EventInfoDashlet']['columns'] = array (
     'width' => '10%',
     'name' => 'event_incentive_type',
   ),
+  'incentive_checked_out' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_INCENTIVE_CHECKED_OUT',
+    'sortable' => false,
+    'width' => '10%',
+  ),
   'event_incent_cash' => 
   array (
     'type' => 'decimal',

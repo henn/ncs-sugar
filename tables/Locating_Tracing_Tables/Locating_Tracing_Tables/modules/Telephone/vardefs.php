@@ -339,6 +339,38 @@ $vardefs = array (
       'reportable' => true,
       'size' => '20',
     ),
+    'phone_info_date' => 
+    array (
+      'required' => false,
+      'name' => 'phone_info_date',
+      'vname' => 'LBL_PHONE_INFO_DATE',
+      'type' => 'date',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => 'Date of initial phone information',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'size' => '20',
+    ),
+    'phone_info_update' => 
+    array (
+      'required' => false,
+      'name' => 'phone_info_update',
+      'vname' => 'LBL_PHONE_INFO_UPDATE',
+      'type' => 'date',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => 'Date of last update of phone information',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'size' => '20',
+    ),
   ),
   'relationships' => 
   array (

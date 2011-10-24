@@ -178,6 +178,11 @@ array (
         ),
         4 => 
         array (
+          0 => '',
+          1 => '',
+        ),
+        5 => 
+        array (
           0 => 
           array (
             'name' => 'centrifuge_comment',
@@ -186,7 +191,7 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (

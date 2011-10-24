@@ -81,5 +81,7 @@ $mod_strings = array (
   'LBL_LTT_TELEPHONE_SUBPANEL_TITLE' => 'Telephone',
   'LBL_PHONE_START_DATE' => 'Phone Start Date',
   'LBL_PHONE_END_DATE' => 'Phone End Date',
+  'LBL_PHONE_INFO_DATE' => 'Phone Info Date',
+  'LBL_PHONE_INFO_UPDATE' => 'Phone Info Update',
 );
 ?>

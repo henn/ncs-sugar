@@ -39,6 +39,13 @@ $subpanel_layout = array (
       'width' => '10%',
       'default' => true,
     ),
+    'event_disp' => 
+    array (
+      'type' => 'int',
+      'vname' => 'LBL_EVENT_DISP',
+      'width' => '10%',
+      'default' => true,
+    ),
     'event_start_date_time' => 
     array (
       'type' => 'datetimecombo',
