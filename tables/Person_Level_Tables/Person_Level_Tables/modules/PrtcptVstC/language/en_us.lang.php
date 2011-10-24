@@ -71,5 +71,6 @@ $mod_strings = array (
   'LBL_VIS_WHO_CONSENTED' => 'VIS Who Consented',
   'LBL_VIS_CONSENT_RESPONSE' => 'VIS Consent Response',
   'LBL_VIS_TRANSLATE' => 'VIS Translate',
+  'LBL_VIS_PERSON_WHO_CONSENTED_ID' => 'Person Who Consented ID',
 );
 ?>

@@ -73,6 +73,6 @@ $mod_strings = array (
   'LBL_NUM_PREG' => 'Number Pregnant',
   'LBL_NUM_PREG_ADULT' => 'Number Pregnant Adult',
   'LBL_NUM_PREG_MINOR' => 'Number Pregnant Minor',
-  'LBL_NUM_PREG_OVER49' => 'Number of Women in HH',
+  'LBL_NUM_PREG_OVER49' => 'Number of pregnant women in HH (&gt;49)',
 );
 ?>

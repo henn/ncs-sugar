@@ -54,13 +54,22 @@ array (
         array (
           0 => 
           array (
+            'name' => 'vis_person_who_consented_id',
+            'label' => 'LBL_VIS_PERSON_WHO_CONSENTED_ID',
+          ),
+          1 => '',
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
             'name' => 'vis_consent_response',
             'studio' => 'visible',
             'label' => 'LBL_VIS_CONSENT_RESPONSE',
           ),
           1 => '',
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
@@ -74,7 +83,7 @@ array (
             'label' => 'LBL_VIS_LANGUAGE_OTH',
           ),
         ),
-        4 => 
+        5 => 
         array (
           0 => 
           array (
@@ -84,7 +93,7 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
@@ -94,7 +103,7 @@ array (
           ),
           1 => '',
         ),
-        6 => 
+        7 => 
         array (
           0 => 
           array (
@@ -103,7 +112,7 @@ array (
             'label' => 'LBL_VIS_COMMENTS',
           ),
         ),
-        7 => 
+        8 => 
         array (
           0 => 
           array (
@@ -111,7 +120,7 @@ array (
             'label' => 'LBL_PLT_PARTICIPANT_PLT_PRTCPTVSTC_FROM_PLT_PARTICIPANT_TITLE',
           ),
         ),
-        8 => 
+        9 => 
         array (
           0 => 
           array (
