@@ -5,15 +5,15 @@
 	require_once('include/MVC/View/views/view.edit.php');	
 	require_once 'include/utils.php';		
 	
-	class SAMP_SPECReceiptViewEdit extends ViewEdit {
+	class SAMP_SPECPickupViewEdit extends ViewEdit {
 	
-		function SAMP_SPECReceiptViewEdit(){
+		function SAMP_SPECPickupViewEdit(){
 			parent::ViewEdit();
 			}
 			
 		function display() {
-			$_SESSION['Table_Name']="samp_specreceipt";
-			$_SESSION['Pompt']=true;
+			$_SESSION['Table_Name']="samp_specpickup";
+			$_SESSION['Pompt']=false;
 			parent::display();
 		}	
 	} 

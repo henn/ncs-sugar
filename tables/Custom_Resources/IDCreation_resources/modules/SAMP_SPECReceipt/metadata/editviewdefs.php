@@ -13,7 +13,7 @@ array (
 			),
 			
 			array(
-				'file'=>'http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js',
+    'file'=>'ncs_framework/jquery/jquery.js',
 			),			
       ),
 	  

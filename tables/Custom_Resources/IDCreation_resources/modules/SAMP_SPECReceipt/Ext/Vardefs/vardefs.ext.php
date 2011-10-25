@@ -32,6 +32,35 @@ $dictionary["SAMP_SPECReceipt"]["fields"]["samp_specre60bpscinfo_ida"] = array (
   'vname' => 'LBL_SAMP_SPECRECEIPT_SAMP_SPSCINFO_FROM_SAMP_SPECRECEIPT_TITLE',
 );
 
+$dictionary["SAMP_SPECReceipt"]["fields"]["samp_specresamp_specequip"] = array (
+  'name' => 'samp_specresamp_specequip',
+  'type' => 'link',
+  'relationship' => 'samp_specreceipt_samp_specequip',
+  'source' => 'non-db',
+  'vname' => 'LBL_SAMP_SPECRECEIPT_SAMP_SPECEQUIP_FROM_SAMP_SPECEQUIP_TITLE',
+);
+$dictionary["SAMP_SPECReceipt"]["fields"]["samp_specrespecequip_name"] = array (
+  'name' => 'samp_specrespecequip_name',
+  'type' => 'relate',
+  'source' => 'non-db',
+  'vname' => 'LBL_SAMP_SPECRECEIPT_SAMP_SPECEQUIP_FROM_SAMP_SPECEQUIP_TITLE',
+  'save' => true,
+  'id_name' => 'samp_specr09f0ecequip_ida',
+  'link' => 'samp_specresamp_specequip',
+  'table' => 'samp_specequip',
+  'module' => 'SAMP_SPECEquip',
+  'rname' => 'name',
+);
+$dictionary["SAMP_SPECReceipt"]["fields"]["samp_specr09f0ecequip_ida"] = array (
+  'name' => 'samp_specr09f0ecequip_ida',
+  'type' => 'link',
+  'relationship' => 'samp_specreceipt_samp_specequip',
+  'source' => 'non-db',
+  'reportable' => false,
+  'side' => 'right',
+  'vname' => 'LBL_SAMP_SPECRECEIPT_SAMP_SPECEQUIP_FROM_SAMP_SPECRECEIPT_TITLE',
+);
+
 
 // created: 2011-10-03 17:10:04
 $dictionary["SAMP_SPECReceipt"]["fields"]["samp_specremp_specstorage"] = array (
