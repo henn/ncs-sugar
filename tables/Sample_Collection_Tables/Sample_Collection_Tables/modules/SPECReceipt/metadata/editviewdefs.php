@@ -178,7 +178,11 @@ array (
         ),
         4 => 
         array (
-          0 => '',
+          0 => 
+          array (
+            'name' => 'centrifuge_temperature',
+            'label' => 'LBL_CENTRIFUGE_TEMPERATURE',
+          ),
           1 => '',
         ),
         5 => 

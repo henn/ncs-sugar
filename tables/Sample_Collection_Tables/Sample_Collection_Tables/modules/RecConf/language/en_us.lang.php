@@ -76,5 +76,6 @@ $mod_strings = array (
   'LBL_EDITVIEW_PANEL2' => 'Shipment Receipt',
   'LBL_DETAILVIEW_PANEL1' => 'Sample Receipt',
   'LBL_DETAILVIEW_PANEL2' => 'Shipment Receipt',
+  'LBL_SHIPPER_ID' => 'Shipper ID',
 );
 ?>

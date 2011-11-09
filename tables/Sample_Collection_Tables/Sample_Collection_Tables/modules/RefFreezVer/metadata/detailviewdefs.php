@@ -49,11 +49,24 @@ array (
           ),
           1 => 
           array (
-            'name' => 'current_temp',
-            'label' => 'LBL_CURRENT_TEMP',
+            'name' => 'rf_thermometer_equip_id',
+            'label' => 'LBL_RF_THERMOMETER_EQUIP_ID',
           ),
         ),
         2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'current_temp',
+            'label' => 'LBL_CURRENT_TEMP',
+          ),
+          1 => 
+          array (
+            'name' => 'correction_factor_temp',
+            'label' => 'LBL_CORRECTION_FACTOR_TEMP',
+          ),
+        ),
+        3 => 
         array (
           0 => 
           array (
@@ -64,19 +77,6 @@ array (
           array (
             'name' => 'maximum_temp',
             'label' => 'LBL_MAXIMUM_TEMP',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'rf_thermometer_equip_id',
-            'label' => 'LBL_RF_THERMOMETER_EQUIP_ID',
-          ),
-          1 => 
-          array (
-            'name' => 'correction_factor_temp',
-            'label' => 'LBL_CORRECTION_FACTOR_TEMP',
           ),
         ),
         4 => 

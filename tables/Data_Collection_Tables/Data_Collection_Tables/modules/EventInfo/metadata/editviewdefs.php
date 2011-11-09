@@ -108,14 +108,14 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_EVENT_INCENTIVE_TYPE',
           ),
-          1 => 
-          array (
-            'name' => 'incentive_checked_out',
-            'studio' => 'visible',
-            'label' => 'LBL_INCENTIVE_CHECKED_OUT',
-          ),
+          1 => '',
         ),
         7 => 
+        array (
+          0 => '',
+          1 => '',
+        ),
+        8 => 
         array (
           0 => 
           array (
@@ -128,7 +128,7 @@ array (
             'label' => 'LBL_EVENT_INCENT_NONCASH',
           ),
         ),
-        8 => 
+        9 => 
         array (
           0 => 
           array (
@@ -137,7 +137,7 @@ array (
             'label' => 'LBL_EVENT_COMMENT',
           ),
         ),
-        9 => 
+        10 => 
         array (
           0 => 
           array (
@@ -150,7 +150,7 @@ array (
             'label' => 'LBL_NCSDC_CNTCTINFO_NCSDC_EVENTINFO_FROM_NCSDC_CNTCTINFO_TITLE',
           ),
         ),
-        10 => 
+        11 => 
         array (
           0 => 
           array (

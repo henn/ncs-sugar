@@ -67,7 +67,7 @@ $mod_strings = array (
   'LBL_MASTER_STORAGE_UNIT' => 'Placement In Master Storage Location',
   'LBL_STORAGE_COMMENT' => 'Storage Comment',
   'LBL_STORAGE_COMMENT_OTH' => 'Storage Comment Other',
-  'LBL_REMOVED_FROM_STORAGE_DT' => 'Data and Time Removed From Storage For Shipping',
+  'LBL_REMOVED_FROM_STORAGE_DT' => 'Date and Time Removed From Storage For Shipping',
   'LBL_TEMP_EVENT_ST' => 'When did sensaphone Alarm Trigger',
   'LBL_TEMP_EVENT_ET' => 'When did sensaphone Alarm Return to Normal',
   'LBL_TEMP_EVENT_LOW_TEMP' => 'What was the Lowest Out-of-Range Temperature (°C)',
@@ -77,5 +77,6 @@ $mod_strings = array (
   'LBL_EDITVIEW_PANEL2' => 'For Shipping Only',
   'LBL_DETAILVIEW_PANEL2' => 'For Shipping Only',
   'LBL_STORAGE_FILL' => 'Storage Unit Fill Status',
+  'LBL_REMOVED_FROM_STORAGE' => 'Removed from storage: ',
 );
 ?>

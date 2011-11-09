@@ -207,6 +207,23 @@ $vardefs = array (
       'len' => '255',
       'size' => '20',
     ),
+    'shipper_id' => 
+    array (
+      'required' => true,
+      'name' => 'shipper_id',
+      'vname' => 'LBL_SHIPPER_ID',
+      'type' => 'varchar',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => 'Shipper Identification Number.  Multiple samples can be placed in a shipper for shipment to a lab or repository.',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'len' => '36',
+      'size' => '20',
+    ),
   ),
   'relationships' => 
   array (

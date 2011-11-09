@@ -61,7 +61,6 @@ array (
             'name' => 'shipment_tracking_no',
             'label' => 'LBL_SHIPMENT_TRACKING_NO',
           ),
-          1 => '',
         ),
         3 => 
         array (
@@ -85,7 +84,11 @@ array (
             'name' => 'shipment_received_by',
             'label' => 'LBL_SHIPMENT_RECEIVED_BY',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'shipper_id',
+            'label' => 'LBL_SHIPPER_ID',
+          ),
         ),
       ),
       'lbl_detailview_panel1' => 

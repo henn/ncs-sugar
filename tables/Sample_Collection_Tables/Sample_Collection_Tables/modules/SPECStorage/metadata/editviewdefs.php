@@ -103,6 +103,16 @@ array (
           ),
           1 => '',
         ),
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'removed_from_storage',
+            'studio' => 'visible',
+            'label' => 'LBL_REMOVED_FROM_STORAGE',
+          ),
+          1 => '',
+        ),
       ),
       'lbl_editview_panel2' => 
       array (

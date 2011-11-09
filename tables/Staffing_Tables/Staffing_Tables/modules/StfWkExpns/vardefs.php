@@ -39,13 +39,13 @@ $vardefs = array (
   array (
     'week_start_date' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'week_start_date',
       'vname' => 'LBL_WEEK_START_DATE',
       'type' => 'date',
       'massupdate' => 0,
       'comments' => '',
-      'help' => '',
+      'help' => 'Start date of week in question',
       'importable' => 'true',
       'duplicate_merge' => 'disabled',
       'duplicate_merge_dom_value' => '0',

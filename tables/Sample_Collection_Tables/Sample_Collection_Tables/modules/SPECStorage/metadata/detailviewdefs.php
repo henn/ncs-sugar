@@ -103,6 +103,15 @@ array (
             'label' => 'LBL_STORAGE_FILL',
           ),
         ),
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'removed_from_storage',
+            'studio' => 'visible',
+            'label' => 'LBL_REMOVED_FROM_STORAGE',
+          ),
+        ),
       ),
       'lbl_detailview_panel2' => 
       array (

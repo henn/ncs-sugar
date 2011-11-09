@@ -137,19 +137,6 @@ array (
         array (
           0 => 
           array (
-            'name' => 'phone_info_date',
-            'label' => 'LBL_PHONE_INFO_DATE',
-          ),
-          1 => 
-          array (
-            'name' => 'phone_info_update',
-            'label' => 'LBL_PHONE_INFO_UPDATE',
-          ),
-        ),
-        9 => 
-        array (
-          0 => 
-          array (
             'name' => 'phone_start_date',
             'label' => 'LBL_PHONE_START_DATE',
           ),
@@ -159,7 +146,7 @@ array (
             'label' => 'LBL_PHONE_END_DATE',
           ),
         ),
-        10 => 
+        9 => 
         array (
           0 => 
           array (
@@ -169,7 +156,7 @@ array (
           ),
           1 => '',
         ),
-        11 => 
+        10 => 
         array (
           0 => 
           array (
@@ -180,7 +167,7 @@ array (
             'name' => 'olt_provider_ltt_telephone_name',
           ),
         ),
-        12 => 
+        11 => 
         array (
           0 => 
           array (

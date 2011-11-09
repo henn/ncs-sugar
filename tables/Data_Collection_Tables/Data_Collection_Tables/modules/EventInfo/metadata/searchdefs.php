@@ -163,16 +163,6 @@ array (
         'width' => '10%',
         'name' => 'event_incentive_type',
       ),
-      'incentive_checked_out' => 
-      array (
-        'type' => 'enum',
-        'default' => true,
-        'studio' => 'visible',
-        'label' => 'LBL_INCENTIVE_CHECKED_OUT',
-        'sortable' => false,
-        'width' => '10%',
-        'name' => 'incentive_checked_out',
-      ),
       'event_incent_cash' => 
       array (
         'type' => 'decimal',

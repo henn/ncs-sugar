@@ -127,7 +127,7 @@ $vardefs = array (
     ),
     'ins_status' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'ins_status',
       'vname' => 'LBL_INS_STATUS',
       'type' => 'enum',
@@ -144,6 +144,7 @@ $vardefs = array (
       'options' => 'INSTRUMENT_STATUS_CL1',
       'studio' => 'visible',
       'dependency' => false,
+      'default' => '1',
     ),
     'ins_mode' => 
     array (

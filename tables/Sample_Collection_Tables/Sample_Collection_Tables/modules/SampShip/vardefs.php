@@ -151,7 +151,7 @@ $vardefs = array (
     ),
     'staff_id_track' => 
     array (
-      'required' => false,
+      'required' => true,
       'name' => 'staff_id_track',
       'vname' => 'LBL_STAFF_ID_TRACK',
       'type' => 'varchar',

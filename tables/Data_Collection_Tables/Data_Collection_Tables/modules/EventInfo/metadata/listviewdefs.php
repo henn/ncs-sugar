@@ -40,15 +40,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'INCENTIVE_CHECKED_OUT' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_INCENTIVE_CHECKED_OUT',
-    'sortable' => false,
-    'width' => '10%',
-  ),
   'EVENT_COMMENT' => 
   array (
     'type' => 'text',

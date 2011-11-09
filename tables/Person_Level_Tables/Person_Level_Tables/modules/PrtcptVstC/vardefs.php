@@ -197,23 +197,6 @@ $vardefs = array (
       'reportable' => true,
       'size' => '20',
     ),
-    'vis_person_who_consented_id' => 
-    array (
-      'required' => false,
-      'name' => 'vis_person_who_consented_id',
-      'vname' => 'LBL_VIS_PERSON_WHO_CONSENTED_ID',
-      'type' => 'varchar',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => '&quot;External Identifier: PERSON_ID.  Person who granted consent.  Link to Person table.&quot;',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => '255',
-      'size' => '20',
-    ),
   ),
   'relationships' => 
   array (

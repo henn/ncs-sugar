@@ -29,7 +29,7 @@ array (
         0 => 
         array (
           0 => 
-		  array (
+          array (
             'name' => 'name',
             'label' => 'Name:',
             'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
@@ -57,7 +57,6 @@ array (
             'name' => 'shipment_tracking_no',
             'label' => 'LBL_SHIPMENT_TRACKING_NO',
           ),
-          1 => '',
         ),
         3 => 
         array (
@@ -81,7 +80,11 @@ array (
             'name' => 'shipment_received_by',
             'label' => 'LBL_SHIPMENT_RECEIVED_BY',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'shipper_id',
+            'label' => 'LBL_SHIPPER_ID',
+          ),
         ),
       ),
       'lbl_editview_panel1' => 

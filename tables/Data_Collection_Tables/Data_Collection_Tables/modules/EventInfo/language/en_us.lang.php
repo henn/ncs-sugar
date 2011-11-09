@@ -86,6 +86,5 @@ $mod_strings = array (
   'LBL_VISIT_WINDOW_ENDDATE' => 'Visit Window End Date',
   'LBL_EVENT_START_DATE_TIME' => 'Event Start Date & Time',
   'LBL_EVENT_END_DATE_TIME' => 'Event end date & time',
-  'LBL_INCENTIVE_CHECKED_OUT' => 'Incentive checked out',
 );
 ?>

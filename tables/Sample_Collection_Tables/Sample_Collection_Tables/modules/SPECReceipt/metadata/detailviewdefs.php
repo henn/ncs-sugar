@@ -189,13 +189,22 @@ array (
         array (
           0 => 
           array (
+            'name' => 'centrifuge_temperature',
+            'label' => 'LBL_CENTRIFUGE_TEMPERATURE',
+          ),
+          1 => '',
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
             'name' => 'centrifuge_comment',
             'studio' => 'visible',
             'label' => 'LBL_CENTRIFUGE_COMMENT',
           ),
           1 => '',
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
