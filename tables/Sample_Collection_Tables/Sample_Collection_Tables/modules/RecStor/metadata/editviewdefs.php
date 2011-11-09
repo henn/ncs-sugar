@@ -29,7 +29,7 @@ array (
         0 => 
         array (
           0 => 
-		  array (
+          array (
             'name' => 'name',
             'label' => 'Sample ID:',
             'customCode' => '<strong>{$NAME}</strong><input type="text" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
@@ -73,7 +73,8 @@ array (
         array (
           0 => 
           array (
-            'name' => 'samp_samprestaffrstr_name',
+            'name' => 'samp_recstostaffrstr_name',
+            'label' => 'LBL_SAMP_RECSTOR_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
           ),
           1 => 
           array (

@@ -29,7 +29,7 @@ array (
         0 => 
         array (
           0 => 
-		  array (
+          array (
             'name' => 'name',
             'label' => 'Name:',
             'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
@@ -78,7 +78,8 @@ array (
         array (
           0 => 
           array (
-            'name' => 'samp_envequstaffrstr_name',
+            'name' => 'samp_enlogestaffrstr_name',
+            'label' => 'LBL_SAMP_ENLOGEQUIP_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
           ),
           1 => 
           array (

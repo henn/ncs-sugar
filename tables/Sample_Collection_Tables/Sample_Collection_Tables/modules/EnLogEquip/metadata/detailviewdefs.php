@@ -82,7 +82,8 @@ array (
         array (
           0 => 
           array (
-            'name' => 'samp_envequstaffrstr_name',
+            'name' => 'samp_enlogestaffrstr_name',
+            'label' => 'LBL_SAMP_ENLOGEQUIP_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
           ),
           1 => 
           array (
