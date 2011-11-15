@@ -117,7 +117,7 @@ $vardefs = array (
     ),
     'shipment_tracking_no' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'shipment_tracking_no',
       'vname' => 'LBL_SHIPMENT_TRACKING_NO',
       'type' => 'varchar',
