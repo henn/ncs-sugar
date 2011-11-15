@@ -9,6 +9,21 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'RECEIPT_DT' => 
+  array (
+    'type' => 'datetimecombo',
+    'label' => 'LBL_RECEIPT_DT',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SAMP_SPECREECSTORAGE_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_specremp_specstorage',
+    'label' => 'LBL_SAMP_SPECRECEIPT_SAMP_SPECSTORAGE_FROM_SAMP_SPECSTORAGE_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'RECEIPT_COMMENT' => 
   array (
     'type' => 'enum',
@@ -40,13 +55,6 @@ array (
   array (
     'type' => 'varchar',
     'label' => 'LBL_CENTRIFUGE_STAFF_ID',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'RECEIPT_DT' => 
-  array (
-    'type' => 'datetimecombo',
-    'label' => 'LBL_RECEIPT_DT',
     'width' => '10%',
     'default' => true,
   ),

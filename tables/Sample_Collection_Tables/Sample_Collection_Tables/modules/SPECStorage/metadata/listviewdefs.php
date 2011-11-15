@@ -18,6 +18,13 @@ array (
     'width' => '15%',
     'default' => true,
   ),
+  'STORAGE_COMMENT' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_STORAGE_COMMENT',
+    'width' => '10%',
+    'default' => true,
+  ),
   'MASTER_STORAGE_UNIT' => 
   array (
     'type' => 'enum',

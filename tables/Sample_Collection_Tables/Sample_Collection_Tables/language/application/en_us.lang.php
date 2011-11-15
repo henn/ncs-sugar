@@ -52,6 +52,7 @@ $app_list_strings['moduleList']['SAMP_SPSCInfo'] = 'SPSC (Biological)';
 $app_list_strings['moduleList']['SAMP_SRSCInfo'] = 'SRSC (Environmental)';
 $app_list_strings['moduleList']['SAMP_SubSampDoc'] = 'Environmental Subsample Documentation';
 $app_list_strings['moduleList']['SAMP_TRhMeterCal'] = 'Verification: T/RH Meter Calibration';
+$app_list_strings['moduleList']['SAMP_BioSpecID'] = 'Bio Specimen Predetermined ID';
 $app_list_strings['STORAGE_UNIT_FILL'][''] = '';
 $app_list_strings['STORAGE_UNIT_FILL']['1'] = 'Full';
 $app_list_strings['STORAGE_UNIT_FILL']['2'] = 'Partial';
