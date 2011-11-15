@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'ST_STAFFRSTSTFCRTTRN_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'st_staffrstr_st_stfcrttrn',
+    'label' => 'LBL_ST_STAFFRSTR_ST_STFCRTTRN_FROM_ST_STAFFRSTR_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'CERT_COMPLETED' => 
   array (
     'type' => 'enum',

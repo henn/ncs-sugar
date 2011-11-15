@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'PLT_PARTICITCPTCNSNT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'plt_particilt_prtcptcnsnt',
+    'label' => 'LBL_PLT_PARTICIPANT_PLT_PRTCPTCNSNT_FROM_PLT_PARTICIPANT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'CONSENT_TYPE' => 
   array (
     'type' => 'enum',

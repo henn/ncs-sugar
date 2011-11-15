@@ -22,14 +22,6 @@ array (
         'width' => '10%',
         'name' => 'p_type',
       ),
-      'p_type_oth' => 
-      array (
-        'type' => 'varchar',
-        'label' => 'LBL_P_TYPE_OTH',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'p_type_oth',
-      ),
       'enroll_status' => 
       array (
         'type' => 'enum',

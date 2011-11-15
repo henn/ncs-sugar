@@ -9,6 +9,22 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'PLT_LKPRSPRLT_PERSON_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'plt_lkprsprcpt_plt_person',
+    'label' => 'LBL_PLT_LKPRSPRTCPT_PLT_PERSON_FROM_PLT_PERSON_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'PLT_LKPRSPRRTICIPANT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'plt_lkprsprlt_participant',
+    'label' => 'LBL_PLT_LKPRSPRTCPT_PLT_PARTICIPANT_FROM_PLT_PARTICIPANT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

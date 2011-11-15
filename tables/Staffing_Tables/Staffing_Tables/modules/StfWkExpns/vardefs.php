@@ -39,7 +39,7 @@ $vardefs = array (
   array (
     'week_start_date' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'week_start_date',
       'vname' => 'LBL_WEEK_START_DATE',
       'type' => 'date',

@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'PLT_PARTAUTRTICIPANT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'plt_partautlt_participant',
+    'label' => 'LBL_PLT_PARTAUTHFRM_PLT_PARTICIPANT_FROM_PLT_PARTICIPANT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'AUTH_FORM_TYPE' => 
   array (
     'type' => 'enum',

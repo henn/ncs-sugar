@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'ST_MSOUTTART_WKOEACT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'st_msouttarg_st_wkoeact',
+    'label' => 'LBL_ST_MSOUTTARG_ST_WKOEACT_FROM_ST_WKOEACT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'OUTREACH_TARGET_MS' => 
   array (
     'type' => 'multienum',

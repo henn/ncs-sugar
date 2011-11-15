@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'GT_STUDYCNTRMSAMPUNT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'gt_studycnt_gt_prmsampunt',
+    'label' => 'LBL_GT_STUDYCNTR_GT_PRMSAMPUNT_FROM_GT_STUDYCNTR_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

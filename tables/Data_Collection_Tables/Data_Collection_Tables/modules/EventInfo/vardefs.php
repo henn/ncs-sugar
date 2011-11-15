@@ -313,6 +313,27 @@ $vardefs = array (
       'reportable' => true,
       'size' => '20',
     ),
+    'incentive_checked_out' => 
+    array (
+      'required' => false,
+      'name' => 'incentive_checked_out',
+      'vname' => 'LBL_INCENTIVE_CHECKED_OUT',
+      'type' => 'enum',
+      'massupdate' => '1',
+      'default' => '_6',
+      'comments' => '',
+      'help' => 'We waBe able to track in Sugar that we’ve checked out money to someone for a visit',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'len' => 100,
+      'size' => '20',
+      'options' => 'CONFIRM_TYPE_CL3',
+      'studio' => 'visible',
+      'dependency' => false,
+    ),
   ),
   'relationships' => 
   array (

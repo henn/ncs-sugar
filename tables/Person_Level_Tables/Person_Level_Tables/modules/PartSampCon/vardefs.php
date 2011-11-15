@@ -58,12 +58,12 @@ $vardefs = array (
     ),
     'sample_consent_type' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'sample_consent_type',
       'vname' => 'LBL_SAMPLE_CONSENT_TYPE',
       'type' => 'enum',
       'massupdate' => 0,
-      'default' => '_7',
+      'default' => '_4',
       'comments' => '',
       'help' => 'Sample Consent Type Given',
       'importable' => 'true',

@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'PLT_PARTICIGSTSHSTRY_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'plt_particilt_ppgstshstry',
+    'label' => 'LBL_PLT_PARTICIPANT_PLT_PPGSTSHSTRY_FROM_PLT_PARTICIPANT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

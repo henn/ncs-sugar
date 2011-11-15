@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'NCSDC_EVENTNSTRUMENT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'ncsdc_eventsdc_instrument',
+    'label' => 'LBL_NCSDC_EVENTINFO_NCSDC_INSTRUMENT_FROM_NCSDC_EVENTINFO_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

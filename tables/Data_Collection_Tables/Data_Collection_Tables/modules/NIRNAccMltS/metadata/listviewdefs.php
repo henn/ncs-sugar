@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'NCSDC_NONINRNACCMLTS_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'ncsdc_nonindc_nirnaccmlts',
+    'label' => 'LBL_NCSDC_NONINTERRPT_NCSDC_NIRNACCMLTS_FROM_NCSDC_NONINTERRPT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

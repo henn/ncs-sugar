@@ -42,27 +42,10 @@ array (
         ),
         1 => 
         array (
-          0 => 
-          array (
-            'name' => 'description',
-            'comment' => 'Full text of the note',
-            'label' => 'LBL_DESCRIPTION',
-          ),
+          0 => '',
+          1 => '',
         ),
         2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'ncs_active_date',
-            'label' => 'LBL_NCS_ACTIVE_DATE',
-          ),
-          1 => 
-          array (
-            'name' => 'ncs_inactive_date',
-            'label' => 'LBL_NCS_INACTIVE_DATE',
-          ),
-        ),
-        3 => 
         array (
           0 => 
           array (
@@ -76,7 +59,7 @@ array (
             'label' => 'LBL_STAFF_TYPE_OTH',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -90,6 +73,11 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_SUBCONTRACTOR',
           ),
+        ),
+        4 => 
+        array (
+          0 => '',
+          1 => '',
         ),
         5 => 
         array (
@@ -105,14 +93,6 @@ array (
           0 => 
           array (
             'name' => 'gt_study_center_st_staff_name',
-          ),
-          1 => '',
-        ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'st_otrchstastaffrstr_name',
           ),
         ),
       ),

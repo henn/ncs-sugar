@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'NCSDC_NONINIRRFSMLTS_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'ncsdc_noninsdc_nirrfsmlts',
+    'label' => 'LBL_NCSDC_NONINTERRPT_NCSDC_NIRRFSMLTS_FROM_NCSDC_NONINTERRPT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'REFUSAL_REASON' => 
   array (
     'type' => 'multienum',

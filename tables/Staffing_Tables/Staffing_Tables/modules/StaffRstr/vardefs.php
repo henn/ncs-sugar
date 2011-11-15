@@ -195,7 +195,7 @@ $vardefs = array (
     ),
     'staff_ethnicity' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'staff_ethnicity',
       'vname' => 'LBL_STAFF_ETHNICITY',
       'type' => 'enum',
@@ -216,7 +216,7 @@ $vardefs = array (
     ),
     'staff_exp' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'staff_exp',
       'vname' => 'LBL_STAFF_EXP',
       'type' => 'enum',
@@ -291,38 +291,6 @@ $vardefs = array (
       'len' => '5',
       'size' => '20',
       'disable_num_format' => '',
-    ),
-    'ncs_active_date' => 
-    array (
-      'required' => false,
-      'name' => 'ncs_active_date',
-      'vname' => 'LBL_NCS_ACTIVE_DATE',
-      'type' => 'date',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => 'Date staff member began work on NCS project',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'size' => '20',
-    ),
-    'ncs_inactive_date' => 
-    array (
-      'required' => false,
-      'name' => 'ncs_inactive_date',
-      'vname' => 'LBL_NCS_INACTIVE_DATE',
-      'type' => 'date',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => 'Date staff member left the NCS project',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'size' => '20',
     ),
   ),
   'relationships' => 

@@ -34,6 +34,22 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
+  'PLT_PARTRVIRTICIPANT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'plt_partrvilt_participant',
+    'label' => 'LBL_PLT_PARTRVIS_PLT_PARTICIPANT_FROM_PLT_PARTICIPANT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'PLT_PARTRVICNTCTINFO_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'plt_partrvicsdc_cntctinfo',
+    'label' => 'LBL_PLT_PARTRVIS_NCSDC_CNTCTINFO_FROM_NCSDC_CNTCTINFO_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

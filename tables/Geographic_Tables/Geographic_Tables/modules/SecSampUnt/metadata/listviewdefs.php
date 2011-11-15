@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'GT_PRMSAMPUECSAMPUNT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'gt_prmsampu_gt_secsampunt',
+    'label' => 'LBL_GT_PRMSAMPUNT_GT_SECSAMPUNT_FROM_GT_PRMSAMPUNT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'SSU_NAME' => 
   array (
     'type' => 'varchar',

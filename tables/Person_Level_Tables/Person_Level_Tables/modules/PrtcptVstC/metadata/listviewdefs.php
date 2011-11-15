@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'PLT_PARTICIRTCPTVSTC_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'plt_participlt_prtcptvstc',
+    'label' => 'LBL_PLT_PARTICIPANT_PLT_PRTCPTVSTC_FROM_PLT_PARTICIPANT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'PLT_PERSON_ERSONRACE_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'plt_person_plt_personrace',
+    'label' => 'LBL_PLT_PERSON_PLT_PERSONRACE_FROM_PLT_PERSON_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

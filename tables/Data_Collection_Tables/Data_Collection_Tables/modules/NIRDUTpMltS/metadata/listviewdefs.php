@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'NCSDC_NONINRDUTPMLTS_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'ncsdc_nonindc_nirdutpmlts',
+    'label' => 'LBL_NCSDC_NONINTERRPT_NCSDC_NIRDUTPMLTS_FROM_NCSDC_NONINTERRPT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

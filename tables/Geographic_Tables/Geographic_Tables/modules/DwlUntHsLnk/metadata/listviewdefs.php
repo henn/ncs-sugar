@@ -9,6 +9,22 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'GT_DWLUNTHSELLINGUNT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'gt_dwlunthsgt_dwellingunt',
+    'label' => 'LBL_GT_DWLUNTHSLNK_GT_DWELLINGUNT_FROM_GT_DWELLINGUNT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'GT_DWLUNTHSHOUSEHOLD_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'gt_dwlunthsk_gt_household',
+    'label' => 'LBL_GT_DWLUNTHSLNK_GT_HOUSEHOLD_FROM_GT_HOUSEHOLD_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

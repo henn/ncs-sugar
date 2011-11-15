@@ -87,7 +87,7 @@ $vardefs = array (
       'type' => 'date',
       'massupdate' => 0,
       'comments' => '',
-      'help' => 'Date of informed consent administration',
+      'help' => 'Date consent was given for this consent type',
       'importable' => 'true',
       'duplicate_merge' => 'disabled',
       'duplicate_merge_dom_value' => '0',
@@ -361,7 +361,7 @@ $vardefs = array (
     ),
     'consent_form_type' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'consent_form_type',
       'vname' => 'LBL_CONSENT_FORM_TYPE',
       'type' => 'enum',
@@ -382,7 +382,7 @@ $vardefs = array (
     ),
     'consent_withdraw_reason' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'consent_withdraw_reason',
       'vname' => 'LBL_CONSENT_WITHDRAW_REASON',
       'type' => 'enum',
@@ -403,12 +403,12 @@ $vardefs = array (
     ),
     'reconsideration_script_use' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'reconsideration_script_use',
       'vname' => 'LBL_RECONSIDERATION_SCRIPT_USE',
       'type' => 'enum',
       'massupdate' => 0,
-      'default' => '_7',
+      'default' => '_4',
       'comments' => '',
       'help' => '',
       'importable' => 'true',
@@ -418,7 +418,7 @@ $vardefs = array (
       'reportable' => true,
       'len' => 100,
       'size' => '20',
-      'options' => 'CONFIRM_TYPE_CL21',
+      'options' => 'CONFIRM_TYPE_CL2',
       'studio' => 'visible',
       'dependency' => false,
     ),

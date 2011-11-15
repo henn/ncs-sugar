@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'NCSDC_NONINNTRPTVCNT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'ncsdc_nonindc_nintrptvcnt',
+    'label' => 'LBL_NCSDC_NONINTERRPT_NCSDC_NINTRPTVCNT_FROM_NCSDC_NONINTERRPT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'NIR_VACANT' => 
   array (
     'type' => 'multienum',

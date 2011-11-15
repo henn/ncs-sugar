@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'NCSDC_INCIDCMEDMULTS_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'ncsdc_inciddc_incmedmults',
+    'label' => 'LBL_NCSDC_INCIDENT_NCSDC_INCMEDMULTS_FROM_NCSDC_INCIDENT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

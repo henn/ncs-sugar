@@ -9,6 +9,22 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'NCSDC_EVENTRTICIPANT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'ncsdc_eventlt_participant',
+    'label' => 'LBL_NCSDC_EVENTINFO_PLT_PARTICIPANT_FROM_PLT_PARTICIPANT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'NCSDC_CNTCTEVENTINFO_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'ncsdc_cntctcsdc_eventinfo',
+    'label' => 'LBL_NCSDC_CNTCTINFO_NCSDC_EVENTINFO_FROM_NCSDC_CNTCTINFO_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',
@@ -39,6 +55,15 @@ array (
     'label' => 'LBL_EVENT_INCENT_CASH',
     'width' => '10%',
     'default' => true,
+  ),
+  'INCENTIVE_CHECKED_OUT' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_INCENTIVE_CHECKED_OUT',
+    'sortable' => false,
+    'width' => '10%',
   ),
   'EVENT_COMMENT' => 
   array (

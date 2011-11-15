@@ -31,7 +31,6 @@ $dashletData['ST_StaffRstrDashlet']['columns'] = array (
     'label' => 'LBL_STAFF_TYPE',
     'sortable' => false,
     'width' => '10%',
-    'name' => 'staff_type',
   ),
   'staff_yob' => 
   array (
@@ -39,7 +38,6 @@ $dashletData['ST_StaffRstrDashlet']['columns'] = array (
     'label' => 'LBL_STAFF_YOB',
     'width' => '10%',
     'default' => true,
-    'name' => 'staff_yob',
   ),
   'staff_exp' => 
   array (
@@ -49,7 +47,6 @@ $dashletData['ST_StaffRstrDashlet']['columns'] = array (
     'label' => 'LBL_STAFF_EXP',
     'sortable' => false,
     'width' => '10%',
-    'name' => 'staff_exp',
   ),
   'subcontractor' => 
   array (
@@ -59,7 +56,6 @@ $dashletData['ST_StaffRstrDashlet']['columns'] = array (
     'label' => 'LBL_SUBCONTRACTOR',
     'sortable' => false,
     'width' => '10%',
-    'name' => 'subcontractor',
   ),
   'date_entered' => 
   array (
@@ -82,29 +78,12 @@ $dashletData['ST_StaffRstrDashlet']['columns'] = array (
     'name' => 'created_by',
     'default' => false,
   ),
-  'ncs_active_date' => 
-  array (
-    'type' => 'date',
-    'label' => 'LBL_NCS_ACTIVE_DATE',
-    'width' => '10%',
-    'default' => false,
-    'name' => 'ncs_active_date',
-  ),
-  'ncs_inactive_date' => 
-  array (
-    'type' => 'date',
-    'label' => 'LBL_NCS_INACTIVE_DATE',
-    'width' => '10%',
-    'default' => false,
-    'name' => 'ncs_inactive_date',
-  ),
   'staff_type_oth' => 
   array (
     'type' => 'varchar',
     'label' => 'LBL_STAFF_TYPE_OTH',
     'width' => '10%',
     'default' => false,
-    'name' => 'staff_type_oth',
   ),
   'staff_age_range' => 
   array (
@@ -114,7 +93,6 @@ $dashletData['ST_StaffRstrDashlet']['columns'] = array (
     'label' => 'LBL_STAFF_AGE_RANGE',
     'sortable' => false,
     'width' => '10%',
-    'name' => 'staff_age_range',
   ),
   'staff_gender' => 
   array (
@@ -124,7 +102,6 @@ $dashletData['ST_StaffRstrDashlet']['columns'] = array (
     'label' => 'LBL_STAFF_GENDER',
     'sortable' => false,
     'width' => '10%',
-    'name' => 'staff_gender',
   ),
   'staff_race_oth' => 
   array (
@@ -132,7 +109,6 @@ $dashletData['ST_StaffRstrDashlet']['columns'] = array (
     'label' => 'LBL_STAFF_RACE_OTH',
     'width' => '10%',
     'default' => false,
-    'name' => 'staff_race_oth',
   ),
   'staff_race' => 
   array (
@@ -142,7 +118,6 @@ $dashletData['ST_StaffRstrDashlet']['columns'] = array (
     'label' => 'LBL_STAFF_RACE',
     'sortable' => false,
     'width' => '10%',
-    'name' => 'staff_race',
   ),
   'staff_ethnicity' => 
   array (
@@ -152,7 +127,6 @@ $dashletData['ST_StaffRstrDashlet']['columns'] = array (
     'label' => 'LBL_STAFF_ETHNICITY',
     'sortable' => false,
     'width' => '10%',
-    'name' => 'staff_ethnicity',
   ),
   'staff_comment' => 
   array (
@@ -162,7 +136,6 @@ $dashletData['ST_StaffRstrDashlet']['columns'] = array (
     'sortable' => false,
     'width' => '10%',
     'default' => false,
-    'name' => 'staff_comment',
   ),
   'staff_zip' => 
   array (
@@ -170,7 +143,6 @@ $dashletData['ST_StaffRstrDashlet']['columns'] = array (
     'label' => 'LBL_STAFF_ZIP',
     'width' => '10%',
     'default' => false,
-    'name' => 'staff_zip',
   ),
   'assigned_user_name' => 
   array (

@@ -56,7 +56,7 @@ $vardefs = array (
     ),
     'data_coll_task_type' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'data_coll_task_type',
       'vname' => 'LBL_DATA_COLL_TASK_TYPE',
       'type' => 'enum',

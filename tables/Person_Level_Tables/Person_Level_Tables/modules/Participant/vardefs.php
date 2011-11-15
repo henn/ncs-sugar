@@ -39,7 +39,7 @@ $vardefs = array (
   array (
     'p_type' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'p_type',
       'vname' => 'LBL_P_TYPE',
       'type' => 'enum',

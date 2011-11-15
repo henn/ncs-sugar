@@ -9,6 +9,46 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'ST_WKOEACT_ECSAMPUNT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'st_wkoeact_gt_secsampunt',
+    'label' => 'LBL_ST_WKOEACT_GT_SECSAMPUNT_FROM_GT_SECSAMPUNT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ST_MSOUTRACT_WKOEACT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'st_msoutrace_st_wkoeact',
+    'label' => 'LBL_ST_MSOUTRACE_ST_WKOEACT_FROM_ST_MSOUTRACE_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ST_MSOUTTART_WKOEACT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'st_msouttarg_st_wkoeact',
+    'label' => 'LBL_ST_MSOUTTARG_ST_WKOEACT_FROM_ST_MSOUTTARG_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ST_MSOUTEVAT_WKOEACT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'st_msouteval_st_wkoeact',
+    'label' => 'LBL_ST_MSOUTEVAL_ST_WKOEACT_FROM_ST_MSOUTEVAL_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'ST_MSOUTLANT_WKOEACT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'st_msoutlang2_st_wkoeact',
+    'label' => 'LBL_ST_MSOUTLANG2_ST_WKOEACT_FROM_ST_MSOUTLANG2_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'TITLE' => 
   array (
     'type' => 'varchar',

@@ -75,12 +75,12 @@ $vardefs = array (
     ),
     'outreach_eval' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'outreach_eval',
       'vname' => 'LBL_OUTREACH_EVAL',
       'type' => 'multienum',
       'massupdate' => 0,
-      'default' => '^_7^',
+      'default' => '_4',
       'comments' => '',
       'help' => 'Evaluation of Outreach Effort',
       'importable' => 'true',

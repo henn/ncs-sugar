@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'ST_MSOUTEVAT_WKOEACT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'st_msouteval_st_wkoeact',
+    'label' => 'LBL_ST_MSOUTEVAL_ST_WKOEACT_FROM_ST_WKOEACT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'OUTREACH_EVAL' => 
   array (
     'type' => 'multienum',

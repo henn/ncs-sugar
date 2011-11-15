@@ -58,14 +58,14 @@ $vardefs = array (
     ),
     'rvis_language' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'rvis_language',
       'vname' => 'LBL_RVIS_LANGUAGE',
       'type' => 'enum',
       'massupdate' => 0,
       'default' => '_6',
       'comments' => '',
-      'help' => 'Language in which RVIS was administered/presented.',
+      'help' => 'Language in which VIS was administered',
       'importable' => 'true',
       'duplicate_merge' => 'disabled',
       'duplicate_merge_dom_value' => '0',
@@ -113,7 +113,7 @@ $vardefs = array (
     ),
     'rvis_who_consented' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'rvis_who_consented',
       'vname' => 'LBL_RVIS_WHO_CONSENTED',
       'type' => 'enum',
@@ -134,7 +134,7 @@ $vardefs = array (
     ),
     'rvis_translate' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'rvis_translate',
       'vname' => 'LBL_RVIS_TRANSLATE',
       'type' => 'enum',
@@ -172,7 +172,7 @@ $vardefs = array (
     ),
     'rvis_sections' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'rvis_sections',
       'vname' => 'LBL_RVIS_SECTIONS',
       'type' => 'enum',
@@ -193,7 +193,7 @@ $vardefs = array (
     ),
     'rvis_during_interv' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'rvis_during_interv',
       'vname' => 'LBL_RVIS_DURING_INTERV',
       'type' => 'enum',
@@ -214,7 +214,7 @@ $vardefs = array (
     ),
     'rvis_during_bio' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'rvis_during_bio',
       'vname' => 'LBL_RVIS_DURING_BIO',
       'type' => 'enum',
@@ -235,7 +235,7 @@ $vardefs = array (
     ),
     'rvis_bio_cord' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'rvis_bio_cord',
       'vname' => 'LBL_RVIS_BIO_CORD',
       'type' => 'enum',
@@ -256,7 +256,7 @@ $vardefs = array (
     ),
     'rvis_during_env' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'rvis_during_env',
       'vname' => 'LBL_RVIS_DURING_ENV',
       'type' => 'enum',
@@ -277,7 +277,7 @@ $vardefs = array (
     ),
     'rvis_during_thanks' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'rvis_during_thanks',
       'vname' => 'LBL_RVIS_DURING_THANKS',
       'type' => 'enum',
@@ -298,7 +298,7 @@ $vardefs = array (
     ),
     'rvis_after_saq' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'rvis_after_saq',
       'vname' => 'LBL_RVIS_AFTER_SAQ',
       'type' => 'enum',
@@ -319,7 +319,7 @@ $vardefs = array (
     ),
     'rvis_reconsideration' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'rvis_reconsideration',
       'vname' => 'LBL_RVIS_RECONSIDERATION',
       'type' => 'enum',

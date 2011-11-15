@@ -9,6 +9,30 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'NCSDC_CNTCTNINTERRPT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'ncsdc_cntctdc_noninterrpt',
+    'label' => 'LBL_NCSDC_CNTCTINFO_NCSDC_NONINTERRPT_FROM_NCSDC_CNTCTINFO_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'NCSDC_NONINLT_PERSON_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'ncsdc_noninrpt_plt_person',
+    'label' => 'LBL_NCSDC_NONINTERRPT_PLT_PERSON_FROM_PLT_PERSON_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'NCSDC_NONINELLINGUNT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'ncsdc_noningt_dwellingunt',
+    'label' => 'LBL_NCSDC_NONINTERRPT_GT_DWELLINGUNT_FROM_GT_DWELLINGUNT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

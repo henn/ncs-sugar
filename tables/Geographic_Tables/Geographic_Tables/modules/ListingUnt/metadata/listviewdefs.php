@@ -9,6 +9,30 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'GT_LISTINGUELLINGUNT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'gt_listingugt_dwellingunt',
+    'label' => 'LBL_GT_LISTINGUNT_GT_DWELLINGUNT_FROM_GT_DWELLINGUNT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'GT_SECSAMPUISTINGUNT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'gt_secsampu_gt_listingunt',
+    'label' => 'LBL_GT_SECSAMPUNT_GT_LISTINGUNT_FROM_GT_SECSAMPUNT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'GT_TERSAMPUISTINGUNT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'gt_tersampu_gt_listingunt',
+    'label' => 'LBL_GT_TERSAMPUNT_GT_LISTINGUNT_FROM_GT_TERSAMPUNT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

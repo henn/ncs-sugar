@@ -39,7 +39,7 @@ $vardefs = array (
   array (
     'cert_train_type' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'cert_train_type',
       'vname' => 'LBL_CERT_TRAIN_TYPE',
       'type' => 'enum',
@@ -97,12 +97,12 @@ $vardefs = array (
     ),
     'staff_bgcheck_lvl' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'staff_bgcheck_lvl',
       'vname' => 'LBL_STAFF_BGCHECK_LVL',
       'type' => 'enum',
       'massupdate' => 0,
-      'default' => '_7',
+      'default' => '_4',
       'comments' => '',
       'help' => '',
       'importable' => 'true',

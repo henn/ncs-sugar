@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'ST_STAFFRSTTFWKEXPNS_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'st_staffrst_st_stfwkexpns',
+    'label' => 'LBL_ST_STAFFRSTR_ST_STFWKEXPNS_FROM_ST_STAFFRSTR_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

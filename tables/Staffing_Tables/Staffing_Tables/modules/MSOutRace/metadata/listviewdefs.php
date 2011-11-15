@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'ST_MSOUTRACT_WKOEACT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'st_msoutrace_st_wkoeact',
+    'label' => 'LBL_ST_MSOUTRACE_ST_WKOEACT_FROM_ST_WKOEACT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'OUTREACH_RACE2' => 
   array (
     'type' => 'enum',

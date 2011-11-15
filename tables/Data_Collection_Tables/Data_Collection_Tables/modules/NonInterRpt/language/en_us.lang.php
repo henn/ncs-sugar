@@ -99,5 +99,7 @@ $mod_strings = array (
   'LBL_DETAILVIEW_PANEL2' => 'Disability & Death',
   'LBL_EDITVIEW_PANEL1' => 'Access Information',
   'LBL_EDITVIEW_PANEL2' => 'Disablility & Death',
+  'LBL_NIR_NOACCESS' => 'NIR No Access',
+  'LBL_NIR_NOACCESS_OTH' => 'NIR No Access Other',
 );
 ?>

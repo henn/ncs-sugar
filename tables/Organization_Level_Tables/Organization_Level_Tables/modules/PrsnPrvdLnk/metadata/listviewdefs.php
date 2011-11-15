@@ -9,6 +9,22 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'OLT_PRSNPRVLT_PERSON_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'olt_prsnprvlnk_plt_person',
+    'label' => 'LBL_OLT_PRSNPRVDLNK_PLT_PERSON_FROM_PLT_PERSON_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'OLT_PRSNPRV_PROVIDER_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'olt_prsnprvk_olt_provider',
+    'label' => 'LBL_OLT_PRSNPRVDLNK_OLT_PROVIDER_FROM_OLT_PROVIDER_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

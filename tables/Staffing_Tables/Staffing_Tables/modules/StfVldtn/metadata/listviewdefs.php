@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'ST_STAFFRST_STFVLDTN_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'st_staffrstr_st_stfvldtn',
+    'label' => 'LBL_ST_STAFFRSTR_ST_STFVLDTN_FROM_ST_STAFFRSTR_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'STAFF_VALIDATE' => 
   array (
     'type' => 'enum',

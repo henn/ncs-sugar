@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'ST_STAFFRSTT_STFLANG_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'st_staffrstr_st_stflang',
+    'label' => 'LBL_ST_STAFFRSTR_ST_STFLANG_FROM_ST_STAFFRSTR_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',
