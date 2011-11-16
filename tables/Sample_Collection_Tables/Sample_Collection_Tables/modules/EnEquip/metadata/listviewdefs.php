@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'SAMP_ENEQUI_SRSCINFO_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_enequi_samp_srscinfo',
+    'label' => 'LBL_SAMP_ENEQUIP_SAMP_SRSCINFO_FROM_SAMP_SRSCINFO_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'EQUIPMENT_TYPE' => 
   array (
     'type' => 'enum',

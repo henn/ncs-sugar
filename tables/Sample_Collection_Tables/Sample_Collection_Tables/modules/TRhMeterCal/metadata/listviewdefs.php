@@ -9,6 +9,30 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'SAMP_TRHMETSTAFFRSTR_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_trhmetl_st_staffrstr',
+    'label' => 'LBL_SAMP_TRHMETERCAL_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SAMP_TRHMET_SRSCINFO_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_trhmet_samp_srscinfo',
+    'label' => 'LBL_SAMP_TRHMETERCAL_SAMP_SRSCINFO_FROM_SAMP_SRSCINFO_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SAMP_TRHMETP_ENEQUIP_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_trhmetl_samp_enequip',
+    'label' => 'LBL_SAMP_TRHMETERCAL_SAMP_ENEQUIP_FROM_SAMP_ENEQUIP_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'TRH_CALIB_STATUS' => 
   array (
     'type' => 'enum',

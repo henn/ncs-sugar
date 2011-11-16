@@ -9,6 +9,38 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'SAMP_SPECST_SPSCINFO_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_specst_samp_spscinfo',
+    'label' => 'LBL_SAMP_SPECSTORAGE_SAMP_SPSCINFO_FROM_SAMP_SPSCINFO_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SAMP_SPECSTSTAFFRSTR_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_specste_st_staffrstr',
+    'label' => 'LBL_SAMP_SPECSTORAGE_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SAMP_SPECSTSPECEQUIP_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_specstsamp_specequip',
+    'label' => 'LBL_SAMP_SPECSTORAGE_SAMP_SPECEQUIP_FROM_SAMP_SPECEQUIP_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SAMP_SPECSHECSTORAGE_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_specshmp_specstorage',
+    'label' => 'LBL_SAMP_SPECSHIPPIN_SAMP_SPECSTORAGE_FROM_SAMP_SPECSHIPPIN_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'STORAGE_FILL' => 
   array (
     'type' => 'enum',

@@ -9,6 +9,30 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'SAMP_DRFTHESTAFFRSTR_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_drfther_st_staffrstr',
+    'label' => 'LBL_SAMP_DRFTHERMVER_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SAMP_DRFTHE_SRSCINFO_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_drfthe_samp_srscinfo',
+    'label' => 'LBL_SAMP_DRFTHERMVER_SAMP_SRSCINFO_FROM_SAMP_SRSCINFO_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SAMP_DRFTHEP_ENEQUIP_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_drfther_samp_enequip',
+    'label' => 'LBL_SAMP_DRFTHERMVER_SAMP_ENEQUIP_FROM_SAMP_ENEQUIP_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'DRF_THERM_VERIFICATION_DATE' => 
   array (
     'type' => 'date',

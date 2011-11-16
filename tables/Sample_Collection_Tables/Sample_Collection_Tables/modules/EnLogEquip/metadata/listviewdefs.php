@@ -9,6 +9,30 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'SAMP_ENLOGESTAFFRSTR_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_enlogep_st_staffrstr',
+    'label' => 'LBL_SAMP_ENLOGEQUIP_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SAMP_ENLOGEP_ENEQUIP_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_enlogep_samp_enequip',
+    'label' => 'LBL_SAMP_ENLOGEQUIP_SAMP_ENEQUIP_FROM_SAMP_ENEQUIP_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SAMP_ENLOGE_SRSCINFO_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_enloge_samp_srscinfo',
+    'label' => 'LBL_SAMP_ENLOGEQUIP_SAMP_SRSCINFO_FROM_SAMP_SRSCINFO_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'EQUIPMENT_TYPE' => 
   array (
     'type' => 'enum',

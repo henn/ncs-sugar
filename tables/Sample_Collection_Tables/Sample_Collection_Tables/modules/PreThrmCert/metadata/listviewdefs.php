@@ -9,6 +9,30 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'SAMP_PRETHRSTAFFRSTR_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_prethrt_st_staffrstr',
+    'label' => 'LBL_SAMP_PRETHRMCERT_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SAMP_PRETHR_SRSCINFO_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_prethr_samp_srscinfo',
+    'label' => 'LBL_SAMP_PRETHRMCERT_SAMP_SRSCINFO_FROM_SAMP_SRSCINFO_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SAMP_PRETHRP_ENEQUIP_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_prethrt_samp_enequip',
+    'label' => 'LBL_SAMP_PRETHRMCERT_SAMP_ENEQUIP_FROM_SAMP_ENEQUIP_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'PRECISION_CERT_STATUS' => 
   array (
     'type' => 'enum',

@@ -17,6 +17,14 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  'SAMP_RECSTOSTAFFRSTR_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_recstor_st_staffrstr',
+    'label' => 'LBL_SAMP_RECSTOR_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'SAMP_RECSTO_SRSCINFO_NAME' => 
   array (
     'type' => 'relate',
@@ -30,14 +38,6 @@ array (
     'type' => 'relate',
     'link' => 'samp_recstor_samp_enequip',
     'label' => 'LBL_SAMP_RECSTOR_SAMP_ENEQUIP_FROM_SAMP_ENEQUIP_TITLE',
-    'width' => '10%',
-    'default' => true,
-  ),
-  'SAMP_RECSTOSTAFFRSTR_NAME' => 
-  array (
-    'type' => 'relate',
-    'link' => 'samp_recstor_st_staffrstr',
-    'label' => 'LBL_SAMP_RECSTOR_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
     'width' => '10%',
     'default' => true,
   ),

@@ -106,17 +106,12 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_UPPER_TRIGGER',
           ),
-          1 => '',
-        ),
-        3 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'upper_trigger_lvl',
             'studio' => 'visible',
             'label' => 'LBL_UPPER_TRIGGER_LVL',
           ),
-          1 => '',
         ),
         4 => 
         array (

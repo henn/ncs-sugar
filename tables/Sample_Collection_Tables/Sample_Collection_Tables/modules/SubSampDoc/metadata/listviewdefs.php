@@ -9,6 +9,14 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'SAMP_SUBSAMEVENTINFO_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_subsamcsdc_eventinfo',
+    'label' => 'LBL_SAMP_SUBSAMPDOC_NCSDC_EVENTINFO_FROM_NCSDC_EVENTINFO_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'RANDOM_ORDER_NO' => 
   array (
     'type' => 'varchar',

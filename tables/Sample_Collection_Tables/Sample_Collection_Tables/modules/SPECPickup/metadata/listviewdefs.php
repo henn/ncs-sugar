@@ -9,6 +9,38 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'SAMP_SPECPIEVENTINFO_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_specpicsdc_eventinfo',
+    'label' => 'LBL_SAMP_SPECPICKUP_NCSDC_EVENTINFO_FROM_NCSDC_EVENTINFO_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SAMP_SPECPINSTRUMENT_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_specpisdc_instrument',
+    'label' => 'LBL_SAMP_SPECPICKUP_NCSDC_INSTRUMENT_FROM_NCSDC_INSTRUMENT_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SAMP_SPECPISTAFFRSTR_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_specpip_st_staffrstr',
+    'label' => 'LBL_SAMP_SPECPICKUP_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SAMP_SPECPI_SPSCINFO_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_specpi_samp_spscinfo',
+    'label' => 'LBL_SAMP_SPECPICKUP_SAMP_SPSCINFO_FROM_SAMP_SPSCINFO_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'SPECIMEN_PICKUP_DT' => 
   array (
     'type' => 'datetimecombo',

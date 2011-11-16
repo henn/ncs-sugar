@@ -9,6 +9,22 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'SAMP_SPECSHSTAFFRSTR_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_specshn_st_staffrstr',
+    'label' => 'LBL_SAMP_SPECSHIPPIN_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SAMP_SPECSH_SPSCINFO_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_specsh_samp_spscinfo',
+    'label' => 'LBL_SAMP_SPECSHIPPIN_SAMP_SPSCINFO_FROM_SAMP_SPSCINFO_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'SHIPMENT_DATE' => 
   array (
     'type' => 'date',

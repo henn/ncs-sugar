@@ -74,6 +74,7 @@ array (
           0 => 
           array (
             'name' => 'samp_recstostaffrstr_name',
+            'label' => 'LBL_SAMP_RECSTOR_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
           ),
           1 => 
           array (

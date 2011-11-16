@@ -9,10 +9,27 @@ array (
     'default' => true,
     'link' => true,
   ),
-  'RECEIPT_DT' => 
+  'SAMP_SPECRESTAFFRSTR_NAME' => 
   array (
-    'type' => 'datetimecombo',
-    'label' => 'LBL_RECEIPT_DT',
+    'type' => 'relate',
+    'link' => 'samp_specret_st_staffrstr',
+    'label' => 'LBL_SAMP_SPECRECEIPT_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SAMP_SPECRE_SPSCINFO_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_specre_samp_spscinfo',
+    'label' => 'LBL_SAMP_SPECRECEIPT_SAMP_SPSCINFO_FROM_SAMP_SPSCINFO_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SAMP_SPECRESPECEQUIP_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_specresamp_specequip',
+    'label' => 'LBL_SAMP_SPECRECEIPT_SAMP_SPECEQUIP_FROM_SAMP_SPECEQUIP_TITLE',
     'width' => '10%',
     'default' => true,
   ),
@@ -55,6 +72,13 @@ array (
   array (
     'type' => 'varchar',
     'label' => 'LBL_CENTRIFUGE_STAFF_ID',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'RECEIPT_DT' => 
+  array (
+    'type' => 'datetimecombo',
+    'label' => 'LBL_RECEIPT_DT',
     'width' => '10%',
     'default' => true,
   ),
