@@ -149,7 +149,17 @@ $installdefs = array (
     array (
       'from' => '<basepath>/include',
       'to' => 'custom/include',
-    ),		
+    ),
+####################################
+#                                  #
+# 			DateTimeCombo   	   # 
+#                                  #    
+####Begin copy of DateTimeCombo Javascript file ####
+    array (
+      'from' => '<basepath>/DateTimeCombo/Datetimecombo.js',
+   'to' => 'jssource/src_files/include/SugarFields/Fields/Datetimecombo/Datetimecombo.js',
+    ),
+####End copy of DateTimeCombo Javascript    
 ####################################
 #                                  #
 # ALL NCSDC Data_Collection_Tables #
