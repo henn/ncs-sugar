@@ -9,6 +9,22 @@ array (
     'default' => true,
     'link' => true,
   ),
+  'SAMP_SAMPSHSTAFFRSTR_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_sampshp_st_staffrstr',
+    'label' => 'LBL_SAMP_SAMPSHIP_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'SAMP_SAMPSH_SRSCINFO_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'samp_sampsh_samp_srscinfo',
+    'label' => 'LBL_SAMP_SAMPSHIP_SAMP_SRSCINFO_FROM_SAMP_SRSCINFO_TITLE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'SHIPPER_DESTINATION' => 
   array (
     'type' => 'enum',

@@ -37,8 +37,8 @@
 $relationships = array (
   'samp_recstor_st_staffrstr' => 
   array (
-    'rhs_label' => 'Staff Information',
-    'lhs_label' => 'Sample Receipt',
+    'rhs_label' => 'Staff Roster',
+    'lhs_label' => 'Environmental Sample Receipt',
     'lhs_subpanel' => 'default',
     'lhs_module' => 'SAMP_RecStor',
     'rhs_module' => 'ST_StaffRstr',
