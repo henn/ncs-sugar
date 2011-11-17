@@ -473,7 +473,10 @@ class PLT_ParticipantController extends SugarController {
             elseif (isset($array) && $array === 0)
                 $value .= "(add)";
             else
-                $value .= $bean->$field[0];
+			{
+				if(isset($bean->$field[0]))
+					$value .= $bean->$field[0];			
+			}	
             if (isset($field[3]))
                 $value .= "</a>";
 
