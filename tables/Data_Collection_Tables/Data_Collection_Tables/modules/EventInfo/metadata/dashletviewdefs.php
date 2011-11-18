@@ -8,10 +8,9 @@ $dashletData['NCSDC_EventInfoDashlet']['searchFields'] = array (
   array (
     'default' => '',
   ),
-  'assigned_user_id' => 
+  'event_type' => 
   array (
-    'type' => 'assigned_user_name',
-    'default' => 'Administrator',
+    'default' => '',
   ),
 );
 $dashletData['NCSDC_EventInfoDashlet']['columns'] = array (
@@ -156,6 +155,7 @@ $dashletData['NCSDC_EventInfoDashlet']['columns'] = array (
     'label' => 'LBL_INCENTIVE_CHECKED_OUT',
     'sortable' => false,
     'width' => '10%',
+    'name' => 'incentive_checked_out',
   ),
   'event_incent_cash' => 
   array (

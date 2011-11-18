@@ -67,6 +67,20 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  'NCS_ACTIVE_DATE' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_NCS_ACTIVE_DATE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'NCS_INACTIVE_DATE' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_NCS_INACTIVE_DATE',
+    'width' => '10%',
+    'default' => true,
+  ),
   'STAFF_TYPE_OTH' => 
   array (
     'type' => 'varchar',

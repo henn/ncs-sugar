@@ -76,8 +76,16 @@ array (
         ),
         4 => 
         array (
-          0 => '',
-          1 => '',
+          0 => 
+          array (
+            'name' => 'ncs_active_date',
+            'label' => 'LBL_NCS_ACTIVE_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'ncs_inactive_date',
+            'label' => 'LBL_NCS_INACTIVE_DATE',
+          ),
         ),
         5 => 
         array (
