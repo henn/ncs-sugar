@@ -166,7 +166,18 @@ array (
           ),
           1 => '',
         ),
+		
         1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'person_centrifuging_id',
+            'studio' => 'visible',
+            'label' => 'LBL_PERSON_CENTRIFUGING_ID',
+          ),
+          1 => '',
+        ),				
+        2 => 
         array (
           0 => 
           array (
@@ -174,7 +185,7 @@ array (
           ),
           1 => '',
         ),
-        2 => 
+        3 => 
         array (
           0 => 
           array (
@@ -183,7 +194,7 @@ array (
           ),
           1 => '',
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
@@ -192,7 +203,7 @@ array (
           ),
           1 => '',
         ),
-        4 => 
+        5 => 
         array (
           0 => 
           array (
@@ -202,7 +213,7 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (

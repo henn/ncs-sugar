@@ -343,6 +343,51 @@ $vardefs = array (
       'size' => '20',
       'precision' => '8',
     ),
+	
+	//Relate field: Person Centrifuging ID
+	'plt_person_id_c' => 
+	array (
+	'required' => false,
+	'name' => 'plt_person_id_c',
+	'vname' => '',
+	'type' => 'id',
+	'massupdate' => 0,
+	'comments' => '',
+	'help' => '',
+	'importable' => 'true',
+	'duplicate_merge' => 'disabled',
+	'duplicate_merge_dom_value' => 0,
+	'audited' => false,
+	'reportable' => true,
+	'len' => 36,
+	'size' => '20',
+	),
+	
+	'person_centrifuging_id' => 
+	array (
+	'required' => false,
+	'source' => 'non-db',
+	'name' => 'person_centrifuging_id',
+	'vname' => 'LBL_PERSON_CENTRIFUGING_ID',
+	'type' => 'relate',
+	'massupdate' => 0,
+	'comments' => '',
+	'help' => '',
+	'importable' => 'true',
+	'duplicate_merge' => 'disabled',
+	'duplicate_merge_dom_value' => '0',
+	'audited' => false,
+	'reportable' => true,
+	'len' => '255',
+	'size' => '20',
+	'id_name' => 'plt_person_id_c',
+	'ext2' => 'PLT_Person',
+	'module' => 'PLT_Person',
+	'rname' => 'name',
+	'quicksearch' => 'enabled',
+	'studio' => 'visible',
+	),
+		
   ),
   'relationships' => 
   array (

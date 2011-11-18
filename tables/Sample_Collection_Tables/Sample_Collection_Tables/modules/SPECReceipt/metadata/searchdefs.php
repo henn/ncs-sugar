@@ -50,6 +50,17 @@ array (
         'default' => true,
         'name' => 'centrifuge_staff_id',
       ),
+	  
+      'person_centrifuging_id' => 
+      array (
+        'type' => 'relate',
+        'studio' => 'visible',
+        'label' => 'LBL_PERSON_CENTRIFUGING_ID',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'person_centrifuging_id',
+      ),	  
+	  
       'current_user_only' => 
       array (
         'name' => 'current_user_only',

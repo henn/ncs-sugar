@@ -75,6 +75,15 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  
+  'PERSON_CENTRIFUGING_ID' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_PERSON_CENTRIFUGING_ID',
+    'width' => '10%',
+    'default' => true,
+  ),  
   'RECEIPT_DT' => 
   array (
     'type' => 'datetimecombo',

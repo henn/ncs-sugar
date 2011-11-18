@@ -168,7 +168,19 @@ $viewdefs[$module_name]['QuickCreate'] = array(
             'label' => 'LBL_CENTRIFUGE_STAFF_ID',
           ),
         ),
+		
         1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'person_centrifuging_id',
+            'studio' => 'visible',
+            'label' => 'LBL_PERSON_CENTRIFUGING_ID',
+          ),
+          1 => '',
+        ),
+		
+        2 => 
         array (
           0 => 
           array (
@@ -176,7 +188,7 @@ $viewdefs[$module_name]['QuickCreate'] = array(
             'label' => 'LBL_CENTRIFUGE_ST',
           ),
         ),
-        2 => 
+        3 => 
         array (
           0 => 
           array (
@@ -184,7 +196,7 @@ $viewdefs[$module_name]['QuickCreate'] = array(
             'label' => 'LBL_CENTRIFUGE_ET',
           ),
         ),
-        3 => 
+        4 => 
         array (
           0 => 
           array (
