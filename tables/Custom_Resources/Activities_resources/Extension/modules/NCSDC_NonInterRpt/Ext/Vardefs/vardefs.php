@@ -2,5 +2,6 @@
 $dictionary['NCSDC_NonInterRpt']['unified_search'] = true;
 $dictionary['NCSDC_NonInterRpt']['unified_search_default_enabled'] = true;
 $dictionary['NCSDC_NonInterRpt']['fields']['name']['unified_search'] = true;
+$dictionary['NCSDC_NonInterRpt']['fields']['notes_ncsdcninterrpt_name']['required']=true;
 ?>
 
