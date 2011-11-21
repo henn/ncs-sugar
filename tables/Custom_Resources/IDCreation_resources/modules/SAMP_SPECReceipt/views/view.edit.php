@@ -12,8 +12,19 @@
 			}
 			
 		function display() {
-			$_SESSION['Table_Name']="samp_specreceipt";
-			$_SESSION['Pompt']=true;
+				
+			//If we are creating new record.
+			if(empty($this->bean->id))
+			{
+				//Only set these Session variables if we are in creating new record mode.			
+				$_SESSION['Table_Name']="samp_specreceipt";
+				$_SESSION['Pompt']=true;					
+			}
+			else
+			{
+				//Edit existing record.
+				$this->ss->assign("NAME", $this->bean->name);
+			}				
 			parent::display();
 		}	
 	} 

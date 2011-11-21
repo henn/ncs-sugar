@@ -6,17 +6,17 @@ array (
   array (
     'templateMeta' => 
     array (
-	
-	  'includes'=> array(
-			array(
-				'file'=>'custom/modules/SAMP_SPECReceipt/specimen_ID_validation.js',						
-			),
-			
-			 array(
-				'file'=>'ncs_framework/jquery/jquery.js',
-			   ),		
+      'includes' => 
+      array (
+        0 => 
+        array (
+          'file' => 'custom/modules/SAMP_SPECReceipt/specimen_ID_validation.js',
+        ),
+        1 => 
+        array (
+          'file' => 'ncs_framework/jquery/jquery.js',
+        ),
       ),
-	
       'maxColumns' => '2',
       'widths' => 
       array (
@@ -40,10 +40,10 @@ array (
         0 => 
         array (
           0 => 
-		  array (
+          array (
             'name' => 'name',
             'label' => 'Sample ID:',
-            'customCode' => '<input type="text" name="name" id="name" size="30" maxlength="36" title="Unique table identifier: NAME" tabindex="103" onchange=\'validateID(this.value)\' >',
+            'customCode' => '<input type="text" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103" onchange=\'validateID(this.value)\' >',
           ),
           1 => 'assigned_user_name',
         ),
@@ -84,7 +84,8 @@ array (
         array (
           0 => 
           array (
-            'name' => 'samp_samprestaffrstr_name',
+            'name' => 'samp_recstostaffrstr_name',
+            'label' => 'LBL_SAMP_RECSTOR_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
           ),
           1 => 
           array (

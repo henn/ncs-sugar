@@ -60,7 +60,7 @@ array (
           array (
             'name' => 'name',
             'label' => 'Specimen ID:',
-			'customCode' => '<input type="text" name="name" id="name" size="30" maxlength="36" title="Unique table identifier: NAME" tabindex="103" onchange=\'validateID(this.value)\' >',
+			'customCode' => '<input type="text" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103" onchange=\'validateID(this.value)\' >',
           ),		  		  		 
           1 => '',
         ),
