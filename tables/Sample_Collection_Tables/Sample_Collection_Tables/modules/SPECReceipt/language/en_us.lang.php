@@ -87,6 +87,6 @@ $mod_strings = array (
   'LBL_QUICKCREATE_PANEL3' => 'Centrifugation Information',
   'LBL_RECEIPT_DT' => 'Specimen Receipt Date & Time:',
   'LBL_CENTRIFUGE_TEMPERATURE' => 'Centrifuge Temperature',
-  'LBL_PERSON_CENTRIFUGING_ID' => 'Staff ID of Person Centrifuging2',  
+  'LBL_PERSON_CENTRIFUGING_ID' => 'Staff ID of Person Centrifuging2',
 );
 ?>

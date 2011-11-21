@@ -64,7 +64,7 @@ $vardefs = array (
       'type' => 'datetimecombo',
       'massupdate' => 0,
       'comments' => '',
-      'help' => '',
+      'help' => 'Date and Time of Specimen Pickup or Pickup Attempt ',
       'importable' => 'true',
       'duplicate_merge' => 'disabled',
       'duplicate_merge_dom_value' => '0',
@@ -72,7 +72,6 @@ $vardefs = array (
       'reportable' => true,
       'size' => '20',
       'dbType' => 'datetime',
-      'display_default' => 'now&12:00am',
     ),
     'specimen_pickup_comment' => 
     array (

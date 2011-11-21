@@ -12,14 +12,6 @@ array (
         'default' => true,
         'width' => '10%',
       ),
-      'specimen_pickup_dt' => 
-      array (
-        'type' => 'datetimecombo',
-        'label' => 'LBL_SPECIMEN_PICKUP_DT',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'specimen_pickup_dt',
-      ),
       'specimen_pickup_comment' => 
       array (
         'type' => 'enum',
@@ -38,6 +30,14 @@ array (
         'default' => true,
         'name' => 'specimen_trans_temp',
       ),
+      'specimen_pickup_dt' => 
+      array (
+        'type' => 'datetimecombo',
+        'label' => 'LBL_SPECIMEN_PICKUP_DT',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'specimen_pickup_dt',
+      ),
       'current_user_only' => 
       array (
         'name' => 'current_user_only',
@@ -54,14 +54,6 @@ array (
         'name' => 'name',
         'default' => true,
         'width' => '10%',
-      ),
-      'specimen_pickup_dt' => 
-      array (
-        'type' => 'datetimecombo',
-        'label' => 'LBL_SPECIMEN_PICKUP_DT',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'specimen_pickup_dt',
       ),
       'specimen_pickup_comment' => 
       array (
