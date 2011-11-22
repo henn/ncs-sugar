@@ -208,11 +208,7 @@ array (
         ),
         16 => 
         array (
-          0 => 
-          array (
-            'name' => 'ncsdc_cntct_incident_name',
-            'label' => 'LBL_NCSDC_CNTCTINFO_NCSDC_INCIDENT_FROM_NCSDC_CNTCTINFO_TITLE',
-          ),
+          0 => '',
           1 => 
           array (
             'name' => 'ncsdc_incidstaffrstr_name',

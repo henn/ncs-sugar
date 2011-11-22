@@ -882,7 +882,40 @@ $installdefs = array (
       'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_who_contacted_c.php',
       'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/sugarfield_who_contacted_c.php',
     ),
-	
+
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/plt_participant_notes_Notes.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/plt_participant_notes_Notes.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/notes_plt_prtcptvstc_Notes.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/notes_plt_prtcptvstc_Notes.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/notes_plt_prtcptcnsnt_Notes.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/notes_plt_prtcptcnsnt_Notes.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/notes_plt_partauthfrm_Notes.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/notes_plt_partauthfrm_Notes.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/notes_ncsdc_noninterrpt_Notes.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/notes_ncsdc_noninterrpt_Notes.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/notes_ncsdc_incident_Notes.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/notes_ncsdc_incident_Notes.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/notes_ncsdc_eventinfo_Notes.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/notes_ncsdc_eventinfo_Notes.php',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/ncsdc_cntlnk_notes_Notes.php',
+      'to' => 'custom/Extension/modules/Notes/Ext/Vardefs/ncsdc_cntlnk_notes_Notes.php',
+    ),
+    
 	/** for Note Subject **/
     array (
       'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Vardefs/sugarfield_notes_subject_c.php',

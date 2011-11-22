@@ -132,11 +132,7 @@ array (
           array (
             'name' => 'ncsdc_noninlt_person_name',
           ),
-          1 => 
-          array (
-            'name' => 'ncsdc_cntctninterrpt_name',
-            'label' => 'LBL_NCSDC_CNTCTINFO_NCSDC_NONINTERRPT_FROM_NCSDC_CNTCTINFO_TITLE',
-          ),
+          1 => '',
         ),
         8 => 
         array (

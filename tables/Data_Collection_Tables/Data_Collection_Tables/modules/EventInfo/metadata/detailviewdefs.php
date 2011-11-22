@@ -152,11 +152,7 @@ array (
             'name' => 'ncsdc_eventrticipant_name',
             'label' => 'LBL_NCSDC_EVENTINFO_PLT_PARTICIPANT_FROM_PLT_PARTICIPANT_TITLE',
           ),
-          1 => 
-          array (
-            'name' => 'ncsdc_cntcteventinfo_name',
-            'label' => 'LBL_NCSDC_CNTCTINFO_NCSDC_EVENTINFO_FROM_NCSDC_CNTCTINFO_TITLE',
-          ),
+          1 => '',
         ),
         10 => 
         array (
