@@ -127,7 +127,10 @@ array (
           array (
             'name' => 'gt_secsampuellingunt_name',
           ),
-          1 => '',
+          1 => 
+          array (
+            'name' => 'gt_tersampuellingunt_name',
+          ),
         ),
       ),
     ),
