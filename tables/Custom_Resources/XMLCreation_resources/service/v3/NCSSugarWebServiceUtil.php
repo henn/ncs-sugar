@@ -1624,16 +1624,18 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 		// $this->addXMLElement($xmlWriter, 'centrifuge_comment', $val['centrifuge_comment']);
 		$this->addXMLElement($xmlWriter, 'centrifuge_comment', str_replace("_", "-", $val['centrifuge_comment']));
                 $this->addXMLElement($xmlWriter, 'centrifuge_comment_oth', $val['centrifuge_comment_oth']);
-				// $this->addXMLElement($xmlWriter, 'centrifuge_st', $val['centrifuge_st']);
-				$st_date = preg_split('/[ ]/', $val['centrifuge_st']);
-				$this->addXMLElement($xmlWriter, 'centrifuge_st', $st_date[1]);
+		// $this->addXMLElement($xmlWriter, 'centrifuge_st', $val['centrifuge_st']);
+		$st_date = preg_split('/[ ]/', $val['centrifuge_st']);
+		$this->addXMLElement($xmlWriter, 'centrifuge_st', $st_date[1]);
                 // $this->addXMLElement($xmlWriter, 'centrifuge_et', $val['centrifuge_et']);
-				$et_date = preg_split('/[ ]/', $val['centrifuge_et']);
-				$this->addXMLElement($xmlWriter, 'centrifuge_et', $et_date[1]);
-				$this->addXMLElement($xmlWriter, 'centrifuge_temperature', $val['centrifuge_temperature']);
-				$this->addXMLElement($xmlWriter, 'centrifuge_staff_id', $val['centrifuge_staff_id']);
-				$this->addXMLElement($xmlWriter, 'equip_id', $val['samp_specrespecequip_name']);
-				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+		$et_date = preg_split('/[ ]/', $val['centrifuge_et']);
+		$this->addXMLElement($xmlWriter, 'centrifuge_et', $et_date[1]);
+		$this->addXMLElement($xmlWriter, 'centrifuge_temperature', $val['centrifuge_temperature']);
+		$this->addXMLElement($xmlWriter, 'centrifuge_staff_id', $val['centrifuge_staff_id']);
+                // Added to replace the free text field above
+                $this->addXMLElement($xmlWriter, 'person_centrifuging_id', $val['person_centrifuging_id']);
+		$this->addXMLElement($xmlWriter, 'equip_id', $val['samp_specrespecequip_name']);
+		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
         }
         $xmlWriter->flush();

@@ -108,6 +108,7 @@ define('TELEPHONE_PERSON_RHS', 'plt_personf121_person_ida');
 define('EMAIL_PERSON_RHS', 'plt_personbd01_person_ida');
 define('CONTACTLINKING_PERSON_RHS', 'ncsdc_cntl89b6_person_ida');
 define('NONINTERVIEWREPORT_PERSON_RHS', 'ncsdc_nonid10e_person_ida');
+define('SAMPLERECEIPT_CENTRIFUGESTAFF_RHS', 'samp_specr703daffrstr_ida');
 
 /*
  * PARSE LIST OF MODULES TO EXPORT
