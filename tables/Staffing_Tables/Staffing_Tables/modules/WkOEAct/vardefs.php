@@ -285,23 +285,6 @@ $vardefs = array (
       'len' => '255',
       'size' => '20',
     ),
-    'outreach_quantity' => 
-    array (
-      'required' => false,
-      'name' => 'outreach_quantity',
-      'vname' => 'LBL_OUTREACH_QUANTITY',
-      'type' => 'varchar',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => 'Number of letters mailed/attendance at meeting, etc.',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => '255',
-      'size' => '20',
-    ),
     'outreach_cost' => 
     array (
       'required' => false,
@@ -433,6 +416,24 @@ $vardefs = array (
       'reportable' => true,
       'len' => '255',
       'size' => '20',
+    ),
+    'outreach_quantity' => 
+    array (
+      'required' => false,
+      'name' => 'outreach_quantity',
+      'vname' => 'LBL_OUTREACH_QUANTITY',
+      'type' => 'int',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'len' => '255',
+      'size' => '20',
+      'disable_num_format' => '',
     ),
   ),
   'relationships' => 

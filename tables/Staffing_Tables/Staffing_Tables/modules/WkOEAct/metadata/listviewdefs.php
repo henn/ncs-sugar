@@ -72,6 +72,13 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
+  'OUTREACH_QUANTITY' => 
+  array (
+    'type' => 'int',
+    'label' => 'LBL_OUTREACH_QUANTITY',
+    'width' => '10%',
+    'default' => true,
+  ),
   'OUTREACH_STAFFING' => 
   array (
     'type' => 'varchar',
@@ -107,13 +114,6 @@ array (
     'label' => 'LBL_OUTREACH_INCIDENT',
     'sortable' => false,
     'width' => '10%',
-  ),
-  'OUTREACH_QUANTITY' => 
-  array (
-    'type' => 'varchar',
-    'label' => 'LBL_OUTREACH_QUANTITY',
-    'width' => '10%',
-    'default' => false,
   ),
   'OUTREACH_CULTURE_OTH' => 
   array (
