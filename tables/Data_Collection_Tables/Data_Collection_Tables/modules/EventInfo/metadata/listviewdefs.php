@@ -17,17 +17,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  /*
-  'NCSDC_CNTCTEVENTINFO_NAME' => 
-  array (
-    'type' => 'relate',
-    'link' => 'ncsdc_cntctcsdc_eventinfo',
-    'label' => 'LBL_NCSDC_CNTCTINFO_NCSDC_EVENTINFO_FROM_NCSDC_CNTCTINFO_TITLE',
-    'width' => '10%',
-    'default' => true,
-  ),
-  */
-  
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',
@@ -42,6 +31,13 @@ array (
     'label' => 'LBL_EVENT_DISP_CAT',
     'sortable' => false,
     'width' => '10%',
+  ),
+  'EVENT_DISP' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_EVENT_DISP',
+    'width' => '10%',
+    'default' => true,
   ),
   'EVENT_INCENTIVE_TYPE' => 
   array (
@@ -108,13 +104,6 @@ array (
     'label' => 'LBL_EVENT_TYPE',
     'sortable' => false,
     'width' => '10%',
-  ),
-  'EVENT_DISP' => 
-  array (
-    'type' => 'int',
-    'label' => 'LBL_EVENT_DISP',
-    'width' => '10%',
-    'default' => false,
   ),
   'EVENT_REPEAT_KEY' => 
   array (

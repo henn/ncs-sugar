@@ -50,23 +50,6 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'ncsdc_cntlnk_st_staffrstr',
   ),
-  /*
-  'ncsdc_cntlnk_ncsdc_cntctinfo' => 
-  array (
-    'lhs_label' => 'Contact Linking',
-    'lhs_subpanel' => 'default',
-    'lhs_module' => 'NCSDC_CntLnk',
-    'rhs_module' => 'NCSDC_CntctInfo',
-    'relationship_type' => 'many-to-one',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'ncsdc_cntlnk_ncsdc_cntctinfo',
-  ),
-  */
   'ncsdc_cntlnk_ncsdc_eventinfo' => 
   array (
     'lhs_label' => 'Contact Linking',

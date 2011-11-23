@@ -12,6 +12,10 @@ $dashletData['NCSDC_EventInfoDashlet']['searchFields'] = array (
   array (
     'default' => '',
   ),
+  'event_disp' => 
+  array (
+    'default' => '',
+  ),
 );
 $dashletData['NCSDC_EventInfoDashlet']['columns'] = array (
   'name' => 
@@ -85,14 +89,6 @@ $dashletData['NCSDC_EventInfoDashlet']['columns'] = array (
     'default' => false,
     'name' => 'description',
   ),
-  'event_disp' => 
-  array (
-    'type' => 'int',
-    'label' => 'LBL_EVENT_DISP',
-    'width' => '10%',
-    'default' => false,
-    'name' => 'event_disp',
-  ),
   'event_disp_cat' => 
   array (
     'type' => 'enum',
@@ -102,6 +98,13 @@ $dashletData['NCSDC_EventInfoDashlet']['columns'] = array (
     'sortable' => false,
     'width' => '10%',
     'name' => 'event_disp_cat',
+  ),
+  'event_disp' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_EVENT_DISP',
+    'width' => '10%',
+    'default' => false,
   ),
   'event_type_oth' => 
   array (
@@ -200,15 +203,4 @@ $dashletData['NCSDC_EventInfoDashlet']['columns'] = array (
     'default' => false,
     'name' => 'ncsdc_eventrticipant_name',
   ),
-  /*
-  'ncsdc_cntcteventinfo_name' => 
-  array (
-    'type' => 'relate',
-    'link' => 'ncsdc_cntctcsdc_eventinfo',
-    'label' => 'LBL_NCSDC_CNTCTINFO_NCSDC_EVENTINFO_FROM_NCSDC_CNTCTINFO_TITLE',
-    'width' => '10%',
-    'default' => false,
-    'name' => 'ncsdc_cntcteventinfo_name',
-  ),
-  */
 );

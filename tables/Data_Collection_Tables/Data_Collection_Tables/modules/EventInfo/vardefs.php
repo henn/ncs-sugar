@@ -227,24 +227,6 @@ $vardefs = array (
       'size' => '20',
       'disable_num_format' => '',
     ),
-    'event_disp' => 
-    array (
-      'required' => false,
-      'name' => 'event_disp',
-      'vname' => 'LBL_EVENT_DISP',
-      'type' => 'int',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => 'Value from Disposition Codes on Event Disp Codes worksheet of this document.',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => true,
-      'reportable' => true,
-      'len' => '3',
-      'size' => '20',
-      'disable_num_format' => '',
-    ),
     'event_incent_noncash' => 
     array (
       'required' => false,
@@ -333,6 +315,23 @@ $vardefs = array (
       'options' => 'CONFIRM_TYPE_CL3',
       'studio' => 'visible',
       'dependency' => false,
+    ),
+    'event_disp' => 
+    array (
+      'required' => false,
+      'name' => 'event_disp',
+      'vname' => 'LBL_EVENT_DISP',
+      'type' => 'varchar',
+      'massupdate' => 0,
+      'comments' => '',
+      'help' => 'Value from Disposition Codes on Event Disp Codes worksheet of this document.',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => true,
+      'reportable' => true,
+      'len' => '3',
+      'size' => '20',
     ),
   ),
   'relationships' => 

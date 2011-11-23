@@ -22,6 +22,14 @@ array (
         'width' => '10%',
         'name' => 'event_type',
       ),
+      'event_disp' => 
+      array (
+        'type' => 'varchar',
+        'label' => 'LBL_EVENT_DISP',
+        'width' => '10%',
+        'default' => true,
+        'name' => 'event_disp',
+      ),
       'event_disp_cat' => 
       array (
         'type' => 'enum',
@@ -31,14 +39,6 @@ array (
         'sortable' => false,
         'width' => '10%',
         'name' => 'event_disp_cat',
-      ),
-      'event_disp' => 
-      array (
-        'type' => 'int',
-        'label' => 'LBL_EVENT_DISP',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'event_disp',
       ),
       'event_incentive_type' => 
       array (
@@ -127,14 +127,6 @@ array (
         'width' => '10%',
         'name' => 'event_disp_cat',
       ),
-      'event_disp' => 
-      array (
-        'type' => 'int',
-        'label' => 'LBL_EVENT_DISP',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'event_disp',
-      ),
       'event_repeat_key' => 
       array (
         'type' => 'int',
@@ -199,17 +191,6 @@ array (
         'default' => true,
         'name' => 'event_comment',
       ),
-	  /*
-      'ncsdc_cntcteventinfo_name' => 
-      array (
-        'type' => 'relate',
-        'link' => 'ncsdc_cntctcsdc_eventinfo',
-        'label' => 'LBL_NCSDC_CNTCTINFO_NCSDC_EVENTINFO_FROM_NCSDC_CNTCTINFO_TITLE',
-        'width' => '10%',
-        'default' => true,
-        'name' => 'ncsdc_cntcteventinfo_name',
-      ),
-	  */
       'ncsdc_eventrticipant_name' => 
       array (
         'type' => 'relate',
