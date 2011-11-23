@@ -165,10 +165,12 @@ $installdefs = array (
 # ALL NCSDC Data_Collection_Tables #
 #                                  #
 ####Begin copy of NCSDC_CntctInfo###
+/*
     array (
       'from' => '<basepath>/IDCreation_resources/modules/NCSDC_CntctInfo/views/view.edit.php',
       'to' => 'custom/modules/NCSDC_CntctInfo/views/view.edit.php',
     ),
+*/	
 ####Begin copy of NCSDC_CntLnk###
     array (
       'from' => '<basepath>/IDCreation_resources/modules/NCSDC_CntLnk/views/view.edit.php',
@@ -972,10 +974,12 @@ $installdefs = array (
       'from' => '<basepath>/Activities_resources/Extension/modules/LTT_Telephone/Ext/Vardefs',
       'to' => 'custom/Extension/modules/LTT_Telephone/Ext/Vardefs',
     ),
+	/*
     array (
       'from' => '<basepath>/Activities_resources/Extension/modules/NCSDC_CntctInfo/Ext/Vardefs',
       'to' => 'custom/Extension/modules/NCSDC_CntctInfo/Ext/Vardefs',
     ),
+	*/
     array (
       'from' => '<basepath>/Activities_resources/Extension/modules/NCSDC_CntLnk/Ext/Vardefs',
       'to' => 'custom/Extension/modules/NCSDC_CntLnk/Ext/Vardefs',
