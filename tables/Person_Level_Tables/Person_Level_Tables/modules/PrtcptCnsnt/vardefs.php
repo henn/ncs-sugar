@@ -376,7 +376,7 @@ $vardefs = array (
       'reportable' => true,
       'len' => 100,
       'size' => '20',
-      'options' => 'CONSENT_TYPE_CL3',
+      'options' => 'consent_type_cl3',
       'studio' => 'visible',
       'dependency' => false,
     ),
