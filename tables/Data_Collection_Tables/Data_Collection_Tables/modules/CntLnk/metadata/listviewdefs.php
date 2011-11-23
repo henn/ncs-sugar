@@ -17,6 +17,7 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  /*
   'NCSDC_CNTLNCNTCTINFO_NAME' => 
   array (
     'type' => 'relate',
@@ -25,6 +26,7 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  */
   'NCSDC_CNTLNEVENTINFO_NAME' => 
   array (
     'type' => 'relate',

@@ -9,6 +9,7 @@ array (
     'default' => true,
     'link' => true,
   ),
+  /*
   'NCSDC_CNTCT_INCIDENT_NAME' => 
   array (
     'type' => 'relate',
@@ -17,6 +18,7 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  */
   'NCSDC_INCIDSTAFFRSTR_NAME' => 
   array (
     'type' => 'relate',

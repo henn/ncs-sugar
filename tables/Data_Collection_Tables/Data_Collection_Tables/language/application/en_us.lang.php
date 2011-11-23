@@ -35,7 +35,7 @@
  ********************************************************************************/
 
 
-$app_list_strings['moduleList']['NCSDC_CntctInfo'] = 'Contact Information';
+//$app_list_strings['moduleList']['NCSDC_CntctInfo'] = 'Contact Information';
 $app_list_strings['moduleList']['NCSDC_CntLnk'] = 'Contact Linking';
 $app_list_strings['moduleList']['NCSDC_EventInfo'] = 'Event Information';
 $app_list_strings['moduleList']['NCSDC_Incident'] = 'Incident';

@@ -273,6 +273,7 @@ $dashletData['NCSDC_IncidentDashlet']['columns'] = array (
     'default' => false,
     'name' => 'ncsdc_incidstaffrstr_name',
   ),
+  /*
   'ncsdc_cntct_incident_name' => 
   array (
     'type' => 'relate',
@@ -282,4 +283,5 @@ $dashletData['NCSDC_IncidentDashlet']['columns'] = array (
     'default' => false,
     'name' => 'ncsdc_cntct_incident_name',
   ),
+  */
 );

@@ -17,6 +17,7 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  /*
   'NCSDC_CNTCTEVENTINFO_NAME' => 
   array (
     'type' => 'relate',
@@ -25,6 +26,8 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  */
+  
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

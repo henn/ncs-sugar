@@ -47,11 +47,13 @@ array (
             'name' => 'ncsdc_cntlnstaffrstr_name',
             'label' => 'LBL_NCSDC_CNTLNK_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
           ),
+		  /*
           1 => 
           array (
             'name' => 'ncsdc_cntlncntctinfo_name',
             'label' => 'LBL_NCSDC_CNTLNK_NCSDC_CNTCTINFO_FROM_NCSDC_CNTCTINFO_TITLE',
           ),
+		  */
         ),
         2 => 
         array (

@@ -50,6 +50,7 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'ncsdc_cntlnk_st_staffrstr',
   ),
+  /*
   'ncsdc_cntlnk_ncsdc_cntctinfo' => 
   array (
     'lhs_label' => 'Contact Linking',
@@ -65,6 +66,7 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'ncsdc_cntlnk_ncsdc_cntctinfo',
   ),
+  */
   'ncsdc_cntlnk_ncsdc_eventinfo' => 
   array (
     'lhs_label' => 'Contact Linking',

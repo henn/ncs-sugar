@@ -200,6 +200,7 @@ $dashletData['NCSDC_EventInfoDashlet']['columns'] = array (
     'default' => false,
     'name' => 'ncsdc_eventrticipant_name',
   ),
+  /*
   'ncsdc_cntcteventinfo_name' => 
   array (
     'type' => 'relate',
@@ -209,4 +210,5 @@ $dashletData['NCSDC_EventInfoDashlet']['columns'] = array (
     'default' => false,
     'name' => 'ncsdc_cntcteventinfo_name',
   ),
+  */
 );

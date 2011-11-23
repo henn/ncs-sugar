@@ -42,6 +42,7 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  /*
   'PLT_PARTRVICNTCTINFO_NAME' => 
   array (
     'type' => 'relate',
@@ -50,6 +51,7 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  */
   'ASSIGNED_USER_NAME' => 
   array (
     'width' => '9%',

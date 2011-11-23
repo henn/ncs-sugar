@@ -199,6 +199,7 @@ array (
         'default' => true,
         'name' => 'event_comment',
       ),
+	  /*
       'ncsdc_cntcteventinfo_name' => 
       array (
         'type' => 'relate',
@@ -208,6 +209,7 @@ array (
         'default' => true,
         'name' => 'ncsdc_cntcteventinfo_name',
       ),
+	  */
       'ncsdc_eventrticipant_name' => 
       array (
         'type' => 'relate',

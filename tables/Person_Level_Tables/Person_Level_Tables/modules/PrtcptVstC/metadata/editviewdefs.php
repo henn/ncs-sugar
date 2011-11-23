@@ -120,6 +120,7 @@ array (
             'label' => 'LBL_PLT_PARTICIPANT_PLT_PRTCPTVSTC_FROM_PLT_PARTICIPANT_TITLE',
           ),
         ),
+		/*
         9 => 
         array (
           0 => 
@@ -127,6 +128,7 @@ array (
             'name' => 'ncsdc_cntctinfo_plt_prtcptvstc_name',
           ),
         ),
+		*/
       ),
     ),
   ),

@@ -9,6 +9,7 @@ array (
     'default' => true,
     'link' => true,
   ),
+  /*
   'NCSDC_CNTCTNINTERRPT_NAME' => 
   array (
     'type' => 'relate',
@@ -17,6 +18,7 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  */
   'NCSDC_NONINLT_PERSON_NAME' => 
   array (
     'type' => 'relate',

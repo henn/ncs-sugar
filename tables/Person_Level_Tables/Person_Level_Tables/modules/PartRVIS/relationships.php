@@ -51,6 +51,7 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'plt_partrvis_plt_participant',
   ),
+  /*
   'plt_partrvis_ncsdc_cntctinfo' => 
   array (
     'lhs_label' => 'Participant Record of Visit',
@@ -66,5 +67,6 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'plt_partrvis_ncsdc_cntctinfo',
   ),
+  */
 );
 ?>

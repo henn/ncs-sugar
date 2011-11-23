@@ -52,6 +52,7 @@ $dashletData['NCSDC_CntLnkDashlet']['columns'] = array (
     'width' => '10%',
     'default' => false,
   ),
+  /*
   'ncsdc_cntlncntctinfo_name' => 
   array (
     'type' => 'relate',
@@ -60,6 +61,7 @@ $dashletData['NCSDC_CntLnkDashlet']['columns'] = array (
     'width' => '10%',
     'default' => false,
   ),
+  */
   'ncsdc_cntlneventinfo_name' => 
   array (
     'type' => 'relate',
