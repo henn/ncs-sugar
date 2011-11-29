@@ -28,10 +28,25 @@ array (
       array (
         0 => 
         array (
+          0 => 
+          array (
+            'name' => 'samp_specpi_spscinfo_name',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_specpistaffrstr_name',
+            'label' => 'LBL_SAMP_SPECPICKUP_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
+          ),
+        ),
+        2 => 
+        array (
           0 => 'name',
           1 => 'assigned_user_name',
         ),
-        1 => 
+        3 => 
         array (
           0 => 
           array (
@@ -40,7 +55,7 @@ array (
           ),
           1 => '',
         ),
-        2 => 
+        4 => 
         array (
           0 => 
           array (
@@ -54,7 +69,7 @@ array (
             'label' => 'LBL_SPECIMEN_PICKUP_CMT_OTH',
           ),
         ),
-        3 => 
+        5 => 
         array (
           0 => 
           array (
@@ -63,7 +78,7 @@ array (
           ),
           1 => '',
         ),
-        4 => 
+        6 => 
         array (
           0 => 
           array (
@@ -72,18 +87,6 @@ array (
           1 => 
           array (
             'name' => 'samp_specpinstrument_name',
-          ),
-        ),
-        5 => 
-        array (
-          0 => 
-          array (
-            'name' => 'samp_specpistaffrstr_name',
-            'label' => 'LBL_SAMP_SPECPICKUP_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
-          ),
-          1 => 
-          array (
-            'name' => 'samp_specpi_spscinfo_name',
           ),
         ),
       ),

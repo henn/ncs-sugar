@@ -70,8 +70,8 @@ $mod_strings = array (
   'LBL_PLACED_IN_STORAGE_DT' => 'Sample Storage Date/Time',
   'LBL_STORAGE_COMPARTMENT_AREA' => 'Freezer Storage Compartment',
   'LBL_STORAGE_COMMENT_OTH' => 'Other Storage Comments',
-  'LBL_REMOVED_FROM_STORAGE_DT' => 'Removed from Storage',
-  'LBL_TEMP_EVENT_OCCURRED' => 'Did Temperature Event Occur',
+  'LBL_REMOVED_FROM_STORAGE_DT' => 'Removed from Storage Date and Time',
+  'LBL_TEMP_EVENT_OCCURRED' => 'Did Temperature Event Occur at SRSC?',
   'LBL_TEMP_EVENT_ACTION' => 'Temperature Event Action Taken',
   'LBL_TEMP_EVENT_ACTION_OTH' => 'Temperature Event Action Taken Other',
   'LBL_EDITVIEW_PANEL1' => 'Temperature Event',
@@ -80,7 +80,7 @@ $mod_strings = array (
   'LBL_DETAILVIEW_PANEL1' => 'Temperature Action',
   'LBL_DETAILVIEW_PANEL2' => 'Sample Storage',
   'LBL_DETAILVIEW_PANEL3' => 'Sample Receipt',
-  'LBL_EDITVIEW_PANEL4' => 'Shipping Use Only',
-  'LBL_DETAILVIEW_PANEL4' => 'Shipping Use Only',
+  'LBL_EDITVIEW_PANEL4' => 'For Shipping Only',
+  'LBL_DETAILVIEW_PANEL4' => 'For Shipping Only',
 );
 ?>
