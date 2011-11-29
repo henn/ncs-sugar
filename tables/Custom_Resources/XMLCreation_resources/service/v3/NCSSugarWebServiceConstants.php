@@ -49,6 +49,7 @@ define('EMAIL_SUGAR_MODULE',                        'LTT_Email');
 define('EVENT_SUGAR_MODULE',                        'NCSDC_EventInfo');
 define('INSTRUMENT_SUGAR_MODULE',                   'NCSDC_Instrument');
 //define('CONTACT_SUGAR_MODULE',                      'NCSDC_CntctInfo');
+define('CONTACT_SUGAR_MODULE',                      'Notes');
 define('LINK_CONTACT_SUGAR_MODULE',                 'NCSDC_CntLnk');
 define('SPECIMEN_SUGAR_MODULE',                     'NCSDC_SPECIMEN');
 define('NON_INTERVIEW_RPT_SUGAR_MODULE',            'NCSDC_NonInterRpt');
