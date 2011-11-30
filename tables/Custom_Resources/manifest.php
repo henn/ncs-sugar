@@ -525,14 +525,6 @@ $installdefs = array (
       'from' => '<basepath>/IDCreation_resources/modules/PLT_PartRVIS/views/view.edit.php',
       'to' => 'custom/modules/PLT_PartRVIS/views/view.edit.php',
     ),
-	
-####Begin copy of SAMP_SPECStorage#############	
-	//J
-    array (
-      'from' => '<basepath>/IDCreation_resources/modules/SAMP_SPECStorage',
-      'to' => 'custom/modules/SAMP_SPECStorage',
-    ),	
-	
 ############### BEGIN COPY OF ACTIVITIES ###############
 #
 #########################################################
@@ -1363,13 +1355,13 @@ $installdefs = array (
 		),
 
 	array(
-		'from' => '<basepath>/IDCreation_resources/modules/SAMP_EnLogEquip/metadata',
-		'to' => 'custom/modules/SAMP_EnLogEquip/metadata',
+		'from' => '<basepath>/IDCreation_resources/modules/SAMP_EnLogEquip/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/SAMP_EnLogEquip/metadata/quickcreatedefs.php',
 		),
 
 	array(
-		'from' => '<basepath>/IDCreation_resources/modules/SAMP_PreThrmCert/metadata',
-		'to' => 'custom/modules/SAMP_PreThrmCert/metadata',
+		'from' => '<basepath>/IDCreation_resources/modules/SAMP_PreThrmCert/metadata/quickcreatedefs.php',
+		'to' => 'custom/modules/SAMP_PreThrmCert/metadata/quickcreatedefs.php',
 		),
 
 #	array(
