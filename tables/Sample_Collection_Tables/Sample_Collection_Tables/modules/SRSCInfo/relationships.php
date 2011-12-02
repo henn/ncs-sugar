@@ -48,5 +48,37 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'samp_srscinfo_ltt_address',
   ),
+  'samp_srscinfo_samp_enlogequip' => 
+  array (
+    'rhs_label' => 'Environmental Equipment Problem Log',
+    'lhs_label' => 'SRSC (Environmental)',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'SAMP_SRSCInfo',
+    'rhs_module' => 'SAMP_EnLogEquip',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'samp_srscinfo_samp_enlogequip',
+  ),
+  'samp_srscinfo_samp_prethrmcert' => 
+  array (
+    'rhs_label' => 'Verification: Precision Thermometer Certification',
+    'lhs_label' => 'SRSC (Environmental)',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'SAMP_SRSCInfo',
+    'rhs_module' => 'SAMP_PreThrmCert',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'samp_srscinfo_samp_prethrmcert',
+  ),
 );
 ?>

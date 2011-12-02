@@ -85,6 +85,14 @@ array (
           ),
           1 => '',
         ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_spscinecreceipt_name',
+            'label' => 'LBL_SAMP_SPSCINFO_SAMP_SPECRECEIPT_FROM_SAMP_SPSCINFO_TITLE',
+          ),
+        ),
       ),
       'lbl_detailview_panel3' => 
       array (
@@ -154,7 +162,6 @@ array (
           ),
           1 => '',
         ),
-		
         1 => 
         array (
           0 => 
@@ -164,8 +171,7 @@ array (
             'label' => 'LBL_PERSON_CENTRIFUGING_ID',
           ),
           1 => '',
-        ),		
-		
+        ),
         2 => 
         array (
           0 => 

@@ -92,6 +92,24 @@ array (
           array (
             'name' => 'samp_enloge_srscinfo_name',
           ),
+          1 => '',
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_srscinnlogequip_name',
+            'label' => 'LBL_SAMP_SRSCINFO_SAMP_ENLOGEQUIP_FROM_SAMP_SRSCINFO_TITLE',
+          ),
+          1 => '',
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_enequinlogequip_name',
+            'label' => 'LBL_SAMP_ENEQUIP_SAMP_ENLOGEQUIP_FROM_SAMP_ENEQUIP_TITLE',
+          ),
         ),
       ),
       'lbl_editview_panel1' => 

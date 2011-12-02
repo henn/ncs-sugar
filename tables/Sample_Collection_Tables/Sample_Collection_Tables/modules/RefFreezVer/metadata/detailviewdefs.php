@@ -96,6 +96,15 @@ array (
           array (
             'name' => 'samp_reffrep_enequip_name',
           ),
+          1 => '',
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_enequiffreezver_name',
+            'label' => 'LBL_SAMP_ENEQUIP_SAMP_REFFREEZVER_FROM_SAMP_ENEQUIP_TITLE',
+          ),
         ),
       ),
     ),

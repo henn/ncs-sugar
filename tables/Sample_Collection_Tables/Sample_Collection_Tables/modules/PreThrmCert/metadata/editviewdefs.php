@@ -29,7 +29,7 @@ array (
         0 => 
         array (
           0 => 
-		  array (
+          array (
             'name' => 'name',
             'label' => 'Name:',
             'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
@@ -76,6 +76,10 @@ array (
           0 => 
           array (
             'name' => 'samp_prethrp_enequip_name',
+          ),
+          1 => 
+          array (
+            'name' => 'samp_srscinethrmcert_name',
           ),
         ),
       ),

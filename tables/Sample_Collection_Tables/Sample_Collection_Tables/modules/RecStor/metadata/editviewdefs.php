@@ -30,20 +30,13 @@ array (
         array (
           0 => 
           array (
-            'name' => 'samp_recsto_srscinfo_name',
-          ),
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
             'name' => 'name',
             'label' => 'Sample ID:',
             'customCode' => '<strong>{$NAME}</strong><input type="text" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
           1 => 'assigned_user_name',
         ),
-        2 => 
+        1 => 
         array (
           0 => 
           array (
@@ -52,7 +45,7 @@ array (
           ),
           1 => '',
         ),
-        3 => 
+        2 => 
         array (
           0 => 
           array (
@@ -66,7 +59,7 @@ array (
             'label' => 'LBL_RECEIPT_COMMENT_OTH',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -76,15 +69,19 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
             'name' => 'samp_recstostaffrstr_name',
             'label' => 'LBL_SAMP_RECSTOR_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
           ),
+          1 => 
+          array (
+            'name' => 'samp_recsto_srscinfo_name',
+          ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (

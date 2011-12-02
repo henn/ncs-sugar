@@ -51,5 +51,21 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'samp_specequip_samp_spscinfo',
   ),
+  'samp_specequip_samp_specstorage' => 
+  array (
+    'rhs_label' => 'Biological Storage Unit',
+    'lhs_label' => 'Biological Equipment Information',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'SAMP_SPECEquip',
+    'rhs_module' => 'SAMP_SPECStorage',
+    'relationship_type' => 'one-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'samp_specequip_samp_specstorage',
+  ),
 );
 ?>

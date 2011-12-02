@@ -112,6 +112,14 @@ array (
             'label' => 'LBL_REMOVED_FROM_STORAGE',
           ),
         ),
+        10 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_speceqecstorage_name',
+            'label' => 'LBL_SAMP_SPECEQUIP_SAMP_SPECSTORAGE_FROM_SAMP_SPECEQUIP_TITLE',
+          ),
+        ),
       ),
       'lbl_detailview_panel2' => 
       array (

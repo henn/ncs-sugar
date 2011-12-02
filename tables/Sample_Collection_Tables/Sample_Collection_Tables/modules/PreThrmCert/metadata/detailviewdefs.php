@@ -81,6 +81,10 @@ array (
           array (
             'name' => 'samp_prethrp_enequip_name',
           ),
+          1 => 
+          array (
+            'name' => 'samp_srscinethrmcert_name',
+          ),
         ),
       ),
     ),

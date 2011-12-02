@@ -113,6 +113,14 @@ array (
           ),
           1 => '',
         ),
+        10 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_speceqecstorage_name',
+            'label' => 'LBL_SAMP_SPECEQUIP_SAMP_SPECSTORAGE_FROM_SAMP_SPECEQUIP_TITLE',
+          ),
+        ),
       ),
       'lbl_editview_panel2' => 
       array (

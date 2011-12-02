@@ -37,25 +37,10 @@ array (
       array (
         0 => 
         array (
-          0 => 
-          array (
-            'name' => 'samp_sampsh_srscinfo_name',
-          ),
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            'name' => 'samp_sampshstaffrstr_name',
-            'label' => 'LBL_SAMP_SAMPSHIP_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
-          ),
-        ),
-        2 => 
-        array (
           0 => 'name',
           1 => 'assigned_user_name',
         ),
-        3 => 
+        1 => 
         array (
           0 => 
           array (
@@ -69,7 +54,7 @@ array (
             'label' => 'LBL_SHIPMENT_DATE',
           ),
         ),
-        4 => 
+        2 => 
         array (
           0 => 
           array (
@@ -79,7 +64,7 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
@@ -93,7 +78,7 @@ array (
             'label' => 'LBL_STAFF_ID_TRACK',
           ),
         ),
-        6 => 
+        4 => 
         array (
           0 => 
           array (
@@ -102,7 +87,7 @@ array (
           ),
           1 => '',
         ),
-        7 => 
+        5 => 
         array (
           0 => 
           array (
@@ -110,6 +95,23 @@ array (
             'label' => 'LBL_SHIPMENT_ISSUES_OTH',
           ),
           1 => '',
+        ),
+        6 => 
+        array (
+          0 => '',
+          1 => '',
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'samp_sampshstaffrstr_name',
+            'label' => 'LBL_SAMP_SAMPSHIP_ST_STAFFRSTR_FROM_ST_STAFFRSTR_TITLE',
+          ),
+          1 => 
+          array (
+            'name' => 'samp_sampsh_srscinfo_name',
+          ),
         ),
       ),
     ),
