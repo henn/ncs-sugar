@@ -96,7 +96,7 @@ $installdefs = array (
 ####Begin copy of Sorting###
     array (
     'from' => '<basepath>/sort/SugarView.php',
-    'to' => 'custom/include/MVC/view/',
+    'to' => 'include/MVC/View/SugarView.php',
     ),
 ####End copy of Home Customisations ####
 ####################################
