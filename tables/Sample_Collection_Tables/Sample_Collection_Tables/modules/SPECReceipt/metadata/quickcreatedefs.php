@@ -49,11 +49,7 @@ $viewdefs[$module_name]['QuickCreate'] = array(
       array (
         0 => 
         array (
-          0 => 
-          array (
-            'name' => 'samp_specre_spscinfo_name',
-            'label' => 'LBL_SAMP_SPECRECEIPT_SAMP_SPSCINFO_FROM_SAMP_SPSCINFO_TITLE',
-          ),
+          0 => '',
         ),
         1 => 
         array (

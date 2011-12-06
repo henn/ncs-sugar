@@ -17,14 +17,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'SAMP_PRETHR_SRSCINFO_NAME' => 
-  array (
-    'type' => 'relate',
-    'link' => 'samp_prethr_samp_srscinfo',
-    'label' => 'LBL_SAMP_PRETHRMCERT_SAMP_SRSCINFO_FROM_SAMP_SRSCINFO_TITLE',
-    'width' => '10%',
-    'default' => true,
-  ),
   'SAMP_PRETHRP_ENEQUIP_NAME' => 
   array (
     'type' => 'relate',

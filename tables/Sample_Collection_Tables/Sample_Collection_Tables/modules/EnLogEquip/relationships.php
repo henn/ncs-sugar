@@ -51,37 +51,5 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'samp_enlogequip_st_staffrstr',
   ),
-  'samp_enlogequip_samp_enequip' => 
-  array (
-    'rhs_label' => 'Environmental Equipment Information',
-    'lhs_label' => 'Environmental Equipment Problem Log',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'SAMP_EnLogEquip',
-    'rhs_module' => 'SAMP_EnEquip',
-    'relationship_type' => 'many-to-one',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'samp_enlogequip_samp_enequip',
-  ),
-  'samp_enlogequip_samp_srscinfo' => 
-  array (
-    'rhs_label' => 'Study Center Sample Receipt and Shipping Center',
-    'lhs_label' => 'Environmental Equipment Problem Log',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'SAMP_EnLogEquip',
-    'rhs_module' => 'SAMP_SRSCInfo',
-    'relationship_type' => 'many-to-one',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'samp_enlogequip_samp_srscinfo',
-  ),
 );
 ?>

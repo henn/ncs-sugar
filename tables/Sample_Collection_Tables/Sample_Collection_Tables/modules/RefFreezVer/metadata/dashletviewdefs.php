@@ -102,14 +102,6 @@ $dashletData['SAMP_RefFreezVerDashlet']['columns'] = array (
     'width' => '10%',
     'default' => false,
   ),
-  'samp_reffrep_enequip_name' => 
-  array (
-    'type' => 'relate',
-    'link' => 'samp_reffrer_samp_enequip',
-    'label' => 'LBL_SAMP_REFFREEZVER_SAMP_ENEQUIP_FROM_SAMP_ENEQUIP_TITLE',
-    'width' => '10%',
-    'default' => false,
-  ),
   'assigned_user_name' => 
   array (
     'width' => '8%',

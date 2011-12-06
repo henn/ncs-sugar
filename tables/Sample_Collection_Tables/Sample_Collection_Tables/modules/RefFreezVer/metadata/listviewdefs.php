@@ -25,14 +25,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'SAMP_REFFREP_ENEQUIP_NAME' => 
-  array (
-    'type' => 'relate',
-    'link' => 'samp_reffrer_samp_enequip',
-    'label' => 'LBL_SAMP_REFFREEZVER_SAMP_ENEQUIP_FROM_SAMP_ENEQUIP_TITLE',
-    'width' => '10%',
-    'default' => true,
-  ),
   'VERIFICATION_DT' => 
   array (
     'type' => 'date',

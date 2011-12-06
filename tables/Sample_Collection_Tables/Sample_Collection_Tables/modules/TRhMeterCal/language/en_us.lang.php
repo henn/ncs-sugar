@@ -82,5 +82,7 @@ $mod_strings = array (
   'LBL_EDITVIEW_PANEL2' => 'Temperature Calibration',
   'LBL_DETAILVIEW_PANEL1' => 'Temperature Calibration',
   'LBL_DETAILVIEW_PANEL2' => 'Relative Humidity Calibration',
+  'LBL_QUICKCREATE_PANEL1' => 'Temperature Calibration',
+  'LBL_QUICKCREATE_PANEL2' => 'Relative Humidity Calibration',
 );
 ?>

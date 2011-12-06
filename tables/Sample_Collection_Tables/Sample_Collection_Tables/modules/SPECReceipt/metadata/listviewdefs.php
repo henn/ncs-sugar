@@ -17,14 +17,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'SAMP_SPECRE_SPSCINFO_NAME' => 
-  array (
-    'type' => 'relate',
-    'link' => 'samp_specre_samp_spscinfo',
-    'label' => 'LBL_SAMP_SPECRECEIPT_SAMP_SPSCINFO_FROM_SAMP_SPSCINFO_TITLE',
-    'width' => '10%',
-    'default' => true,
-  ),
   'SAMP_SPECRESPECEQUIP_NAME' => 
   array (
     'type' => 'relate',

@@ -67,21 +67,5 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'samp_reffreezver_samp_srscinfo',
   ),
-  'samp_reffreezver_samp_enequip' => 
-  array (
-    'rhs_label' => 'Environmental Equipment Information',
-    'lhs_label' => 'Refrigerator and Freezer Verification',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'SAMP_RefFreezVer',
-    'rhs_module' => 'SAMP_EnEquip',
-    'relationship_type' => 'many-to-one',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'samp_reffreezver_samp_enequip',
-  ),
 );
 ?>

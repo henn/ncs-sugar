@@ -51,22 +51,6 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'samp_specreceipt_st_staffrstr',
   ),
-  'samp_specreceipt_samp_spscinfo' => 
-  array (
-    'rhs_label' => 'Study Center Sample Processing and Shipping Center',
-    'lhs_label' => 'Specimen Receipt',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'SAMP_SPECReceipt',
-    'rhs_module' => 'SAMP_SPSCInfo',
-    'relationship_type' => 'many-to-one',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'samp_specreceipt_samp_spscinfo',
-  ),
   'samp_specreceipt_samp_specequip' => 
   array (
     'rhs_label' => 'SPSC Equipment Information',

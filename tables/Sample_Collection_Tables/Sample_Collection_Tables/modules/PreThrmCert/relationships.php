@@ -51,22 +51,6 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'samp_prethrmcert_st_staffrstr',
   ),
-  'samp_prethrmcert_samp_srscinfo' => 
-  array (
-    'rhs_label' => 'Study Center Sample Receipt and Shipping Center',
-    'lhs_label' => 'Precision Thermometer Certification',
-    'rhs_subpanel' => 'default',
-    'lhs_module' => 'SAMP_PreThrmCert',
-    'rhs_module' => 'SAMP_SRSCInfo',
-    'relationship_type' => 'many-to-one',
-    'readonly' => false,
-    'deleted' => false,
-    'relationship_only' => false,
-    'for_activities' => false,
-    'is_custom' => false,
-    'from_studio' => false,
-    'relationship_name' => 'samp_prethrmcert_samp_srscinfo',
-  ),
   'samp_prethrmcert_samp_enequip' => 
   array (
     'rhs_label' => 'Environmental Equipment Information',

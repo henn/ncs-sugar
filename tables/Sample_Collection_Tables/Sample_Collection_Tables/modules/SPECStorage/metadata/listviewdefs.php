@@ -25,14 +25,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  'SAMP_SPECSTSPECEQUIP_NAME' => 
-  array (
-    'type' => 'relate',
-    'link' => 'samp_specstsamp_specequip',
-    'label' => 'LBL_SAMP_SPECSTORAGE_SAMP_SPECEQUIP_FROM_SAMP_SPECEQUIP_TITLE',
-    'width' => '10%',
-    'default' => true,
-  ),
   'SAMP_SPECSHECSTORAGE_NAME' => 
   array (
     'type' => 'relate',
