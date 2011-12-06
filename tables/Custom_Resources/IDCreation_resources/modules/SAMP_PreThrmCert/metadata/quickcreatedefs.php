@@ -68,8 +68,7 @@ array (
           ),
           1 => 
           array (
-            'name' => 'samp_prethr_srscinfo_name',
-            'label' => 'LBL_SAMP_PRETHRMCERT_SAMP_SRSCINFO_FROM_SAMP_SRSCINFO_TITLE',
+            'name' => 'samp_srscinethrmcert_name',
           ),
         ),
         4 => 

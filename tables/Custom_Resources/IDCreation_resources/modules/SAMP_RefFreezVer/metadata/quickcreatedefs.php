@@ -92,8 +92,7 @@ array (
         array (
           0 => 
           array (
-            'name' => 'samp_reffrep_enequip_name',
-            'label' => 'LBL_SAMP_REFFREEZVER_SAMP_ENEQUIP_FROM_SAMP_ENEQUIP_TITLE',
+            'name' => 'samp_enequiffreezver_name',
           ),
           1 => '',
         ),

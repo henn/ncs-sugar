@@ -77,56 +77,6 @@ $layout_defs["SAMP_SRSCInfo"]["subpanel_setup"]["samp_recsto_samp_srscinfo"] = a
 
 
 
-// created: 2011-08-30 12:44:04
-$layout_defs["SAMP_SRSCInfo"]["subpanel_setup"]["samp_enloge_samp_srscinfo"] = array (
-  'order' => 100,
-  'module' => 'SAMP_EnLogEquip',
-  'subpanel_name' => 'default',
-  'sort_order' => 'asc',
-  'sort_by' => 'id',
-  'title_key' => 'LBL_SAMP_ENLOGEQUIP_SAMP_SRSCINFO_FROM_SAMP_ENLOGEQUIP_TITLE',
-  'get_subpanel_data' => 'samp_enloge_samp_srscinfo',
-  'top_buttons' => 
-  array (
-    0 => 
-    array (
-      'widget_class' => 'SubPanelTopButtonQuickCreate',
-    ),
-    1 => 
-    array (
-      'widget_class' => 'SubPanelTopSelectButton',
-      'mode' => 'MultiSelect',
-    ),
-  ),
-);
-
-
-
-// created: 2011-08-30 12:44:18
-$layout_defs["SAMP_SRSCInfo"]["subpanel_setup"]["samp_prethr_samp_srscinfo"] = array (
-  'order' => 100,
-  'module' => 'SAMP_PreThrmCert',
-  'subpanel_name' => 'default',
-  'sort_order' => 'asc',
-  'sort_by' => 'id',
-  'title_key' => 'LBL_SAMP_PRETHRMCERT_SAMP_SRSCINFO_FROM_SAMP_PRETHRMCERT_TITLE',
-  'get_subpanel_data' => 'samp_prethr_samp_srscinfo',
-  'top_buttons' => 
-  array (
-    0 => 
-    array (
-      'widget_class' => 'SubPanelTopButtonQuickCreate',
-    ),
-    1 => 
-    array (
-      'widget_class' => 'SubPanelTopSelectButton',
-      'mode' => 'MultiSelect',
-    ),
-  ),
-);
-
-
-
 // created: 2011-08-30 12:44:11
 $layout_defs["SAMP_SRSCInfo"]["subpanel_setup"]["samp_enequi_samp_srscinfo"] = array (
   'order' => 100,

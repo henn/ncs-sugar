@@ -2,26 +2,6 @@
  //WARNING: The contents of this file are auto-generated
 
 
-// created: 2011-10-03 17:10:04
-$dictionary["SAMP_SPECReceipt"]["fields"]["samp_specre_samp_spscinfo"] = array (
-  'name' => 'samp_specre_samp_spscinfo',
-  'type' => 'link',
-  'relationship' => 'samp_specreceipt_samp_spscinfo',
-  'source' => 'non-db',
-  'vname' => 'LBL_SAMP_SPECRECEIPT_SAMP_SPSCINFO_FROM_SAMP_SPSCINFO_TITLE',
-);
-$dictionary["SAMP_SPECReceipt"]["fields"]["samp_specre_spscinfo_name"] = array (
-  'name' => 'samp_specre_spscinfo_name',
-  'type' => 'relate',
-  'source' => 'non-db',
-  'vname' => 'LBL_SAMP_SPECRECEIPT_SAMP_SPSCINFO_FROM_SAMP_SPSCINFO_TITLE',
-  'save' => true,
-  'id_name' => 'samp_specre60bpscinfo_ida',
-  'link' => 'samp_specre_samp_spscinfo',
-  'table' => 'samp_spscinfo',
-  'module' => 'SAMP_SPSCInfo',
-  'rname' => 'name',
-);
 $dictionary["SAMP_SPECReceipt"]["fields"]["samp_specre60bpscinfo_ida"] = array (
   'name' => 'samp_specre60bpscinfo_ida',
   'type' => 'link',

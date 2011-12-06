@@ -78,13 +78,11 @@ array (
         array (
           0 => 
           array (
-            'name' => 'samp_enloge_srscinfo_name',
-            'label' => 'LBL_SAMP_ENLOGEQUIP_SAMP_SRSCINFO_FROM_SAMP_SRSCINFO_TITLE',
+            'name' => 'samp_srscinnlogequip_name',  //NEW NAME
           ),
           1 => 
           array (
-            'name' => 'samp_enlogep_enequip_name',
-            'label' => 'LBL_SAMP_ENLOGEQUIP_SAMP_ENEQUIP_FROM_SAMP_ENEQUIP_TITLE',
+            'name' => 'samp_enequinlogequip_name',  //NEW NAME
           ),
         ),
       ),
