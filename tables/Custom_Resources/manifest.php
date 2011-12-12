@@ -623,156 +623,37 @@ $installdefs = array (
       'to' => 'custom/working/modules/Notes/metadata/popupdefs.php',
     ),
 
-	/*
+	
+	//******** for Meetings ************
     array (
-      'from' => '<basepath>/Activities_resources/SugarModules/modules/Notes/metadata/quickcreatedefs.php',
-      'to' => 'custom/modules/Notes/metadata/quickcreatedefs.php',
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext',
+      'to' => 'custom/Extension/modules/Meetings/Ext',
     ),
 
     array (
-      'from' => '<basepath>/Activities_resources/SugarModules/modules/Notes/metadata/quickcreatedefs.php',
-      'to' => 'custom/working/modules/Notes/metadata/quickcreatedefs.php',
-    ),
-	*/
-
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Language',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Language',
+      'from' => '<basepath>/Activities_resources/Extension/application/Ext/TableDictionary',
+      'to' => 'custom/Extension/application/Ext/TableDictionary',
     ),
 
     array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Layoutdefs/meetings_olt_provider_Meetings.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Layoutdefs/meetings_olt_provider_Meetings.php',
+      'from' => '<basepath>/Activities_resources/Extension/modules/relationships',
+      'to' => 'custom/Extension/modules/relationships',
     ),
+	//******** end Meetings ************
+	
 
+	//********* for OLT_Provider ************
     array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/meetings_olt_provider_Meetings.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/meetings_olt_provider_Meetings.php',
+      'from' => '<basepath>/Activities_resources/Extension/modules/OLT_Provider/Ext',
+      'to' => 'custom/Extension/modules/OLT_Provider/Ext',
     ),
+	//********* end for OLT_Provider ********
 
+	
+	//*********** for custom metadata **************
     array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/ncsdc_eventinfo_activities_meetings_Meetings.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/ncsdc_eventinfo_activities_meetings_Meetings.php',
-    ),
-
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/ncsdc_eventinfo_meetings_Meetings.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/ncsdc_eventinfo_meetings_Meetings.php',
-    ),
-
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/plt_participant_activities_meetings_Meetings.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/plt_participant_activities_meetings_Meetings.php',
-    ),
-
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/plt_participant_meetings_Meetings.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/plt_participant_meetings_Meetings.php',
-    ),
-
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_comment_c.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_comment_c.php',
-    ),
-
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_disp_c.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_disp_c.php',
-    ),
-
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_distance_c.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_distance_c.php',
-    ),
-
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_interpret_c.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_interpret_c.php',
-    ),
-
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_interpret_oth_c.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_interpret_oth_c.php',
-    ),
-
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_lang_c.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_lang_c.php',
-    ),
- 
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_lang_oth_c.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_lang_oth_c.php',
-    ),
-
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_location_c.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_location_c.php',
-    ),
-
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_location_oth_c.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_location_oth_c.php',
-    ),
-
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_private_c.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_private_c.php',
-    ),
- 
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_private_detail_c.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_private_detail_c.php',
-    ),
-
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_type_c.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_type_c.php',
-    ),
-
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_type_oth_c.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_contact_type_oth_c.php',
-    ),
- 
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_date_end.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_date_end.php',
-    ),
- 
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_end_time_c.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_end_time_c.php',
-    ),
- 
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_name.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_name.php',
-    ),
-
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_parent_type.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_parent_type.php',
-    ),
-
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_start_date_c.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_start_date_c.php',
-    ),
-
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_transaction_type_c.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_transaction_type_c.php',
-    ),
- 
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_who_contact_oth_c.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_who_contact_oth_c.php',
-    ),
- 
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Vardefs/sugarfield_who_contacted_c.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Vardefs/sugarfield_who_contacted_c.php',
+      'from' => '<basepath>/Activities_resources/metadata',
+      'to' => 'custom/metadata',
     ),
  
     array (
@@ -969,12 +850,6 @@ $installdefs = array (
       'from' => '<basepath>/Activities_resources/Extension/modules/LTT_Telephone/Ext/Vardefs',
       'to' => 'custom/Extension/modules/LTT_Telephone/Ext/Vardefs',
     ),
-	/*
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/NCSDC_CntctInfo/Ext/Vardefs',
-      'to' => 'custom/Extension/modules/NCSDC_CntctInfo/Ext/Vardefs',
-    ),
-	*/
     array (
       'from' => '<basepath>/Activities_resources/Extension/modules/NCSDC_CntLnk/Ext/Vardefs',
       'to' => 'custom/Extension/modules/NCSDC_CntLnk/Ext/Vardefs',
@@ -1030,10 +905,6 @@ $installdefs = array (
     array (
       'from' => '<basepath>/Activities_resources/Extension/modules/OLT_Provider/Ext/Vardefs',
       'to' => 'custom/Extension/modules/OLT_Provider/Ext/Vardefs',
-    ),
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/OLT_Provider/Ext/Layoutdefs',
-      'to' => 'custom/Extension/modules/OLT_Provider/Ext/Layoutdefs',
     ),
     array (
       'from' => '<basepath>/Activities_resources/Extension/modules/OLT_PrsnInstLnk/Ext/Vardefs',
@@ -2280,12 +2151,6 @@ $installdefs = array (
     array (
       'from' => '<basepath>/Activities_resources/SugarModules/modules/Notes/language/en_us.lang.php',
       'to_module' => 'Notes',
-      'language' => 'en_us',
-    ),
-    3 => 
-    array (
-      'from' => '<basepath>/Activities_resources/SugarModules/include/language/en_us.12-08-2011-Meetings-OLT_Provider.php',
-      'to_module' => 'application',
       'language' => 'en_us',
     ),
   ),   
