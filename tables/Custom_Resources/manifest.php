@@ -636,18 +636,8 @@ $installdefs = array (
 	*/
 
     array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Language/en_us.Data_Collection_Tables.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Language/en_us.Data_Collection_Tables.php',
-    ),
-
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Language/en_us.Person_Level_Tables.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Language/en_us.Person_Level_Tables.php',
-    ),
-
-    array (
-      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Language/en_us.custommeetings_olt_provider.php',
-      'to' => 'custom/Extension/modules/Meetings/Ext/Language/en_us.custommeetings_olt_provider.php',
+      'from' => '<basepath>/Activities_resources/Extension/modules/Meetings/Ext/Language',
+      'to' => 'custom/Extension/modules/Meetings/Ext/Language',
     ),
 
     array (
@@ -1040,6 +1030,10 @@ $installdefs = array (
     array (
       'from' => '<basepath>/Activities_resources/Extension/modules/OLT_Provider/Ext/Vardefs',
       'to' => 'custom/Extension/modules/OLT_Provider/Ext/Vardefs',
+    ),
+    array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/OLT_Provider/Ext/Layoutdefs',
+      'to' => 'custom/Extension/modules/OLT_Provider/Ext/Layoutdefs',
     ),
     array (
       'from' => '<basepath>/Activities_resources/Extension/modules/OLT_PrsnInstLnk/Ext/Vardefs',
@@ -2286,6 +2280,12 @@ $installdefs = array (
     array (
       'from' => '<basepath>/Activities_resources/SugarModules/modules/Notes/language/en_us.lang.php',
       'to_module' => 'Notes',
+      'language' => 'en_us',
+    ),
+    3 => 
+    array (
+      'from' => '<basepath>/Activities_resources/SugarModules/include/language/en_us.12-08-2011-Meetings-OLT_Provider.php',
+      'to_module' => 'application',
       'language' => 'en_us',
     ),
   ),   
