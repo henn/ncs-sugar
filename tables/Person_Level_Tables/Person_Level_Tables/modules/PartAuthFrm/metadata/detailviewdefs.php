@@ -74,6 +74,10 @@ array (
           array (
             'name' => 'plt_partautrticipant_name',
           ),
+          1 => 
+          array (
+            'name' => 'plt_partautfrm_notes_name',
+          ),
         ),
       ),
     ),

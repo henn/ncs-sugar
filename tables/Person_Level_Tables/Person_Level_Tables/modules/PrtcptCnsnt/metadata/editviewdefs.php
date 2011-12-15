@@ -47,6 +47,10 @@ array (
             'name' => 'plt_particitcptcnsnt_name',
             'label' => 'LBL_PLT_PARTICIPANT_PLT_PRTCPTCNSNT_FROM_PLT_PARTICIPANT_TITLE',
           ),
+          1 => 
+          array (
+            'name' => 'plt_prtcptcsnt_notes_name',
+          ),
         ),
       ),
       'lbl_editview_panel1' => 

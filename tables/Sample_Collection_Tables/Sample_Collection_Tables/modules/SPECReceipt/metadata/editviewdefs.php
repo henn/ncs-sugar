@@ -46,7 +46,11 @@ array (
         2 => 
         array (
           0 => 'name',
-          1 => '',
+          1 => 
+          array (
+            'name' => 'cbr_barcode_id',
+            'label' => 'LBL_CBR_BARCODE_ID',
+          ),
         ),
         3 => 
         array (
@@ -121,7 +125,7 @@ array (
             'label' => 'LBL_UPPER_TRIGGER_LVL',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -131,7 +135,7 @@ array (
           ),
           1 => '',
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (

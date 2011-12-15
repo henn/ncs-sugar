@@ -50,10 +50,10 @@ function deleteAttachmentCallBack(text)
           0 => 
           array (
             'name' => 'name',
-            'label' => 'Note ID:',            
-			'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
+            'label' => 'Note ID:',
+            'customCode' => '<strong>{$NAME}</strong><input type="hidden" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103">',
           ),
-          1 => 'parent_name',
+          1 => '',
         ),
         1 => 
         array (
@@ -68,21 +68,6 @@ function deleteAttachmentCallBack(text)
         array (
           0 => 
           array (
-            'name' => 'filename',
-            'customCode' => '<span id=\'new_attachment\' style=\'display:{if !empty($fields.filename.value)}none{/if}\'>
-        									 <input name="uploadfile" tabindex="3" type="file" size="60"/>
-        									 </span>
-											 <span id=\'old_attachment\' style=\'display:{if empty($fields.filename.value)}none{/if}\'>
-		 									 <input type=\'hidden\' name=\'deleteAttachment\' value=\'0\'>
-		 									 {$fields.filename.value}<input type=\'hidden\' name=\'old_filename\' value=\'{$fields.filename.value}\'/><input type=\'hidden\' name=\'old_id\' value=\'{$fields.id.value}\'/>
-											 <input type=\'button\' class=\'button\' value=\'{$APP.LBL_REMOVE}\' onclick=\'ajaxStatus.showStatus(SUGAR.language.get("Notes", "LBL_REMOVING_ATTACHMENT"));this.form.deleteAttachment.value=1;this.form.action.value="EditView";SUGAR.dashlets.postForm(this.form, deleteAttachmentCallBack);this.form.deleteAttachment.value=0;this.form.action.value="";\' >       
-											 </span>',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
             'name' => 'start_date_time_c',
             'label' => 'LBL_START_DATE_TIME',
           ),
@@ -92,7 +77,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_END_DATE_TIME',
           ),
         ),
-        4 => 
+        3 => 
         array (
           0 => 
           array (
@@ -106,7 +91,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_CONTACT_TYPE_OTHER',
           ),
         ),
-        5 => 
+        4 => 
         array (
           0 => 
           array (
@@ -120,7 +105,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_CONTACT_LANG_OTH',
           ),
         ),
-        6 => 
+        5 => 
         array (
           0 => 
           array (
@@ -134,7 +119,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_CONTACT_INTERPRET_OTH',
           ),
         ),
-        7 => 
+        6 => 
         array (
           0 => 
           array (
@@ -148,7 +133,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_CONTACT_LOCATION_OTH',
           ),
         ),
-        8 => 
+        7 => 
         array (
           0 => 
           array (
@@ -162,7 +147,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_CONTACT_PRIVATE_DETAIL',
           ),
         ),
-        9 => 
+        8 => 
         array (
           0 => 
           array (
@@ -176,7 +161,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_WHO_CONTACTED',
           ),
         ),
-        10 => 
+        9 => 
         array (
           0 => 
           array (
@@ -189,7 +174,7 @@ function deleteAttachmentCallBack(text)
             'label' => 'LBL_CONTACT_DISP',
           ),
         ),
-        11 => 
+        10 => 
         array (
           0 => 
           array (

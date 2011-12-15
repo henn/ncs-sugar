@@ -150,16 +150,37 @@ $installdefs = array (
 #                                  #
 # Event Type Drop down List (JL)   # 
 #                                  #
-####Begin copy of NCSDC_CntctInfo###
+####################################
     array (
-      'from' => '<basepath>/include',
-      'to' => 'custom/include',
-    ),
+      'from' => '<basepath>/include/language/en_us.lang.php',
+      'to' => 'custom/include/language/en_us.lang.php',
+    ),	
 ####################################
 #                                  #
-# 			DateTimeCombo   	   # 
-#                                  #    
-####Begin copy of DateTimeCombo Javascript file ####
+# custom language files			   # 
+#                                  #
+####################################
+    array (
+      'from' => '<basepath>/Custom_Language/include_language-en_us.lang.php',
+      'to' => 'include/language/en_us.lang.php',
+    ),	
+    array (
+      'from' => '<basepath>/Custom_Language/modules_Activities_language-en_us.lang.php',
+      'to' => 'modules/Activities/language/en_us.lang.php',
+    ),		
+    array (
+      'from' => '<basepath>/Custom_Language/modules_DynamicFields_language-en_us.lang.php',
+      'to' => 'modules/DynamicFields/language/en_us.lang.php',
+    ),		
+    array (
+      'from' => '<basepath>/Custom_Language/modules_Notes_language-en_us.lang.php',
+      'to' => 'modules/Notes/language/en_us.lang.php',
+    ),			
+#####################################################
+#                                  					#
+# 			DateTimeCombo   	   					# 
+#                                  					#    
+####Begin copy of DateTimeCombo Javascript file #####
     array (
       'from' => '<basepath>/DateTimeCombo/Datetimecombo.js',
    'to' => 'jssource/src_files/include/SugarFields/Fields/Datetimecombo/Datetimecombo.js',
@@ -519,6 +540,10 @@ $installdefs = array (
 	array (
       'from' => '<basepath>/IDCreation_resources/modules/Notes/views/view.edit.php',
       'to' => 'custom/modules/Notes/views/view.edit.php',
+    ),	
+	array (
+      'from' => '<basepath>/Activities_resources/Extension/modules/Notes/Ext/Language',
+      'to' => 'custom/Extension/modules/Notes/Ext/Language',
     ),
 ####Begin copy of PLT_PartAuthFrm#############
 	array (
@@ -1234,11 +1259,6 @@ $installdefs = array (
 		'to' => 'custom/modules/SAMP_PreThrmCert/metadata/quickcreatedefs.php',
 		),
 
-#	array(
-#		'from' => '<basepath>/IDCreation_resources/modules/SAMP_RecStor/metadata/quickcreatedefs.php',
-#		'to' => 'custom/modules/SAMP_RecStor/metadata/quickcreatedefs.php',
-#		),
-
 	array(
 		'from' => '<basepath>/IDCreation_resources/modules/SAMP_RefFreezVer/metadata/quickcreatedefs.php',
 		'to' => 'custom/modules/SAMP_RefFreezVer/metadata/quickcreatedefs.php',
@@ -1273,10 +1293,19 @@ $installdefs = array (
 		'from' => '<basepath>/IDCreation_resources/modules/PLT_PartRVIS/metadata/quickcreatedefs.php',
 		'to' => 'custom/modules/PLT_PartRVIS/metadata/quickcreatedefs.php',
 		),
-
-
 	//*************** END COPY OF quickcreatedefs.php *************************
 	
+	//**************** Cross Module Search *****************
+	array(
+		'from' => '<basepath>/Search/include/ListView/ListViewData.php',
+		'to' => 'include/ListView/ListViewData.php',
+		),
+
+	array(
+		'from' => '<basepath>/Search/PLT_Participant/metadata/searchdefs.php',
+		'to' => 'modules/PLT_Participant/metadata/searchdefs.php',
+		),		
+	//*************** End of Cross Module Search **********
 	
   ),  //end of copy
 

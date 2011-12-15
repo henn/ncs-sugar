@@ -88,5 +88,6 @@ $mod_strings = array (
   'LBL_RECEIPT_DT' => 'Specimen Receipt Date & Time:',
   'LBL_CENTRIFUGE_TEMPERATURE' => 'Centrifuge Temperature',
   'LBL_PERSON_CENTRIFUGING_ID' => 'Staff ID of Person Centrifuging2',
+  'LBL_CBR_BARCODE_ID' => 'CBR Barcode ID',
 );
 ?>

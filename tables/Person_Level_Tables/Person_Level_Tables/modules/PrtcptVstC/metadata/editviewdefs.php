@@ -119,16 +119,11 @@ array (
             'name' => 'plt_particirtcptvstc_name',
             'label' => 'LBL_PLT_PARTICIPANT_PLT_PRTCPTVSTC_FROM_PLT_PARTICIPANT_TITLE',
           ),
-        ),
-		/*
-        9 => 
-        array (
-          0 => 
+          1 => 
           array (
-            'name' => 'ncsdc_cntctinfo_plt_prtcptvstc_name',
+            'name' => 'plt_prtcptvstc_notes_name',
           ),
         ),
-		*/
       ),
     ),
   ),

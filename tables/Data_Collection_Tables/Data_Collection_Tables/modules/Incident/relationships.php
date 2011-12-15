@@ -147,5 +147,22 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'ncsdc_incident_st_wkoeact',
   ),
+  'ncsdc_incident_notes' => 
+  array (
+    'rhs_label' => 'Contact Information',
+    'lhs_label' => 'Incident',
+    'lhs_subpanel' => 'default',
+    'rhs_subpanel' => 'default',
+    'lhs_module' => 'NCSDC_Incident',
+    'rhs_module' => 'Notes',
+    'relationship_type' => 'many-to-many',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'ncsdc_incident_notes',
+  ),
 );
 ?>

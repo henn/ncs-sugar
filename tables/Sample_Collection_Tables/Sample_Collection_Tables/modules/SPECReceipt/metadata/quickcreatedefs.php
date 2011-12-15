@@ -70,7 +70,12 @@ $viewdefs[$module_name]['QuickCreate'] = array(
         ),
         3 => 
         array (
-          0 => 'name',
+          0 => 'name',		  
+          1 => 
+          array (
+            'name' => 'cbr_barcode_id',
+            'label' => 'LBL_CBR_BARCODE_ID',
+          ),		  
         ),
         4 => 
         array (

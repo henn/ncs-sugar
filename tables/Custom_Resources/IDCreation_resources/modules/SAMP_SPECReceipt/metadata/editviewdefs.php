@@ -62,7 +62,11 @@ array (
             'label' => 'Specimen ID:',
 			'customCode' => '<input type="text" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103" onchange=\'validateID(this.value)\' >',
           ),		  		  		 
-          1 => '',
+          1 => 
+          array (
+            'name' => 'cbr_barcode_id',
+            'label' => 'LBL_CBR_BARCODE_ID',
+          ),		  		  		  
         ),
         3 => 
         array (

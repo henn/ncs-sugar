@@ -32,11 +32,7 @@ array (
             'name' => 'name',
             'label' => 'LBL_SUBJECT',
           ),
-          1 => 
-          array (
-            'name' => 'parent_name',
-            'customLabel' => '{sugar_translate label=\'LBL_MODULE_NAME\' module=$fields.parent_type.value}',
-          ),
+          1 => '',
         ),
         1 => 
         array (
@@ -51,18 +47,6 @@ array (
         array (
           0 => 
           array (
-            'name' => 'ncsdc_eventnfo_notes_name',
-            'label' => 'LBL_NCSDC_EVENTINFO_NOTES_FROM_NCSDC_EVENTINFO_TITLE',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 'assigned_user_name',
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
             'name' => 'start_date_time_c',
             'label' => 'LBL_START_DATE_TIME',
           ),
@@ -72,7 +56,7 @@ array (
             'label' => 'LBL_END_DATE_TIME',
           ),
         ),
-        5 => 
+        3 => 
         array (
           0 => 
           array (
@@ -86,7 +70,7 @@ array (
             'label' => 'LBL_CONTACT_TYPE_OTHER',
           ),
         ),
-        6 => 
+        4 => 
         array (
           0 => 
           array (
@@ -100,7 +84,7 @@ array (
             'label' => 'LBL_CONTACT_LANG_OTH',
           ),
         ),
-        7 => 
+        5 => 
         array (
           0 => 
           array (
@@ -114,7 +98,7 @@ array (
             'label' => 'LBL_CONTACT_INTERPRET_OTH',
           ),
         ),
-        8 => 
+        6 => 
         array (
           0 => 
           array (
@@ -128,7 +112,7 @@ array (
             'label' => 'LBL_CONTACT_LOCATION_OTH',
           ),
         ),
-        9 => 
+        7 => 
         array (
           0 => 
           array (
@@ -142,7 +126,7 @@ array (
             'label' => 'LBL_CONTACT_PRIVATE_DETAIL',
           ),
         ),
-        10 => 
+        8 => 
         array (
           0 => 
           array (
@@ -156,38 +140,48 @@ array (
             'label' => 'LBL_WHO_CONTACT_OTH',
           ),
         ),
-        11 => 
+        9 => 
         array (
           0 => 
+          array (
+            'name' => 'contact_disp_c',
+            'label' => 'LBL_CONTACT_DISP',
+          ),
+          1 => 
           array (
             'name' => 'contact_distance_c',
             'label' => 'LBL_CONTACT_DISTANCE',
           ),
+        ),
+        10 => 
+        array (
+          0 => 
+          array (
+            'name' => 'description',
+            'label' => 'LBL_NOTE_STATUS',
+          ),
           1 => 
           array (
-            'name' => 'contact_disp_c',
-            'label' => 'LBL_CONTACT_DISP',
+            'name' => 'ncsdc_eventinfo_activities_notes_name',
+          ),
+        ),
+        11 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncsdc_noninrpt_notes_name',
+          ),
+          1 => 
+          array (
+            'name' => 'plt_participant_activities_notes_name',
           ),
         ),
         12 => 
         array (
           0 => 
           array (
-            'name' => 'filename',
-            'type' => 'file',
-            'displayParams' => 
-            array (
-              'id' => 'id',
-              'link' => 'filename',
-            ),
-          ),
-        ),
-        13 => 
-        array (
-          0 => 
-          array (
-            'name' => 'description',
-            'label' => 'LBL_NOTE_STATUS',
+            'name' => 'plt_particiant_notes_name',
+            'label' => 'LBL_PLT_PARTICIPANT_NOTES_FROM_PLT_PARTICIPANT_TITLE',
           ),
         ),
       ),

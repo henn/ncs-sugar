@@ -131,5 +131,18 @@ $relationships = array (
     'from_studio' => false,
     'relationship_name' => 'ncsdc_noninterrpt_ncsdc_nintrptvcnt',
   ),
+  'ncsdc_noninterrpt_notes' => 
+  array (
+    'lhs_module' => 'NCSDC_NonInterRpt',
+    'rhs_module' => 'Notes',
+    'relationship_type' => 'one-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'ncsdc_noninterrpt_notes',
+  ),
 );
 ?>

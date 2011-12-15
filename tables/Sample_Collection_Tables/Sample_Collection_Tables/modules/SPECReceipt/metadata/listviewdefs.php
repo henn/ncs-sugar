@@ -51,6 +51,13 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
+  'CBR_BARCODE_ID' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_CBR_BARCODE_ID',
+    'width' => '10%',
+    'default' => true,
+  ),
   'CENTRIFUGE_COMMENT' => 
   array (
     'type' => 'enum',
@@ -67,7 +74,6 @@ array (
     'width' => '10%',
     'default' => true,
   ),
-  
   'PERSON_CENTRIFUGING_ID' => 
   array (
     'type' => 'relate',
@@ -75,7 +81,7 @@ array (
     'label' => 'LBL_PERSON_CENTRIFUGING_ID',
     'width' => '10%',
     'default' => true,
-  ),  
+  ),
   'RECEIPT_DT' => 
   array (
     'type' => 'datetimecombo',

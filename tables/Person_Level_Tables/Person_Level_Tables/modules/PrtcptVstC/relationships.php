@@ -35,5 +35,21 @@
  ********************************************************************************/
 
 $relationships = array (
+  'plt_prtcptvstc_notes' => 
+  array (
+    'rhs_label' => 'Contact Information',
+    'lhs_label' => 'Participant Visit Consent',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'PLT_PrtcptVstC',
+    'rhs_module' => 'Notes',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'plt_prtcptvstc_notes',
+  ),
 );
 ?>

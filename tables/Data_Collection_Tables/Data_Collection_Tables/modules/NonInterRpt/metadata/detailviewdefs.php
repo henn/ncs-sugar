@@ -148,6 +148,10 @@ array (
           array (
             'name' => 'ncsdc_noninellingunt_name',
           ),
+          1 => 
+          array (
+            'name' => 'ncsdc_noninrpt_notes_name',
+          ),
         ),
       ),
       'lbl_detailview_panel2' => 
