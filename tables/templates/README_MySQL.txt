@@ -15,6 +15,10 @@ The steps to deploy this instance are:
 
 	3) Install Custom_Resources
 	4) Run a quick Repair and Rebuild
+	5) Run "Rebuild Minified JS Files" to rebuild and compress javascript files which include the new Javascript files for DateTimeCombo field.
+	You will need to clear the web browser's cache and re-login to sugarCRM system before you can see changes to the DateTimeCombo field.
+	6) If you are upgrading NCSsugarCRM system from a previous version, please make sure to uninstall previous installed packages before installing the newer version of those packages. 
+	** Please Note: make sure you select the option "Do Not Remove Tables" when unstalling a package. This way the data in your NCS sugar system will be kept intact.
 
 USING MODULE BUILDER
 -Be sure to unload the Custom_Resources module in Module Loader before deploying
