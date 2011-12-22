@@ -67,4 +67,30 @@ function getModuleNameByID($tablename, $id)
     unset($result);
     return $val['name'];
 }
+
+/**
+ *
+ * @global type $dictionary
+ * @param string $joinrelationship
+ * @param integer $id
+ * @return string Name of related record
+ */
+function getMultiRelatedNameByJoin($joinrelationship, $id)
+{
+    global $relationships;
+    $db = DBManagerFactory::getInstance();
+    $jointable = $relationships[$joinrelationship]['join_table'];
+    $rhstable = $relationships[$joinrelationship]['rhs_table'];
+    $joinrhskey = $relationships[$joinrelationship]['join_table'] . "." . $relationships[$joinrelationship]['join_key_rhs'];
+    $joinlhskey = $relationships[$joinrelationship]['join_table'] . "." . $relationships[$joinrelationship]['join_key_lhs'];
+    $query = "SELECT rhs.id, rhs.name FROM " . $jointable . 
+            " Inner Join " . $rhstable . " rhs ON " . $joinrhskey . " = rhs.id " .
+            " WHERE " . $joinlhskey . " =  '" . $id . "'";
+    $result = $db->query($query, true, $app_strings['ERR_EXPORT_TYPE'].$type.": <BR>.".$query);
+    unset($focus);
+    unset($query);
+    $val = $db->fetchByAssoc($result, -1, false);
+    unset($result);
+    return $val['name'];
+}
 ?>

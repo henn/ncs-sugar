@@ -81,7 +81,7 @@ class NCSSugarWebServiceImpl extends SugarWebServiceImplv3 {
         {
             die("I cannot find the XML file that was just generated! I was told it was in: " . $this->tempfilename);
         };
-        if (!$testDoc->setSchema('custom/service/v3/schema_2.0.01.02.xsd'))
+        if (!$testDoc->setSchema('custom/service/v3/schema_2.1.00.00.xsd'))
         {
             die("I cannot find the Schema file that was provided." );
         };

@@ -97,6 +97,11 @@ define('SSU_TABLE',          'gt_secsampunt');
 define('PERSON_TABLE',       'plt_person');
 
 /*
+ * MANY TO MANY JOIN TABLE DEFINITIONS TO SUPPORT WHERE WE NEED TO INCLUDE RELATED MODULES IN PARENT QUERY
+ */
+define('SAMPLERECEIPTCONF_SRSCINFO_JOIN', 'samp_recconf_samp_srscinfo');
+
+/*
  * FOREIGN KEY IN JOIN TABLE
  */
 define('PERSONRACE_PERSON_RHS', 'plt_personf367_person_ida');
