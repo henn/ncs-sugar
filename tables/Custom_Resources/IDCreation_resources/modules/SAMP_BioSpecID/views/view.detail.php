@@ -2,20 +2,25 @@
 
 	if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 
-	require_once('include/MVC/View/views/view.edit.php');	
+	require_once('include/MVC/View/views/view.detail.php');	
 	require_once('include/utils.php');		
 	
-	class SAMP_BioSpecIDViewEdit extends ViewEdit {
+	class SAMP_BioSpecIDViewDetail extends ViewDetail {
 	
-		function SAMP_BioSpecIDViewEdit(){
-			parent::ViewEdit();
+		function SAMP_BioSpecIDViewDetail(){
+			parent::ViewDetail();
 		}
 		
 		//==== Check Specimen ID if needed.
 		function process()
 		{		
+			 global $current_user;
+				// echo "<pre>";
+				// print_r($current_user->is_admin); // -> 0 );
+				// echo "</pre>";
+				// die("");
 			//For SAMP_SPECReceipt module
-			if(isset($_REQUEST['cid']) && !empty($_REQUEST['cid']))
+			if(isset($_REQUEST['cid']) && !empty($_REQUEST['cid']) && isset($_SESSION['Table_Name']))
 			{										
 				$arr = array();
 				$error1 = false;
@@ -63,8 +68,12 @@
 			parent::process();
 		}		
 			
-		function display() {				
-			parent::display();
+		function display() {
+			global $current_user;
+		
+			if($current_user->is_admin==1){
+				parent::display();
+			}		
 		}	
 	} 
 ?>

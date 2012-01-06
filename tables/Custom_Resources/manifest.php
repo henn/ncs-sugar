@@ -442,8 +442,8 @@ $installdefs = array (
 	),
 ####Begin copy of SAMP_BioSpecID#############
 	array (
-      'from' => '<basepath>/IDCreation_resources/modules/SAMP_BioSpecID/views/view.edit.php',
-      'to' => 'custom/modules/SAMP_BioSpecID/views/view.edit.php',
+      'from' => '<basepath>/IDCreation_resources/modules/SAMP_BioSpecID/views/view.detail.php',
+      'to' => 'custom/modules/SAMP_BioSpecID/views/view.detail.php',
     ),
 ####Begin copy of SAMP_SPECReceipt#############
 	array (

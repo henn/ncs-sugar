@@ -7,6 +7,8 @@
 	
 	class SAMP_SPECReceiptViewEdit extends ViewEdit {
 	
+		public $useForSubpanel = true;	
+	
 		function SAMP_SPECReceiptViewEdit(){
 			parent::ViewEdit();
 			}
