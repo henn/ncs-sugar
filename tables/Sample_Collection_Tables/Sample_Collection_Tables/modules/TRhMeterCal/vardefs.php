@@ -167,7 +167,7 @@ $vardefs = array (
       'required' => true,
       'name' => 's_33rh_reading',
       'vname' => 'LBL_S_33RH_READING',
-      'type' => 'varchar',
+      'type' => 'decimal',
       'massupdate' => 0,
       'comments' => '',
       'help' => '',
@@ -176,15 +176,16 @@ $vardefs = array (
       'duplicate_merge_dom_value' => '0',
       'audited' => true,
       'reportable' => true,
-      'len' => '255',
+      'len' => '18',
       'size' => '20',
+      'precision' => '1',
     ),
     's_75rh_reading' => 
     array (
       'required' => true,
       'name' => 's_75rh_reading',
       'vname' => 'LBL_S_75RH_READING',
-      'type' => 'varchar',
+      'type' => 'decimal',
       'massupdate' => 0,
       'comments' => '',
       'help' => '',
@@ -193,8 +194,9 @@ $vardefs = array (
       'duplicate_merge_dom_value' => '0',
       'audited' => true,
       'reportable' => true,
-      'len' => '255',
+      'len' => '18',
       'size' => '20',
+      'precision' => '1',
     ),
     's_33_rh_need_calib' => 
     array (
