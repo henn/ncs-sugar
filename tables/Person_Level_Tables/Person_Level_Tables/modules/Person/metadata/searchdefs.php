@@ -39,7 +39,7 @@ array (
       ),
       'age' => 
       array (
-        'type' => 'int',
+        'type' => 'varchar',
         'label' => 'LBL_AGE',
         'width' => '10%',
         'default' => true,
@@ -147,7 +147,7 @@ array (
       ),
       'age' => 
       array (
-        'type' => 'int',
+        'type' => 'varchar',
         'label' => 'LBL_AGE',
         'width' => '10%',
         'default' => true,

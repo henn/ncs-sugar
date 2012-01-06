@@ -108,7 +108,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
   ),
   'age' => 
   array (
-    'type' => 'int',
+    'type' => 'varchar',
     'label' => 'LBL_AGE',
     'width' => '10%',
     'default' => false,
@@ -128,6 +128,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_MIDDLE_NAME',
     'width' => '10%',
     'default' => false,
+    'name' => 'middle_name',
   ),
   'first_name' => 
   array (
@@ -143,6 +144,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_MAIDEN_NAME',
     'width' => '10%',
     'default' => false,
+    'name' => 'maiden_name',
   ),
   'prefix' => 
   array (
@@ -152,6 +154,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_PREFIX',
     'sortable' => false,
     'width' => '10%',
+    'name' => 'prefix',
   ),
   'suffix' => 
   array (
@@ -161,6 +164,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_SUFFIX',
     'sortable' => false,
     'width' => '10%',
+    'name' => 'suffix',
   ),
   'title' => 
   array (
@@ -168,6 +172,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_TITLE',
     'width' => '10%',
     'default' => false,
+    'name' => 'title',
   ),
   'sex' => 
   array (
@@ -177,6 +182,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_SEX',
     'sortable' => false,
     'width' => '10%',
+    'name' => 'sex',
   ),
   'person_lang_other' => 
   array (
@@ -184,6 +190,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_PERSON_LANG_OTHER',
     'width' => '10%',
     'default' => false,
+    'name' => 'person_lang_other',
   ),
   'maristat' => 
   array (
@@ -193,6 +200,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_MARISTAT',
     'sortable' => false,
     'width' => '10%',
+    'name' => 'maristat',
   ),
   'maristat_oth' => 
   array (
@@ -200,6 +208,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_MARISTAT_OTH',
     'width' => '10%',
     'default' => false,
+    'name' => 'maristat_oth',
   ),
   'pref_contact_oth' => 
   array (
@@ -207,6 +216,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_PREF_CONTACT_OTH',
     'width' => '10%',
     'default' => false,
+    'name' => 'pref_contact_oth',
   ),
   'ethnic_group' => 
   array (
@@ -216,6 +226,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_ETHNIC_GROUP',
     'sortable' => false,
     'width' => '10%',
+    'name' => 'ethnic_group',
   ),
   'plan_move' => 
   array (
@@ -225,6 +236,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_PLAN_MOVE',
     'sortable' => false,
     'width' => '10%',
+    'name' => 'plan_move',
   ),
   'deceased' => 
   array (
@@ -234,6 +246,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_DECEASED',
     'sortable' => false,
     'width' => '10%',
+    'name' => 'deceased',
   ),
   'move_info' => 
   array (
@@ -243,6 +256,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_MOVE_INFO',
     'sortable' => false,
     'width' => '10%',
+    'name' => 'move_info',
   ),
   'new_address_id' => 
   array (
@@ -250,6 +264,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_NEW_ADDRESS_ID',
     'width' => '10%',
     'default' => false,
+    'name' => 'new_address_id',
   ),
   'when_move' => 
   array (
@@ -259,6 +274,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_WHEN_MOVE',
     'sortable' => false,
     'width' => '10%',
+    'name' => 'when_move',
   ),
   'date_move' => 
   array (
@@ -266,6 +282,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_DATE_MOVE',
     'width' => '10%',
     'default' => false,
+    'name' => 'date_move',
   ),
   'p_tracing' => 
   array (
@@ -275,6 +292,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_P_TRACING',
     'sortable' => false,
     'width' => '10%',
+    'name' => 'p_tracing',
   ),
   'p_info_source' => 
   array (
@@ -284,6 +302,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_P_INFO_SOURCE',
     'sortable' => false,
     'width' => '10%',
+    'name' => 'p_info_source',
   ),
   'p_info_source_oth' => 
   array (
@@ -291,6 +310,7 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_P_INFO_SOURCE_OTH',
     'width' => '10%',
     'default' => false,
+    'name' => 'p_info_source_oth',
   ),
   'age_range' => 
   array (
@@ -300,5 +320,6 @@ $dashletData['PLT_PersonDashlet']['columns'] = array (
     'label' => 'LBL_AGE_RANGE',
     'sortable' => false,
     'width' => '10%',
+    'name' => 'age_range',
   ),
 );

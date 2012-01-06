@@ -572,7 +572,7 @@ $vardefs = array (
       'required' => false,
       'name' => 'age',
       'vname' => 'LBL_AGE',
-      'type' => 'int',
+      'type' => 'varchar',
       'massupdate' => 0,
       'comments' => '',
       'help' => 'Person\'s age',
@@ -583,7 +583,6 @@ $vardefs = array (
       'reportable' => true,
       'len' => '3',
       'size' => '20',
-      'disable_num_format' => '',
     ),
     'age_range' => 
     array (
