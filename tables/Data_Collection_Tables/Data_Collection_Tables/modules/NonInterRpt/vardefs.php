@@ -628,7 +628,7 @@ $vardefs = array (
       'reportable' => true,
       'len' => '18',
       'size' => '20',
-      'precision' => '8',
+      'precision' => '1',
     ),
     'nir_noaccess' => 
     array (

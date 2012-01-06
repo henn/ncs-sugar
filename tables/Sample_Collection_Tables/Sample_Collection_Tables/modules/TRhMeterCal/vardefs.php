@@ -121,7 +121,7 @@ $vardefs = array (
       'reportable' => true,
       'len' => '18',
       'size' => '20',
-      'precision' => '8',
+      'precision' => '1',
     ),
     'trh_temp' => 
     array (
@@ -139,7 +139,7 @@ $vardefs = array (
       'reportable' => true,
       'len' => '18',
       'size' => '20',
-      'precision' => '8',
+      'precision' => '1',
     ),
     'salts_moist' => 
     array (
@@ -254,7 +254,7 @@ $vardefs = array (
       'reportable' => true,
       'len' => '18',
       'size' => '20',
-      'precision' => '8',
+      'precision' => '1',
     ),
     's_75rh_reading_calib' => 
     array (
@@ -272,7 +272,7 @@ $vardefs = array (
       'reportable' => true,
       'len' => '18',
       'size' => '20',
-      'precision' => '8',
+      'precision' => '1',
     ),
     'trh_calib_fail_rsn' => 
     array (

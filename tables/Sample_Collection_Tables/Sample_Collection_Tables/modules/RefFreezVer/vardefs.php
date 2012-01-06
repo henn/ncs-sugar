@@ -106,7 +106,7 @@ $vardefs = array (
       'reportable' => true,
       'len' => '18',
       'size' => '20',
-      'precision' => '8',
+      'precision' => '1',
     ),
     'current_temp' => 
     array (
@@ -124,7 +124,7 @@ $vardefs = array (
       'reportable' => true,
       'len' => '18',
       'size' => '20',
-      'precision' => '8',
+      'precision' => '1',
     ),
     'maximum_temp' => 
     array (
@@ -142,7 +142,7 @@ $vardefs = array (
       'reportable' => true,
       'len' => '18',
       'size' => '20',
-      'precision' => '8',
+      'precision' => '1',
     ),
     'minimum_temp' => 
     array (
@@ -160,7 +160,7 @@ $vardefs = array (
       'reportable' => true,
       'len' => '18',
       'size' => '20',
-      'precision' => '8',
+      'precision' => '1',
     ),
   ),
   'relationships' => 

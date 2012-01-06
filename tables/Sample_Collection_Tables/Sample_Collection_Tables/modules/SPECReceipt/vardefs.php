@@ -110,7 +110,7 @@ $vardefs = array (
       'reportable' => true,
       'len' => '18',
       'size' => '20',
-      'precision' => '8',
+      'precision' => '1',
     ),
     'monitor_status' => 
     array (
@@ -341,7 +341,7 @@ $vardefs = array (
       'reportable' => true,
       'len' => '18',
       'size' => '20',
-      'precision' => '8',
+      'precision' => '1',
     ),
     'plt_person_id_c' => 
     array (

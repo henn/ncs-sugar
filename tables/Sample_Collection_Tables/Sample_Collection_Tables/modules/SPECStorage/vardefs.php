@@ -179,7 +179,7 @@ $vardefs = array (
       'reportable' => true,
       'len' => '18',
       'size' => '20',
-      'precision' => '8',
+      'precision' => '1',
     ),
     'temp_event_high_temp' => 
     array (
@@ -197,7 +197,7 @@ $vardefs = array (
       'reportable' => true,
       'len' => '18',
       'size' => '20',
-      'precision' => '8',
+      'precision' => '1',
     ),
     'temp_event_et' => 
     array (
