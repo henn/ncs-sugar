@@ -37,6 +37,17 @@
 $module_name = 'SAMP_SPECReceipt';
 $viewdefs[$module_name]['QuickCreate'] = array(
     'templateMeta' => array('maxColumns' => '2', 
+	
+						  'includes'=> array(
+								array(
+									'file'=>'custom/modules/SAMP_SPECReceipt/specimen_ID_validation.js',						
+								),
+								
+								array(
+									'file'=>'ncs_framework/jquery/jquery.js',
+								),			
+						  ),	
+	
                             'widths' => array(
                                             array('label' => '10', 'field' => '30'), 
                                             array('label' => '10', 'field' => '30')
@@ -70,7 +81,13 @@ $viewdefs[$module_name]['QuickCreate'] = array(
         ),
         3 => 
         array (
-          0 => 'name',		  
+          0 => 
+          array (
+            'name' => 'name',
+            'label' => 'Specimen ID:',
+			'customCode' => '<input type="text" name="name" id="name" size="30" maxlength="36" value="{$NAME}" title="Unique table identifier: NAME" tabindex="103" onchange=\'validateID(this.value)\' >',
+          ),		  		  		 
+		  
           1 => 
           array (
             'name' => 'cbr_barcode_id',
