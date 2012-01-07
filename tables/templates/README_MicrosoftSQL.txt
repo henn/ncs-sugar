@@ -1,3 +1,18 @@
+
+____    __    ____  ___      .______      .__   __.  __  .__   __.   _______ 
+\   \  /  \  /   / /   \     |   _  \     |  \ |  | |  | |  \ |  |  /  _____|
+ \   \/    \/   / /  ^  \    |  |_)  |    |   \|  | |  | |   \|  | |  |  __  
+  \            / /  /_\  \   |      /     |  . `  | |  | |  . `  | |  | |_ | 
+   \    /\    / /  _____  \  |  |\  \----.|  |\   | |  | |  |\   | |  |__| | 
+    \__/  \__/ /__/     \__\ | _| `._____||__| \__| |__| |__| \__|  \______| 
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\                                                                                                                                            \\\
+\\\   These National Children's Study Custom Modules have been designed and tested for SugarCRM Community Edition 6.1.6 or 6.1.7 only!         \\\
+\\\   Attempt to deploy them on any other version will produce errors or unexpected results.  Please only deploy on the supported versions.    \\\ 
+\\\                                                                                                                                            \\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                                                                             
 The steps to deploy this instance are:
 
 	1) Install combined.zip within Sugar's Module Loader
@@ -17,8 +32,10 @@ The steps to deploy this instance are:
 	4) Run a quick Repair and Rebuild
 	5) Run "Rebuild Minified JS Files" to rebuild and compress javascript files which include the new Javascript files for DateTimeCombo field.
 	You will need to clear the web browser's cache and re-login to sugarCRM system before you can see changes to the DateTimeCombo field.
-	6) If you are upgrading NCSsugarCRM system from a previous version, please make sure to uninstall previous installed packages before installing the newer version of those packages. 
-	** Please Note: make sure you select the option "Do Not Remove Tables" when unstalling a package. This way the data in your NCS sugar system will be kept intact.
+	6) If you are upgrading NCS SugarCRM system from a previous version, please make sure to uninstall previous installed packages before installing the newer version of those packages. 
+	** Please Note: make sure you select the option "Do Not Remove Tables" when uninstalling a package. This way the data in your NCS sugar system will be kept intact.
+        7) **Only if first use** Import into module "Biospecimen Predetermined IDs" the Phase 2 Biospecimen and Environmental specimen label IDs assigned to your Study Center.
+        8) **You might want to run the SQL Statements for creating NCS roles in SugarCRM** This can be found in 'ncs-sugar/data_handling/sugar-acl/ACLsugarcrm.sql' in our git repository.
 	
 
 USING MODULE BUILDER
