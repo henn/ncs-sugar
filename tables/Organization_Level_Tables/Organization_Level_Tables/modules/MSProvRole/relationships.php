@@ -37,9 +37,12 @@
 $relationships = array (
   'olt_msprovrole_olt_provider' => 
   array (
+    'rhs_label' => 'OLT_Provider',
+    'lhs_label' => 'Provider Role (Multi-Select)',
+    'lhs_subpanel' => 'default',
     'lhs_module' => 'OLT_MSProvRole',
     'rhs_module' => 'OLT_Provider',
-    'relationship_type' => 'one-to-one',
+    'relationship_type' => 'many-to-one',
     'readonly' => false,
     'deleted' => false,
     'relationship_only' => false,

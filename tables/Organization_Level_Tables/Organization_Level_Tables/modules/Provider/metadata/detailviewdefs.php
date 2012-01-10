@@ -129,14 +129,6 @@ array (
           ),
           1 => '',
         ),
-        7 => 
-        array (
-          0 => 
-          array (
-            'name' => 'olt_msprovr_provider_name',
-          ),
-          1 => '',
-        ),
       ),
     ),
   ),

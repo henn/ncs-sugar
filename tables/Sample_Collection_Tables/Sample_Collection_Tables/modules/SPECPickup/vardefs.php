@@ -125,7 +125,7 @@ $vardefs = array (
       'duplicate_merge_dom_value' => '0',
       'audited' => true,
       'reportable' => true,
-      'len' => '18',
+      'len' => '5',
       'size' => '20',
       'precision' => '1',
     ),

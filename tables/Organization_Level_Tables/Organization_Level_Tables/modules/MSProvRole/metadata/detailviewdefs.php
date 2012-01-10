@@ -56,9 +56,11 @@ array (
         ),
         2 => 
         array (
-          0 => 
+          0 => '',
+          1 => 
           array (
-            'name' => 'olt_providesprovrole_name',
+            'name' => 'olt_msprovr_provider_name',
+            'label' => 'LBL_OLT_MSPROVROLE_OLT_PROVIDER_FROM_OLT_PROVIDER_TITLE',
           ),
         ),
       ),

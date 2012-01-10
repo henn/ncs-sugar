@@ -24,6 +24,13 @@ array (
     'sortable' => false,
     'width' => '10%',
   ),
+  'P_TYPE_OTH' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_P_TYPE_OTH',
+    'width' => '10%',
+  ),
   'ENROLL_STATUS' => 
   array (
     'type' => 'enum',
@@ -134,13 +141,6 @@ array (
     'label' => 'LBL_STATUS_INFO_SOURCE_OTH',
     'width' => '10%',
     'default' => false,
-  ),
-  'P_TYPE_OTH' => 
-  array (
-    'type' => 'varchar',
-    'default' => false,
-    'label' => 'LBL_P_TYPE_OTH',
-    'width' => '10%',
   ),
 );
 ?>
