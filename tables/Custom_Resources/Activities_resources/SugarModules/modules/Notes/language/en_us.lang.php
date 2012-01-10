@@ -27,6 +27,11 @@ $mod_strings['LBL_NOTES_SUBJECT'] = 'Subject';
 $mod_strings['LBL_SUBJECT'] = 'Contact ID';
 $mod_strings['LBL_RELATED_TO'] = 'Related To Modules';
 $mod_strings['LBL_NOTE_INFORMATION'] = 'Contact Information';
+
+//new
+$mod_strings['LNK_NEW_NOTE'] = 'Create Contact Information';
+$mod_strings['LBL_NEW_FORM_TITLE'] 'Create Contact Information';
+
 //$mod_strings['NOTE_ID:'] = 'Contact ID';
 
 ?>

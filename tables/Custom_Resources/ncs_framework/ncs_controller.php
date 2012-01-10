@@ -15,14 +15,12 @@
 			# intitialization code
 			$this->bean = $bean;
 		}
-		
-
-		
+				
 		function get_name() {
 			require_once 'include/utils.php';
 
 			//if(trim($this->bean->name) == '') {
-			if(trim($this->bean->name) == ''||$_REQUEST['isDuplicate']=='true')
+			if(trim($this->bean->name) == '' || (isset($_REQUEST['isDuplicate']) && $_REQUEST['isDuplicate']=='true'))
 			{
 				$name = $this->identifier . substr(strtoupper(create_guid()), 0,6);	
 				do {
