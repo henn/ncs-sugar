@@ -52,8 +52,8 @@
           'icon' => '',
           'is_uninstallable' => true,
           'name' => 'Data_Collection_Tables',
-          'published_date' => '2011-12-22 11:00:00',
+          'published_date' => '2012-01-11 08:00:00',
 		  'type' => 'module',
-          'version' => '2.1',
+          'version' => '2.1.1',
           'remove_tables' => 'prompt',
           );
