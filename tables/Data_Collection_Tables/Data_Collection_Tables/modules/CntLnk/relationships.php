@@ -112,7 +112,7 @@ $relationships = array (
   ),
   'ncsdc_cntlnk_notes' => 
   array (
-    'rhs_label' => 'Notes',
+    'rhs_label' => 'Contact Information',
     'lhs_label' => 'Contact Linking',
     'lhs_subpanel' => 'default',
     'lhs_module' => 'NCSDC_CntLnk',
