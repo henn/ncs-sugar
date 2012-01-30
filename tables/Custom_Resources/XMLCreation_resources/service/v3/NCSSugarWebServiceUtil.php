@@ -424,7 +424,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                     $this->addXMLElement($xmlWriter, 'outreach_race_id', $val['name'] . '-' . $raceval);
                     $this->addXMLElement($xmlWriter, 'outreach_event_id', $val['st_msoutract_wkoeact_name']);
                     $this->addXMLElement($xmlWriter, 'outreach_race2', $raceval);
-                    if ($raceval == "-5") $this->addXMLElement($xmlWriter, 'outreach_race_oth', $val['outreach_race_oth']);
+                    //if ($raceval == "-5") $this->addXMLElement($xmlWriter, 'outreach_race_oth', $val['outreach_race_oth']);
+					$this->addXMLElement($xmlWriter, 'outreach_race_oth', $val['outreach_race_oth']);
                     $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
                 $xmlWriter->endElement();
             }
@@ -484,7 +485,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                     $this->addXMLElement($xmlWriter, 'outreach_target_id', $val['name'] . '-' . $targetval);
                     $this->addXMLElement($xmlWriter, 'outreach_event_id', $val['st_msouttart_wkoeact_name']);
                     $this->addXMLElement($xmlWriter, 'outreach_target_ms', $targetval);
-                    if ($targetval == "-5") $this->addXMLElement($xmlWriter, 'outreach_target_ms_oth', $val['outreach_target_ms_oth']);
+                    //if ($targetval == "-5") $this->addXMLElement($xmlWriter, 'outreach_target_ms_oth', $val['outreach_target_ms_oth']);
+					$this->addXMLElement($xmlWriter, 'outreach_target_ms_oth', $val['outreach_target_ms_oth']);
                     $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
                 $xmlWriter->endElement();
             }
@@ -901,7 +903,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                     $this->addXMLElement($xmlWriter, 'provider_id', $val['olt_providesprovrole_name']);
                     // $this->addXMLElement($xmlWriter, 'provider_ncs_role', $val['provider_ncs_role']);
                     $this->addXMLElement($xmlWriter, 'provider_ncs_role', $roleval);
-                    if ($roleval == "-5") $this->addXMLElement($xmlWriter, 'provider_ncs_role_oth', $val['provider_ncs_role_oth']);
+					//if ($roleval == "-5") $this->addXMLElement($xmlWriter, 'provider_ncs_role_oth', $val['provider_ncs_role_oth']);					
+					$this->addXMLElement($xmlWriter, 'provider_ncs_role_oth', $val['provider_ncs_role_oth']);		
                     $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
                 $xmlWriter->endElement();
             }
@@ -1379,7 +1382,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 				$this->addXMLElement($xmlWriter, 'nir_vacant_id', $val['name'] . '-' . $vacantval);
 				$this->addXMLElement($xmlWriter, 'nir_id', $val['ncsdc_noninntrptvcnt_name']);
 				$this->addXMLElement($xmlWriter, 'nir_vacant', $vacantval);
-				if ($vacantval == "-5") $this->addXMLElement($xmlWriter, 'nir_vacant_oth', $val['nir_vacant_oth']);
+				//if ($vacantval == "-5") $this->addXMLElement($xmlWriter, 'nir_vacant_oth', $val['nir_vacant_oth']);
+				$this->addXMLElement($xmlWriter, 'nir_vacant_oth', $val['nir_vacant_oth']);
 				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
 			$xmlWriter->endElement();
                     }
@@ -1401,7 +1405,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 				$this->addXMLElement($xmlWriter, 'nir_noaccess_id', $val['name'] . '-' . $noaccessval);
 				$this->addXMLElement($xmlWriter, 'nir_id', $val['ncsdc_noninrnaccmlts_name']);
 				$this->addXMLElement($xmlWriter, 'nir_noaccess', $noaccessval);
-                                if ($noaccessval == "-5") $this->addXMLElement($xmlWriter, 'nir_noaccess_oth', $val['nir_noaccess_oth']);
+                                //if ($noaccessval == "-5") $this->addXMLElement($xmlWriter, 'nir_noaccess_oth', $val['nir_noaccess_oth']);
+				$this->addXMLElement($xmlWriter, 'nir_noaccess_oth', $val['nir_noaccess_oth']);
 				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
 			$xmlWriter->endElement();
                     }
@@ -1424,7 +1429,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 				$this->addXMLElement($xmlWriter, 'nir_id', $val['ncsdc_noninirrfsmlts_name']);
 				// $this->addXMLElement($xmlWriter, 'refusal_reason', $val['refusal_reason']);
 				$this->addXMLElement($xmlWriter, 'refusal_reason', $refusalval);
-				if ($refusalval == "-5") $this->addXMLElement($xmlWriter, 'refusal_reason_oth', $val['refusal_reason_oth']);
+				//if ($refusalval == "-5") $this->addXMLElement($xmlWriter, 'refusal_reason_oth', $val['refusal_reason_oth']);
+				$this->addXMLElement($xmlWriter, 'refusal_reason_oth', $val['refusal_reason_oth']);
 				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
 			$xmlWriter->endElement();
                     }
@@ -1446,7 +1452,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 				$this->addXMLElement($xmlWriter, 'nir_dutype_id', $val['name'] . '-' . $dutypeval);
 				$this->addXMLElement($xmlWriter, 'nir_id', $val['ncsdc_noninrdutpmlts_name']);
 				$this->addXMLElement($xmlWriter, 'nir_type_du', $dutypeval);
-                                if ($dutypeval == "-5") $this->addXMLElement($xmlWriter, 'nir_type_du_oth', $val['nir_type_du_oth']);
+				//if ($dutypeval == "-5") $this->addXMLElement($xmlWriter, 'nir_type_du_oth', $val['nir_type_du_oth']);
+				$this->addXMLElement($xmlWriter, 'nir_type_du_oth', $val['nir_type_du_oth']);
 				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
 			$xmlWriter->endElement();
                     }
@@ -1514,7 +1521,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 				$this->addXMLElement($xmlWriter, 'incident_media_id', $val['name'] . '-' . $mediaval);
 				$this->addXMLElement($xmlWriter, 'incident_id', $val['ncsdc_incidcmedmults_name']);
 				$this->addXMLElement($xmlWriter, 'incloss_media', $mediaval);
-				if ($mediaval == "-5") $this->addXMLElement($xmlWriter, 'incloss_media_oth', $val['incloss_media_oth']);
+				//if ($mediaval == "-5") $this->addXMLElement($xmlWriter, 'incloss_media_oth', $val['incloss_media_oth']);
+				$this->addXMLElement($xmlWriter, 'incloss_media_oth', $val['incloss_media_oth']);
 				$this->addXMLElement($xmlWriter, 'inssev', str_replace("_", "-", $val['inssev']));
 				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
 			$xmlWriter->endElement();
@@ -1660,7 +1668,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'storage_container_id', $val['name']);
 		$this->addXMLElement($xmlWriter, 'spsc_id', $val['samp_specsh_spscinfo_name']);
 		$this->addXMLElement($xmlWriter, 'staff_id', $val['samp_sampshstaffrstr_name']);
-                $this->addXMLElement($xmlWriter, 'shipper_id', $val['samp_sampshstaffrstr_name']);
+                //$this->addXMLElement($xmlWriter, 'shipper_id', $val['samp_sampshstaffrstr_name']);
+        $this->addXMLElement($xmlWriter, 'shipper_id', $val['name']);
 		$this->addXMLElement($xmlWriter, 'shipper_destination', $val['shipper_destination']);
                 // $this->addXMLElement($xmlWriter, 'shipment_date', $val['shipment_date']);
 		$shipment_date = preg_split('/[ ]/', $val['shipment_date']);
@@ -1994,8 +2003,9 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'sample_id', $val['name']);
 		$this->addXMLElement($xmlWriter, 'srsc_id', $val['samp_sampsh_srscinfo_name']);
                 $this->addXMLElement($xmlWriter, 'staff_id', $val['samp_sampshstaffrstr_name']);
-                $this->addXMLElement($xmlWriter, 'shipper_id', $val['shipper_id']);
-                // $this->addXMLElement($xmlWriter, 'shipper_destination', $val['shipper_destination']); 
+                //$this->addXMLElement($xmlWriter, 'shipper_id', $val['shipper_id']);
+                $this->addXMLElement($xmlWriter, 'shipper_id', $val['name']);
+				// $this->addXMLElement($xmlWriter, 'shipper_destination', $val['shipper_destination']); 
 		$this->addXMLElement($xmlWriter, 'shipper_destination', str_replace("_", "-", $val['shipper_destination']));
                 // $this->addXMLElement($xmlWriter, 'shipment_date', $val['shipment_date']);
 		$shipment_date = preg_split('/[ ]/', $val['shipment_date']);
@@ -2129,7 +2139,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'srsc_id', getMultiRelatedNameByJoin(SAMPLERECEIPTCONF_SRSCINFO_JOIN, $val['id'])); // GETS ONLY ONE from M:M TABLE
 		// $this->addXMLElement($xmlWriter, 'shipment_receipt_confirmed', $val['shipment_receipt_confirmed']); 
 		$this->addXMLElement($xmlWriter, 'shipment_receipt_confirmed', str_replace("_", "-", $val['shipment_receipt_confirmed']));
-                $this->addXMLElement($xmlWriter, 'shipper_id', $val['shipper_id']);
+                //$this->addXMLElement($xmlWriter, 'shipper_id', $val['shipper_id']);
+                $this->addXMLElement($xmlWriter, 'shipper_id', $val['name']);
                 $this->addXMLElement($xmlWriter, 'shipment_tracking_no', $val['shipment_tracking_no']);
                 // $this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $val['shipment_receipt_dt']);
 		//$shipment_receipt_dt = preg_split('/[ ]/', $val['shipment_receipt_dt']);
