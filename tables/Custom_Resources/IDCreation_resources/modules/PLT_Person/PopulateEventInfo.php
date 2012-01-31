@@ -16,6 +16,14 @@
 		function populate_visit_eventInfo(&$bean, $event, $arguments){
 			
 			require_once("custom/modules/PLT_Participant/PLT_Participant_Functions.php");			
+			
+			//check for dob 
+			if(empty($bean->person_dob))				
+			{			
+				//echo "PERSON DOB is BLANK<BR>";
+				return;
+			}
+			
 			$ppf = new PLT_Participant_Functions();
 			
 			//get participant bean
@@ -26,45 +34,55 @@
 			{									
 				//Find the mom's participant record.
 				$mom_id = null;			
+				$foster_mom_id = null;
+				$final_mom_id = null;
+				
 				$related_records = $ppf->get_related_person_list_info_from_participant($ptInfo, true, false);
 						
 				if(!empty($related_records))
 				{
 					foreach($related_records as $p_record)
 					{						
-						//found bio mom.
-						if(!empty($p_record['person']) && !empty($p_record['participant']) && $p_record['person']['relation'] == "2")
+						if(!empty($mom_id))
 						{
-							//debug
-							//echo "<font size='+6' color='blue'>FOUND BIO MOM (id = ".$p_record['participant']['id'].")</font>";
-							$mom_id = $p_record['participant']['id'];
 							break;
+						}								
+							
+						//found bio mom.
+						if(!empty($p_record['person']) && !empty($p_record['participant']) && $p_record['person']['relation'] == "2" && $p_record['person']['is_rel_active'] == "1" && $p_record['participant']['enroll_status'] == "1")
+						{
+							$mom_id = $p_record['participant']['id'];
 						}
+						elseif(!empty($p_record['person']) && !empty($p_record['participant']) && $p_record['person']['relation'] == "3" && $p_record['person']['is_rel_active'] == "1")
+						{						
+							$foster_mom_id = $p_record['participant']['id'];							
+						}else{}
 					}				
 				}
-							
 			
-				//do not generate event info if bio mom is not be found.
-				if(empty($mom_id))
+				//do not generate event info if bio mom && foster mom are not found.	
+				if(empty($mom_id) && empty($foster_mom_id))
 				{
-					//echo "<font color='red' size='+6'>NO BIO MOM FOUND</font>";
 					return;
 				}
-			
-				if($bean->person_dob != "")				
-				{		
+				
 					$vw_arr = $ppf->get_visitwindow_datetime($bean->person_dob);						
-								
+															
 					//Check to see if visit windows were generated. If not, auto-generate event info.					
+				if(!empty($mom_id))
 					$all_visit_events = $ppf->get_all_visitwindow_events_for_participant($mom_id);																
-							
+				else
+					$all_visit_events = $ppf->get_all_visitwindow_events_for_participant($foster_mom_id);																	
+												
 					//****************************************************************************************	
 					//Determine which events were generated, which are not, then generate missing events.	
 					$missing_events_arr = array();
 					$visit_keys = array_keys($vw_arr);
-					
+				
 					if(empty($all_visit_events))
 					{						
+					//debug
+					//echo "<b>All visit events missing</b><br>";					
 						$missing_events_arr = $vw_arr;							
 					}
 					else
@@ -77,7 +95,7 @@
 							}	
 						}
 					}
-					
+									
 					//Generate events if needed.
 					foreach($missing_events_arr as $event_type => $event_setting)
 					{												
@@ -85,12 +103,18 @@
 						$visit_window_starttime = $event_setting[0];
 						$visit_window_endtime = $event_setting[1];								
 						$event_disp_cat = $event_setting['event_disposition_cat'];						
-														
-						//Log in auto_event_log file.						
+													
+					//Create and log event info.
+					if(!empty($mom_id))
 						$event_id = $ppf->insert_event_info($event_type, $event_disp_cat, $mom_id, $assigned_user_id, $visit_window_starttime, $visit_window_endtime, true);																							
+					else
+						$event_id = $ppf->insert_event_info($event_type, $event_disp_cat, $foster_mom_id, $assigned_user_id, $visit_window_starttime, $visit_window_endtime, true);																							
 					}					
-					
-				}				
+				}
+			else
+			{
+				//debug
+				//echo "<h4>NCS child didn't satisfy condidtions for auto-EV</h4>";
 			}
 		}
 
@@ -128,6 +152,9 @@
 			//If the Participant Consent is "Genereal Consent", Consent Withdraw is NO, Consent Given = YES			
 			if($bean->consent_type == "1" && $bean->consent_withdraw != "1" && $bean->consent_given == "1" && !empty($bean->field_name_map['plt_particitcptcnsnt_name']))
 			{					
+				//debug
+				//echo "first pass";
+
 			
 				// relationship name in array is = plt_particilt_prtcptcnsnt ->		plt_participant_plt_prtcptcnsnt  (in db)		
 				$participant_field_name = $bean->field_name_map['plt_particitcptcnsnt_name']['id_name'];				
@@ -136,21 +163,27 @@
 				//*********************************************************************
 				$pt = new PLT_Participant();
 				$pt->retrieve($ptid);
+								
+				//Check enroll status
+				if($pt->enroll_status !=  "1")
+				{
+					return;
+				}
 				
 				//$ppg_details = $ppf->get_participant_ppg_details($pt);
 				$pcst = $ppf->get_participant_consents($pt);		
 										
 				if($ptid != "")
-				{															
+				{														
 					//get person info associated with this participant.
 					$person_info = $ppf->get_personinfo_from_participant($pt);
-												
+															
 					//First the participant has to be female and 'Pregnant eligible'													
 					if(is_array($person_info) && $person_info["sex"] == "2" && $pt->p_type == "3")
 					{		
 						//Get PPG records. Top record is the current ppg.
 						$ppgs = $ppf->get_participant_ppg_details($pt);
-		
+				
 						$num_of_pregnancies = count($ppgs);
 						$num_of_miscarriage = 0;
 						$num_of_ipi = 0;
@@ -181,14 +214,15 @@
 							{
 								$tmp_due_date = $ppgs[$i]["due_date_2"];
 							}
-							elseif(!empty($ppgs[$i]["org_due_date"]))
+							elseif(!empty($ppgs[$i]["orig_due_date"]))
 							{
-								$tmp_due_date = $ppgs[$i]["org_due_date"];
+								$tmp_due_date = $ppgs[$i]["orig_due_date"];
 							}
 							else{}														
 							
 							if($tmp_due_date != "")
 							{
+
 								if($due_date = "")
 									$due_date = $tmp_due_date;
 								else
@@ -198,29 +232,31 @@
 								}								
 							}
 						}
-																			
+														
 						//Get all pregnancy visit events.
 						$pregnancy_visits = $ppf->get_pregnancy_visits_for_participant($pt);													
-											
-							
+																		
 						for($k = 0; $k < count($pregnancy_visits); $k++)
 						{						
 							if(trim($pregnancy_visits[$k]["event_type"]) == "13")   //Preg Visit 1
 							{
 								$num_of_ipi += 1;
-								
-								if(!empty($pregnancy_visits[$k]["event_end_date"]))
+
+								//************************* Problem found right here ************************************************
+								//if(!empty($pregnancy_visits[$k]["event_end_date"]))
+								if(!empty($pregnancy_visits[$k]["event_end_date_time"]))								
 								{
 									$num_of_completed_ipi += 1;
 									
 									//first time populating last_ipi_completed_date
-									if($pregnancy_visits[$k]["event_end_date"] == "")
-										$last_ipi_completed_date = $pregnancy_visits[$k]["event_end_date"];
+									//if($pregnancy_visits[$k]["event_end_date"] == "")
+									if($pregnancy_visits[$k]["event_end_date_time"] == "")
+										$last_ipi_completed_date = $pregnancy_visits[$k]["event_end_date_time"];
 									else
 									{										
-										if($dtc->compare_dates($pregnancy_visits[$k]["event_end_date"], $last_ipi_completed_date) > 0 )
+										if($dtc->compare_dates($pregnancy_visits[$k]["event_end_date_time"], $last_ipi_completed_date) > 0 )
 										{
-											$last_ipi_completed_date = $pregnancy_visits[$k]["event_end_date"];
+											$last_ipi_completed_date = $pregnancy_visits[$k]["event_end_date_time"];
 										}										
 									}			
 								}
@@ -231,33 +267,31 @@
 								$num_of_bv += 1;
 							else{}										
 						}
-																		
+									
 						if($num_of_ipi < $num_of_pregnancies)
 						{
-							//Generate IPI event 
-							
+							//only generate IPI if due date exist.
+							if(!empty($due_date))
+							{
 							$event_type = $IPI_arr[0]['event_type_code'];
 							$assigned_user_id = $pinfo["assigned_user_id"];
-							//$event_disp_cat = "3";  //
-							
+								
 							$event_disp_cat = $IPI_arr[0]['event_disposition_cat'];
-							
+								
 							//Visit window starttime = current date time.
 							$visit_window_starttime = date("Y-m-d");
-							
-							//visit window endtime = Child's Daate of Birth (CDOB)							
-							if($due_date != "")
-								$visit_window_endtime = date("Y-m-d", strtotime($due_date));
-							else
-								$visit_window_endtime = date("Y-m-d", strtotime("+30 days", strtotime($visit_window_starttime)));																					
-																												
-							$event_id = $ppf->insert_event_info($event_type, $event_disp_cat, $ptid, $assigned_user_id, $visit_window_starttime, $visit_window_endtime, true);								
+																
+							if(!empty($visit_window_starttime))
+								$visit_window_endtime = date("Y-m-d", strtotime("+30 days", strtotime($visit_window_starttime)));
+																				
+							if(!empty($visit_window_endtime ))			
+							$event_id = $ppf->insert_event_info($event_type, $event_disp_cat, $ptid, $assigned_user_id, $visit_window_starttime, $visit_window_endtime, true);																
 						}
 						
+						}
 						//******** Generate SPI. Check if IPI was completed or not.
 						if($num_of_spi < $num_of_pregnancies - $num_of_miscarriage)
 						{
-							echo "IN SPI IF<BR>";
 							if($num_of_completed_ipi == $num_of_pregnancies)
 							{
 								//Generate SPI
@@ -270,7 +304,7 @@
 								//visit window starttime = IPI's end date + 60 days
 								//$visit_window_starttime = date("Y-m-d", strtotime("+60 days", strtotime($last_ipi_completed_date)));
 								$visit_window_starttime = date("Y-m-d", strtotime("+".$spi_time_frame." days", strtotime($last_ipi_completed_date)));
-								
+																								
 								//visit window endtime = child's date of birth (CDOB)
 								$visit_window_endtime = date("Y-m-d", strtotime($due_date));
 									
@@ -308,12 +342,10 @@
 				}
 				else
 				{
+					//debug
 					//echo "participant id not found";
 				}						
 			}													
-		}	
-		
-		
-		
+		}
 	}
 ?>

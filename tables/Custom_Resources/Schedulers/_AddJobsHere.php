@@ -26,20 +26,17 @@ function autoGenerateEventInfo()
 					
 	while($row = $GLOBALS['db']->fetchByAssoc($result))
 	{
+		//found NCS Child             		
 		if($row["p_type"] == "6")
 		{
-			echo "<hr color='red' size='16'><font size='+2' color='red'>found ncs child</font><br>";							
 			$pt = new PLT_Participant();
 			$pt->retrieve($row['id']);
-			
 			$pinfo = $ppf->get_personinfo_from_participant($pt);	
-			
-			if(!empty($pinfo))
+
+			if(!empty($pinfo) && $pinfo['deceased'] != "1" && !empty($pinfo['person_dob']))
 			{
 				$person_bean = new PLT_Person();
 				$person_bean->retrieve($pinfo['id']);
-							
-				//debug -- commented out for now.			
 				$pvi->populate_visit_eventInfo($person_bean, "", "");								
 			}	
 		}

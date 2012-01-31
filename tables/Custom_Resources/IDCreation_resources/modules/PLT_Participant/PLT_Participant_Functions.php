@@ -204,7 +204,7 @@ class PLT_Participant_Functions extends SugarBean {
 		return $person_list;
 	}	
 	
-	
+	//Currently Used
 	/*  *********************************************** FOR SUMMARY ******************************
 	*	Return a list records that are related to this participant. 
 	* 	Related records include
@@ -232,6 +232,13 @@ class PLT_Participant_Functions extends SugarBean {
 										
 			while($row = $bean->db->fetchByAssoc($result))
 			{			
+				//debug
+				// echo "<h4>RELATION ROW</h4>";
+				// echo "<pre>";
+				// print_r($row);
+				// echo "</pre>";
+			
+			
 				$linkage_id = $row['id'];
 				
 				if(!empty($linkage_id))
@@ -258,12 +265,15 @@ class PLT_Participant_Functions extends SugarBean {
 							if(!empty($row2))
 							{
 								$row2['relation'] = $row['relation'];
-								$row2['relation_oth'] = $row['relation_oth'];								
+								$row2['relation_oth'] = $row['relation_oth'];
+
+								//new - add active flag to row2
+								$row2['is_rel_active'] = $row['is_active'];
+								
 								$person_list[$counter]['person'] = $row2;									
 																
 								if($get_participant_records)
 								{										
-									//echo "<font size='+5' color='red'>GET PART RECORD</font><br>";
 								
 									//get participant info associated with the retrieved person if exists.							
 									$person = new PLT_Person();
