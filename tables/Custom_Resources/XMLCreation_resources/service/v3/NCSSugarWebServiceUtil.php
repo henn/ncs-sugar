@@ -1715,7 +1715,13 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 			$this->addXMLElement($xmlWriter, 'master_storage_unit', str_replace("_", "-", $val['master_storage_unit']));
 			$this->addXMLElement($xmlWriter, 'storage_comment', $val['storage_comment']);
 			$this->addXMLElement($xmlWriter, 'storage_comment_oth', $val['storage_comment_oth']);
+							
+			//old				
+			//$this->addXMLElement($xmlWriter, 'removed_from_storage', $val['removed_from_storage']);								
+							
+			//new code -- change _4, _2 ... to -4, -2 ...
 			$this->addXMLElement($xmlWriter, 'removed_from_storage', preg_replace('/^_(\d)$/', '-$1', $val['removed_from_storage']));				
+
 			// $this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $val['removed_from_storage_dt']);
 			//$removed_from_storage_dt = preg_split('/[ ]/', $val['removed_from_storage_dt']);
 			//$this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $removed_from_storage_dt[0].'T'.$removed_from_storage_dt[1]);
@@ -2149,6 +2155,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 			$shipment_receipt_dt = (strlen($val['shipment_receipt_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['shipment_receipt_dt'])) : "";
 			$this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $shipment_receipt_dt);
 			//$this->addXMLElement($xmlWriter, 'shipment_condition', $val['shipment_condition']);
+			$this->addXMLElement($xmlWriter, 'shipment_condition', preg_replace('/^_(\d)$/', '-$1', $val['shipment_condition'])); 
 			$this->addXMLElement($xmlWriter, 'shipment_damaged_reason', $val['shipment_damaged_reason']);
 			$this->addXMLElement($xmlWriter, 'sample_id', $val['name']);
 			$this->addXMLElement($xmlWriter, 'sample_receipt_temp', $val['sample_receipt_temp']);
