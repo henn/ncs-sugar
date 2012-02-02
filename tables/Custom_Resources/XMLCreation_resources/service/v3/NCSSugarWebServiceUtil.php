@@ -95,13 +95,13 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, TSU_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('tsu');
-                $this->addXMLElement($xmlWriter, 'sc_id',  $this->master_sc_id);
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'tsu_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'tsu_name', $val['tsu_name']);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();     
+			$xmlWriter->startElement('tsu');
+			$this->addXMLElement($xmlWriter, 'sc_id',  $this->master_sc_id);
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'tsu_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'tsu_name', $val['tsu_name']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();     
         }
         $xmlWriter->flush();
         unset($results);        
@@ -112,17 +112,17 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, LISTING_UNIT_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('listing_unit');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id); // NO DIRECT RELATIONSHIP
-                $this->addXMLElement($xmlWriter, 'list_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'ssu_id', $val['gt_secsampuistingunt_name']);
-                $this->addXMLElement($xmlWriter, 'tsu_id', $val['gt_tersampuistingunt_name']);
-                $this->addXMLElement($xmlWriter, 'list_line', $val['list_line']);
-                // $this->addXMLElement($xmlWriter, 'list_source', $val['list_source']);
-				$this->addXMLElement($xmlWriter, 'list_source', str_replace("_", "-", $val['list_source']));
-                $this->addXMLElement($xmlWriter, 'list_comment', $val['list_comment']);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();     
+			$xmlWriter->startElement('listing_unit');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id); // NO DIRECT RELATIONSHIP
+			$this->addXMLElement($xmlWriter, 'list_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'ssu_id', $val['gt_secsampuistingunt_name']);
+			$this->addXMLElement($xmlWriter, 'tsu_id', $val['gt_tersampuistingunt_name']);
+			$this->addXMLElement($xmlWriter, 'list_line', $val['list_line']);
+			// $this->addXMLElement($xmlWriter, 'list_source', $val['list_source']);
+			$this->addXMLElement($xmlWriter, 'list_source', str_replace("_", "-", $val['list_source']));
+			$this->addXMLElement($xmlWriter, 'list_comment', $val['list_comment']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();     
         }  
         $xmlWriter->flush();
         unset($results);        
@@ -157,52 +157,53 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $xmlWriter->flush();
         unset($results);
     }
-    
+ 	
+	
     function parseHouseHoldUnit(&$xmlWriter, &$chunk)
     {
         $db = DBManagerFactory::getInstance();
         $results = export($db, HOUSEHOLD_UNIT_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('household_unit');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id); // NO DIRECT RELATIONSHIP
-                $this->addXMLElement($xmlWriter, 'hh_id', $val['name']);
-                // $this->addXMLElement($xmlWriter, 'hh_status', $val['hh_status']);
-		$this->addXMLElement($xmlWriter, 'hh_status', str_replace("_", "-", $val['hh_status']));
-                // $this->addXMLElement($xmlWriter, 'hh_elig', $val['hh_elig']);
-		$this->addXMLElement($xmlWriter, 'hh_elig', str_replace("_", "-", $val['hh_elig']));
-                $this->addXMLElement($xmlWriter, 'num_age_elig', $val['num_age_elig']);
-                $this->addXMLElement($xmlWriter, 'num_preg', $val['num_preg']);
-                $this->addXMLElement($xmlWriter, 'num_preg_minor', $val['num_preg_minor']);
-                $this->addXMLElement($xmlWriter, 'num_preg_adult', $val['num_preg_adult']);
-                $this->addXMLElement($xmlWriter, 'num_preg_over49', $val['num_preg_over49']);
-                // $this->addXMLElement($xmlWriter, 'hh_structure', $val['hh_structure']);
-		$this->addXMLElement($xmlWriter, 'hh_structure', str_replace("_", "-", $val['hh_structure']));
-                $this->addXMLElement($xmlWriter, 'hh_structure_oth', $val['hh_structure_oth']);
-                $this->addXMLElement($xmlWriter, 'hh_comment', $val['hh_comment']);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('household_unit');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id); // NO DIRECT RELATIONSHIP
+			$this->addXMLElement($xmlWriter, 'hh_id', $val['name']);
+			// $this->addXMLElement($xmlWriter, 'hh_status', $val['hh_status']);
+			$this->addXMLElement($xmlWriter, 'hh_status', str_replace("_", "-", $val['hh_status']));
+			// $this->addXMLElement($xmlWriter, 'hh_elig', $val['hh_elig']);
+			$this->addXMLElement($xmlWriter, 'hh_elig', str_replace("_", "-", $val['hh_elig']));
+			$this->addXMLElement($xmlWriter, 'num_age_elig', $val['num_age_elig']);
+			$this->addXMLElement($xmlWriter, 'num_preg', $val['num_preg']);
+			$this->addXMLElement($xmlWriter, 'num_preg_minor', $val['num_preg_minor']);
+			$this->addXMLElement($xmlWriter, 'num_preg_adult', $val['num_preg_adult']);
+			$this->addXMLElement($xmlWriter, 'num_preg_over49', $val['num_preg_over49']);
+			// $this->addXMLElement($xmlWriter, 'hh_structure', $val['hh_structure']);
+			$this->addXMLElement($xmlWriter, 'hh_structure', str_replace("_", "-", $val['hh_structure']));
+			$this->addXMLElement($xmlWriter, 'hh_structure_oth', $val['hh_structure_oth']);
+			$this->addXMLElement($xmlWriter, 'hh_comment', $val['hh_comment']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);         
     }
-    
+		
     function parseLinkHouseHoldDwelling(&$xmlWriter, &$chunk)
     {
         $db = DBManagerFactory::getInstance();
         $results = export($db, LINK_HOUSEHOLD_DWELLING_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('link_household_dwelling');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);  // NO DIRECT RELATIONSHIP
-                $this->addXMLElement($xmlWriter, 'hh_du_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'hh_id', $val['gt_dwlunthshousehold_name']);
-                $this->addXMLElement($xmlWriter, 'du_id', $val['gt_dwlunthsellingunt_name']);
-                // $this->addXMLElement($xmlWriter, 'is_active', $val['is_active']);
-		$this->addXMLElement($xmlWriter, 'is_active', str_replace("_", "-", $val['is_active']));
-                // $this->addXMLElement($xmlWriter, 'du_rank', $val['du_rank']);
-		$this->addXMLElement($xmlWriter, 'du_rank', str_replace("_", "-", $val['du_rank']));
-                $this->addXMLElement($xmlWriter, 'du_rank_oth', $val['du_rank_oth']);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('link_household_dwelling');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);  // NO DIRECT RELATIONSHIP
+			$this->addXMLElement($xmlWriter, 'hh_du_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'hh_id', $val['gt_dwlunthshousehold_name']);
+			$this->addXMLElement($xmlWriter, 'du_id', $val['gt_dwlunthsellingunt_name']);
+			// $this->addXMLElement($xmlWriter, 'is_active', $val['is_active']);
+			$this->addXMLElement($xmlWriter, 'is_active', str_replace("_", "-", $val['is_active']));
+			// $this->addXMLElement($xmlWriter, 'du_rank', $val['du_rank']);
+			$this->addXMLElement($xmlWriter, 'du_rank', str_replace("_", "-", $val['du_rank']));
+			$this->addXMLElement($xmlWriter, 'du_rank_oth', $val['du_rank_oth']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);         
@@ -213,37 +214,37 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, STAFF_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('staff');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);  // NO DIRECT RELATIONSHIP
-                $this->addXMLElement($xmlWriter, 'staff_id', $val['name']);
-                //$this->addXMLElement($xmlWriter, 'staff_type', $val['staff_type']);
-                $this->addXMLElement($xmlWriter, 'staff_type', str_replace("_", "-", $val['staff_type']));
-		$this->addXMLElement($xmlWriter, 'staff_type_oth', $val['staff_type_oth']);
-                //$this->addXMLElement($xmlWriter, 'subcontractor', $val['subcontractor']);
-		$this->addXMLElement($xmlWriter, 'subcontractor', str_replace("_", "-", $val['subcontractor']));
-                $this->addXMLElement($xmlWriter, 'staff_yob', $val['staff_yob']);
-                //$this->addXMLElement($xmlWriter, 'staff_age_range', $val['staff_age_range']);
-				$this->addXMLElement($xmlWriter, 'staff_age_range', str_replace("_", "-", $val['staff_age_range']));
-                // $this->addXMLElement($xmlWriter, 'staff_gender', $val['staff_gender']);
-				$this->addXMLElement($xmlWriter, 'staff_gender', str_replace("_", "-", $val['staff_gender']));
-                //$this->addXMLElement($xmlWriter, 'staff_race', $val['staff_race']);
-				$this->addXMLElement($xmlWriter, 'staff_race', str_replace("_", "-", $val['staff_race']));
-                //$this->addXMLElement($xmlWriter, 'staff_race_oth', $val['name']);
-				$this->addXMLElement($xmlWriter, 'staff_race_oth', str_replace("_", "-", $val['staff_race_oth']));
-                $this->addXMLElement($xmlWriter, 'staff_zip', $val['staff_zip']);
-                // $this->addXMLElement($xmlWriter, 'staff_ethnicity', $val['staff_ethnicity']);
-				$this->addXMLElement($xmlWriter, 'staff_ethnicity', str_replace("_", "-", $val['staff_ethnicity']));
-				// $this->addXMLElement($xmlWriter, 'staff_exp', $val['staff_exp']);
-				$this->addXMLElement($xmlWriter, 'staff_exp', str_replace("_", "-", $val['staff_exp']));
-                $this->addXMLElement($xmlWriter, 'staff_comment', $val['staff_comment']);
-				// $this->addXMLElement($xmlWriter, 'ncs_active_date', $val['ncs_active_date']);
-				$ncs_active_date = preg_split('/[ ]/', $val['ncs_active_date']);
-					$this->addXMLElement($xmlWriter, 'ncs_active_date', $ncs_active_date[0]);
-				// $this->addXMLElement($xmlWriter, 'ncs_inactive_date', $val['ncs_inactive_date']);
-				$ncs_inactive_date = preg_split('/[ ]/', $val['ncs_inactive_date']);
-					$this->addXMLElement($xmlWriter, 'ncs_inactive_date', $ncs_inactive_date[0]);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('staff');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);  // NO DIRECT RELATIONSHIP
+			$this->addXMLElement($xmlWriter, 'staff_id', $val['name']);
+			//$this->addXMLElement($xmlWriter, 'staff_type', $val['staff_type']);
+			$this->addXMLElement($xmlWriter, 'staff_type', str_replace("_", "-", $val['staff_type']));
+			$this->addXMLElement($xmlWriter, 'staff_type_oth', $val['staff_type_oth']);
+			//$this->addXMLElement($xmlWriter, 'subcontractor', $val['subcontractor']);
+			$this->addXMLElement($xmlWriter, 'subcontractor', str_replace("_", "-", $val['subcontractor']));
+			$this->addXMLElement($xmlWriter, 'staff_yob', $val['staff_yob']);
+			//$this->addXMLElement($xmlWriter, 'staff_age_range', $val['staff_age_range']);
+			$this->addXMLElement($xmlWriter, 'staff_age_range', str_replace("_", "-", $val['staff_age_range']));
+			// $this->addXMLElement($xmlWriter, 'staff_gender', $val['staff_gender']);
+			$this->addXMLElement($xmlWriter, 'staff_gender', str_replace("_", "-", $val['staff_gender']));
+			//$this->addXMLElement($xmlWriter, 'staff_race', $val['staff_race']);
+			$this->addXMLElement($xmlWriter, 'staff_race', str_replace("_", "-", $val['staff_race']));
+			//$this->addXMLElement($xmlWriter, 'staff_race_oth', $val['name']);
+			$this->addXMLElement($xmlWriter, 'staff_race_oth', str_replace("_", "-", $val['staff_race_oth']));
+			$this->addXMLElement($xmlWriter, 'staff_zip', $val['staff_zip']);
+			// $this->addXMLElement($xmlWriter, 'staff_ethnicity', $val['staff_ethnicity']);
+			$this->addXMLElement($xmlWriter, 'staff_ethnicity', str_replace("_", "-", $val['staff_ethnicity']));
+			// $this->addXMLElement($xmlWriter, 'staff_exp', $val['staff_exp']);
+			$this->addXMLElement($xmlWriter, 'staff_exp', str_replace("_", "-", $val['staff_exp']));
+			$this->addXMLElement($xmlWriter, 'staff_comment', $val['staff_comment']);
+			// $this->addXMLElement($xmlWriter, 'ncs_active_date', $val['ncs_active_date']);
+			$ncs_active_date = preg_split('/[ ]/', $val['ncs_active_date']);
+				$this->addXMLElement($xmlWriter, 'ncs_active_date', $ncs_active_date[0]);
+			// $this->addXMLElement($xmlWriter, 'ncs_inactive_date', $val['ncs_inactive_date']);
+			$ncs_inactive_date = preg_split('/[ ]/', $val['ncs_inactive_date']);
+				$this->addXMLElement($xmlWriter, 'ncs_inactive_date', $ncs_inactive_date[0]);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results); 
@@ -254,15 +255,15 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, STAFF_LANGUAGE_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('staff_language');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);  // NO DIRECT RELATIONSHIP
-                $this->addXMLElement($xmlWriter, 'staff_language_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'staff_id', $val['st_staffrstt_stflang_name']);
-                // $this->addXMLElement($xmlWriter, 'staff_lang', $val['staff_lang']);
-		$this->addXMLElement($xmlWriter, 'staff_lang', str_replace("_", "-", $val['staff_lang']));
-                $this->addXMLElement($xmlWriter, 'staff_lang_oth', $val['staff_lang_oth']);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('staff_language');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);  // NO DIRECT RELATIONSHIP
+			$this->addXMLElement($xmlWriter, 'staff_language_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'staff_id', $val['st_staffrstt_stflang_name']);
+			// $this->addXMLElement($xmlWriter, 'staff_lang', $val['staff_lang']);
+			$this->addXMLElement($xmlWriter, 'staff_lang', str_replace("_", "-", $val['staff_lang']));
+			$this->addXMLElement($xmlWriter, 'staff_lang_oth', $val['staff_lang_oth']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -273,19 +274,19 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, STAFF_VALIDATION_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('staff_validation');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);  // NO DIRECT RELATIONSHIP
-                $this->addXMLElement($xmlWriter, 'staff_val_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'staff_id', $val['st_staffrst_stfvldtn_name']);
-                $this->addXMLElement($xmlWriter, 'event_id', $val['ncsdc_event_stfvldtn_name']);
-                // $this->addXMLElement($xmlWriter, 'staff_validate', $val['staff_validate']);
-				$this->addXMLElement($xmlWriter, 'staff_validate', str_replace("_", "-", $val['staff_validate']));
-                // $this->addXMLElement($xmlWriter, 'staff_val_date', $val['staff_val_date']);
-				$staff_val_date = preg_split('/[ ]/', $val['staff_val_date']);
-					$this->addXMLElement($xmlWriter, 'staff_val_date', $staff_val_date[0]);
-                $this->addXMLElement($xmlWriter, 'staff_val_comment', $val['staff_val_comment']);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('staff_validation');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);  // NO DIRECT RELATIONSHIP
+			$this->addXMLElement($xmlWriter, 'staff_val_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'staff_id', $val['st_staffrst_stfvldtn_name']);
+			$this->addXMLElement($xmlWriter, 'event_id', $val['ncsdc_event_stfvldtn_name']);
+			// $this->addXMLElement($xmlWriter, 'staff_validate', $val['staff_validate']);
+			$this->addXMLElement($xmlWriter, 'staff_validate', str_replace("_", "-", $val['staff_validate']));
+			// $this->addXMLElement($xmlWriter, 'staff_val_date', $val['staff_val_date']);
+			$staff_val_date = preg_split('/[ ]/', $val['staff_val_date']);
+			$this->addXMLElement($xmlWriter, 'staff_val_date', $staff_val_date[0]);
+			$this->addXMLElement($xmlWriter, 'staff_val_comment', $val['staff_val_comment']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -296,20 +297,20 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, STAFF_WEEKLY_EXPENSE_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('staff_weekly_expense');
-                $this->addXMLElement($xmlWriter, 'psu_id',  $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'weekly_exp_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'staff_id', $val['st_staffrsttfwkexpns_name']);
-                //$this->addXMLElement($xmlWriter, 'week_start_date', $val['week_start_date']);
-                $start_date = preg_split('/[ ]/', $val['week_start_date']);
-                $this->addXMLElement($xmlWriter, 'week_start_date', $start_date[0]);
-		$this->addXMLElement($xmlWriter, 'staff_pay', $val['staff_pay']);
-                $this->addXMLElement($xmlWriter, 'staff_hours', $val['staff_hours']);
-                $this->addXMLElement($xmlWriter, 'staff_expenses', $val['staff_expenses']);
-                $this->addXMLElement($xmlWriter, 'staff_miles', $val['staff_miles']);
-                $this->addXMLElement($xmlWriter, 'weekly_expenses_comment', $val['weekly_expenses_comment']);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('staff_weekly_expense');
+			$this->addXMLElement($xmlWriter, 'psu_id',  $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'weekly_exp_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'staff_id', $val['st_staffrsttfwkexpns_name']);
+			//$this->addXMLElement($xmlWriter, 'week_start_date', $val['week_start_date']);
+			$start_date = preg_split('/[ ]/', $val['week_start_date']);
+			$this->addXMLElement($xmlWriter, 'week_start_date', $start_date[0]);
+			$this->addXMLElement($xmlWriter, 'staff_pay', $val['staff_pay']);
+			$this->addXMLElement($xmlWriter, 'staff_hours', $val['staff_hours']);
+			$this->addXMLElement($xmlWriter, 'staff_expenses', $val['staff_expenses']);
+			$this->addXMLElement($xmlWriter, 'staff_miles', $val['staff_miles']);
+			$this->addXMLElement($xmlWriter, 'weekly_expenses_comment', $val['weekly_expenses_comment']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -320,17 +321,17 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, STAFF_EXP_MNGMNT_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('staff_exp_mngmnt_tasks');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'staff_exp_mgmt_task_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'staff_weekly_expense_id', $val['st_stfwkexpfexpmgtsk_name']);
-                // $this->addXMLElement($xmlWriter, 'mgmt_task_type', $val['mgmt_task_type']);
-		$this->addXMLElement($xmlWriter, 'mgmt_task_type', str_replace("_", "-", $val['mgmt_task_type']));
-                $this->addXMLElement($xmlWriter, 'mgmt_task_type_oth', $val['mgmt_task_type_oth']);
-                $this->addXMLElement($xmlWriter, 'mgmt_task_hrs', $val['mgmt_task_hrs']);
-                $this->addXMLElement($xmlWriter, 'mgmt_task_comment', $val['mgmt_task_comment']);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('staff_exp_mngmnt_tasks');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'staff_exp_mgmt_task_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'staff_weekly_expense_id', $val['st_stfwkexpfexpmgtsk_name']);
+			// $this->addXMLElement($xmlWriter, 'mgmt_task_type', $val['mgmt_task_type']);
+			$this->addXMLElement($xmlWriter, 'mgmt_task_type', str_replace("_", "-", $val['mgmt_task_type']));
+			$this->addXMLElement($xmlWriter, 'mgmt_task_type_oth', $val['mgmt_task_type_oth']);
+			$this->addXMLElement($xmlWriter, 'mgmt_task_hrs', $val['mgmt_task_hrs']);
+			$this->addXMLElement($xmlWriter, 'mgmt_task_comment', $val['mgmt_task_comment']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -341,19 +342,19 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, STAFF_EXP_DATA_CLLCTN_TASKS_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('staff_exp_data_cllctn_tasks');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'staff_exp_data_coll_task_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'staff_weekly_expense_id', $val['st_stfwkexpfexpdctsk_name']);
-                // $this->addXMLElement($xmlWriter, 'data_coll_task_type', $val['data_coll_task_type']);
-		$this->addXMLElement($xmlWriter, 'data_coll_task_type', str_replace("_", "-", $val['data_coll_task_type']));
-                $this->addXMLElement($xmlWriter, 'data_coll_task_type_oth', $val['data_coll_task_type_oth']);
-                $this->addXMLElement($xmlWriter, 'data_coll_tasks_hrs', $val['data_coll_tasks_hrs']);
-                $this->addXMLElement($xmlWriter, 'data_coll_task_cases', $val['data_coll_task_cases']);
-                $this->addXMLElement($xmlWriter, 'data_coll_transmit', $val['data_coll_transmit']);
-                $this->addXMLElement($xmlWriter, 'data_coll_task_comment', $val['data_coll_task_comment']);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('staff_exp_data_cllctn_tasks');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'staff_exp_data_coll_task_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'staff_weekly_expense_id', $val['st_stfwkexpfexpdctsk_name']);
+			// $this->addXMLElement($xmlWriter, 'data_coll_task_type', $val['data_coll_task_type']);
+			$this->addXMLElement($xmlWriter, 'data_coll_task_type', str_replace("_", "-", $val['data_coll_task_type']));
+			$this->addXMLElement($xmlWriter, 'data_coll_task_type_oth', $val['data_coll_task_type_oth']);
+			$this->addXMLElement($xmlWriter, 'data_coll_tasks_hrs', $val['data_coll_tasks_hrs']);
+			$this->addXMLElement($xmlWriter, 'data_coll_task_cases', $val['data_coll_task_cases']);
+			$this->addXMLElement($xmlWriter, 'data_coll_transmit', $val['data_coll_transmit']);
+			$this->addXMLElement($xmlWriter, 'data_coll_task_comment', $val['data_coll_task_comment']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -364,47 +365,47 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, OUTREACH_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('outreach');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'tsu_id', $val['tsu_id']);
-                $this->addXMLElement($xmlWriter, 'ssu_id', $val['st_wkoeact_ecsampunt_name']);  // NO DB FIELD OR RELATIONSHIP
-                $this->addXMLElement($xmlWriter, 'outreach_event_id', $val['name']);
-                // $this->addXMLElement($xmlWriter, 'outreach_event_date', $val['outreach_event_date']);
-		$outreach_event_date = preg_split('/[ ]/', $val['outreach_event_date']);
-                $this->addXMLElement($xmlWriter, 'outreach_event_date', $outreach_event_date[0]);
-                //$this->addXMLElement($xmlWriter, 'outreach_target', $record['st_msouttart_wkoeact_name']);
-                //$this->addXMLElement($xmlWriter, 'outreach_target_oth', $record['outreach_target_oth']);
-                // $this->addXMLElement($xmlWriter, 'outreach_mode', $val['outreach_mode']);
-		$this->addXMLElement($xmlWriter, 'outreach_mode', str_replace("_", "-", $val['outreach_mode']));
-                $this->addXMLElement($xmlWriter, 'outreach_mode_oth', $val['outreach_mode_oth']);
-                // $this->addXMLElement($xmlWriter, 'outreach_type', $val['outreach_type']);
-		$this->addXMLElement($xmlWriter, 'outreach_type', str_replace("_", "-", $val['outreach_type']));
-                $this->addXMLElement($xmlWriter, 'outreach_type_oth', $val['outreach_type_oth']);
-                // $this->addXMLElement($xmlWriter, 'outreach_tailored', $val['outreach_tailored']);
-		$this->addXMLElement($xmlWriter, 'outreach_tailored', str_replace("_", "-", $val['outreach_tailored']));
-                // $this->addXMLElement($xmlWriter, 'outreach_lang1', $val['outreach_lang1']);
-		$this->addXMLElement($xmlWriter, 'outreach_lang1', str_replace("_", "-", $val['outreach_lang1']));
-                //$this->addXMLElement($xmlWriter, 'outreach_lang2', $record['outreach_lang2']);
-                $this->addXMLElement($xmlWriter, 'outreach_lang_oth', $val['outreach_lang_oth']);
-                // $this->addXMLElement($xmlWriter, 'outreach_race1', $val['outreach_race1']);
-		$this->addXMLElement($xmlWriter, 'outreach_race1', str_replace("_", "-", $val['outreach_race1']));
-                //$this->addXMLElement($xmlWriter, 'outreach_race2', $record['st_msoutract_wkoeact_name']);
-                //$this->addXMLElement($xmlWriter, 'outreach_race_oth', $record['outreach_race_oth']);
-                // $this->addXMLElement($xmlWriter, 'outreach_culture1', $val['outreach_culture1']);
-		$this->addXMLElement($xmlWriter, 'outreach_culture1', str_replace("_", "-", $val['outreach_culture1']));
-                // $this->addXMLElement($xmlWriter, 'outreach_culture2', $val['outreach_culture2']);
-		$this->addXMLElement($xmlWriter, 'outreach_culture2', str_replace("_", "-", $val['outreach_culture2']));
-                $this->addXMLElement($xmlWriter, 'outreach_culture_oth', $val['outreach_culture_oth']);
-                $this->addXMLElement($xmlWriter, 'outreach_quantity', $val['outreach_quantity']);
-                $this->addXMLElement($xmlWriter, 'outreach_cost', $val['outreach_cost']);
-                $this->addXMLElement($xmlWriter, 'outreach_staffing', $val['outreach_staffing']);
-                // $this->addXMLElement($xmlWriter, 'outreach_incident', $val['outreach_incident']);
-		$this->addXMLElement($xmlWriter, 'outreach_incident', str_replace("_", "-", $val['outreach_incident']));
-                $this->addXMLElement($xmlWriter, 'incident_id', $val['incident_id']);
-                // $this->addXMLElement($xmlWriter, 'outreach_eval_result', $val['outreach_eval_result']);
-		$this->addXMLElement($xmlWriter, 'outreach_eval_result', str_replace("_", "-", $val['outreach_eval_result']));
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('outreach');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'tsu_id', $val['tsu_id']);
+			$this->addXMLElement($xmlWriter, 'ssu_id', $val['st_wkoeact_ecsampunt_name']);  // NO DB FIELD OR RELATIONSHIP
+			$this->addXMLElement($xmlWriter, 'outreach_event_id', $val['name']);
+			// $this->addXMLElement($xmlWriter, 'outreach_event_date', $val['outreach_event_date']);
+			$outreach_event_date = preg_split('/[ ]/', $val['outreach_event_date']);
+			$this->addXMLElement($xmlWriter, 'outreach_event_date', $outreach_event_date[0]);
+			//$this->addXMLElement($xmlWriter, 'outreach_target', $record['st_msouttart_wkoeact_name']);
+			//$this->addXMLElement($xmlWriter, 'outreach_target_oth', $record['outreach_target_oth']);
+			// $this->addXMLElement($xmlWriter, 'outreach_mode', $val['outreach_mode']);
+			$this->addXMLElement($xmlWriter, 'outreach_mode', str_replace("_", "-", $val['outreach_mode']));
+			$this->addXMLElement($xmlWriter, 'outreach_mode_oth', $val['outreach_mode_oth']);
+			// $this->addXMLElement($xmlWriter, 'outreach_type', $val['outreach_type']);
+			$this->addXMLElement($xmlWriter, 'outreach_type', str_replace("_", "-", $val['outreach_type']));
+			$this->addXMLElement($xmlWriter, 'outreach_type_oth', $val['outreach_type_oth']);
+			// $this->addXMLElement($xmlWriter, 'outreach_tailored', $val['outreach_tailored']);
+			$this->addXMLElement($xmlWriter, 'outreach_tailored', str_replace("_", "-", $val['outreach_tailored']));
+			// $this->addXMLElement($xmlWriter, 'outreach_lang1', $val['outreach_lang1']);
+			$this->addXMLElement($xmlWriter, 'outreach_lang1', str_replace("_", "-", $val['outreach_lang1']));
+			//$this->addXMLElement($xmlWriter, 'outreach_lang2', $record['outreach_lang2']);
+			$this->addXMLElement($xmlWriter, 'outreach_lang_oth', $val['outreach_lang_oth']);
+			// $this->addXMLElement($xmlWriter, 'outreach_race1', $val['outreach_race1']);
+			$this->addXMLElement($xmlWriter, 'outreach_race1', str_replace("_", "-", $val['outreach_race1']));
+			//$this->addXMLElement($xmlWriter, 'outreach_race2', $record['st_msoutract_wkoeact_name']);
+			//$this->addXMLElement($xmlWriter, 'outreach_race_oth', $record['outreach_race_oth']);
+			// $this->addXMLElement($xmlWriter, 'outreach_culture1', $val['outreach_culture1']);
+			$this->addXMLElement($xmlWriter, 'outreach_culture1', str_replace("_", "-", $val['outreach_culture1']));
+			// $this->addXMLElement($xmlWriter, 'outreach_culture2', $val['outreach_culture2']);
+			$this->addXMLElement($xmlWriter, 'outreach_culture2', str_replace("_", "-", $val['outreach_culture2']));
+			$this->addXMLElement($xmlWriter, 'outreach_culture_oth', $val['outreach_culture_oth']);
+			$this->addXMLElement($xmlWriter, 'outreach_quantity', $val['outreach_quantity']);
+			$this->addXMLElement($xmlWriter, 'outreach_cost', $val['outreach_cost']);
+			$this->addXMLElement($xmlWriter, 'outreach_staffing', $val['outreach_staffing']);
+			// $this->addXMLElement($xmlWriter, 'outreach_incident', $val['outreach_incident']);
+			$this->addXMLElement($xmlWriter, 'outreach_incident', str_replace("_", "-", $val['outreach_incident']));
+			$this->addXMLElement($xmlWriter, 'incident_id', $val['incident_id']);
+			// $this->addXMLElement($xmlWriter, 'outreach_eval_result', $val['outreach_eval_result']);
+			$this->addXMLElement($xmlWriter, 'outreach_eval_result', str_replace("_", "-", $val['outreach_eval_result']));
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -418,16 +419,16 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         while($val = $db->fetchByAssoc($results, -1, false)) {
             foreach (explode("^,^",str_replace("_", "-", $val['outreach_race2'])) as $raceval)
             {
-                $raceval = str_replace("^", "", $raceval);
-                $xmlWriter->startElement('outreach_race');
-                    $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                    $this->addXMLElement($xmlWriter, 'outreach_race_id', $val['name'] . '-' . $raceval);
-                    $this->addXMLElement($xmlWriter, 'outreach_event_id', $val['st_msoutract_wkoeact_name']);
-                    $this->addXMLElement($xmlWriter, 'outreach_race2', $raceval);
-                    //if ($raceval == "-5") $this->addXMLElement($xmlWriter, 'outreach_race_oth', $val['outreach_race_oth']);
-					$this->addXMLElement($xmlWriter, 'outreach_race_oth', $val['outreach_race_oth']);
-                    $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-                $xmlWriter->endElement();
+				$raceval = str_replace("^", "", $raceval);
+				$xmlWriter->startElement('outreach_race');
+				$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+				$this->addXMLElement($xmlWriter, 'outreach_race_id', $val['name'] . '-' . $raceval);
+				$this->addXMLElement($xmlWriter, 'outreach_event_id', $val['st_msoutract_wkoeact_name']);
+				$this->addXMLElement($xmlWriter, 'outreach_race2', $raceval);
+				//if ($raceval == "-5") $this->addXMLElement($xmlWriter, 'outreach_race_oth', $val['outreach_race_oth']);
+				$this->addXMLElement($xmlWriter, 'outreach_race_oth', $val['outreach_race_oth']);
+				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+				$xmlWriter->endElement();
             }
         }
         $xmlWriter->flush();
@@ -440,13 +441,13 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, OUTREACH_STAFF_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('outreach_staff');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'outreach_event_staff_id', $val['name']); 
-                $this->addXMLElement($xmlWriter, 'outreach_event_id', $val['st_otrchstat_wkoeact_name']);
-                $this->addXMLElement($xmlWriter, 'staff_id', $val['st_otrchstastaffrstr_name']);
-		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('outreach_staff');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'outreach_event_staff_id', $val['name']); 
+			$this->addXMLElement($xmlWriter, 'outreach_event_id', $val['st_otrchstat_wkoeact_name']);
+			$this->addXMLElement($xmlWriter, 'staff_id', $val['st_otrchstastaffrstr_name']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -457,15 +458,15 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, OUTREACH_EVAL_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('outreach_eval');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'outreach_event_eval_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'outreach_event_id', $val['st_msoutevat_wkoeact_name']);
-		// $this->addXMLElement($xmlWriter, 'outreach_eval', $val['outreach_eval']);
-		$this->addXMLElement($xmlWriter, 'outreach_eval', str_replace("^","",str_replace("_", "-", $val['outreach_eval'])));
-                $this->addXMLElement($xmlWriter, 'outreach_eval_oth', $val['outreach_eval_oth']);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('outreach_eval');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'outreach_event_eval_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'outreach_event_id', $val['st_msoutevat_wkoeact_name']);
+			// $this->addXMLElement($xmlWriter, 'outreach_eval', $val['outreach_eval']);
+			$this->addXMLElement($xmlWriter, 'outreach_eval', str_replace("^","",str_replace("_", "-", $val['outreach_eval'])));
+			$this->addXMLElement($xmlWriter, 'outreach_eval_oth', $val['outreach_eval_oth']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -479,16 +480,16 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         while($val = $db->fetchByAssoc($results, -1, false)) {
             foreach (explode("^,^", str_replace("_", "-", $val['outreach_target_ms'])) as $targetval)
             {
-                $targetval = str_replace("^", "", $targetval);
-                $xmlWriter->startElement('outreach_target');
-                    $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                    $this->addXMLElement($xmlWriter, 'outreach_target_id', $val['name'] . '-' . $targetval);
-                    $this->addXMLElement($xmlWriter, 'outreach_event_id', $val['st_msouttart_wkoeact_name']);
-                    $this->addXMLElement($xmlWriter, 'outreach_target_ms', $targetval);
-                    //if ($targetval == "-5") $this->addXMLElement($xmlWriter, 'outreach_target_ms_oth', $val['outreach_target_ms_oth']);
-					$this->addXMLElement($xmlWriter, 'outreach_target_ms_oth', $val['outreach_target_ms_oth']);
-                    $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-                $xmlWriter->endElement();
+				$targetval = str_replace("^", "", $targetval);
+				$xmlWriter->startElement('outreach_target');
+				$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+				$this->addXMLElement($xmlWriter, 'outreach_target_id', $val['name'] . '-' . $targetval);
+				$this->addXMLElement($xmlWriter, 'outreach_event_id', $val['st_msouttart_wkoeact_name']);
+				$this->addXMLElement($xmlWriter, 'outreach_target_ms', $targetval);
+				//if ($targetval == "-5") $this->addXMLElement($xmlWriter, 'outreach_target_ms_oth', $val['outreach_target_ms_oth']);
+				$this->addXMLElement($xmlWriter, 'outreach_target_ms_oth', $val['outreach_target_ms_oth']);
+				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+				$xmlWriter->endElement();
             }
         }
         $xmlWriter->flush();
@@ -502,14 +503,14 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         while($val = $db->fetchByAssoc($results, -1, false)) {
             foreach (explode("^,^", str_replace("_", "-", $val['outreach_lang2'])) as $langval)
             {
-                $langval = str_replace("^", "", $langval);
-                $xmlWriter->startElement('outreach_lang2');
-                    $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                    $this->addXMLElement($xmlWriter, 'outreach_lang2_id', $val['name'] . '-' . $langval);
-                    $this->addXMLElement($xmlWriter, 'outreach_event_id', $val['st_msoutlant_wkoeact_name']);
-                    $this->addXMLElement($xmlWriter, 'outreach_lang2', $langval);
-                    $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-                $xmlWriter->endElement();
+				$langval = str_replace("^", "", $langval);
+				$xmlWriter->startElement('outreach_lang2');
+				$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+				$this->addXMLElement($xmlWriter, 'outreach_lang2_id', $val['name'] . '-' . $langval);
+				$this->addXMLElement($xmlWriter, 'outreach_event_id', $val['st_msoutlant_wkoeact_name']);
+				$this->addXMLElement($xmlWriter, 'outreach_lang2', $langval);
+				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+				$xmlWriter->endElement();
             }
         }
         $xmlWriter->flush();
@@ -522,24 +523,24 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, STAFF_CERT_TRAINING_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('staff_cert_training');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'staff_cert_list_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'staff_id', $val['st_staffrststfcrttrn_name']);
-                // $this->addXMLElement($xmlWriter, 'cert_train_type', $val['cert_train_type']);
-				$this->addXMLElement($xmlWriter, 'cert_train_type', str_replace("_", "-", $val['cert_train_type']));
-                // $this->addXMLElement($xmlWriter, 'cert_completed', $val['cert_completed']);
-				$this->addXMLElement($xmlWriter, 'cert_completed', str_replace("_", "-", $val['cert_completed']));
-                // $this->addXMLElement($xmlWriter, 'cert_date', $val['cert_date']);
-				$cert_date = preg_split('/[ ]/', $val['cert_date']);
-				$this->addXMLElement($xmlWriter, 'cert_date', $cert_date[0]);
-                // $this->addXMLElement($xmlWriter, 'staff_bgcheck_lvl', $val['staff_bgcheck_lvl']);
-				$this->addXMLElement($xmlWriter, 'staff_bgcheck_lvl', str_replace("_", "-", $val['staff_bgcheck_lvl']));
-                $this->addXMLElement($xmlWriter, 'cert_type_frequency', $val['cert_type_frequency']);
-                $this->addXMLElement($xmlWriter, 'cert_type_exp_date', $val['cert_type_exp_date']);
-                $this->addXMLElement($xmlWriter, 'cert_comment', $val['cert_comment']);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('staff_cert_training');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'staff_cert_list_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'staff_id', $val['st_staffrststfcrttrn_name']);
+			// $this->addXMLElement($xmlWriter, 'cert_train_type', $val['cert_train_type']);
+			$this->addXMLElement($xmlWriter, 'cert_train_type', str_replace("_", "-", $val['cert_train_type']));
+			// $this->addXMLElement($xmlWriter, 'cert_completed', $val['cert_completed']);
+			$this->addXMLElement($xmlWriter, 'cert_completed', str_replace("_", "-", $val['cert_completed']));
+			// $this->addXMLElement($xmlWriter, 'cert_date', $val['cert_date']);
+			$cert_date = preg_split('/[ ]/', $val['cert_date']);
+			$this->addXMLElement($xmlWriter, 'cert_date', $cert_date[0]);
+			// $this->addXMLElement($xmlWriter, 'staff_bgcheck_lvl', $val['staff_bgcheck_lvl']);
+			$this->addXMLElement($xmlWriter, 'staff_bgcheck_lvl', str_replace("_", "-", $val['staff_bgcheck_lvl']));
+			$this->addXMLElement($xmlWriter, 'cert_type_frequency', $val['cert_type_frequency']);
+			$this->addXMLElement($xmlWriter, 'cert_type_exp_date', $val['cert_type_exp_date']);
+			$this->addXMLElement($xmlWriter, 'cert_comment', $val['cert_comment']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -613,18 +614,18 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, PERSON_RACE_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('person_race');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id); // NO RELATIONSHIP
-                $this->addXMLElement($xmlWriter, 'person_race_id', $val['name']);
-                //$this->addXMLElement($xmlWriter, 'person_id', $record['plt_person_ersonrace_name']);
-                $this->addXMLElement($xmlWriter, 'person_id', getModuleNameByID(PERSON_TABLE, $val[PERSONRACE_PERSON_RHS]));
-                //$this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(PERSON_RACE_SUGAR_MODULE, $val['id'], 'plt_person_plt_personrace', 'name'));
-                // $this->addXMLElement($xmlWriter, 'race', $val['race']);
-				$this->addXMLElement($xmlWriter, 'race', str_replace("_", "-", $val['race']));
-                // $this->addXMLElement($xmlWriter, 'race_oth', $val['race_oth']);
-				$this->addXMLElement($xmlWriter, 'race_oth', str_replace("_", "-", $val['race_oth']));
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('person_race');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id); // NO RELATIONSHIP
+			$this->addXMLElement($xmlWriter, 'person_race_id', $val['name']);
+			//$this->addXMLElement($xmlWriter, 'person_id', $record['plt_person_ersonrace_name']);
+			$this->addXMLElement($xmlWriter, 'person_id', getModuleNameByID(PERSON_TABLE, $val[PERSONRACE_PERSON_RHS]));
+			//$this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(PERSON_RACE_SUGAR_MODULE, $val['id'], 'plt_person_plt_personrace', 'name'));
+			// $this->addXMLElement($xmlWriter, 'race', $val['race']);
+			$this->addXMLElement($xmlWriter, 'race', str_replace("_", "-", $val['race']));
+			// $this->addXMLElement($xmlWriter, 'race_oth', $val['race_oth']);
+			$this->addXMLElement($xmlWriter, 'race_oth', str_replace("_", "-", $val['race_oth']));
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -635,20 +636,20 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, LINK_PERSON_HOUSEHOLD_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('link_person_household');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'person_hh_id', $val['name']);
-                //$this->addXMLElement($xmlWriter, 'person_id', $record['plt_lnkprshlt_person_name']);
-                $this->addXMLElement($xmlWriter, 'person_id', getModuleNameByID(PERSON_TABLE, $val[LINKPERSONHOUSEHOLD_PERSON_RHS]));
-                //$this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(LINK_PERSON_HOUSEHOLD_SUGAR_MODULE, $val['id'], 'plt_lnkprshhld_plt_person', 'name'));
-                $this->addXMLElement($xmlWriter, 'hh_id', $val['plt_lnkprshhousehold_name']);
-                // $this->addXMLElement($xmlWriter, 'is_active', $val['is_active']);
-				$this->addXMLElement($xmlWriter, 'is_active', str_replace("_", "-", $val['is_active']));
-                // $this->addXMLElement($xmlWriter, 'hh_rank', $val['hh_rank']);
-				$this->addXMLElement($xmlWriter, 'hh_rank', str_replace("_", "-", $val['hh_rank']));
-                $this->addXMLElement($xmlWriter, 'hh_rank_oth', $val['hh_rank_oth']);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('link_person_household');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'person_hh_id', $val['name']);
+			//$this->addXMLElement($xmlWriter, 'person_id', $record['plt_lnkprshlt_person_name']);
+			$this->addXMLElement($xmlWriter, 'person_id', getModuleNameByID(PERSON_TABLE, $val[LINKPERSONHOUSEHOLD_PERSON_RHS]));
+			//$this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(LINK_PERSON_HOUSEHOLD_SUGAR_MODULE, $val['id'], 'plt_lnkprshhld_plt_person', 'name'));
+			$this->addXMLElement($xmlWriter, 'hh_id', $val['plt_lnkprshhousehold_name']);
+			// $this->addXMLElement($xmlWriter, 'is_active', $val['is_active']);
+			$this->addXMLElement($xmlWriter, 'is_active', str_replace("_", "-", $val['is_active']));
+			// $this->addXMLElement($xmlWriter, 'hh_rank', $val['hh_rank']);
+			$this->addXMLElement($xmlWriter, 'hh_rank', str_replace("_", "-", $val['hh_rank']));
+			$this->addXMLElement($xmlWriter, 'hh_rank_oth', $val['hh_rank_oth']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -659,34 +660,34 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, PARTICIPANT_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('participant');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'p_id', $val['name']);
-                //$this->addXMLElement($xmlWriter, 'p_type', $record['p_type']);
-                $this->addXMLElement($xmlWriter, 'p_type', str_replace("_", "-", $val['p_type']));
-				$this->addXMLElement($xmlWriter, 'p_type_oth', $val['p_type_oth']);
-                // $this->addXMLElement($xmlWriter, 'status_info_source', $val['status_info_source']);
-				$this->addXMLElement($xmlWriter, 'status_info_source', str_replace("_", "-", $val['status_info_source']));
-                $this->addXMLElement($xmlWriter, 'status_info_source_oth', $val['status_info_source_oth']);
-                // $this->addXMLElement($xmlWriter, 'status_info_mode', $val['status_info_mode']);
-				$this->addXMLElement($xmlWriter, 'status_info_mode', str_replace("_", "-", $val['status_info_mode']));
-                $this->addXMLElement($xmlWriter, 'status_info_mode_oth', $val['status_info_mode_oth']);
-                // $this->addXMLElement($xmlWriter, 'status_info_date', $val['status_info_date']);
-				$status_info_date = preg_split('/[ ]/', $val['status_info_date']);
-				$this->addXMLElement($xmlWriter, 'status_info_date', $status_info_date[0]);
-                // $this->addXMLElement($xmlWriter, 'enroll_status', $val['enroll_status']);
-				$this->addXMLElement($xmlWriter, 'enroll_status', str_replace("_", "-", $val['enroll_status']));
-                // $this->addXMLElement($xmlWriter, 'enroll_date', $val['enroll_date']);
-				$enroll_date = preg_split('/[ ]/', $val['enroll_date']);
-				$this->addXMLElement($xmlWriter, 'enroll_date', $enroll_date[0]);
-                // $this->addXMLElement($xmlWriter, 'pid_entry', $val['pid_entry']);
-				$this->addXMLElement($xmlWriter, 'pid_entry', str_replace("_", "-", $val['pid_entry']));
-                $this->addXMLElement($xmlWriter, 'pid_entry_other', $val['pid_entry_other']);
-                //$this->addXMLElement($xmlWriter, 'pid_age_elig', $record['pid_age_elig']);
-				$this->addXMLElement($xmlWriter, 'pid_age_elig', str_replace("_", "-", $val['pid_age_elig']));
-                $this->addXMLElement($xmlWriter, 'pid_comment', $val['pid_comment']);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('participant');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'p_id', $val['name']);
+			//$this->addXMLElement($xmlWriter, 'p_type', $record['p_type']);
+			$this->addXMLElement($xmlWriter, 'p_type', str_replace("_", "-", $val['p_type']));
+			$this->addXMLElement($xmlWriter, 'p_type_oth', $val['p_type_oth']);
+			// $this->addXMLElement($xmlWriter, 'status_info_source', $val['status_info_source']);
+			$this->addXMLElement($xmlWriter, 'status_info_source', str_replace("_", "-", $val['status_info_source']));
+			$this->addXMLElement($xmlWriter, 'status_info_source_oth', $val['status_info_source_oth']);
+			// $this->addXMLElement($xmlWriter, 'status_info_mode', $val['status_info_mode']);
+			$this->addXMLElement($xmlWriter, 'status_info_mode', str_replace("_", "-", $val['status_info_mode']));
+			$this->addXMLElement($xmlWriter, 'status_info_mode_oth', $val['status_info_mode_oth']);
+			// $this->addXMLElement($xmlWriter, 'status_info_date', $val['status_info_date']);
+			$status_info_date = preg_split('/[ ]/', $val['status_info_date']);
+			$this->addXMLElement($xmlWriter, 'status_info_date', $status_info_date[0]);
+			// $this->addXMLElement($xmlWriter, 'enroll_status', $val['enroll_status']);
+			$this->addXMLElement($xmlWriter, 'enroll_status', str_replace("_", "-", $val['enroll_status']));
+			// $this->addXMLElement($xmlWriter, 'enroll_date', $val['enroll_date']);
+			$enroll_date = preg_split('/[ ]/', $val['enroll_date']);
+			$this->addXMLElement($xmlWriter, 'enroll_date', $enroll_date[0]);
+			// $this->addXMLElement($xmlWriter, 'pid_entry', $val['pid_entry']);
+			$this->addXMLElement($xmlWriter, 'pid_entry', str_replace("_", "-", $val['pid_entry']));
+			$this->addXMLElement($xmlWriter, 'pid_entry_other', $val['pid_entry_other']);
+			//$this->addXMLElement($xmlWriter, 'pid_age_elig', $record['pid_age_elig']);
+			$this->addXMLElement($xmlWriter, 'pid_age_elig', str_replace("_", "-", $val['pid_age_elig']));
+			$this->addXMLElement($xmlWriter, 'pid_comment', $val['pid_comment']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -697,20 +698,20 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, LINK_PERSON_PARTICIPANT_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('link_person_participant');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'person_pid_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'p_id', $val['plt_lkprsprrticipant_name']);
-                //$this->addXMLElement($xmlWriter, 'person_id', $record['plt_lkprsprlt_person_name']);
-                $this->addXMLElement($xmlWriter, 'person_id', getModuleNameByID(PERSON_TABLE, $val[LINKPERSONPARTICIPANT_PERSON_RHS]));
-                //$this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(LINK_PERSON_PARTICIPANT_SUGAR_MODULE, $val['id'], 'plt_lkprsprcpt_plt_person', 'name'));
-                // $this->addXMLElement($xmlWriter, 'relation', $val['relation']);
-				$this->addXMLElement($xmlWriter, 'relation', str_replace("_", "-", $val['relation']));
-                $this->addXMLElement($xmlWriter, 'relation_oth', $val['relation_oth']);
-                // $this->addXMLElement($xmlWriter, 'is_active', $val['is_active']);
-				$this->addXMLElement($xmlWriter, 'is_active', str_replace("_", "-", $val['is_active']));
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('link_person_participant');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'person_pid_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'p_id', $val['plt_lkprsprrticipant_name']);
+			//$this->addXMLElement($xmlWriter, 'person_id', $record['plt_lkprsprlt_person_name']);
+			$this->addXMLElement($xmlWriter, 'person_id', getModuleNameByID(PERSON_TABLE, $val[LINKPERSONPARTICIPANT_PERSON_RHS]));
+			//$this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(LINK_PERSON_PARTICIPANT_SUGAR_MODULE, $val['id'], 'plt_lkprsprcpt_plt_person', 'name'));
+			// $this->addXMLElement($xmlWriter, 'relation', $val['relation']);
+			$this->addXMLElement($xmlWriter, 'relation', str_replace("_", "-", $val['relation']));
+			$this->addXMLElement($xmlWriter, 'relation_oth', $val['relation_oth']);
+			// $this->addXMLElement($xmlWriter, 'is_active', $val['is_active']);
+			$this->addXMLElement($xmlWriter, 'is_active', str_replace("_", "-", $val['is_active']));
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -722,20 +723,20 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $db = DBManagerFactory::getInstance();
         $results = export($db, PARTICIPANT_AUTHORIZATION_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('participant_auth');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'auth_form_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'p_id', $val['olt_providertauthfrm_name']);
-                $this->addXMLElement($xmlWriter, 'contact_id', $val['ncsdc_cntctrtauthfrm_name']);
-                $this->addXMLElement($xmlWriter, 'provider_id', $val['olt_providertauthfrm_name']);
-				// $this->addXMLElement($xmlWriter, 'auth_form_type', $val['auth_form_type']);
-				$this->addXMLElement($xmlWriter, 'auth_form_type', str_replace("_", "-", $val['auth_form_type']));
-                $this->addXMLElement($xmlWriter, 'auth_type_oth', $val['auth_type_oth']);
-                // $this->addXMLElement($xmlWriter, 'auth_status', $val['auth_status']);
-				$this->addXMLElement($xmlWriter, 'auth_status', str_replace("_", "-", $val['auth_status']));
-                $this->addXMLElement($xmlWriter, 'auth_status_oth', $val['auth_status_oth']);
-            	$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('participant_auth');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'auth_form_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'p_id', $val['olt_providertauthfrm_name']);
+			$this->addXMLElement($xmlWriter, 'contact_id', $val['ncsdc_cntctrtauthfrm_name']);
+			$this->addXMLElement($xmlWriter, 'provider_id', $val['olt_providertauthfrm_name']);
+			// $this->addXMLElement($xmlWriter, 'auth_form_type', $val['auth_form_type']);
+			$this->addXMLElement($xmlWriter, 'auth_form_type', str_replace("_", "-", $val['auth_form_type']));
+			$this->addXMLElement($xmlWriter, 'auth_type_oth', $val['auth_type_oth']);
+			// $this->addXMLElement($xmlWriter, 'auth_status', $val['auth_status']);
+			$this->addXMLElement($xmlWriter, 'auth_status', str_replace("_", "-", $val['auth_status']));
+			$this->addXMLElement($xmlWriter, 'auth_status_oth', $val['auth_status_oth']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -798,26 +799,26 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, PPG_DETAILS_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('ppg_details');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'ppg_details_id', $val['name']);
-                // $this->addXMLElement($xmlWriter, 'p_id', $val['plt_partiFeinstcipgdetails_name']);
-				$this->addXMLElement($xmlWriter, 'p_id', $val['plt_participgdetails_name']);
-                // $this->addXMLElement($xmlWriter, 'ppg_pid_status', $val['ppg_pid_status']);
-				$this->addXMLElement($xmlWriter, 'ppg_pid_status', str_replace("_", "-", $val['ppg_pid_status']));
-                // $this->addXMLElement($xmlWriter, 'ppg_first', $val['ppg_first']);
-				$this->addXMLElement($xmlWriter, 'ppg_first', str_replace("_", "-", $val['ppg_first']));
-                // $this->addXMLElement($xmlWriter, 'orig_due_date', $val['orig_due_date']);
-				$due_date = preg_split('/[ ]/', $val['orig_due_date']);
-				$this->addXMLElement($xmlWriter, 'orig_due_date', $due_date[0]);
-                // $this->addXMLElement($xmlWriter, 'due_date_2', $val['due_date_2']);
-				$due2_date = preg_split('/[ ]/', $val['due_date_2']);
-				$this->addXMLElement($xmlWriter, 'due_date_2', $due2_date[0]);
-                // $this->addXMLElement($xmlWriter, 'due_date_3', $val['due_date_3']);
-				$due3_date = preg_split('/[ ]/', $val['due_date_3']);
-				$this->addXMLElement($xmlWriter, 'due_date_3', $due3_date[0]);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('ppg_details');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'ppg_details_id', $val['name']);
+			// $this->addXMLElement($xmlWriter, 'p_id', $val['plt_partiFeinstcipgdetails_name']);
+			$this->addXMLElement($xmlWriter, 'p_id', $val['plt_participgdetails_name']);
+			// $this->addXMLElement($xmlWriter, 'ppg_pid_status', $val['ppg_pid_status']);
+			$this->addXMLElement($xmlWriter, 'ppg_pid_status', str_replace("_", "-", $val['ppg_pid_status']));
+			// $this->addXMLElement($xmlWriter, 'ppg_first', $val['ppg_first']);
+			$this->addXMLElement($xmlWriter, 'ppg_first', str_replace("_", "-", $val['ppg_first']));
+			// $this->addXMLElement($xmlWriter, 'orig_due_date', $val['orig_due_date']);
+			$due_date = preg_split('/[ ]/', $val['orig_due_date']);
+			$this->addXMLElement($xmlWriter, 'orig_due_date', $due_date[0]);
+			// $this->addXMLElement($xmlWriter, 'due_date_2', $val['due_date_2']);
+			$due2_date = preg_split('/[ ]/', $val['due_date_2']);
+			$this->addXMLElement($xmlWriter, 'due_date_2', $due2_date[0]);
+			// $this->addXMLElement($xmlWriter, 'due_date_3', $val['due_date_3']);
+			$due3_date = preg_split('/[ ]/', $val['due_date_3']);
+			$this->addXMLElement($xmlWriter, 'due_date_3', $due3_date[0]);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -828,24 +829,24 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, PPG_STATUS_HISTORY_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('ppg_status_history');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'ppg_history_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'p_id', $val['plt_particigstshstry_name']);
-                // $this->addXMLElement($xmlWriter, 'ppg_status', $val['ppg_status']);
-				$this->addXMLElement($xmlWriter, 'ppg_status', str_replace("_", "-", $val['ppg_status']));
-                // $this->addXMLElement($xmlWriter, 'ppg_status_date', $val['ppg_status_date']);
-				$stat_date = preg_split('/[ ]/', $val['ppg_status_date']);
-				$this->addXMLElement($xmlWriter, 'ppg_status_date', $stat_date[0]);
-                // $this->addXMLElement($xmlWriter, 'ppg_info_source', $val['ppg_info_source']);
-				$this->addXMLElement($xmlWriter, 'ppg_info_source', str_replace("_", "-", $val['ppg_info_source']));
-                $this->addXMLElement($xmlWriter, 'ppg_info_source_oth', $val['ppg_info_source_oth']);
-                // $this->addXMLElement($xmlWriter, 'ppg_info_mode', $val['ppg_info_mode']);
-				$this->addXMLElement($xmlWriter, 'ppg_info_mode', str_replace("_", "-", $val['ppg_info_mode']));
-                $this->addXMLElement($xmlWriter, 'ppg_info_mode_oth', $val['ppg_info_mode_oth']);
-                $this->addXMLElement($xmlWriter, 'ppg_comment', $val['ppg_comment']);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('ppg_status_history');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'ppg_history_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'p_id', $val['plt_particigstshstry_name']);
+			// $this->addXMLElement($xmlWriter, 'ppg_status', $val['ppg_status']);
+			$this->addXMLElement($xmlWriter, 'ppg_status', str_replace("_", "-", $val['ppg_status']));
+			// $this->addXMLElement($xmlWriter, 'ppg_status_date', $val['ppg_status_date']);
+			$stat_date = preg_split('/[ ]/', $val['ppg_status_date']);
+			$this->addXMLElement($xmlWriter, 'ppg_status_date', $stat_date[0]);
+			// $this->addXMLElement($xmlWriter, 'ppg_info_source', $val['ppg_info_source']);
+			$this->addXMLElement($xmlWriter, 'ppg_info_source', str_replace("_", "-", $val['ppg_info_source']));
+			$this->addXMLElement($xmlWriter, 'ppg_info_source_oth', $val['ppg_info_source_oth']);
+			// $this->addXMLElement($xmlWriter, 'ppg_info_mode', $val['ppg_info_mode']);
+			$this->addXMLElement($xmlWriter, 'ppg_info_mode', str_replace("_", "-", $val['ppg_info_mode']));
+			$this->addXMLElement($xmlWriter, 'ppg_info_mode_oth', $val['ppg_info_mode_oth']);
+			$this->addXMLElement($xmlWriter, 'ppg_comment', $val['ppg_comment']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -856,32 +857,32 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, PROVIDER_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('provider');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'provider_id', $val['name']);
-                // $this->addXMLElement($xmlWriter, 'provider_type', $val['provider_type']);
-		$this->addXMLElement($xmlWriter, 'provider_type', str_replace("_", "-", $val['provider_type']));
-                $this->addXMLElement($xmlWriter, 'provider_type_oth', $val['provider_type_oth']);
-                // $this->addXMLElement($xmlWriter, 'practice_info', $val['practice_info']);
-		$this->addXMLElement($xmlWriter, 'practice_info', str_replace("_", "-", $val['practice_info']));
-                // $this->addXMLElement($xmlWriter, 'practice_patient_load', $val['practice_patient_load']);
-		$this->addXMLElement($xmlWriter, 'practice_patient_load', str_replace("_", "-", $val['practice_patient_load']));
-                // $this->addXMLElement($xmlWriter, 'practice_size', $val['practice_size']);
-		$this->addXMLElement($xmlWriter, 'practice_size', str_replace("_", "-", $val['practice_size']));
-                // $this->addXMLElement($xmlWriter, 'public_practice', $val['public_practice']);
-				$this->addXMLElement($xmlWriter, 'public_practice', str_replace("_", "-", $val['public_practice']));
-                // $this->addXMLElement($xmlWriter, 'provider_info_source', $val['provider_info_source']);
-				$this->addXMLElement($xmlWriter, 'provider_info_source', str_replace("_", "-", $val['provider_info_source']));
-                $this->addXMLElement($xmlWriter, 'provider_info_source_oth', $val['provider_info_source_oth']);
-                // $this->addXMLElement($xmlWriter, 'provider_info_date', $val['provider_info_date']);
-		$info_date = preg_split('/[ ]/', $val['provider_info_date']);
-		$this->addXMLElement($xmlWriter, 'provider_info_date', $info_date[0]);
-                // $this->addXMLElement($xmlWriter, 'provider_info_update', $val['provider_info_update']);
-		$info_date = preg_split('/[ ]/', $val['provider_info_update']);
-		$this->addXMLElement($xmlWriter, 'provider_info_update', $info_date[0]);
-                $this->addXMLElement($xmlWriter, 'provider_comment', $val['provider_comment']);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('provider');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'provider_id', $val['name']);
+			// $this->addXMLElement($xmlWriter, 'provider_type', $val['provider_type']);
+			$this->addXMLElement($xmlWriter, 'provider_type', str_replace("_", "-", $val['provider_type']));
+			$this->addXMLElement($xmlWriter, 'provider_type_oth', $val['provider_type_oth']);
+			// $this->addXMLElement($xmlWriter, 'practice_info', $val['practice_info']);
+			$this->addXMLElement($xmlWriter, 'practice_info', str_replace("_", "-", $val['practice_info']));
+			// $this->addXMLElement($xmlWriter, 'practice_patient_load', $val['practice_patient_load']);
+			$this->addXMLElement($xmlWriter, 'practice_patient_load', str_replace("_", "-", $val['practice_patient_load']));
+			// $this->addXMLElement($xmlWriter, 'practice_size', $val['practice_size']);
+			$this->addXMLElement($xmlWriter, 'practice_size', str_replace("_", "-", $val['practice_size']));
+			// $this->addXMLElement($xmlWriter, 'public_practice', $val['public_practice']);
+			$this->addXMLElement($xmlWriter, 'public_practice', str_replace("_", "-", $val['public_practice']));
+			// $this->addXMLElement($xmlWriter, 'provider_info_source', $val['provider_info_source']);
+			$this->addXMLElement($xmlWriter, 'provider_info_source', str_replace("_", "-", $val['provider_info_source']));
+			$this->addXMLElement($xmlWriter, 'provider_info_source_oth', $val['provider_info_source_oth']);
+			// $this->addXMLElement($xmlWriter, 'provider_info_date', $val['provider_info_date']);
+			$info_date = preg_split('/[ ]/', $val['provider_info_date']);
+			$this->addXMLElement($xmlWriter, 'provider_info_date', $info_date[0]);
+			// $this->addXMLElement($xmlWriter, 'provider_info_update', $val['provider_info_update']);
+			$info_date = preg_split('/[ ]/', $val['provider_info_update']);
+			$this->addXMLElement($xmlWriter, 'provider_info_update', $info_date[0]);
+			$this->addXMLElement($xmlWriter, 'provider_comment', $val['provider_comment']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -895,18 +896,18 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         while($val = $db->fetchByAssoc($results, -1, false)) {
             foreach (explode("^,^", str_replace("_", "-", $val['provider_ncs_role'])) as $roleval)
             {
-                $roleval = str_replace("^", "", $roleval);
-                $xmlWriter->startElement('provider_role');
-                    $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                    $this->addXMLElement($xmlWriter, 'provider_role_id', $val['name'] . '-' . $roleval);
-                    // $this->addXMLElement($xmlWriter, 'provider_id', $val['olt_msprovr_provider_name']);
-                    $this->addXMLElement($xmlWriter, 'provider_id', $val['olt_providesprovrole_name']);
-                    // $this->addXMLElement($xmlWriter, 'provider_ncs_role', $val['provider_ncs_role']);
-                    $this->addXMLElement($xmlWriter, 'provider_ncs_role', $roleval);
-					//if ($roleval == "-5") $this->addXMLElement($xmlWriter, 'provider_ncs_role_oth', $val['provider_ncs_role_oth']);					
-					$this->addXMLElement($xmlWriter, 'provider_ncs_role_oth', $val['provider_ncs_role_oth']);		
-                    $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-                $xmlWriter->endElement();
+				$roleval = str_replace("^", "", $roleval);
+				$xmlWriter->startElement('provider_role');
+				$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+				$this->addXMLElement($xmlWriter, 'provider_role_id', $val['name'] . '-' . $roleval);
+				// $this->addXMLElement($xmlWriter, 'provider_id', $val['olt_msprovr_provider_name']);
+				$this->addXMLElement($xmlWriter, 'provider_id', $val['olt_providesprovrole_name']);
+				// $this->addXMLElement($xmlWriter, 'provider_ncs_role', $val['provider_ncs_role']);
+				$this->addXMLElement($xmlWriter, 'provider_ncs_role', $roleval);
+				//if ($roleval == "-5") $this->addXMLElement($xmlWriter, 'provider_ncs_role_oth', $val['provider_ncs_role_oth']);					
+				$this->addXMLElement($xmlWriter, 'provider_ncs_role_oth', $val['provider_ncs_role_oth']);		
+				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+				$xmlWriter->endElement();
             }
         }
         $xmlWriter->flush();
@@ -920,20 +921,20 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, LINK_PERSON_PROVIDER_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('link_person_provider');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'person_provider_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'provider_id', $val['olt_prsnprv_provider_name']);
-                //$this->addXMLElement($xmlWriter, 'person_id', $record['olt_prsnprvlt_person_name']);
-                $this->addXMLElement($xmlWriter, 'person_id', getModuleNameByID(PERSON_TABLE, $val[LINKPERSONPROVIDER_PERSON_RHS]));
-                //$this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(LINK_PERSON_PROVIDER_SUGAR_MODULE, $val['id'], 'olt_prsnprvlnk_plt_person', 'name'));
-                // $this->addXMLElement($xmlWriter, 'is_active', $val['is_active']);
-				$this->addXMLElement($xmlWriter, 'is_active', str_replace("_", "-", $val['is_active']));
-                // $this->addXMLElement($xmlWriter, 'prov_intro_outcome', $val['prov_intro_outcome']);
-				$this->addXMLElement($xmlWriter, 'prov_intro_outcome', str_replace("_", "-", $val['prov_intro_outcome']));
-                $this->addXMLElement($xmlWriter, 'prov_intro_outcome_oth', $val['prov_intro_outcome_oth']);
-              	$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('link_person_provider');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'person_provider_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'provider_id', $val['olt_prsnprv_provider_name']);
+			//$this->addXMLElement($xmlWriter, 'person_id', $record['olt_prsnprvlt_person_name']);
+			$this->addXMLElement($xmlWriter, 'person_id', getModuleNameByID(PERSON_TABLE, $val[LINKPERSONPROVIDER_PERSON_RHS]));
+			//$this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(LINK_PERSON_PROVIDER_SUGAR_MODULE, $val['id'], 'olt_prsnprvlnk_plt_person', 'name'));
+			// $this->addXMLElement($xmlWriter, 'is_active', $val['is_active']);
+			$this->addXMLElement($xmlWriter, 'is_active', str_replace("_", "-", $val['is_active']));
+			// $this->addXMLElement($xmlWriter, 'prov_intro_outcome', $val['prov_intro_outcome']);
+			$this->addXMLElement($xmlWriter, 'prov_intro_outcome', str_replace("_", "-", $val['prov_intro_outcome']));
+			$this->addXMLElement($xmlWriter, 'prov_intro_outcome_oth', $val['prov_intro_outcome_oth']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -945,33 +946,33 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $results = export($db, INSTITUTION_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
             $xmlWriter->startElement('institution');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'institute_id', $val['name']);
-                // $this->addXMLElement($xmlWriter, 'institute_type', $val['institute_type']);
-				$this->addXMLElement($xmlWriter, 'institute_type', str_replace("_", "-", $val['institute_type']));
-                $this->addXMLElement($xmlWriter, 'institute_name', $val['institute_name']);
-                $this->addXMLElement($xmlWriter, 'institute_type_oth', $val['institute_type_oth']);
-                // $this->addXMLElement($xmlWriter, 'institute_relation', $val['institute_relation']);
-				$this->addXMLElement($xmlWriter, 'institute_relation', str_replace("_", "-", $val['institute_relation']));
-                $this->addXMLElement($xmlWriter, 'institute_relation_oth', $val['institute_relation_oth']);
-                // $this->addXMLElement($xmlWriter, 'institute_owner', $val['institute_owner']);
-				$this->addXMLElement($xmlWriter, 'institute_owner', str_replace("_", "-", $val['institute_owner']));
-                $this->addXMLElement($xmlWriter, 'institute_owner_oth', $val['institute_owner_oth']);
-                $this->addXMLElement($xmlWriter, 'institute_size', $val['institute_size']);
-                // $this->addXMLElement($xmlWriter, 'institute_unit', $val['institute_unit']);
-				$this->addXMLElement($xmlWriter, 'institute_unit', str_replace("_", "-", $val['institute_unit']));
-                $this->addXMLElement($xmlWriter, 'institute_unit_oth', $val['institute_unit_oth']);
-                // $this->addXMLElement($xmlWriter, 'institute_info_source', $val['institute_info_source']);
-				$this->addXMLElement($xmlWriter, 'institute_info_source', str_replace("_", "-", $val['institute_info_source']));
-                $this->addXMLElement($xmlWriter, 'institute_info_source_oth', $val['institute_info_source_oth']);
-                // $this->addXMLElement($xmlWriter, 'institute_info_date', $val['institute_info_date']);
-				$info_date = preg_split('/[ ]/', $val['institute_info_date']);
-				$this->addXMLElement($xmlWriter, 'institute_info_date', $info_date[0]);
-                // $this->addXMLElement($xmlWriter, 'institute_info_update', $val['institute_info_update']);
-				$info_date = preg_split('/[ ]/', $val['institute_info_update']);
-				$this->addXMLElement($xmlWriter, 'institute_info_update', $info_date[0]);
-                $this->addXMLElement($xmlWriter, 'institute_comment', $val['institute_comment']);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'institute_id', $val['name']);
+			// $this->addXMLElement($xmlWriter, 'institute_type', $val['institute_type']);
+			$this->addXMLElement($xmlWriter, 'institute_type', str_replace("_", "-", $val['institute_type']));
+			$this->addXMLElement($xmlWriter, 'institute_name', $val['institute_name']);
+			$this->addXMLElement($xmlWriter, 'institute_type_oth', $val['institute_type_oth']);
+			// $this->addXMLElement($xmlWriter, 'institute_relation', $val['institute_relation']);
+			$this->addXMLElement($xmlWriter, 'institute_relation', str_replace("_", "-", $val['institute_relation']));
+			$this->addXMLElement($xmlWriter, 'institute_relation_oth', $val['institute_relation_oth']);
+			// $this->addXMLElement($xmlWriter, 'institute_owner', $val['institute_owner']);
+			$this->addXMLElement($xmlWriter, 'institute_owner', str_replace("_", "-", $val['institute_owner']));
+			$this->addXMLElement($xmlWriter, 'institute_owner_oth', $val['institute_owner_oth']);
+			$this->addXMLElement($xmlWriter, 'institute_size', $val['institute_size']);
+			// $this->addXMLElement($xmlWriter, 'institute_unit', $val['institute_unit']);
+			$this->addXMLElement($xmlWriter, 'institute_unit', str_replace("_", "-", $val['institute_unit']));
+			$this->addXMLElement($xmlWriter, 'institute_unit_oth', $val['institute_unit_oth']);
+			// $this->addXMLElement($xmlWriter, 'institute_info_source', $val['institute_info_source']);
+			$this->addXMLElement($xmlWriter, 'institute_info_source', str_replace("_", "-", $val['institute_info_source']));
+			$this->addXMLElement($xmlWriter, 'institute_info_source_oth', $val['institute_info_source_oth']);
+			// $this->addXMLElement($xmlWriter, 'institute_info_date', $val['institute_info_date']);
+			$info_date = preg_split('/[ ]/', $val['institute_info_date']);
+			$this->addXMLElement($xmlWriter, 'institute_info_date', $info_date[0]);
+			// $this->addXMLElement($xmlWriter, 'institute_info_update', $val['institute_info_update']);
+			$info_date = preg_split('/[ ]/', $val['institute_info_update']);
+			$this->addXMLElement($xmlWriter, 'institute_info_update', $info_date[0]);
+			$this->addXMLElement($xmlWriter, 'institute_comment', $val['institute_comment']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
             $xmlWriter->endElement();
         }
         $xmlWriter->flush();
@@ -983,17 +984,17 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, LINK_PERSON_INSTITUTE_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('link_person_institute');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'person_institute_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'institute_id', $val['olt_prsninsstitution_name']);
-                //$this->addXMLElement($xmlWriter, 'person_id', $record['olt_prsninslt_person_name']);
-                $this->addXMLElement($xmlWriter, 'person_id', getModuleNameByID(PERSON_TABLE, $val[LINKPERSONINSTITUTE_PERSON_RHS]));
-                //$this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(LINK_PERSON_INSTITUTE_SUGAR_MODULE, $val['id'], 'olt_prsninslnk_plt_person', 'name'));
-                // $this->addXMLElement($xmlWriter, 'is_active', $val['is_active']);
-				$this->addXMLElement($xmlWriter, 'is_active', str_replace("_", "-", $val['is_active']));
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('link_person_institute');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'person_institute_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'institute_id', $val['olt_prsninsstitution_name']);
+			//$this->addXMLElement($xmlWriter, 'person_id', $record['olt_prsninslt_person_name']);
+			$this->addXMLElement($xmlWriter, 'person_id', getModuleNameByID(PERSON_TABLE, $val[LINKPERSONINSTITUTE_PERSON_RHS]));
+			//$this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(LINK_PERSON_INSTITUTE_SUGAR_MODULE, $val['id'], 'olt_prsninslnk_plt_person', 'name'));
+			// $this->addXMLElement($xmlWriter, 'is_active', $val['is_active']);
+			$this->addXMLElement($xmlWriter, 'is_active', str_replace("_", "-", $val['is_active']));
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -1193,7 +1194,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
     }
 	
 	//***************************** 
-        function parseInstrument(&$xmlWriter, &$chunk)
+    function parseInstrument(&$xmlWriter, &$chunk)
 	{
             $db = DBManagerFactory::getInstance();
             $results = export($db, INSTRUMENT_SUGAR_MODULE, $chunk);
@@ -1242,62 +1243,62 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $results = export($db, CONTACT_SUGAR_MODULE, $chunk);
 		while($val = $db->fetchByAssoc($results, -1, false)) {
 			$xmlWriter->startElement('contact');
-				$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-				$this->addXMLElement($xmlWriter, 'contact_id', $val['name']);
-				$this->addXMLElement($xmlWriter, 'contact_disp', $val['contact_disp_c']);
-				// $this->addXMLElement($xmlWriter, 'contact_type', $val['contact_type']);
-				$this->addXMLElement($xmlWriter, 'contact_type', str_replace("_", "-", $val['contact_type_c']));
-				$this->addXMLElement($xmlWriter, 'contact_type_oth', $val['contact_type_other_c']);
-				$contact_date = preg_split('/[ ]/', $val['start_date_time_c']);
-				$this->addXMLElement($xmlWriter, 'contact_date', $contact_date[0]);
-				$contact_start_time = preg_split('/[ ]/', $val['start_date_time_c']);
-                                $this->addXMLElement($xmlWriter, 'contact_start_time', $contact_start_time[1]);
-				$contact_end_time = preg_split('/[ ]/', $val['end_date_time_c']);
-                                $this->addXMLElement($xmlWriter, 'contact_end_time', $contact_end_time[1]);
-                                // $this->addXMLElement($xmlWriter, 'contact_lang', $val['contact_lang']);
-				$this->addXMLElement($xmlWriter, 'contact_lang', str_replace("_", "-", $val['contact_language_c']));
-				$this->addXMLElement($xmlWriter, 'contact_lang_oth', $val['contact_lang_oth_c']);
-				// $this->addXMLElement($xmlWriter, 'contact_interpret', $val['contact_interpret']);
-				$this->addXMLElement($xmlWriter, 'contact_interpret', str_replace("_", "-", $val['contact_interpret_c']));
-				$this->addXMLElement($xmlWriter, 'contact_interpret_oth', $val['contact_interpret_oth_c']);
-				// $this->addXMLElement($xmlWriter, 'contact_location', $val['contact_location']);
-				$this->addXMLElement($xmlWriter, 'contact_location', str_replace("_", "-", $val['contact_location_c']));
-				$this->addXMLElement($xmlWriter, 'contact_location_oth', $val['contact_location_oth_c']);
-				// $this->addXMLElement($xmlWriter, 'contact_private', $val['contact_private']);
-				$this->addXMLElement($xmlWriter, 'contact_private', str_replace("_", "-", $val['contact_private_c']));
-				$this->addXMLElement($xmlWriter, 'contact_private_detail', $val['contact_private_detail_c']);
-				$this->addXMLElement($xmlWriter, 'contact_distance', $val['contact_distance_c']);
-				// $this->addXMLElement($xmlWriter, 'who_contacted', $val['who_contacted']);
-				$this->addXMLElement($xmlWriter, 'who_contacted', str_replace("_", "-", $val['who_contacted_c']));
-				$this->addXMLElement($xmlWriter, 'who_contact_oth', $val['who_contact_oth_c']);
-				$this->addXMLElement($xmlWriter, 'contact_comment', $val['description']);
-				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'contact_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'contact_disp', $val['contact_disp_c']);
+			// $this->addXMLElement($xmlWriter, 'contact_type', $val['contact_type']);
+			$this->addXMLElement($xmlWriter, 'contact_type', str_replace("_", "-", $val['contact_type_c']));
+			$this->addXMLElement($xmlWriter, 'contact_type_oth', $val['contact_type_other_c']);
+			$contact_date = preg_split('/[ ]/', $val['start_date_time_c']);
+			$this->addXMLElement($xmlWriter, 'contact_date', $contact_date[0]);
+			$contact_start_time = preg_split('/[ ]/', $val['start_date_time_c']);
+			$this->addXMLElement($xmlWriter, 'contact_start_time', $contact_start_time[1]);
+			$contact_end_time = preg_split('/[ ]/', $val['end_date_time_c']);
+			$this->addXMLElement($xmlWriter, 'contact_end_time', $contact_end_time[1]);
+			// $this->addXMLElement($xmlWriter, 'contact_lang', $val['contact_lang']);
+			$this->addXMLElement($xmlWriter, 'contact_lang', str_replace("_", "-", $val['contact_language_c']));
+			$this->addXMLElement($xmlWriter, 'contact_lang_oth', $val['contact_lang_oth_c']);
+			// $this->addXMLElement($xmlWriter, 'contact_interpret', $val['contact_interpret']);
+			$this->addXMLElement($xmlWriter, 'contact_interpret', str_replace("_", "-", $val['contact_interpret_c']));
+			$this->addXMLElement($xmlWriter, 'contact_interpret_oth', $val['contact_interpret_oth_c']);
+			// $this->addXMLElement($xmlWriter, 'contact_location', $val['contact_location']);
+			$this->addXMLElement($xmlWriter, 'contact_location', str_replace("_", "-", $val['contact_location_c']));
+			$this->addXMLElement($xmlWriter, 'contact_location_oth', $val['contact_location_oth_c']);
+			// $this->addXMLElement($xmlWriter, 'contact_private', $val['contact_private']);
+			$this->addXMLElement($xmlWriter, 'contact_private', str_replace("_", "-", $val['contact_private_c']));
+			$this->addXMLElement($xmlWriter, 'contact_private_detail', $val['contact_private_detail_c']);
+			$this->addXMLElement($xmlWriter, 'contact_distance', $val['contact_distance_c']);
+			// $this->addXMLElement($xmlWriter, 'who_contacted', $val['who_contacted']);
+			$this->addXMLElement($xmlWriter, 'who_contacted', str_replace("_", "-", $val['who_contacted_c']));
+			$this->addXMLElement($xmlWriter, 'who_contact_oth', $val['who_contact_oth_c']);
+			$this->addXMLElement($xmlWriter, 'contact_comment', $val['description']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
 			$xmlWriter->endElement();
 		}
                 $xmlWriter->flush();
         unset($results);  
 	}
-	
+			
 	function parseContactLinking(&$xmlWriter, &$chunk)
 	{
             $db = DBManagerFactory::getInstance();
             $results = export($db, LINK_CONTACT_SUGAR_MODULE, $chunk);
 		while($val = $db->fetchByAssoc($results, -1, false)) {
 			$xmlWriter->startElement('link_contact');
-				$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-				$this->addXMLElement($xmlWriter, 'contact_link_id', $val['name']);
-				$this->addXMLElement($xmlWriter, 'contact_id', $val['ncsdc_cntlncntctinfo_name']);
-				$this->addXMLElement($xmlWriter, 'event_id', $val['ncsdc_cntlneventinfo_name']);
-				$this->addXMLElement($xmlWriter, 'instrument_id', $val['ncsdc_cntlnnstrument_name']);
-				$this->addXMLElement($xmlWriter, 'staff_id', $val['ncsdc_cntlnstaffrstr_name']);
-				//$this->addXMLElement($xmlWriter, 'person_id', $record['ncsdc_cntlnlt_person_name']);
-                $this->addXMLElement($xmlWriter, 'person_id', getModuleNameByID(PERSON_TABLE, $val[CONTACTLINKING_PERSON_RHS]));
-                //$this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(LINK_CONTACT_SUGAR_MODULE, $val['id'], 'ncsdc_cntlnk_plt_person', 'name'));
-				$this->addXMLElement($xmlWriter, 'provider_id', $val['ncsdc_cntln_provider_name']);
-				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'contact_link_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'contact_id', $val['ncsdc_cntlncntctinfo_name']);
+			$this->addXMLElement($xmlWriter, 'event_id', $val['ncsdc_cntlneventinfo_name']);
+			$this->addXMLElement($xmlWriter, 'instrument_id', $val['ncsdc_cntlnnstrument_name']);
+			$this->addXMLElement($xmlWriter, 'staff_id', $val['ncsdc_cntlnstaffrstr_name']);
+			//$this->addXMLElement($xmlWriter, 'person_id', $record['ncsdc_cntlnlt_person_name']);
+			$this->addXMLElement($xmlWriter, 'person_id', getModuleNameByID(PERSON_TABLE, $val[CONTACTLINKING_PERSON_RHS]));
+			//$this->addXMLElement($xmlWriter, 'person_id', $this->getRelatedModuleID(LINK_CONTACT_SUGAR_MODULE, $val['id'], 'ncsdc_cntlnk_plt_person', 'name'));
+			$this->addXMLElement($xmlWriter, 'provider_id', $val['ncsdc_cntln_provider_name']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
 			$xmlWriter->endElement();
 		}
-                $xmlWriter->flush();
+        $xmlWriter->flush();
         unset($results);  
 	}
 	
@@ -1374,10 +1375,10 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $db = DBManagerFactory::getInstance();
             $results = export($db, NON_INTERVIEW_RPT_VACANT_SUGAR_MODULE, $chunk);
 		while($val = $db->fetchByAssoc($results, -1, false)) {
-                    foreach (explode("^,^", str_replace("_", "-", $val['nir_vacant'])) as $vacantval)
-                    {
-                        $vacantval = str_replace("^", "", $vacantval);
-			$xmlWriter->startElement('non_interview_rpt_vacant');
+			foreach (explode("^,^", str_replace("_", "-", $val['nir_vacant'])) as $vacantval)
+			{
+				$vacantval = str_replace("^", "", $vacantval);
+				$xmlWriter->startElement('non_interview_rpt_vacant');
 				$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
 				$this->addXMLElement($xmlWriter, 'nir_vacant_id', $val['name'] . '-' . $vacantval);
 				$this->addXMLElement($xmlWriter, 'nir_id', $val['ncsdc_noninntrptvcnt_name']);
@@ -1385,8 +1386,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 				//if ($vacantval == "-5") $this->addXMLElement($xmlWriter, 'nir_vacant_oth', $val['nir_vacant_oth']);
 				$this->addXMLElement($xmlWriter, 'nir_vacant_oth', $val['nir_vacant_oth']);
 				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-			$xmlWriter->endElement();
-                    }
+				$xmlWriter->endElement();
+			}
 		}
                 $xmlWriter->flush();
         unset($results);  
@@ -1397,19 +1398,19 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $db = DBManagerFactory::getInstance();
             $results = export($db, NON_INTERVIEW_RPT_NOACCESS_SUGAR_MODULE, $chunk);
 		while($val = $db->fetchByAssoc($results, -1, false)) {
-                    foreach(explode("^,^", str_replace("_", "-", $val['nir_noaccess'])) as $noaccessval)
-                    {
-                        $noaccessval = str_replace("^", "", $noaccessval);
-			$xmlWriter->startElement('non_interview_rpt_noaccess');
+			foreach(explode("^,^", str_replace("_", "-", $val['nir_noaccess'])) as $noaccessval)
+			{
+				$noaccessval = str_replace("^", "", $noaccessval);
+				$xmlWriter->startElement('non_interview_rpt_noaccess');
 				$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
 				$this->addXMLElement($xmlWriter, 'nir_noaccess_id', $val['name'] . '-' . $noaccessval);
 				$this->addXMLElement($xmlWriter, 'nir_id', $val['ncsdc_noninrnaccmlts_name']);
 				$this->addXMLElement($xmlWriter, 'nir_noaccess', $noaccessval);
-                                //if ($noaccessval == "-5") $this->addXMLElement($xmlWriter, 'nir_noaccess_oth', $val['nir_noaccess_oth']);
+				//if ($noaccessval == "-5") $this->addXMLElement($xmlWriter, 'nir_noaccess_oth', $val['nir_noaccess_oth']);
 				$this->addXMLElement($xmlWriter, 'nir_noaccess_oth', $val['nir_noaccess_oth']);
 				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-			$xmlWriter->endElement();
-                    }
+				$xmlWriter->endElement();
+			}
 		}
                 $xmlWriter->flush();
         unset($results);  
@@ -1420,10 +1421,10 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $db = DBManagerFactory::getInstance();
             $results = export($db, NON_INTERVIEW_RPT_REFUSAL_SUGAR_MODULE, $chunk);
 		while($val = $db->fetchByAssoc($results, -1, false)) {
-                    foreach (explode("^,^", str_replace("_", "-", $val['refusal_reason'])) as $refusalval)
-                    {
-                        $refusalval = str_replace("^", "", $refusalval);
-			$xmlWriter->startElement('non_interview_rpt_refusal');
+			foreach (explode("^,^", str_replace("_", "-", $val['refusal_reason'])) as $refusalval)
+			{
+				$refusalval = str_replace("^", "", $refusalval);
+				$xmlWriter->startElement('non_interview_rpt_refusal');
 				$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
 				$this->addXMLElement($xmlWriter, 'nir_refusal_id', $val['name'] . '-' . $refusalval);
 				$this->addXMLElement($xmlWriter, 'nir_id', $val['ncsdc_noninirrfsmlts_name']);
@@ -1432,8 +1433,8 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 				//if ($refusalval == "-5") $this->addXMLElement($xmlWriter, 'refusal_reason_oth', $val['refusal_reason_oth']);
 				$this->addXMLElement($xmlWriter, 'refusal_reason_oth', $val['refusal_reason_oth']);
 				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-			$xmlWriter->endElement();
-                    }
+				$xmlWriter->endElement();
+			}
 		}
                 $xmlWriter->flush();
         unset($results);  
@@ -1663,32 +1664,32 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, SPECIMEN_SHIPPING_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('spec_shipping');
-                $this->addXMLElement($xmlWriter, 'psu_id',  $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'storage_container_id', $val['name']);
-		$this->addXMLElement($xmlWriter, 'spsc_id', $val['samp_specsh_spscinfo_name']);
-		$this->addXMLElement($xmlWriter, 'staff_id', $val['samp_sampshstaffrstr_name']);
-                //$this->addXMLElement($xmlWriter, 'shipper_id', $val['samp_sampshstaffrstr_name']);
-        $this->addXMLElement($xmlWriter, 'shipper_id', $val['name']);
-		$this->addXMLElement($xmlWriter, 'shipper_destination', $val['shipper_destination']);
-                // $this->addXMLElement($xmlWriter, 'shipment_date', $val['shipment_date']);
-		$shipment_date = preg_split('/[ ]/', $val['shipment_date']);
-		$this->addXMLElement($xmlWriter, 'shipment_date', $shipment_date[0]);
-                // $this->addXMLElement($xmlWriter, 'shipment_temperature', $val['shipment_temperature']);
-		$this->addXMLElement($xmlWriter, 'shipment_temperature', str_replace("_", "-", $val['shipment_temperature']));
-                $this->addXMLElement($xmlWriter, 'shipment_tracking_no', $val['shipment_tracking_no']);
-		// $this->addXMLElement($xmlWriter, 'shipment_receipt_confirmed', $val['shipment_receipt_confirmed']);
-		$this->addXMLElement($xmlWriter, 'shipment_receipt_confirmed', str_replace("_", "-", $val['shipment_receipt_confirmed']));
-                // $this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $val['shipment_receipt_dt']);
-		//$shipment_receipt_dt = preg_split('/[ ]/', $val['shipment_receipt_dt']);
-		//$this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $shipment_receipt_dt[0].'T'.$shipment_receipt_dt[1]);	
-                $shipment_receipt_dt = (strlen($val['shipment_receipt_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['shipment_receipt_dt'])) : "";	
-                $this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $shipment_receipt_dt);
-                // $this->addXMLElement($xmlWriter, 'shipment_issues', $val['shipment_issues']);
-		$this->addXMLElement($xmlWriter, 'shipment_issues', str_replace("_", "-", $val['shipment_issues']));
-                $this->addXMLElement($xmlWriter, 'shipment_issues_oth', $val['shipment_issues_oth']);
-		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('spec_shipping');
+			$this->addXMLElement($xmlWriter, 'psu_id',  $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'storage_container_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'spsc_id', $val['samp_specsh_spscinfo_name']);
+			$this->addXMLElement($xmlWriter, 'staff_id', $val['samp_sampshstaffrstr_name']);
+			//$this->addXMLElement($xmlWriter, 'shipper_id', $val['samp_sampshstaffrstr_name']);
+			$this->addXMLElement($xmlWriter, 'shipper_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'shipper_destination', $val['shipper_destination']);
+			// $this->addXMLElement($xmlWriter, 'shipment_date', $val['shipment_date']);
+			$shipment_date = preg_split('/[ ]/', $val['shipment_date']);
+			$this->addXMLElement($xmlWriter, 'shipment_date', $shipment_date[0]);
+			// $this->addXMLElement($xmlWriter, 'shipment_temperature', $val['shipment_temperature']);
+			$this->addXMLElement($xmlWriter, 'shipment_temperature', str_replace("_", "-", $val['shipment_temperature']));
+			$this->addXMLElement($xmlWriter, 'shipment_tracking_no', $val['shipment_tracking_no']);
+			// $this->addXMLElement($xmlWriter, 'shipment_receipt_confirmed', $val['shipment_receipt_confirmed']);
+			$this->addXMLElement($xmlWriter, 'shipment_receipt_confirmed', str_replace("_", "-", $val['shipment_receipt_confirmed']));
+			// $this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $val['shipment_receipt_dt']);
+			//$shipment_receipt_dt = preg_split('/[ ]/', $val['shipment_receipt_dt']);
+			//$this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $shipment_receipt_dt[0].'T'.$shipment_receipt_dt[1]);	
+			$shipment_receipt_dt = (strlen($val['shipment_receipt_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['shipment_receipt_dt'])) : "";	
+			$this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $shipment_receipt_dt);
+			// $this->addXMLElement($xmlWriter, 'shipment_issues', $val['shipment_issues']);
+			$this->addXMLElement($xmlWriter, 'shipment_issues', str_replace("_", "-", $val['shipment_issues']));
+			$this->addXMLElement($xmlWriter, 'shipment_issues_oth', $val['shipment_issues_oth']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -1699,33 +1700,33 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, SPECIMEN_STORAGE_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('spec_storage');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'spsc_id', $val['samp_specst_spscinfo_name']);
-                $this->addXMLElement($xmlWriter, 'storage_container_id', $val['name']);
-                // $this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $val['placed_in_storage_dt']);
-		//$placed_in_storage_dt = preg_split('/[ ]/', $val['placed_in_storage_dt']);
-		//$this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $placed_in_storage_dt[0].'T'.$placed_in_storage_dt[1]);
-                $placed_in_storage_dt = (strlen($val['placed_in_storage_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['placed_in_storage_dt'])) : "";
-                $this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $placed_in_storage_dt);
-                $this->addXMLElement($xmlWriter, 'staff_id', $val['samp_specststaffrstr_name']); 
-                $this->addXMLElement($xmlWriter, 'equip_id', $val['samp_specstspecequip_name']);
-                //$this->addXMLElement($xmlWriter, 'master_storage_unit', $val['master_storage_unit']);
-		$this->addXMLElement($xmlWriter, 'master_storage_unit', str_replace("_", "-", $val['master_storage_unit']));
-                $this->addXMLElement($xmlWriter, 'storage_comment', $val['storage_comment']);
-                $this->addXMLElement($xmlWriter, 'storage_comment_oth', $val['storage_comment_oth']);
-		$this->addXMLElement($xmlWriter, 'removed_from_storage', $val['removed_from_storage']);
-                // $this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $val['removed_from_storage_dt']);
-		//$removed_from_storage_dt = preg_split('/[ ]/', $val['removed_from_storage_dt']);
-		//$this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $removed_from_storage_dt[0].'T'.$removed_from_storage_dt[1]);
-                $removed_from_storage_dt = (strlen($val['removed_from_storage_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['removed_from_storage_dt'])) : "";
-                $this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $removed_from_storage_dt);
-		$this->addXMLElement($xmlWriter, 'temp_event_st', $val['temp_event_st']);
-                $this->addXMLElement($xmlWriter, 'temp_event_et', $val['temp_event_et']);
-                $this->addXMLElement($xmlWriter, 'temp_event_low_temp', $val['temp_event_low_temp']);
-                $this->addXMLElement($xmlWriter, 'temp_event_high_temp', $val['temp_event_high_temp']);
-		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('spec_storage');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'spsc_id', $val['samp_specst_spscinfo_name']);
+			$this->addXMLElement($xmlWriter, 'storage_container_id', $val['name']);
+			// $this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $val['placed_in_storage_dt']);
+			//$placed_in_storage_dt = preg_split('/[ ]/', $val['placed_in_storage_dt']);
+			//$this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $placed_in_storage_dt[0].'T'.$placed_in_storage_dt[1]);
+			$placed_in_storage_dt = (strlen($val['placed_in_storage_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['placed_in_storage_dt'])) : "";
+			$this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $placed_in_storage_dt);
+			$this->addXMLElement($xmlWriter, 'staff_id', $val['samp_specststaffrstr_name']); 
+			$this->addXMLElement($xmlWriter, 'equip_id', $val['samp_specstspecequip_name']);
+			//$this->addXMLElement($xmlWriter, 'master_storage_unit', $val['master_storage_unit']);
+			$this->addXMLElement($xmlWriter, 'master_storage_unit', str_replace("_", "-", $val['master_storage_unit']));
+			$this->addXMLElement($xmlWriter, 'storage_comment', $val['storage_comment']);
+			$this->addXMLElement($xmlWriter, 'storage_comment_oth', $val['storage_comment_oth']);
+			$this->addXMLElement($xmlWriter, 'removed_from_storage', preg_replace('/^_(\d)$/', '-$1', $val['removed_from_storage']));				
+			// $this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $val['removed_from_storage_dt']);
+			//$removed_from_storage_dt = preg_split('/[ ]/', $val['removed_from_storage_dt']);
+			//$this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $removed_from_storage_dt[0].'T'.$removed_from_storage_dt[1]);
+			$removed_from_storage_dt = (strlen($val['removed_from_storage_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['removed_from_storage_dt'])) : "";
+			$this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $removed_from_storage_dt);
+			$this->addXMLElement($xmlWriter, 'temp_event_st', $val['temp_event_st']);
+			$this->addXMLElement($xmlWriter, 'temp_event_et', $val['temp_event_et']);
+			$this->addXMLElement($xmlWriter, 'temp_event_low_temp', $val['temp_event_low_temp']);
+			$this->addXMLElement($xmlWriter, 'temp_event_high_temp', $val['temp_event_high_temp']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -1736,12 +1737,12 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, SPECIMEN_INFO_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('spec_spsc_info');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-		$this->addXMLElement($xmlWriter, 'spsc_id', $val['name']);
-		$this->addXMLElement($xmlWriter, 'address_id', $val['samp_spscint_address_name']);
-		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('spec_spsc_info');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'spsc_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'address_id', $val['samp_spscint_address_name']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -1749,24 +1750,24 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 	
     function parseEnvironmentalEquipmentInformation(&$xmlWriter, &$chunk)
     {
-        $db = DBManagerFactory::getInstance();
-        $results = export($db, ENVIRONMENTAL_EQUIPMENT_INFO_SUGAR_MODULE, $chunk);
-        while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('env_equipment');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-		$this->addXMLElement($xmlWriter, 'srsc_id', $val['samp_enequi_srscinfo_name']);
-		$this->addXMLElement($xmlWriter, 'equip_id', $val['name']);
-		// $this->addXMLElement($xmlWriter, 'equipment_type', $val['equipment_type']);
-		$this->addXMLElement($xmlWriter, 'equipment_type', str_replace("_", "-", $val['equipment_type']));
-		$this->addXMLElement($xmlWriter, 'equipment_type_oth', $val['equipment_type_oth']);
-                $this->addXMLElement($xmlWriter, 'serial_no', $val['serial_no']);
-                $this->addXMLElement($xmlWriter, 'government_asset_tag_no', $val['government_asset_tag_no']);
-                $this->addXMLElement($xmlWriter, 'retired_date', $val['retired_date']);
-		// $this->addXMLElement($xmlWriter, 'retired_reason', $val['retired_reason']);
-		$this->addXMLElement($xmlWriter, 'retired_reason', str_replace("_", "-", $val['retired_reason']));
-                $this->addXMLElement($xmlWriter, 'retired_reason_oth', $val['retired_reason_oth']);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+		$db = DBManagerFactory::getInstance();
+		$results = export($db, ENVIRONMENTAL_EQUIPMENT_INFO_SUGAR_MODULE, $chunk);
+		while($val = $db->fetchByAssoc($results, -1, false)) {
+			$xmlWriter->startElement('env_equipment');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'srsc_id', $val['samp_enequi_srscinfo_name']);
+			$this->addXMLElement($xmlWriter, 'equip_id', $val['name']);
+			// $this->addXMLElement($xmlWriter, 'equipment_type', $val['equipment_type']);
+			$this->addXMLElement($xmlWriter, 'equipment_type', str_replace("_", "-", $val['equipment_type']));
+			$this->addXMLElement($xmlWriter, 'equipment_type_oth', $val['equipment_type_oth']);
+			$this->addXMLElement($xmlWriter, 'serial_no', $val['serial_no']);
+			$this->addXMLElement($xmlWriter, 'government_asset_tag_no', $val['government_asset_tag_no']);
+			$this->addXMLElement($xmlWriter, 'retired_date', $val['retired_date']);
+			// $this->addXMLElement($xmlWriter, 'retired_reason', $val['retired_reason']);
+			$this->addXMLElement($xmlWriter, 'retired_reason', str_replace("_", "-", $val['retired_reason']));
+			$this->addXMLElement($xmlWriter, 'retired_reason_oth', $val['retired_reason_oth']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -1777,25 +1778,25 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, ENV_EQUIPMENT_PROBLEM_LOG_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('env_equipment_prob_log');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-		$this->addXMLElement($xmlWriter, 'spsc_id', $val['samp_enloge_srscinfo_name']);
-		$this->addXMLElement($xmlWriter, 'equip_id', $val['samp_enlogep_enequip_name']);
-		$this->addXMLElement($xmlWriter, 'problem_id', $val['name']);
-		// $this->addXMLElement($xmlWriter, 'equipment_type', $val['equipment_type']);
-		$this->addXMLElement($xmlWriter, 'equipment_type', str_replace("_", "-", $val['equipment_type']));
-		$this->addXMLElement($xmlWriter, 'equipment_type_oth', $val['equipment_type_oth']);
-               	$this->addXMLElement($xmlWriter, 'staff_id', $val['samp_envequstaffrstr_name']);
-                // $this->addXMLElement($xmlWriter, 'problem_dt', $val['problem_dt']);
-		$problem_dt = preg_split('/[ ]/', $val['problem_dt']);
-		$this->addXMLElement($xmlWriter, 'problem_dt', $problem_dt[0]);
-                // $this->addXMLElement($xmlWriter, 'equip_issue', $val['equip_issue']);
-		$this->addXMLElement($xmlWriter, 'equip_issue', str_replace("_", "-", $val['equip_issue']));
-                // $this->addXMLElement($xmlWriter, 'equip_action', $val['equip_action']);
-		$this->addXMLElement($xmlWriter, 'equip_action', str_replace("_", "-", $val['equip_action']));
-		$this->addXMLElement($xmlWriter, 'staff_id_reviewer', $val['staff_id_reviewer']);
-		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('env_equipment_prob_log');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'spsc_id', $val['samp_enloge_srscinfo_name']);
+			$this->addXMLElement($xmlWriter, 'equip_id', $val['samp_enlogep_enequip_name']);
+			$this->addXMLElement($xmlWriter, 'problem_id', $val['name']);
+			// $this->addXMLElement($xmlWriter, 'equipment_type', $val['equipment_type']);
+			$this->addXMLElement($xmlWriter, 'equipment_type', str_replace("_", "-", $val['equipment_type']));
+			$this->addXMLElement($xmlWriter, 'equipment_type_oth', $val['equipment_type_oth']);
+			$this->addXMLElement($xmlWriter, 'staff_id', $val['samp_envequstaffrstr_name']);
+			// $this->addXMLElement($xmlWriter, 'problem_dt', $val['problem_dt']);
+			$problem_dt = preg_split('/[ ]/', $val['problem_dt']);
+			$this->addXMLElement($xmlWriter, 'problem_dt', $problem_dt[0]);
+			// $this->addXMLElement($xmlWriter, 'equip_issue', $val['equip_issue']);
+			$this->addXMLElement($xmlWriter, 'equip_issue', str_replace("_", "-", $val['equip_issue']));
+			// $this->addXMLElement($xmlWriter, 'equip_action', $val['equip_action']);
+			$this->addXMLElement($xmlWriter, 'equip_action', str_replace("_", "-", $val['equip_action']));
+			$this->addXMLElement($xmlWriter, 'staff_id_reviewer', $val['staff_id_reviewer']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -1806,17 +1807,17 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, PARTICIPANT_CONSENT_SAMPLE_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('participant_consent_sample');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'p_id', $val['plt_partsamrticipant_name']);
-                $this->addXMLElement($xmlWriter, 'participant_consent_id', $val['plt_partsamtcptcnsnt_name']);
-                $this->addXMLElement($xmlWriter, 'participant_consent_sample_id', $val['name']);
-                // $this->addXMLElement($xmlWriter, 'sample_consent_type', $val['sample_consent_type']);
-		$this->addXMLElement($xmlWriter, 'sample_consent_type', str_replace("_", "-", $val['sample_consent_type']));
-                // $this->addXMLElement($xmlWriter, 'sample_consent_given', $val['sample_consent_given']);
-		$this->addXMLElement($xmlWriter, 'sample_consent_given', str_replace("_", "-", $val['sample_consent_given']));
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('participant_consent_sample');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'p_id', $val['plt_partsamrticipant_name']);
+			$this->addXMLElement($xmlWriter, 'participant_consent_id', $val['plt_partsamtcptcnsnt_name']);
+			$this->addXMLElement($xmlWriter, 'participant_consent_sample_id', $val['name']);
+			// $this->addXMLElement($xmlWriter, 'sample_consent_type', $val['sample_consent_type']);
+			$this->addXMLElement($xmlWriter, 'sample_consent_type', str_replace("_", "-", $val['sample_consent_type']));
+			// $this->addXMLElement($xmlWriter, 'sample_consent_given', $val['sample_consent_given']);
+			$this->addXMLElement($xmlWriter, 'sample_consent_given', str_replace("_", "-", $val['sample_consent_given']));
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -1827,39 +1828,39 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, PARTICIPANT_RECORD_VISIT_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('participant_rvis');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'rvis_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'p_id', $val['plt_partrvirticipant_name']);
-                // $this->addXMLElement($xmlWriter, 'rvis_language', $val['rvis_language']);
-		$this->addXMLElement($xmlWriter, 'rvis_language', str_replace("_", "-", $val['rvis_language']));
-                $this->addXMLElement($xmlWriter, 'rvis_language_oth', $val['rvis_language_oth']);
-                $this->addXMLElement($xmlWriter, 'rvis_person', $val['rvis_person']);
-                // $this->addXMLElement($xmlWriter, 'rvis_who_consented', $val['rvis_who_consented']);
-		$this->addXMLElement($xmlWriter, 'rvis_who_consented', str_replace("_", "-", $val['rvis_who_consented']));
-                // $this->addXMLElement($xmlWriter, 'rvis_translate', $val['rvis_translate']);
-		$this->addXMLElement($xmlWriter, 'rvis_translate', str_replace("_", "-", $val['rvis_translate']));
-                $this->addXMLElement($xmlWriter, 'contact_id', $val['plt_partrvicntctinfo_name']);
-                $this->addXMLElement($xmlWriter, 'time_stamp_1', $val['time_stamp_1']);
-                // $this->addXMLElement($xmlWriter, 'rvis_sections', $val['rvis_sections']);
-		$this->addXMLElement($xmlWriter, 'rvis_sections', str_replace("_", "-", $val['rvis_sections']));
-                // $this->addXMLElement($xmlWriter, 'rvis_during_interv', $val['rvis_during_interv']);
-		$this->addXMLElement($xmlWriter, 'rvis_during_interv', str_replace("_", "-", $val['rvis_during_interv']));
-                // $this->addXMLElement($xmlWriter, 'rvis_during_bio', $val['rvis_during_bio']);
-		$this->addXMLElement($xmlWriter, 'rvis_during_bio', str_replace("_", "-", $val['rvis_during_bio']));
-                // $this->addXMLElement($xmlWriter, 'rvis_bio_cord', $val['rvis_bio_cord']);
-		$this->addXMLElement($xmlWriter, 'rvis_bio_cord', str_replace("_", "-", $val['rvis_bio_cord']));
-                // $this->addXMLElement($xmlWriter, 'rvis_during_env', $val['rvis_during_env']);
-		$this->addXMLElement($xmlWriter, 'rvis_during_env', str_replace("_", "-", $val['rvis_during_env']));
-                // $this->addXMLElement($xmlWriter, 'rvis_during_thanks', $val['rvis_during_thanks']);
-		$this->addXMLElement($xmlWriter, 'rvis_during_thanks', str_replace("_", "-", $val['rvis_during_thanks']));
-                // $this->addXMLElement($xmlWriter, 'rvis_after_saq', $val['rvis_after_saq']);
-		$this->addXMLElement($xmlWriter, 'rvis_after_saq', str_replace("_", "-", $val['rvis_after_saq']));
-                // $this->addXMLElement($xmlWriter, 'rvis_reconsideration', $val['rvis_reconsideration']);
-		$this->addXMLElement($xmlWriter, 'rvis_reconsideration', str_replace("_", "-", $val['rvis_reconsideration']));
-                $this->addXMLElement($xmlWriter, 'time_stamp_2', $val['time_stamp_2']);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('participant_rvis');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'rvis_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'p_id', $val['plt_partrvirticipant_name']);
+			// $this->addXMLElement($xmlWriter, 'rvis_language', $val['rvis_language']);
+			$this->addXMLElement($xmlWriter, 'rvis_language', str_replace("_", "-", $val['rvis_language']));
+			$this->addXMLElement($xmlWriter, 'rvis_language_oth', $val['rvis_language_oth']);
+			$this->addXMLElement($xmlWriter, 'rvis_person', $val['rvis_person']);
+			// $this->addXMLElement($xmlWriter, 'rvis_who_consented', $val['rvis_who_consented']);
+			$this->addXMLElement($xmlWriter, 'rvis_who_consented', str_replace("_", "-", $val['rvis_who_consented']));
+			// $this->addXMLElement($xmlWriter, 'rvis_translate', $val['rvis_translate']);
+			$this->addXMLElement($xmlWriter, 'rvis_translate', str_replace("_", "-", $val['rvis_translate']));
+			$this->addXMLElement($xmlWriter, 'contact_id', $val['plt_partrvicntctinfo_name']);
+			$this->addXMLElement($xmlWriter, 'time_stamp_1', $val['time_stamp_1']);
+			// $this->addXMLElement($xmlWriter, 'rvis_sections', $val['rvis_sections']);
+			$this->addXMLElement($xmlWriter, 'rvis_sections', str_replace("_", "-", $val['rvis_sections']));
+			// $this->addXMLElement($xmlWriter, 'rvis_during_interv', $val['rvis_during_interv']);
+			$this->addXMLElement($xmlWriter, 'rvis_during_interv', str_replace("_", "-", $val['rvis_during_interv']));
+			// $this->addXMLElement($xmlWriter, 'rvis_during_bio', $val['rvis_during_bio']);
+			$this->addXMLElement($xmlWriter, 'rvis_during_bio', str_replace("_", "-", $val['rvis_during_bio']));
+			// $this->addXMLElement($xmlWriter, 'rvis_bio_cord', $val['rvis_bio_cord']);
+			$this->addXMLElement($xmlWriter, 'rvis_bio_cord', str_replace("_", "-", $val['rvis_bio_cord']));
+			// $this->addXMLElement($xmlWriter, 'rvis_during_env', $val['rvis_during_env']);
+			$this->addXMLElement($xmlWriter, 'rvis_during_env', str_replace("_", "-", $val['rvis_during_env']));
+			// $this->addXMLElement($xmlWriter, 'rvis_during_thanks', $val['rvis_during_thanks']);
+			$this->addXMLElement($xmlWriter, 'rvis_during_thanks', str_replace("_", "-", $val['rvis_during_thanks']));
+			// $this->addXMLElement($xmlWriter, 'rvis_after_saq', $val['rvis_after_saq']);
+			$this->addXMLElement($xmlWriter, 'rvis_after_saq', str_replace("_", "-", $val['rvis_after_saq']));
+			// $this->addXMLElement($xmlWriter, 'rvis_reconsideration', $val['rvis_reconsideration']);
+			$this->addXMLElement($xmlWriter, 'rvis_reconsideration', str_replace("_", "-", $val['rvis_reconsideration']));
+			$this->addXMLElement($xmlWriter, 'time_stamp_2', $val['time_stamp_2']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -1870,26 +1871,26 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $db = DBManagerFactory::getInstance();
             $results = export($db, PARTICIPANT_VIS_CONSENT_SUGAR_MODULE, $chunk);
             while($val = $db->fetchByAssoc($results, -1, false)) {
-                $xmlWriter->startElement('participant_vis_consent');
-                    $this->addXMLElement($xmlWriter, 'psu_id',  $this->master_psu_id);
-                    $this->addXMLElement($xmlWriter, 'pid_visit_consent_id', $val['name']);
-                    $this->addXMLElement($xmlWriter, 'p_id', $val['plt_particirtcptvstc_name']);
-                    // $this->addXMLElement($xmlWriter, 'vis_consent_type', $val['vis_consent_type']);
-                    $this->addXMLElement($xmlWriter, 'vis_consent_type', str_replace("_", "-", $val['vis_consent_type']));
-                    // $this->addXMLElement($xmlWriter, 'vis_consent_response', $val['vis_consent_response']);
-                    $this->addXMLElement($xmlWriter, 'vis_consent_response', str_replace("_", "-", $val['vis_consent_response']));
-                    // $this->addXMLElement($xmlWriter, 'vis_language', $val['vis_language']);
-                    $this->addXMLElement($xmlWriter, 'vis_language', str_replace("_", "-", $val['vis_language']));
-                    $this->addXMLElement($xmlWriter, 'vis_language_oth', $val['vis_language_oth']);
-                    $this->addXMLElement($xmlWriter, 'vis_person_who_consented_id', $val['vis_person_who_consented_id']);
-                    // $this->addXMLElement($xmlWriter, 'vis_who_consented', $val['vis_who_consented']);
-                    $this->addXMLElement($xmlWriter, 'vis_who_consented', str_replace("_", "-", $val['vis_who_consented']));
-                    // $this->addXMLElement($xmlWriter, 'vis_translate', $val['vis_translate']);
-                    $this->addXMLElement($xmlWriter, 'vis_translate', str_replace("_", "-", $val['vis_translate']));
-                    $this->addXMLElement($xmlWriter, 'vis_comments', $val['vis_comments']);
-                    $this->addXMLElement($xmlWriter, 'contact_id', $val['ncsdc_cntctrtcptvstc_name']);
-                    $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-                $xmlWriter->endElement();
+				$xmlWriter->startElement('participant_vis_consent');
+				$this->addXMLElement($xmlWriter, 'psu_id',  $this->master_psu_id);
+				$this->addXMLElement($xmlWriter, 'pid_visit_consent_id', $val['name']);
+				$this->addXMLElement($xmlWriter, 'p_id', $val['plt_particirtcptvstc_name']);
+				// $this->addXMLElement($xmlWriter, 'vis_consent_type', $val['vis_consent_type']);
+				$this->addXMLElement($xmlWriter, 'vis_consent_type', str_replace("_", "-", $val['vis_consent_type']));
+				// $this->addXMLElement($xmlWriter, 'vis_consent_response', $val['vis_consent_response']);
+				$this->addXMLElement($xmlWriter, 'vis_consent_response', str_replace("_", "-", $val['vis_consent_response']));
+				// $this->addXMLElement($xmlWriter, 'vis_language', $val['vis_language']);
+				$this->addXMLElement($xmlWriter, 'vis_language', str_replace("_", "-", $val['vis_language']));
+				$this->addXMLElement($xmlWriter, 'vis_language_oth', $val['vis_language_oth']);
+				$this->addXMLElement($xmlWriter, 'vis_person_who_consented_id', $val['vis_person_who_consented_id']);
+				// $this->addXMLElement($xmlWriter, 'vis_who_consented', $val['vis_who_consented']);
+				$this->addXMLElement($xmlWriter, 'vis_who_consented', str_replace("_", "-", $val['vis_who_consented']));
+				// $this->addXMLElement($xmlWriter, 'vis_translate', $val['vis_translate']);
+				$this->addXMLElement($xmlWriter, 'vis_translate', str_replace("_", "-", $val['vis_translate']));
+				$this->addXMLElement($xmlWriter, 'vis_comments', $val['vis_comments']);
+				$this->addXMLElement($xmlWriter, 'contact_id', $val['ncsdc_cntctrtcptvstc_name']);
+				$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+				$xmlWriter->endElement();
             }
             $xmlWriter->flush();
         unset($results);  
@@ -1900,22 +1901,22 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, PRECISION_THERMOMETER_CERT_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('prec_therm_cert');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'srsc_id', $val['samp_prethr_srscinfo_name']);
-                $this->addXMLElement($xmlWriter, 'equip_id', $val['samp_prethrp_enequip_name']);
-                $this->addXMLElement($xmlWriter, 'staff_id', $val['samp_prethrstaffrstr_name']);
-		$this->addXMLElement($xmlWriter, 'certification_id', $val['name']);
-                // $this->addXMLElement($xmlWriter, 'precision_cert_status', $val['precision_cert_status']);
-		$this->addXMLElement($xmlWriter, 'precision_cert_status', str_replace("_", "-", $val['precision_cert_status']));
-                // $this->addXMLElement($xmlWriter, 'certification_date', $val['certification_date']);
-		$certification_date = preg_split('/[ ]/', $val['certification_date']);
-		$this->addXMLElement($xmlWriter, 'certification_date', $certification_date[0]);
-                // $this->addXMLElement($xmlWriter, 'certification_expire_dt', $val['certification_expire_dt']);
-		$certification_expire_dt = preg_split('/[ ]/', $val['certification_expire_dt']);
-		$this->addXMLElement($xmlWriter, 'certification_expire_dt', $certification_expire_dt[0]);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('prec_therm_cert');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'srsc_id', $val['samp_prethr_srscinfo_name']);
+			$this->addXMLElement($xmlWriter, 'equip_id', $val['samp_prethrp_enequip_name']);
+			$this->addXMLElement($xmlWriter, 'staff_id', $val['samp_prethrstaffrstr_name']);
+			$this->addXMLElement($xmlWriter, 'certification_id', $val['name']);
+			// $this->addXMLElement($xmlWriter, 'precision_cert_status', $val['precision_cert_status']);
+			$this->addXMLElement($xmlWriter, 'precision_cert_status', str_replace("_", "-", $val['precision_cert_status']));
+			// $this->addXMLElement($xmlWriter, 'certification_date', $val['certification_date']);
+			$certification_date = preg_split('/[ ]/', $val['certification_date']);
+			$this->addXMLElement($xmlWriter, 'certification_date', $certification_date[0]);
+			// $this->addXMLElement($xmlWriter, 'certification_expire_dt', $val['certification_expire_dt']);
+			$certification_expire_dt = preg_split('/[ ]/', $val['certification_expire_dt']);
+			$this->addXMLElement($xmlWriter, 'certification_expire_dt', $certification_expire_dt[0]);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -1926,22 +1927,22 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, REFRIGERATOR_FREEZER_VER_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('ref_freezer_verification');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'srsc_id', $val['samp_reffre_srscinfo_name']);
-                $this->addXMLElement($xmlWriter, 'equip_id', $val['samp_reffrep_enequip_name']);
-                $this->addXMLElement($xmlWriter, 'staff_id', $val['samp_reffrestaffrstr_name']);
-		// $this->addXMLElement($xmlWriter, 'verification_id', $val['name']);
-		$verification_id = preg_split('/[ ]/', $val['verification_id']);
-		$this->addXMLElement($xmlWriter, 'verification_id', $verification_id[0]);
-                $this->addXMLElement($xmlWriter, 'verification_dt', $val['verification_dt']);
-                $this->addXMLElement($xmlWriter, 'rf_thermometer_equip_id', $val['rf_thermometer_equip_id']); 
-                $this->addXMLElement($xmlWriter, 'correction_factor_temp', $val['correction_factor_temp']);
-                $this->addXMLElement($xmlWriter, 'current_temp', $val['current_temp']);
-                $this->addXMLElement($xmlWriter, 'maximum_temp', $val['maximum_temp']);
-                $this->addXMLElement($xmlWriter, 'minimum_temp', $val['minimum_temp']);
-                $this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('ref_freezer_verification');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'srsc_id', $val['samp_reffre_srscinfo_name']);
+			$this->addXMLElement($xmlWriter, 'equip_id', $val['samp_reffrep_enequip_name']);
+			$this->addXMLElement($xmlWriter, 'staff_id', $val['samp_reffrestaffrstr_name']);
+			// $this->addXMLElement($xmlWriter, 'verification_id', $val['name']);
+			$verification_id = preg_split('/[ ]/', $val['verification_id']);
+			$this->addXMLElement($xmlWriter, 'verification_id', $verification_id[0]);
+			$this->addXMLElement($xmlWriter, 'verification_dt', $val['verification_dt']);
+			$this->addXMLElement($xmlWriter, 'rf_thermometer_equip_id', $val['rf_thermometer_equip_id']); 
+			$this->addXMLElement($xmlWriter, 'correction_factor_temp', $val['correction_factor_temp']);
+			$this->addXMLElement($xmlWriter, 'current_temp', $val['current_temp']);
+			$this->addXMLElement($xmlWriter, 'maximum_temp', $val['maximum_temp']);
+			$this->addXMLElement($xmlWriter, 'minimum_temp', $val['minimum_temp']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -1952,42 +1953,42 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, SAMPLE_RECEIPT_STORAGE_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('sample_receipt_store');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'sample_id', $val['name']); // MISSING FIELD IN VARDEFS
-		$this->addXMLElement($xmlWriter, 'srsc_id', $val['samp_recsto_srscinfo_name']);
-                $this->addXMLElement($xmlWriter, 'staff_id', $val['samp_samprestaffrstr_name']);
-                // $this->addXMLElement($xmlWriter, 'sample_condition', $val['sample_condition']);
-		$this->addXMLElement($xmlWriter, 'sample_condition', str_replace("_", "-", $val['sample_condition']));
-                $this->addXMLElement($xmlWriter, 'receipt_comment_oth', $val['receipt_comment_oth']); 
-                // $this->addXMLElement($xmlWriter, 'receipt_dt', $val['receipt_dt']);
-		//$receipt_dt = preg_split('/[ ]/', $val['receipt_dt']);
-		//$this->addXMLElement($xmlWriter, 'receipt_dt', $receipt_dt[0].'T'.$receipt_dt[1]);
-                $receipt_dt = (strlen($val['receipt_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['receipt_dt'])) : "";
-                $this->addXMLElement($xmlWriter, 'receipt_dt', $receipt_dt);
-		// $this->addXMLElement($xmlWriter, 'cooler_temp_cond', $val['cooler_temp_cond']);
-		$this->addXMLElement($xmlWriter, 'cooler_temp_cond', str_replace("_", "-", $val['cooler_temp_cond']));
-                $this->addXMLElement($xmlWriter, 'equip_id', $val['samp_recstop_enequip_name']);
-		// $this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $val['placed_in_storage_dt']);
-		//$placed_in_storage_dt = preg_split('/[ ]/', $val['placed_in_storage_dt']);
-		//$this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $placed_in_storage_dt[0].'T'.$placed_in_storage_dt[1]);
-                $placed_in_storage_dt = (strlen($val['placed_in_storage_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['placed_in_storage_dt'])) : "";
-                $this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $placed_in_storage_dt);
-                // $this->addXMLElement($xmlWriter, 'storage_compartment_area', $val['storage_compartment_area']);
-		$this->addXMLElement($xmlWriter, 'storage_compartment_area', str_replace("_", "-", $val['storage_compartment_area']));
-                $this->addXMLElement($xmlWriter, 'storage_comment_oth', $val['storage_comment_oth']);
-                // $this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $val['removed_from_storage_dt']);
-		//$removed_from_storage_dt = preg_split('/[ ]/', $val['removed_from_storage_dt']);
-		//$this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $removed_from_storage_dt[0].'T'.$removed_from_storage_dt[1]);
-                $removed_from_storage_dt = (strlen($val['removed_from_storage_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['removed_from_storage_dt'])) : "";
-                $this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $removed_from_storage_dt);
-                // $this->addXMLElement($xmlWriter, 'temp_event_occurred', $val['temp_event_occurred']);
-		$this->addXMLElement($xmlWriter, 'temp_event_occurred', str_replace("_", "-", $val['temp_event_occurred']));
-                // $this->addXMLElement($xmlWriter, 'temp_event_action', $val['temp_event_action']);
-		$this->addXMLElement($xmlWriter, 'temp_event_action', str_replace("_", "-", $val['temp_event_action']));
-                $this->addXMLElement($xmlWriter, 'temp_event_action_oth', $val['temp_event_action_oth']);
-		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('sample_receipt_store');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'sample_id', $val['name']); // MISSING FIELD IN VARDEFS
+			$this->addXMLElement($xmlWriter, 'srsc_id', $val['samp_recsto_srscinfo_name']);
+			$this->addXMLElement($xmlWriter, 'staff_id', $val['samp_samprestaffrstr_name']);
+			// $this->addXMLElement($xmlWriter, 'sample_condition', $val['sample_condition']);
+			$this->addXMLElement($xmlWriter, 'sample_condition', str_replace("_", "-", $val['sample_condition']));
+			$this->addXMLElement($xmlWriter, 'receipt_comment_oth', $val['receipt_comment_oth']); 
+			// $this->addXMLElement($xmlWriter, 'receipt_dt', $val['receipt_dt']);
+			//$receipt_dt = preg_split('/[ ]/', $val['receipt_dt']);
+			//$this->addXMLElement($xmlWriter, 'receipt_dt', $receipt_dt[0].'T'.$receipt_dt[1]);
+			$receipt_dt = (strlen($val['receipt_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['receipt_dt'])) : "";
+			$this->addXMLElement($xmlWriter, 'receipt_dt', $receipt_dt);
+			// $this->addXMLElement($xmlWriter, 'cooler_temp_cond', $val['cooler_temp_cond']);
+			$this->addXMLElement($xmlWriter, 'cooler_temp_cond', str_replace("_", "-", $val['cooler_temp_cond']));
+			$this->addXMLElement($xmlWriter, 'equip_id', $val['samp_recstop_enequip_name']);
+			// $this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $val['placed_in_storage_dt']);
+			//$placed_in_storage_dt = preg_split('/[ ]/', $val['placed_in_storage_dt']);
+			//$this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $placed_in_storage_dt[0].'T'.$placed_in_storage_dt[1]);
+			$placed_in_storage_dt = (strlen($val['placed_in_storage_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['placed_in_storage_dt'])) : "";
+			$this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $placed_in_storage_dt);
+			// $this->addXMLElement($xmlWriter, 'storage_compartment_area', $val['storage_compartment_area']);
+			$this->addXMLElement($xmlWriter, 'storage_compartment_area', str_replace("_", "-", $val['storage_compartment_area']));
+			$this->addXMLElement($xmlWriter, 'storage_comment_oth', $val['storage_comment_oth']);
+			// $this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $val['removed_from_storage_dt']);
+			//$removed_from_storage_dt = preg_split('/[ ]/', $val['removed_from_storage_dt']);
+			//$this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $removed_from_storage_dt[0].'T'.$removed_from_storage_dt[1]);
+			$removed_from_storage_dt = (strlen($val['removed_from_storage_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['removed_from_storage_dt'])) : "";
+			$this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $removed_from_storage_dt);
+			// $this->addXMLElement($xmlWriter, 'temp_event_occurred', $val['temp_event_occurred']);
+			$this->addXMLElement($xmlWriter, 'temp_event_occurred', str_replace("_", "-", $val['temp_event_occurred']));
+			// $this->addXMLElement($xmlWriter, 'temp_event_action', $val['temp_event_action']);
+			$this->addXMLElement($xmlWriter, 'temp_event_action', str_replace("_", "-", $val['temp_event_action']));
+			$this->addXMLElement($xmlWriter, 'temp_event_action_oth', $val['temp_event_action_oth']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -1998,27 +1999,27 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, SAMPLE_SHIPPING_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('sample_shipping');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'sample_id', $val['name']);
-		$this->addXMLElement($xmlWriter, 'srsc_id', $val['samp_sampsh_srscinfo_name']);
-                $this->addXMLElement($xmlWriter, 'staff_id', $val['samp_sampshstaffrstr_name']);
-                //$this->addXMLElement($xmlWriter, 'shipper_id', $val['shipper_id']);
-                $this->addXMLElement($xmlWriter, 'shipper_id', $val['name']);
-				// $this->addXMLElement($xmlWriter, 'shipper_destination', $val['shipper_destination']); 
-		$this->addXMLElement($xmlWriter, 'shipper_destination', str_replace("_", "-", $val['shipper_destination']));
-                // $this->addXMLElement($xmlWriter, 'shipment_date', $val['shipment_date']);
-		$shipment_date = preg_split('/[ ]/', $val['shipment_date']);
-		$this->addXMLElement($xmlWriter, 'shipment_date', $shipment_date[0]);
-                // $this->addXMLElement($xmlWriter, 'shipment_coolant', $val['shipment_coolant']);
-		$this->addXMLElement($xmlWriter, 'shipment_coolant', str_replace("_", "-", $val['shipment_coolant']));
-                $this->addXMLElement($xmlWriter, 'shipment_tracking_no', $val['shipment_tracking_no']);
-                $this->addXMLElement($xmlWriter, 'shipment_issues_oth', $val['shipment_issues_oth']);
-                $this->addXMLElement($xmlWriter, 'staff_id_track', $val['staff_id_track']);
-                // $this->addXMLElement($xmlWriter, 'sample_shipped_by', $val['sample_shipped_by']);
-		$this->addXMLElement($xmlWriter, 'sample_shipped_by', str_replace("_", "-", $val['sample_shipped_by']));
-		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('sample_shipping');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'sample_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'srsc_id', $val['samp_sampsh_srscinfo_name']);
+			$this->addXMLElement($xmlWriter, 'staff_id', $val['samp_sampshstaffrstr_name']);
+			//$this->addXMLElement($xmlWriter, 'shipper_id', $val['shipper_id']);
+			$this->addXMLElement($xmlWriter, 'shipper_id', $val['name']);
+			// $this->addXMLElement($xmlWriter, 'shipper_destination', $val['shipper_destination']); 
+			$this->addXMLElement($xmlWriter, 'shipper_destination', str_replace("_", "-", $val['shipper_destination']));
+			// $this->addXMLElement($xmlWriter, 'shipment_date', $val['shipment_date']);
+			$shipment_date = preg_split('/[ ]/', $val['shipment_date']);
+			$this->addXMLElement($xmlWriter, 'shipment_date', $shipment_date[0]);
+			// $this->addXMLElement($xmlWriter, 'shipment_coolant', $val['shipment_coolant']);
+			$this->addXMLElement($xmlWriter, 'shipment_coolant', str_replace("_", "-", $val['shipment_coolant']));
+			$this->addXMLElement($xmlWriter, 'shipment_tracking_no', $val['shipment_tracking_no']);
+			$this->addXMLElement($xmlWriter, 'shipment_issues_oth', $val['shipment_issues_oth']);
+			$this->addXMLElement($xmlWriter, 'staff_id_track', $val['staff_id_track']);
+			// $this->addXMLElement($xmlWriter, 'sample_shipped_by', $val['sample_shipped_by']);
+			$this->addXMLElement($xmlWriter, 'sample_shipped_by', str_replace("_", "-", $val['sample_shipped_by']));
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -2106,24 +2107,24 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, DRFT_THERM_VERIFICATION_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('drf_therm_verification');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'srsc_id', $val['samp_drfthe_srscinfo_nam']);
-                $this->addXMLElement($xmlWriter, 'staff_id', $val['samp_drfthestaffrstr_name']);
-		// $this->addXMLElement($xmlWriter, 'drf_therm_verification_date', $val['drf_therm_verification_date']);
-		$drf_therm_verification_date = preg_split('/[ ]/', $val['drf_therm_verification_date']);
-		$this->addXMLElement($xmlWriter, 'drf_therm_verification_date', $drf_therm_verification_date[0]);
-		$this->addXMLElement($xmlWriter, 'drf_verification_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'equip_id', $val['samp_drfthep_enequip_name']);
-		$this->addXMLElement($xmlWriter, 'rf_thermometer_equip_id', $val['rf_thermometer_equip_id']);
-                // $this->addXMLElement($xmlWriter, 'certification_expire_dt', $val['certification_expire_dt']);
-		$certification_expire_dt = preg_split('/[ ]/', $val['certification_expire_dt']);
-		$this->addXMLElement($xmlWriter, 'certification_expire_dt', $certification_expire_dt[0]);
-                $this->addXMLElement($xmlWriter, 'precision_term_temp', $val['precision_term_temp']);
-                $this->addXMLElement($xmlWriter, 'rf_temp', $val['rf_temp']);
-                $this->addXMLElement($xmlWriter, 'correction_factor_temp', $val['correction_factor_temp']);
-		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('drf_therm_verification');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'srsc_id', $val['samp_drfthe_srscinfo_nam']);
+			$this->addXMLElement($xmlWriter, 'staff_id', $val['samp_drfthestaffrstr_name']);
+			// $this->addXMLElement($xmlWriter, 'drf_therm_verification_date', $val['drf_therm_verification_date']);
+			$drf_therm_verification_date = preg_split('/[ ]/', $val['drf_therm_verification_date']);
+			$this->addXMLElement($xmlWriter, 'drf_therm_verification_date', $drf_therm_verification_date[0]);
+			$this->addXMLElement($xmlWriter, 'drf_verification_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'equip_id', $val['samp_drfthep_enequip_name']);
+			$this->addXMLElement($xmlWriter, 'rf_thermometer_equip_id', $val['rf_thermometer_equip_id']);
+			// $this->addXMLElement($xmlWriter, 'certification_expire_dt', $val['certification_expire_dt']);
+			$certification_expire_dt = preg_split('/[ ]/', $val['certification_expire_dt']);
+			$this->addXMLElement($xmlWriter, 'certification_expire_dt', $certification_expire_dt[0]);
+			$this->addXMLElement($xmlWriter, 'precision_term_temp', $val['precision_term_temp']);
+			$this->addXMLElement($xmlWriter, 'rf_temp', $val['rf_temp']);
+			$this->addXMLElement($xmlWriter, 'correction_factor_temp', $val['correction_factor_temp']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
@@ -2134,28 +2135,28 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
         $db = DBManagerFactory::getInstance();
         $results = export($db, SAMPLE_RECEIPT_CONFIRM_SUGAR_MODULE, $chunk);
         while($val = $db->fetchByAssoc($results, -1, false)) {
-            $xmlWriter->startElement('sample_receipt_confirm');
-                $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
-                $this->addXMLElement($xmlWriter, 'srsc_id', getMultiRelatedNameByJoin(SAMPLERECEIPTCONF_SRSCINFO_JOIN, $val['id'])); // GETS ONLY ONE from M:M TABLE
-		// $this->addXMLElement($xmlWriter, 'shipment_receipt_confirmed', $val['shipment_receipt_confirmed']); 
-		$this->addXMLElement($xmlWriter, 'shipment_receipt_confirmed', str_replace("_", "-", $val['shipment_receipt_confirmed']));
-                //$this->addXMLElement($xmlWriter, 'shipper_id', $val['shipper_id']);
-                $this->addXMLElement($xmlWriter, 'shipper_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'shipment_tracking_no', $val['shipment_tracking_no']);
-                // $this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $val['shipment_receipt_dt']);
-		//$shipment_receipt_dt = preg_split('/[ ]/', $val['shipment_receipt_dt']);
-		//$this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $shipment_receipt_dt[0].'T'.$shipment_receipt_dt[1]);
-                $shipment_receipt_dt = (strlen($val['shipment_receipt_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['shipment_receipt_dt'])) : "";
-                $this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $shipment_receipt_dt);
-                $this->addXMLElement($xmlWriter, 'shipment_condition', $val['shipment_condition']);
-                $this->addXMLElement($xmlWriter, 'shipment_damaged_reason', $val['shipment_damaged_reason']);
-		$this->addXMLElement($xmlWriter, 'sample_id', $val['name']);
-                $this->addXMLElement($xmlWriter, 'sample_receipt_temp', $val['sample_receipt_temp']);
-		// $this->addXMLElement($xmlWriter, 'sample_condition', $val['sample_condition']);
-		$this->addXMLElement($xmlWriter, 'sample_condition', str_replace("_", "-", $val['sample_condition']));
-		$this->addXMLElement($xmlWriter, 'shipment_received_by', $val['shipment_received_by']);
-		$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
-            $xmlWriter->endElement();
+			$xmlWriter->startElement('sample_receipt_confirm');
+			$this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id);
+			$this->addXMLElement($xmlWriter, 'srsc_id', getMultiRelatedNameByJoin(SAMPLERECEIPTCONF_SRSCINFO_JOIN, $val['id'])); // GETS ONLY ONE from M:M TABLE
+			// $this->addXMLElement($xmlWriter, 'shipment_receipt_confirmed', $val['shipment_receipt_confirmed']); 
+			$this->addXMLElement($xmlWriter, 'shipment_receipt_confirmed', str_replace("_", "-", $val['shipment_receipt_confirmed']));
+			//$this->addXMLElement($xmlWriter, 'shipper_id', $val['shipper_id']);
+			$this->addXMLElement($xmlWriter, 'shipper_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'shipment_tracking_no', $val['shipment_tracking_no']);
+			// $this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $val['shipment_receipt_dt']);
+			//$shipment_receipt_dt = preg_split('/[ ]/', $val['shipment_receipt_dt']);
+			//$this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $shipment_receipt_dt[0].'T'.$shipment_receipt_dt[1]);
+			$shipment_receipt_dt = (strlen($val['shipment_receipt_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['shipment_receipt_dt'])) : "";
+			$this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $shipment_receipt_dt);
+			//$this->addXMLElement($xmlWriter, 'shipment_condition', $val['shipment_condition']);
+			$this->addXMLElement($xmlWriter, 'shipment_damaged_reason', $val['shipment_damaged_reason']);
+			$this->addXMLElement($xmlWriter, 'sample_id', $val['name']);
+			$this->addXMLElement($xmlWriter, 'sample_receipt_temp', $val['sample_receipt_temp']);
+			// $this->addXMLElement($xmlWriter, 'sample_condition', $val['sample_condition']);
+			$this->addXMLElement($xmlWriter, 'sample_condition', str_replace("_", "-", $val['sample_condition']));
+			$this->addXMLElement($xmlWriter, 'shipment_received_by', $val['shipment_received_by']);
+			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
+			$xmlWriter->endElement();
         }
         $xmlWriter->flush();
         unset($results);  
