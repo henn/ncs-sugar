@@ -92,3 +92,10 @@ def stripUnicode(obj):
         return list( stripUnicode(x) for x in obj )
     return obj
 
+def main():
+    login()
+    get_xml_data()
+    logout()
+
+if __name__ == "__main__":
+    main()
