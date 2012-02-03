@@ -82,7 +82,7 @@ $relationships = array (
   ),
   'ncsdc_eventinfo_plt_participant' => 
   array (
-    'rhs_label' => 'PLT_Participant',
+    'rhs_label' => 'Participant ID',
     'lhs_label' => 'Event Information',
     'lhs_subpanel' => 'default',
     'lhs_module' => 'NCSDC_EventInfo',
