@@ -1690,7 +1690,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 			$this->addXMLElement($xmlWriter, 'psu_id',  $this->master_psu_id);
 			$this->addXMLElement($xmlWriter, 'storage_container_id', $val['name']);
 			$this->addXMLElement($xmlWriter, 'spsc_id', $val['samp_specsh_spscinfo_name']);
-			$this->addXMLElement($xmlWriter, 'staff_id', $val['samp_sampshstaffrstr_name']);
+			$this->addXMLElement($xmlWriter, 'staff_id', $val['samp_specshstaffrstr_name']);
 			//$this->addXMLElement($xmlWriter, 'shipper_id', $val['samp_sampshstaffrstr_name']);
 			$this->addXMLElement($xmlWriter, 'shipper_id', $val['name']);
 			$this->addXMLElement($xmlWriter, 'shipper_destination', $val['shipper_destination']);
