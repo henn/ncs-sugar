@@ -231,18 +231,38 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 			$this->addXMLElement($xmlWriter, 'staff_race', str_replace("_", "-", $val['staff_race']));
 			//$this->addXMLElement($xmlWriter, 'staff_race_oth', $val['name']);
 			$this->addXMLElement($xmlWriter, 'staff_race_oth', str_replace("_", "-", $val['staff_race_oth']));
-			$this->addXMLElement($xmlWriter, 'staff_zip', $val['staff_zip']);
+			
+			//Populate a dummy zip code if it doesn't exist (99999)
+			if(empty($val['staff_zip']))
+				$this->addXMLElement($xmlWriter, 'staff_zip', '99999');
+			else
+				$this->addXMLElement($xmlWriter, 'staff_zip', $val['staff_zip']);
+						
 			// $this->addXMLElement($xmlWriter, 'staff_ethnicity', $val['staff_ethnicity']);
 			$this->addXMLElement($xmlWriter, 'staff_ethnicity', str_replace("_", "-", $val['staff_ethnicity']));
 			// $this->addXMLElement($xmlWriter, 'staff_exp', $val['staff_exp']);
 			$this->addXMLElement($xmlWriter, 'staff_exp', str_replace("_", "-", $val['staff_exp']));
 			$this->addXMLElement($xmlWriter, 'staff_comment', $val['staff_comment']);
 			// $this->addXMLElement($xmlWriter, 'ncs_active_date', $val['ncs_active_date']);
-			$ncs_active_date = preg_split('/[ ]/', $val['ncs_active_date']);
-				$this->addXMLElement($xmlWriter, 'ncs_active_date', $ncs_active_date[0]);
-			// $this->addXMLElement($xmlWriter, 'ncs_inactive_date', $val['ncs_inactive_date']);
-			$ncs_inactive_date = preg_split('/[ ]/', $val['ncs_inactive_date']);
-				$this->addXMLElement($xmlWriter, 'ncs_inactive_date', $ncs_inactive_date[0]);
+			
+			//populate dummy data if blank
+			if(empty($val['ncs_active_date']))
+				$this->addXMLElement($xmlWriter, 'ncs_active_date', '9333-93-93');
+			else
+			{
+				$ncs_active_date = preg_split('/[ ]/', $val['ncs_active_date']);
+				$this->addXMLElement($xmlWriter, 'ncs_active_date', $ncs_active_date[0]);	
+			}
+						
+			//populate dummy data if blank
+			if(empty($val['ncs_inactive_date']))
+				$this->addXMLElement($xmlWriter, 'ncs_inactive_date', '9333-93-93');
+			else	
+			{
+				$ncs_inactive_date = preg_split('/[ ]/', $val['ncs_inactive_date']);
+				$this->addXMLElement($xmlWriter, 'ncs_inactive_date', $ncs_inactive_date[0]);	
+			}	
+			
 			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
 			$xmlWriter->endElement();
         }
@@ -1643,9 +1663,11 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
                 $this->addXMLElement($xmlWriter, 'centrifuge_comment_oth', $val['centrifuge_comment_oth']);
 		// $this->addXMLElement($xmlWriter, 'centrifuge_st', $val['centrifuge_st']);
 		$st_date = preg_split('/[ ]/', $val['centrifuge_st']);
+		$st_date = preg_replace("/(\d\d):(\d\d):(\d\d)/", "$1:$2", $st_date);
 		$this->addXMLElement($xmlWriter, 'centrifuge_st', $st_date[1]);
                 // $this->addXMLElement($xmlWriter, 'centrifuge_et', $val['centrifuge_et']);
 		$et_date = preg_split('/[ ]/', $val['centrifuge_et']);
+		$et_date = preg_replace("/(\d\d):(\d\d):(\d\d)/", "$1:$2", $et_date);
 		$this->addXMLElement($xmlWriter, 'centrifuge_et', $et_date[1]);
 		$this->addXMLElement($xmlWriter, 'centrifuge_temperature', $val['centrifuge_temperature']);
 		$this->addXMLElement($xmlWriter, 'centrifuge_staff_id', $val['centrifuge_staff_id']);
@@ -1683,7 +1705,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 			// $this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $val['shipment_receipt_dt']);
 			//$shipment_receipt_dt = preg_split('/[ ]/', $val['shipment_receipt_dt']);
 			//$this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $shipment_receipt_dt[0].'T'.$shipment_receipt_dt[1]);	
-			$shipment_receipt_dt = (strlen($val['shipment_receipt_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['shipment_receipt_dt'])) : "";	
+			$shipment_receipt_dt = (strlen($val['shipment_receipt_dt']) > 0) ? date("Y-m-d\TH:i", strtotime($val['shipment_receipt_dt'])) : "";	
 			$this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $shipment_receipt_dt);
 			// $this->addXMLElement($xmlWriter, 'shipment_issues', $val['shipment_issues']);
 			$this->addXMLElement($xmlWriter, 'shipment_issues', str_replace("_", "-", $val['shipment_issues']));
@@ -1707,7 +1729,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 			// $this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $val['placed_in_storage_dt']);
 			//$placed_in_storage_dt = preg_split('/[ ]/', $val['placed_in_storage_dt']);
 			//$this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $placed_in_storage_dt[0].'T'.$placed_in_storage_dt[1]);
-			$placed_in_storage_dt = (strlen($val['placed_in_storage_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['placed_in_storage_dt'])) : "";
+			$placed_in_storage_dt = (strlen($val['placed_in_storage_dt']) > 0) ? date("Y-m-d\TH:i", strtotime($val['placed_in_storage_dt'])) : "";
 			$this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $placed_in_storage_dt);
 			$this->addXMLElement($xmlWriter, 'staff_id', $val['samp_specststaffrstr_name']); 
 			$this->addXMLElement($xmlWriter, 'equip_id', $val['samp_specstspecequip_name']);
@@ -1978,7 +2000,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 			// $this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $val['placed_in_storage_dt']);
 			//$placed_in_storage_dt = preg_split('/[ ]/', $val['placed_in_storage_dt']);
 			//$this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $placed_in_storage_dt[0].'T'.$placed_in_storage_dt[1]);
-			$placed_in_storage_dt = (strlen($val['placed_in_storage_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['placed_in_storage_dt'])) : "";
+			$placed_in_storage_dt = (strlen($val['placed_in_storage_dt']) > 0) ? date("Y-m-d\TH:i", strtotime($val['placed_in_storage_dt'])) : "";
 			$this->addXMLElement($xmlWriter, 'placed_in_storage_dt', $placed_in_storage_dt);
 			// $this->addXMLElement($xmlWriter, 'storage_compartment_area', $val['storage_compartment_area']);
 			$this->addXMLElement($xmlWriter, 'storage_compartment_area', str_replace("_", "-", $val['storage_compartment_area']));
@@ -2152,7 +2174,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 			// $this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $val['shipment_receipt_dt']);
 			//$shipment_receipt_dt = preg_split('/[ ]/', $val['shipment_receipt_dt']);
 			//$this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $shipment_receipt_dt[0].'T'.$shipment_receipt_dt[1]);
-			$shipment_receipt_dt = (strlen($val['shipment_receipt_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['shipment_receipt_dt'])) : "";
+			$shipment_receipt_dt = (strlen($val['shipment_receipt_dt']) > 0) ? date("Y-m-d\TH:i", strtotime($val['shipment_receipt_dt'])) : "";
 			$this->addXMLElement($xmlWriter, 'shipment_receipt_dt', $shipment_receipt_dt);
 			//$this->addXMLElement($xmlWriter, 'shipment_condition', $val['shipment_condition']);
 			$this->addXMLElement($xmlWriter, 'shipment_condition', preg_replace('/^_(\d)$/', '-$1', $val['shipment_condition'])); 
