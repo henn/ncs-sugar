@@ -137,7 +137,10 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
             $this->addXMLElement($xmlWriter, 'psu_id', $this->master_psu_id); // NO DIRECT RELATIONSHIP
             $this->addXMLElement($xmlWriter, 'du_id', $val['name']);
             $this->addXMLElement($xmlWriter, 'list_id', $val['gt_listinguellingunt_name']);
-            $this->addXMLElement($xmlWriter, 'tsu_id', $val['gt_secsampuellingunt_name']);
+			
+            //$this->addXMLElement($xmlWriter, 'tsu_id', $val['gt_secsampuellingunt_name']);  //code with problem. 			
+			$this->addXMLElement($xmlWriter, 'tsu_id', $val['gt_tersampuellingunt_name']);  //correct link -- need to verify
+			
             $this->addXMLElement($xmlWriter, 'ssu_id', $val['gt_secsampuellingunt_name']);
             //$this->addXMLElement($xmlWriter, 'duplicate_du', $val['duplicate_du']);
             $this->addXMLElement($xmlWriter, 'duplicate_du', str_replace("_", "-", $val['duplicate_du']));
@@ -1747,7 +1750,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 			// $this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $val['removed_from_storage_dt']);
 			//$removed_from_storage_dt = preg_split('/[ ]/', $val['removed_from_storage_dt']);
 			//$this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $removed_from_storage_dt[0].'T'.$removed_from_storage_dt[1]);
-			$removed_from_storage_dt = (strlen($val['removed_from_storage_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['removed_from_storage_dt'])) : "";
+			$removed_from_storage_dt = (strlen($val['removed_from_storage_dt']) > 0) ? date("Y-m-d\TH:i", strtotime($val['removed_from_storage_dt'])) : "";
 			$this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $removed_from_storage_dt);
 			$this->addXMLElement($xmlWriter, 'temp_event_st', $val['temp_event_st']);
 			$this->addXMLElement($xmlWriter, 'temp_event_et', $val['temp_event_et']);
@@ -2008,7 +2011,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 			// $this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $val['removed_from_storage_dt']);
 			//$removed_from_storage_dt = preg_split('/[ ]/', $val['removed_from_storage_dt']);
 			//$this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $removed_from_storage_dt[0].'T'.$removed_from_storage_dt[1]);
-			$removed_from_storage_dt = (strlen($val['removed_from_storage_dt']) > 0) ? date("Y-m-d\TH:i:s", strtotime($val['removed_from_storage_dt'])) : "";
+			$removed_from_storage_dt = (strlen($val['removed_from_storage_dt']) > 0) ? date("Y-m-d\TH:i", strtotime($val['removed_from_storage_dt'])) : "";
 			$this->addXMLElement($xmlWriter, 'removed_from_storage_dt', $removed_from_storage_dt);
 			// $this->addXMLElement($xmlWriter, 'temp_event_occurred', $val['temp_event_occurred']);
 			$this->addXMLElement($xmlWriter, 'temp_event_occurred', str_replace("_", "-", $val['temp_event_occurred']));
@@ -2043,7 +2046,7 @@ class NCSSugarWebServiceUtil extends SugarWebServiceUtilv3 {
 			$this->addXMLElement($xmlWriter, 'shipment_coolant', str_replace("_", "-", $val['shipment_coolant']));
 			$this->addXMLElement($xmlWriter, 'shipment_tracking_no', $val['shipment_tracking_no']);
 			$this->addXMLElement($xmlWriter, 'shipment_issues_oth', $val['shipment_issues_oth']);
-			$this->addXMLElement($xmlWriter, 'staff_id_track', $val['staff_id_track']);
+			$this->addXMLElement($xmlWriter, 'staff_id_track', $val['samp_sampshstaffrstr_name']);
 			// $this->addXMLElement($xmlWriter, 'sample_shipped_by', $val['sample_shipped_by']);
 			$this->addXMLElement($xmlWriter, 'sample_shipped_by', str_replace("_", "-", $val['sample_shipped_by']));
 			$this->addXMLElement($xmlWriter, 'transaction_type', 'NA');
